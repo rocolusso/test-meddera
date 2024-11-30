@@ -6,7 +6,7 @@
 body {
 
     backgroud:white;
-    
+    z-index:10;
 }
 
 .list-icon::before{
