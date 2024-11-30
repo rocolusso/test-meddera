@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 
+body {
+
+    backgroud:white;
+    
+}
+
 .list-icon::before{
     content: '✔︎';
     padding: 0 10px 0 0;
