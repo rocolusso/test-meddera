@@ -12,7 +12,7 @@ const Contacts = ({locale}:{locale:string}) => {
     const date = new Date();
     const currentYear = date.getFullYear()
     return (
-        <div className={'contacts mt-10'} id={'contacts'}>
+        <div className={'contacts bg-black mt-10'} id={'contacts'}>
             <div className={'container mx-auto'}>
                 <div className={'mx-auto flex justify-center py-10'}>
                     <h2 className={'text-[36px] uppercase underline border py-5 px-10  border-black hover:bg-green-400 duration-300 hover:scale-105'}>{locale === "ru" ? "Контакты" : "Contacte"}</h2>
