@@ -18,9 +18,12 @@ const GoogleWhitePage = () => {
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
             </Head>
-            <div className={'h-screen'}
-                 style={{background: "linear-gradient(rgb(45, 46, 46) 0%, rgb(0, 0, 0) 100%) rgb(45, 46, 46)"}}>
-                <div className={'container mx-auto'}>
+            <div className={'h-screen '}
+
+                 style={{background: "linear-gradient(rgb(45, 46, 46) 0%, rgb(0, 0, 0) 100%) rgb(45, 46, 46)"}}
+
+            >
+                <div className={'container mx-auto z-10'}>
                     <div style={{padding: '60px 0px 8px'}} className={'photo-block flex justify-center'}>
                         <div className={'flex justify-center flex-col'}>
                             <div className={'flex justify-center'}>
@@ -44,7 +47,7 @@ const GoogleWhitePage = () => {
                                     style={{borderRadius: "14px"}}
                                     className={'heartbeat  bg-green-400 px-[24px] py-[16px] flex justify-center  max-w-[500px] min-w-[300px]'}>
                                     <Link
-                                        className={'text-white text-center '}
+                                        className={' text-white text-center '}
                                         href={'/'}
                                     >
                                         Перейти на сайт
@@ -59,12 +62,16 @@ const GoogleWhitePage = () => {
                                     }}
                                     className={'mt-2 bg-green-400 px-[24px] py-[16px] flex justify-center  max-w-[500px] min-w-[300px]'}>
                                     <Link
-                                        className={'text-white text-center font-bold'}
+                                        className={' text-white text-center font-bold'}
                                         href={'tel:+37379944150'}
                                     >
                                         Позвонить
                                     </Link>
                                 </div>
+
+                                {/*<div>*/}
+                                {/*    <button className={'btn-shine rounded border border-white'}>Позвонить</button>*/}
+                                {/*</div>*/}
 
                                 <div className={'mt-6 flex justify-center'}>
                                     <div className="heart ">
@@ -72,6 +79,9 @@ const GoogleWhitePage = () => {
                                         <div className="heartecho">❤️</div>
                                     </div>
                                 </div>
+
+
+
 
 
                             </div>
