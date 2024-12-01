@@ -25,6 +25,8 @@ const GoogleWhitePage = () => {
                              <p>Дерматокосметолг</p>
                          </div>
                          <div className={'mt-2 container mx-auto'}>
+
+
                              <div
                                  style={{borderRadius: "14px"}}
                                  className={'heartbeat  bg-green-400 px-[24px] py-[16px] flex justify-center  max-w-[500px] min-w-[300px]'}>
@@ -35,6 +37,9 @@ const GoogleWhitePage = () => {
                                      Перейти на сайт
                                  </Link>
                              </div>
+
+
+
                              <div
                                  style={{
                                      borderRadius: "14px",
