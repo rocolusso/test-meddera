@@ -6,6 +6,36 @@ import Link from "next/link";
 import Head from "next/head";
 
 const GoogleWhitePage = () => {
+
+    const event = ({ action, category, label, value }: any) => {
+        (window as any).gtag('event', action, {
+            event_category: category,
+            event_label: label,
+            value: value,
+        });
+    };
+
+    const addToCart = () => {
+        event({
+            action: 'add_to_cart',
+            category: 'ecommerce',
+            label: 'Item added to cart',
+            value: 'Tesla',
+        });
+    };
+
+    const redirectToBlack = () => {
+        event({
+            action: 'search',
+            category: 'beauty',
+            label: 'Transfer to main',
+            value: 'Click',
+        });
+        window.location.href = '/';
+    };
+
+
+
     return (
         <>
             <Head>
@@ -46,12 +76,13 @@ const GoogleWhitePage = () => {
                                 <div
                                     style={{borderRadius: "14px"}}
                                     className={'heartbeat  bg-green-400 px-[24px] py-[16px] flex justify-center  max-w-[500px] min-w-[300px]'}>
-                                    <Link
-                                        className={' text-white text-center '}
-                                        href={'/'}
-                                    >
-                                        Перейти на сайт
-                                    </Link>
+                                    {/*<Link*/}
+                                    {/*    className={' text-white text-center '}*/}
+                                    {/*    href={'/'}*/}
+                                    {/*>*/}
+                                    {/*    Перейти на сайт*/}
+                                    {/*</Link>*/}
+                                    <button className={'text-white text-center'} onClick={redirectToBlack}>Перейти на сайт</button>
                                 </div>
 
 
