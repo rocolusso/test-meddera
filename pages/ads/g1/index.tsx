@@ -15,13 +15,14 @@ const GoogleWhitePage = () => {
         });
     };
 
-    const addToCart = () => {
+    const callPhone = () => {
         event({
-            action: 'add_to_cart',
-            category: 'ecommerce',
-            label: 'Item added to cart',
+            action: 'qualify_lead',
+            category: 'beauty',
+            label: 'Call from g-ads white-page-1',
             value: 'Tesla',
         });
+        window.location.href = 'tel:+37379944150';
     };
 
     const redirectToBlack = () => {
@@ -92,12 +93,13 @@ const GoogleWhitePage = () => {
                                         backgroundColor: "rgba(255, 255, 255, 0.05)",
                                     }}
                                     className={'mt-2 bg-green-400 px-[24px] py-[16px] flex justify-center  max-w-[500px] min-w-[300px]'}>
-                                    <Link
-                                        className={' text-white text-center font-bold'}
-                                        href={'tel:+37379944150'}
-                                    >
-                                        Позвонить
-                                    </Link>
+                                    {/*<Link*/}
+                                    {/*    className={' text-white text-center font-bold'}*/}
+                                    {/*    href={'tel:+37379944150'}*/}
+                                    {/*>*/}
+                                    {/*    Позвонить*/}
+                                    {/*</Link>*/}
+                                    <button className={'text-white text-center'} onClick={callPhone}>Позвонить</button>
                                 </div>
 
                                 {/*<div>*/}
