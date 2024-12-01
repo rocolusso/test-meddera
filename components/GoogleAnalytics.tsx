@@ -25,8 +25,8 @@ const GoogleAnalytics = () => {
 
 
 
-            <Script async  strategy='lazyOnload' src="https://www.googletagmanager.com/gtag/js?id=G-V98H1SG9KW"></Script>
-            <Script  strategy='lazyOnload'>
+            <Script  strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-V98H1SG9KW"></Script>
+            <Script  strategy="afterInteractive">
                 {`
                 
                 window.dataLayer = window.dataLayer || [];
