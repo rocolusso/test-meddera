@@ -3,6 +3,8 @@ import Script from 'next/script';
 
 const GoogleAnalytics = () => {
     const gtag = 'G-V98H1SG9KW'
+
+    // gtag('config', 'AW-16800899328');   (ads conversion TAG)
     return (
         <>
             <Script
@@ -19,6 +21,9 @@ const GoogleAnalytics = () => {
               gtag('config', '${gtag}', {
               page_path: window.location.pathname,
               });
+              
+              gtag('config', 'AW-16800899328');
+              
           `}
             </Script>
 
