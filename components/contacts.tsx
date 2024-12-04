@@ -4,6 +4,7 @@ import imgAddress from './../public/assets/img/img_contacts.jpg'
 
 import { FaMapLocationDot } from "react-icons/fa6";
 import { FaPhoneVolume } from "react-icons/fa6";
+import { MdOutlineRateReview } from "react-icons/md";
 
 import Image from 'next/image'
 import Link from "next/link";
@@ -11,6 +12,14 @@ import Link from "next/link";
 const Contacts = ({locale}:{locale:string}) => {
     const date = new Date();
     const currentYear = date.getFullYear()
+
+    const addReview =()=>{
+        window.location.href ='https://g.page/r/CZIarfL1QQwNEBM/review'
+    }
+
+    const callPhone = () => {
+        window.location.href ='tel:+37379944150'
+    }
     return (
         <div className={'contacts mt-10'} id={'contacts'}>
             <div className={'container mx-auto'}>
@@ -35,18 +44,43 @@ const Contacts = ({locale}:{locale:string}) => {
                         </div>
 
                         <div className={'mt-10 flex flex-col gap-5 items-center'}>
+
                             <div className={'flex items-center'}>
                                 <div>
                                     <FaMapLocationDot size={'32px'}/>
                                 </div>
                                 <p className={'ml-5 font-bold uppercase text-[18px]'}>Balti, Stefan Cel Mare, 13</p>
                             </div>
-                            <div className={'flex items-center hover:bg-green-400 text-white bg-black duration-300 rounded p-5'}>
-                                <div>
-                                    < FaPhoneVolume size={'32px'}/>
+
+
+
+
+                            <button
+                                className='max-w-[90vw] rounded w-full uppercase font-bold bg-black text-white hover:bg-green-400 duration-300 text-[20px] p-5'
+                                onClick={callPhone}
+                            >
+                                <div className={'flex gap-5 items-center justify-center'}>
+                                    < FaPhoneVolume size={'32px'} className={''}/>
+                                    <div>
+                                        +37379944150
+                                    </div>
                                 </div>
-                                <Link href={'tel:+37379944150'}  className={'ml-5 font-bold uppercase text-[18px]'}>+37379944150</Link>
-                            </div>
+                            </button>
+
+
+                            <button
+                                className='max-w-[90vw] rounded w-full uppercase font-bold bg-black text-white hover:bg-green-400 duration-300 text-[20px] p-5'
+                                onClick={addReview}
+                            >
+                                <div className={'flex gap-5 items-center justify-center'}>
+                                    < MdOutlineRateReview size={'45px'}/>
+                                    <div>
+                                        {locale === "ru" ? "Оставить отзыв" : "Lasă un comentariu"}
+                                    </div>
+                                </div>
+                            </button>
+
+
                         </div>
                     </div>
 
