@@ -33,15 +33,15 @@ export default function Home() {
       <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-          <title>Екатерина Пынтя – Dermatolog-cosmetolog în Bălți | Clinica Meddera</title>
+          <title>Екатерина Пынтя – Dermatolog-cosmetolog în Bălți</title>
           <meta
               name="description"
-              content="Dermatolog-cosmetolog Екатерина Пынтя cu o experiență de peste 11 ani oferă servicii în clinica Meddera din Bălți: dermatologie, cosmetologie, dermatoscopie, îndepărtarea formațiunilor, botox, fillere, mezoterapie și onco-dermatologie."
+              content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie."
           />
 
-          <meta property="og:title" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți | Clinica Meddera" />
+          <meta property="og:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți" />
           <meta property="og:description"
-                content="Dermatolog-cosmetolog Екатерина Пынтя cu o experiență de peste 11 ani oferă servicii în clinica Meddera din Bălți: dermatologie, cosmetologie, dermatoscopie, îndepărtarea formațiunilor, botox, fillere, mezoterapie și onco-dermatologie." />
+                content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie." />
           <meta property="og:image" content="/assets/img/seo-meta/facebook-meta.jpg" />
           <meta property="og:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți" />
           <meta property="og:image:width" content="1200" />
@@ -50,9 +50,9 @@ export default function Home() {
           <meta property="og:url" content="https://meddera.md" />
 
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți | Clinica Meddera" />
+          <meta name="twitter:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți" />
           <meta name="twitter:description"
-                content="Dermatolog-cosmetolog Екатерина Пынтя cu o experiență de peste 11 ani oferă servicii în clinica Meddera din Bălți: dermatologie, cosmetologie, dermatoscopie, îndepărtarea formațiunilor, botox, fillere, mezoterapie și onco-dermatologie." />
+                content="Екатерина Пынтя – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie." />
           <meta name="twitter:image" content="/assets/img/seo-meta/twitter-meta.jpg"  />
           <meta name="twitter:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți" />
           <meta name="twitter:site" content="@your_twitter_handle" />

@@ -36,16 +36,16 @@ export default function Home() {
               <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
-              <title>Екатерина Пынтя – Дерматолог-косметолог в Бельцах | Клиника Meddera</title>
+              <title>Екатерина Пынтя – Дерматолог-косметолог в Бельцах</title>
               <meta
                   name="description"
-                  content="Дерматолог-косметолог Екатерина Пынтя с опытом более 11 лет предлагает услуги в клинике Meddera в Бельцах: дерматология, косметология, дерматоскопия, удаление образований, ботокс, филлеры, мезотерапия и онко-дерматология."
+                  content="Екатерина Пынтя – опытный дерматолог-косметолог в Бельцах. Клиника Meddera: дерматология, косметология, удаление образований, ботокс, филлеры, мезотерапия."
               />
 
 
-              <meta property="og:title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах | Клиника Meddera"/>
+              <meta property="og:title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
               <meta property="og:description"
-                    content="Дерматолог-косметолог Екатерина Пынтя с опытом более 11 лет предлагает услуги в клинике Meddera в Бельцах: дерматология, косметология, дерматоскопия, удаление образований, ботокс, филлеры, мезотерапия и онко-дерматология."/>
+                    content="Екатерина Пынтя – опытный дерматолог-косметолог в Бельцах. Клиника Meddera: дерматология, косметология, удаление образований, ботокс, филлеры, мезотерапия."/>
               <meta property="og:image" content="/assets/img/seo-meta/facebook-meta.jpg"/>
               <meta property="og:image:alt" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
               <meta property="og:image:width" content="1200"/>
@@ -55,9 +55,9 @@ export default function Home() {
 
 
               <meta name="twitter:card" content="summary_large_image"/>
-              <meta name="twitter:title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах | Клиника Meddera"/>
+              <meta name="twitter:title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
               <meta name="twitter:description"
-                    content="Дерматолог-косметолог Екатерина Пынтя с опытом более 11 лет предлагает услуги в клинике Meddera в Бельцах: дерматология, косметология, дерматоскопия, удаление образований, ботокс, филлеры, мезотерапия и онко-дерматология."/>
+                    content="Екатерина Пынтя – опытный дерматолог-косметолог в Бельцах. Клиника Meddera: дерматология, косметология, удаление образований, ботокс, филлеры, мезотерапия."/>
               <meta name="twitter:image" content="/assets/img/seo-meta/twitter-meta.jpg"/>
               <meta name="twitter:image:alt" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
               <meta name="twitter:site" content="@your_twitter_handle"/>
