@@ -6,8 +6,12 @@ import Link from "next/link";
 import Head from "next/head";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
+import Contacts from "@/components/contacts";
 
 const GoogleWhitePage = () => {
+    const date = new Date();
+    const currentYear = date.getFullYear()
+
 
     const event = ({ action, category, label, value }: any) => {
         (window as any).gtag('event', action, {
@@ -51,7 +55,7 @@ const GoogleWhitePage = () => {
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
             </Head>
-            <div className={'h-screen '}
+            <div className={' '}
 
                  style={{background: "linear-gradient(rgb(45, 46, 46) 0%, rgb(0, 0, 0) 100%) rgb(45, 46, 46)"}}
 
@@ -125,7 +129,7 @@ const GoogleWhitePage = () => {
                                             <div>
                                                 Позвонить
                                             </div>
-                                            <FaPhoneVolume className={' heartbeat'} size={20} />
+                                            <FaPhoneVolume className={' heartbeat'} size={20}/>
                                         </div>
 
                                     </button>
@@ -144,9 +148,46 @@ const GoogleWhitePage = () => {
 
 
                             </div>
+
+                            {/*<Contacts locale={'ru'}/>*/}
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div className={'mx-auto mt-10'}>
+                        <div className="mapouter">
+                            <div className="gmap_canvas">
+                                <iframe frameBorder="0" scrolling="no"
+                                        className={'max-w-[100%] gmap_iframe'}
+                                        width="2000"
+                                        height="450"
+                                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Дерматолог Бельцы Екатерина Пынтя Dermatolog Balti Meddera Ecaterina Pintea Magnific Nord Incomed&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                            </div>
                         </div>
                     </div>
+
+                    <div className={'footer_bottom bg-black'}>
+                        <div
+                            className={'container mx-auto  text-center flex flex-col max-w-[400px]  p-5  text-white'}>
+
+                                <p>{`© Meddera | Ecaterina Pintea | 2018 - ${currentYear}`}</p>
+
+
+                            <div className={' my-10 '}>
+
+                                    <p>{`Website by Alex`}</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
+
+
             </div>
 
 
