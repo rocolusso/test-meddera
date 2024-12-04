@@ -2,11 +2,10 @@ import React from 'react';
 import Image from "next/image";
 
 import ava from './../../../public/assets/img/ads/ads_photo.png'
-import Link from "next/link";
 import Head from "next/head";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
-import Contacts from "@/components/contacts";
+import imgAddress from "@/public/assets/img/img_contacts.jpg";
 
 const GoogleWhitePage = () => {
     const date = new Date();
@@ -150,6 +149,17 @@ const GoogleWhitePage = () => {
                             </div>
 
                             {/*<Contacts locale={'ru'}/>*/}
+
+                            <div>
+                                <Image
+                                    className={'w-full sm:rounded-2xl'}
+                                    src={imgAddress}
+                                    alt={'address'}
+                                    width={400}
+                                    height={400}
+                                />
+                            </div>
+
 
                         </div>
 
