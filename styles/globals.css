@@ -249,3 +249,62 @@ new back animation
 new back animation
 */
 
+
+
+/*
+button flash animation
+
+
+*/
+
+
+.animated-flash-pulse {
+    background-color: rgba(255, 255, 255, 0.12); /* Default background color */
+    animation: flash 1.5s infinite; /* Animation timing and infinite repeat */
+}
+
+@keyframes flash {
+    0%, 100% {
+        background-color: rgba(200, 199, 199, 0.05); /* Start and end color */
+    }
+    50% {
+        background-color: #1b1b1b; /* Flash to a darker blue */
+    }
+}
+
+/* Base styles for the button */
+.animated-stripe {
+    background-color: #32CD32; /* Green background */
+    position: relative;
+    overflow: hidden; /* Ensure animation stays inside the button */
+}
+
+/* The white stripe element */
+.animated-stripe::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%; /* Start off-screen to the left */
+    width: 200%; /* Cover enough width for the animation to run smoothly */
+    height: 100%; /* Match the button height */
+    background: linear-gradient(45deg, transparent 40%, white 50%, transparent 60%);
+    animation: stripe-slide 1.5s infinite linear;
+}
+
+/* Animation to move the stripe */
+@keyframes stripe-slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(150%);
+    }
+}
+
+
+
+/*
+button flash animation
+
+
+*/

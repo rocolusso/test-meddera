@@ -4,6 +4,8 @@ import Image from "next/image";
 import ava from './../../../public/assets/img/ads/ads_photo.png'
 import Link from "next/link";
 import Head from "next/head";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
 const GoogleWhitePage = () => {
 
@@ -75,31 +77,58 @@ const GoogleWhitePage = () => {
 
 
                                 <div
-                                    style={{borderRadius: "14px"}}
-                                    className={'heartbeat  bg-green-400 px-[24px] py-[16px] flex justify-center  max-w-[500px] min-w-[300px]'}>
+                                    className={'flex justify-center  max-w-[500px] min-w-[300px]'}>
                                     {/*<Link*/}
                                     {/*    className={' text-white text-center '}*/}
                                     {/*    href={'/'}*/}
                                     {/*>*/}
                                     {/*    Перейти на сайт*/}
                                     {/*</Link>*/}
-                                    <button className={'text-white text-center'} onClick={redirectToBlack}>Перейти на сайт</button>
+
+                                    <button
+                                        style={{borderRadius: "14px"}}
+                                        className="animated-stripe   heartbeat uppercase  font-bold bg-green-400 text-white text-center inline-block px-6 py-4 w-full rounded-md hover:bg-green-700 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400"
+                                        onClick={redirectToBlack}
+                                    >
+                                        <div className={'flex gap-5 items-center justify-center'}>
+                                            <div>
+                                                Перейти на сайт
+                                            </div>
+                                            <FaArrowRight className={' heartbeat'} size={20}/>
+                                        </div>
+                                    </button>
                                 </div>
 
 
                                 <div
-                                    style={{
-                                        borderRadius: "14px",
-                                        backgroundColor: "rgba(255, 255, 255, 0.05)",
-                                    }}
-                                    className={'mt-2 bg-green-400 px-[24px] py-[16px] flex justify-center  max-w-[500px] min-w-[300px]'}>
+                                    // style={{
+                                    //     borderRadius: "14px",
+                                    //     backgroundColor: "rgba(255, 255, 255, 0.05)",
+                                    // }}
+                                    className={'mt-2   flex justify-center  max-w-[500px] min-w-[300px]'}>
                                     {/*<Link*/}
                                     {/*    className={' text-white text-center font-bold'}*/}
                                     {/*    href={'tel:+37379944150'}*/}
                                     {/*>*/}
                                     {/*    Позвонить*/}
                                     {/*</Link>*/}
-                                    <button className={'text-white text-center'} onClick={callPhone}>Позвонить</button>
+                                    <button
+                                        style={{
+                                            borderRadius: "14px",
+                                            // backgroundColor: "rgba(255, 255, 255, 0.05)",
+                                        }}
+                                        className="animated-flash-pulse  gap-2 border-[1px] border-white uppercase  font-bold  text-white text-center inline-block px-6 py-4 w-full rounded-md"
+
+                                        onClick={callPhone}
+                                    >
+                                        <div className={'flex gap-5 items-center justify-center'}>
+                                            <div>
+                                                Позвонить
+                                            </div>
+                                            <FaPhoneVolume className={' heartbeat'} size={20} />
+                                        </div>
+
+                                    </button>
                                 </div>
 
                                 {/*<div>*/}
@@ -112,9 +141,6 @@ const GoogleWhitePage = () => {
                                         <div className="heartecho">❤️</div>
                                     </div>
                                 </div>
-
-
-
 
 
                             </div>
