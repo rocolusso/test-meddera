@@ -34,7 +34,7 @@ export default function Home() {
       <>
           <Head>
               <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+              <meta http-equiv="content-language" content="ru"/>
 
               <title>Екатерина Пынтя – Дерматолог-косметолог в Бельцах</title>
               <meta
@@ -122,14 +122,14 @@ export default function Home() {
           </div>
           <div className={'about mt-10 mx-auto container p-5 shadow-2xl rounded-3xl'} id={'about'}>
               <div className={'mx-auto flex justify-center py-10'}>
-                  <h2 className={'text-[36px] uppercase underline border py-5 px-10  border-black hover:bg-green-400 duration-300 hover:scale-105'}>Обо
-                      мне</h2>
+                  <p className={'text-[36px] uppercase underline border py-5 px-10  border-black hover:bg-green-400 duration-300 hover:scale-105'}>Обо
+                      мне</p>
               </div>
               <div className={' flex mx-auto justify-between flex-wrap'}>
                   <div className={''}>
                       <div>
                           <div className={'mx-auto flex justify-center  flex-col'}>
-                              <h2 className={'text-[2rem] uppercase  text-center '}>Пынтя Екатерина</h2>
+                              <p className={'text-[2rem] uppercase  text-center '}>Пынтя Екатерина</p>
                           </div>
                           <div className={'mx-auto grid grid-cols-1 sm:grid-cols-2 p-5'}>
                               <ul className={'max-w-[450px] text-[14px] '}>
@@ -168,7 +168,7 @@ export default function Home() {
                       </div>
                       <div>
                           <div className={'mx-auto flex justify-center  flex-col'}>
-                              <h3 className={'text-[2rem] uppercase  text-center '}>Специализация</h3>
+                              <p className={'text-[2rem] uppercase  text-center '}>Специализация</p>
                           </div>
                           <div className={'mx-auto flex justify-center p-5'}>
                               <ul className={'max-w-[450px] text-[14px]'}>
@@ -223,7 +223,7 @@ export default function Home() {
           </div>
           <div className={'services container mx-auto m-10'} id={'services'}>
               <div className={'mx-auto flex justify-center py-10'}>
-                  <h2 className={'text-[36px] uppercase underline border py-5 px-10  border-black hover:bg-green-400 duration-300 hover:scale-105'}>Услуги</h2>
+                  <p className={'text-[36px] uppercase underline border py-5 px-10  border-black hover:bg-green-400 duration-300 hover:scale-105'}>Услуги</p>
               </div>
               <div className={'grid grid-cols-1 sm:grid-cols-3 mx-auto gap-10 '}>
                   <Link href={'services/2'}
@@ -239,7 +239,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Дерматологическая консультация</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Дерматологическая консультация</p>
                       </div>
                   </Link>
                   <Link href={'services/1'}
@@ -255,7 +255,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Консультация у врача-дерматокосметолога</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Консультация у врача-дерматокосметолога</p>
                       </div>
                   </Link>
                   <Link href={'services/3'}
@@ -271,7 +271,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Чистка лица</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Чистка лица</p>
                       </div>
                   </Link>
                   <Link href={'services/4'}
@@ -287,7 +287,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Массаж лица</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Массаж лица</p>
                       </div>
                   </Link>
                   <Link href={'services/5'}
@@ -303,7 +303,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Карбокситерапия</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Карбокситерапия</p>
                       </div>
                   </Link>
                   <Link href={'services/6'}
@@ -319,7 +319,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Пиллинг</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Пиллинг</p>
                       </div>
                   </Link>
                   <Link href={'services/7'}
@@ -335,7 +335,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Альгинатная маска</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Альгинатная маска</p>
                       </div>
                   </Link>
                   <Link href={'services/8'}
@@ -351,7 +351,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Терапия анти-акне</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Терапия анти-акне</p>
                       </div>
                   </Link>
                   <Link href={'services/9'}
@@ -367,7 +367,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Терапия против пигментации</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Терапия против пигментации</p>
                       </div>
                   </Link>
                   <Link href={'services/10'}
@@ -383,7 +383,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Дермапен</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Дермапен</p>
                       </div>
                   </Link>
                   <Link href={'services/11'}
@@ -399,7 +399,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Мезотерапия лица</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Мезотерапия лица</p>
                       </div>
                   </Link>
                   <Link href={'services/12'}
@@ -415,7 +415,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Мезотерапия для волос</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Мезотерапия для волос</p>
                       </div>
                   </Link>
 
@@ -432,7 +432,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Увеличение губ</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Увеличение губ</p>
                       </div>
                   </Link>
 
@@ -449,7 +449,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Ботокс</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Ботокс</p>
                       </div>
                   </Link>
 
@@ -466,7 +466,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Биоревитализация</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Биоревитализация</p>
                       </div>
                   </Link>
 
@@ -484,7 +484,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Контурная пластика филлерами</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Контурная пластика филлерами</p>
                       </div>
                   </Link>
 
@@ -502,7 +502,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Инъекции липолитиков</h3>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Инъекции липолитиков</p>
                       </div>
                   </Link>
 

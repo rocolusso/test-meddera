@@ -30,33 +30,35 @@ import Head from "next/head";
 export default function Home() {
   return (
        <>
-      <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+           <Head>
+               <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+               <meta http-equiv="content-language" content="ro"/>
 
-          <title>Екатерина Пынтя – Dermatolog-cosmetolog în Bălți</title>
-          <meta
-              name="description"
-              content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie."
-          />
 
-          <meta property="og:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți" />
-          <meta property="og:description"
-                content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie." />
-          <meta property="og:image" content="/assets/img/seo-meta/facebook-meta.jpg" />
-          <meta property="og:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți" />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://meddera.md" />
+               <title>Екатерина Пынтя – Dermatolog-cosmetolog în Bălți</title>
+               <meta
+                   name="description"
+                   content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie."
+               />
 
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți" />
-          <meta name="twitter:description"
-                content="Екатерина Пынтя – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie." />
-          <meta name="twitter:image" content="/assets/img/seo-meta/twitter-meta.jpg"  />
-          <meta name="twitter:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți" />
-          <meta name="twitter:site" content="@your_twitter_handle" />
-      </Head>
+               <meta property="og:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți"/>
+               <meta property="og:description"
+                     content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie."/>
+               <meta property="og:image" content="/assets/img/seo-meta/facebook-meta.jpg"/>
+               <meta property="og:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți"/>
+               <meta property="og:image:width" content="1200"/>
+               <meta property="og:image:height" content="630"/>
+               <meta property="og:type" content="website"/>
+               <meta property="og:url" content="https://meddera.md"/>
+
+               <meta name="twitter:card" content="summary_large_image"/>
+               <meta name="twitter:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți"/>
+               <meta name="twitter:description"
+                     content="Екатерина Пынтя – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie."/>
+               <meta name="twitter:image" content="/assets/img/seo-meta/twitter-meta.jpg"/>
+               <meta name="twitter:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți"/>
+               <meta name="twitter:site" content="@your_twitter_handle"/>
+           </Head>
 
            <div>
                <div
@@ -66,7 +68,6 @@ export default function Home() {
                        <Link href={'/'}>
                            <div className={'max-w-[300px]'}>
                                <Image
-                                   // className="dark:invert"
                                    src={pintea}
                                    alt="pintea"
                                    width={1000}
@@ -124,15 +125,15 @@ export default function Home() {
                </div>
                <div className={'about mt-10 mx-auto container p-5 shadow-2xl rounded-3xl'} id={'about'}>
                    <div className={'mx-auto flex justify-center py-10'}>
-                       <h2 className={'text-[36px] uppercase underline border py-5 px-10  border-black hover:bg-green-400 duration-300 hover:scale-105'}>
+                       <p className={'text-[36px] uppercase underline border py-5 px-10  border-black hover:bg-green-400 duration-300 hover:scale-105'}>
                            Despre mine
-                       </h2>
+                       </p>
                    </div>
                    <div className={' flex mx-auto justify-between flex-wrap'}>
                        <div className={''}>
                            <div>
                                <div className={'mx-auto flex justify-center  flex-col'}>
-                                   <h2 className={'text-[2rem] uppercase  text-center '}>Pîntea Ecaterina </h2>
+                                   <p className={'text-[2rem] uppercase  text-center '}>Pîntea Ecaterina </p>
                                </div>
                                <div className={'mx-auto grid grid-cols-1 sm:grid-cols-2 p-5'}>
                                    <ul className={'max-w-[450px] text-[14px] '}>
@@ -182,7 +183,7 @@ export default function Home() {
                            </div>
                            <div>
                                <div className={'mx-auto flex justify-center  flex-col'}>
-                                   <h3 className={'text-[2rem] uppercase  text-center '}>Specializare</h3>
+                                   <p className={'text-[2rem] uppercase  text-center '}>Specializare</p>
                                </div>
                                <div className={'mx-auto flex justify-center p-5'}>
                                    <ul className={'max-w-[450px] text-[14px]'}>
@@ -242,7 +243,7 @@ export default function Home() {
 
                <div className={'services container mx-auto m-10'} id={'services'}>
                    <div className={'mx-auto flex justify-center py-10'}>
-                       <h2 className={'text-[36px] uppercase underline border py-5 px-10  border-black hover:bg-green-400 duration-300 hover:scale-105'}>Servicii</h2>
+                       <p className={'text-[36px] uppercase underline border py-5 px-10  border-black hover:bg-green-400 duration-300 hover:scale-105'}>Servicii</p>
                    </div>
                    <div className={'grid grid-cols-1 sm:grid-cols-3 mx-auto gap-10 '}>
 
@@ -260,7 +261,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Consultația dermatologică</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Consultația dermatologică</p>
                            </div>
                        </Link>
 
@@ -278,8 +279,8 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Consultația la medicul
-                                   dermatocosmetolog</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Consultația la medicul
+                                   dermatocosmetolog</p>
                            </div>
                        </Link>
 
@@ -297,7 +298,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Curățirea feței</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Curățirea feței</p>
                            </div>
                        </Link>
 
@@ -314,7 +315,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Masaj facial</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Masaj facial</p>
                            </div>
                        </Link>
 
@@ -331,7 +332,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Carboxiterapie</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Carboxiterapie</p>
                            </div>
                        </Link>
 
@@ -348,7 +349,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Peeling</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Peeling</p>
                            </div>
                        </Link>
 
@@ -365,7 +366,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Masca alginată</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Masca alginată</p>
                            </div>
                        </Link>
 
@@ -382,7 +383,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Terapia anti-acnee</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Terapia anti-acnee</p>
                            </div>
                        </Link>
 
@@ -399,7 +400,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Terapie antipigmentară</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Terapie antipigmentară</p>
                            </div>
                        </Link>
 
@@ -416,7 +417,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Dermapen</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Dermapen</p>
                            </div>
                        </Link>
 
@@ -433,7 +434,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Mezoterapia facială</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Mezoterapia facială</p>
                            </div>
                        </Link>
 
@@ -450,7 +451,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Mezoterapia pentru păr</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Mezoterapia pentru păr</p>
                            </div>
                        </Link>
 
@@ -467,7 +468,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Mărirea buzelor</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Mărirea buzelor</p>
                            </div>
                        </Link>
 
@@ -484,7 +485,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Terapie antirid Botox</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Terapie antirid Botox</p>
                            </div>
                        </Link>
 
@@ -501,7 +502,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Biorevitalizarea</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Biorevitalizarea</p>
                            </div>
                        </Link>
 
@@ -519,7 +520,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Plastica de contur cu fillere</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Plastica de contur cu fillere</p>
                            </div>
                        </Link>
 
@@ -537,7 +538,7 @@ export default function Home() {
                                />
                            </div>
                            <div>
-                               <h3 className={'text-[1.8rem] p-5 uppercase'}>Injecții lipolitice</h3>
+                               <p className={'text-[1.8rem] p-5 uppercase'}>Injecții lipolitice</p>
                            </div>
                        </Link>
 
