@@ -75,9 +75,9 @@ const GoogleWhitePage = () => {
                             </div>
                             <div className={'text-white text-center'}>
                                 <h1 className={'text-[24px] mt-4 font-bold'}>Екатерина Пынтя</h1>
-                                <p>Дерматокосметолг</p>
+                                <p className={'py-2'}>Дерматокосметолг | Клиника Meddera | Бельцы</p>
                             </div>
-                            <div className={'mt-2 container mx-auto'}>
+                            <div className={'mt-2 container mx-auto py-4'}>
 
 
                                 <div
@@ -109,7 +109,7 @@ const GoogleWhitePage = () => {
                                     //     borderRadius: "14px",
                                     //     backgroundColor: "rgba(255, 255, 255, 0.05)",
                                     // }}
-                                    className={'mt-2   flex justify-center  max-w-[500px] min-w-[315px]'}>
+                                    className={'mt-4   flex justify-center  max-w-[500px] min-w-[315px]'}>
                                     {/*<Link*/}
                                     {/*    className={' text-white text-center font-bold'}*/}
                                     {/*    href={'tel:+37379944150'}*/}
