@@ -77,7 +77,7 @@ const GoogleWhitePage = () => {
 
 
                                 <div
-                                    className={'flex justify-center  max-w-[500px] min-w-[300px]'}>
+                                    className={'flex justify-center  max-w-[500px] min-w-[315px]'}>
                                     {/*<Link*/}
                                     {/*    className={' text-white text-center '}*/}
                                     {/*    href={'/'}*/}
@@ -87,7 +87,7 @@ const GoogleWhitePage = () => {
 
                                     <button
                                         style={{borderRadius: "14px"}}
-                                        className="animated-stripe   heartbeat uppercase  font-bold bg-green-400 text-white text-center inline-block px-6 py-4 w-full rounded-md hover:bg-green-700 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400"
+                                        className="animated-stripe   heartbeat uppercase  font-bold bg-green-400 text-white text-center inline-block px-10 py-6 w-full rounded-md hover:bg-green-700 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400"
                                         onClick={redirectToBlack}
                                     >
                                         <div className={'flex gap-5 items-center justify-center'}>
@@ -105,7 +105,7 @@ const GoogleWhitePage = () => {
                                     //     borderRadius: "14px",
                                     //     backgroundColor: "rgba(255, 255, 255, 0.05)",
                                     // }}
-                                    className={'mt-2   flex justify-center  max-w-[500px] min-w-[300px]'}>
+                                    className={'mt-2   flex justify-center  max-w-[500px] min-w-[315px]'}>
                                     {/*<Link*/}
                                     {/*    className={' text-white text-center font-bold'}*/}
                                     {/*    href={'tel:+37379944150'}*/}
@@ -117,7 +117,7 @@ const GoogleWhitePage = () => {
                                             borderRadius: "14px",
                                             // backgroundColor: "rgba(255, 255, 255, 0.05)",
                                         }}
-                                        className="animated-flash-pulse  gap-2 border-[1px] border-white uppercase  font-bold  text-white text-center inline-block px-6 py-4 w-full rounded-md"
+                                        className="animated-flash-pulse  gap-2 border-[1px] border-white uppercase  font-bold  text-white text-center inline-block px-10 py-6 w-full rounded-md"
 
                                         onClick={callPhone}
                                     >
