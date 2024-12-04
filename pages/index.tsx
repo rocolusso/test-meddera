@@ -25,24 +25,60 @@ import pintea from "@/public/assets/img/pintea.png";
 import Link from "next/link";
 import Contacts from "@/components/contacts";
 import BurgerMenu from "@/components/burgerMenu";
+import Head from "next/head";
 
 export default function Home() {
   return (
-      <div>
-          <div className={'header sticky top-0 left-0 backdrop-blur-2xl   header container mx-auto sm:pt-10   bg-white z-40'}>
-              <div className={'flex gap-5 items-center border p-5 backdrop-blur-2xl sm:rounded-3xl sm:shadow-2xl z-50'}>
-                  <Link href={'/'}>
-                      <div className={'max-w-[300px]'}>
-                          <Image
-                              // className="dark:invert"
-                              src={pintea}
-                              alt="pintea"
-                              width={1000}
-                              height={20}
-                              priority
-                          />
-                      </div>
-                  </Link>
+      <>
+          <Head>
+              <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+              <meta name="title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах | Клиника Meddera"/>
+              <meta
+                  name="description"
+                  content="Дерматолог-косметолог Екатерина Пынтя с опытом более 11 лет предлагает услуги в клинике Meddera в Бельцах: дерматология, косметология, дерматоскопия, удаление образований, ботокс, филлеры, мезотерапия и онко-дерматология."
+              />
+
+
+              <meta property="og:title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах | Клиника Meddera"/>
+              <meta property="og:description"
+                    content="Дерматолог-косметолог Екатерина Пынтя с опытом более 11 лет предлагает услуги в клинике Meddera в Бельцах: дерматология, косметология, дерматоскопия, удаление образований, ботокс, филлеры, мезотерапия и онко-дерматология."/>
+              <meta property="og:image" content="https://example.com/path-to-image.jpg"/>
+              <meta property="og:image:alt" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
+              <meta property="og:image:width" content="1200"/>
+              <meta property="og:image:height" content="630"/>
+              <meta property="og:type" content="website"/>
+              <meta property="og:url" content="https://example.com"/>
+
+
+              <meta name="twitter:card" content="summary_large_image"/>
+              <meta name="twitter:title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах | Клиника Meddera"/>
+              <meta name="twitter:description"
+                    content="Дерматолог-косметолог Екатерина Пынтя с опытом более 11 лет предлагает услуги в клинике Meddera в Бельцах: дерматология, косметология, дерматоскопия, удаление образований, ботокс, филлеры, мезотерапия и онко-дерматология."/>
+              <meta name="twitter:image" content="https://example.com/path-to-image.jpg"/>
+              <meta name="twitter:image:alt" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
+              <meta name="twitter:site" content="@your_twitter_handle"/>
+
+
+          </Head>
+          <div>
+              <div
+                  className={'header sticky top-0 left-0 backdrop-blur-2xl   header container mx-auto sm:pt-10   bg-white z-40'}>
+                  <div
+                      className={'flex gap-5 items-center border p-5 backdrop-blur-2xl sm:rounded-3xl sm:shadow-2xl z-50'}>
+                      <Link href={'/'}>
+                          <div className={'max-w-[300px]'}>
+                              <Image
+                                  // className="dark:invert"
+                                  src={pintea}
+                                  alt="pintea"
+                                  width={1000}
+                                  height={20}
+                                  priority
+                              />
+                          </div>
+                      </Link>
                   <div className={'flex justify-between items-center sm:w-full'}>
                       <nav className={'hidden sm:flex ml-20  gap-10 uppercase underline font-bold text-xl'}>
                           <Link href={'/#about'}
@@ -113,8 +149,7 @@ export default function Home() {
                                       "                                      de Medicină Estetică și Cosmetologie VSV Beauty SRL\" г.Бельцы 2018-2020"}</p></li>
                               </ul>
                               <ul className={'max-w-[450px] text-[14px] '}>
-                                  <li><p className={'list-icon '}>{'Врач Дерматовенеролог в Центре "Магнифик Норд"\n' +
-                                      '                                      2018-2022'}</p>
+                                  <li><p className={'list-icon '}>{'Врач Дерматовенеролог в Центре "Магнифик Норд"  с 2018'}</p>
                                   </li>
                                   <li><p className={'list-icon '}>{"Дерматолог-косметолог, специалист центра \"Magnific\n" +
                                       "                                      MedBeauty\" SRL г.Бельцы с 2020"}</p>
@@ -150,8 +185,7 @@ export default function Home() {
                                   </li>
                                   <li><p className={'list-icon '}>Эстетическая косметология</p>
                                   </li>
-                                  <li><p className={'list-icon '}>Инекционные процедуры (Филлеры, Контурная пластика
-                                      лица)</p>
+                                  <li><p className={'list-icon '}>Инъекционные процедуры (Филлеры, Контурная пластика)</p>
                                   </li>
                                   <li><p className={'list-icon '}>Аугментация и увеличение губ</p>
                                   </li>
@@ -478,5 +512,6 @@ export default function Home() {
 
 
       </div>
+      </>
   );
 }

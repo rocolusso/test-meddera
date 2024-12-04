@@ -18,7 +18,6 @@ const Service3
                     <Link href={'/'}>
                         <div className={'max-w-[300px]'}>
                             <Image
-                                // className="dark:invert"
                                 src={pintea}
                                 alt="pintea"
                                 width={1000}
@@ -64,7 +63,7 @@ const Service3
 
             <div className={'container mx-auto'}>
                 <div className={'py-10 px-5'}>
-                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Curățarea feței</h1>
+                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Curățirea feței</h1>
                 </div>
                 <div className={'flex justify-center'}>
                     <Image
@@ -78,7 +77,7 @@ const Service3
                 </div>
                 <div>
                     <p className={'max-w-[1000px] mx-auto py-10 px-5'}>
-                        Curățarea feței este o procedură cosmetică menită să ofere o curățare profundă a pielii și să
+                        Curățirea feței este o procedură cosmetică menită să ofere o curățare profundă a pielii și să
                         îmbunătățească textura și culoarea acesteia. Procedura ajută la eliminarea impurităților,
                         excesului de sebum și a celulelor moarte, contribuind astfel la micșorarea porilor și la
                         reducerea riscului de inflamații.

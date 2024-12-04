@@ -62,7 +62,7 @@ const Service17
             </div>
             <div className={'container mx-auto'}>
                 <div className={'py-10 px-5'}>
-                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Injecții lipolitice</h1>
+                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Lipolitice</h1>
                 </div>
                 <div className={'flex justify-center'}>
                     <Image
@@ -76,7 +76,7 @@ const Service17
                 </div>
                 <div>
                     <p className={'max-w-[1000px] mx-auto py-10 px-5'}>
-                        Injectările de lipolitici sunt o procedură destinată reducerii depozitelor localizate de grăsime
+                        Lipolitice sunt o procedură destinată reducerii depozitelor localizate de grăsime
                         și îmbunătățirii contururilor corpului și feței. Lipoliticii sunt preparate care conțin
                         substanțe active ce ajută la descompunerea grăsimii și eliminarea acesteia din organism,
                         contribuind astfel la reducerea volumelor în zonele problematice. Administrarea lipoliticilor

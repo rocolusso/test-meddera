@@ -62,7 +62,7 @@ const Service9
             </div>
             <div className={'container mx-auto'}>
                 <div className={'py-10 px-5'}>
-                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Terapie împotriva pigmenției</h1>
+                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Terapie antipigmentară</h1>
                 </div>
                 <div className={'flex justify-center'}>
                     <Image
@@ -76,13 +76,16 @@ const Service9
                 </div>
                 <div>
                     <p className={'max-w-[1000px] mx-auto py-10 px-5'}>
-                        Terapia împotriva pigmentării este o procedură cosmetologică destinată iluminării și eliminării
-                        petelor pigmentare, hiperpigmentației și neregulilor tonului pielii. În timpul procedurii, se
-                        utilizează peelinguri și produse speciale de iluminare, care blochează producția de melanina și
-                        contribuie la distribuirea uniformă a acesteia în piele. Procedura este potrivită pentru
-                        tratarea petelor de vârstă, a leziunilor cauzate de soare, precum și a hiperpigmentației
-                        post-inflamatorii. Realizarea regulată a acestor proceduri ajută la îmbunătățirea semnificativă
-                        a culorii tenului și la obținerea unei pielii mai netede și strălucitoare.
+                        Terapie antipigmentară este o procedură cosmetologică destinată iluminării
+                        și eliminării petelor pigmentare, hiperpigmentației. În timpul procedurii,
+                        se utilizează peelinguri și produse speciale de iluminare,
+                        care blochează producția de melanina și contribuie la
+                        distribuirea uniformă a acesteia în piele. Procedura este
+                        potrivită pentru tratarea fotoîmbătrînirii, cronoîmbătrînrii,
+                        petelor de vârstă, a leziunilor cauzate de soare, precum și a hiperpigmentației
+                        post-inflamatorii. Realizarea regulată a acestor proceduri ajută la
+                        îmbunătățirea semnificativă a culorii tenului și la obținerea
+                        unei pielii mai netede și strălucitoare.
                     </p>
                 </div>
             </div>

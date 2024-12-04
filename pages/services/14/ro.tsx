@@ -62,7 +62,7 @@ const Service13
             </div>
             <div className={'container mx-auto'}>
                 <div className={'py-10 px-5'}>
-                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Botoxul</h1>
+                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Terapie antirid Botox</h1>
                 </div>
                 <div className={'flex justify-center'}>
                     <Image
@@ -76,7 +76,7 @@ const Service13
                 </div>
                 <div>
                     <p className={'max-w-[1000px] mx-auto py-10 px-5'}>
-                        Botoxul este o procedură cosmetologică prin care, cu ajutorul injecțiilor cu toxină botulinică
+                        Terapie antirid Botox este o procedură cosmetologică prin care, cu ajutorul injecțiilor cu toxină botulinică
                         (botox), se blochează temporar impulsurile nervoase, relaxând mușchii, ceea ce permite reducerea
                         intensității ridurilor și liniilor de pe față. Botoxul este deosebit de eficient în eliminarea
                         ridurilor mimice de pe frunte, din jurul ochilor (laba gâștei), precum și între sprâncene

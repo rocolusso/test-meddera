@@ -62,7 +62,7 @@ const Service7
             </div>
             <div className={'container mx-auto'}>
                 <div className={'py-10 px-5'}>
-                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Masca alginică</h1>
+                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Masca alginată</h1>
                 </div>
                 <div className={'flex justify-center'}>
                     <Image
@@ -76,15 +76,17 @@ const Service7
                 </div>
                 <div>
                     <p className={'max-w-[1000px] mx-auto py-10 px-5'}>
-                        Mască alginică – un mijloc eficient de îngrijire a pielii, realizat pe bază de alginați, care se
-                        obțin din algele marine brune. Datorită conținutului ridicat de minerale și microelemente,
-                        măștile alginice au un puternic efect hidratant, de întindere și calmare. Masca se aplică pe
-                        față sub formă de amestec dens și se întărește, formând un strat compact, care ajută substanțele
-                        active să pătrundă mai adânc în piele. În funcție de compoziție, măștile alginice pot ilumina
-                        suplimentar pigmentația, îmbunătăți textura pielii și ajuta la eliminarea inflamațiilor. După
-                        procedură, pielea arată proaspătă, hidratată și fermă, iar tonul acesteia devine mai uniform și
-                        radiant. Măștile alginice sunt ideale pentru orice tip de piele și sunt frecvent utilizate la
-                        finalul tratamentelor profesionale, amplificând efectul altor proceduri.
+                        Mască alginată – un mijloc eficient de îngrijire a pielii,
+                        realizat pe bază de alginați, care se obțin din algele marine brune.
+                        Datorită conținutului ridicat de minerale și microelemente,
+                        măștile alginate au un puternic efect hidratant, de întindere și calmare.
+                        Masca se aplică pe față sub formă de amestec dens și se întărește, formând un strat compact,
+                        care ajută substanțele active să pătrundă mai adânc în piele. În funcție de compoziție,
+                        măștile alginate pot ilumina suplimentar pigmentația, îmbunătăți textura pielii
+                        și ajuta la eliminarea inflamațiilor. După procedură, pielea arată proaspătă,
+                        hidratată și fermă, iar tonul acesteia devine mai uniform și radiant.
+                        Măștile alginate sunt ideale pentru orice tip de piele și sunt
+                        frecvent utilizate la finalul tratamentelor profesionale, amplificând efectul altor proceduri.
                     </p>
                 </div>
             </div>

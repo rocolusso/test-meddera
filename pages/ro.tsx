@@ -123,8 +123,7 @@ export default function Home() {
                               <ul className={'max-w-[450px] text-[14px] '}>
 
 
-                                  <li><p className={'list-icon '}>{'Medic Dermatovenerolog la Centrul "Magnific Nord"\n' +
-                                      '                                      2018-2022'}</p>
+                                  <li><p className={'list-icon '}>{'Medic Dermatovenerolog la Centrul "Magnific Nord" din 2018'}</p>
                                   </li>
 
                                   <li><p className={'list-icon '}>{'Dermatolog-cosmetolog, specialist la "Magnific\n' +
@@ -164,7 +163,7 @@ export default function Home() {
                                   <li><p className={'list-icon '}>Dermatologie estetică</p>
                                   </li>
 
-                                  <li><p className={'list-icon '}>Proceduri injectabile (Filleri, Conturarea feței)</p>
+                                  <li><p className={'list-icon '}>Proceduri injectabile (Fileri, Conturare facială)</p>
                                   </li>
                                   <li><p className={'list-icon '}>Augmentarea și mărirea volumului buzelor</p>
                                   </li>
@@ -258,7 +257,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Curățarea feței</h3>
+                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Curățirea feței</h3>
                       </div>
                   </Link>
 
@@ -326,7 +325,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Masca alginică</h3>
+                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Masca alginată</h3>
                       </div>
                   </Link>
 
@@ -360,7 +359,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Terapie împotriva pigmenției</h3>
+                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Terapie antipigmentară</h3>
                       </div>
                   </Link>
 
@@ -445,7 +444,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Botoxul</h3>
+                          <h3 className={'text-[1.8rem] p-5 uppercase'}>Terapie antirid Botox</h3>
                       </div>
                   </Link>
 

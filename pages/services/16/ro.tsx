@@ -62,7 +62,7 @@ const Service16
             </div>
             <div className={'container mx-auto'}>
                 <div className={'py-10 px-5'}>
-                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Plastica de contur cu fillere</h1>
+                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Plastia de contur</h1>
                 </div>
                 <div className={'flex justify-center'}>
                     <Image
@@ -76,7 +76,7 @@ const Service16
                 </div>
                 <div>
                     <p className={'max-w-[1000px] mx-auto py-10 px-5'}>
-                        Plastica de contur cu fillere este o procedură cosmetologică în care, cu ajutorul injecțiilor de
+                        Plastia de contur este o procedură cosmetologică în care, cu ajutorul injecțiilor de
                         diverse substanțe, cum ar fi acidul hialuronic, introduse în zonele problematice ale feței, se
                         restabilesc contururile, volumul și forma. Această procedură este utilizată pentru corectarea
                         ridurilor, îmbunătățirea conturului feței, mărirea volumului obrajilor, bărbiei și pentru

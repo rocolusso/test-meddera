@@ -59,6 +59,8 @@ const GoogleWhitePage = () => {
     return (
         <>
             <Head>
+                <meta name="robots" content="noindex"/>
+
                 <meta charSet="utf-8"/>
                 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
                 <title>Екатерина Пынтя</title>
@@ -67,6 +69,7 @@ const GoogleWhitePage = () => {
                 <link rel="preconnect" href="https://www.googletagmanager.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
+
             </Head>
             <div className={' '}
 

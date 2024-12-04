@@ -17,7 +17,6 @@ const Service6
                     <Link href={'/'}>
                         <div className={'max-w-[300px]'}>
                             <Image
-                                // className="dark:invert"
                                 src={pintea}
                                 alt="pintea"
                                 width={1000}
@@ -76,13 +75,13 @@ const Service6
                 </div>
                 <div>
                     <p className={'max-w-[1000px] mx-auto py-10 px-5'}>
-                        Peelingul este o procedură cosmetică menită să reînnoiască și să îmbunătățească starea pielii
-                        prin îndepărtarea celulelor moarte de pe suprafața acesteia. Există mai multe tipuri de
-                        peelinguri: chimic, mecanic, fiecare fiind potrivit pentru rezolvarea diverselor probleme, cum
-                        ar fi tenul tern, porii dilatați, pigmentarea, ridurile fine și neregularitățile texturii.
-                        Procedura stimulează reînnoirea celulară, ceea ce ajută la îmbunătățirea culorii și tonusului
-                        pielii, făcând-o mai netedă și radiantă. Un peeling profesional, realizat ținând cont de tipul
-                        și starea pielii, nu doar că reîmprospătează aspectul acesteia, ci și reduce vizibilitatea
+                        Peelingul este o procedură cosmetică menită să reînnoiască și să îmbunătățească
+                        starea pielii prin îndepărtarea celulelor moarte de pe suprafața acesteia. Există mai
+                        multe tipuri de peelinguri: chimic, mecanic, fiecare fiind potrivit pentru rezolvarea diverselor
+                        probleme, cum ar fi tenul problematic, porii dilatați, pigmentarea, ridurile fine și neregularitățile
+                        texturii. Procedura stimulează reînnoirea celulară, ceea ce ajută la îmbunătățirea culorii și tonusului
+                        pielii, făcând-o mai netedă și radiantă. Un peeling profesional, realizat ținând cont de tipul și
+                        starea pielii, nu doar că reîmprospătează aspectul acesteia, ci și reduce vizibilitatea
                         semnelor de îmbătrânire.
                     </p>
                 </div>
