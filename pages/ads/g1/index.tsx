@@ -12,31 +12,45 @@ const GoogleWhitePage = () => {
     const currentYear = date.getFullYear()
 
 
-    const event = ({ action, category, label, value }: any) => {
-        (window as any).gtag('event', action, {
-            event_category: category,
-            event_label: label,
-            value: value,
-        });
-    };
+    // const event = ({ action, category, label, value }: any) => {
+    //     (window as any).gtag('event', action, {
+    //         event_category: category,
+    //         event_label: label,
+    //         value: value,
+    //     });
+    // };
 
     const callPhone = () => {
-        event({
-            action: 'qualify_lead',
-            category: 'beauty',
-            label: 'Call from g-ads white-page-1',
-            value: 'Tesla',
+        // event({
+        //     action: 'qualify_lead',
+        //     category: 'beauty',
+        //     label: 'Call from g-ads white-page-1',
+        //     value: 'Tesla',
+        // });
+
+        (window as any).gtag('event', 'Нажатие на кнопку позвонить White /ads/g1', {
+            'action': 'click',
+            'target': 'tel:+37379944150',
         });
+
         window.location.href = 'tel:+37379944150';
     };
 
     const redirectToBlack = () => {
-        event({
-            action: 'search',
-            category: 'beauty',
-            label: 'Transfer to main',
-            value: 'Click',
+        // event({
+        //     action: 'search',
+        //     category: 'beauty',
+        //     label: 'Transfer to main',
+        //     value: 'Click',
+        // });
+
+
+        (window as any).gtag('event', 'redirect from white /ads/g1', {
+            'action': 'click',
+            'target': 'from meddera.md/ads/g1  meddera.md',
         });
+
+
         window.location.href = '/';
     };
 
@@ -90,7 +104,7 @@ const GoogleWhitePage = () => {
 
                                     <button
                                         style={{borderRadius: "14px"}}
-                                        className="animated-stripe   heartbeat uppercase  font-bold bg-green-400 text-white text-center inline-block px-10 py-6 w-full rounded-md hover:bg-green-700 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400"
+                                        className="go-to-main-btn-white-ads-1    animated-stripe   heartbeat uppercase  font-bold bg-green-400 text-white text-center inline-block px-10 py-6 w-full rounded-md hover:bg-green-700 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400"
                                         onClick={redirectToBlack}
                                     >
                                         <div className={'flex gap-5 items-center justify-center'}>
@@ -120,7 +134,7 @@ const GoogleWhitePage = () => {
                                             borderRadius: "14px",
                                             // backgroundColor: "rgba(255, 255, 255, 0.05)",
                                         }}
-                                        className="animated-flash-pulse  gap-2 border-[1px] border-white uppercase  font-bold  text-white text-center inline-block px-10 py-6 w-full rounded-md"
+                                        className="call-btn-white-ads-1        animated-flash-pulse  gap-2 border-[1px] border-white uppercase  font-bold  text-white text-center inline-block px-10 py-6 w-full rounded-md"
 
                                         onClick={callPhone}
                                     >
