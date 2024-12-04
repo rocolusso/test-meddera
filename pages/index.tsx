@@ -25,7 +25,9 @@ import pintea from "@/public/assets/img/pintea.png";
 import Link from "next/link";
 import Contacts from "@/components/contacts";
 import BurgerMenu from "@/components/burgerMenu";
-import Head from "next/head";
+
+import Head from 'next/head'
+
 
 export default function Home() {
   return (
@@ -34,7 +36,7 @@ export default function Home() {
               <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
-              <meta name="title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах | Клиника Meddera"/>
+              <title>Екатерина Пынтя – Дерматолог-косметолог в Бельцах | Клиника Meddera</title>
               <meta
                   name="description"
                   content="Дерматолог-косметолог Екатерина Пынтя с опытом более 11 лет предлагает услуги в клинике Meddera в Бельцах: дерматология, косметология, дерматоскопия, удаление образований, ботокс, филлеры, мезотерапия и онко-дерматология."
@@ -44,19 +46,19 @@ export default function Home() {
               <meta property="og:title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах | Клиника Meddera"/>
               <meta property="og:description"
                     content="Дерматолог-косметолог Екатерина Пынтя с опытом более 11 лет предлагает услуги в клинике Meddera в Бельцах: дерматология, косметология, дерматоскопия, удаление образований, ботокс, филлеры, мезотерапия и онко-дерматология."/>
-              <meta property="og:image" content="https://example.com/path-to-image.jpg"/>
+              <meta property="og:image" content="/assets/img/seo-meta/facebook-meta.jpg"/>
               <meta property="og:image:alt" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
               <meta property="og:image:width" content="1200"/>
               <meta property="og:image:height" content="630"/>
               <meta property="og:type" content="website"/>
-              <meta property="og:url" content="https://example.com"/>
+              <meta property="og:url" content="https://meddera.md"/>
 
 
               <meta name="twitter:card" content="summary_large_image"/>
               <meta name="twitter:title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах | Клиника Meddera"/>
               <meta name="twitter:description"
                     content="Дерматолог-косметолог Екатерина Пынтя с опытом более 11 лет предлагает услуги в клинике Meddera в Бельцах: дерматология, косметология, дерматоскопия, удаление образований, ботокс, филлеры, мезотерапия и онко-дерматология."/>
-              <meta name="twitter:image" content="https://example.com/path-to-image.jpg"/>
+              <meta name="twitter:image" content="/assets/img/seo-meta/twitter-meta.jpg"/>
               <meta name="twitter:image:alt" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
               <meta name="twitter:site" content="@your_twitter_handle"/>
 
@@ -511,7 +513,76 @@ export default function Home() {
           <Contacts locale={'ru'}/>
 
 
-      </div>
+              <div className={'seo-block bg-gray-400'}>
+                  <div style={{fontSize:"8px"}}  className={'container justify-center   mx-auto grid grid-cols-8 gap-3 '}>
+                      <div>
+                          <h1>Дерматолог в Бельцах – Екатерина Пынтя</h1>
+                          <h2>О Екатерине Пынтя – Профессиональный дерматолог с опытом 11 лет</h2>
+                          <h2>Услуги дерматолога в Бельцах от Екатерины Пынтя</h2>
+                      </div>
+
+                      <div>
+                          <h3>Диагностика и лечение дерматологических заболеваний</h3>
+                          <ul>
+                              <li><p>Дерматология: профессиональный подход к лечению акне, экземы, псориаза и других
+                                  кожных
+                                  заболеваний.</p></li>
+                              <li><p>Онко-дерматология: ранняя диагностика и лечение доброкачественных и злокачественных
+                                  кожных новообразований.</p></li>
+                              <li><p>Дерматоскопия: точная диагностика родинок и кожных поражений.</p></li>
+                          </ul>
+                      </div>
+
+
+                      <div>
+                          <h3>Эстетическая косметология в Бельцах</h3>
+                          <ul>
+                              <li><p>Инъекции ботокса и филлеров для коррекции возрастных изменений.</p></li>
+                              <li><p>Контурная пластика и увеличение губ.</p></li>
+                              <li><p>Мезотерапия и биоревитализация для улучшения структуры кожи.</p></li>
+                              <li><p>Полинуклеотиды, коллагеностимуляторы для естественного омоложения.</p></li>
+                          </ul>
+                      </div>
+
+
+                      <div>
+                          <h3>Удаление доброкачественных образований</h3>
+                          <p>Современные методы удаления образований: радиокаутер, электрокоагуляция, Jett Plasma.
+                              Безопасные и эффективные процедуры для чистой и здоровой кожи.</p>
+
+                      </div>
+
+
+                      <div>
+                          <h2>Центр Meddera – Современная клиника в Бельцах</h2>
+                          <p>Екатерина Пынтя является основателем Центра "Meddera", открытого в апреле 2024 года.
+                              Клиника предлагает полный спектр услуг в области дерматологии и косметологии, используя
+                              передовые технологии и современные методики.</p>
+
+                      </div>
+
+                      <div>
+                          <h2>Почему выбирают Екатерину Пынтя как дерматолога в Бельцах?</h2>
+                          <ul>
+                              <li><p>Опыт работы в дерматологии – 11 лет.</p></li>
+                              <li><p>Сертифицированный косметолог с 7-летним стажем.</p></li>
+                              <li><p>Индивидуальный подход к каждому пациенту.</p></li>
+                              <li><p>Использование передовых методик и материалов высокого качества.</p></li>
+                          </ul>
+                      </div>
+
+                      <div>
+                          <h2>Как записаться на прием к дерматологу в Бельцах?</h2>
+                          <p>Свяжитесь с Центром "Meddera", чтобы записаться на консультацию к Екатерине Пынтя. Она поможет решить дерматологические и эстетические проблемы с профессиональным подходом.</p>
+                      </div>
+
+
+
+
+                  </div>
+              </div>
+
+          </div>
       </>
   );
 }
