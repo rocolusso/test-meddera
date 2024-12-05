@@ -33,10 +33,10 @@ const GoogleWhitePage = () => {
 
         (window as any).gtag('event', 'Нажатие на кнопку позвонить White /ads/g1', {
             'action': 'click',
-            'target': 'tel:+37379944150',
+            'target': 'tel:+37368422024',
         });
 
-        window.location.href = 'tel:+37379944150';
+        window.location.href = 'tel:+37368422024';
     };
 
     const redirectToBlack = () => {

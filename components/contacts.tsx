@@ -18,7 +18,7 @@ const Contacts = ({locale}:{locale:string}) => {
     }
 
     const callPhone = () => {
-        window.location.href ='tel:+37379944150'
+        window.location.href ='tel:+37368550030'
     }
     return (
         <div className={'contacts mt-10'} id={'contacts'}>
@@ -62,7 +62,7 @@ const Contacts = ({locale}:{locale:string}) => {
                                 <div className={'flex gap-5 items-center justify-center'}>
                                     < FaPhoneVolume size={'32px'} className={''}/>
                                     <div>
-                                        +37379944150
+                                        +37368550030
                                     </div>
                                 </div>
                             </button>
