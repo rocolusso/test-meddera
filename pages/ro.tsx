@@ -44,7 +44,7 @@ export default function Home() {
                <meta property="og:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți"/>
                <meta property="og:description"
                      content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie."/>
-               <meta property="og:image" content="/assets/img/seo-meta/facebook-meta.jpg"/>
+               {/*<meta property="og:image" content="/assets/img/seo-meta/facebook-meta.jpg"/>*/}
                <meta property="og:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți"/>
                <meta property="og:image:width" content="1200"/>
                <meta property="og:image:height" content="630"/>
@@ -55,7 +55,7 @@ export default function Home() {
                <meta name="twitter:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți"/>
                <meta name="twitter:description"
                      content="Екатерина Пынтя – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie."/>
-               <meta name="twitter:image" content="/assets/img/seo-meta/twitter-meta.jpg"/>
+               {/*<meta name="twitter:image" content="/assets/img/seo-meta/twitter-meta.jpg"/>*/}
                <meta name="twitter:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți"/>
                <meta name="twitter:site" content="@your_twitter_handle"/>
            </Head>

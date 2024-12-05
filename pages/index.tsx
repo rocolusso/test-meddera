@@ -46,7 +46,7 @@ export default function Home() {
               <meta property="og:title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
               <meta property="og:description"
                     content="Екатерина Пынтя – опытный дерматолог-косметолог в Бельцах. Клиника Meddera: дерматология, косметология, удаление образований, ботокс, филлеры, мезотерапия."/>
-              <meta property="og:image" content="/assets/img/seo-meta/facebook-meta.jpg"/>
+              {/*<meta property="og:image" content="/assets/img/seo-meta/facebook-meta.jpg"/>*/}
               <meta property="og:image:alt" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
               <meta property="og:image:width" content="1200"/>
               <meta property="og:image:height" content="630"/>
@@ -58,7 +58,7 @@ export default function Home() {
               <meta name="twitter:title" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
               <meta name="twitter:description"
                     content="Екатерина Пынтя – опытный дерматолог-косметолог в Бельцах. Клиника Meddera: дерматология, косметология, удаление образований, ботокс, филлеры, мезотерапия."/>
-              <meta name="twitter:image" content="/assets/img/seo-meta/twitter-meta.jpg"/>
+              {/*<meta name="twitter:image" content="/assets/img/seo-meta/twitter-meta.jpg"/>*/}
               <meta name="twitter:image:alt" content="Екатерина Пынтя – Дерматолог-косметолог в Бельцах"/>
               <meta name="twitter:site" content="@your_twitter_handle"/>
 
