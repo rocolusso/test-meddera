@@ -516,7 +516,7 @@ export default function Home() {
 
 
               <div className={'seo-block bg-gray-400'}>
-                  <div style={{fontSize:"8px"}}  className={'container justify-center   mx-auto grid sm:grid-cols-1 grid-cols-8 gap-3 '}>
+                  <div style={{fontSize:"8px"}}  className={'container justify-center   mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 '}>
                       <div>
                           <h1>Дерматолог в Бельцах – Екатерина Пынтя</h1>
                           <h2>О Екатерине Пынтя – Профессиональный дерматолог с опытом 11 лет</h2>

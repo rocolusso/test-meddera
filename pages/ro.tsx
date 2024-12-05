@@ -550,7 +550,7 @@ export default function Home() {
                <Contacts locale={'ro'}/>
 
                <div className={'seo-block bg-gray-400'}>
-                   <div style={{fontSize: "8px"}} className={'container justify-center mx-auto grid sm:grid-cols-1 grid-cols-8 gap-3'}>
+                   <div style={{fontSize: "8px"}} className={'container justify-center mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3'}>
                        <div>
                            <h1>Dermatolog în Bălți – Екатерина Пынтя</h1>
                            <h2>Despre Екатерина Пынтя – Dermatolog profesionist cu experiență de 11 ani</h2>
