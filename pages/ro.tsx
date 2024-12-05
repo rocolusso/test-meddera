@@ -26,11 +26,14 @@ import Contacts from "@/components/contacts";
 import pintea from "@/public/assets/img/pintea.png";
 import BurgerMenu from "@/components/burgerMenu";
 import Head from "next/head";
+import React from "react";
 
 export default function Home() {
   return (
        <>
            <Head>
+               <meta charSet="utf-8"/>
+               <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
                <meta http-equiv="content-language" content="ro"/>
 
                <title>Екатерина Пынтя – Dermatolog-cosmetolog în Bălți</title>

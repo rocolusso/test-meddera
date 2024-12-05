@@ -27,12 +27,15 @@ import Contacts from "@/components/contacts";
 import BurgerMenu from "@/components/burgerMenu";
 
 import Head from 'next/head'
+import React from "react";
 
 
 export default function Home() {
   return (
       <>
           <Head>
+              <meta charSet="utf-8"/>
+              <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
               <meta http-equiv="content-language" content="ru"/>
 
               <title>Екатерина Пынтя – Дерматолог-косметолог в Бельцах</title>
