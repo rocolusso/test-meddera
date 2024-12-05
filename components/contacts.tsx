@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 import imgAddress from './../public/assets/img/img_contacts.jpg'
 
@@ -20,6 +20,35 @@ const Contacts = ({locale}:{locale:string}) => {
     const callPhone = () => {
         window.location.href ='tel:+37368550030'
     }
+
+
+
+    const [isWorkingHours, setIsWorkingHours] = useState(false);
+    const [currentTime, setCurrentTime] = useState("");
+
+    // Время работы компании: с 10:00 до 17:00
+    const workStart = 10; // 10:00
+    const workEnd = 17;   // 17:00
+
+    useEffect(() => {
+        // Получаем текущее время в часах и минутах
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+
+
+        const isInWorkingHours = hours >= workStart && hours < workEnd;
+
+        const formattedTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        console.log(formattedTime)
+
+        setIsWorkingHours(isInWorkingHours);
+        setCurrentTime(formattedTime);
+
+    }, []);
+
+
+
     return (
         <div className={'contacts mt-10'} id={'contacts'}>
             <div className={'container mx-auto'}>
@@ -89,6 +118,23 @@ const Contacts = ({locale}:{locale:string}) => {
                         <div className={'mx-auto flex justify-center mb-10'}>
                             <p className={'text-[32px] uppercase   duration-300 '}>{locale === "ru" ? "Обратная связь" : "Feedback"}</p>
                         </div>
+
+                        <div className={'working-time-message flex flex-col items-center justify-center'}>
+                            <div className={'text-center'}>
+                                <p className={'p-3'}>
+                                    {
+                                        isWorkingHours
+                                            ? (locale ==="ru"? "Мы открыты!" : "Suntem deschiși!")
+                                            : (locale === "ru"
+                                                ? "Сейчас мы закрыты, но оставьте свои данные, и мы перезвоним в рабочее время."
+                                                : "Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom suna în timpul programului de lucru."
+                                            )}
+                                </p>
+                            </div>
+                            {!isWorkingHours && <p className={'p-3 uppercase'}>{locale === "ru" ? "Текущее время:" :"ora curentă" } {currentTime}</p>}
+                            {!isWorkingHours && <p className={'p-3 uppercase'}>{locale === "ru" ? "Часы работы:" :"Program de lucru:" } 10:00 - 17:00</p>}
+                        </div>
+
                         <input className={'px-5 py-3 border border-black rounded mb-5'}
                                placeholder={locale === "ru" ? "Имя" : "Nume"}/>
                         <input className={'px-5 py-3 border border-black rounded mb-5'}
