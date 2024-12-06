@@ -13,9 +13,9 @@ const Contacts = ({locale}:{locale:string}) => {
     const date = new Date();
     const currentYear = date.getFullYear()
 
-    const addReview =()=>{
-        window.location.href ='https://g.page/r/CZIarfL1QQwNEBM/review'
-    }
+    // const addReview =()=>{
+    //     window.location.href ='https://g.page/r/CZIarfL1QQwNEBM/review'
+    // }
 
     const callPhone = () => {
         window.location.href ='tel:+37368550030'
@@ -97,17 +97,17 @@ const Contacts = ({locale}:{locale:string}) => {
                             </button>
 
 
-                            <button
-                                className='max-w-[90vw] rounded w-full uppercase font-bold bg-black text-white hover:bg-green-400 duration-300 text-[20px] p-5'
-                                onClick={addReview}
-                            >
-                                <div className={'flex gap-5 items-center justify-center'}>
-                                    < MdOutlineRateReview size={'45px'}/>
-                                    <div>
-                                        {locale === "ru" ? "Оставить отзыв" : "Lasă un comentariu"}
-                                    </div>
-                                </div>
-                            </button>
+                            {/*<button*/}
+                            {/*    className='max-w-[90vw] rounded w-full uppercase font-bold bg-black text-white hover:bg-green-400 duration-300 text-[20px] p-5'*/}
+                            {/*    onClick={addReview}*/}
+                            {/*>*/}
+                            {/*    <div className={'flex gap-5 items-center justify-center'}>*/}
+                            {/*        < MdOutlineRateReview size={'45px'}/>*/}
+                            {/*        <div>*/}
+                            {/*            {locale === "ru" ? "Оставить отзыв" : "Lasă un comentariu"}*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*</button>*/}
 
 
                         </div>
