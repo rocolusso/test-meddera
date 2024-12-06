@@ -20,6 +20,12 @@ const Contacts = ({locale}:{locale:string}) => {
     // }
 
     const callPhone = () => {
+
+        (window as any).gtag('event', 'Нажатие на кнопку позвонить Main Contacts', {
+            'action': 'click',
+            'target': 'tel:+37368550030',
+        });
+
         window.location.href ='tel:+37368550030'
     }
 
@@ -28,12 +34,10 @@ const Contacts = ({locale}:{locale:string}) => {
     const [isWorkingHours, setIsWorkingHours] = useState(false);
     const [currentTime, setCurrentTime] = useState("");
 
-    // Время работы компании: с 10:00 до 17:00
     const workStart = 10; // 10:00
     const workEnd = 17;   // 17:00
 
     useEffect(() => {
-        // Получаем текущее время в часах и минутах
         const now = new Date();
         const hours = now.getHours();
         const minutes = now.getMinutes();
@@ -61,7 +65,7 @@ const Contacts = ({locale}:{locale:string}) => {
 
 
     //ts ignore
-    const submitHandler= async (e:any)=>{
+    const submitHandler= async (e:React.BaseSyntheticEvent)=>{
         e.preventDefault()
         e.stopPropagation()
 
@@ -70,10 +74,6 @@ const Contacts = ({locale}:{locale:string}) => {
         if(!name.length){
             setLocked(false)
         }
-
-        // if(!message.length){
-        //     setLocked(false)
-        // }
 
         if(!phone.length){
             setLocked(false)
@@ -95,9 +95,23 @@ const Contacts = ({locale}:{locale:string}) => {
                         },
                     })
                 })
+
+
             }
 
             await sendForm()
+
+            if(window){
+
+                (window as any).gtag('event', 'Заявка на главной форме контактов', {
+                    'action': 'click',
+                    'target': 'Lead main contact form',
+                });
+
+
+            }
+
+
 
             setName('')
             setPhone('')
@@ -116,16 +130,6 @@ const Contacts = ({locale}:{locale:string}) => {
 
 
     }
-
-    // const onTextArea = (e:React.BaseSyntheticEvent) => {
-    //     const currentText = e.target.value;
-    //     if(currentText.length && currentText[currentText.length - 1] === " "){
-    //         setMessage("");
-    //     } else {
-    //         setMessage(e.target.value);
-    //     }
-    // }
-
 
 
     return (

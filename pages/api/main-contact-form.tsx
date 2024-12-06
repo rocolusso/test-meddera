@@ -3,31 +3,6 @@ import axios from 'axios';
 
 export default async function MainContactForm(req: NextApiRequest, res: NextApiResponse) {
 
-    // const res1 = await fetch(`https://test-tg-send-form.vercel.app/form`,{
-    //     method:"POST",
-    //     headers:{
-    //         'Content-Type':'application/json'
-    //     },
-    //     body:JSON.stringify(req.body)
-    // })
-    //
-    //
-    // const res2 = await fetch(`http://64.176.70.84:4545/form`,{
-    //     method:"POST",
-    //     headers:{
-    //         'Content-Type':'application/json'
-    //     },
-    //     body:JSON.stringify(req.body)
-    // })
-    //
-    //
-    // console.log(res1)
-
-    console.log(req.body.message.username)
-    console.log(req.body.message.userphone)
-    console.log(req.body.message.message)
-
-
     const formName = 'Главная форма сайта/контакты'
     const name = req.body.message.username
     const phone = req.body.message.userphone
@@ -40,13 +15,15 @@ export default async function MainContactForm(req: NextApiRequest, res: NextApiR
     Телефон: ${phone}
     Сообщение: ${userMessage}\n
     
-    
     `
 
     // const userIds = ['256302541'] sh
-    const userIds = ['256302541','5299878921']
+    const userIds = ['256302541','5299878921','6576456966']
 
     // 5299878921 yana
+    // 6576456966 ecaterina
+
+
     const botToken = "7059635838:AAEo9R0PAvYinEwo3lqEXcIVkokH2izXERg"
     const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
