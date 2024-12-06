@@ -9,6 +9,8 @@ import { MdOutlineRateReview } from "react-icons/md";
 import Image from 'next/image'
 import Link from "next/link";
 
+import PhoneInputWithCountrySelect from "react-phone-number-input";
+
 const Contacts = ({locale}:{locale:string}) => {
     const date = new Date();
     const currentYear = date.getFullYear()
@@ -46,6 +48,83 @@ const Contacts = ({locale}:{locale:string}) => {
         setCurrentTime(formattedTime);
 
     }, []);
+
+
+
+    const [phone, setPhone] = useState("")
+    const [name, setName] = useState('')
+    const [message, setMessage] = useState('')
+
+    const [locked,setLocked] = useState(false)
+
+    const [submitAlert, setSubmitAlert] = useState<boolean>(false);
+
+
+    //ts ignore
+    const submitHandler= async (e:any)=>{
+        e.preventDefault()
+        e.stopPropagation()
+
+        setLocked(true)
+
+        if(!name.length){
+            setLocked(false)
+        }
+
+        // if(!message.length){
+        //     setLocked(false)
+        // }
+
+        if(!phone.length){
+            setLocked(false)
+        }
+
+
+        if(name.length > 2 && phone.length > 5 ){
+            const sendForm = async ()=>{
+                const res = await fetch('/api/main-contact-form',{
+                    method:"POST",
+                    headers:{
+                        'Content-Type':'application/json'
+                    },
+                    body:JSON.stringify({
+                        message:{
+                            username:name,
+                            userphone:phone,
+                            message:message
+                        },
+                    })
+                })
+            }
+
+            await sendForm()
+
+            setName('')
+            setPhone('')
+            setMessage('')
+            setLocked(false)
+            setSubmitAlert(true)
+
+            setTimeout(()=>{
+                setSubmitAlert(false)
+            },3000)
+
+        }
+
+
+
+
+
+    }
+
+    // const onTextArea = (e:React.BaseSyntheticEvent) => {
+    //     const currentText = e.target.value;
+    //     if(currentText.length && currentText[currentText.length - 1] === " "){
+    //         setMessage("");
+    //     } else {
+    //         setMessage(e.target.value);
+    //     }
+    // }
 
 
 
@@ -124,27 +203,86 @@ const Contacts = ({locale}:{locale:string}) => {
                                 <p className={'p-3'}>
                                     {
                                         isWorkingHours
-                                            ? (locale ==="ru"? "Мы открыты!" : "Suntem deschiși!")
+                                            ? (locale === "ru" ? "Мы открыты!" : "Suntem deschiși!")
                                             : (locale === "ru"
-                                                ? "Сейчас мы закрыты, но оставьте свои данные, и мы перезвоним в рабочее время."
-                                                : "Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom suna în timpul programului de lucru."
+                                                    ? "Сейчас мы закрыты, но оставьте свои данные, и мы перезвоним в рабочее время."
+                                                    : "Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom suna în timpul programului de lucru."
                                             )}
                                 </p>
                             </div>
-                            {!isWorkingHours && <p className={'p-3 uppercase'}>{locale === "ru" ? "Текущее время:" :"ora curentă" } {currentTime}</p>}
-                            {!isWorkingHours && <p className={'p-3 uppercase'}>{locale === "ru" ? "Часы работы:" :"Program de lucru:" } 10:00 - 17:00</p>}
+                            {!isWorkingHours &&
+                                <p className={'p-3 uppercase'}>{locale === "ru" ? "Текущее время:" : "ora curentă"} {currentTime}</p>}
+                            {!isWorkingHours &&
+                                <p className={'p-3 uppercase'}>{locale === "ru" ? "Часы работы:" : "Program de lucru:"} 10:00
+                                    - 17:00</p>}
                         </div>
 
-                        <input className={'px-5 py-3 border border-black rounded mb-5'}
-                               placeholder={locale === "ru" ? "Имя" : "Nume"}/>
-                        <input className={'px-5 py-3 border border-black rounded mb-5'}
-                               placeholder={locale === "ru" ? "Телефон" : "Telefon"}/>
-                        <textarea className={'px-5 py-3 border border-black resize-none h-[150px] rounded mb-5'}
-                                  placeholder={locale === "ru" ? "Cообщение" : "Mesaj"}/>
-                        <button
-                            className='rounded border border-black uppercase font-bold bg-black text-white hover:bg-green-400 duration-300 text-[20px]  p-5'>
-                            {locale === "ru" ? "Отправить сообщение" : "Trimite mesaj"}
-                        </button>
+                        <form onSubmit={submitHandler} className={'flex flex-col items-center justify-center'} >
+                            <fieldset disabled={locked}>
+
+                                <input className={'px-5 py-3 border border-black rounded mb-5 w-full'}
+                                       placeholder={locale === "ru" ? "Имя" : "Nume"}
+
+                                       value={name}
+                                       onChange={e=>setName(e.target.value)}
+
+                                />
+
+
+                                {/*<input className={'px-5 py-3 border border-black rounded mb-5'}*/}
+                                {/*       placeholder={locale === "ru" ? "Телефон" : "Telefon"}/>*/}
+
+                                <PhoneInputWithCountrySelect
+                                    style={{
+                                        // maxWidth:"350px",
+                                        // border:"1px solid black",
+                                        // padding:"13px 22px",
+                                        padding: "13px 13px",
+                                        margin: "0 0 14px 0",
+                                        borderRadius: "6px",
+                                        // background:"#272D3D",
+
+                                    }}
+                                    className={'border border-black rounded w-full '}
+                                    defaultCountry="MD"
+                                    placeholder={locale === "ru" ? 'Ваш номер телефона' : 'Numărul dumneavoastră de telefon'}
+                                    value={phone}
+                                    // onChange={setPhone}
+                                    onChange={e=>{
+                                        if(e !==undefined){
+                                            setPhone(e)
+                                        }
+                                    }}
+                                />
+
+                                <textarea
+                                    className={'px-5 py-3 border border-black resize-none h-[150px] rounded mb-5 w-full'}
+                                    placeholder={locale === "ru" ? "Cообщение" : "Mesaj"}
+                                    value={message}
+                                    onChange={e=>setMessage(e.target.value)}
+                                />
+
+                                {
+                                    submitAlert &&
+                                    <div>
+                                     <p className={'p-5 bg-green-400 mb-5'}>{locale==="ru" ? "Спасибо! Ваше сообщение получено":"Mulțumim! Mesajul dumneavoastră a fost primit"}</p>
+                                    </div>
+                                }
+
+
+                                <div className={'flex justify-center'}>
+                                    <button
+                                        type={'submit'}
+                                        className='rounded border border-black uppercase font-bold bg-black text-white hover:bg-green-400 duration-300 text-[20px]  p-5'>
+                                        {locale === "ru" ? "Отправить сообщение" : "Trimite mesaj"}
+                                    </button>
+                                </div>
+
+
+                            </fieldset>
+                        </form>
+
+
                     </div>
 
                 </div>
