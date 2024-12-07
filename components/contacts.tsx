@@ -31,6 +31,16 @@ const Contacts = ({locale}:{locale:string}) => {
         window.location.href ='tel:+37368550030'
     }
 
+    const callPhoneFixed = () => {
+
+        (window as any).gtag('event', 'Нажатие на кнопку позвонить Main FIXED Animation', {
+            'action': 'click',
+            'target': 'tel:+37368422024',
+        });
+
+        window.location.href = 'tel:+37368550030';
+    };
+
 
 
     const [isWorkingHours, setIsWorkingHours] = useState(false);
@@ -134,18 +144,19 @@ const Contacts = ({locale}:{locale:string}) => {
     }
 
 
+
+
     return (
         <div className={'contacts mt-10'} id={'contacts'}>
 
 
             <div className={'call-container-absolute bottom-0 left-0'}>
 
-                <Link href="tel:+37368550030" rel="nofollow" className="btn-call">
+                <button onClick={callPhoneFixed}  rel="nofollow" className="btn-call">
                     <div className="btn-call__ico">
-                        {/*<i className="fas fa-phone-alt"></i>*/}
                         <MdPhoneInTalk/>
                     </div>
-                </Link>
+                </button>
 
             </div>
 
