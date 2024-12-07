@@ -237,7 +237,7 @@ const Contacts = ({locale}:{locale:string}) => {
                                         isWorkingHours
                                             ? (locale === "ru" ? "Мы открыты!" : "Suntem deschiși!")
                                             : (locale === "ru"
-                                                    ? "Сейчас мы закрыты, но оставьте свои данные, и мы перезвоним в рабочее время."
+                                                    ? "Сейчас мы работаем, но оставьте свои данные, и мы перезвоним в рабочее время."
                                                     : "Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom suna în timpul programului de lucru."
                                             )}
                                 </p>
