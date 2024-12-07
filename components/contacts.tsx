@@ -230,9 +230,9 @@ const Contacts = ({locale}:{locale:string}) => {
                             <p className={'text-[32px] uppercase   duration-300 '}>{locale === "ru" ? "Обратная связь" : "Feedback"}</p>
                         </div>
 
-                        <div className={'working-time-message flex flex-col items-center justify-center'}>
+                        <div className={'max-w-[400px] mx-auto  working-time-message flex flex-col items-center justify-center'}>
                             <div className={'text-center'}>
-                                <p className={'p-3'}>
+                                <p className={!isWorkingHours ? ' bg-red-500 text-white rounded p-3  ':'p-3'}>
                                     {
                                         isWorkingHours
                                             ? (locale === "ru" ? "Мы открыты!" : "Suntem deschiși!")
