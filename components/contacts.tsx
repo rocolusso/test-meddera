@@ -12,6 +12,7 @@ import Image from 'next/image'
 import Link from "next/link";
 
 import PhoneInputWithCountrySelect from "react-phone-number-input";
+import PopUpWithTimer from "@/components/popUpWithTimer";
 
 const Contacts = ({locale}:{locale:string}) => {
     const date = new Date();
@@ -148,7 +149,7 @@ const Contacts = ({locale}:{locale:string}) => {
 
     return (
         <div className={'contacts mt-10'} id={'contacts'}>
-
+            {/*<PopUpWithTimer/>*/}
 
             <div className={'call-container-absolute bottom-0 left-0'}>
 
