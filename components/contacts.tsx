@@ -6,6 +6,8 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdOutlineRateReview } from "react-icons/md";
 
+import { MdPhoneInTalk } from "react-icons/md";
+
 import Image from 'next/image'
 import Link from "next/link";
 
@@ -134,9 +136,23 @@ const Contacts = ({locale}:{locale:string}) => {
 
     return (
         <div className={'contacts mt-10'} id={'contacts'}>
+
+
+            <div className={'call-container-absolute bottom-0 left-0'}>
+
+                <Link href="tel:+37368550030" rel="nofollow" className="btn-call">
+                    <div className="btn-call__ico">
+                        {/*<i className="fas fa-phone-alt"></i>*/}
+                        <MdPhoneInTalk/>
+                    </div>
+                </Link>
+
+            </div>
+
+
             <div className={'container mx-auto'}>
                 <div className={'mx-auto flex justify-center py-10'}>
-                    <h2 className={'text-[36px] uppercase underline border py-5 px-10  border-black hover:bg-green-400 duration-300 hover:scale-105'}>{locale === "ru" ? "Контакты" : "Contacte"}</h2>
+                <h2 className={'text-[36px] uppercase underline border py-5 px-10  border-black hover:bg-green-400 duration-300 hover:scale-105'}>{locale === "ru" ? "Контакты" : "Contacte"}</h2>
                 </div>
 
 
