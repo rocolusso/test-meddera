@@ -18,11 +18,11 @@ export default async function MainContactForm(req: NextApiRequest, res: NextApiR
     `
 
     // const userIds = ['256302541'] sh
-    const userIds = ['256302541','5299878921','6576456966']
+    const userIds = ['256302541','5299878921','6576456966','7378233926']
 
     // 5299878921 yana
     // 6576456966 ecaterina
-
+    // 7378233926 work admin
 
     const botToken = "7059635838:AAEo9R0PAvYinEwo3lqEXcIVkokH2izXERg"
     const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
