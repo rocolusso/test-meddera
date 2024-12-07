@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import baner1 from './../public/assets/img/baner5.jpg'
+import baner1 from './../public/assets/img/baner_full1.jpg'
 import about_img from './../public/assets/img/about_2k.jpg'
 import biorevit from './../public/assets/img/services/biorevit.png'
 import consultcosm from './../public/assets/img/services/consult-cosm.png'
