@@ -28,15 +28,15 @@ const Service11
                     </Link>
                     <div className={'flex justify-between items-center sm:w-full'}>
                         <nav className={'hidden sm:flex ml-20  gap-10 uppercase underline font-bold text-xl'}>
-                            <Link href={'/public#about'}
+                            <Link href={'/#about'}
                                   className={'hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105'}>
                                 Обо мне
                             </Link>
-                            <Link href={'/public#services'}
+                            <Link href={'/#services'}
                                   className={'hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105'}>
                                 Услуги
                             </Link>
-                            <Link href={'/public#contacts'}
+                            <Link href={'/#contacts'}
                                   className={'hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105'}>
                                 Контакты
                             </Link>
