@@ -96,18 +96,12 @@ const GoogleWhitePage = () => {
                                 <h1 className={'text-[24px] mt-4 font-bold'}>Екатерина Пынтя</h1>
                                 <p className={'py-2'}>Дерматокосметолг | Клиника Meddera | Бельцы</p>
                             </div>
+
+
+
+
                             <div className={'mt-2 container mx-auto py-4'}>
-
-
-                                <div
-                                    className={'flex justify-center  max-w-[500px] min-w-[315px]'}>
-                                    {/*<Link*/}
-                                    {/*    className={' text-white text-center '}*/}
-                                    {/*    href={'/'}*/}
-                                    {/*>*/}
-                                    {/*    Перейти на сайт*/}
-                                    {/*</Link>*/}
-
+                                <div className={'flex justify-center mx-4  max-w-[500px] min-w-[315px]'}>
                                     <button
                                         style={{borderRadius: "14px"}}
                                         className="go-to-main-btn-white-ads-1    animated-stripe   heartbeat uppercase  font-bold bg-green-400 text-white text-center inline-block px-10 py-6 w-full rounded-md hover:bg-green-700 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400"
@@ -123,18 +117,7 @@ const GoogleWhitePage = () => {
                                 </div>
 
 
-                                <div
-                                    // style={{
-                                    //     borderRadius: "14px",
-                                    //     backgroundColor: "rgba(255, 255, 255, 0.05)",
-                                    // }}
-                                    className={'mt-4   flex justify-center  max-w-[500px] min-w-[315px]'}>
-                                    {/*<Link*/}
-                                    {/*    className={' text-white text-center font-bold'}*/}
-                                    {/*    href={'tel:+37379944150'}*/}
-                                    {/*>*/}
-                                    {/*    Позвонить*/}
-                                    {/*</Link>*/}
+                                <div className={'mt-4 mx-4   flex justify-center  max-w-[500px] min-w-[315px]'}>
                                     <button
                                         style={{
                                             borderRadius: "14px",
