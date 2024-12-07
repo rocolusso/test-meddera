@@ -17,6 +17,27 @@ const GoogleTagManager = () => {
              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
              })(window,document,'script','dataLayer','GTM-KFCP3D5F');
+             
+             
+             function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                         window.location = url;
+                  }
+                 };
+                 gtag('event', 'conversion', {
+                     'send_to': 'AW-16800899328/6T1JCLfzrfQZEIDCpcs-',
+                       'event_callback': callback
+                  });
+                   return false;
+             }
+             
+    
+
+
+
+             
+             
 
              `
                     }
