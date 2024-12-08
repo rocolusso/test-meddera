@@ -10,6 +10,39 @@
     padding: 0 10px 0 0;
 }
 
+/*
+fonts for title cerificate
+*/
+
+.gold-gradient{background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    /*font-family: 'Playfair Display', serif;*/
+    position: relative;
+    /*text-transform: uppercase;*/
+    /*font-size: calc(18vw + .5rem);*/
+    margin: 0;
+    /*font-weight: 400;*/
+}
+
+
+.corinthia-regular {
+    font-family: "Corinthia", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.corinthia-bold {
+    font-family: "Corinthia", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*
+fonts for title cerificate
+*/
+
 
 /* /* width */
 /* ::-webkit-scrollbar {
