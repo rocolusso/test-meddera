@@ -8,6 +8,7 @@ import { FaArrowRight } from "react-icons/fa";
 import imgAddress from "@/public/assets/img/img_contacts.jpg";
 
 import cert from './../../../public/assets/img/cert/background.svg'
+import {MdPhoneInTalk} from "react-icons/md";
 
 
 const GoogleWhitePage = () => {
@@ -98,13 +99,11 @@ const GoogleWhitePage = () => {
                             </div>
 
 
-
-
                             <div className={'mt-2 container mx-auto py-4'}>
                                 <div className={'flex justify-center mx-4  max-w-[500px] min-w-[315px]'}>
                                     <button
                                         style={{borderRadius: "14px"}}
-                                        className="go-to-main-btn-white-ads-1    animated-stripe   heartbeat uppercase  font-bold bg-green-400 text-white text-center inline-block px-10 py-6 w-full rounded-md hover:bg-green-700 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400"
+                                        className="go-to-main-btn-white-ads-1    animated-stripe-2  hover:bg-red-700   heartbeat uppercase  font-bold  text-white text-center inline-block px-10 py-6 w-full rounded-md   "
                                         onClick={redirectToBlack}
                                     >
                                         <div className={'flex gap-5 items-center justify-center'}>
@@ -117,29 +116,41 @@ const GoogleWhitePage = () => {
                                 </div>
 
 
-                                <div className={'mt-4 mx-4   flex justify-center  max-w-[500px] min-w-[315px]'}>
+                                {/*<div className={'mt-4 mx-4   flex justify-center  max-w-[500px] min-w-[315px]'}>*/}
+                                {/*    <button*/}
+                                {/*        style={{*/}
+                                {/*            borderRadius: "14px",*/}
+                                {/*        }}*/}
+                                {/*        className="call-btn-white-ads-1        animated-flash-pulse  gap-2 border-[1px] border-white uppercase  font-bold  text-white text-center inline-block px-10 py-6 w-full rounded-md"*/}
+
+                                {/*        onClick={callPhone}*/}
+                                {/*    >*/}
+                                {/*        <div className={'flex gap-5 items-center justify-center'}>*/}
+                                {/*            <div>*/}
+                                {/*                Позвонить*/}
+                                {/*            </div>*/}
+                                {/*            <FaPhoneVolume className={' heartbeat'} size={20}/>*/}
+                                {/*        </div>*/}
+
+                                {/*    </button>*/}
+                                {/*</div>*/}
+
+
+                                <div className={'call-container-absolute my-6 bottom-0 left-0 flex justify-center'}>
+
                                     <button
-                                        style={{
-                                            borderRadius: "14px",
-                                            // backgroundColor: "rgba(255, 255, 255, 0.05)",
-                                        }}
-                                        className="call-btn-white-ads-1        animated-flash-pulse  gap-2 border-[1px] border-white uppercase  font-bold  text-white text-center inline-block px-10 py-6 w-full rounded-md"
-
                                         onClick={callPhone}
-                                    >
-                                        <div className={'flex gap-5 items-center justify-center'}>
-                                            <div>
-                                                Позвонить
-                                            </div>
-                                            <FaPhoneVolume className={' heartbeat'} size={20}/>
-                                        </div>
+                                        rel="nofollow"
+                                        className="btn-call-2 p-10 "
 
+                                    >
+                                        <div className="btn-call__ico block ">
+                                            <MdPhoneInTalk />
+                                        </div>
                                     </button>
+
                                 </div>
 
-                                {/*<div>*/}
-                                {/*    <button className={'btn-shine rounded border border-white'}>Позвонить</button>*/}
-                                {/*</div>*/}
 
                                 <div className={'mt-6 flex justify-center'}>
                                     <div className="heart ">
