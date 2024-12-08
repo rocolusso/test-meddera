@@ -136,19 +136,25 @@ const GoogleWhitePage = () => {
                                 {/*</div>*/}
 
 
-                                <div className={'call-container-absolute my-6 bottom-0 left-0 flex justify-center'}>
-
+                                <div   className={'relative  mx-auto mt-14 mb-32'}>
                                     <button
+                                        style={{
+                                            top:"50%",
+                                            left:"50%",
+                                            position:"absolute",
+                                            transform:"translate(-50%, -50%)",
+                                            zIndex:10,
+                                            height:"70px"
+                                        }}
                                         onClick={callPhone}
                                         rel="nofollow"
-                                        className="btn-call-2 p-10 "
+                                        className="btn-call-2 "
 
                                     >
-                                        <div className="btn-call__ico block ">
-                                            <MdPhoneInTalk />
+                                        <div className="btn-call__ico-2  ">
+                                            <MdPhoneInTalk size={35}/>
                                         </div>
                                     </button>
-
                                 </div>
 
 
