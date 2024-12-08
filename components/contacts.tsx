@@ -18,10 +18,6 @@ const Contacts = ({locale}:{locale:string}) => {
     const date = new Date();
     const currentYear = date.getFullYear()
 
-    // const addReview =()=>{
-    //     window.location.href ='https://g.page/r/CZIarfL1QQwNEBM/review'
-    // }
-
     const callPhone = () => {
 
         (window as any).gtag('event', 'Нажатие на кнопку позвонить Main Contacts', {
@@ -208,19 +204,6 @@ const Contacts = ({locale}:{locale:string}) => {
                             </button>
 
 
-                            {/*<button*/}
-                            {/*    className='max-w-[90vw] rounded w-full uppercase font-bold bg-black text-white hover:bg-green-400 duration-300 text-[20px] p-5'*/}
-                            {/*    onClick={addReview}*/}
-                            {/*>*/}
-                            {/*    <div className={'flex gap-5 items-center justify-center'}>*/}
-                            {/*        < MdOutlineRateReview size={'45px'}/>*/}
-                            {/*        <div>*/}
-                            {/*            {locale === "ru" ? "Оставить отзыв" : "Lasă un comentariu"}*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</button>*/}
-
-
                         </div>
                     </div>
 
@@ -232,12 +215,12 @@ const Contacts = ({locale}:{locale:string}) => {
 
                         <div className={'max-w-[400px] mx-auto  working-time-message flex flex-col items-center justify-center'}>
                             <div className={'text-center'}>
-                                <p className={!isWorkingHours ? ' bg-red-500 text-white rounded p-3  ':'p-3'}>
+                                <p className={!isWorkingHours ? ' bg-red-500 text-white rounded p-3  ':'bg-green-500 text-white rounded p-3'}>
                                     {
                                         isWorkingHours
                                             ? (locale === "ru" ? "Мы открыты!" : "Suntem deschiși!")
                                             : (locale === "ru"
-                                                    ? "Сейчас мы работаем, но оставьте свои данные, и мы перезвоним в рабочее время."
+                                                    ? "Сейчас мы не работаем, но оставьте свои данные, и мы перезвоним в рабочее время."
                                                     : "Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom suna în timpul programului de lucru."
                                             )}
                                 </p>
