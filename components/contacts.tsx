@@ -215,7 +215,7 @@ const Contacts = ({locale}:{locale:string}) => {
 
                         <div className={'max-w-[400px] mx-auto  working-time-message flex flex-col items-center justify-center'}>
                             <div className={'text-center'}>
-                                <p className={!isWorkingHours ? ' bg-red-500 text-white rounded p-3  ':'bg-green-500 text-white rounded p-3'}>
+                                <p className={!isWorkingHours ? ' bg-red-500 text-white rounded p-3 ':'bg-green-500 mb-6  text-white rounded p-3'}>
                                     {
                                         isWorkingHours
                                             ? (locale === "ru" ? "Мы открыты!" : "Suntem deschiși!")

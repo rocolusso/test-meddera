@@ -44,8 +44,18 @@ const Certificate = ({certificatNumber,userName,serviceName,price,currency}:{
                             top: -5,
                             right: 10,
                         }} className={'pintea-logo '}>
-                            <div className={'relative'}>
+                            <div className={'relative block sm:hidden'}>
                                 <Image src={pintea} alt={'certificate'} width={120} height={200}/>
+                            </div>
+                        </div>
+
+                        <div style={{
+                            position: "absolute",
+                            top: -5,
+                            right: 10,
+                        }} className={'pintea-logo '}>
+                            <div className={'relative hidden sm:block'}>
+                                <Image src={pintea} alt={'certificate'} width={250} height={200}/>
                             </div>
                         </div>
 
@@ -53,7 +63,7 @@ const Certificate = ({certificatNumber,userName,serviceName,price,currency}:{
                             position: "absolute",
                             bottom: -5,
                             left: 0,
-                        }} className={'meddera-logo '}>
+                        }} className={'meddera-logo  block sm:hidden'}>
                             <div className={'relative'}>
                                 <Image src={medderaCert} alt={'certificate'} width={120} height={200}/>
                             </div>
@@ -61,9 +71,19 @@ const Certificate = ({certificatNumber,userName,serviceName,price,currency}:{
 
                         <div style={{
                             position: "absolute",
+                            bottom: -5,
+                            left: 0,
+                        }} className={'meddera-logo  hidden sm:block'}>
+                            <div className={'relative'}>
+                                <Image src={medderaCert} alt={'certificate'} width={250} height={200}/>
+                            </div>
+                        </div>
+
+                        <div style={{
+                            position: "absolute",
                             bottom: 15,
                             right: 12,
-                        }} className={'price '}>
+                        }} className={'price block sm:hidden'}>
                             <div className={'relative'}>
                                 <div
                                     className={'absolute bottom-3 right-4 flex justify-center flex-col items-center'}>
@@ -71,6 +91,22 @@ const Certificate = ({certificatNumber,userName,serviceName,price,currency}:{
                                     <p className={'text-[20px] text-[#CAAE7C] uppercase w-fit'}>{currency}</p>
                                 </div>
                                 <Image src={priceBack} alt={'certificate'} width={80} height={200}/>
+                            </div>
+                        </div>
+
+
+                        <div style={{
+                            position: "absolute",
+                            bottom: 15,
+                            right: 12,
+                        }} className={'price hidden sm:block'}>
+                            <div className={'relative'}>
+                                <div
+                                    className={'absolute bottom-[35px] right-[50px] flex justify-center flex-col items-center'}>
+                                    <p className={'p-0 m-0 text-[3em] text-[#CAAE7C] uppercase w-fit'}>{price}</p>
+                                    <p className={'p-0 text-[3em] text-[#CAAE7C] uppercase w-fit'}>{currency}</p>
+                                </div>
+                                <Image src={priceBack} alt={'certificate'} width={220} height={200}/>
                             </div>
                         </div>
 
@@ -84,7 +120,7 @@ const Certificate = ({certificatNumber,userName,serviceName,price,currency}:{
                             left: "50%"
                         }} className="user-name relative-parent ">
                             <div className="absolute  text-center">
-                                <p className={'corinthia-bold gold-gradient text-[4rem]'}>Certificate</p>
+                                <p className={'corinthia-bold gold-gradient text-[4rem] sm:text-[8em]'}>Certificate</p>
                             </div>
                         </div>
 
