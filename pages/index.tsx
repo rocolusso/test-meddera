@@ -321,7 +321,7 @@ export default function Home() {
                           />
                       </div>
                       <div>
-                          <p className={'text-[1.8rem] p-5 uppercase'}>Пиллинг</p>
+                          <p className={'text-[1.8rem] p-5 uppercase'}>Пилинг</p>
                       </div>
                   </Link>
                   <Link href={'services/7'}

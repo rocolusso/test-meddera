@@ -28,15 +28,15 @@ const Service6
                     </Link>
                     <div className={'flex justify-between items-center sm:w-full'}>
                         <nav className={'hidden sm:flex ml-20  gap-10 uppercase underline font-bold text-xl'}>
-                            <Link href={'/public#about'}
+                            <Link href={'/#about'}
                                   className={'hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105'}>
                                 Обо мне
                             </Link>
-                            <Link href={'/public#services'}
+                            <Link href={'/#services'}
                                   className={'hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105'}>
                                 Услуги
                             </Link>
-                            <Link href={'/public#contacts'}
+                            <Link href={'/#contacts'}
                                   className={'hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105'}>
                                 Контакты
                             </Link>
@@ -61,7 +61,7 @@ const Service6
             </div>
             <div className={'container mx-auto'}>
                 <div className={'py-10 px-5'}>
-                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Пиллинг</h1>
+                    <h1 className={'text-[1.5rem] sm:text-[3rem] sm:text-center'}>Пилинг</h1>
                 </div>
                 <div className={'flex justify-center'}>
                     <Image
@@ -75,7 +75,7 @@ const Service6
                 </div>
                 <div>
                     <p className={'max-w-[1000px] mx-auto py-10 px-5'}>
-                        Пиллинг — косметологическая процедура, направленная на обновление и улучшение состояния кожи
+                        Пилинг — косметологическая процедура, направленная на обновление и улучшение состояния кожи
                         путем удаления ороговевших клеток с её поверхности. Существует несколько видов пилингов:
                         химический, механический, , каждый из которых подходит для решения различных проблем, таких как
                         тусклый цвет лица, расширенные поры, пигментация, мелкие морщины и неровности текстуры.
