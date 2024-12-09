@@ -17,7 +17,6 @@ const Service15
                     <Link href={'/'}>
                         <div className={'max-w-[300px]'}>
                             <Image
-                                // className="dark:invert"
                                 src={pintea}
                                 alt="pintea"
                                 width={1000}

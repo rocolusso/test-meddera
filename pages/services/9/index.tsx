@@ -14,7 +14,7 @@ const Service9
                 className={'header sticky top-0 left-0 backdrop-blur-2xl   header container mx-auto sm:pt-10   bg-white z-40'}>
                 <div
                     className={'flex gap-5 items-center border p-5 backdrop-blur-2xl sm:rounded-3xl sm:shadow-2xl z-50'}>
-                    <Link href={'/public'}>
+                    <Link href={'/'}>
                         <div className={'max-w-[300px]'}>
                             <Image
                                 // className="dark:invert"
@@ -28,15 +28,15 @@ const Service9
                     </Link>
                     <div className={'flex justify-between items-center sm:w-full'}>
                         <nav className={'hidden sm:flex ml-20  gap-10 uppercase underline font-bold text-xl'}>
-                            <Link href={'/public#about'}
+                            <Link href={'/#about'}
                                   className={'hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105'}>
                                 Обо мне
                             </Link>
-                            <Link href={'/public#services'}
+                            <Link href={'/#services'}
                                   className={'hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105'}>
                                 Услуги
                             </Link>
-                            <Link href={'/public#contacts'}
+                            <Link href={'/#contacts'}
                                   className={'hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105'}>
                                 Контакты
                             </Link>

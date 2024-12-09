@@ -14,7 +14,7 @@ const Service6
                 className={'header sticky top-0 left-0 backdrop-blur-2xl   header container mx-auto sm:pt-10   bg-white z-40'}>
                 <div
                     className={'flex gap-5 items-center border p-5 backdrop-blur-2xl sm:rounded-3xl sm:shadow-2xl z-50'}>
-                    <Link href={'/public'}>
+                    <Link href={'/'}>
                         <div className={'max-w-[300px]'}>
                             <Image
                                 // className="dark:invert"
