@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Image from "next/image";
 
 import ava from './../../../public/assets/img/ads/ads_photo.png'
@@ -11,10 +11,15 @@ import cert from './../../../public/assets/img/cert/background.svg'
 import {MdPhoneInTalk} from "react-icons/md";
 
 
-const GoogleWhitePage = () => {
+export default function  GoogleWhitePage ({clientIp}:{clientIp:string}) {
     const date = new Date();
     const currentYear = date.getFullYear()
 
+    useEffect(()=>{
+        (window as any).gtag('event', `ClientIpAddressWhite:${clientIp}`, {
+            'action': 'firstVisit',
+        });
+    },[])
 
     // const event = ({ action, category, label, value }: any) => {
     //     (window as any).gtag('event', action, {
@@ -238,4 +243,12 @@ const GoogleWhitePage = () => {
     );
 };
 
-export default GoogleWhitePage;
+
+
+
+export async function getServerSideProps(context:any) {
+    const ip = context.req.headers['x-forwarded-for'] || context.req.socket.remoteAddress;
+    return {
+        props: { clientIp: ip || null }, // Pass IP as prop to the page
+    };
+}

@@ -27,11 +27,20 @@ import Contacts from "@/components/contacts";
 import BurgerMenu from "@/components/burgerMenu";
 
 import Head from 'next/head'
-import React from "react";
+import React, {useEffect} from "react";
 
 
-export default function Home() {
-  return (
+export default function Home({clientIp}:{clientIp:string}) {
+
+    useEffect(()=>{
+        (window as any).gtag('event', `ClientIpAddress:${clientIp}`, {
+            'action': 'firstVisit',
+        });
+    },[])
+
+
+
+    return (
       <>
           <Head>
               <meta charSet="utf-8"/>
@@ -587,4 +596,11 @@ export default function Home() {
           </div>
       </>
   );
+}
+
+export async function getServerSideProps(context:any) {
+    const ip = context.req.headers['x-forwarded-for'] || context.req.socket.remoteAddress;
+    return {
+        props: { clientIp: ip || null }, // Pass IP as prop to the page
+    };
 }
