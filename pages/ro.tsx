@@ -30,10 +30,16 @@ import React, {useEffect} from "react";
 
 export default function Home({clientIp}:{clientIp:string}) {
 
-    useEffect(()=>{
-        (window as any).gtag('event', `ClientIpAddress:${clientIp}`, {
+    const sendIp = ()=>{
+        (window as any).gtag('event', `ClientIpAddressWhite:${clientIp}`, {
             'action': 'firstVisit',
         });
+    }
+
+    useEffect(()=>{
+        if(typeof window !== undefined){
+            sendIp()
+        }
     },[])
 
   return (
