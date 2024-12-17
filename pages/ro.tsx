@@ -30,7 +30,13 @@ import React, {useEffect} from "react";
 
 export default function Home({clientIp}:{clientIp:string}) {
 
-
+  useEffect(()=>{
+     if((window as any)?.gtag){
+         (window as any).gtag('event', `ClientIP: ${clientIp}`, {
+             'action': 'firstVisit',
+         });
+     }
+  },[])
 
   return (
        <>

@@ -53,9 +53,7 @@ const Contacts = ({locale}:{locale:string}) => {
 
 
         const isInWorkingHours = hours >= workStart && hours < workEnd;
-
         const formattedTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        console.log(formattedTime)
 
         setIsWorkingHours(isInWorkingHours);
         setCurrentTime(formattedTime);
