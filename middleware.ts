@@ -8,7 +8,7 @@ export function middleware(request: NextRequest) {
     // Check if the visitor is from Israel
     // if (country === 'IL') {
     //     // Redirect to a custom page or block access
-    //     return NextResponse.redirect(new URL('/blocked.tsx', request.url));
+    //     return NextResponse.redirect(new URL('/index.tsx', request.url));
     // }
 
     if (country !== 'MD') {

@@ -1,4 +1,4 @@
-export default function Blocked() {
+export default function Index() {
     return (
         <div className={'flex justify-center items-center'}>
             <h1>Access Denied</h1>
