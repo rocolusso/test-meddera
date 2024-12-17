@@ -16,17 +16,7 @@ export default function  GoogleWhitePage ({clientIp}:{clientIp:string}) {
     const currentYear = date.getFullYear()
 
 
-    const sendIp = ()=>{
-        (window as any)?.gtag('event', `ClientIpAddressWhite:${clientIp}`, {
-            'action': 'firstVisit',
-        });
-    }
 
-    useEffect(()=>{
-        if(typeof window !== undefined){
-            sendIp()
-        }
-    },[])
 
     // const event = ({ action, category, label, value }: any) => {
     //     (window as any).gtag('event', action, {
