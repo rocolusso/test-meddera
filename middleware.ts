@@ -13,7 +13,7 @@ export function middleware(request: NextRequest) {
 
     if (country !== 'MD') {
         // Redirect to a custom page or block access
-        return NextResponse.redirect(new URL('/blocked.tsx', request.url));
+        return NextResponse.redirect(new URL('/blocked', request.url));
     }
 
 
