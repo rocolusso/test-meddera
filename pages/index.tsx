@@ -33,7 +33,7 @@ import React, {useEffect} from "react";
 export default function Home({clientIp}:{clientIp:string}) {
 
     const sendIp = ()=>{
-        (window as any).gtag('event', `ClientIpAddressWhite:${clientIp}`, {
+        (window as any)?.gtag('event', `ClientIpAddressWhite:${clientIp}`, {
             'action': 'firstVisit',
         });
     }

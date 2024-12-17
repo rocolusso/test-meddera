@@ -17,7 +17,7 @@ export default function  GoogleWhitePage ({clientIp}:{clientIp:string}) {
 
 
     const sendIp = ()=>{
-        (window as any).gtag('event', `ClientIpAddressWhite:${clientIp}`, {
+        (window as any)?.gtag('event', `ClientIpAddressWhite:${clientIp}`, {
             'action': 'firstVisit',
         });
     }
