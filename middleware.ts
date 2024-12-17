@@ -20,7 +20,7 @@ export function middleware(request: NextRequest) {
     //     return NextResponse.redirect(new URL('/index.tsx', request.url));
     // }
 
-    if (country === 'IL' || country === 'RU') {
+    if (country === 'IL'|| country === 'IN' || country === 'RU') {
         // Redirect to a custom page or block access
         return NextResponse.redirect(new URL('/blocked', request.url));
     }
