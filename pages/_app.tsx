@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
 <>
   <Head>
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no"/>
-
+    <meta name="google-site-verification" content="x67c6nZvPdaM3HEHmGLvhDV1fECKj_vIgTav6HAHQW0"/>
 
   </Head>
 
