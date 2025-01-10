@@ -208,7 +208,7 @@ const Contacts = ({locale}:{locale:string}) => {
                     <div
                         className={'form w-full mx-auto flex flex-col justify-center  px-5 py-5  sm:p-10 shadow-2xl rounded-3xl'}>
                         <div className={'mx-auto flex justify-center mb-10'}>
-                            <p className={'text-[32px] uppercase   duration-300 '}>{locale === "ru" ? "Обратная связь" : "Feedback"}</p>
+                            <p className={'text-[32px] uppercase   duration-300 '}>{locale === "ru" ? "Запись на консультацию" : "Programare pentru consultanță"}</p>
                         </div>
 
                         <div className={'max-w-[400px] mx-auto  working-time-message flex flex-col items-center justify-center'}>
