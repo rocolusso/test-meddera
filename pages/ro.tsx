@@ -245,7 +245,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                alt="pintea"
                                width={500}
                                height={500}
-                               priority
+                               loading={'lazy'}
                            />
                        </div>
                    </div>
@@ -267,7 +267,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -285,7 +285,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -304,7 +304,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -321,7 +321,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -338,7 +338,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -355,7 +355,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -372,7 +372,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -389,7 +389,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -406,7 +406,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -423,7 +423,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -440,7 +440,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -457,7 +457,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -474,7 +474,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -491,7 +491,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -508,7 +508,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -526,7 +526,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
@@ -544,7 +544,7 @@ export default function Home({clientIp}:{clientIp:string}) {
                                    alt="biorevit"
                                    width={500}
                                    height={500}
-                                   priority
+                                   loading={'lazy'}
                                />
                            </div>
                            <div>
