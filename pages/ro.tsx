@@ -26,17 +26,25 @@ import Contacts from "@/components/contacts";
 import pintea from "@/public/assets/img/pintea.png";
 import BurgerMenu from "@/components/burgerMenu";
 import Head from "next/head";
-import React, {useEffect} from "react";
+import React, {useEffect,useState} from "react";
 
-export default function Home({clientIp}:{clientIp:string}) {
+export default function Home({posts}:{posts:{title:string,url:string}[]}) {
 
-  useEffect(()=>{
-     if((window as any)?.gtag){
-         (window as any).gtag('event', `ClientIP: ${clientIp}`, {
-             'action': 'firstVisit',
-         });
-     }
-  },[])
+    const [ip, setIp] = useState("");
+
+    useEffect(() => {
+        fetch("/api/ip")
+            .then((res) => res.json())
+            .then((data) => setIp(data.ip));
+    }, []);
+
+    useEffect(()=>{
+        if((window as any)?.gtag){
+            (window as any).gtag('event', `ClientIP: ${ip}`, {
+                'action': 'firstVisit',
+            });
+        }
+    },[ip])
 
   return (
        <>
@@ -624,11 +632,10 @@ export default function Home({clientIp}:{clientIp:string}) {
        </>
   );
 }
-export async function getServerSideProps(context:any) {
-    context.res.setHeader("Cache-Control", "public, s-maxage=600, stale-while-revalidate=30");
-
-    const ip = context.req.headers['x-forwarded-for'] || context.req.socket.remoteAddress;
+export async function getStaticProps() {
     return {
-        props: { clientIp: ip || null },
+        props: {
+            posts:[]
+        },
     };
 }
