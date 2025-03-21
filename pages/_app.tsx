@@ -12,9 +12,10 @@ export default function App({ Component, pageProps }: AppProps) {
   const [isAnalyticsOpen, setIsAnalyticsOpen] = useState(false);
 
   useEffect(() => {
-    setTimeout(()=>{
+   const timer = setTimeout(()=>{
       setIsAnalyticsOpen(true);
-    },3000)
+    },5000)
+    return () => clearTimeout(timer)
   },[])
 
 
