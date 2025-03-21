@@ -5,8 +5,19 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import GoogleTagManager from "@/components/GoogleTagManager";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import {useEffect, useState} from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
+
+  const [isAnalyticsOpen, setIsAnalyticsOpen] = useState(false);
+
+  useEffect(() => {
+    setTimeout(()=>{
+      setIsAnalyticsOpen(true);
+    },3000)
+  },[])
+
+
   return(
 
 <>
@@ -16,13 +27,22 @@ export default function App({ Component, pageProps }: AppProps) {
     <link rel="icon" href="assets/img/favicon/favicon.ico" sizes="any"/>
   </Head>
 
-  <GoogleAnalytics/>
-  <GoogleTagManager/>
+  {isAnalyticsOpen && <>
+
+    <GoogleAnalytics/>
+    <GoogleTagManager/>
+
+  </>}
 
 
   <Component {...pageProps} />
-  <Analytics/>
-  <SpeedInsights />
+
+  {isAnalyticsOpen && (<>
+
+    <Analytics/>
+    <SpeedInsights />
+
+  </>)}
 
 </>
   );
