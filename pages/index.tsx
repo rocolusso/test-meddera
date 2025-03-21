@@ -599,10 +599,11 @@ export default function Home({clientIp}:{clientIp:string}) {
   );
 }
 
-export async function getStaticProps(context:any) {
+export async function getServerSideProps(context:any) {
+    context.res.setHeader("Cache-Control", "public, s-maxage=600, stale-while-revalidate=30");
+
     const ip = context.req.headers['x-forwarded-for'] || context.req.socket.remoteAddress;
     return {
         props: { clientIp: ip || null },
-        revalidate: 5,
     };
 }
