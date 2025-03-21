@@ -599,9 +599,10 @@ export default function Home({clientIp}:{clientIp:string}) {
   );
 }
 
-export async function getServerSideProps(context:any) {
+export async function getStaticProps(context:any) {
     const ip = context.req.headers['x-forwarded-for'] || context.req.socket.remoteAddress;
     return {
-        props: { clientIp: ip || null }, // Pass IP as prop to the page
+        props: { clientIp: ip || null },
+        revalidate: 5,
     };
 }
