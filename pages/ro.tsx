@@ -80,15 +80,16 @@ export default function Home({posts}:{posts:{title:string,url:string}[]}) {
 
            <div>
                <div
-                   className={'sticky top-0 left-0 backdrop-blur-2xl   header container mx-auto sm:pt-10   bg-white z-40'}>
+                   className={'header sticky top-0 left-0 backdrop-blur-2xl   header container mx-auto sm:pt-10    z-40'}>
                    <div
-                       className={'flex gap-5 items-center border p-5 backdrop-blur-2xl sm:rounded-3xl sm:shadow-2xl z-50'}>
+                       className={'flex gap-5 items-center border bg-white p-5 backdrop-blur-2xl sm:rounded-3xl sm:shadow-2xl z-50'}>
                        <Link href={'/'}>
                            <div className={'max-w-[300px]'}>
                                <Image
+                                   // className="dark:invert"
                                    src={pintea}
-                                   alt="pintea"
-                                   width={1000}
+                                   alt="pintea_logo"
+                                   width={300}
                                    height={20}
                                    priority
                                />
@@ -129,7 +130,7 @@ export default function Home({posts}:{posts:{title:string,url:string}[]}) {
                    </div>
                </div>
 
-               <div className={'hero_block mx-auto pt-10'}>
+               <div className={'hero_block container mx-auto pt-10'}>
                    <div className={'flex justify-center container mx-auto'}>
                        <Image
                            className={'sm:max-w-[1000px] sm:rounded-3xl sm:shadow-2xl'}
