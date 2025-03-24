@@ -12,7 +12,7 @@ export function middleware(request: NextRequest) {
     }
 
     // Get the country from the Vercel geolocation headers
-    const country = request.geo?.country || request.headers.get('x-vercel-ip-country');
+    const country = request?.geo?.country || request.headers.get('x-vercel-ip-country');
 
     // Check if the visitor is from Israel
     // if (country === 'IL') {
