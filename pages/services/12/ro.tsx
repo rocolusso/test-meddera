@@ -14,8 +14,8 @@ const Service12
 
             <Head>
                 <meta charSet="utf-8"/>
-                <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-                <meta http-equiv="content-language" content="ro"/>
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+                <meta httpEquiv="content-language" content="ro"/>
 
                 <title>Mezoterapia pentru păr: redobândirea densității și sănătății</title>
                 <meta

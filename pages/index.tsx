@@ -54,8 +54,8 @@ export default function Home({posts}:{posts:{title:string,url:string}[]}) {
       <>
           <Head>
               <meta charSet="utf-8"/>
-              <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-              <meta http-equiv="content-language" content="ru"/>
+              <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+              <meta httpEquiv="content-language" content="ru"/>
 
               <title>Екатерина Пынтя – Дерматолог-косметолог в Бельцах</title>
               <meta
@@ -91,7 +91,6 @@ export default function Home({posts}:{posts:{title:string,url:string}[]}) {
                       <Link href={'/'}>
                           <div className={'max-w-[300px]'}>
                               <Image
-                                  // className="dark:invert"
                                   src={pintea}
                                   alt="pintea_logo"
                                   width={300}

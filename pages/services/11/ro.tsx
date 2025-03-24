@@ -14,8 +14,8 @@ const Service11
 
             <Head>
                 <meta charSet="utf-8"/>
-                <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-                <meta http-equiv="content-language" content="ru"/>
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+                <meta httpEquiv="content-language" content="ro"/>
 
                 <title>Mezoterapie facială: Reîntinerire și îmbunătățirea aspectului</title>
                 <meta

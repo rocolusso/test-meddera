@@ -13,8 +13,8 @@ const Service5
         <>
             <Head>
                 <meta charSet="utf-8"/>
-                <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-                <meta http-equiv="content-language" content="ru"/>
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+                <meta httpEquiv="content-language" content="ru"/>
 
                 <title>Карбокситерапия: Уход за кожей без инъекций для упругости и сияния</title>
                 <meta

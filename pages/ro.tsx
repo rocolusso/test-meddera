@@ -51,10 +51,10 @@ export default function Home({posts}:{posts:{title:string,url:string}[]}) {
        <>
            <Head>
                <meta charSet="utf-8"/>
-               <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-               <meta http-equiv="content-language" content="ro"/>
+               <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+               <meta httpEquiv="content-language" content="ro"/>
 
-               <title>Pîntea Ecaterina  – Dermatolog-cosmetolog în Bălți</title>
+               <title>Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți</title>
                <meta
                    name="description"
                    content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți. Clinica Meddera: dermatologie, cosmetologie, eliminarea formațiunilor, botox, fillere, mezoterapie."

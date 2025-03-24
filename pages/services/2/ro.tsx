@@ -13,8 +13,8 @@ const Service2
         <>
             <Head>
                 <meta charSet="utf-8"/>
-                <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-                <meta http-equiv="content-language" content="ro"/>
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+                <meta httpEquiv="content-language" content="ro"/>
 
                 <title>Consultație dermatologică: Abordare complexă pentru sănătatea pielii</title>
                 <meta
