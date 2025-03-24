@@ -1,21 +1,20 @@
-import { cn } from "@/lib/utils"
-import { type HTMLAttributes, forwardRef } from "react"
+import React from 'react';
+import { type HTMLAttributes, forwardRef } from 'react';
+import cn from '@/lib/utils';
 
 export interface VisuallyHiddenProps extends HTMLAttributes<HTMLSpanElement> {}
 
-const VisuallyHidden = forwardRef<HTMLSpanElement, VisuallyHiddenProps>(({ className, ...props }, ref) => {
-    return (
+const VisuallyHidden = forwardRef<HTMLSpanElement, VisuallyHiddenProps>(({ className, ...props }, ref) => (
         <span
-            ref={ref}
-            className={cn(
-                "absolute h-px w-px overflow-hidden whitespace-nowrap border-0 p-0",
-                "clip-[rect(0,0,0,0)]",
-                className,
-            )}
-            {...props}
+          ref={ref}
+          className={cn(
+            'absolute h-px w-px overflow-hidden whitespace-nowrap border-0 p-0',
+            'clip-[rect(0,0,0,0)]',
+            className,
+          )}
+          {...props}
         />
-    )
-})
-VisuallyHidden.displayName = "VisuallyHidden"
+));
+VisuallyHidden.displayName = 'VisuallyHidden';
 
-export { VisuallyHidden }
+export { VisuallyHidden };

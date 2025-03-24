@@ -1,12 +1,10 @@
 import React from 'react';
-import Script from "next/script";
+import Script from 'next/script';
 
-const GoogleTagManager = () => {
-    return (
+function GoogleTagManager() {
+  return (
         <>
 
-
-            {/*Google Tag Manager*/}
             <>
 
                 <Script strategy="afterInteractive" id="google-tagmanager">
@@ -36,34 +34,21 @@ const GoogleTagManager = () => {
              }
              
     
-
-
-
-             
-             
-
              `
                     }
                 </Script>
                 <noscript
-                    dangerouslySetInnerHTML={{
-                        __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFCP3D5F"
+                  dangerouslySetInnerHTML={{
+                    __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFCP3D5F"
              height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-                    }}
+                  }}
                 />
             </>
-            {/*End Google Tag Manager*/}
+            {/* End Google Tag Manager */}
 
+        </>
 
-
-
-
-
-          </>
-
-
-
-    );
-};
+  );
+}
 
 export default GoogleTagManager;

@@ -1,14 +1,16 @@
-import { Html, Head, Main, NextScript } from "next/document";
-
+import React from 'react';
+import {
+  Html, Head, Main, NextScript
+} from 'next/document';
 
 export default function Document() {
   return (
     <Html lang="en">
-        <Head/>
+        <Head />
         <body className="antialiased">
-        <Main/>
+        <Main />
         <NextScript />
-      </body>
+        </body>
     </Html>
   );
 }
