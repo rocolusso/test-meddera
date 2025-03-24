@@ -1,31 +1,35 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { NextResponse } from "next/server"
+import type { NextRequest } from "next/server"
+
+// Extend the NextRequest type to include Vercel's geo property
+declare module "next/server" {
+    interface NextRequest {
+        // @ts-ignore
+        geo?: {
+            city?: string
+            country?: string
+            region?: string
+        }
+    }
+}
 
 export function middleware(request: NextRequest) {
+    const pathname = request.nextUrl.pathname
 
-
-
-    const pathname = request.nextUrl.pathname;
     // Exclude /blocked from middleware processing
-    if (pathname === '/blocked') {
-        return NextResponse.next();
+    if (pathname === "/blocked") {
+        return NextResponse.next()
     }
 
     // Get the country from the Vercel geolocation headers
-    const country = request?.geo?.country || request.headers.get('x-vercel-ip-country');
+    const country = request.geo?.country || request.headers.get("x-vercel-ip-country")
 
-    // Check if the visitor is from Israel
-    // if (country === 'IL') {
-    //     // Redirect to a custom page or block access
-    //     return NextResponse.redirect(new URL('/index.tsx', request.url));
-    // }
-
-    if (country === 'IL'|| country === 'IN' || country === 'RU') {
+    if (country === "IL" || country === "IN" || country === "RU") {
         // Redirect to a custom page or block access
-        return NextResponse.redirect(new URL('/blocked', request.url));
+        return NextResponse.redirect(new URL("/blocked", request.url))
     }
 
-
     // Allow the request to proceed
-    return NextResponse.next();
+    return NextResponse.next()
 }
+
