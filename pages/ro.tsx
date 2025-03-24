@@ -27,6 +27,7 @@ import pintea from "@/public/assets/img/pintea.png";
 import BurgerMenu from "@/components/burgerMenu";
 import Head from "next/head";
 import React, {useEffect,useState} from "react";
+import {VisuallyHidden} from "@/components/visually-hidden";
 
 export default function Home({posts}:{posts:{title:string,url:string}[]}) {
 
@@ -567,6 +568,9 @@ export default function Home({posts}:{posts:{title:string,url:string}[]}) {
 
                <Contacts locale={'ro'}/>
 
+
+               <VisuallyHidden>
+
                <div className={'seo-block bg-gray-400'}>
                    <div style={{fontSize: "8px"}} className={'container justify-center mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3'}>
                        <div>
@@ -627,6 +631,8 @@ export default function Home({posts}:{posts:{title:string,url:string}[]}) {
                        </div>
                    </div>
                </div>
+
+               </VisuallyHidden>
 
 
            </div>
