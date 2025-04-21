@@ -48,54 +48,69 @@ export default function Home({ posts }:{posts:{title:string, url:string}[]}) {
   return (
        <>
            <Head>
-               <meta charSet="utf-8" />
-               <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-               <meta httpEquiv="content-language" content="ro" />
+               <meta charSet="utf-8"/>
+               <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+               <meta httpEquiv="content-language" content="ro"/>
 
-               <title>Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți</title>
+               {/*<title>Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți</title>*/}
+               {/*<meta*/}
+               {/*  name="description"*/}
+               {/*  content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți.*/}
+               {/*  Clinica Meddera: dermatologie, cosmetologie, eliminarea*/}
+               {/*  formațiunilor, botox, fillere, mezoterapie."*/}
+               {/*/>*/}
+
+               <title>Dermatolog în Bălți | Consultații și tratamente personalizate — Meddera</title>
+               <meta name="description"
+                     content="Consultații dermatologice profesionale în Bălți cu Dr.
+                     Ecaterina Pîntea. Diagnostic precis,
+                     tratamente moderne și îngrijire personalizată la clinica Meddera."/>
+
+               {/*<meta property="og:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți"/>*/}
+               {/*<meta*/}
+               {/*    property="og:description"*/}
+               {/*    content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți.*/}
+               {/*   Clinica Meddera: dermatologie, cosmetologie,*/}
+               {/*   eliminarea formațiunilor, botox, fillere, mezoterapie."*/}
+               {/*/>*/}
+
+               <meta property="og:title" content="Dermatolog în Bălți | Consultații și tratamente personalizate — Meddera"/>
                <meta
-                 name="description"
-                 content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți.
-                 Clinica Meddera: dermatologie, cosmetologie, eliminarea
-                 formațiunilor, botox, fillere, mezoterapie."
+                   property="og:description"
+                   content="Consultații dermatologice profesionale în Bălți cu Dr.
+                     Ecaterina Pîntea. Diagnostic precis,
+                     tratamente moderne și îngrijire personalizată la clinica Meddera."
                />
 
-               <meta property="og:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți" />
-               <meta
-                 property="og:description"
-                 content="Pîntea Ecaterina – dermatolog-cosmetolog cu experiență în Bălți.
-                  Clinica Meddera: dermatologie, cosmetologie,
-                  eliminarea formațiunilor, botox, fillere, mezoterapie."
-               />
-               <meta property="og:image" content="/assets/img/seo-meta/facebook-meta.jpg" />
-               <meta property="og:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți" />
-               <meta property="og:image:width" content="1200" />
-               <meta property="og:image:height" content="630" />
-               <meta property="og:type" content="website" />
-               <meta property="og:url" content="https://meddera.md" />
+               <meta property="og:image" content="/assets/img/seo-meta/facebook-meta.jpg"/>
+               <meta property="og:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți"/>
+               <meta property="og:image:width" content="1200"/>
+               <meta property="og:image:height" content="630"/>
+               <meta property="og:type" content="website"/>
+               <meta property="og:url" content="https://meddera.md"/>
 
-               <meta name="twitter:card" content="summary_large_image" />
-               <meta name="twitter:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți" />
-               <meta
-                 name="twitter:description"
-                 content="Екатерина Пынтя – dermatolog-cosmetolog cu experiență în Bălți.
-                  Clinica Meddera: dermatologie, cosmetologie,
-                  eliminarea formațiunilor, botox, fillere, mezoterapie."
-               />
-               <meta name="twitter:image" content="/assets/img/seo-meta/twitter-meta.jpg" />
-               <meta name="twitter:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți" />
-               <meta name="twitter:site" content="@your_twitter_handle" />
+               {/*<meta name="twitter:card" content="summary_large_image"/>*/}
+               {/*<meta name="twitter:title" content="Pîntea Ecaterina – Dermatolog-cosmetolog în Bălți"/>*/}
+               {/*<meta*/}
+               {/*    name="twitter:description"*/}
+               {/*    content="Екатерина Пынтя – dermatolog-cosmetolog cu experiență în Bălți.*/}
+               {/*   Clinica Meddera: dermatologie, cosmetologie,*/}
+               {/*   eliminarea formațiunilor, botox, fillere, mezoterapie."*/}
+               {/*/>*/}
+               {/*<meta name="twitter:image" content="/assets/img/seo-meta/twitter-meta.jpg"/>*/}
+               {/*<meta name="twitter:image:alt" content="Екатерина Пынтя – Dermatolog-cosmetolog în Bălți"/>*/}
+               {/*<meta name="twitter:site" content="@your_twitter_handle"/>*/}
            </Head>
 
            <div>
                <div
-                 className="header sticky top-0 left-0 backdrop-blur-2xl   header container mx-auto sm:pt-10    z-40"
+                   className="header sticky top-0 left-0 backdrop-blur-2xl   header container mx-auto sm:pt-10    z-40"
                >
                    <div
-                     className="flex gap-5 items-center border bg-white p-5 backdrop-blur-2xl sm:rounded-3xl sm:shadow-2xl z-50"
+                       className="flex gap-5 items-center border bg-white p-5 backdrop-blur-2xl sm:rounded-3xl sm:shadow-2xl z-50"
                    >
                        <Link href="/">
-                           <div className="max-w-[300px]">
+                       <div className="max-w-[300px]">
                                <Image
                                  src={pintea}
                                  alt="pintea_logo"
@@ -674,79 +689,144 @@ Consultația la medicul
 
                <div className="seo-block bg-gray-400">
                    <div
-                     style={{ fontSize: '8px' }}
-                     className="container justify-center mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3"
+                       style={{fontSize: '8px'}}
+                       className="container justify-center mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3"
                    >
-                       <div>
-                           <h1>Dermatolog în Bălți – Екатерина Пынтя</h1>
-                           <h2>Despre Екатерина Пынтя – Dermatolog profesionist cu experiență de 11 ani</h2>
-                           <h2>Servicii de dermatologie în Bălți oferite de Екатерина Пынтя</h2>
-                       </div>
+                       {/*                       <div>*/}
+                       {/*                           <h1>Dermatolog în Bălți – Екатерина Пынтя</h1>*/}
+                       {/*                           <h2>Despre Екатерина Пынтя – Dermatolog profesionist cu experiență de 11 ani</h2>*/}
+                       {/*                           <h2>Servicii de dermatologie în Bălți oferite de Екатерина Пынтя</h2>*/}
+                       {/*                       </div>*/}
 
-                       <div>
-                           <h3>Diagnostic și tratament al afecțiunilor dermatologice</h3>
-                           <ul>
-                               <li>
-<p>
-Dermatologie: abordare profesională pentru tratarea acneei, eczemelor,
-                                   psoriazisului și altor afecțiuni ale pielii.
-</p>
-                               </li>
-                               <li>
-<p>
-Onco-dermatologie: diagnostic precoce și tratament al formațiunilor benigne și
-                                   maligne ale pielii.
-</p>
-                               </li>
-                               <li><p>Dermatoscopie: diagnostic precis al alunițelor și leziunilor cutanate.</p></li>
-                           </ul>
-                       </div>
+                       {/*                       <div>*/}
+                       {/*                           <h3>Diagnostic și tratament al afecțiunilor dermatologice</h3>*/}
+                       {/*                           <ul>*/}
+                       {/*                               <li>*/}
+                       {/*<p>*/}
+                       {/*Dermatologie: abordare profesională pentru tratarea acneei, eczemelor,*/}
+                       {/*                                   psoriazisului și altor afecțiuni ale pielii.*/}
+                       {/*</p>*/}
+                       {/*                               </li>*/}
+                       {/*                               <li>*/}
+                       {/*<p>*/}
+                       {/*Onco-dermatologie: diagnostic precoce și tratament al formațiunilor benigne și*/}
+                       {/*                                   maligne ale pielii.*/}
+                       {/*</p>*/}
+                       {/*                               </li>*/}
+                       {/*                               <li><p>Dermatoscopie: diagnostic precis al alunițelor și leziunilor cutanate.</p></li>*/}
+                       {/*                           </ul>*/}
+                       {/*                       </div>*/}
 
-                       <div>
-                           <h3>Cosmetologie estetică în Bălți</h3>
-                           <ul>
-                               <li><p>Injecții cu botox și fillere pentru corectarea semnelor de îmbătrânire.</p></li>
-                               <li><p>Conturarea feței și mărirea buzelor.</p></li>
-                               <li><p>Mezoterapie și biorevitalizare pentru îmbunătățirea structurii pielii.</p></li>
-                               <li><p>Polinucleotide și colagenostimulatori pentru o întinerire naturală.</p></li>
-                           </ul>
-                       </div>
+                       {/*                       <div>*/}
+                       {/*                           <h3>Cosmetologie estetică în Bălți</h3>*/}
+                       {/*                           <ul>*/}
+                       {/*                               <li><p>Injecții cu botox și fillere pentru corectarea semnelor de îmbătrânire.</p></li>*/}
+                       {/*                               <li><p>Conturarea feței și mărirea buzelor.</p></li>*/}
+                       {/*                               <li><p>Mezoterapie și biorevitalizare pentru îmbunătățirea structurii pielii.</p></li>*/}
+                       {/*                               <li><p>Polinucleotide și colagenostimulatori pentru o întinerire naturală.</p></li>*/}
+                       {/*                           </ul>*/}
+                       {/*                       </div>*/}
 
-                       <div>
-                           <h3>Îndepărtarea formațiunilor benigne</h3>
-                           <p>
-Metode moderne de îndepărtare a formațiunilor: radiocauter, electrocoagulare, Jett Plasma.
-                               Proceduri sigure și eficiente pentru o piele curată și sănătoasă.
-                           </p>
-                       </div>
+                       {/*                       <div>*/}
+                       {/*                           <h3>Îndepărtarea formațiunilor benigne</h3>*/}
+                       {/*                           <p>*/}
+                       {/*Metode moderne de îndepărtare a formațiunilor: radiocauter, electrocoagulare, Jett Plasma.*/}
+                       {/*                               Proceduri sigure și eficiente pentru o piele curată și sănătoasă.*/}
+                       {/*                           </p>*/}
+                       {/*                       </div>*/}
 
-                       <div>
-                           <h2>Clinica Meddera – Centru modern în Bălți</h2>
-                           <p>
-Екатерина Пынтя este fondatoarea Centrului &#34;Meddera&#34;, deschis în aprilie 2024. Clinica
-                               oferă o gamă completă de servicii în dermatologie și cosmetologie, folosind tehnologii
-                               avansate și metode moderne.
-                           </p>
-                       </div>
+                       {/*                       <div>*/}
+                       {/*                           <h2>Clinica Meddera – Centru modern în Bălți</h2>*/}
+                       {/*                           <p>*/}
+                       {/*Екатерина Пынтя este fondatoarea Centrului &#34;Meddera&#34;, deschis în aprilie 2024. Clinica*/}
+                       {/*                               oferă o gamă completă de servicii în dermatologie și cosmetologie, folosind tehnologii*/}
+                       {/*                               avansate și metode moderne.*/}
+                       {/*                           </p>*/}
+                       {/*                       </div>*/}
 
-                       <div>
-                           <h2>De ce să o alegeți pe Екатерина Пынтя ca dermatolog în Bălți?</h2>
-                           <ul>
-                               <li><p>Experiență în dermatologie – 11 ani.</p></li>
-                               <li><p>Cosmetolog certificat cu 7 ani de experiență.</p></li>
-                               <li><p>Abordare individuală pentru fiecare pacient.</p></li>
-                               <li><p>Utilizarea metodelor avansate și a materialelor de înaltă calitate.</p></li>
-                           </ul>
-                       </div>
+                       {/*                       <div>*/}
+                       {/*                           <h2>De ce să o alegeți pe Екатерина Пынтя ca dermatolog în Bălți?</h2>*/}
+                       {/*                           <ul>*/}
+                       {/*                               <li><p>Experiență în dermatologie – 11 ani.</p></li>*/}
+                       {/*                               <li><p>Cosmetolog certificat cu 7 ani de experiență.</p></li>*/}
+                       {/*                               <li><p>Abordare individuală pentru fiecare pacient.</p></li>*/}
+                       {/*                               <li><p>Utilizarea metodelor avansate și a materialelor de înaltă calitate.</p></li>*/}
+                       {/*                           </ul>*/}
+                       {/*                       </div>*/}
 
-                       <div>
-                           <h2>Cum să vă programați la un dermatolog în Bălți?</h2>
-                           <p>
-Contactați Centrul &#34;Meddera&#34; pentru a vă programa la o consultație cu Екатерина Пынтя. Ea
-                               vă va ajuta să rezolvați problemele dermatologice și estetice cu o abordare
-                               profesională.
-                           </p>
-                       </div>
+                       {/*                       <div>*/}
+                       {/*                           <h2>Cum să vă programați la un dermatolog în Bălți?</h2>*/}
+                       {/*                           <p>*/}
+                       {/*Contactați Centrul &#34;Meddera&#34; pentru a vă programa la o consultație cu Екатерина Пынтя. Ea*/}
+                       {/*                               vă va ajuta să rezolvați problemele dermatologice și estetice cu o abordare*/}
+                       {/*                               profesională.*/}
+                       {/*                           </p>*/}
+                       {/*                       </div>*/}
+
+                       <header>
+                           <h1>Consultație la dermatolog în Bălți</h1>
+                           <p>Obțineți îngrijire dermatologică de calitate cu Dr. Ecaterina Pîntea la clinica Meddera.
+                               Diagnostic precis și tratamente personalizate pentru sănătatea pielii dumneavoastră.</p>
+                       </header>
+                       <main>
+                           <section>
+                               <h2>De ce să consultați un dermatolog?</h2>
+                               <ul>
+                                   <li><strong>Diagnostic profesional:</strong> Evaluare detaliată a afecțiunilor
+                                       cutanate.
+                                   </li>
+                                   <li><strong>Tratamente personalizate:</strong> Soluții adaptate nevoilor individuale
+                                       ale fiecărui pacient.
+                                   </li>
+                                   <li><strong>Prevenție și educație:</strong> Recomandări pentru menținerea sănătății
+                                       pielii pe termen lung.
+                                   </li>
+                               </ul>
+                           </section>
+                           <section>
+                               <h2>Serviciile oferite de Dr. Ecaterina Pîntea</h2>
+                               <article>
+                                   <h3>Dermatologie generală</h3>
+                                   <p>Tratamentul afecțiunilor precum acnee, eczeme, psoriazis și altele.</p>
+                               </article>
+                               <article>
+                                   <h3>Dermatoscopie</h3>
+                                   <p>Examinarea leziunilor cutanate pentru diagnosticarea precoce a afecțiunilor
+                                       grave.</p>
+                               </article>
+                               <article>
+                                   <h3>Proceduri estetice</h3>
+                                   <p>Servicii precum biorevitalizare, mezoterapie, augmentarea buzelor și altele.</p>
+                               </article>
+                               <article>
+                                   <h3>Îndepărtarea formațiunilor benigne</h3>
+                                   <p>Eliminarea alunițelor, verucilor și altor leziuni cutanate cu metode moderne.</p>
+                               </article>
+                           </section>
+                           <section>
+                               <h2>Despre Dr. Ecaterina Pîntea</h2>
+                               <p>Medic dermatovenerolog cu peste 11 ani de experiență, specializată în dermatologie,
+                                   venerologie și cosmetologie. Fondatoarea clinicii Meddera din Bălți, dedicată
+                                   oferirii de servicii dermatologice de înaltă calitate.</p>
+                           </section>
+                           <section>
+                               <h2>De ce să alegeți clinica Meddera?</h2>
+                               <ul>
+                                   <li>Experiență vastă și profesionalism în domeniul dermatologiei.</li>
+                                   <li>Abordare centrată pe pacient și tratamente personalizate.</li>
+                                   <li>Utilizarea tehnologiilor moderne pentru diagnostic și tratament.</li>
+                                   <li>Atmosferă primitoare și echipă dedicată.</li>
+                               </ul>
+                           </section>
+                           <section>
+                               <h2>Programați o consultație</h2>
+                               <p>Sunați la <strong>+37368550030</strong> sau completați formularul de pe site pentru a
+                                   vă programa. Vă așteptăm la clinica Meddera din Bălți pentru îngrijire dermatologică
+                                   de calitate.</p>
+                           </section>
+                       </main>
+
+
                    </div>
                </div>
 
@@ -756,10 +836,11 @@ Contactați Centrul &#34;Meddera&#34; pentru a vă programa la o consultație cu
        </>
   );
 }
+
 export async function getStaticProps() {
-  return {
-    props: {
-      posts: []
-    },
-  };
+    return {
+        props: {
+            posts: []
+        },
+    };
 }
