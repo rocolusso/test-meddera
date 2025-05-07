@@ -23,7 +23,7 @@ export default async function MainContactForm(req: NextApiRequest, res: NextApiR
   // 6576456966 ecaterina
   // 7378233926 work admin
 
-  const botToken = '7059635838:AAEo9R0PAvYinEwo3lqEXcIVkokH2izXERg';
+  const botToken = '7059635838:AAHWSglqoTdTyrQHKhcmzYx9KA7gxolBRbE'; 
   const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
   if (!message || !Array.isArray(userIds)) {
