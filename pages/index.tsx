@@ -739,7 +739,7 @@ export default function Home({ posts }: { posts: { title: string, url: string }[
 export async function getStaticProps() {
   return {
     props: {
-      posts: [0]
+      posts: [0,1]
     },
   };
 }
