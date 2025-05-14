@@ -12,15 +12,13 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  title: 'Consultația la medicul dermatocosmetolog: Primul pas către o piele sănătoasă',
-  description: `Obțineți o consultație profesională la medicul dermatocosmetolog.
-                  Diagnosticarea pielii, selecția procedurilor, recomandări pentru îngrijire
-                  și stil de viață pentru sănătatea și frumusețea pielii dvs.`,
+  title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
+  description: `Programează-te la o consultație cu medicul dermatocosmetolog în Bălți. 
+  Tratăm acneea, pigmentarea, ridurile și oferim soluții personalizate pentru o piele radiantă.`,
   openGraph: {
-    title: 'Consultația la medicul dermatocosmetolog: Primul pas către o piele sănătoasă',
-    description: `Obțineți o consultație profesională la medicul dermatocosmetolog.
-                  Diagnosticarea pielii, selecția procedurilor, recomandări pentru îngrijire
-                  și stil de viață pentru sănătatea și frumusețea pielii dvs.`,
+    title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
+    description: `Programează-te la o consultație cu medicul dermatocosmetolog în Bălți. 
+  Tratăm acneea, pigmentarea, ridurile și oferim soluții personalizate pentru o piele radiantă.`,
     url: 'https://meddera.md/ro',
     type: 'website',
     images: [
@@ -34,10 +32,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Consultația la medicul dermatocosmetolog: Primul pas către o piele sănătoasă',
-    description: `Obțineți o consultație profesională la medicul dermatocosmetolog.
-                  Diagnosticarea pielii, selecția procedurilor, recomandări pentru îngrijire
-                  și stil de viață pentru sănătatea și frumusețea pielii dvs.`,
+    title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
+    description: `Programează-te la o consultație cu medicul dermatocosmetolog în Bălți. 
+  Tratăm acneea, pigmentarea, ridurile și oferim soluții personalizate pentru o piele radiantă.`,
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
   },
@@ -91,27 +88,96 @@ function ServicePage1Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            <div
-              style={{ fontSize: '8px' }}
-              className="container justify-center   mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 "
-            >
-              <div>
-                <h1>Consultația la medicul dermatocosmetolog</h1>
-                <h2>De ce este important să consultați un medic dermatocosmetolog?</h2>
-                <h3>Examinare profesională și diagnosticarea pielii</h3>
-                <h3>Selecția individualizată a procedurilor</h3>
-                <h3>Recomandări pentru îngrijire și stil de viață</h3>
-              </div>
-
-              <div>
-                <h2>Ce probleme poate rezolva medicul dermatocosmetolog?</h2>
+            <section>
+              <h1>Consultație la medicul dermatocosmetolog în Bălți</h1>
+              <p>
+                Descoperă secretul unei pieli sănătoase și strălucitoare cu ajutorul
+                specialiștilor noștri.
+              </p>
+            </section>
+            <section>
+              <h2>De ce să alegi o consultație dermatocosmetologică?</h2>
+              <ul>
+                <li>
+                  <strong>Diagnostic precis:</strong>
+                  {' '}
+                  Identificăm corect afecțiunile pielii tale.
+                </li>
+                <li>
+                  <strong>Plan de tratament personalizat:</strong>
+                  {' '}
+                  Soluții adaptate nevoilor individuale.
+                </li>
+                <li>
+                  <strong>Prevenție eficientă:</strong>
+                  {' '}
+                  Evităm agravarea problemelor dermatologice.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Serviciile noastre dermatocosmetologice</h2>
+              <article>
                 <h3>Tratamentul acneei</h3>
+                <p>Eliminăm acneea și prevenim recidivele prin terapii moderne și eficiente.</p>
+              </article>
+              <article>
                 <h3>Corectarea pigmentării</h3>
-                <h3>Eliminarea semnelor îmbătrânirii</h3>
-                <h3>Alte probleme dermatologice</h3>
-              </div>
-
-            </div>
+                <p>
+                  Reducem petele pigmentare și uniformizăm tonul pielii pentru
+                  un aspect luminos.
+                </p>
+              </article>
+              <article>
+                <h3>Rejuvenare facială</h3>
+                <p>Redăm elasticitatea și fermitatea pielii prin proceduri non-invazive.</p>
+              </article>
+              <article>
+                <h3>Îngrijirea pielii sensibile</h3>
+                <p>
+                  Oferim soluții delicate pentru tenurile sensibile, reducând
+                  roșeața și iritațiile.
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>Beneficiile colaborării cu noi</h2>
+              <p>
+                La clinica noastră din Bălți, beneficiezi de expertiza unui medic
+                dermatocosmetolog cu experiență
+                vastă, echipamente de ultimă generație și o abordare centrată pe pacient.
+              </p>
+            </section>
+            <section>
+              <h2>Testimoniale ale pacienților</h2>
+              <ul>
+                <li>
+                  După doar câteva ședințe, tenul meu a devenit
+                  vizibil mai curat
+                  și luminos. – Maria, 28 ani
+                </li>
+                <li>
+                  Profesionalism și atenție la detalii. Recomand cu
+                  încredere! – Andrei, 35 ani
+                </li>
+                <li>
+                  Am scăpat de petele pigmentare care mă deranjau de ani de zile.
+                  – Elena, 42 ani
+                </li>
+                <li>
+                  O experiență plăcută și rezultate peste
+                  așteptări. – Ion, 30 ani
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Programează-te acum</h2>
+              <p>
+                Nu amâna grija pentru pielea ta. Contactează-ne pentru o consultație
+                personalizată și începe
+                transformarea către o piele sănătoasă și radiantă.
+              </p>
+            </section>
           </div>
         </VisuallyHidden>
 
