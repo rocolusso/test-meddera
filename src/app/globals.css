@@ -528,7 +528,8 @@ button flash animation
   width: 70px;
   text-align: center;
   position: fixed;
-  left: 50px;
+  /*left: 50px;*/
+  right: 50px;
   bottom: 50px;
   z-index: 999;
   transition: .3s;
