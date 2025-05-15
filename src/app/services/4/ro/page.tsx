@@ -12,13 +12,12 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  title: 'Masaj facial – Beneficii, tehnici și efecte asupra pielii',
-  description: `Descoperă beneficiile masajului facial: îmbunătățirea circulației,
-                  tonusului pielii, prevenirea semnelor îmbătrânirii. Tehnici variate pentru nevoile tale.`,
+  title: 'Masaj facial în Bălți – Rejuvenare și relaxare pentru tenul tău',
+  description: 'Descoperă beneficiile masajului facial în Bălți. Îmbunătățește aspectul pielii, relaxează-te și redă strălucirea tenului tău. Programează-te acum!',
   openGraph: {
-    title: 'Masaj facial – Beneficii, tehnici și efecte asupra pielii',
-    description: `Descoperă beneficiile masajului facial: îmbunătățirea circulației,
-                  tonusului pielii, prevenirea semnelor îmbătrânirii. Tehnici variate pentru nevoile tale.`,
+    title: 'Masaj facial în Bălți – Rejuvenare și relaxare pentru tenul tău',
+    description: 'Descoperă beneficiile masajului facial în Bălți. Îmbunătățește aspectul pielii, relaxează-te și redă strălucirea tenului tău. Programează-te acum!',
+
     url: 'https://meddera.md/ro',
     type: 'website',
     images: [
@@ -32,9 +31,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Masaj facial – Beneficii, tehnici și efecte asupra pielii',
-    description: `Descoperă beneficiile masajului facial: îmbunătățirea circulației,
-                  tonusului pielii, prevenirea semnelor îmbătrânirii. Tehnici variate pentru nevoile tale.`,
+    title: 'Masaj facial în Bălți – Rejuvenare și relaxare pentru tenul tău',
+    description: 'Descoperă beneficiile masajului facial în Bălți. Îmbunătățește aspectul pielii, relaxează-te și redă strălucirea tenului tău. Programează-te acum!',
+
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
   },
@@ -91,35 +90,118 @@ function ServicePage4Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            <div
-              style={{ fontSize: '8px' }}
-              className="container justify-center
-                      mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 "
-            >
-              <div>
-                <h1>Masaj facial</h1>
-                <h2>Beneficiile masajului facial</h2>
-                <h2>Tehnicile masajului facial</h2>
-                <h2>Cum să alegi tehnica potrivită de masaj</h2>
-              </div>
 
-              <div>
-                <h3>Îmbunătățirea circulației și a tonusului pielii</h3>
-                <h3>Reducerea tensiunii și a edemelor</h3>
+            <section>
+              <h1>Masaj facial profesional în Bălți</h1>
+              <p>
+                Redescoperă frumusețea naturală a tenului tău cu ajutorul masajului
+                facial oferit de specialiștii
+                noștri din Bălți.
+              </p>
+            </section>
+
+            <section>
+              <h2>Beneficiile masajului facial</h2>
+              <ul>
+                <li>Stimulează circulația sanguină și limfatică</li>
+                <li>Îmbunătățește elasticitatea și fermitatea pielii</li>
+                <li>Reduce ridurile și liniile fine</li>
+                <li>Detoxifică și oxigenează țesuturile</li>
+                <li>Relaxează mușchii faciali și ameliorează stresul</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Tipuri de masaj facial oferite</h2>
+              <article>
                 <h3>Masaj facial clasic</h3>
-                <h3>Masaj limfatic</h3>
-                <h3>Masaj sculptural</h3>
-              </div>
+                <p>
+                  Tehnică tradițională care îmbunătățește aspectul pielii și
+                  previne semnele îmbătrânirii.
+                </p>
+              </article>
+              <article>
+                <h3>Masaj Kobido</h3>
+                <p>
+                  Metodă japoneză de rejuvenare naturală, care stimulează
+                  producția de colagen și relaxează
+                  profund.
+                </p>
+              </article>
+              <article>
+                <h3>Masaj de drenaj limfatic</h3>
+                <p>
+                  Ajută la eliminarea toxinelor și reduce umflăturile, oferind
+                  un ten luminos și sănătos.
+                </p>
+              </article>
+              <article>
+                <h3>Masaj facial anti-age</h3>
+                <p>
+                  Combate semnele îmbătrânirii prin tehnici avansate care redau
+                  fermitatea și elasticitatea pielii.
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>De ce să alegi serviciile noastre în Bălți?</h2>
+              <p>
+                Oferim servicii de calitate superioară, personalizate pentru
+                nevoile fiecărui client, într-un ambient
+                relaxant și profesional.
+              </p>
+            </section>
+            <section>
+              <h2>Întrebări frecvente</h2>
+              <ul>
+                <li>
+                  <strong>Cât durează o ședință de masaj facial?</strong>
+                  {' '}
+                  Aproximativ 60 de minute.
+                </li>
+                <li>
+                  <strong>Este masajul facial potrivit pentru toate tipurile de ten?</strong>
+                  {' '}
+                  Da, tehnicile noastre
+                  sunt adaptate fiecărui tip de ten.
+                </li>
+                <li>
+                  <strong>Cât de des ar trebui să fac un masaj facial?</strong>
+                  {' '}
+                  Recomandăm o ședință la fiecare 2-4
+                  săptămâni pentru rezultate optime.
+                </li>
+                <li>
+                  <strong>Există contraindicații?</strong>
+                  {' '}
+                  Persoanele cu afecțiuni cutanate severe ar trebui să
+                  consulte un specialist înainte.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Programează-te acum</h2>
+              <p>
+                Contactează-ne la
+                <strong>[Număr de telefon]</strong>
+                {' '}
+                sau vizitează-ne la
+                <strong>
+                  [Adresă
+                  completă]
+                </strong>
+                {' '}
+                pentru a-ți programa o ședință de masaj facial.
+              </p>
+            </section>
 
-            </div>
           </div>
         </VisuallyHidden>
 
+        <ContactsDynamicWrapperRo />
+
+        <ServicesNew locale="ro" />
+
       </main>
-
-      <ContactsDynamicWrapperRo />
-
-      <ServicesNew locale="ro" />
 
       <FooterNew locale="ro" />
 
