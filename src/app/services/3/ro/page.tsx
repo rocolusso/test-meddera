@@ -12,15 +12,12 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  title: 'Curățarea Feței: Tipuri și Beneficii ale Procedurii Cosmetice',
-  description: `Curățarea feței — o procedură pentru curățarea profundă a
-                  pielii și îmbunătățirea texturii și culorii acesteia.
-                  Descoperă curățarea mecanică, ultrasonică și combinată pentru o piele perfectă.`,
+  title: 'Curățare facială profesională în Bălți | Îngrijire completă a tenului',
+  description: 'Descoperă cele mai eficiente tratamente de curățare facială în Bălți. Îmbunătățește sănătatea și aspectul tenului tău cu ajutorul specialiștilor noștri.',
   openGraph: {
-    title: 'Curățarea Feței: Tipuri și Beneficii ale Procedurii Cosmetice',
-    description: `Curățarea feței — o procedură pentru curățarea profundă a
-                  pielii și îmbunătățirea texturii și culorii acesteia.
-                  Descoperă curățarea mecanică, ultrasonică și combinată pentru o piele perfectă.`,
+    title: 'Curățare facială profesională în Bălți | Îngrijire completă a tenului',
+    description: 'Descoperă cele mai eficiente tratamente de curățare facială în Bălți. Îmbunătățește sănătatea și aspectul tenului tău cu ajutorul specialiștilor noștri.',
+
     url: 'https://meddera.md/ro',
     type: 'website',
     images: [
@@ -34,10 +31,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Curățarea Feței: Tipuri și Beneficii ale Procedurii Cosmetice',
-    description: `Curățarea feței — o procedură pentru curățarea profundă a
-                  pielii și îmbunătățirea texturii și culorii acesteia.
-                  Descoperă curățarea mecanică, ultrasonică și combinată pentru o piele perfectă.`,
+    title: 'Curățare facială profesională în Bălți | Îngrijire completă a tenului',
+    description: 'Descoperă cele mai eficiente tratamente de curățare facială în Bălți. Îmbunătățește sănătatea și aspectul tenului tău cu ajutorul specialiștilor noștri.',
+
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
   },
@@ -91,38 +87,132 @@ function ServicePage3Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            <div
-              style={{ fontSize: '8px' }}
-              className="container justify-center   mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 "
-            >
-              <div>
-                <h1>Curățarea feței</h1>
-                <h2>Ce este curățarea feței?</h2>
-                <h2>Beneficiile procedurii</h2>
-                <h2>Tipuri de curățare a feței</h2>
-              </div>
+            <section>
+              <h1>Curățare facială profesională în Bălți</h1>
+              <p>
+                Redă strălucirea și sănătatea tenului tău cu tratamente personalizate
+                de curățare facială oferite de experții noștri în Bălți.
+              </p>
+            </section>
+            <section>
+              <h2>Beneficiile curățării faciale profesionale</h2>
+              <ul>
+                <li>Eliminarea impurităților și a celulelor moarte</li>
+                <li>Reducerea acneei și a punctelor negre</li>
+                <li>Hidratare profundă și revitalizare a pielii</li>
+                <li>Îmbunătățirea texturii și tonusului pielii</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Tipuri de tratamente de curățare facială</h2>
+              <article>
+                <h3>Curățare facială clasică</h3>
+                <p>
+                  Un tratament tradițional care include demachiere, exfoliere,
+                  extracție și aplicarea unei măști
+                  calmante pentru un ten curat și revigorat.
+                </p>
+              </article>
+              <article>
+                <h3>Curățare facială cu ultrasunete</h3>
+                <p>
+                  Utilizează tehnologia cu ultrasunete pentru a curăța în profunzime porii,
+                  stimulând regenerarea
+                  celulară și îmbunătățind absorbția produselor de îngrijire.
+                </p>
+              </article>
+              <article>
+                <h3>Curățare facială cu peeling chimic</h3>
+                <p>
+                  Aplicarea de soluții chimice pentru a exfolia straturile superficiale
+                  ale pielii, tratând probleme
+                  precum hiperpigmentarea și liniile fine.
+                </p>
+              </article>
+              <article>
+                <h3>Curățare facială pentru ten acneic</h3>
+                <p>
+                  Tratamente specializate pentru reducerea inflamației, prevenirea
+                  erupțiilor și îmbunătățirea
+                  aspectului pielii afectate de acnee.
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>De ce să alegi clinica noastră din Bălți</h2>
+              <p>
+                Clinica noastră oferă servicii de curățare facială realizate de
+                specialiști cu experiență, utilizând
+                echipamente moderne și produse de calitate superioară. Ne adaptăm
+                tratamentele în funcție de tipul și
+                nevoile specifice ale tenului tău.
+              </p>
+            </section>
+            <section>
+              <h2>Întrebări frecvente</h2>
+              <ul>
+                <li>
+                  <strong>Cât durează o ședință de curățare facială?</strong>
+                  {' '}
+                  Aproximativ 60 de minute, în funcție de
+                  tipul de tratament ales.
+                </li>
+                <li>
+                  <strong>Este dureroasă curățarea facială?</strong>
+                  {' '}
+                  Procedura este, în general, confortabilă, cu un
+                  minim de disconfort în timpul extracțiilor.
+                </li>
+                <li>
+                  <strong>Cât de des ar trebui să fac o curățare facială?</strong>
+                  {' '}
+                  Se recomandă o ședință la fiecare
+                  4-6 săptămâni pentru menținerea sănătății pielii.
+                </li>
+                <li>
+                  <strong>Pot face curățare facială dacă am pielea sensibilă?</strong>
+                  {' '}
+                  Da, oferim tratamente adaptate
+                  pentru pielea sensibilă, folosind produse hipoalergenice.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Testimoniale</h2>
+              <article>
+                <p>
+                  După tratamentul de curățare facială, tenul meu este mai
+                  luminos și mai neted. Recomand cu
+                  încredere! – Maria, Bălți
+                </p>
+              </article>
+              <article>
+                <p>
+                  Profesionalism și atenție la detalii. Mă simt minunat după
+                  fiecare ședință! – Elena, Bălți
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>Programează o consultație</h2>
+              <form>
 
-              <div>
-                <h3>Curățarea mecanică</h3>
-                <h3>Curățarea ultrasonică</h3>
-                <h3>Curățarea combinată</h3>
-              </div>
+                <input type="text" name="nume" required />
 
-              <div>
-                <h2>Cum să alegi metoda potrivită?</h2>
-                <h2>Etapele procedurii</h2>
-                <h2>Recomandări pentru îngrijirea pielii după curățare</h2>
-              </div>
+                <input type="tel" name="telefon" required />
 
-            </div>
+                <input type="email" name="email" />
+
+                <textarea name="mesaj" />
+
+              </form>
+            </section>
           </div>
         </VisuallyHidden>
+        <ContactsDynamicWrapperRo />
 
+        <ServicesNew locale="ro" />
       </main>
-
-      <ContactsDynamicWrapperRo />
-
-      <ServicesNew locale="ro" />
 
       <FooterNew locale="ro" />
 
