@@ -36,11 +36,62 @@
 // }
 
 /*eslint-disable*/
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+// import { NextResponse } from 'next/server';
+// import type { NextRequest } from 'next/server';
+//
+// // Extend the NextRequest type to include Vercel's geo property
+// declare module 'next/server' {
+//     interface NextRequest {
+//         geo?: {
+//             city?: string
+//             country?: string
+//             region?: string
+//         }
+//     }
+// }
+//
+// export function middleware(request: NextRequest) {
+//   const { pathname } = request.nextUrl;
+//
+//   // Exclude /blocked from middleware processing
+//   if (pathname === '/blocked') {
+//     return NextResponse.next();
+//   }
+//
+//   // Get the country from the Vercel geolocation headers
+//   const country = request.geo?.country || request.headers.get('x-vercel-ip-country');
+//
+//   if (country === 'IL' || country === 'IN' || country === 'RU') {
+//     // Redirect to a custom page or block access
+//     return NextResponse.redirect(new URL('/blocked', request.url));
+//   }
+//
+//   // Allow the request to proceed
+//   return NextResponse.next();
+// }
+//
+// // Add a matcher configuration to specify which routes the middleware should run on
+// export const config = {
+//   matcher: [
+//     /*
+//          * Match all request paths except for the ones starting with:
+//          * - api (API routes)
+//          * - _next/static (static files)
+//          * - _next/image (image optimization files)
+//          * - favicon.ico (favicon file)
+//          */
+//     '/((?!api|_next/static|_next/image|favicon.ico).*)',
+//   ],
+// };
+
+
+
+
+import { NextResponse } from "next/server"
+import type { NextRequest } from "next/server"
 
 // Extend the NextRequest type to include Vercel's geo property
-declare module 'next/server' {
+declare module "next/server" {
     interface NextRequest {
         geo?: {
             city?: string
@@ -51,35 +102,41 @@ declare module 'next/server' {
 }
 
 export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+    const pathname = request.nextUrl.pathname
 
-  // Exclude /blocked from middleware processing
-  if (pathname === '/blocked') {
-    return NextResponse.next();
-  }
+    // Exclude /blocked from middleware processing
+    if (pathname === "/blocked") {
+        return NextResponse.next()
+    }
 
-  // Get the country from the Vercel geolocation headers
-  const country = request.geo?.country || request.headers.get('x-vercel-ip-country');
+    // Get the country from the Vercel geolocation headers
+    const country = request.geo?.country || request.headers.get("x-vercel-ip-country") || ""
 
-  if (country === 'IL' || country === 'IN' || country === 'RU') {
-    // Redirect to a custom page or block access
-    return NextResponse.redirect(new URL('/blocked', request.url));
-  }
+    console.log("Detected country:", country); // Debug log
 
-  // Allow the request to proceed
-  return NextResponse.next();
+    // Convert to uppercase for case-insensitive comparison
+    const countryCode = country.toUpperCase();
+
+    if (["IL", "IN", "RU"].includes(countryCode)) {
+        console.log("Blocked country detected, redirecting to /blocked");
+        // Redirect to a custom page or block access
+        return NextResponse.redirect(new URL("/blocked", request.url))
+    }
+
+    // Allow the request to proceed
+    return NextResponse.next()
 }
 
-// Add a matcher configuration to specify which routes the middleware should run on
 export const config = {
-  matcher: [
-    /*
+    matcher: [
+        /*
          * Match all request paths except for the ones starting with:
          * - api (API routes)
          * - _next/static (static files)
          * - _next/image (image optimization files)
          * - favicon.ico (favicon file)
+         * - blocked (to prevent redirect loops)
          */
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
-  ],
-};
+        '/((?!api|_next/static|_next/image|favicon.ico|blocked).*)',
+    ],
+}
