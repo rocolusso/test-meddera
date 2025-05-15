@@ -3,6 +3,9 @@ import React from 'react';
 import './globals.css';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -17,6 +20,8 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <GoogleAnalytics />
+      <Analytics />
+      <SpeedInsights />
       <body>
         {children}
       </body>
