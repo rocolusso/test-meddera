@@ -36,8 +36,8 @@ function Contacts({ locale }:{locale:string}) {
   const [isWorkingHours, setIsWorkingHours] = useState(false);
   const [currentTime, setCurrentTime] = useState('');
 
-  const workStart = 10; // 10:00
-  const workEnd = 17; // 17:00
+  const workStart = 9; // 10:00
+  const workEnd = 20; // 17:00
 
   useEffect(() => {
     const now = new Date();
@@ -221,8 +221,8 @@ function Contacts({ locale }:{locale:string}) {
                           <p className="p-3 uppercase">
                             {locale === 'ru' ? 'Часы работы:' : 'Program de lucru:'}
                             {' '}
-                            10:00
-                            - 17:00
+                            09:00
+                            - 20:00
                           </p>
                           )}
                     </div>
