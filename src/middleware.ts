@@ -30,7 +30,7 @@ export function middleware(request: NextRequest) {
   // Convert to uppercase for case-insensitive comparison
   const countryCode = country.toUpperCase();
 
-  if (['IL', 'IN', 'RU'].includes(countryCode)) {
+  if (['IL', 'IN', 'RU','JP','SE'].includes(countryCode)) {
     console.log(`Blocked country detected, redirecting to /blocked, coutry: ${country}`);
     // Redirect to a custom page or block access
     return NextResponse.redirect(new URL('/blocked', request.url));
