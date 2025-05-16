@@ -12,15 +12,12 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  title: 'Peeling: Tipuri și Beneficii pentru Pielea Ta',
-  description: `Descoperă totul despre procedura de peeling: tipuri,
-                  beneficii și cum ajută la îmbunătățirea stării pielii.
-                  Abordare profesională pentru o piele sănătoasă și strălucitoare.`,
+  title: 'Peeling facial profesional în Bălți – Reînnoiește-ți pielea cu Meddera',
+  description: 'Descoperă beneficiile peelingului facial la clinica Meddera din Bălți. Proceduri personalizate pentru un ten luminos și sănătos. Programează-te acum!',
   openGraph: {
-    title: 'Peeling: Tipuri și Beneficii pentru Pielea Ta',
-    description: `Descoperă totul despre procedura de peeling: tipuri,
-                  beneficii și cum ajută la îmbunătățirea stării pielii.
-                  Abordare profesională pentru o piele sănătoasă și strălucitoare.`,
+    title: 'Peeling facial profesional în Bălți – Reînnoiește-ți pielea cu Meddera',
+    description: 'Descoperă beneficiile peelingului facial la clinica Meddera din Bălți. Proceduri personalizate pentru un ten luminos și sănătos. Programează-te acum!',
+
     url: 'https://meddera.md/ro',
     type: 'website',
     images: [
@@ -34,10 +31,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Peeling: Tipuri și Beneficii pentru Pielea Ta',
-    description: `Descoperă totul despre procedura de peeling: tipuri,
-                  beneficii și cum ajută la îmbunătățirea stării pielii.
-                  Abordare profesională pentru o piele sănătoasă și strălucitoare.`,
+    title: 'Peeling facial profesional în Bălți – Reînnoiește-ți pielea cu Meddera',
+    description: 'Descoperă beneficiile peelingului facial la clinica Meddera din Bălți. Proceduri personalizate pentru un ten luminos și sănătos. Programează-te acum!',
+
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
   },
@@ -88,26 +84,150 @@ function ServicePage6Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            <div
-              style={{ fontSize: '8px' }}
-              className="container justify-center mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 "
-            >
-              <div>
-                <h1>Peeling</h1>
-                <h2>Ce este peelingul?</h2>
-                <h2>Principalele tipuri de peeling</h2>
-                <h2>Beneficiile peelingului profesional</h2>
-              </div>
-
-              <div>
-                <h3>Peeling chimic</h3>
-                <h3>Peeling mecanic</h3>
-                <h3>Probleme ale pielii care pot fi rezolvate</h3>
-                <h3>Cum îmbunătățește peelingul starea pielii?</h3>
-                <h3>De ce este importantă o abordare profesională?</h3>
-              </div>
-
-            </div>
+            <section>
+              <h1>Peeling facial profesional în Bălți</h1>
+              <p>
+                Redă strălucirea naturală a tenului tău cu tratamente
+                personalizate la clinica Meddera
+              </p>
+            </section>
+            <section>
+              <h2>Ce este peelingul facial?</h2>
+              <p>
+                Peelingul facial este o procedură dermatologică non-invazivă care
+                ajută la exfolierea stratului
+                superior al pielii, stimulând regenerarea celulară și îmbunătățind
+                textura și tonusul tenului. La
+                clinica Meddera din Bălți, oferim diverse tipuri de peeling adaptate
+                nevoilor fiecărui pacient.
+              </p>
+            </section>
+            <section>
+              <h2>Tipuri de peeling disponibile la Meddera</h2>
+              <ul>
+                <li>
+                  <strong>Peeling chimic superficial:</strong>
+                  {' '}
+                  ideal pentru revitalizarea tenului și tratarea
+                  imperfecțiunilor minore.
+                </li>
+                <li>
+                  <strong>Peeling mediu:</strong>
+                  {' '}
+                  recomandat pentru reducerea ridurilor fine și a petelor pigmentare.
+                </li>
+                <li>
+                  <strong>Peeling profund:</strong>
+                  {' '}
+                  utilizat pentru tratarea cicatricilor și a semnelor avansate de
+                  îmbătrânire.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Beneficiile peelingului facial</h2>
+              <article>
+                <h3>Îmbunătățirea texturii pielii</h3>
+                <p>
+                  Peelingul ajută la netezirea pielii, reducând aspectul porilor
+                  dilatați și al cicatricilor
+                  post-acneice.
+                </p>
+              </article>
+              <article>
+                <h3>Uniformizarea tonului pielii</h3>
+                <p>
+                  Tratamentul contribuie la estomparea petelor pigmentare și la
+                  obținerea unui ten luminos și
+                  uniform.
+                </p>
+              </article>
+              <article>
+                <h3>Stimularea producției de colagen</h3>
+                <p>
+                  Prin exfolierea controlată, peelingul stimulează regenerarea
+                  celulară și producția de colagen,
+                  conferind pielii fermitate și elasticitate.
+                </p>
+              </article>
+              <article>
+                <h3>Reducerea semnelor de îmbătrânire</h3>
+                <p>
+                  Procedura ajută la diminuarea ridurilor fine și la prevenirea
+                  apariției acestora, oferind un aspect
+                  întinerit tenului.
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>De ce să alegi clinica Meddera din Bălți?</h2>
+              <ul>
+                <li>
+                  <strong>Experiență profesională:</strong>
+                  {' '}
+                  echipă de specialiști cu peste 10 ani de experiență în
+                  dermatologie și estetică.
+                </li>
+                <li>
+                  <strong>Tehnologie modernă:</strong>
+                  {' '}
+                  utilizăm echipamente de ultimă generație pentru rezultate
+                  optime.
+                </li>
+                <li>
+                  <strong>Abordare personalizată:</strong>
+                  {' '}
+                  fiecare tratament este adaptat nevoilor și tipului de ten
+                  al pacientului.
+                </li>
+                <li>
+                  <strong>Localizare convenabilă:</strong>
+                  {' '}
+                  situată în centrul orașului Bălți, clinica este ușor
+                  accesibilă.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Întrebări frecvente despre peelingul facial</h2>
+              <article>
+                <h3>Este peelingul facial dureros?</h3>
+                <p>
+                  Procedura poate provoca o ușoară senzație de arsură sau furnicături,
+                  dar disconfortul este minim și
+                  temporar.
+                </p>
+              </article>
+              <article>
+                <h3>Cât durează recuperarea după peeling?</h3>
+                <p>
+                  În funcție de tipul de peeling, recuperarea poate varia de la câteva
+                  ore la câteva zile. Specialiștii
+                  noștri vă vor oferi toate informațiile necesare pentru o recuperare
+                  rapidă și eficientă.
+                </p>
+              </article>
+              <article>
+                <h3>De câte ședințe am nevoie?</h3>
+                <p>
+                  Numărul de ședințe recomandate depinde de tipul de ten și de obiectivele
+                  estetice ale fiecărui
+                  pacient. În general, se recomandă între 3 și 6 ședințe pentru rezultate
+                  optime.
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>Programează-te acum pentru o consultație gratuită</h2>
+              <p>
+                Contactează-ne la
+                <a href="tel:+37368550030">+373 685 500 30</a>
+                {' '}
+                sau vizitează-ne la adresa: Str.
+                Ștefan cel Mare 13, Bălți. Echipa Meddera este gata să te ajute
+                să obții un ten sănătos și radiant.
+              </p>
+            </section>
           </div>
         </VisuallyHidden>
 
