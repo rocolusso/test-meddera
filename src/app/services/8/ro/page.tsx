@@ -12,15 +12,12 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  title: 'Terapia anti-acnee: Tratarea inflamațiilor pielii și prevenirea erupțiilor',
-  description: `Terapia anti-acnee este o procedură individuală pentru tratarea acneei,
-                  normalizarea funcționării glandelor sebacee și prevenirea post-acneei.
-                  Află mai multe despre metodele de curățare, peeling și hidratare.`,
+  title: 'Terapia anti-acnee în Bălți | Tratament profesional pentru un ten curat',
+  description: 'Descoperă terapia anti-acnee în Bălți oferită de clinica Meddera. Tratament profesional pentru un ten curat și sănătos. Programează-te acum!',
   openGraph: {
-    title: 'Terapia anti-acnee: Tratarea inflamațiilor pielii și prevenirea erupțiilor',
-    description: `Terapia anti-acnee este o procedură individuală pentru tratarea acneei,
-                  normalizarea funcționării glandelor sebacee și prevenirea post-acneei.
-                  Află mai multe despre metodele de curățare, peeling și hidratare.`,
+    title: 'Terapia anti-acnee în Bălți | Tratament profesional pentru un ten curat',
+    description: 'Descoperă terapia anti-acnee în Bălți oferită de clinica Meddera. Tratament profesional pentru un ten curat și sănătos. Programează-te acum!',
+
     url: 'https://meddera.md/ro',
     type: 'website',
     images: [
@@ -34,10 +31,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Terapia anti-acnee: Tratarea inflamațiilor pielii și prevenirea erupțiilor',
-    description: `Terapia anti-acnee este o procedură individuală pentru tratarea acneei,
-                  normalizarea funcționării glandelor sebacee și prevenirea post-acneei.
-                  Află mai multe despre metodele de curățare, peeling și hidratare.`,
+    title: 'Terapia anti-acnee în Bălți | Tratament profesional pentru un ten curat',
+    description: 'Descoperă terapia anti-acnee în Bălți oferită de clinica Meddera. Tratament profesional pentru un ten curat și sănătos. Programează-te acum!',
+
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
   },
@@ -88,30 +84,112 @@ function ServicePage8Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            <div
-              style={{ fontSize: '8px' }}
-              className="container justify-center mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 "
-            >
-              <div>
-                <h1>Terapia anti-acnee</h1>
-                <h2>Ce este terapia anti-acnee?</h2>
-                <h3>Etapele principale ale procedurii</h3>
-                <ul>
-                  <li>Curățarea pielii</li>
-                  <li>Peeling</li>
-                  <li>Tratament antibacterian</li>
-                  <li>Hidratare</li>
-                </ul>
-              </div>
-
-              <div>
-                <h2>Cui i se potrivește procedura?</h2>
-                <h3>Abordare individuală pentru fiecare client</h3>
-                <h2>Beneficiile ședințelor regulate</h2>
-                <h3>Prevenirea post-acneei și cicatricilor</h3>
-              </div>
-
-            </div>
+            <section>
+              <h1>Terapia anti-acnee în Bălți</h1>
+              <p>Tratament profesional pentru un ten curat și sănătos</p>
+            </section>
+            <section>
+              <h2>De ce să alegi terapia anti-acnee la clinica Meddera?</h2>
+              <ul>
+                <li>
+                  <strong>Experiență vastă:</strong>
+                  {' '}
+                  Peste 11 ani de experiență în dermatologie și cosmetologie.
+                </li>
+                <li>
+                  <strong>Tratamente personalizate:</strong>
+                  {' '}
+                  Soluții adaptate tipului tău de ten și severității
+                  acneei.
+                </li>
+                <li>
+                  <strong>Tehnologie modernă:</strong>
+                  {' '}
+                  Utilizarea echipamentelor de ultimă generație pentru rezultate
+                  optime.
+                </li>
+                <li>
+                  <strong>Abordare holistică:</strong>
+                  {' '}
+                  Combinăm tratamentele medicale cu sfaturi de nutriție și
+                  îngrijire a pielii.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Etapele terapiei anti-acnee</h2>
+              <article>
+                <h3>1. Consultația inițială</h3>
+                <p>
+                  Evaluarea stării pielii, identificarea tipului de acnee
+                  și stabilirea planului de tratament.
+                </p>
+              </article>
+              <article>
+                <h3>2. Curățarea profesională a tenului</h3>
+                <p>
+                  Îndepărtarea impurităților și a punctelor negre
+                  pentru a preveni inflamațiile.
+                </p>
+              </article>
+              <article>
+                <h3>3. Tratament specific</h3>
+                <p>
+                  Aplicarea de produse și proceduri adaptate nevoilor
+                  pielii tale, precum peelinguri chimice sau
+                  terapie cu lumină LED.
+                </p>
+              </article>
+              <article>
+                <h3>4. Monitorizare și ajustare</h3>
+                <p>
+                  Urmărirea progresului și ajustarea tratamentului pentru
+                  a asigura cele mai bune rezultate.
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>Rezultate vizibile și de durată</h2>
+              <p>
+                Pacienții noștri observă îmbunătățiri semnificative ale aspectului
+                pielii după doar câteva ședințe.
+                Reducerea inflamațiilor, diminuarea cicatricilor și un ten mai
+                luminos sunt doar câteva dintre
+                beneficiile terapiei noastre.
+              </p>
+            </section>
+            <section>
+              <h2>Testimoniale ale pacienților</h2>
+              <ul>
+                <li>
+                  După ani de încercări, am găsit în sfârșit un tratament care
+                  funcționează. Mulțumesc echipei
+                  Meddera! - Andreea, 25 ani
+                </li>
+                <li>
+                  Profesionalism și rezultate excelente. Recomand cu
+                  încredere! - Mihai, 30 ani
+                </li>
+                <li>
+                  Tenul meu nu a arătat niciodată mai bine. Terapia anti-acnee de la
+                  Meddera a fost salvarea mea. -
+                  Elena, 22 ani
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Programează-te acum</h2>
+              <p>
+                Nu mai aștepta! Fă primul pas către un ten sănătos și curat. Contactează-ne la
+                <a
+                  href="tel:+37368550030"
+                >
+                  +373 685 500 30
+                </a>
+                {' '}
+                sau vizitează-ne la adresa: Bălți, Ștefan cel Mare, 13.
+              </p>
+            </section>
           </div>
         </VisuallyHidden>
 
