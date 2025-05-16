@@ -12,15 +12,12 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  title: 'Dermapen: Procedură cosmetică pentru întinerirea și îngrijirea pielii',
-  description: `Află cum procedura Dermapen ajută la îmbunătățirea texturii pielii,
-                   reducerea porilor, diminuarea ridurilor și eliminarea urmelor de acnee.
-                   Întinerire eficientă fără perioadă lungă de recuperare.`,
+  title: 'Dermapen Bălți - Tratament Microneedling pentru Rejuvenare Facială',
+  description: 'Descoperă tratamentul Dermapen în Bălți pentru rejuvenarea pielii, reducerea cicatricilor și îmbunătățirea texturii tenului. Programări disponibile acum.',
   openGraph: {
-    title: 'Dermapen: Procedură cosmetică pentru întinerirea și îngrijirea pielii',
-    description: `Află cum procedura Dermapen ajută la îmbunătățirea texturii pielii,
-                   reducerea porilor, diminuarea ridurilor și eliminarea urmelor de acnee.
-                   Întinerire eficientă fără perioadă lungă de recuperare.`,
+    title: 'Dermapen Bălți - Tratament Microneedling pentru Rejuvenare Facială',
+    description: 'Descoperă tratamentul Dermapen în Bălți pentru rejuvenarea pielii, reducerea cicatricilor și îmbunătățirea texturii tenului. Programări disponibile acum.',
+
     url: 'https://meddera.md/ro',
     type: 'website',
     images: [
@@ -34,10 +31,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dermapen: Procedură cosmetică pentru întinerirea și îngrijirea pielii',
-    description: `Află cum procedura Dermapen ajută la îmbunătățirea texturii pielii,
-                   reducerea porilor, diminuarea ridurilor și eliminarea urmelor de acnee.
-                   Întinerire eficientă fără perioadă lungă de recuperare.`,
+    title: 'Dermapen Bălți - Tratament Microneedling pentru Rejuvenare Facială',
+    description: 'Descoperă tratamentul Dermapen în Bălți pentru rejuvenarea pielii, reducerea cicatricilor și îmbunătățirea texturii tenului. Programări disponibile acum.',
+
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
   },
@@ -88,31 +84,68 @@ function ServicePage10Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            <div
-              style={{ fontSize: '8px' }}
-              className="container justify-center mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 "
-            >
-              <div>
-                <h1>Dermapen</h1>
-                <h2>Ce este procedura Dermapen?</h2>
-                <h3>Principiile de bază ale procedurii</h3>
-                <h3>Beneficiile utilizării Dermapen</h3>
-                <h3>Ce probleme rezolvă Dermapen?</h3>
-                <h3>Dermapen este potrivit pentru toate tipurile de piele?</h3>
 
-                <h2>Rezultatele după procedura Dermapen</h2>
-                <h3>Îmbunătățirea texturii pielii</h3>
-                <h3>Reducerea porilor și eliminarea ridurilor</h3>
-                <h3>Combaterea urmelor de acnee, cicatricilor și vergeturilor</h3>
-              </div>
+            <section>
+              <h1>Dermapen în Bălți - Rejuvenare Facială prin Microneedling</h1>
+              <p>
+                Redă pielii tale strălucirea naturală cu tratamentul Dermapen
+                disponibil acum în Bălți.
+              </p>
+            </section>
 
-              <div>
-                <h2>Avantajele procedurii Dermapen</h2>
-                <h3>Siguranță și absența unei perioade lungi de recuperare</h3>
-                <h3>Eficiență vizibilă după câteva ședințe</h3>
-              </div>
-
-            </div>
+            <section>
+              <h2>Ce este Dermapen?</h2>
+              <p>
+                Dermapen este un dispozitiv avansat de
+                microneedling care utilizează microace pentru a stimula
+                producția naturală de colagen și elastină,
+                îmbunătățind astfel textura și tonusul pielii.
+              </p>
+            </section>
+            <section>
+              <h2>Beneficiile tratamentului Dermapen</h2>
+              <ul>
+                <li>Reducerea cicatricilor post-acneice și a vergeturilor</li>
+                <li>Diminuarea ridurilor fine și a liniilor de expresie</li>
+                <li>Îmbunătățirea texturii și a fermității pielii</li>
+                <li>Reducerea porilor dilatați și a hiperpigmentării</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Indicații terapeutice</h2>
+              <p>Tratamentul Dermapen este recomandat pentru:</p>
+              <ul>
+                <li>Cicatrici post-acneice și chirurgicale</li>
+                <li>Riduri fine și linii de expresie</li>
+                <li>Vergeturi și laxitate cutanată</li>
+                <li>Pori dilatați și ten neuniform</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Desfășurarea procedurii</h2>
+              <p>
+                Procedura durează aproximativ 60 de minute și implică
+                curățarea pielii, aplicarea unei creme
+                anestezice, utilizarea dispozitivului Dermapen și
+                aplicarea unui ser calmant post-tratament.
+              </p>
+            </section>
+            <section>
+              <h2>Rezultate și recuperare</h2>
+              <p>
+                Rezultatele sunt vizibile după 5-7 zile, cu o
+                îmbunătățire continuă a aspectului pielii. Recuperarea
+                este rapidă, cu un disconfort minim.
+              </p>
+            </section>
+            <section>
+              <h2>Programări și contact</h2>
+              <p>Programează-te acum pentru o consultație gratuită la clinica noastră din Bălți:</p>
+              <ul>
+                <li>Adresă: Strada Ștefan cel Mare, nr. 13, Bălți</li>
+                <li>Telefon: +373 685 500 30</li>
+              </ul>
+            </section>
           </div>
         </VisuallyHidden>
 
