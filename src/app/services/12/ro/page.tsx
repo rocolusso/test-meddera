@@ -12,15 +12,12 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  title: 'Mezoterapia pentru păr: redobândirea densității și sănătății',
-  description: `Descoperă procedura de mezoterapie pentru păr — o soluție eficientă
-                  pentru căderea, subțierea și alte probleme de creștere.
-                  Stimularea foliculilor și îmbunătățirea microcirculației scalpului.`,
+  title: 'Mezoterapia pentru păr în Bălți – Tratament eficient împotriva căderii părului',
+  description: 'Descoperă mezoterapia pentru păr în Bălți, o soluție eficientă împotriva căderii părului și alopeciei. Programează-te acum pentru un tratament personalizat.',
   openGraph: {
-    title: 'Mezoterapia pentru păr: redobândirea densității și sănătății',
-    description: `Descoperă procedura de mezoterapie pentru păr — o soluție eficientă
-                  pentru căderea, subțierea și alte probleme de creștere.
-                  Stimularea foliculilor și îmbunătățirea microcirculației scalpului.`,
+    title: 'Mezoterapia pentru păr în Bălți – Tratament eficient împotriva căderii părului',
+    description: 'Descoperă mezoterapia pentru păr în Bălți, o soluție eficientă împotriva căderii părului și alopeciei. Programează-te acum pentru un tratament personalizat.',
+
     url: 'https://meddera.md/ro',
     type: 'website',
     images: [
@@ -34,10 +31,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mezoterapia pentru păr: redobândirea densității și sănătății',
-    description: `Descoperă procedura de mezoterapie pentru păr — o soluție eficientă
-                  pentru căderea, subțierea și alte probleme de creștere.
-                  Stimularea foliculilor și îmbunătățirea microcirculației scalpului.`,
+    title: 'Mezoterapia pentru păr în Bălți – Tratament eficient împotriva căderii părului',
+    description: 'Descoperă mezoterapia pentru păr în Bălți, o soluție eficientă împotriva căderii părului și alopeciei. Programează-te acum pentru un tratament personalizat.',
+
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
   },
@@ -90,28 +86,104 @@ function ServicePage12Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            <div
-              style={{ fontSize: '8px' }}
-              className="container justify-center   mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 "
-            >
-              <div>
-                <h1>Mezoterapia pentru păr</h1>
-                <h2>Ce este mezoterapia pentru păr?</h2>
-                <h2>Beneficiile procedurii de mezoterapie</h2>
-                <h3>Stimularea creșterii părului</h3>
-                <h3>Întărirea foliculilor de păr</h3>
-                <h3>Combaterea căderii și subțierii părului</h3>
+            <section>
+              <h1>Mezoterapia pentru păr în Bălți</h1>
+              <p>Redă-ți încrederea cu un tratament eficient împotriva căderii părului</p>
+            </section>
+            <section>
+              <h2>Ce este mezoterapia pentru păr?</h2>
+              <p>
+                Mezoterapia este o procedură minim invazivă care implică injectarea
+                de substanțe nutritive direct în
+                scalp pentru a stimula creșterea părului și a preveni căderea acestuia.
+                Această tehnică este eficientă
+                în tratarea alopeciei și a altor probleme ale scalpului.
+              </p>
+            </section>
+            <section>
+              <h2>Beneficiile mezoterapiei pentru păr</h2>
+              <ul>
+                <li>Stimulează creșterea părului nou</li>
+                <li>Îmbunătățește circulația sanguină la nivelul scalpului</li>
+                <li>Întărește foliculii de păr</li>
+                <li>Reduce căderea părului</li>
+                <li>Îmbunătățește textura și aspectul părului</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Indicații și contraindicații</h2>
+              <article>
+                <h3>Indicații</h3>
+                <p>Mezoterapia este recomandată pentru persoane care se confruntă cu:</p>
+                <ul>
+                  <li>Căderea excesivă a părului</li>
+                  <li>Alopecie androgenetică sau difuză</li>
+                  <li>Păr subțire și fragil</li>
+                  <li>Scalp uscat sau gras</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Contraindicații</h3>
+                <p>Procedura nu este recomandată în următoarele cazuri:</p>
+                <ul>
+                  <li>Sarcină și alăptare</li>
+                  <li>Infecții active ale scalpului</li>
+                  <li>Alergii la substanțele utilizate</li>
+                  <li>Tulburări de coagulare a sângelui</li>
+                </ul>
+              </article>
+            </section>
+            <section>
+              <h2>Procedura și durata tratamentului</h2>
+              <p>
+                O ședință de mezoterapie durează aproximativ 30-60 de minute.
+              </p>
+              <p>
+                Pentru rezultate optime, se recomandă un ciclu de 6-10
+                ședințe, efectuate la intervale de 1-2
+                săptămâni.
+              </p>
+            </section>
+            <section>
+              <h2>Rezultate așteptate</h2>
+              <p>
+                Pacienții observă o reducere semnificativă a
+                căderii părului și o îmbunătățire a densității și texturii
+                părului după câteva ședințe.
 
-              </div>
-
-              <div>
-                <h2>Ce probleme rezolvă mezoterapia?</h2>
-                <h3>Căderea părului</h3>
-                <h3>Subțierea părului</h3>
-                <h3>Dermatita seboreică</h3>
-              </div>
-
-            </div>
+              </p>
+            </section>
+            <section>
+              <h2>Testimoniale</h2>
+              <blockquote>
+                <p>
+                  După doar câteva ședințe de mezoterapie, am observat o
+                  îmbunătățire semnificativă a stării părului
+                  meu. Recomand cu încredere! – Maria, 34 ani
+                </p>
+              </blockquote>
+              <blockquote>
+                <p>
+                  Profesionalism și rezultate excelente. Părul meu arată
+                  mai sănătos ca niciodată. – Ion, 40 ani
+                </p>
+              </blockquote>
+            </section>
+            <section>
+              <h2>Programează-te acum</h2>
+              <p>
+                Redescoperă frumusețea părului tău cu ajutorul mezoterapiei.
+                Contactează-ne pentru o consultație
+                personalizată.
+              </p>
+              <ul>
+                <li>
+                  Telefon:
+                  <a href="tel:+37368550030">+37368550030</a>
+                </li>
+                <li>Adresă: Balti, Stefan Cel Mare, 13, Moldova</li>
+              </ul>
+            </section>
           </div>
         </VisuallyHidden>
 
