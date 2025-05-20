@@ -12,17 +12,12 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  title: 'Mezoterapie facială: Reîntinerire și îmbunătățirea aspectului',
-  description: `Descoperă totul despre procedura de mezoterapie facială!
-                  Introducerea substanțelor active în straturile profunde ale pielii ajută
-                  la eliminarea uscăciunii, ridurilor, pigmentării și redă pielii
-                  elasticitatea, prospețimea și strălucirea.`,
+  title: 'Mezoterapie Facială în Bălți | Rejuvenare și Hidratare Profesională',
+  description: 'Descoperă mezoterapia facială în Bălți pentru o piele hidratată și întinerită. Programează-te acum pentru un tratament profesional de rejuvenare facială.',
   openGraph: {
-    title: 'Mezoterapie facială: Reîntinerire și îmbunătățirea aspectului',
-    description: `Descoperă totul despre procedura de mezoterapie facială!
-                  Introducerea substanțelor active în straturile profunde ale pielii ajută
-                  la eliminarea uscăciunii, ridurilor, pigmentării și redă pielii
-                  elasticitatea, prospețimea și strălucirea.`,
+    title: 'Mezoterapie Facială în Bălți | Rejuvenare și Hidratare Profesională',
+    description: 'Descoperă mezoterapia facială în Bălți pentru o piele hidratată și întinerită. Programează-te acum pentru un tratament profesional de rejuvenare facială.',
+
     url: 'https://meddera.md/ro',
     type: 'website',
     images: [
@@ -36,11 +31,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mezoterapie facială: Reîntinerire și îmbunătățirea aspectului',
-    description: `Descoperă totul despre procedura de mezoterapie facială!
-                  Introducerea substanțelor active în straturile profunde ale pielii ajută
-                  la eliminarea uscăciunii, ridurilor, pigmentării și redă pielii
-                  elasticitatea, prospețimea și strălucirea.`,
+    title: 'Mezoterapie Facială în Bălți | Rejuvenare și Hidratare Profesională',
+    description: 'Descoperă mezoterapia facială în Bălți pentru o piele hidratată și întinerită. Programează-te acum pentru un tratament profesional de rejuvenare facială.',
+
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
   },
@@ -92,29 +85,113 @@ function ServicePage11Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            <div
-              style={{ fontSize: '8px' }}
-              className="container justify-center   mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 "
-            >
-              <div>
-                <h1>Mezoterapie facială</h1>
-                <h2>Ce este mezoterapia facială?</h2>
-                <h3>Principalele componente ale cocktailurilor de mezoterapie</h3>
-                <h3>Beneficiile mezoterapiei</h3>
-                <h2>Ce probleme rezolvă mezoterapia?</h2>
-                <h3>Uscăciunea și culoarea ternă a pielii</h3>
-
-                <h3>Pierderea fermității și apariția ridurilor</h3>
-                <h3>Pigmentarea și refacerea structurii pielii</h3>
-              </div>
-
-              <div>
-                <h2>Eficiența și rezultatele procedurii</h2>
-                <h3>Când devine vizibil efectul?</h3>
-                <h3>Cui i se potrivește mezoterapia facială?</h3>
-              </div>
-
-            </div>
+            <section>
+              <h1>Mezoterapie Facială în Bălți – Rejuvenare și Hidratare Profesională</h1>
+              <p>
+                Redescoperă frumusețea naturală a tenului tău cu ajutorul
+                mezoterapiei faciale oferite de specialiștii
+                noștri în Bălți.
+              </p>
+            </section>
+            <section>
+              <h2>Ce Este Mezoterapia Facială?</h2>
+              <p>
+                Mezoterapia facială este o procedură non-invazivă care
+                implică injectarea de substanțe active precum
+                acid hialuronic, vitamine și antioxidanți direct în stratul
+                mediu al pielii. Acest tratament stimulează
+                regenerarea celulară, hidratarea profundă și îmbunătățirea
+                elasticității pielii.
+              </p>
+            </section>
+            <section>
+              <h2>Beneficiile Mezoterapiei Faciale</h2>
+              <ul>
+                <li>Hidratare intensă și revitalizare a tenului</li>
+                <li>Reducerea ridurilor fine și a liniilor de expresie</li>
+                <li>Îmbunătățirea texturii și tonusului pielii</li>
+                <li>Estomparea petelor pigmentare și a cearcănelor</li>
+                <li>Stimularea producției de colagen și elastină</li>
+              </ul>
+            </section>
+            <section>
+              <h2>De Ce Să Alegi Mezoterapia Facială la Clinica Noastră din Bălți?</h2>
+              <p>
+                Clinica noastră din Bălți oferă servicii de mezoterapie facială
+                realizate de specialiști cu experiență,
+                utilizând echipamente moderne și substanțe de cea mai înaltă calitate.
+                Ne dedicăm fiecărui pacient,
+                asigurând un tratament personalizat și rezultate vizibile.
+              </p>
+            </section>
+            <section>
+              <h2>Procedura de Mezoterapie Facială – Ce Implică?</h2>
+              <p>
+                Tratamentul începe cu o evaluare detaliată a tenului, urmată de aplicarea
+                unei creme anestezice pentru
+                confortul pacientului. Substanțele active sunt apoi injectate cu ajutorul
+                unor microace fine. Procedura
+                durează aproximativ 30-45 de minute, iar rezultatele sunt vizibile
+                după câteva ședințe.
+              </p>
+            </section>
+            <section>
+              <h2>Întrebări Frecvente</h2>
+              <article>
+                <h3>Câte ședințe sunt necesare pentru rezultate optime?</h3>
+                <p>
+                  Se recomandă un protocol de 4-6 ședințe, la intervale de 2-4
+                  săptămâni, pentru a obține rezultate
+                  durabile și vizibile.
+                </p>
+              </article>
+              <article>
+                <h3>Există efecte secundare?</h3>
+                <p>
+                  După procedură, pot apărea ușoare roșeață sau umflături, care
+                  dispar în câteva ore. Este important să
+                  urmezi recomandările specialistului pentru îngrijirea post-tratament.
+                </p>
+              </article>
+              <article>
+                <h3>Cât durează efectele mezoterapiei?</h3>
+                <p>
+                  Rezultatele pot dura între 6 și 12 luni, în funcție de tipul de
+                  piele și stilul de viață al
+                  pacientului. Ședințele de întreținere sunt recomandate pentru
+                  menținerea efectelor.
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>Programează-te Acum pentru Mezoterapie Facială în Bălți</h2>
+              <p>
+                Nu mai aștepta pentru a-ți reda strălucirea tenului!
+                Contactează-ne la
+                <a href="tel:+37368550030">+37368550030</a>
+                sau completează formularul de programare online pentru
+                a beneficia de o consultație
+                gratuită și a începe tratamentul de mezoterapie facială.
+              </p>
+            </section>
+            <section>
+              <h2>Testimoniale</h2>
+              <blockquote>
+                <p>
+                  După câteva ședințe de mezoterapie facială,
+                  tenul meu este vizibil mai luminos și hidratat. Recomand
+                  cu încredere!
+                </p>
+                <cite>– Maria, 34 ani</cite>
+              </blockquote>
+              <blockquote>
+                <p>
+                  Profesionalism și rezultate excelente!
+                  Mezoterapia facială mi-a redat încrederea în mine.
+                </p>
+                <cite>– Elena, 42 ani</cite>
+              </blockquote>
+            </section>
           </div>
         </VisuallyHidden>
 
