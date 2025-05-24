@@ -17,7 +17,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/',
+    canonical: 'https://www.meddera.md/',
   },
   title: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
   description: `Екатерина Пынтя – опытный дерматолог-косметолог в Бельцах.

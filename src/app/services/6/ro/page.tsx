@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/6/ro',
+    canonical: 'https://www.meddera.md/services/6/ro/',
   },
   title: 'Peeling facial profesional în Bălți – Reînnoiește-ți pielea cu Meddera',
   description: 'Descoperă beneficiile peelingului facial la clinica Meddera din Bălți. Proceduri personalizate pentru un ten luminos și sănătos. Programează-te acum!',

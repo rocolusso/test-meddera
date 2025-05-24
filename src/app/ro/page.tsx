@@ -14,7 +14,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/ro',
+    canonical: 'https://www.meddera.md/ro/',
   },
   title: 'Dermatolog Bălți - Consultații Dermatologice Profesionale | Meddera',
   description: `Programează-te la un dermatolog în Bălți la Meddera. 

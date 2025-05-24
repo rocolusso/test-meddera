@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/9',
+    canonical: 'https://www.meddera.md/services/9/',
   },
   title: 'Терапия против пигментации в Бельцах | Эффективное удаление пигментных пятен',
   description: 'Профессиональное лечение пигментации в Бельцах. Современные методы удаления пигментных пятен: лазерная терапия, пилинги, мезотерапия. Запишитесь на консультацию.',

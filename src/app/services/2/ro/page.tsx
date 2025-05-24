@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/2/ro',
+    canonical: 'https://www.meddera.md/services/2/ro/',
   },
   title: 'Consultație Dermatologică în Bălți | Clinica Meddera',
   description: 'Programează o consultație dermatologică la Clinica Meddera din Bălți. Tratăm acnee, psoriazis, eczeme și alte afecțiuni ale pielii.',

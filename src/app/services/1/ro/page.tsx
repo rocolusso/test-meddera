@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/1/ro',
+    canonical: 'https://www.meddera.md/services/1/ro/',
   },
   title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
   description: `Programează-te la o consultație cu medicul dermatocosmetolog în Bălți. 
