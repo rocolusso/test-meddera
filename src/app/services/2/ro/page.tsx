@@ -49,11 +49,7 @@ function ServicePage2Ro() {
       <main>
 
         <div className="container mx-auto">
-          <div className="py-10 px-5">
-            <h1 className="text-[1.5rem] sm:text-[3rem] sm:text-center bold">
-              Consultația dermatologică
-            </h1>
-          </div>
+
           <div className="flex justify-center">
             <Image
               className=""
