@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/services/1/',
+    canonical: 'https://www.meddera.md/services/1',
   },
   title: 'Консультация дерматокосметолога в Бельцах — лечение кожных заболеваний',
   description: `Профессиональная консультация дерматокосметолога в Бельцах. 
