@@ -12,6 +12,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  alternates: {
+    canonical: 'https://meddera.md/services/1/ro',
+  },
   title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
   description: `Programează-te la o consultație cu medicul dermatocosmetolog în Bălți. 
   Tratăm acneea, pigmentarea, ridurile și oferim soluții personalizate pentru o piele radiantă.`,

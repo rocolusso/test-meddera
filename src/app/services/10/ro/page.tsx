@@ -12,6 +12,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  alternates: {
+    canonical: 'https://meddera.md/services/10/ro',
+  },
   title: 'Dermapen Bălți - Tratament Microneedling pentru Rejuvenare Facială',
   description: 'Descoperă tratamentul Dermapen în Bălți pentru rejuvenarea pielii, reducerea cicatricilor și îmbunătățirea texturii tenului. Programări disponibile acum.',
   openGraph: {

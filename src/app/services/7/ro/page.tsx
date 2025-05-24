@@ -12,6 +12,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  alternates: {
+    canonical: 'https://meddera.md/services/7/ro',
+  },
   title: 'Masca alginată în Bălți - Tratament facial profesional pentru o piele radiantă',
   description: 'Descoperă beneficiile măștii alginate în Bălți. Tratament facial profesional pentru hidratare profundă, efect de lifting și revitalizare a tenului. Programează-te acum!',
   openGraph: {

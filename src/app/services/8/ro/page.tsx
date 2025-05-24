@@ -12,6 +12,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  alternates: {
+    canonical: 'https://meddera.md/services/8/ro',
+  },
   title: 'Terapia anti-acnee în Bălți | Tratament profesional pentru un ten curat',
   description: 'Descoperă terapia anti-acnee în Bălți oferită de clinica Meddera. Tratament profesional pentru un ten curat și sănătos. Programează-te acum!',
   openGraph: {

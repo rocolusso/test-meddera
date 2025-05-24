@@ -12,6 +12,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  alternates: {
+    canonical: 'https://meddera.md/services/7',
+  },
   title: 'Альгинатная маска в Бельцах – Увлажнение, лифтинг и сияние кожи',
   description: 'Профессиональные альгинатные маски в Бельцах. Увлажнение, лифтинг и сияние кожи. Запишитесь на процедуру у опытного косметолога.',
   openGraph: {

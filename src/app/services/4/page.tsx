@@ -12,6 +12,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  alternates: {
+    canonical: 'https://meddera.md/services/4',
+  },
   title: 'Массаж лица в Бельцах – Профессиональный уход за вашей кожей',
   description: 'Профессиональный массаж лица в Бельцах. Омоложение, лифтинг, улучшение состояния кожи. Запишитесь на процедуру уже сегодня!',
   openGraph: {
