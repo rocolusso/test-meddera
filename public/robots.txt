@@ -1,4 +1,0 @@
-User-Agent: *
-Disallow: /ads/
-Disallow: /api/
-Disallow: /cert/
