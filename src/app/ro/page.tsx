@@ -13,6 +13,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  alternates: {
+    canonical: 'https://meddera.md/ro',
+  },
   title: 'Dermatolog Bălți - Consultații Dermatologice Profesionale | Meddera',
   description: `Programează-te la un dermatolog în Bălți la Meddera. 
   Oferim consultații dermatologice profesionale pentru toate tipurile de afecțiuni ale pielii.`,
