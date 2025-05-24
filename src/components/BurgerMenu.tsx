@@ -26,11 +26,12 @@ function BurgerMenu({ locale }:{locale:string}) {
       <DropdownMenu>
         <DropdownMenuTrigger>
           <div>
-            <button aria-label="burger-btn-trigger" type="button" className="pl-5 py-5" onClick={() => setIsOpen(!isOpen)}>
+            {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
+            <div aria-label="burger-btn-trigger" className="pl-5 py-5" onClick={() => setIsOpen(!isOpen)}>
               <div className="block sm:hidden  border rounded p-2 ">
                 <HiOutlineMenuAlt3 size="48px" />
               </div>
-            </button>
+            </div>
           </div>
         </DropdownMenuTrigger>
 
