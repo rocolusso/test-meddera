@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/services/14/ro',
+    canonical: 'https://meddera.md/services/14/ro',
   },
   title: 'Terapie antirid cu Botox în Bălți | Reîntinerește-ți aspectul',
   description: 'Descoperă terapia antirid cu Botox în Bălți. Elimină ridurile și redă pielii tale un aspect tânăr și proaspăt. Programează-te acum!',

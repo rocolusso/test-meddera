@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/services/14',
+    canonical: 'https://meddera.md/services/14',
   },
   title: 'Ботокс в Бельцах – Инъекции для омоложения лица | Meddera',
   description: 'Профессиональные инъекции ботокса в Бельцах для коррекции мимических морщин и лечения гипергидроза. Эффективное и безопасное омоложение лица в клинике Meddera.',

@@ -17,7 +17,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/',
+    canonical: 'https://meddera.md/',
   },
   title: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
   description: `Екатерина Пынтя – опытный дерматолог-косметолог в Бельцах.
@@ -416,7 +416,7 @@ export default function Home() {
                   — это надёжный выбор
                   для тех, кто заботится о здоровье кожи. Более 11 лет опыта,
                   современные методики и квалификация доступны в клинике
-                  <a href="https://www.meddera.md/"> Mederra</a>
+                  <a href="https://meddera.md/"> Mederra</a>
                   .
                 </p>
                 <p>
@@ -462,11 +462,11 @@ export default function Home() {
                   Комплексный подход включает:
                 </p>
                 <ul className="list-disc ml-4">
-                  <li><a href="https://www.meddera.md/services/3">Чистка лица</a></li>
-                  <li><a href="https://www.meddera.md/services/5">Карбокситерапия</a></li>
-                  <li><a href="https://www.meddera.md/services/6">Пилинг</a></li>
-                  <li><a href="https://www.meddera.md/services/8">Анти-акне терапия</a></li>
-                  <li><a href="https://www.meddera.md/services/11">Мезотерапия лица</a></li>
+                  <li><a href="https://meddera.md/services/3">Чистка лица</a></li>
+                  <li><a href="https://meddera.md/services/5">Карбокситерапия</a></li>
+                  <li><a href="https://meddera.md/services/6">Пилинг</a></li>
+                  <li><a href="https://meddera.md/services/8">Анти-акне терапия</a></li>
+                  <li><a href="https://meddera.md/services/11">Мезотерапия лица</a></li>
                 </ul>
               </section>
 
@@ -475,20 +475,20 @@ export default function Home() {
                 <h3>Косметология и омоложение</h3>
                 <ul className="list-disc ml-4">
                   <li>
-                    <a href="https://www.meddera.md/services/14">Ботокс</a>
+                    <a href="https://meddera.md/services/14">Ботокс</a>
                     {' '}
                     и
                     {' '}
                     <a
-                      href="https://www.meddera.md/services/15"
+                      href="https://meddera.md/services/15"
                     >
                       Биоревитализация
                     </a>
                   </li>
-                  <li><a href="https://www.meddera.md/services/13">Увеличение губ</a></li>
-                  <li><a href="https://www.meddera.md/services/16">Контурная пластика</a></li>
-                  <li><a href="https://www.meddera.md/services/10">Дермапен</a></li>
-                  <li><a href="https://www.meddera.md/services/7">Альгинатная маска</a></li>
+                  <li><a href="https://meddera.md/services/13">Увеличение губ</a></li>
+                  <li><a href="https://meddera.md/services/16">Контурная пластика</a></li>
+                  <li><a href="https://meddera.md/services/10">Дермапен</a></li>
+                  <li><a href="https://meddera.md/services/7">Альгинатная маска</a></li>
                 </ul>
               </section>
 
@@ -497,7 +497,7 @@ export default function Home() {
                 <h2>Где находится клиника</h2>
                 <p>
                   Центр Бельц. Удобно добраться. Запись на
-                  <a href="https://www.meddera.md/services/1"> консультацию</a>
+                  <a href="https://meddera.md/services/1"> консультацию</a>
                   {' '}
                   —
                   по телефону или через сайт.

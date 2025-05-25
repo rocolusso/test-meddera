@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/services/16/ro',
+    canonical: 'https://meddera.md/services/16/ro',
   },
   title: 'Plastia de contur în Bălți – Corectare facială cu acid hialuronic',
   description: 'Plastia de contur în Bălți: procedură estetică nechirurgicală pentru corectarea trăsăturilor faciale cu acid hialuronic. Programează-te acum pentru un chip armonios și întinerit.',

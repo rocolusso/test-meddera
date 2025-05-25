@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/services/3',
+    canonical: 'https://meddera.md/services/3',
   },
   title: 'Чистка лица в Бельцах – Профессиональные косметологические услуги | Meddera',
   description: 'Профессиональная чистка лица в Бельцах от опытного дерматолога-косметолога Екатерины Пынтя. Ультразвуковая, механическая, комбинированная и атравматичная чистка лица. Запишитесь на консультацию в Meddera.',
@@ -194,7 +194,7 @@ function ServicePage3() {
                 {' '}
                 г. Бельцы, ул. Штефан Чел Маре, 13
               </p>
-              <p><a href="https://www.meddera.md/services/3">Подробнее о услуге на нашем сайте</a></p>
+              <p><a href="https://meddera.md/services/3">Подробнее о услуге на нашем сайте</a></p>
             </section>
 
           </div>

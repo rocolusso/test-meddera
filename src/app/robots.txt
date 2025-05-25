@@ -3,4 +3,4 @@ Disallow: /ads/
 Disallow: /api/
 Disallow: /cert/
 
-Sitemap: https://www.meddera.md/sitemap.xml
+Sitemap: https://meddera.md/sitemap.xml

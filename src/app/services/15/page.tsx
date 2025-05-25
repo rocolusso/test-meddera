@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/services/15',
+    canonical: 'https://meddera.md/services/15',
   },
   title: 'Биоревитализация в Бельцах - Омоложение и Увлажнение Кожи',
   description: 'Профессиональная биоревитализация в Бельцах. Эффективное омоложение и увлажнение кожи с использованием гиалуроновой кислоты. Запишитесь на процедуру уже сегодня!',

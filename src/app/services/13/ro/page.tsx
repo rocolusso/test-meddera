@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/services/13/ro',
+    canonical: 'https://meddera.md/services/13/ro',
   },
   title: 'Mărirea buzelor în Bălți - Buze voluminoase și naturale | Clinica Meddera',
   description: 'Descoperă serviciul de mărire a buzelor în Bălți cu acid hialuronic. Obține buze pline, conturate și naturale. Programează-te acum la Clinica Meddera!',

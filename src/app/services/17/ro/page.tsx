@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/services/17/ro',
+    canonical: 'https://meddera.md/services/17/ro',
   },
   title: 'Lipoliză Injectabilă în Bălți – Elimină Grăsimea Localizată Fără Chirurgie',
   description: 'Descoperă lipoliza injectabilă în Bălți – soluția eficientă pentru eliminarea grăsimii localizate fără intervenții chirurgicale. Programează-te acum pentru o consultație gratuită!',

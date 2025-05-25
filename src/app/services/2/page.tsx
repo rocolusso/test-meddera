@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/services/2',
+    canonical: 'https://meddera.md/services/2',
   },
   title: 'Дерматолог в Бельцах – Консультация, Диагностика и Лечение Кожных Заболеваний',
   description: 'Профессиональная дерматологическая консультация в Бельцах. Диагностика и лечение акне, экземы, псориаза, удаление новообразований. Запишитесь на прием к опытному дерматологу.',

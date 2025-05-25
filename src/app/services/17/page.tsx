@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/services/17',
+    canonical: 'https://meddera.md/services/17',
   },
   title: 'Инъекции липолитиков в Бельцах – Эффективное удаление жира',
   description: 'Профессиональные инъекции липолитиков в Бельцах. Безопасное и эффективное удаление локальных жировых отложений. Запишитесь на консультацию уже сегодня!',

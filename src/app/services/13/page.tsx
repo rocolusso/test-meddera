@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://www.meddera.md/services/13',
+    canonical: 'https://meddera.md/services/13',
   },
   title: 'Увеличение губ в Бельцах — Эффективные и безопасные процедуры',
   description: 'Профессиональное увеличение губ в Бельцах. Безопасные процедуры с использованием качественных филлеров. Запишитесь на консультацию уже сегодня!',
