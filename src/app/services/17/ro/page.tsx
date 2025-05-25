@@ -16,10 +16,10 @@ export const metadata = {
     canonical: 'https://meddera.md/services/17/ro',
   },
   title: 'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei',
-  description: 'Descoperă lipoliza injectabilă în Bălți – soluția eficientă pentru eliminarea grăsimii localizate fără intervenții chirurgicale. Programează-te acum pentru o consultație gratuită!',
+  description: 'Elimină grăsimea localizată în Bălți cu lipoliza injectabilă – procedură non-invazivă, fără chirurgie. Programează-te acum pentru o consultație gratuită!',
   openGraph: {
     title: 'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei',
-    description: 'Descoperă lipoliza injectabilă în Bălți – soluția eficientă pentru eliminarea grăsimii localizate fără intervenții chirurgicale. Programează-te acum pentru o consultație gratuită!',
+    description: 'Elimină grăsimea localizată în Bălți cu lipoliza injectabilă – procedură non-invazivă, fără chirurgie. Programează-te acum pentru o consultație gratuită!',
 
     url: 'https://meddera.md/ro',
     type: 'website',
@@ -35,7 +35,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei',
-    description: 'Descoperă lipoliza injectabilă în Bălți – soluția eficientă pentru eliminarea grăsimii localizate fără intervenții chirurgicale. Programează-te acum pentru o consultație gratuită!',
+    description: 'Elimină grăsimea localizată în Bălți cu lipoliza injectabilă – procedură non-invazivă, fără chirurgie. Programează-te acum pentru o consultație gratuită!',
 
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',

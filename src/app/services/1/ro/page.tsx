@@ -16,12 +16,11 @@ export const metadata = {
     canonical: 'https://meddera.md/services/1/ro',
   },
   title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
-  description: `Programează-te la o consultație cu medicul dermatocosmetolog în Bălți. 
-  Tratăm acneea, pigmentarea, ridurile și oferim soluții personalizate pentru o piele radiantă.`,
+  description: 'Consultații dermatocosmetologice în Bălți: tratamente personalizate pentru acnee, pigmentare, riduri și o piele sănătoasă și radiantă.',
   openGraph: {
     title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
-    description: `Programează-te la o consultație cu medicul dermatocosmetolog în Bălți. 
-  Tratăm acneea, pigmentarea, ridurile și oferim soluții personalizate pentru o piele radiantă.`,
+    description: 'Consultații dermatocosmetologice în Bălți: tratamente personalizate pentru acnee, pigmentare, riduri și o piele sănătoasă și radiantă.',
+
     url: 'https://meddera.md/ro',
     type: 'website',
     images: [
@@ -36,8 +35,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
-    description: `Programează-te la o consultație cu medicul dermatocosmetolog în Bălți. 
-  Tratăm acneea, pigmentarea, ridurile și oferim soluții personalizate pentru o piele radiantă.`,
+    description: 'Consultații dermatocosmetologice în Bălți: tratamente personalizate pentru acnee, pigmentare, riduri și o piele sănătoasă și radiantă.',
+
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
   },

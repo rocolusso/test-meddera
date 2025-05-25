@@ -16,10 +16,10 @@ export const metadata = {
     canonical: 'https://meddera.md/services/9/ro',
   },
   title: 'Terapie Antipigmentară în Bălți | Elimină Petele Pigmentare cu Meddera',
-  description: 'Descoperă terapia antipigmentară la clinica Meddera din Bălți. Elimină petele pigmentare, melasma și hiperpigmentarea cu tratamente profesionale. Programează-te acum!',
+  description: 'Terapie antipigmentară profesională la Meddera Bălți. Elimină pete pigmentare, melasma și hiperpigmentarea. Programează-te acum!',
   openGraph: {
     title: 'Terapie Antipigmentară în Bălți | Elimină Petele Pigmentare cu Meddera',
-    description: 'Descoperă terapia antipigmentară la clinica Meddera din Bălți. Elimină petele pigmentare, melasma și hiperpigmentarea cu tratamente profesionale. Programează-te acum!',
+    description: 'Terapie antipigmentară profesională la Meddera Bălți. Elimină pete pigmentare, melasma și hiperpigmentarea. Programează-te acum!',
 
     url: 'https://meddera.md/ro',
     type: 'website',
@@ -35,7 +35,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Terapie Antipigmentară în Bălți | Elimină Petele Pigmentare cu Meddera',
-    description: 'Descoperă terapia antipigmentară la clinica Meddera din Bălți. Elimină petele pigmentare, melasma și hiperpigmentarea cu tratamente profesionale. Programează-te acum!',
+    description: 'Terapie antipigmentară profesională la Meddera Bălți. Elimină pete pigmentare, melasma și hiperpigmentarea. Programează-te acum!',
 
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
