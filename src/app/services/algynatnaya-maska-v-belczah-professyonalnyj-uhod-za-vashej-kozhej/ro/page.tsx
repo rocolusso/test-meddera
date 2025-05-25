@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/7/ro',
+    canonical: 'https://meddera.md/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
   },
   title: 'Masca alginată în Bălți – Ten hidratat și luminos',
   description: 'Masca alginată în Bălți: hidratare intensă, lifting și revitalizare pentru un ten luminos. Programează-te acum!',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Masca alginată în Bălți – Ten hidratat și luminos',
     description: 'Masca alginată în Bălți: hidratare intensă, lifting și revitalizare pentru un ten luminos. Programează-te acum!',
 
-    url: 'https://meddera.md/services/7/ro',
+    url: 'https://meddera.md/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
     type: 'website',
     images: [
       {

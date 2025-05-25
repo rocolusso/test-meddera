@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/12/ro',
+    canonical: 'https://meddera.md/services/mezoterapyya-dlya-volos-v-belczah/ro',
   },
   title: 'Mezoterapie păr Bălți – Stop căderii și regenerare',
   description: 'Descoperă mezoterapia pentru păr în Bălți, o soluție eficientă împotriva căderii părului și alopeciei. Programează-te acum pentru un tratament personalizat.',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Mezoterapie păr Bălți – Stop căderii și regenerare',
     description: 'Descoperă mezoterapia pentru păr în Bălți, o soluție eficientă împotriva căderii părului și alopeciei. Programează-te acum pentru un tratament personalizat.',
 
-    url: 'https://meddera.md/services/12/ro',
+    url: 'https://meddera.md/services/mezoterapyya-dlya-volos-v-belczah/ro',
     type: 'website',
     images: [
       {

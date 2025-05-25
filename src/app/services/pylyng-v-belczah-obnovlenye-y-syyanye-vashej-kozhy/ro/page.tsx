@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/6/ro',
+    canonical: 'https://meddera.md/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy/ro',
   },
   title: 'Peeling facial profesional în Bălți – Reînnoiește-ți pielea cu Meddera',
   description: 'Descoperă beneficiile peelingului facial la clinica Meddera din Bălți. Proceduri personalizate pentru un ten luminos și sănătos. Programează-te acum!',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Peeling facial profesional în Bălți – Reînnoiește-ți pielea cu Meddera',
     description: 'Descoperă beneficiile peelingului facial la clinica Meddera din Bălți. Proceduri personalizate pentru un ten luminos și sănătos. Programează-te acum!',
 
-    url: 'https://meddera.md/services/6/ro',
+    url: 'https://meddera.md/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy/ro',
     type: 'website',
     images: [
       {

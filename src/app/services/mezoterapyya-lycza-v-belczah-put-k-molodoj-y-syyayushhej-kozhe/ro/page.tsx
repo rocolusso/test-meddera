@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/11/ro',
+    canonical: 'https://meddera.md/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe/ro',
   },
   title: 'Mezoterapie Facială în Bălți | Rejuvenare și Hidratare Profesională',
   description: 'Descoperă mezoterapia facială în Bălți pentru o piele hidratată și întinerită. Programează-te acum pentru un tratament profesional de rejuvenare facială.',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Mezoterapie Facială în Bălți | Rejuvenare și Hidratare Profesională',
     description: 'Descoperă mezoterapia facială în Bălți pentru o piele hidratată și întinerită. Programează-te acum pentru un tratament profesional de rejuvenare facială.',
 
-    url: 'https://meddera.md/services/11/ro',
+    url: 'https://meddera.md/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe/ro',
     type: 'website',
     images: [
       {

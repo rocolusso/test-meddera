@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/4/ro',
+    canonical: 'https://meddera.md/services/massazh-lycza-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
   },
   title: 'Masaj facial în Bălți – Rejuvenare și relaxare pentru tenul tău',
   description: 'Descoperă beneficiile masajului facial în Bălți. Îmbunătățește aspectul pielii, relaxează-te și redă strălucirea tenului tău. Programează-te acum!',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Masaj facial în Bălți – Rejuvenare și relaxare pentru tenul tău',
     description: 'Descoperă beneficiile masajului facial în Bălți. Îmbunătățește aspectul pielii, relaxează-te și redă strălucirea tenului tău. Programează-te acum!',
 
-    url: 'https://meddera.md/services/4/ro',
+    url: 'https://meddera.md/services/massazh-lycza-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
     type: 'website',
     images: [
       {

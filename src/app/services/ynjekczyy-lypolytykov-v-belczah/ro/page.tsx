@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/17/ro',
+    canonical: 'https://meddera.md/services/ynjekczyy-lypolytykov-v-belczah/ro',
   },
   title: 'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei',
   description: 'Elimină grăsimea localizată în Bălți cu lipoliza injectabilă – procedură non-invazivă, fără chirurgie. Programează-te acum pentru o consultație gratuită!',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei',
     description: 'Elimină grăsimea localizată în Bălți cu lipoliza injectabilă – procedură non-invazivă, fără chirurgie. Programează-te acum pentru o consultație gratuită!',
 
-    url: 'https://meddera.md/services/17/ro',
+    url: 'https://meddera.md/services/ynjekczyy-lypolytykov-v-belczah/ro',
     type: 'website',
     images: [
       {

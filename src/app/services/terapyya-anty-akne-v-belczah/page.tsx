@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/8',
+    canonical: 'https://meddera.md/services/terapyya-anty-akne-v-belczah',
   },
   title: 'Терапия анти-акне в Бельцах – эффективное лечение акне и постакне',
   description: 'Профессиональное лечение акне в Бельцах. Индивидуальный подход, современные методики и опытные дерматологи. Запишитесь на консультацию уже сегодня!',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Терапия анти-акне в Бельцах – эффективное лечение акне и постакне',
     description: 'Профессиональное лечение акне в Бельцах. Индивидуальный подход, современные методики и опытные дерматологи. Запишитесь на консультацию уже сегодня!',
 
-    url: 'https://meddera.md/services/8',
+    url: 'https://meddera.md/services/terapyya-anty-akne-v-belczah',
     type: 'website',
     images: [
       {

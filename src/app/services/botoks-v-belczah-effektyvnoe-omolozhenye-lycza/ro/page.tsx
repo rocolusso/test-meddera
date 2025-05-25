@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/14/ro',
+    canonical: 'https://meddera.md/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza/ro',
   },
   title: 'Terapie antirid cu Botox în Bălți | Reîntinerește-ți aspectul',
   description: 'Descoperă terapia antirid cu Botox în Bălți. Elimină ridurile și redă pielii tale un aspect tânăr și proaspăt. Programează-te acum!',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Terapie antirid cu Botox în Bălți | Reîntinerește-ți aspectul',
     description: 'Descoperă terapia antirid cu Botox în Bălți. Elimină ridurile și redă pielii tale un aspect tânăr și proaspăt. Programează-te acum!',
 
-    url: 'https://meddera.md/services/14/ro',
+    url: 'https://meddera.md/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza/ro',
     type: 'website',
     images: [
       {

@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/6',
+    canonical: 'https://meddera.md/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
   },
   title: 'Пилинг в Бельцах – Косметологические услуги в Молдове | Meddera',
   description: 'Профессиональный пилинг в Бельцах. Эффективные процедуры для обновления кожи лица и тела. Запишитесь на консультацию в Meddera.',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Пилинг в Бельцах – Косметологические услуги в Молдове | Meddera',
     description: 'Профессиональный пилинг в Бельцах. Эффективные процедуры для обновления кожи лица и тела. Запишитесь на консультацию в Meddera.',
 
-    url: 'https://meddera.md/services/6',
+    url: 'https://meddera.md/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
     type: 'website',
     images: [
       {

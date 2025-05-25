@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/9',
+    canonical: 'https://meddera.md/services/terapyya-protyv-pygmentaczyy-v-belczah',
   },
   title: 'Лечение пигментных пятен в Бельцах',
   description: 'Эффективное лечение пигментации в Бельцах: лазер, пилинги, мезотерапия. Удаление пятен современными методами. Запишитесь на консультацию!',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Лечение пигментных пятен в Бельцах',
     description: 'Эффективное лечение пигментации в Бельцах: лазер, пилинги, мезотерапия. Удаление пятен современными методами. Запишитесь на консультацию!',
 
-    url: 'https://meddera.md/services/9',
+    url: 'https://meddera.md/services/terapyya-protyv-pygmentaczyy-v-belczah',
     type: 'website',
     images: [
       {

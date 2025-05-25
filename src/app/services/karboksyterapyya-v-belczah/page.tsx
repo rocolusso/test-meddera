@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/5',
+    canonical: 'https://meddera.md/services/karboksyterapyya-v-belczah',
   },
   title: 'Карбокситерапия в Бельцах – Омоложение и лечение кожи | Meddera',
   description: 'Карбокситерапия в Бельцах от клиники Meddera – эффективное омоложение кожи, лечение акне, пигментации и целлюлита. Запишитесь на процедуру уже сегодня!',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Карбокситерапия в Бельцах – Омоложение и лечение кожи | Meddera',
     description: 'Карбокситерапия в Бельцах от клиники Meddera – эффективное омоложение кожи, лечение акне, пигментации и целлюлита. Запишитесь на процедуру уже сегодня!',
 
-    url: 'https://meddera.md/services/5',
+    url: 'https://meddera.md/services/karboksyterapyya-v-belczah',
     type: 'website',
     images: [
       {

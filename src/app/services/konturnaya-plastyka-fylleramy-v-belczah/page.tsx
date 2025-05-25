@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/16',
+    canonical: 'https://meddera.md/services/konturnaya-plastyka-fylleramy-v-belczah',
   },
   title: 'Контурная пластика филлерами в Бельцах — Омоложение и коррекция лица',
   description: 'Контурная пластика филлерами в Бельцах: безопасные инъекции гиалуроновой кислоты для омоложения и коррекции черт лица. Запишитесь на консультацию.',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Контурная пластика филлерами в Бельцах — Омоложение и коррекция лица',
     description: 'Контурная пластика филлерами в Бельцах: безопасные инъекции гиалуроновой кислоты для омоложения и коррекции черт лица. Запишитесь на консультацию.',
 
-    url: 'https://meddera.md/services/16',
+    url: 'https://meddera.md/services/konturnaya-plastyka-fylleramy-v-belczah',
     type: 'website',
     images: [
       {

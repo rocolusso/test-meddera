@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/1/ro',
+    canonical: 'https://meddera.md/services/konsultaczyya-dermatokosmetologa-v-belczah/ro',
   },
   title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
   description: 'Consultații dermatocosmetologice în Bălți: tratamente personalizate pentru acnee, pigmentare, riduri și o piele sănătoasă și radiantă.',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
     description: 'Consultații dermatocosmetologice în Bălți: tratamente personalizate pentru acnee, pigmentare, riduri și o piele sănătoasă și radiantă.',
 
-    url: 'https://meddera.md/services/1/ro',
+    url: 'https://meddera.md/services/konsultaczyya-dermatokosmetologa-v-belczah/ro',
     type: 'website',
     images: [
       {

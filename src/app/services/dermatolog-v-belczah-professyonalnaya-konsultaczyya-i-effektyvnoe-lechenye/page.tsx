@@ -13,14 +13,14 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/2',
+    canonical: 'https://meddera.md/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
   },
   title: 'Дерматолог в Бельцах – Консультация и Лечение Кожи',
   description: 'Профессиональная консультация дерматолога в Бельцах: диагностика и лечение акне, экземы, псориаза, удаление новообразований. Запишитесь онлайн.',
   openGraph: {
     title: 'Дерматолог в Бельцах – Консультация и Лечение Кожи',
     description: 'Профессиональная консультация дерматолога в Бельцах: диагностика и лечение акне, экземы, псориаза, удаление новообразований. Запишитесь онлайн.',
-    url: 'https://meddera.md/services/2',
+    url: 'https://meddera.md/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
     type: 'website',
     images: [
       {

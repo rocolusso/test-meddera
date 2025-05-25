@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/9/ro',
+    canonical: 'https://meddera.md/services/terapyya-protyv-pygmentaczyy-v-belczah/ro',
   },
   title: 'Terapie Antipigmentară în Bălți | Elimină Petele Pigmentare cu Meddera',
   description: 'Terapie antipigmentară profesională la Meddera Bălți. Elimină pete pigmentare, melasma și hiperpigmentarea. Programează-te acum!',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Terapie Antipigmentară în Bălți | Elimină Petele Pigmentare cu Meddera',
     description: 'Terapie antipigmentară profesională la Meddera Bălți. Elimină pete pigmentare, melasma și hiperpigmentarea. Programează-te acum!',
 
-    url: 'https://meddera.md/services/9/ro',
+    url: 'https://meddera.md/services/terapyya-protyv-pygmentaczyy-v-belczah/ro',
     type: 'website',
     images: [
       {

@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/15/ro',
+    canonical: 'https://meddera.md/services/byorevytalyzaczyya-v-belczah/ro',
   },
   title: 'Biorevitalizare în Bălți - Rejuvenare Facială Profesională',
   description: 'Descoperă biorevitalizarea în Bălți - procedură avansată de rejuvenare facială. Hidratează, regenerează și redă strălucirea pielii tale. Programează-te acum!',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Biorevitalizare în Bălți - Rejuvenare Facială Profesională',
     description: 'Descoperă biorevitalizarea în Bălți - procedură avansată de rejuvenare facială. Hidratează, regenerează și redă strălucirea pielii tale. Programează-te acum!',
 
-    url: 'https://meddera.md/services/15/ro',
+    url: 'https://meddera.md/services/byorevytalyzaczyya-v-belczah/ro',
     type: 'website',
     images: [
       {

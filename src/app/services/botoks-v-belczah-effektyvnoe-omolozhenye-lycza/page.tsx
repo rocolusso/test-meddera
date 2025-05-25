@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/14',
+    canonical: 'https://meddera.md/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza',
   },
   title: 'Ботокс в Бельцах – Инъекции для омоложения лица | Meddera',
   description: 'Профессиональные инъекции ботокса в Бельцах для коррекции мимических морщин и лечения гипергидроза. Эффективное и безопасное омоложение лица в клинике Meddera.',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Ботокс в Бельцах – Инъекции для омоложения лица | Meddera',
     description: 'Профессиональные инъекции ботокса в Бельцах для коррекции мимических морщин и лечения гипергидроза. Эффективное и безопасное омоложение лица в клинике Meddera.',
 
-    url: 'https://meddera.md/services/14',
+    url: 'https://meddera.md/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza',
     type: 'website',
     images: [
       {

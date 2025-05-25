@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/10',
+    canonical: 'https://meddera.md/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
   },
   title: 'Дермапен в Бельцах – фракционная мезотерапия для омоложения кожи',
   description: 'Безболезненное омоложение кожи в Бельцах: устранение морщин, рубцов и пигментации с минимальным восстановлением. Запишитесь на процедуру Дермапен!',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Дермапен в Бельцах – фракционная мезотерапия для омоложения кожи',
     description: 'Безболезненное омоложение кожи в Бельцах: устранение морщин, рубцов и пигментации с минимальным восстановлением. Запишитесь на процедуру Дермапен!',
 
-    url: 'https://meddera.md/services/10',
+    url: 'https://meddera.md/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
     type: 'website',
     images: [
       {

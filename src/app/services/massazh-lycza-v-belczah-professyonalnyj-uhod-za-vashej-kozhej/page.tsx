@@ -13,14 +13,14 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/4',
+    canonical: 'https://meddera.md/services/massazh-lycza-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
   },
   title: 'Массаж лица в Бельцах – Профессиональный уход за вашей кожей',
   description: 'Профессиональный массаж лица в Бельцах. Омоложение, лифтинг, улучшение состояния кожи. Запишитесь на процедуру уже сегодня!',
   openGraph: {
     title: 'Массаж лица в Бельцах – Профессиональный уход за вашей кожей',
     description: 'Профессиональный массаж лица в Бельцах. Омоложение, лифтинг, улучшение состояния кожи. Запишитесь на процедуру уже сегодня!',
-    url: 'https://meddera.md/services/4',
+    url: 'https://meddera.md/services/massazh-lycza-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
     type: 'website',
     images: [
       {

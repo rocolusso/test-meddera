@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/16/ro',
+    canonical: 'https://meddera.md/services/konturnaya-plastyka-fylleramy-v-belczah/ro',
   },
   title: 'Plastia de contur în Bălți – Corectare facială cu acid hialuronic',
   description: 'Corectează trăsăturile faciale cu acid hialuronic. Obține un chip armonios și întinerit la clinica noastră din Bălți.',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Plastia de contur în Bălți – Corectare facială cu acid hialuronic',
     description: 'Corectează trăsăturile faciale cu acid hialuronic. Obține un chip armonios și întinerit la clinica noastră din Bălți.',
 
-    url: 'https://meddera.md/services/16/ro',
+    url: 'https://meddera.md/services/konturnaya-plastyka-fylleramy-v-belczah/ro',
     type: 'website',
     images: [
       {

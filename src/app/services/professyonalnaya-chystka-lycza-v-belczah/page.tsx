@@ -13,14 +13,14 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/3',
+    canonical: 'https://meddera.md/services/professyonalnaya-chystka-lycza-v-belczah',
   },
   title: 'Чистка лица в Бельцах — косметология Meddera',
   description: 'Профессиональная чистка лица в Бельцах от дерматолога Екатерины Пынтя — глубокое очищение кожи с индивидуальным подходом.',
   openGraph: {
     title: 'Чистка лица в Бельцах — косметология Meddera',
     description: 'Профессиональная чистка лица в Бельцах от дерматолога Екатерины Пынтя — глубокое очищение кожи с индивидуальным подходом.',
-    url: 'https://meddera.md/services/3',
+    url: 'https://meddera.md/services/professyonalnaya-chystka-lycza-v-belczah',
     type: 'website',
     images: [
       {

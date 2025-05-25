@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/7',
+    canonical: 'https://meddera.md/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
   },
   title: 'Альгинатная маска в Бельцах – Увлажнение, лифтинг и сияние кожи',
   description: 'Профессиональные альгинатные маски в Бельцах. Увлажнение, лифтинг и сияние кожи. Запишитесь на процедуру у опытного косметолога.',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Альгинатная маска в Бельцах – Увлажнение, лифтинг и сияние кожи',
     description: 'Профессиональные альгинатные маски в Бельцах. Увлажнение, лифтинг и сияние кожи. Запишитесь на процедуру у опытного косметолога.',
 
-    url: 'https://meddera.md/services/7',
+    url: 'https://meddera.md/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
     type: 'website',
     images: [
       {

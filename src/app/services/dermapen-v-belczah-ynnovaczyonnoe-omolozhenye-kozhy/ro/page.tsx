@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/10/ro',
+    canonical: 'https://meddera.md/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy/ro',
   },
   title: 'Dermapen Bălți - Tratament Microneedling pentru Rejuvenare Facială',
   description: 'Descoperă tratamentul Dermapen în Bălți pentru rejuvenarea pielii, reducerea cicatricilor și îmbunătățirea texturii tenului. Programări disponibile acum.',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Dermapen Bălți - Tratament Microneedling pentru Rejuvenare Facială',
     description: 'Descoperă tratamentul Dermapen în Bălți pentru rejuvenarea pielii, reducerea cicatricilor și îmbunătățirea texturii tenului. Programări disponibile acum.',
 
-    url: 'https://meddera.md/services/10/ro',
+    url: 'https://meddera.md/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy/ro',
     type: 'website',
     images: [
       {

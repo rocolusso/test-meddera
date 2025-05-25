@@ -13,7 +13,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://meddera.md/services/1',
+    canonical: 'https://meddera.md/services/konsultaczyya-dermatokosmetologa-v-belczah',
   },
   title: 'Консультация дерматокосметолога в Бельцах — лечение кожных заболеваний',
   description: 'Профессиональная диагностика и лечение кожных заболеваний в Бельцах: акне, псориаз, экзема, розацеа, алопеция. Запишитесь на консультацию.',
@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Консультация дерматокосметолога в Бельцах — лечение кожных заболеваний',
     description: 'Профессиональная диагностика и лечение кожных заболеваний в Бельцах: акне, псориаз, экзема, розацеа, алопеция. Запишитесь на консультацию.',
 
-    url: 'https://meddera.md/services/1',
+    url: 'https://meddera.md/services/konsultaczyya-dermatokosmetologa-v-belczah',
     type: 'website',
     images: [
       {
