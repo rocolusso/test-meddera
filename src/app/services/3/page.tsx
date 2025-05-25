@@ -16,10 +16,10 @@ export const metadata = {
     canonical: 'https://meddera.md/services/3',
   },
   title: 'Чистка лица в Бельцах — косметология Meddera',
-  description: 'Чистка лица в Бельцах — услуги дерматолога Екатерины Пынтя',
+  description: 'Профессиональная чистка лица в Бельцах от дерматолога Екатерины Пынтя — глубокое очищение кожи с индивидуальным подходом.',
   openGraph: {
     title: 'Чистка лица в Бельцах — косметология Meddera',
-    description: 'Чистка лица в Бельцах — услуги дерматолога Екатерины Пынтя',
+    description: 'Профессиональная чистка лица в Бельцах от дерматолога Екатерины Пынтя — глубокое очищение кожи с индивидуальным подходом.',
     url: 'https://meddera.md/services/3',
     type: 'website',
     images: [
@@ -34,7 +34,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Чистка лица в Бельцах — косметология Meddera',
-    description: 'Чистка лица в Бельцах — услуги дерматолога Екатерины Пынтя',
+    description: 'Профессиональная чистка лица в Бельцах от дерматолога Екатерины Пынтя — глубокое очищение кожи с индивидуальным подходом.',
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
   },
