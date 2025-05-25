@@ -16,10 +16,10 @@ export const metadata = {
     canonical: 'https://meddera.md/services/16/ro',
   },
   title: 'Plastia de contur în Bălți – Corectare facială cu acid hialuronic',
-  description: 'Plastia de contur în Bălți: procedură estetică nechirurgicală pentru corectarea trăsăturilor faciale cu acid hialuronic. Programează-te acum pentru un chip armonios și întinerit.',
+  description: 'Corectează trăsăturile faciale cu acid hialuronic. Obține un chip armonios și întinerit la clinica noastră din Bălți.',
   openGraph: {
     title: 'Plastia de contur în Bălți – Corectare facială cu acid hialuronic',
-    description: 'Plastia de contur în Bălți: procedură estetică nechirurgicală pentru corectarea trăsăturilor faciale cu acid hialuronic. Programează-te acum pentru un chip armonios și întinerit.',
+    description: 'Corectează trăsăturile faciale cu acid hialuronic. Obține un chip armonios și întinerit la clinica noastră din Bălți.',
 
     url: 'https://meddera.md/services/16/ro',
     type: 'website',
@@ -35,7 +35,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Plastia de contur în Bălți – Corectare facială cu acid hialuronic',
-    description: 'Plastia de contur în Bălți: procedură estetică nechirurgicală pentru corectarea trăsăturilor faciale cu acid hialuronic. Programează-te acum pentru un chip armonios și întinerit.',
+    description: 'Corectează trăsăturile faciale cu acid hialuronic. Obține un chip armonios și întinerit la clinica noastră din Bălți.',
 
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
