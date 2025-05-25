@@ -8,40 +8,39 @@ import Image from 'next/image';
 import botoks from '@/../public/assets/img/services/botoks.png';
 import ContactsDynamicWrapperRo from '@/components/ContactsDynamicWrapperRo';
 
-// export const metadata = {
-//   icons: {
-//     icon: '/favicon.ico',
-//   },
-//   title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-//   description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-//                     pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-//                      Rezultatele sunt vizibile imediat!`,
-//   openGraph: {
-//     title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-//     description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-//                     pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-//                      Rezultatele sunt vizibile imediat!`,
-//     url: 'https://meddera.md/ro',
-//     type: 'website',
-//     images: [
-//       {
-//         url: '/assets/img/seo-meta/facebook-meta.jpg',
-//         width: 1200,
-//         height: 630,
-//         alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
-//       },
-//     ],
-//   },
-//   twitter: {
-//     card: 'summary_large_image',
-//     title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-//     description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-//                     pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-//                      Rezultatele sunt vizibile imediat!`,
-//     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
-//     site: '@your_twitter_handle',
-//   },
-// };
+export const metadata = {
+  icons: {
+    icon: '/favicon.ico',
+  },
+  alternates: {
+    canonical: 'https://www.meddera.md/services/14/ro',
+  },
+  title: 'Terapie antirid cu Botox în Bălți | Reîntinerește-ți aspectul',
+  description: 'Descoperă terapia antirid cu Botox în Bălți. Elimină ridurile și redă pielii tale un aspect tânăr și proaspăt. Programează-te acum!',
+  openGraph: {
+    title: 'Terapie antirid cu Botox în Bălți | Reîntinerește-ți aspectul',
+    description: 'Descoperă terapia antirid cu Botox în Bălți. Elimină ridurile și redă pielii tale un aspect tânăr și proaspăt. Programează-te acum!',
+
+    url: 'https://meddera.md/ro',
+    type: 'website',
+    images: [
+      {
+        url: '/assets/img/seo-meta/facebook-meta.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terapie antirid cu Botox în Bălți | Reîntinerește-ți aspectul',
+    description: 'Descoperă terapia antirid cu Botox în Bălți. Elimină ridurile și redă pielii tale un aspect tânăr și proaspăt. Programează-te acum!',
+
+    images: ['/assets/img/seo-meta/twitter-meta.jpg'],
+    site: '@your_twitter_handle',
+  },
+};
 
 function ServicePage14Ro() {
   return (
@@ -89,28 +88,102 @@ function ServicePage14Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            {/* <div */}
-            {/*  style={{ fontSize: '8px' }} */}
-            {/*  className="container justify-center
-            mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 " */}
-            {/* > */}
-            {/*  <div> */}
-            {/*    <h1>Mărirea buzelor</h1> */}
-            {/*    <h2>Ce este mărirea buzelor?</h2> */}
-            {/*    <h3>Volum natural și armonie a formei</h3> */}
-            {/*    <h3>Cum funcționează acidul hialuronic?</h3> */}
-            {/*    <h2>Avantajele procedurii</h2> */}
-            {/*    <h3>Corecția formei și eliminarea ridurilor</h3> */}
-            {/*    <h3>Simetrie și hidratarea buzelor</h3> */}
-            {/*  </div> */}
-
-            {/*  <div> */}
-            {/*    <h2>De ce este sigură?</h2> */}
-            {/*    <h3>Rezultat instantaneu, fără riscuri</h3> */}
-            {/*    <h3>Abordare profesională a medicului dermatocosmetolog</h3> */}
-            {/*  </div> */}
-
-            {/* </div> */}
+            <section>
+              <h1>Terapie antirid cu Botox în Bălți</h1>
+              <p>
+                Redescoperă frumusețea naturală a pielii tale cu ajutorul terapiei
+                antirid cu Botox. Elimină ridurile
+                și oferă-ți un aspect proaspăt și întinerit.
+              </p>
+            </section>
+            <section>
+              <h2>Beneficiile terapiei antirid cu Botox</h2>
+              <ul>
+                <li>Reducerea vizibilă a ridurilor de expresie</li>
+                <li>Prevenirea formării de noi linii fine</li>
+                <li>Procedură rapidă și minim invazivă</li>
+                <li>Rezultate vizibile în câteva zile</li>
+                <li>Durată a efectului de până la 6 luni</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Ce este terapia antirid cu Botox?</h2>
+              <article>
+                <h3>Descrierea procedurii</h3>
+                <p>
+                  Terapia antirid cu Botox implică injectarea unei cantități mici de
+                  toxină botulinică în mușchii
+                  faciali responsabili de formarea ridurilor. Aceasta blochează
+                  semnalele nervoase, relaxând mușchii și
+                  netezind pielea.
+                </p>
+              </article>
+              <article>
+                <h3>Zone tratate frecvent</h3>
+                <p>
+                  Procedura este eficientă pentru ridurile de pe frunte, între sprâncene
+                  (glabella) și în jurul ochilor
+                  (laba gâștii).
+                </p>
+              </article>
+              <article>
+                <h3>Durata și frecvența tratamentului</h3>
+                <p>
+                  O ședință durează aproximativ 15-30 de minute.
+                  Efectele devin vizibile în 3-7 zile și se mențin între
+                  4 și 6 luni. Tratamentul poate fi repetat pentru menținerea rezultatelor.
+                </p>
+              </article>
+              <article>
+                <h3>Siguranța procedurii</h3>
+                <p>
+                  Botoxul este aprobat de autoritățile medicale și este
+                  utilizat de zeci de ani în scopuri estetice și
+                  medicale. Procedura este sigură când este realizată de specialiști calificați.
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>De ce să alegi clinica noastră din Bălți?</h2>
+              <p>
+                Clinica noastră oferă servicii de înaltă calitate,
+                cu personal medical specializat și echipamente
+                moderne. Ne dedicăm să oferim fiecărui pacient o
+                experiență confortabilă și rezultate excelente.
+              </p>
+            </section>
+            <section>
+              <h2>Testimoniale ale pacienților</h2>
+              <ul>
+                <li>
+                  După tratamentul cu Botox, pielea mea arată mult mai
+                  tânără și proaspătă. Recomand cu încredere! -
+                  Maria, 45 ani
+                </li>
+                <li>
+                  Procedura a fost rapidă și fără durere.
+                  Rezultatele au fost vizibile în câteva zile. - Elena, 38
+                  ani
+                </li>
+                <li>
+                  Personal profesionist și amabil. Mă voi întoarce cu
+                  siguranță. - Ana, 50 ani
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Programează-te acum pentru o consultație</h2>
+              <p>
+                Nu amâna să ai grijă de tine. Contactează-ne pentru a
+                stabili o consultație și a afla mai multe despre
+                cum te poate ajuta terapia antirid cu Botox.
+              </p>
+              <p>
+                Telefon:
+                <a href="tel:+37368550030">+373 685 500 30</a>
+              </p>
+              <p>Adresă: Bălți, Ștefan cel Mare 13</p>
+            </section>
           </div>
         </VisuallyHidden>
 
