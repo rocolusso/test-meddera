@@ -12,6 +12,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  alternates: {
+    canonical: 'https://www.meddera.md/services/11',
+  },
   title: 'Мезотерапия лица в Бельцах – омоложение и сияние кожи | Meddera',
   description: 'Профессиональная мезотерапия лица в Бельцах. Омоложение, увлажнение, устранение морщин и пигментации. Запишитесь на процедуру в клинике Meddera.',
   openGraph: {

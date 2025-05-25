@@ -12,6 +12,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  alternates: {
+    canonical: 'https://www.meddera.md/services/12/ro',
+  },
   title: 'Mezoterapia pentru păr în Bălți – Tratament eficient împotriva căderii părului',
   description: 'Descoperă mezoterapia pentru păr în Bălți, o soluție eficientă împotriva căderii părului și alopeciei. Programează-te acum pentru un tratament personalizat.',
   openGraph: {
