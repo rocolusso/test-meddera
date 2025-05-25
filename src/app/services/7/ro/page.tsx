@@ -15,10 +15,10 @@ export const metadata = {
   alternates: {
     canonical: 'https://meddera.md/services/7/ro',
   },
-  title: 'Masca alginată în Bălți - Tratament facial profesional pentru o piele radiantă',
+  title: 'Masca alginată în Bălți – Ten hidratat și luminos',
   description: 'Descoperă beneficiile măștii alginate în Bălți. Tratament facial profesional pentru hidratare profundă, efect de lifting și revitalizare a tenului. Programează-te acum!',
   openGraph: {
-    title: 'Masca alginată în Bălți - Tratament facial profesional pentru o piele radiantă',
+    title: 'Masca alginată în Bălți – Ten hidratat și luminos',
     description: 'Descoperă beneficiile măștii alginate în Bălți. Tratament facial profesional pentru hidratare profundă, efect de lifting și revitalizare a tenului. Programează-te acum!',
 
     url: 'https://meddera.md/ro',
@@ -34,7 +34,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Masca alginată în Bălți - Tratament facial profesional pentru o piele radiantă',
+    title: 'Masca alginată în Bălți – Ten hidratat și luminos',
     description: 'Descoperă beneficiile măștii alginate în Bălți. Tratament facial profesional pentru hidratare profundă, efect de lifting și revitalizare a tenului. Programează-te acum!',
 
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],

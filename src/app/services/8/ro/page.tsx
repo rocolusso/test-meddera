@@ -15,10 +15,10 @@ export const metadata = {
   alternates: {
     canonical: 'https://meddera.md/services/8/ro',
   },
-  title: 'Terapia anti-acnee în Bălți | Tratament profesional pentru un ten curat',
+  title: 'Terapie anti-acnee Bălți | Ten curat și sănătos',
   description: 'Descoperă terapia anti-acnee în Bălți oferită de clinica Meddera. Tratament profesional pentru un ten curat și sănătos. Programează-te acum!',
   openGraph: {
-    title: 'Terapia anti-acnee în Bălți | Tratament profesional pentru un ten curat',
+    title: 'Terapie anti-acnee Bălți | Ten curat și sănătos',
     description: 'Descoperă terapia anti-acnee în Bălți oferită de clinica Meddera. Tratament profesional pentru un ten curat și sănătos. Programează-te acum!',
 
     url: 'https://meddera.md/ro',
@@ -34,7 +34,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Terapia anti-acnee în Bălți | Tratament profesional pentru un ten curat',
+    title: 'Terapie anti-acnee Bălți | Ten curat și sănătos',
     description: 'Descoperă terapia anti-acnee în Bălți oferită de clinica Meddera. Tratament profesional pentru un ten curat și sănătos. Programează-te acum!',
 
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
