@@ -8,40 +8,39 @@ import Image from 'next/image';
 import lipolitiki from '@/../public/assets/img/services/lipolitiki.png';
 import ContactsDynamicWrapperRo from '@/components/ContactsDynamicWrapperRo';
 
-// export const metadata = {
-//   icons: {
-//     icon: '/favicon.ico',
-//   },
-//   title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-//   description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-//                     pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-//                      Rezultatele sunt vizibile imediat!`,
-//   openGraph: {
-//     title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-//     description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-//                     pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-//                      Rezultatele sunt vizibile imediat!`,
-//     url: 'https://meddera.md/ro',
-//     type: 'website',
-//     images: [
-//       {
-//         url: '/assets/img/seo-meta/facebook-meta.jpg',
-//         width: 1200,
-//         height: 630,
-//         alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
-//       },
-//     ],
-//   },
-//   twitter: {
-//     card: 'summary_large_image',
-//     title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-//     description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-//                     pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-//                      Rezultatele sunt vizibile imediat!`,
-//     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
-//     site: '@your_twitter_handle',
-//   },
-// };
+export const metadata = {
+  icons: {
+    icon: '/favicon.ico',
+  },
+  alternates: {
+    canonical: 'https://www.meddera.md/services/17/ro',
+  },
+  title: 'Lipoliză Injectabilă în Bălți – Elimină Grăsimea Localizată Fără Chirurgie',
+  description: 'Descoperă lipoliza injectabilă în Bălți – soluția eficientă pentru eliminarea grăsimii localizate fără intervenții chirurgicale. Programează-te acum pentru o consultație gratuită!',
+  openGraph: {
+    title: 'Lipoliză Injectabilă în Bălți – Elimină Grăsimea Localizată Fără Chirurgie',
+    description: 'Descoperă lipoliza injectabilă în Bălți – soluția eficientă pentru eliminarea grăsimii localizate fără intervenții chirurgicale. Programează-te acum pentru o consultație gratuită!',
+
+    url: 'https://meddera.md/ro',
+    type: 'website',
+    images: [
+      {
+        url: '/assets/img/seo-meta/facebook-meta.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lipoliză Injectabilă în Bălți – Elimină Grăsimea Localizată Fără Chirurgie',
+    description: 'Descoperă lipoliza injectabilă în Bălți – soluția eficientă pentru eliminarea grăsimii localizate fără intervenții chirurgicale. Programează-te acum pentru o consultație gratuită!',
+
+    images: ['/assets/img/seo-meta/twitter-meta.jpg'],
+    site: '@your_twitter_handle',
+  },
+};
 
 function ServicePage17Ro() {
   return (
@@ -90,28 +89,123 @@ function ServicePage17Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            {/* <div */}
-            {/*  style={{ fontSize: '8px' }} */}
-            {/*  className="container justify-center
-            mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 " */}
-            {/* > */}
-            {/*  <div> */}
-            {/*    <h1>Mărirea buzelor</h1> */}
-            {/*    <h2>Ce este mărirea buzelor?</h2> */}
-            {/*    <h3>Volum natural și armonie a formei</h3> */}
-            {/*    <h3>Cum funcționează acidul hialuronic?</h3> */}
-            {/*    <h2>Avantajele procedurii</h2> */}
-            {/*    <h3>Corecția formei și eliminarea ridurilor</h3> */}
-            {/*    <h3>Simetrie și hidratarea buzelor</h3> */}
-            {/*  </div> */}
+            <section>
+              <h1>
+                Lipoliză Injectabilă în Bălți – Soluția Modernă pentru
+                Eliminarea Grăsimii Localizate
+              </h1>
+              <p>
+                Scapă de grăsimea persistentă fără eforturi extreme.
+                Alege lipoliza injectabilă – tratamentul
+                non-invaziv care redefinește conturul corpului tău.
+              </p>
+            </section>
 
-            {/*  <div> */}
-            {/*    <h2>De ce este sigură?</h2> */}
-            {/*    <h3>Rezultat instantaneu, fără riscuri</h3> */}
-            {/*    <h3>Abordare profesională a medicului dermatocosmetolog</h3> */}
-            {/*  </div> */}
-
-            {/* </div> */}
+            <section>
+              <h2>Ce Este Lipoliza Injectabilă?</h2>
+              <p>
+                Lipoliza injectabilă este o procedură estetică minim invazivă
+                care implică injectarea unor substanțe
+                lipolitice în zonele cu grăsime localizată. Aceste substanțe
+                descompun celulele adipoase, facilitând
+                eliminarea lor naturală prin procesele metabolice ale organismului.
+              </p>
+            </section>
+            <section>
+              <h2>Beneficiile Lipolizei Injectabile</h2>
+              <ul>
+                <li>
+                  Eliminarea grăsimii localizate din zone precum abdomen,
+                  coapse, brațe și bărbie.
+                </li>
+                <li>
+                  Procedură non-chirurgicală, fără perioadă de recuperare
+                  prelungită.
+                </li>
+                <li>Rezultate vizibile după câteva ședințe.</li>
+                <li>Îmbunătățirea conturului corporal și a fermității pielii.</li>
+              </ul>
+            </section>
+            <section>
+              <h2>De Ce Să Alegi Clinica Noastră din Bălți?</h2>
+              <article>
+                <h3>Specialiști Calificați</h3>
+                <p>
+                  Echipa noastră este formată din medici esteticieni cu
+                  experiență, specializați în proceduri de
+                  lipoliză injectabilă.
+                </p>
+              </article>
+              <article>
+                <h3>Tehnologie Modernă</h3>
+                <p>
+                  Utilizăm echipamente de ultimă generație și substanțe
+                  lipolitice certificate pentru a asigura
+                  eficiența și siguranța tratamentului.
+                </p>
+              </article>
+              <article>
+                <h3>Plan Personalizat de Tratament</h3>
+                <p>
+                  Fiecare pacient beneficiază de o evaluare detaliată și
+                  un plan de tratament adaptat nevoilor sale
+                  specifice.
+                </p>
+              </article>
+              <article>
+                <h3>Consultanță Gratuită</h3>
+                <p>
+                  Oferim consultații gratuite pentru a discuta opțiunile
+                  de tratament și a răspunde tuturor
+                  întrebărilor tale.
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>Întrebări Frecvente</h2>
+              <article>
+                <h3>Este procedura dureroasă?</h3>
+                <p>
+                  Disconfortul este minim, iar în majoritatea cazurilor
+                  se utilizează anestezie locală pentru a asigura
+                  confortul pacientului.
+                </p>
+              </article>
+              <article>
+                <h3>Câte ședințe sunt necesare?</h3>
+                <p>
+                  Numărul de ședințe variază în funcție de zona tratată
+                  și de obiectivele pacientului, dar în general
+                  sunt recomandate între 3 și 6 ședințe.
+                </p>
+              </article>
+              <article>
+                <h3>Există efecte secundare?</h3>
+                <p>
+                  Pot apărea ușoare umflături sau roșeață în zona tratată,
+                  care dispar în câteva zile.
+                </p>
+              </article>
+              <article>
+                <h3>Cât durează rezultatele?</h3>
+                <p>
+                  Rezultatele sunt de durată, mai ales dacă sunt menținute
+                  printr-un stil de viață sănătos și exerciții
+                  fizice regulate.
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>Programează-te Acum pentru o Consultație Gratuită</h2>
+              <p>
+                Contactează-ne la
+                <a href="tel:+37368550030">+373 685 500 30</a>
+                {' '}
+                sau vizitează-ne la adresa: Balti, Stefan Cel Mare, 13.
+                Echipa noastră te așteaptă pentru
+                a-ți oferi cele mai bune soluții estetice.
+              </p>
+            </section>
           </div>
         </VisuallyHidden>
 
