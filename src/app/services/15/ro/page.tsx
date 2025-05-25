@@ -8,40 +8,39 @@ import Image from 'next/image';
 import biorevit from '@/../public/assets/img/services/biorevit.png';
 import ContactsDynamicWrapperRo from '@/components/ContactsDynamicWrapperRo';
 
-// export const metadata = {
-//   icons: {
-//     icon: '/favicon.ico',
-//   },
-//   title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-//   description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-//                     pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-//                      Rezultatele sunt vizibile imediat!`,
-//   openGraph: {
-//     title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-//     description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-//                     pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-//                      Rezultatele sunt vizibile imediat!`,
-//     url: 'https://meddera.md/ro',
-//     type: 'website',
-//     images: [
-//       {
-//         url: '/assets/img/seo-meta/facebook-meta.jpg',
-//         width: 1200,
-//         height: 630,
-//         alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
-//       },
-//     ],
-//   },
-//   twitter: {
-//     card: 'summary_large_image',
-//     title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-//     description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-//                     pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-//                      Rezultatele sunt vizibile imediat!`,
-//     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
-//     site: '@your_twitter_handle',
-//   },
-// };
+export const metadata = {
+  icons: {
+    icon: '/favicon.ico',
+  },
+  alternates: {
+    canonical: 'https://www.meddera.md/services/15/ro',
+  },
+  title: 'Biorevitalizare în Bălți - Rejuvenare Facială Profesională',
+  description: 'Descoperă biorevitalizarea în Bălți - procedură avansată de rejuvenare facială. Hidratează, regenerează și redă strălucirea pielii tale. Programează-te acum!',
+  openGraph: {
+    title: 'Biorevitalizare în Bălți - Rejuvenare Facială Profesională',
+    description: 'Descoperă biorevitalizarea în Bălți - procedură avansată de rejuvenare facială. Hidratează, regenerează și redă strălucirea pielii tale. Programează-te acum!',
+
+    url: 'https://meddera.md/ro',
+    type: 'website',
+    images: [
+      {
+        url: '/assets/img/seo-meta/facebook-meta.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Biorevitalizare în Bălți - Rejuvenare Facială Profesională',
+    description: 'Descoperă biorevitalizarea în Bălți - procedură avansată de rejuvenare facială. Hidratează, regenerează și redă strălucirea pielii tale. Programează-te acum!',
+
+    images: ['/assets/img/seo-meta/twitter-meta.jpg'],
+    site: '@your_twitter_handle',
+  },
+};
 
 function ServicePage15Ro() {
   return (
@@ -90,28 +89,77 @@ function ServicePage15Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            {/* <div */}
-            {/*  style={{ fontSize: '8px' }} */}
-            {/*  className="container justify-center
-            mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 " */}
-            {/* > */}
-            {/*  <div> */}
-            {/*    <h1>Mărirea buzelor</h1> */}
-            {/*    <h2>Ce este mărirea buzelor?</h2> */}
-            {/*    <h3>Volum natural și armonie a formei</h3> */}
-            {/*    <h3>Cum funcționează acidul hialuronic?</h3> */}
-            {/*    <h2>Avantajele procedurii</h2> */}
-            {/*    <h3>Corecția formei și eliminarea ridurilor</h3> */}
-            {/*    <h3>Simetrie și hidratarea buzelor</h3> */}
-            {/*  </div> */}
-
-            {/*  <div> */}
-            {/*    <h2>De ce este sigură?</h2> */}
-            {/*    <h3>Rezultat instantaneu, fără riscuri</h3> */}
-            {/*    <h3>Abordare profesională a medicului dermatocosmetolog</h3> */}
-            {/*  </div> */}
-
-            {/* </div> */}
+            <section>
+              <h1>Biorevitalizare în Bălți - Rejuvenare Facială Profesională</h1>
+              <p>
+                Redă pielii tale vitalitatea și strălucirea cu ajutorul
+                biorevitalizării - tratamentul modern de
+                întinerire facială disponibil acum în Bălți.
+              </p>
+            </section>
+            <section>
+              <h2>Ce este Biorevitalizarea?</h2>
+              <p>
+                Biorevitalizarea este o procedură minim invazivă care
+                implică injectarea de acid hialuronic în piele
+                pentru a restabili hidratarea, elasticitatea și tonusul
+                acesteia. Este ideală pentru combaterea semnelor
+                de îmbătrânire și pentru revitalizarea tenului obosit.
+              </p>
+            </section>
+            <section>
+              <h2>Beneficiile Biorevitalizării</h2>
+              <ul>
+                <li>Hidratare profundă a pielii</li>
+                <li>Reducerea ridurilor fine și a liniilor de expresie</li>
+                <li>Îmbunătățirea elasticității și fermității pielii</li>
+                <li>Redarea strălucirii naturale a tenului</li>
+                <li>Stimularea producției de colagen și elastină</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Indicații pentru Biorevitalizare</h2>
+              <p>Biorevitalizarea este recomandată pentru:</p>
+              <ul>
+                <li>Ten deshidratat sau tern</li>
+                <li>Semne de îmbătrânire prematură</li>
+                <li>Piele afectată de expunerea la soare</li>
+                <li>Recuperare după proceduri dermatologice</li>
+                <li>Prevenirea îmbătrânirii cutanate</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Procedura de Biorevitalizare</h2>
+              <p>
+                Tratamentul constă în injectarea de acid hialuronic în
+                zonele afectate ale feței. Procedura durează
+                aproximativ 60 de minute și nu necesită timp de recuperare.
+                Rezultatele sunt vizibile după prima
+                ședință, cu efecte cumulative în urma tratamentelor repetate.
+              </p>
+            </section>
+            <section>
+              <h2>De ce să alegi clinica noastră din Bălți?</h2>
+              <ul>
+                <li>Specialiști cu experiență în dermatologie estetică</li>
+                <li>Produse de calitate superioară, aprobate internațional</li>
+                <li>Abordare personalizată pentru fiecare pacient</li>
+                <li>Ambianță confortabilă și echipamente moderne</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Programează-te acum</h2>
+              <p>
+                Contactează-ne pentru o consultație gratuită și descoperă
+                cum biorevitalizarea poate transforma
+                aspectul pielii tale.
+              </p>
+              <p>
+                Telefon:
+                <a href="tel:+37368550030">+373 685 500 30</a>
+              </p>
+              <p>Adresă: Balti, Stefan Cel Mare, 13, Moldova</p>
+            </section>
           </div>
         </VisuallyHidden>
 
