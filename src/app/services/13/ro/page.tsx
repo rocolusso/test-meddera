@@ -12,15 +12,15 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-  description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-                    pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-                     Rezultatele sunt vizibile imediat!`,
+  alternates: {
+    canonical: 'https://www.meddera.md/services/13/ro',
+  },
+  title: 'Mărirea buzelor în Bălți - Buze voluminoase și naturale | Clinica Meddera',
+  description: 'Descoperă serviciul de mărire a buzelor în Bălți cu acid hialuronic. Obține buze pline, conturate și naturale. Programează-te acum la Clinica Meddera!',
   openGraph: {
-    title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-    description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-                    pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-                     Rezultatele sunt vizibile imediat!`,
+    title: 'Mărirea buzelor în Bălți - Buze voluminoase și naturale | Clinica Meddera',
+    description: 'Descoperă serviciul de mărire a buzelor în Bălți cu acid hialuronic. Obține buze pline, conturate și naturale. Programează-te acum la Clinica Meddera!',
+
     url: 'https://meddera.md/ro',
     type: 'website',
     images: [
@@ -34,10 +34,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mărirea buzelor: Volum natural și expresivitate cu fillere cu acid hialuronic',
-    description: `Mărirea buzelor cu acid hialuronic este o procedură sigură
-                    pentru contururi naturale, îmbunătățirea simetriei și hidratarea buzelor.
-                     Rezultatele sunt vizibile imediat!`,
+    title: 'Mărirea buzelor în Bălți - Buze voluminoase și naturale | Clinica Meddera',
+    description: 'Descoperă serviciul de mărire a buzelor în Bălți cu acid hialuronic. Obține buze pline, conturate și naturale. Programează-te acum la Clinica Meddera!',
+
     images: ['/assets/img/seo-meta/twitter-meta.jpg'],
     site: '@your_twitter_handle',
   },
@@ -88,27 +87,95 @@ function ServicePage13Ro() {
 
         <VisuallyHidden>
           <div className="seo-block bg-gray-400">
-            <div
-              style={{ fontSize: '8px' }}
-              className="container justify-center mx-auto grid grid-cols-1 sm:grid-cols-8 gap-3 "
-            >
-              <div>
-                <h1>Mărirea buzelor</h1>
-                <h2>Ce este mărirea buzelor?</h2>
-                <h3>Volum natural și armonie a formei</h3>
-                <h3>Cum funcționează acidul hialuronic?</h3>
-                <h2>Avantajele procedurii</h2>
-                <h3>Corecția formei și eliminarea ridurilor</h3>
-                <h3>Simetrie și hidratarea buzelor</h3>
-              </div>
+            <section>
+              <h1>Mărirea buzelor în Bălți - Buze voluminoase și naturale</h1>
+              <p>
+                Obține buze pline și seducătoare cu ajutorul acidului hialuronic
+                la Clinica Meddera din Bălți.
+              </p>
+            </section>
+            <section>
+              <h2>Beneficiile măriri buzelor cu acid hialuronic</h2>
+              <ul>
+                <li>Volum natural și simetric al buzelor</li>
+                <li>Contur definit și atractiv</li>
+                <li>Hidratare și elasticitate îmbunătățite</li>
+                <li>Procedură minim invazivă și sigură</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Despre procedura de mărire a buzelor</h2>
+              <article>
+                <h3>Ce este mărirea buzelor?</h3>
+                <p>
+                  Mărirea buzelor este o procedură estetică ce implică
+                  injectarea de acid hialuronic pentru a oferi
+                  volum și formă buzelor, rezultând un aspect natural și atrăgător.
+                </p>
+              </article>
+              <article>
+                <h3>De ce să alegi Clinica Meddera din Bălți?</h3>
+                <p>
+                  La Clinica Meddera, folosim doar produse de calitate superioară
+                  și tehnici moderne pentru a asigura
+                  rezultate excelente și satisfacția pacienților noștri.
+                </p>
+              </article>
+              <article>
+                <h3>Durata și recuperarea</h3>
+                <p>
+                  Procedura durează aproximativ 30 de minute, iar recuperarea
+                  este rapidă, cu efecte vizibile imediat
+                  și minime efecte secundare.
+                </p>
+              </article>
+              <article>
+                <h3>Rezultate și durabilitate</h3>
+                <p>
+                  Rezultatele sunt vizibile imediat și pot dura între
+                  6 și 12 luni, în funcție de metabolismul
+                  individual și stilul de viață.
+                </p>
+              </article>
+            </section>
+            <section>
+              <h2>Întrebări frecvente</h2>
+              <p>
+                <strong>Este procedura dureroasă?</strong>
 
-              <div>
-                <h2>De ce este sigură?</h2>
-                <h3>Rezultat instantaneu, fără riscuri</h3>
-                <h3>Abordare profesională a medicului dermatocosmetolog</h3>
-              </div>
+                Disconfortul este minim, datorită utilizării anesteziei
+                locale.
+              </p>
+              <p>
+                <strong>Există riscuri?</strong>
 
-            </div>
+                Riscurile sunt minime când procedura este realizată de specialiști
+                calificați.
+              </p>
+              <p>
+                <strong>Cât timp durează efectul?</strong>
+                Efectul poate dura între 6 și 12 luni, în funcție de factori
+                individuali.
+              </p>
+            </section>
+            <section>
+              <h2>De ce să alegi Clinica Meddera din Bălți?</h2>
+              <ul>
+                <li>Specialiști cu experiență și certificări internaționale</li>
+                <li>Produse de top și tehnologie modernă</li>
+                <li>Abordare personalizată pentru fiecare pacient</li>
+                <li>Rezultate naturale și satisfacție garantată</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Programează-te acum pentru mărirea buzelor în Bălți</h2>
+              <p>
+                Contactează-ne la
+                <strong>+37368550030</strong>
+                sau completează formularul online pentru a te programa
+                la o consultație gratuită.
+              </p>
+            </section>
           </div>
         </VisuallyHidden>
 
