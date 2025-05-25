@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Masaj facial în Bălți – Rejuvenare și relaxare pentru tenul tău',
     description: 'Descoperă beneficiile masajului facial în Bălți. Îmbunătățește aspectul pielii, relaxează-te și redă strălucirea tenului tău. Programează-te acum!',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/4/ro',
     type: 'website',
     images: [
       {

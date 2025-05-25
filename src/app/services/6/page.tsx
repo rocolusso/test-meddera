@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Пилинг в Бельцах – Косметологические услуги в Молдове | Meddera',
     description: 'Профессиональный пилинг в Бельцах. Эффективные процедуры для обновления кожи лица и тела. Запишитесь на консультацию в Meddera.',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/6',
     type: 'website',
     images: [
       {

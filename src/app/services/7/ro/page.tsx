@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Masca alginată în Bălți – Ten hidratat și luminos',
     description: 'Masca alginată în Bălți: hidratare intensă, lifting și revitalizare pentru un ten luminos. Programează-te acum!',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/7/ro',
     type: 'website',
     images: [
       {

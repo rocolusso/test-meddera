@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Мезотерапия для волос в Бельцах – восстановление и стимуляция роста',
     description: 'Мезотерапия волос в Бельцах — лечение выпадения, укрепление фолликул, стимуляция роста и улучшение кожи головы. Запишитесь в Meddera.',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/12',
     type: 'website',
     images: [
       {

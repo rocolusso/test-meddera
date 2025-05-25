@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Terapie Antipigmentară în Bălți | Elimină Petele Pigmentare cu Meddera',
     description: 'Terapie antipigmentară profesională la Meddera Bălți. Elimină pete pigmentare, melasma și hiperpigmentarea. Programează-te acum!',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/9/ro',
     type: 'website',
     images: [
       {

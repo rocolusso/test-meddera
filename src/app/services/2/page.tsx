@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: 'Дерматолог в Бельцах – Консультация и Лечение Кожи',
     description: 'Профессиональная консультация дерматолога в Бельцах: диагностика и лечение акне, экземы, псориаза, удаление новообразований. Запишитесь онлайн.',
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/2',
     type: 'website',
     images: [
       {

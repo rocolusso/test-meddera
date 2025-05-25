@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Лечение пигментных пятен в Бельцах',
     description: 'Эффективное лечение пигментации в Бельцах: лазер, пилинги, мезотерапия. Удаление пятен современными методами. Запишитесь на консультацию!',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/9',
     type: 'website',
     images: [
       {

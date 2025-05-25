@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei',
     description: 'Elimină grăsimea localizată în Bălți cu lipoliza injectabilă – procedură non-invazivă, fără chirurgie. Programează-te acum pentru o consultație gratuită!',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/17/ro',
     type: 'website',
     images: [
       {

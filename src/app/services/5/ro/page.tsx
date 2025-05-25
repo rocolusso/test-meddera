@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Carboxiterapie Bălți - Rejuvenare Facială și Corporală | Meddera',
     description: 'Descoperă carboxiterapia la Meddera Bălți - tratament non-invaziv pentru întinerirea pielii, reducerea celulitei și vergeturilor. Programează-te acum!',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/5/ro',
     type: 'website',
     images: [
       {

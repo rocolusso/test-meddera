@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: 'Массаж лица в Бельцах – Профессиональный уход за вашей кожей',
     description: 'Профессиональный массаж лица в Бельцах. Омоложение, лифтинг, улучшение состояния кожи. Запишитесь на процедуру уже сегодня!',
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/4',
     type: 'website',
     images: [
       {

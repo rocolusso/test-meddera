@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: 'Чистка лица в Бельцах — косметология Meddera',
     description: 'Чистка лица в Бельцах — услуги дерматолога Екатерины Пынтя',
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/3',
     type: 'website',
     images: [
       {

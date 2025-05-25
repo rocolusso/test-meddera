@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Biorevitalizare în Bălți - Rejuvenare Facială Profesională',
     description: 'Descoperă biorevitalizarea în Bălți - procedură avansată de rejuvenare facială. Hidratează, regenerează și redă strălucirea pielii tale. Programează-te acum!',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/15/ro',
     type: 'website',
     images: [
       {

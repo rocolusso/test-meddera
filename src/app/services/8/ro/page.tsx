@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Terapie anti-acnee Bălți | Ten curat și sănătos',
     description: 'Descoperă terapia anti-acnee în Bălți oferită de clinica Meddera. Tratament profesional pentru un ten curat și sănătos. Programează-te acum!',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/8/ro',
     type: 'website',
     images: [
       {

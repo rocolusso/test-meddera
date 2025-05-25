@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Mezoterapie Facială în Bălți | Rejuvenare și Hidratare Profesională',
     description: 'Descoperă mezoterapia facială în Bălți pentru o piele hidratată și întinerită. Programează-te acum pentru un tratament profesional de rejuvenare facială.',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/11/ro',
     type: 'website',
     images: [
       {

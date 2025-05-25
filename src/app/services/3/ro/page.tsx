@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Curățare facială profesională în Bălți | Îngrijire completă a tenului',
     description: 'Descoperă cele mai eficiente tratamente de curățare facială în Bălți. Îmbunătățește sănătatea și aspectul tenului tău cu ajutorul specialiștilor noștri.',
 
-    url: 'https://meddera.md/ro',
+    url: 'https://meddera.md/services/3/ro',
     type: 'website',
     images: [
       {
