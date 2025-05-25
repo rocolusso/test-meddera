@@ -25,7 +25,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/assets/img/seo-meta/facebook-meta.jpg',
+        url: 'https://meddera.md/assets/img/services/maska_lica.png',
         width: 1200,
         height: 630,
         alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
@@ -37,7 +37,7 @@ export const metadata = {
     title: 'Masca alginată în Bălți – Ten hidratat și luminos',
     description: 'Masca alginată în Bălți: hidratare intensă, lifting și revitalizare pentru un ten luminos. Programează-te acum!',
 
-    images: ['/assets/img/seo-meta/twitter-meta.jpg'],
+    images: ['https://meddera.md/assets/img/services/maska_lica.png'],
     site: '@your_twitter_handle',
   },
 };

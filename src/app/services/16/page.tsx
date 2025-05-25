@@ -25,7 +25,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/assets/img/seo-meta/facebook-meta.jpg',
+        url: 'https://meddera.md/assets/img/services/konturnayaplastika.png',
         width: 1200,
         height: 630,
         alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
@@ -37,7 +37,7 @@ export const metadata = {
     title: 'Контурная пластика филлерами в Бельцах — Омоложение и коррекция лица',
     description: 'Контурная пластика филлерами в Бельцах: безопасные инъекции гиалуроновой кислоты для омоложения и коррекции черт лица. Запишитесь на консультацию.',
 
-    images: ['/assets/img/seo-meta/twitter-meta.jpg'],
+    images: ['https://meddera.md/assets/img/services/konturnayaplastika.png'],
     site: '@your_twitter_handle',
   },
 };

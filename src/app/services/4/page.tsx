@@ -24,7 +24,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/assets/img/seo-meta/facebook-meta.jpg',
+        url: 'https://meddera.md/assets/img/services/massage_lica.png',
         width: 1200,
         height: 630,
         alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
@@ -35,7 +35,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Массаж лица в Бельцах – Профессиональный уход за вашей кожей',
     description: 'Профессиональный массаж лица в Бельцах. Омоложение, лифтинг, улучшение состояния кожи. Запишитесь на процедуру уже сегодня!',
-    images: ['/assets/img/seo-meta/twitter-meta.jpg'],
+    images: ['https://meddera.md/assets/img/services/massage_lica.png'],
     site: '@your_twitter_handle',
   },
 };

@@ -25,7 +25,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/assets/img/seo-meta/facebook-meta.jpg',
+        url: 'https://meddera.md/assets/img/services/terapiya-protiv-pigm.png',
         width: 1200,
         height: 630,
         alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
@@ -37,7 +37,7 @@ export const metadata = {
     title: 'Terapie Antipigmentară în Bălți | Elimină Petele Pigmentare cu Meddera',
     description: 'Terapie antipigmentară profesională la Meddera Bălți. Elimină pete pigmentare, melasma și hiperpigmentarea. Programează-te acum!',
 
-    images: ['/assets/img/seo-meta/twitter-meta.jpg'],
+    images: ['https://meddera.md/assets/img/services/terapiya-protiv-pigm.png'],
     site: '@your_twitter_handle',
   },
 };

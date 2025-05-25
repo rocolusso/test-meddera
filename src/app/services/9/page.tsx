@@ -25,7 +25,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/assets/img/seo-meta/facebook-meta.jpg',
+        url: 'https://meddera.md/assets/img/services/terapiya-protiv-pigm.png',
         width: 1200,
         height: 630,
         alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
@@ -37,7 +37,7 @@ export const metadata = {
     title: 'Лечение пигментных пятен в Бельцах',
     description: 'Эффективное лечение пигментации в Бельцах: лазер, пилинги, мезотерапия. Удаление пятен современными методами. Запишитесь на консультацию!',
 
-    images: ['/assets/img/seo-meta/twitter-meta.jpg'],
+    images: ['https://meddera.md/assets/img/services/terapiya-protiv-pigm.png'],
     site: '@your_twitter_handle',
   },
 };

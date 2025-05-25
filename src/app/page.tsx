@@ -28,7 +28,7 @@ export const metadata = {
     description: `Екатерина Пынтя – опытный дерматолог-косметолог в Бельцах.
     Клиника Meddera: дерматология, косметология,
     удаление образований, ботокс, филлеры, мезотерапия.`,
-    url: 'https://meddera.md',
+    url: 'https://meddera.md/',
     type: 'website',
     images: [
       {

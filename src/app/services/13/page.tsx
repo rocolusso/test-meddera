@@ -25,7 +25,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/assets/img/seo-meta/facebook-meta.jpg',
+        url: 'https://meddera.md/assets/img/services/uvelicheniegub.png',
         width: 1200,
         height: 630,
         alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
@@ -37,7 +37,7 @@ export const metadata = {
     title: 'Увеличение губ в Бельцах — Эффективные и безопасные процедуры',
     description: 'Профессиональное увеличение губ в Бельцах. Безопасные процедуры с использованием качественных филлеров. Запишитесь на консультацию уже сегодня!',
 
-    images: ['/assets/img/seo-meta/twitter-meta.jpg'],
+    images: ['https://meddera.md/assets/img/services/uvelicheniegub.png'],
     site: '@your_twitter_handle',
   },
 };

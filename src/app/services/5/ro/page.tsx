@@ -25,7 +25,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/assets/img/seo-meta/facebook-meta.jpg',
+        url: 'https://meddera.md/assets/img/services/karbiksiterapiya.png',
         width: 1200,
         height: 630,
         alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
@@ -37,7 +37,7 @@ export const metadata = {
     title: 'Carboxiterapie Bălți - Rejuvenare Facială și Corporală | Meddera',
     description: 'Descoperă carboxiterapia la Meddera Bălți - tratament non-invaziv pentru întinerirea pielii, reducerea celulitei și vergeturilor. Programează-te acum!',
 
-    images: ['/assets/img/seo-meta/twitter-meta.jpg'],
+    images: ['https://meddera.md/assets/img/services/karbiksiterapiya.png'],
     site: '@your_twitter_handle',
   },
 };

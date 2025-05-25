@@ -24,7 +24,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/assets/img/seo-meta/facebook-meta.jpg',
+        url: 'https://meddera.md/assets/img/services/consult-derm.png',
         width: 1200,
         height: 630,
         alt: 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах',
@@ -35,7 +35,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Consultație Dermatologică în Bălți | Clinica Meddera',
     description: 'Programează o consultație dermatologică la Clinica Meddera din Bălți. Tratăm acnee, psoriazis, eczeme și alte afecțiuni ale pielii.',
-    images: ['/assets/img/seo-meta/twitter-meta.jpg'],
+    images: ['https://meddera.md/assets/img/services/consult-derm.png'],
     site: '@your_twitter_handle',
   },
 };
