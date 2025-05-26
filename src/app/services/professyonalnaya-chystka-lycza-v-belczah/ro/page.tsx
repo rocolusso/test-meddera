@@ -49,8 +49,10 @@ function ServicePage3Ro() {
       <HeaderNew locale="ro" />
 
       <main>
-
         <div className="container mx-auto">
+          <div className="py-10 px-5">
+            <p className="text-[1.5rem] sm:text-[3rem] sm:text-center">Curățirea feței</p>
+          </div>
           <div className="flex justify-center">
             <Image
               className=""
