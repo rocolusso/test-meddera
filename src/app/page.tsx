@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { VisuallyHidden } from '@/components/Visually-hidden';
+// import { VisuallyHidden } from '@/components/Visually-hidden';
 import aboutImg from '@/../public/assets/img/about_2k.jpg';
 
 import HeaderNew from '@/components/new-ui/HeaderNew';
