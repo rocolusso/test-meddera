@@ -113,7 +113,7 @@ function Contacts({ locale }:{locale:string}) {
   };
 
   return (
-    <div className="contacts mt-10" id="contacts">
+    <div className="contacts mt-10 bg-white" id="contacts">
 
       <div className="container mx-auto">
         <div className="text-center ">
@@ -135,13 +135,13 @@ function Contacts({ locale }:{locale:string}) {
 
           </div>
           <div
-            className="relative flex items-top justify-center  bg-white dark:bg-gray-900 sm:items-center sm:pt-0"
+            className="relative flex items-top justify-center  bg-white  sm:items-center sm:pt-0"
           >
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-6">
               <div className="mt-8 overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10 sm:py-20 sm:px-10">
 
-                  <div className="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
+                  <div className="p-6 mr-2 bg-gray-100  sm:rounded-lg">
                     <div>
                       <Image
                         className="w-full sm:rounded-md"
@@ -230,7 +230,7 @@ function Contacts({ locale }:{locale:string}) {
                       <fieldset disabled={locked}>
                         <div className="flex flex-col">
                           <input
-                            className="w-full mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                            className="w-full mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                             placeholder={locale === 'ru' ? 'Имя' : 'Nume'}
                             value={name}
                             onChange={(e) => setName(e.target.value)}
@@ -244,7 +244,7 @@ function Contacts({ locale }:{locale:string}) {
                               borderRadius: '6px',
                             }}
                               // className="border border-black rounded w-full "
-                            className="w-full mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                            className="w-full mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                             defaultCountry="MD"
                             placeholder={locale === 'ru' ? 'Ваш номер телефона' : 'Numărul dumneavoastră de telefon'}
                             value={phone}
@@ -258,7 +258,7 @@ function Contacts({ locale }:{locale:string}) {
 
                         <div className="flex flex-col mt-2">
                           <textarea
-                            className="w-full resize-none h-[150px] mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                            className="w-full resize-none h-[150px] mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                             placeholder={locale === 'ru' ? 'Cообщение' : 'Mesaj'}
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
