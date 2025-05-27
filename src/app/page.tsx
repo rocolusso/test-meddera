@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-// import { VisuallyHidden } from '@/components/Visually-hidden';
+import { VisuallyHidden } from '@/components/Visually-hidden';
 import aboutImg from '@/../public/assets/img/about_2k.jpg';
 
 import HeaderNew from '@/components/new-ui/HeaderNew';
@@ -11,7 +11,6 @@ import FooterNew from '@/components/new-ui/FooterNew';
 import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
 
 import ServicesNew from '@/components/new-ui/ServicesNew';
-import SeoBlock from '@/components/SeoBlock';
 
 export const metadata = {
   icons: {
@@ -400,29 +399,26 @@ export default function Home() {
         {/*  </div> */}
         {/* </VisuallyHidden> */}
 
-        <SeoBlock locale="ru">
-          <div className="seo-block text-gray-800 space-y-10 p-6 sm:p-10 max-w-5xl mx-auto">
+        <VisuallyHidden>
+          <div className="seo-block bg-gray-400">
 
-            <section className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
-                Дерматолог Бельцы – Екатерина
-                Пынтя
-              </h1>
-              <p className="text-lg leading-relaxed">
-                Дерматолог Екатерина Пынтя — опытный специалист в
-                Бельцах с более чем 11-летней практикой.
-                Профессиональное лечение кожных заболеваний,
-                индивидуальный подход и современные методики.
+            <section className="col-span-full">
+              <h1>Дерматолог Бельцы – Екатерина Пынтя</h1>
+              <p>
+                Дерматолог Екатерина Пынтя — опытный специалист в Бельцах с
+                более чем 11-летней практикой.
+                Профессиональное лечение кожных заболеваний, индивидуальный
+                подход и современные методики.
                 Прием ведётся в клинике
-                <strong className="font-semibold text-pink-600"> Mederra </strong>
-                ,
-                расположенной в центре Бельц.
+                {' '}
+                <strong>Mederra</strong>
+                , расположенной в центре Бельц.
               </p>
             </section>
 
-            <section className="space-y-3">
-              <h2 className="text-2xl font-semibold text-gray-900">Услуги дерматолога в Бельцах</h2>
-              <ul className="list-disc list-inside text-lg space-y-1 text-gray-700">
+            <section className="col-span-full">
+              <h2>Услуги дерматолога в Бельцах</h2>
+              <ul className="list-disc ml-4">
                 <li>Лечение акне, экземы, псориаза</li>
                 <li>Диагностика и удаление новообразований</li>
                 <li>Дерматоскопия, биопсия, лабораторные анализы</li>
@@ -430,9 +426,9 @@ export default function Home() {
               </ul>
             </section>
 
-            <section className="space-y-3">
-              <h2 className="text-2xl font-semibold text-gray-900">Эстетическая косметология</h2>
-              <ul className="list-disc list-inside text-lg space-y-1 text-gray-700">
+            <section className="col-span-full">
+              <h2>Эстетическая косметология</h2>
+              <ul className="list-disc ml-4">
                 <li>Ботокс и биоревитализация</li>
                 <li>Контурная пластика, увеличение губ</li>
                 <li>Мезотерапия, дермапен</li>
@@ -440,28 +436,25 @@ export default function Home() {
               </ul>
             </section>
 
-            <section className="space-y-3">
-              <h2 className="text-2xl font-semibold text-gray-900">Удаление образований</h2>
-              <p className="text-lg leading-relaxed">
-                Безопасное удаление папиллом, родинок, кератом с
-                помощью радиокаутера, электрокоагуляции и Jett
-                Plasma.
-                Быстро, безболезненно, эффективно.
+            <section className="col-span-full">
+              <h2>Удаление образований</h2>
+              <p>
+                Безопасное удаление папиллом, родинок, кератом с помощью радиокаутера,
+                электрокоагуляции и Jett Plasma. Быстро, безболезненно, эффективно.
               </p>
             </section>
 
-            <section className="space-y-3">
-              <h2 className="text-2xl font-semibold text-gray-900">Комплексное лечение акне</h2>
-              <p className="text-lg leading-relaxed">
-                Комплексная программа: чистка лица, пилинг, мезотерапия,
-                анти-акне процедуры, карбокситерапия.
-                Восстановление здоровья кожи и предотвращение рецидивов.
+            <section className="col-span-full">
+              <h2>Комплексное лечение акне</h2>
+              <p>
+                Комплексная программа: чистка лица, пилинг, мезотерапия, анти-акне процедуры,
+                карбокситерапия. Восстановление здоровья кожи и предотвращение рецидивов.
               </p>
             </section>
 
-            <section className="space-y-3">
-              <h2 className="text-2xl font-semibold text-gray-900">Почему выбирают Екатерину Пынтя</h2>
-              <ul className="list-disc list-inside text-lg space-y-1 text-gray-700">
+            <section className="col-span-full">
+              <h2>Почему выбирают Екатерину Пынтя</h2>
+              <ul className="list-disc ml-4">
                 <li>11 лет опыта в дерматологии</li>
                 <li>7 лет сертифицированный косметолог</li>
                 <li>Индивидуальный подход</li>
@@ -469,25 +462,25 @@ export default function Home() {
               </ul>
             </section>
 
-            <section className="space-y-3">
-              <h2 className="text-2xl font-semibold text-gray-900">О клинике Mederra</h2>
-              <p className="text-lg leading-relaxed">
+            <section className="col-span-full">
+              <h2>О клинике Mederra</h2>
+              <p>
                 Основана в 2024 году Екатериной Пынтя. Объединяет дерматологию и косметологию.
                 Уютная атмосфера, современные кабинеты, удобное расположение в центре Бельц.
               </p>
             </section>
 
-            <section className="space-y-3">
-              <h2 className="text-2xl font-semibold text-gray-900">Как записаться</h2>
-              <p className="text-lg leading-relaxed">
+            <section className="col-span-full">
+              <h2>Как записаться</h2>
+              <p>
                 Запись к дерматологу в Бельцах доступна по телефону или через сайт клиники.
                 Консультация включает осмотр, диагноз, рекомендации и план лечения.
               </p>
             </section>
 
-            <section className="space-y-3">
-              <h2 className="text-2xl font-semibold text-gray-900">Советы перед визитом</h2>
-              <ul className="list-disc list-inside text-lg space-y-1 text-gray-700">
+            <section className="col-span-full">
+              <h2>Советы перед визитом</h2>
+              <ul className="list-disc ml-4">
                 <li>Не наносите макияж и крем за сутки</li>
                 <li>Избегайте пилингов за 2 дня</li>
                 <li>Подготовьте список симптомов и вопросов</li>
@@ -495,7 +488,8 @@ export default function Home() {
             </section>
 
           </div>
-        </SeoBlock>
+
+        </VisuallyHidden>
 
       </main>
 
