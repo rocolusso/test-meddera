@@ -13,7 +13,7 @@ import Link from 'next/link';
 function Contacts({ locale }:{locale:string}) {
   const callPhone = () => {
     // eslint-disable-next-line no-undef
-    (window as any).gtag('event', 'Нажатие на кнопку позвонить Main Ontacts', {
+    (window as any).gtag('event', 'Нажатие на кнопку позвонить Main Contacts', {
       action: 'click',
       target: 'tel:+37368550030',
     });
