@@ -11,9 +11,26 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 function Contacts({ locale }:{locale:string}) {
+  const [isWorkingHours, setIsWorkingHours] = useState(false);
+  const [currentTime, setCurrentTime] = useState('');
+
+  const workStart = 9; // 10:00
+  const workEnd = 20; // 17:00
+
+  const now = new Date();
+  const hours = now.getHours();
+
+  const isInWorkingHours = hours >= workStart && hours < workEnd;
+  const formattedTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+  useEffect(() => {
+    setIsWorkingHours(isInWorkingHours);
+    setCurrentTime(formattedTime);
+  }, [formattedTime, isInWorkingHours]);
+
   const callPhone = () => {
     // eslint-disable-next-line no-undef
-    (window as any).gtag('event', 'Нажатие на кнопку позвонить Main Contacts', {
+    (window as any).gtag('event', `Нажатие на позвонить ${formattedTime} Main Contacts`, {
       action: 'click',
       target: 'tel:+37368550030',
     });
@@ -24,7 +41,7 @@ function Contacts({ locale }:{locale:string}) {
 
   const callPhoneFixed = () => {
     // eslint-disable-next-line no-undef
-    (window as any).gtag('event', 'Нажатие на кнопку позвонить Main FIXED Animation', {
+    (window as any).gtag('event', `Нажатие на позвонить ${formattedTime} Main FIXED Animation`, {
       action: 'click',
       target: 'tel:+37368422024',
     });
@@ -32,23 +49,6 @@ function Contacts({ locale }:{locale:string}) {
     // eslint-disable-next-line no-undef
     window.location.href = 'tel:+37368550030';
   };
-
-  const [isWorkingHours, setIsWorkingHours] = useState(false);
-  const [currentTime, setCurrentTime] = useState('');
-
-  const workStart = 9; // 10:00
-  const workEnd = 20; // 17:00
-
-  useEffect(() => {
-    const now = new Date();
-    const hours = now.getHours();
-
-    const isInWorkingHours = hours >= workStart && hours < workEnd;
-    const formattedTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-    setIsWorkingHours(isInWorkingHours);
-    setCurrentTime(formattedTime);
-  }, []);
 
   const [phone, setPhone] = useState('');
   const [name, setName] = useState('');
@@ -94,7 +94,7 @@ function Contacts({ locale }:{locale:string}) {
       // eslint-disable-next-line no-undef
       if (window) {
         // eslint-disable-next-line no-undef
-        (window as any).gtag('event', 'Заявка на главной форме контактов', {
+        (window as any).gtag('event', `Заявка на главной форме ${formattedTime}`, {
           action: 'click',
           target: 'Lead main contact form',
         });
