@@ -400,25 +400,24 @@ export default function Home() {
         {/*  </div> */}
         {/* </VisuallyHidden> */}
 
-        <SeoBlock locale="ru">
-          <div className="seo-block text-gray-800 space-y-10 p-6 sm:p-10 max-w-5xl mx-auto">
 
-            <section className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
-                Дерматолог Бельцы – Екатерина
-                Пынтя
-              </h1>
-              <p className="text-lg leading-relaxed">
-                Дерматолог Екатерина Пынтя — опытный специалист в
-                Бельцах с более чем 11-летней практикой.
-                Профессиональное лечение кожных заболеваний,
-                индивидуальный подход и современные методики.
-                Прием ведётся в клинике
-                <strong className="font-semibold text-pink-600"> Mederra </strong>
-                ,
+        {/* test commit */}
+
+        <VisuallyHidden>
+          <div className="seo-block bg-gray-400">
+
+            <section className="col-span-full">
+              <h1>Дерматолог Бельцы – Екатерина Пынтя</h1>
+              <p>
+                Дерматолог Екатерина Пынтя — опытный специалист в Бельцах с
+                более чем 11-летней практикой.
+                Профессиональное лечение кожных заболеваний, индивидуальный
+                подход и современные методики.
+                Прием ведётся в клинике Mederra,
                 расположенной в центре Бельц.
               </p>
             </section>
+              
 
             <section className="space-y-3">
               <h2 className="text-2xl font-semibold text-gray-900">Услуги дерматолога в Бельцах</h2>
