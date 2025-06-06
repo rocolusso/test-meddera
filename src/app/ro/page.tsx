@@ -6,7 +6,7 @@ import HeaderNew from '@/components/new-ui/HeaderNew';
 import FooterNew from '@/components/new-ui/FooterNew';
 import ContactsDynamicWrapperRo from '@/components/ContactsDynamicWrapperRo';
 import ServicesNew from '@/components/new-ui/ServicesNew';
-import IpChecker from '@/components/new-ui/IpChecker';
+// import IpChecker from '@/components/new-ui/IpChecker';
 import HeroNew from '@/components/new-ui/HeroNew';
 
 export const metadata = {
@@ -47,7 +47,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <IpChecker />
+      {/* <IpChecker /> */}
       <HeaderNew locale="ro" />
 
       <main>

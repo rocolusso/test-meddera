@@ -1,5 +1,5 @@
 import React from 'react';
-import IpChecker from '@/components/new-ui/IpChecker';
+// import IpChecker from '@/components/new-ui/IpChecker';
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import ServicesNew from '@/components/new-ui/ServicesNew';
 import { VisuallyHidden } from '@/components/Visually-hidden';
@@ -45,7 +45,7 @@ export const metadata = {
 function ServicePage8Ro() {
   return (
     <>
-      <IpChecker />
+      {/* <IpChecker /> */}
       <HeaderNew locale="ro" />
 
       <main>

@@ -6,7 +6,7 @@ import aboutImg from '@/../public/assets/img/about_2k.jpg';
 
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import HeroNew from '@/components/new-ui/HeroNew';
-import IpChecker from '@/components/new-ui/IpChecker';
+// import IpChecker from '@/components/new-ui/IpChecker';
 import FooterNew from '@/components/new-ui/FooterNew';
 import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
 
@@ -53,7 +53,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <IpChecker />
+      {/* <IpChecker /> */}
       <HeaderNew locale="ru" />
       <HeroNew />
       <main>

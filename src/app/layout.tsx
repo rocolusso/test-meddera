@@ -25,9 +25,6 @@ export default function RootLayout({
       <SpeedInsights />
       <body>
         {children}
-        {/* flowbite */}
-        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js" />
-        {/* flowbite */}
       </body>
     </html>
   );
