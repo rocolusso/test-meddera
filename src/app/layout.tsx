@@ -11,6 +11,39 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Physician',
+    name: 'Дерматолог Бельци Екатерина Пынтя',
+    image: 'https://meddera.md/assets/img/about_2k.jpg',
+    jobTitle: 'Dermatolog',
+    worksFor: {
+      '@type': 'MedicalClinic',
+      name: 'Meddera Beauty Clinic',
+      image: 'https://meddera.md/assets/img/img_contacts.jpg',
+      url: 'https://meddera.md/',
+      telephone: '+373-68-550-030',
+      priceRange: '$$',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Strada Stefan Cel Mare 13',
+        addressLocality: 'Вălti',
+        postalCode: 'MD-3100',
+        addressCountry: 'MD',
+      },
+    },
+    priceRange: '$$',
+    url: 'https://meddera.md/',
+    medicalSpecialty: 'Дерматология',
+    telephone: '+373-68-550-030',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Strada Stefan Cel Mare 13',
+      addressLocality: 'Вălti',
+      postalCode: 'MD-3100',
+      addressCountry: 'MD',
+    },
+  };
   return (
     <html lang="ru">
       <head>
@@ -19,6 +52,10 @@ export default function RootLayout({
         <meta httpEquiv="content-language" content="ru" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="rXIslMFNaqfd12QEhlizeQ" async />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <GoogleAnalytics />
       <Analytics />

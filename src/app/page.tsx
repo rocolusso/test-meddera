@@ -54,6 +54,7 @@ export default function Home() {
   return (
     <>
       {/* <IpChecker /> */}
+
       <HeaderNew locale="ru" />
       <HeroNew />
       <main>
@@ -144,8 +145,8 @@ export default function Home() {
                                     <li>
                                       <p className="list-icon">
                                         {'Дерматовенеролог и косметолог, специалист центра\n'
-                                            + '  "Centrul\n'
-                                            + '  de Medicină Estetică și Cosmetologie VSV Beauty SRL" г.Бельцы 2018-2020'}
+                                              + '  "Centrul\n'
+                                              + '  de Medicină Estetică și Cosmetologie VSV Beauty SRL" г.Бельцы 2018-2020'}
                                       </p>
                                     </li>
                                   </ul>
@@ -167,7 +168,7 @@ export default function Home() {
                                         className="list-icon "
                                       >
                                         {'Дерматолог-косметолог, специалист центра "Magnific\n'
-                                            + 'MedBeauty" SRL г.Бельцы с 2020'}
+                                              + 'MedBeauty" SRL г.Бельцы с 2020'}
                                       </p>
                                     </li>
                                     <li>
