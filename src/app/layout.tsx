@@ -5,6 +5,7 @@ import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 export default function RootLayout({
   children,
@@ -60,6 +61,7 @@ export default function RootLayout({
       <GoogleAnalytics />
       <Analytics />
       <SpeedInsights />
+      <GoogleTagManager gtmId="GTM-WH9PSZ6X" />
       <body>
         {children}
       </body>
