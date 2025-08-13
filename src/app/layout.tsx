@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './globals.css';
-import GoogleAnalytics from '@/components/GoogleAnalytics';
+// import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -58,7 +58,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <GoogleAnalytics />
+      {/* <GoogleAnalytics /> */}
       <Analytics />
       <SpeedInsights />
       <GoogleTagManager gtmId="GTM-KFCP3D5F" />
