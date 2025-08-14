@@ -30,10 +30,10 @@ function Contacts({ locale }:{locale:string}) {
 
   const callPhone = () => {
     // eslint-disable-next-line no-undef
-    (window as any).gtag('event', `Нажатие на позвонить ${formattedTime} Main Contacts`, {
-      action: 'click',
-      target: 'tel:+37368550030',
-    });
+    // (window as any).gtag('event', `Нажатие на позвонить ${formattedTime} Main Contacts`, {
+    //   action: 'click',
+    //   target: 'tel:+37368550030',
+    // });
 
     // eslint-disable-next-line no-undef
     window.location.href = 'tel:+37368550030';
@@ -41,10 +41,11 @@ function Contacts({ locale }:{locale:string}) {
 
   const callPhoneFixed = () => {
     // eslint-disable-next-line no-undef
-    (window as any).gtag('event', `Нажатие на позвонить ${formattedTime} Main FIXED Animation`, {
-      action: 'click',
-      target: 'tel:+37368422024',
-    });
+
+    // (window as any).gtag('event', `Нажатие на позвонить ${formattedTime} Main FIXED Animation`, {
+    //   action: 'click',
+    //   target: 'tel:+37368422024',
+    // });
 
     // eslint-disable-next-line no-undef
     window.location.href = 'tel:+37368550030';
@@ -92,13 +93,13 @@ function Contacts({ locale }:{locale:string}) {
       await sendForm();
 
       // eslint-disable-next-line no-undef
-      if (window) {
-        // eslint-disable-next-line no-undef
-        (window as any).gtag('event', `Заявка на главной форме ${formattedTime}`, {
-          action: 'click',
-          target: 'Lead main contact form',
-        });
-      }
+      // if (window) {
+      //   // eslint-disable-next-line no-undef
+      //   (window as any).gtag('event', `Заявка на главной форме ${formattedTime}`, {
+      //     action: 'click',
+      //     target: 'Lead main contact form',
+      //   });
+      // }
 
       setName('');
       setPhone('');
@@ -176,12 +177,12 @@ function Contacts({ locale }:{locale:string}) {
                         </div>
 
                         <Button
-                          className="w-full sm:w-fit mt-6 w-full sm:w-fit font-bold  hover:scale-105 hover:bg-green-400 hover:text-white hover:border-transparent border border-gray-400 duration-300"
+                          className="btnCallPhoneContactForm w-full sm:w-fit mt-6 w-full sm:w-fit font-bold  hover:scale-105 hover:bg-green-400 hover:text-white hover:border-transparent border border-gray-400 duration-300"
                           variant="default"
                           size="lg"
                           type="button"
                           onClick={callPhone}
-
+                          id="btnCallPhoneContactForm"
                         >
                           <FaPhoneVolume size="24px" className="" />
                           +37368550030
@@ -273,7 +274,7 @@ function Contacts({ locale }:{locale:string}) {
                           {
                               submitAlert
                               && (
-                              <div>
+                              <div className="submit_alert" id="formSubmitAlert">
                                 <p className="p-5 bg-green-400 mb-5">{locale === 'ru' ? 'Спасибо! Ваше сообщение получено' : 'Mulțumim! Mesajul dumneavoastră a fost primit'}</p>
                               </div>
                               )

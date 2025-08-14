@@ -21,7 +21,12 @@ export async function POST(request: NextRequest) {
     `;
 
   // const userIds = ['256302541'] sh
-  const userIds = ['256302541', '5299878921', '6576456966', '7378233926'];
+  const userIds = [
+    '256302541',
+    // '5299878921',
+    // '6576456966',
+    // '7378233926'
+  ];
 
   // // 5299878921 yan
   // // 6576456966 cate
