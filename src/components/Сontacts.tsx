@@ -127,7 +127,13 @@ function Contacts({ locale }:{locale:string}) {
         <div className="new__contacts" id="contacts">
           <div className="call-container-absolute bottom-0 right-0">
 
-            <button aria-label="btn-call-trigger" onClick={callPhoneFixed} type="button" className="btn-call">
+            <button
+              aria-label="btn-call-trigger"
+              onClick={callPhoneFixed}
+              type="button"
+              className="btn-call"
+              id="btnCallFixedTrigger"
+            >
               <div className="btn-call__ico">
                 <MdPhoneInTalk />
               </div>
