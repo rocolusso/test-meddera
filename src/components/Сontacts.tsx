@@ -9,6 +9,7 @@ import LazyMap from '@/components/LazyMap';
 import imgAddress from '@/../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { trackEvent } from '@/lib/gtm';
 
 function Contacts({ locale }:{locale:string}) {
   const [isWorkingHours, setIsWorkingHours] = useState(false);
@@ -47,6 +48,11 @@ function Contacts({ locale }:{locale:string}) {
     //   target: 'tel:+37368422024',
     // });
 
+    trackEvent('phone_click_fixed', {
+      action: 'click',
+      target: 'Phone_click_fixed',
+      label: `Нажатие тел фикс. ${formattedTime}`,
+    });
     // eslint-disable-next-line no-undef
     window.location.href = 'tel:+37368550030';
   };
