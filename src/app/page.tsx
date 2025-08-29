@@ -8,9 +8,10 @@ import HeaderNew from '@/components/new-ui/HeaderNew';
 import HeroNew from '@/components/new-ui/HeroNew';
 // import IpChecker from '@/components/new-ui/IpChecker';
 import FooterNew from '@/components/new-ui/FooterNew';
-import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
+// import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
 
 import ServicesNew from '@/components/new-ui/ServicesNew';
+import Contacts from '@/components/Сontacts';
 
 export const metadata = {
   icons: {
@@ -495,7 +496,8 @@ export default function Home() {
 
       </main>
 
-      <ContactsDynamicWrapperRu />
+      {/* <ContactsDynamicWrapperRu /> */}
+      <Contacts locale="ru" />
 
       <FooterNew locale="ru" />
 
