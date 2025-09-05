@@ -8,6 +8,16 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/services/massazh-lycza-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
+        destination: '/ro',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/services/massazh-lycza-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
+        destination: '/',
+        permanent: true, // 301 redirect
+      },
+      {
         source: '/services/1',
         destination: '/services/konsultaczyya-dermatokosmetologa-v-belczah',
         permanent: true, // 301 redirect

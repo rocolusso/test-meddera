@@ -43,12 +43,12 @@ export const servicesLinksRu:ServiceLink[] = [
     url: '/services/professyonalnaya-chystka-lycza-v-belczah',
     imageUrl: chistkaLica,
   },
-  {
-    id: 4,
-    title: 'Массаж лица',
-    url: '/services/massazh-lycza-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
-    imageUrl: massageLica,
-  },
+  // {
+  //   id: 4,
+  //   title: 'Массаж лица',
+  //   url: '/services/massazh-lycza-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
+  //   imageUrl: massageLica,
+  // },
   {
     id: 5,
     title: 'Карбокситерапия',
@@ -149,12 +149,12 @@ export const servicesLinksRo:ServiceLink[] = [
     url: '/services/professyonalnaya-chystka-lycza-v-belczah/ro',
     imageUrl: chistkaLica,
   },
-  {
-    id: 4,
-    title: 'Masaj facial',
-    url: '/services/massazh-lycza-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
-    imageUrl: massageLica,
-  },
+  // {
+  //   id: 4,
+  //   title: 'Masaj facial',
+  //   url: '/services/massazh-lycza-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
+  //   imageUrl: massageLica,
+  // },
   {
     id: 5,
     title: 'Carboxiterapie',
