@@ -2,7 +2,7 @@ import { StaticImageData } from 'next/image';
 import consultcosm from '../../public/assets/img/services/consult-cosm.png';
 import consultderm from '../../public/assets/img/services/consult-derm.png';
 import chistkaLica from '../../public/assets/img/services/chistka_lica.png';
-import massageLica from '../../public/assets/img/services/massage_lica.png';
+// import massageLica from '../../public/assets/img/services/massage_lica.png';
 import karboksiterapiya from '../../public/assets/img/services/karbiksiterapiya.png';
 import pilling from '../../public/assets/img/services/pilling.png';
 import maskaLica from '../../public/assets/img/services/maska_lica.png';
