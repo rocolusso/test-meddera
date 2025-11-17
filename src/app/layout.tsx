@@ -58,6 +58,22 @@ export default function RootLayout({
           /* eslint-disable-next-line react/no-danger */
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script
+          src="/api/cache/ahrefs"
+          defer
+        />
+        <script
+          src="/api/cache/google/maps1"
+          defer
+        />
+        <script
+          src="/api/cache/google/maps2"
+          defer
+        />
+        <script
+          src="/api/cache/github"
+          defer
+        />
       </head>
       {/* <GoogleAnalytics /> */}
       <Analytics />
