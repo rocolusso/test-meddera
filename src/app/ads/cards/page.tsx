@@ -15,10 +15,10 @@ function GoogleWhitePage() {
 
   const callPhone = () => {
     // eslint-disable-next-line no-undef
-    (window as any).gtag('event', 'Нажатие на кнопку позвонить White /ads/cards vizitki', {
-      action: 'click',
-      target: 'tel:+37368422024',
-    });
+    // (window as any).gtag('event', 'Нажатие на кнопку позвонить White /ads/cards vizitki', {
+    //   action: 'click',
+    //   target: 'tel:+37368422024',
+    // });
 
     // eslint-disable-next-line no-undef
     window.location.href = 'tel:+37368422024';
@@ -26,10 +26,10 @@ function GoogleWhitePage() {
 
   const redirectToBlack = () => {
     // eslint-disable-next-line no-undef
-    (window as any).gtag('event', 'redirect from white /ads/cards vizitki', {
-      action: 'click',
-      target: 'from meddera.md/ads/cards vizitki  meddera.md',
-    });
+    // (window as any).gtag('event', 'redirect from white /ads/cards vizitki', {
+    //   action: 'click',
+    //   target: 'from meddera.md/ads/cards vizitki  meddera.md',
+    // });
 
     // eslint-disable-next-line no-undef
     window.location.href = '/';
