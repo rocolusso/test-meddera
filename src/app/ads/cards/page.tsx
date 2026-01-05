@@ -57,7 +57,7 @@ function GoogleWhitePage() {
               </div>
               <div className="text-white text-center">
                 <h1 className="text-[24px] mt-4 font-bold">Екатерина Пынтя</h1>
-                <p className="py-2">Дерматокосметолг | Клиника Meddera | Бельцы</p>
+                <p className="py-2">Дерматокосметолог | Клиника Meddera | Бельцы</p>
               </div>
 
               <div className="mt-2 container mx-auto py-4">
