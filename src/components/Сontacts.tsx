@@ -10,6 +10,7 @@ import imgAddress from '@/../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { trackEvent } from '@/lib/gtm';
+import DOMPurify from 'dompurify';
 
 function Contacts({ locale }:{locale:string}) {
   const [isWorkingHours, setIsWorkingHours] = useState(false);
@@ -256,7 +257,7 @@ function Contacts({ locale }:{locale:string}) {
                             className="w-full mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                             placeholder={locale === 'ru' ? 'Имя' : 'Nume'}
                             value={name}
-                            onChange={(e) => setName(e.target.value)}
+                            onChange={(e) => setName(DOMPurify.sanitize(e.target.value))}
                           />
                         </div>
                         <div className="flex flex-col mt-4">
@@ -273,7 +274,7 @@ function Contacts({ locale }:{locale:string}) {
                             value={phone}
                             onChange={(e) => {
                               if (e !== undefined) {
-                                setPhone(e);
+                                setPhone(DOMPurify.sanitize(e));
                               }
                             }}
                           />
@@ -284,7 +285,7 @@ function Contacts({ locale }:{locale:string}) {
                             className="w-full resize-none h-[150px] mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                             placeholder={locale === 'ru' ? 'Cообщение' : 'Mesaj'}
                             value={message}
-                            onChange={(e) => setMessage(e.target.value)}
+                            onChange={(e) => setMessage(DOMPurify.sanitize(e.target.value))}
                           />
 
                           {
