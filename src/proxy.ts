@@ -14,7 +14,7 @@ declare module 'next/server' {
     }
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Exclude /blocked from middleware processing
