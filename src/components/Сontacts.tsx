@@ -31,23 +31,12 @@ function Contacts({ locale }:{locale:string}) {
   }, [formattedTime, isInWorkingHours]);
 
   const callPhone = () => {
-    // eslint-disable-next-line no-undef
-    // (window as any).gtag('event', `Нажатие на позвонить ${formattedTime} Main Contacts`, {
-    //   action: 'click',
-    //   target: 'tel:+37368550030',
-    // });
 
     // eslint-disable-next-line no-undef
     window.location.href = 'tel:+37368550030';
   };
 
   const callPhoneFixed = () => {
-    // eslint-disable-next-line no-undef
-
-    // (window as any).gtag('event', `Нажатие на позвонить ${formattedTime} Main FIXED Animation`, {
-    //   action: 'click',
-    //   target: 'tel:+37368422024',
-    // });
 
     trackEvent('phone_click_fixed', {
       action: 'click',
@@ -99,15 +88,6 @@ function Contacts({ locale }:{locale:string}) {
 
       await sendForm();
 
-      // eslint-disable-next-line no-undef
-      // if (window) {
-      //   // eslint-disable-next-line no-undef
-      //   (window as any).gtag('event', `Заявка на главной форме ${formattedTime}`, {
-      //     action: 'click',
-      //     target: 'Lead main contact form',
-      //   });
-      // }
-
       setName('');
       setPhone('');
       setMessage('');
@@ -125,7 +105,7 @@ function Contacts({ locale }:{locale:string}) {
 
       <div className="container mx-auto">
         <div className="text-center ">
-          <p className="mt-6 border border-gray-800 p-5 w-fit mx-auto underline
+          <p className="mt-6 p-5 w-fit mx-auto
               text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"
           >
             {locale === 'ru' ? 'Контакты' : 'Contacte'}
@@ -184,7 +164,9 @@ function Contacts({ locale }:{locale:string}) {
                         </div>
 
                         <Button
-                          className="btnCallPhoneContactForm w-full sm:w-fit mt-6 w-full sm:w-fit font-bold  hover:scale-105 hover:bg-green-400 hover:text-white hover:border-transparent border border-gray-400 duration-300"
+                          className="btnCallPhoneContactForm mt-6 w-full sm:w-fit font-bold
+                          hover:scale-105 hover:bg-green-400 hover:text-white
+                          hover:border-transparent border border-gray-400 duration-300"
                           variant="default"
                           size="lg"
                           type="button"
@@ -202,7 +184,7 @@ function Contacts({ locale }:{locale:string}) {
 
                   <div className="form__block__wrapper  sm:rounded-lg shadow-2xl">
                     <div className="mx-auto flex justify-center mb-10">
-                      <p className="mt-10 font-heading mt-2 text-2xl leading-8 font-semibold tracking-tight text-gray-900">
+                      <p className="mt-2 font-heading  text-2xl leading-8 font-semibold tracking-tight text-gray-900">
                         {locale === 'ru' ? 'Запись на консультацию' : 'Programare pentru consultanță'}
                       </p>
                     </div>
@@ -220,7 +202,10 @@ function Contacts({ locale }:{locale:string}) {
                         </p>
                       </div>
                       <div className="text-center">
-                        <p className={!isWorkingHours ? ' bg-red-600 text-white rounded p-3 ' : 'bg-green-500 mb-6  text-white rounded p-3'}>
+                        <p className={!isWorkingHours
+                            ? ' bg-red-600 text-white rounded p-3 '
+                            : 'bg-green-500 mb-6  text-white rounded p-3'
+                        }>
                           {
                             // eslint-disable-next-line no-nested-ternary
                             isWorkingHours
@@ -254,7 +239,9 @@ function Contacts({ locale }:{locale:string}) {
                       <fieldset disabled={locked}>
                         <div className="flex flex-col">
                           <input
-                            className="w-full mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                            className="w-full mt-2 py-3 px-3 rounded-lg bg-white
+                            border border-gray-400 dark:border-gray-700
+                            text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                             placeholder={locale === 'ru' ? 'Имя' : 'Nume'}
                             value={name}
                             onChange={(e) => setName(DOMPurify.sanitize(e.target.value))}
@@ -267,8 +254,9 @@ function Contacts({ locale }:{locale:string}) {
                               margin: '0 0 14px 0',
                               borderRadius: '6px',
                             }}
-                              // className="border border-black rounded w-full "
-                            className="w-full mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                            className="w-full mt-2 py-3 px-3 rounded-lg bg-white
+                            border border-gray-400 dark:border-gray-700
+                            text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                             defaultCountry="MD"
                             placeholder={locale === 'ru' ? 'Ваш номер телефона' : 'Numărul dumneavoastră de telefon'}
                             value={phone}
@@ -282,7 +270,9 @@ function Contacts({ locale }:{locale:string}) {
 
                         <div className="flex flex-col mt-2">
                           <textarea
-                            className="w-full resize-none h-[150px] mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                            className="w-full resize-none h-[150px] mt-2 py-3 px-3 rounded-lg
+                            bg-white border border-gray-400 dark:border-gray-700
+                            text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                             placeholder={locale === 'ru' ? 'Cообщение' : 'Mesaj'}
                             value={message}
                             onChange={(e) => setMessage(DOMPurify.sanitize(e.target.value))}
@@ -292,20 +282,26 @@ function Contacts({ locale }:{locale:string}) {
                               submitAlert
                               && (
                               <div className="submit_alert" id="formSubmitAlert">
-                                <p className="p-5 bg-green-400 mb-5">{locale === 'ru' ? 'Спасибо! Ваше сообщение получено' : 'Mulțumim! Mesajul dumneavoastră a fost primit'}</p>
+                                <p className="p-5 bg-green-400 mb-5">{locale === 'ru'
+                                    ? 'Спасибо! Ваше сообщение получено'
+                                    : 'Mulțumim! Mesajul dumneavoastră a fost primit'}</p>
                               </div>
                               )
                           }
                         </div>
 
                         <Button
-                          className=" mt-6 w-full sm:w-fit font-bold underline hover:scale-105 hover:bg-green-400 hover:text-white hover:border-transparent border border-gray-400 duration-300"
+                          className=" mt-6 w-full sm:w-fit font-bold underline hover:scale-105
+                          hover:bg-green-400 hover:text-white hover:border-transparent
+                          border border-gray-400 duration-300"
                           variant="default"
                           size="lg"
                           type="submit"
 
                         >
-                          {locale === 'ru' ? 'Отправить сообщение' : 'Trimite mesaj'}
+                          {locale === 'ru'
+                              ? 'Отправить сообщение'
+                              : 'Trimite mesaj'}
                         </Button>
 
                       </fieldset>

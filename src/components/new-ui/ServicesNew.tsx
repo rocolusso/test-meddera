@@ -9,7 +9,7 @@ function ServicesNew({ locale }:{locale:string}) {
 
       <div className="max-w-screen-xl mx-auto p-5 ">
         <div className="text-center ">
-          <p className="my-6 border border-gray-800 p-5 w-fit mx-auto underline
+          <p className="my-6  p-5 w-fit mx-auto
               text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"
           >
             {locale === 'ru' ? 'Услуги' : 'Servicii'}
