@@ -78,7 +78,7 @@ export default function Home() {
                 >
                   <div className="sm:text-center lg:text-left">
                     <div className="text-center w-full mx-auto flex justify-center">
-                      <p className="my-6 underline border border-gray-800 p-5 w-fit  text-2xl
+                      <p className="my-6  p-5 w-fit  text-2xl
                     tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"
                       >
                         Despre mine
