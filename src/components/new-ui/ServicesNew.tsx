@@ -32,6 +32,7 @@ function ServicesNew({ locale }:{ locale:string }) {
                       width={500}
                       height={500}
                       loading="lazy"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                     <div
                       className="hover:bg-transparent transition duration-300
@@ -70,6 +71,7 @@ function ServicesNew({ locale }:{ locale:string }) {
                       width={500}
                       height={500}
                       loading="lazy"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                     <div
                       className="hover:bg-transparent transition duration-300

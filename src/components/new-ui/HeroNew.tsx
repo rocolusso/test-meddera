@@ -22,6 +22,7 @@ function HeroNew() {
           height={2000}
           priority
           fetchPriority="high"
+          sizes="(max-width: 640px) 100vw, 721px"
           // className="object-cover w-full h-full sm:shadow-2xl"
           className="object-contain no-repeat mx-auto object-center w-full h-full sm:shadow-2xl"
         />
