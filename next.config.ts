@@ -24,6 +24,8 @@ const getSecurityHeaders = (isDev: boolean) => [
 const nextConfig: NextConfig = {
   /* config options here */
 
+  poweredByHeader: false,
+
   // Inline global CSS into HTML in production to avoid an extra render-blocking stylesheet request (LCP/FCP).
   experimental: {
     inlineCss: true,
