@@ -62,13 +62,9 @@ export default function RootLayout({
         <meta httpEquiv="content-language" content="ru" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        <link rel="dns-prefetch" href="https://connect.facebook.net" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
-        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="" />
-        <link rel="preconnect" href="https://connect.facebook.net" crossOrigin="" />
         <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" />
         <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" />
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="rXIslMFNaqfd12QEhlizeQ" async />
