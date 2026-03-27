@@ -17,7 +17,7 @@ const getSecurityHeaders = (isDev: boolean) => [
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   {
     key: 'Permissions-Policy',
-    value: 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()',
+    value: 'interest-cohort=()',
   },
 ];
 
