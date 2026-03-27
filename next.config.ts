@@ -1,9 +1,10 @@
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import type { NextConfig } from 'next';
 
-/** Replaces Next.js built-in polyfill bundle (modern browsers only). */
-const emptyPolyfillPath = path.join(process.cwd(), 'src/lib/empty-polyfill.js');
+/** Replaces Next.js built-in polyfill bundle (modern browsers only). Resolved from this config file so Vercel/cwd cannot break the path. */
+const emptyPolyfillPath = path.join(path.dirname(fileURLToPath(import.meta.url)), 'polyfills', 'empty-polyfill.js');
 
 const getCsp = (isDev: boolean) => {
   const enableTrustedTypes = process.env.ENABLE_TRUSTED_TYPES === 'true';
