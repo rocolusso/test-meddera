@@ -11,7 +11,7 @@ import FooterNew from '@/components/new-ui/FooterNew';
 // import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
 
 import ServicesNew from '@/components/new-ui/ServicesNew';
-import Contacts from '@/components/Сontacts';
+import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
 
 export const metadata = {
   icons: {
@@ -391,8 +391,7 @@ export default function Home() {
 
       </main>
 
-      {/* <ContactsDynamicWrapperRu /> */}
-      <Contacts locale="ru" />
+      <ContactsDynamicWrapperRu />
 
       <FooterNew locale="ru" />
 

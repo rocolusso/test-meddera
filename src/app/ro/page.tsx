@@ -4,11 +4,10 @@ import aboutImg from '@/../public/assets/img/about_2k.jpg';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import FooterNew from '@/components/new-ui/FooterNew';
-// import ContactsDynamicWrapperRo from '@/components/ContactsDynamicWrapperRo';
+import ContactsDynamicWrapperRo from '@/components/ContactsDynamicWrapperRo';
 import ServicesNew from '@/components/new-ui/ServicesNew';
 // import IpChecker from '@/components/new-ui/IpChecker';
 import HeroNew from '@/components/new-ui/HeroNew';
-import Contacts from '@/components/Сontacts';
 
 export const metadata = {
   icons: {
@@ -387,8 +386,7 @@ export default function Home() {
 
         </VisuallyHidden>
 
-        {/* <ContactsDynamicWrapperRo /> */}
-        <Contacts locale="ro" />
+        <ContactsDynamicWrapperRo />
       </main>
       <FooterNew locale="ro" />
     </>
