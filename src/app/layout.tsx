@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Script from 'next/script';
+import { headers } from 'next/headers';
 
 import './globals.css';
 // import GoogleAnalytics from '@/components/GoogleAnalytics';
@@ -9,11 +10,12 @@ import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const nonce = (await headers()).get('x-nonce') ?? undefined;
   const isVercel = process.env.VERCEL === '1';
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -73,15 +75,18 @@ export default function RootLayout({
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="rXIslMFNaqfd12QEhlizeQ"
           strategy="lazyOnload"
+          nonce={nonce}
         />
         <script
           type="application/ld+json"
+          nonce={nonce}
           /* eslint-disable-next-line react/no-danger */
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Script
           id="microsoft-clarity"
           strategy="lazyOnload"
+          nonce={nonce}
           /* eslint-disable-next-line react/no-danger */
           dangerouslySetInnerHTML={{ __html: microsoftClarity }}
         />
@@ -89,7 +94,7 @@ export default function RootLayout({
       {/* <GoogleAnalytics /> */}
       {isVercel ? <Analytics /> : null}
       {isVercel ? <SpeedInsights /> : null}
-      <DeferredGoogleTagManager />
+      <DeferredGoogleTagManager nonce={nonce} />
       <body>
         {children}
       </body>

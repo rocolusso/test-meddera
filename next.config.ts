@@ -6,35 +6,9 @@ import type { NextConfig } from 'next';
 /** Replaces Next.js built-in polyfill bundle (modern browsers only). Resolved from this config file so Vercel/cwd cannot break the path. */
 const emptyPolyfillPath = path.join(path.dirname(fileURLToPath(import.meta.url)), 'polyfills', 'empty-polyfill.js');
 
-const getCsp = (isDev: boolean) => {
-  const enableTrustedTypes = process.env.ENABLE_TRUSTED_TYPES === 'true';
-  const directives = [
-    "default-src 'self'",
-    "base-uri 'self'",
-    "object-src 'none'",
-    "frame-ancestors 'none'",
-    `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms https://scripts.clarity.ms https://analytics.ahrefs.com https://vercel.live https://googleads.g.doubleclick.net`,
-    "style-src 'self' 'unsafe-inline'",
-    "img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com https://connect.facebook.net https://www.facebook.com https://www.google.com https://www.google.pl https://www.google.md https://googleads.g.doubleclick.net https://c.clarity.ms https://c.bing.com https://purecatamphetamine.github.io",
-    "font-src 'self' data: https:",
-    "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.analytics.google.com https://www.googletagmanager.com https://www.google.com https://www.facebook.com https://graph.facebook.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms https://scripts.clarity.ms https://a.clarity.ms https://k.clarity.ms https://stats.g.doubleclick.net https://analytics.ahrefs.com",
-    "frame-src 'self' https://www.googletagmanager.com https://www.facebook.com https://maps.google.com https://www.google.com https://vercel.live",
-    "form-action 'self'",
-    'upgrade-insecure-requests',
-  ];
-
-  // Trusted Types may break some third-party scripts/runtime paths.
-  // Keep it opt-in for production via env flag.
-  if (!isDev && enableTrustedTypes) {
-    directives.push("require-trusted-types-for 'script'");
-    directives.push('trusted-types default');
-  }
-
-  return directives.join('; ');
-};
+/** CSP is set per request in src/proxy.ts (nonce + strict-dynamic). Do not duplicate here. */
 
 const getSecurityHeaders = (isDev: boolean) => [
-  { key: 'Content-Security-Policy', value: getCsp(isDev) },
   // Keep HSTS only in production to avoid sticky localhost/browser behavior.
   ...(isDev ? [] : [{ key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' }]),
   { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
