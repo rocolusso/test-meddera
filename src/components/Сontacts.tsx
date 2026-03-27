@@ -201,8 +201,8 @@ function Contacts({ locale }:{ locale:string }) {
                       </div>
                       <div className="text-center">
                         <p className={!isWorkingHours
-                          ? ' bg-red-600 text-white rounded p-3 '
-                          : 'bg-green-500 mb-6  text-white rounded p-3'}
+                          ? 'bg-red-700 text-white rounded p-3'
+                          : 'bg-green-700 mb-6 text-white rounded p-3'}
                         >
                           {
                             // eslint-disable-next-line no-nested-ternary
