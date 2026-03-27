@@ -5,6 +5,7 @@ import { FaMapLocationDot, FaPhoneVolume } from 'react-icons/fa6';
 import { MdPhoneInTalk } from 'react-icons/md';
 import Image from 'next/image';
 import PhoneInputWithCountrySelect from 'react-phone-number-input';
+import flags from 'react-phone-number-input/flags';
 import LazyMap from '@/components/LazyMap';
 import imgAddress from '@/../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';
@@ -247,6 +248,7 @@ function Contacts({ locale }:{ locale:string }) {
                         </div>
                         <div className="flex flex-col mt-4">
                           <PhoneInputWithCountrySelect
+                            flags={flags}
                             style={{
                               padding: '13px 13px',
                               margin: '0 0 14px 0',
