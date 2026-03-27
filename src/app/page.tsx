@@ -112,9 +112,8 @@ export default function Home() {
 
                           <div className="mt-10">
                             <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-                              <dl className="relative">
-                                {/* <dt /> */}
-                                <dd className="mt-2 ml-8 text-base text-gray-500">
+                              <div className="relative">
+                                <div className="mt-2 ml-8 text-base text-gray-500">
 
                                   <ul className="max-w-[450px] text-[14px] ">
                                     <li>
@@ -150,12 +149,10 @@ export default function Home() {
                                       </p>
                                     </li>
                                   </ul>
-                                </dd>
-                                <div />
-                              </dl>
-                              <dl className="relative">
-                                {/* <dt /> */}
-                                <dd className="mt-2 ml-8 text-base text-gray-500">
+                                </div>
+                              </div>
+                              <div className="relative">
+                                <div className="mt-2 ml-8 text-base text-gray-500">
                                   <ul className="max-w-[450px] text-[14px] ">
                                     <li>
                                       <p className="list-icon ">
@@ -185,9 +182,8 @@ export default function Home() {
                                       <p className="list-icon ">Косметолог, опыт работы 7 лет</p>
                                     </li>
                                   </ul>
-                                </dd>
-                                <div />
-                              </dl>
+                                </div>
+                              </div>
 
                               <div className="col-span-full">
                                 <div className="relative">
@@ -199,8 +195,8 @@ export default function Home() {
                                 </div>
 
                                 <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 ">
-                                  <dl className="relative">
-                                    <dd className="mt-2 ml-8 text-base text-gray-500">
+                                  <div className="relative">
+                                    <div className="mt-2 ml-8 text-base text-gray-500">
                                       <ul className="max-w-[450px] text-[14px]">
                                         <li>
                                           <p className="list-icon ">Дерматология</p>
@@ -233,12 +229,11 @@ export default function Home() {
                                           </p>
                                         </li>
                                       </ul>
-                                    </dd>
-                                    <div />
-                                  </dl>
+                                    </div>
+                                  </div>
 
-                                  <dl className="relative">
-                                    <dd className="mt-2 ml-8 text-base text-gray-500">
+                                  <div className="relative">
+                                    <div className="mt-2 ml-8 text-base text-gray-500">
                                       <ul className="max-w-[450px] text-[14px]">
                                         <li>
                                           <p className="list-icon ">Аугментация и увеличение губ</p>
@@ -265,9 +260,8 @@ export default function Home() {
                                           <p className="list-icon ">Нейротоксин (Ботокс)</p>
                                         </li>
                                       </ul>
-                                    </dd>
-                                    <div />
-                                  </dl>
+                                    </div>
+                                  </div>
                                 </div>
 
                               </div>
