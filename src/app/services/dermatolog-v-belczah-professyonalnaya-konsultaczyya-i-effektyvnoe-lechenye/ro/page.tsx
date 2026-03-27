@@ -195,17 +195,17 @@ function ServicePage2Ro() {
               <form>
 
                 <br />
-                <input type="text" name="nume" required />
+                <input id="seo-dermatolog-nume" type="text" name="nume" autoComplete="name" required />
                 <br />
 
                 <br />
-                <input type="tel" name="telefon" required />
+                <input id="seo-dermatolog-telefon" type="tel" name="telefon" autoComplete="tel" required />
                 <br />
 
                 <br />
-                <textarea name="mesaj" />
+                <textarea id="seo-dermatolog-mesaj" name="mesaj" autoComplete="off" />
                 <br />
-                <input value="Trimite" />
+                <input type="submit" value="Trimite" />
               </form>
             </section>
 

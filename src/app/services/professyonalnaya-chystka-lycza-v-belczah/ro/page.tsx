@@ -199,13 +199,13 @@ function ServicePage3Ro() {
               <h2>Programează o consultație</h2>
               <form>
 
-                <input type="text" name="nume" required />
+                <input id="seo-chystka-nume" type="text" name="nume" autoComplete="name" required />
 
-                <input type="tel" name="telefon" required />
+                <input id="seo-chystka-telefon" type="tel" name="telefon" autoComplete="tel" required />
 
-                <input type="email" name="email" />
+                <input id="seo-chystka-email" type="email" name="email" autoComplete="email" />
 
-                <textarea name="mesaj" />
+                <textarea id="seo-chystka-mesaj" name="mesaj" autoComplete="off" />
 
               </form>
             </section>

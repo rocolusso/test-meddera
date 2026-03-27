@@ -238,6 +238,10 @@ function Contacts({ locale }:{ locale:string }) {
                       <fieldset disabled={locked}>
                         <div className="flex flex-col">
                           <input
+                            id="contact-name"
+                            name="name"
+                            type="text"
+                            autoComplete="name"
                             className="w-full mt-2 py-3 px-3 rounded-lg bg-white
                             border border-gray-400 dark:border-gray-700
                             text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
@@ -249,6 +253,9 @@ function Contacts({ locale }:{ locale:string }) {
                         <div className="flex flex-col mt-4">
                           <PhoneInputWithCountrySelect
                             flags={flags}
+                            id="contact-phone"
+                            name="phone"
+                            autoComplete="tel"
                             style={{
                               padding: '13px 13px',
                               margin: '0 0 14px 0',
@@ -265,11 +272,15 @@ function Contacts({ locale }:{ locale:string }) {
                                 setPhone(DOMPurify.sanitize(e));
                               }
                             }}
+                            countrySelectProps={{ id: 'contact-phone-country' }}
                           />
                         </div>
 
                         <div className="flex flex-col mt-2">
                           <textarea
+                            id="contact-message"
+                            name="message"
+                            autoComplete="off"
                             className="w-full resize-none h-[150px] mt-2 py-3 px-3 rounded-lg
                             bg-white border border-gray-400 dark:border-gray-700
                             text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
