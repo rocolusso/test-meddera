@@ -99,7 +99,7 @@ export default function Home() {
                             <p
                               className="font-heading mb-4 bg-orange-100 text-orange-800
                               px-4 py-2 rounded-lg md:w-64 md:mx-auto text-xs font-semibold
-                              tracking-widest text-black uppercase title-font"
+                              tracking-widest uppercase title-font"
                             >
                               Почему выбирают меня?
                             </p>
