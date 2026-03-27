@@ -1,11 +1,13 @@
 import React from 'react';
 
+import Script from 'next/script';
+
 import './globals.css';
 // import GoogleAnalytics from '@/components/GoogleAnalytics';
 
+import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { GoogleTagManager } from '@next/third-parties/google';
 
 export default function RootLayout({
   children,
@@ -67,14 +69,19 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
         <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" />
         <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" />
-        <script src="https://analytics.ahrefs.com/analytics.js" data-key="rXIslMFNaqfd12QEhlizeQ" async />
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="rXIslMFNaqfd12QEhlizeQ"
+          strategy="lazyOnload"
+        />
         <script
           type="application/ld+json"
           /* eslint-disable-next-line react/no-danger */
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <script
-          type="text/javascript"
+        <Script
+          id="microsoft-clarity"
+          strategy="lazyOnload"
           /* eslint-disable-next-line react/no-danger */
           dangerouslySetInnerHTML={{ __html: microsoftClarity }}
         />
@@ -82,7 +89,7 @@ export default function RootLayout({
       {/* <GoogleAnalytics /> */}
       {isVercel ? <Analytics /> : null}
       {isVercel ? <SpeedInsights /> : null}
-      <GoogleTagManager gtmId="GTM-KFCP3D5F" />
+      <DeferredGoogleTagManager />
       <body>
         {children}
       </body>
