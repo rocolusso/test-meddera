@@ -1,0 +1,147 @@
+From a65bd420a5223434ef1dc9776a704043410c99b5 Mon Sep 17 00:00:00 2001
+From: Rocolusso <rocolusso@icloud.com>
+Date: Fri, 27 Mar 2026 20:49:43 +0200
+Subject: [PATCH] =?UTF-8?q?feat(psi):=20=D0=BE=D1=82=D0=BB=D0=BE=D0=B6?=
+ =?UTF-8?q?=D0=B5=D0=BD=D0=BD=D0=B0=D1=8F=20=D0=BA=D0=B0=D1=80=D1=82=D0=B0?=
+ =?UTF-8?q?=20Google=20=D0=B8=20GTM?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- LazyGoogleMapIframe + MAP_EMBED_URL (загрузка iframe по IntersectionObserver)
+- DeferredGoogleTagManager с next/script strategy=lazyOnload
+- Устраняет Module not found на Vercel при импортах из layout/LazyMap
+
+Made-with: Cursor
+---
+ src/components/DeferredGoogleTagManager.tsx | 33 +++++++++++
+ src/components/LazyGoogleMapIframe.tsx      | 66 +++++++++++++++++++++
+ src/lib/google-map-embed.ts                 |  3 +
+ 3 files changed, 102 insertions(+)
+ create mode 100644 src/components/DeferredGoogleTagManager.tsx
+ create mode 100644 src/components/LazyGoogleMapIframe.tsx
+ create mode 100644 src/lib/google-map-embed.ts
+
+diff --git a/src/components/DeferredGoogleTagManager.tsx b/src/components/DeferredGoogleTagManager.tsx
+new file mode 100644
+index 0000000..d0470a8
+--- /dev/null
++++ b/src/components/DeferredGoogleTagManager.tsx
+@@ -0,0 +1,33 @@
++'use client';
++
++import Script from 'next/script';
++
++const GTM_ID = 'GTM-KFCP3D5F';
++
++/**
++ * Same behaviour as @next/third-parties/google GoogleTagManager, but scripts use
++ * strategy="lazyOnload" so GTM/gtag load after window load (smaller main-thread cost, better PSI).
++ */
++export default function DeferredGoogleTagManager() {
++  return (
++    <>
++      <Script
++        id="_next-gtm-init"
++        strategy="lazyOnload"
++        dangerouslySetInnerHTML={{
++          __html: `
++      (function(w,l){
++        w[l]=w[l]||[];
++        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
++      })(window,'dataLayer');`,
++        }}
++      />
++      <Script
++        id="_next-gtm"
++        strategy="lazyOnload"
++        src={`https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`}
++        data-ntpc="GTM"
++      />
++    </>
++  );
++}
+diff --git a/src/components/LazyGoogleMapIframe.tsx b/src/components/LazyGoogleMapIframe.tsx
+new file mode 100644
+index 0000000..23f03a5
+--- /dev/null
++++ b/src/components/LazyGoogleMapIframe.tsx
+@@ -0,0 +1,66 @@
++'use client';
++
++import React, { useEffect, useRef, useState } from 'react';
++
++import { MAP_EMBED_URL } from '@/lib/google-map-embed';
++
++type LazyGoogleMapIframeProps = {
++  title?: string;
++  width?: number | string;
++  height?: number;
++  className?: string;
++};
++
++export default function LazyGoogleMapIframe({
++  title = 'contact map',
++  width = '100%',
++  height = 450,
++  className = 'max-w-[100%] gmap_iframe',
++}: LazyGoogleMapIframeProps) {
++  const wrapRef = useRef<HTMLDivElement>(null);
++  const [src, setSrc] = useState<string | null>(null);
++
++  useEffect(() => {
++    const el = wrapRef.current;
++    if (!el) return undefined;
++
++    const observer = new IntersectionObserver(
++      ([entry]) => {
++        if (entry.isIntersecting) {
++          setSrc(MAP_EMBED_URL);
++          observer.disconnect();
++        }
++      },
++      { rootMargin: '240px', threshold: 0 },
++    );
++    observer.observe(el);
++    return () => observer.disconnect();
++  }, []);
++
++  return (
++    <div ref={wrapRef} className="w-full">
++      {src ? (
++        <iframe
++          frameBorder={0}
++          scrolling="no"
++          title={title}
++          className={className}
++          width={width}
++          height={height}
++          src={src}
++          loading="lazy"
++        />
++      ) : (
++        <div
++          className={`${className} bg-gray-200`}
++          style={{
++            width: typeof width === 'number' ? width : '100%',
++            height,
++            minHeight: height,
++          }}
++          aria-hidden
++        />
++      )}
++    </div>
++  );
++}
+diff --git a/src/lib/google-map-embed.ts b/src/lib/google-map-embed.ts
+new file mode 100644
+index 0000000..717a7b2
+--- /dev/null
++++ b/src/lib/google-map-embed.ts
+@@ -0,0 +1,3 @@
++/** Google Maps embed URL (clinic). Loaded only when iframe enters viewport — see LazyGoogleMapIframe. */
++export const MAP_EMBED_URL =
++  'https://maps.google.com/maps?width=100%25&height=600&hl=en&q=B%C4%83l%C8%9Bi%20MD,%20Strada%20%C8%98tefan%20cel%20Mare%2013,%20MD-3100,%20%D0%9C%D0%BE%D0%BB%D0%B4%D0%BE%D0%B2%D0%B0+(%D0%94%D0%B5%D1%80%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%20%D0%91%D0%B5%D0%BB%D1%8C%D1%86%D1%8B%20%7C%20Meddera%20%7C%20%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0%20%D0%9F%D1%8B%D0%BD%D1%82%D1%8F%20%7C%20Dermatolog%20Balti%20%7C%20Ecaterina%20Pinteaness%20Name)&t=&z=17&ie=UTF8&iwloc=B&output=embed';
+-- 
+2.50.1 (Apple Git-155)
+
