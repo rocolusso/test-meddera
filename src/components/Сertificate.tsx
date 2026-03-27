@@ -10,7 +10,7 @@ import cert from '@/../public/assets/img/cert/back1.svg';
 function Ertificate({
   certificatNumber, userName, serviceName, price, currency,
 }:{
-    certificatNumber:string, userName:string, serviceName:string, price:string, currency:string
+  certificatNumber:string, userName:string, serviceName:string, price:string, currency:string
 }) {
   return (
     <>

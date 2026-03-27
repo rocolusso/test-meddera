@@ -5,7 +5,7 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from '@/compon
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 
-function NavigationLinks({ locale }: {locale: string}) {
+function NavigationLinks({ locale }: { locale: string }) {
   const router = useRouter();
   return (
     <div className="flex justify-between items-center sm:w-full">

@@ -6,7 +6,7 @@ import pintea from '@/../public/assets/img/pintea.png';
 
 import NavigationLinks from '@/components/new-ui/NavigationLinks';
 
-function HeaderNew({ locale }: {locale: string}) {
+function HeaderNew({ locale }: { locale: string }) {
   return (
     <header className="sticky top-0 left-0 sm:pt-10 backdrop-blur-2xl   z-40  border-b border-gray-400">
       <div

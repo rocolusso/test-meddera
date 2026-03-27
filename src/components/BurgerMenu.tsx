@@ -16,7 +16,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
-function BurgerMenu({ locale }:{locale:string}) {
+function BurgerMenu({ locale }:{ locale:string }) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const router = useRouter();
@@ -36,7 +36,7 @@ function BurgerMenu({ locale }:{locale:string}) {
         </DropdownMenuTrigger>
 
         {
-            isOpen && locale === 'ru' && (
+          isOpen && locale === 'ru' && (
             <DropdownMenuContent>
 
               <DropdownMenuItem>
@@ -97,11 +97,11 @@ function BurgerMenu({ locale }:{locale:string}) {
                 </div>
               </DropdownMenuItem>
             </DropdownMenuContent>
-            )
+          )
         }
 
         {
-            isOpen && locale === 'ro' && (
+          isOpen && locale === 'ro' && (
             <DropdownMenuContent>
 
               <DropdownMenuItem>
@@ -164,7 +164,7 @@ function BurgerMenu({ locale }:{locale:string}) {
                 </div>
               </DropdownMenuItem>
             </DropdownMenuContent>
-            )
+          )
         }
 
       </DropdownMenu>

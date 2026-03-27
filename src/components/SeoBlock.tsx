@@ -1,8 +1,8 @@
 import React from 'react';
 
 function SeoBlock({ children, locale }:Readonly<{
-    children: React.ReactNode,
-    locale: string;
+  children: React.ReactNode,
+  locale: string;
 }>) {
   return (
     <div className="seo__block max-w-5xl mx-auto">

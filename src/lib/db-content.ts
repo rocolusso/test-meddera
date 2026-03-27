@@ -18,11 +18,11 @@ import konturnayaPlastika from '../../public/assets/img/services/konturnayaplast
 import lipolitiki from '../../public/assets/img/services/lipolitiki.png';
 
 export type ServiceLink = {
-    id: number,
-    title: string,
-    url: string,
-    imageUrl: StaticImageData,
-}
+  id: number,
+  title: string,
+  url: string,
+  imageUrl: StaticImageData,
+};
 
 export const servicesLinksRu:ServiceLink[] = [
   {

@@ -94,7 +94,6 @@ export default function Home() {
                     <div className="">
                       <div className="py-12 bg-white">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
                           <div className="lg:text-center">
                             <p
                               className="font-heading mb-4 bg-orange-100 text-orange-800

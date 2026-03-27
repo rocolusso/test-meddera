@@ -27,7 +27,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
 
-
     {
       url: 'https://meddera.md/services/karboksyterapyya-v-belczah',
       lastModified: new Date(),
@@ -131,7 +130,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-
 
     {
       url: 'https://meddera.md/services/karboksyterapyya-v-belczah/ro',

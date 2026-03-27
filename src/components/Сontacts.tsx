@@ -12,7 +12,7 @@ import Link from 'next/link';
 import { trackEvent } from '@/lib/gtm';
 import DOMPurify from 'dompurify';
 
-function Contacts({ locale }:{locale:string}) {
+function Contacts({ locale }:{ locale:string }) {
   const [isWorkingHours, setIsWorkingHours] = useState(false);
   const [currentTime, setCurrentTime] = useState('');
 
@@ -31,13 +31,11 @@ function Contacts({ locale }:{locale:string}) {
   }, [formattedTime, isInWorkingHours]);
 
   const callPhone = () => {
-
     // eslint-disable-next-line no-undef
     window.location.href = 'tel:+37368550030';
   };
 
   const callPhoneFixed = () => {
-
     trackEvent('phone_click_fixed', {
       action: 'click',
       target: 'Phone_click_fixed',
@@ -203,9 +201,9 @@ function Contacts({ locale }:{locale:string}) {
                       </div>
                       <div className="text-center">
                         <p className={!isWorkingHours
-                            ? ' bg-red-600 text-white rounded p-3 '
-                            : 'bg-green-500 mb-6  text-white rounded p-3'
-                        }>
+                          ? ' bg-red-600 text-white rounded p-3 '
+                          : 'bg-green-500 mb-6  text-white rounded p-3'}
+                        >
                           {
                             // eslint-disable-next-line no-nested-ternary
                             isWorkingHours
@@ -219,20 +217,20 @@ function Contacts({ locale }:{locale:string}) {
                       </div>
                       {!isWorkingHours
                           && (
-                          <p className="p-3 uppercase">
-                            {locale === 'ru' ? 'Текущее время:' : 'ora curentă'}
-                            {' '}
-                            {currentTime}
-                          </p>
+                            <p className="p-3 uppercase">
+                              {locale === 'ru' ? 'Текущее время:' : 'ora curentă'}
+                              {' '}
+                              {currentTime}
+                            </p>
                           )}
                       {!isWorkingHours
                           && (
-                          <p className="p-3 uppercase">
-                            {locale === 'ru' ? 'Часы работы:' : 'Program de lucru:'}
-                            {' '}
-                            09:00
-                            - 20:00
-                          </p>
+                            <p className="p-3 uppercase">
+                              {locale === 'ru' ? 'Часы работы:' : 'Program de lucru:'}
+                              {' '}
+                              09:00
+                              - 20:00
+                            </p>
                           )}
                     </div>
                     <form onSubmit={submitHandler} className="p-6 flex flex-col justify-center">
@@ -279,13 +277,15 @@ function Contacts({ locale }:{locale:string}) {
                           />
 
                           {
-                              submitAlert
+                            submitAlert
                               && (
-                              <div className="submit_alert" id="formSubmitAlert">
-                                <p className="p-5 bg-green-400 mb-5">{locale === 'ru'
-                                    ? 'Спасибо! Ваше сообщение получено'
-                                    : 'Mulțumim! Mesajul dumneavoastră a fost primit'}</p>
-                              </div>
+                                <div className="submit_alert" id="formSubmitAlert">
+                                  <p className="p-5 bg-green-400 mb-5">
+                                    {locale === 'ru'
+                                      ? 'Спасибо! Ваше сообщение получено'
+                                      : 'Mulțumim! Mesajul dumneavoastră a fost primit'}
+                                  </p>
+                                </div>
                               )
                           }
                         </div>
@@ -300,8 +300,8 @@ function Contacts({ locale }:{locale:string}) {
 
                         >
                           {locale === 'ru'
-                              ? 'Отправить сообщение'
-                              : 'Trimite mesaj'}
+                            ? 'Отправить сообщение'
+                            : 'Trimite mesaj'}
                         </Button>
 
                       </fieldset>

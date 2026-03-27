@@ -3,7 +3,7 @@ import { servicesLinksRo, servicesLinksRu } from '@/lib/db-content';
 import Link from 'next/link';
 import Image from 'next/image';
 
-function ServicesNew({ locale }:{locale:string}) {
+function ServicesNew({ locale }:{ locale:string }) {
   return (
     <section className="services__block" id="services">
 
@@ -18,80 +18,80 @@ function ServicesNew({ locale }:{locale:string}) {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
 
           {
-                 locale === 'ru' && servicesLinksRu.map((service) => (
-                   <div key={service.id} className="rounded overflow-hidden shadow-lg">
+            locale === 'ru' && servicesLinksRu.map((service) => (
+              <div key={service.id} className="rounded overflow-hidden shadow-lg">
 
-                     <div className="relative hover:scale-110 duration-500">
-                       <Link
-                         href={service.url}
-                       >
-                         <Image
-                           className="w-full hover:scale-110 duration-500"
-                           src={service.imageUrl}
-                           alt={`${service.title} в Бельцах. Дерматолог Бельцы`}
-                           width={500}
-                           height={500}
-                           loading="lazy"
-                         />
-                         <div
-                           className="hover:bg-transparent transition duration-300
+                <div className="relative hover:scale-110 duration-500">
+                  <Link
+                    href={service.url}
+                  >
+                    <Image
+                      className="w-full hover:scale-110 duration-500"
+                      src={service.imageUrl}
+                      alt={`${service.title} в Бельцах. Дерматолог Бельцы`}
+                      width={500}
+                      height={500}
+                      loading="lazy"
+                    />
+                    <div
+                      className="hover:bg-transparent transition duration-300
                           absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"
-                         />
-                       </Link>
+                    />
+                  </Link>
 
-                     </div>
-                     <div
-                       className=" hover:scale-105 duration-300 hover:bg-green-400
+                </div>
+                <div
+                  className=" hover:scale-105 duration-300 hover:bg-green-400
                       hover:text-white transition  ease-in-out"
-                     >
-                       <Link
-                         href={service.url}
-                         className="px-6 py-4 font-semibold text-lg inline-block w-full h-full"
-                       >
-                         {service.title}
-                       </Link>
-                     </div>
-                   </div>
-                 ))
-                  }
+                >
+                  <Link
+                    href={service.url}
+                    className="px-6 py-4 font-semibold text-lg inline-block w-full h-full"
+                  >
+                    {service.title}
+                  </Link>
+                </div>
+              </div>
+            ))
+          }
 
           {
-                locale === 'ro' && servicesLinksRo.map((service) => (
-                  <div key={service.id} className="rounded overflow-hidden shadow-lg">
+            locale === 'ro' && servicesLinksRo.map((service) => (
+              <div key={service.id} className="rounded overflow-hidden shadow-lg">
 
-                    <div className="relative hover:scale-110 duration-500">
-                      <Link
-                        href={service.url}
-                      >
-                        <Image
-                          className="w-full hover:scale-110 duration-500"
-                          src={service.imageUrl}
-                          alt={`${service.title} в Бельцах. Дерматолог Бельцы`}
-                          width={500}
-                          height={500}
-                          loading="lazy"
-                        />
-                        <div
-                          className="hover:bg-transparent transition duration-300
-                          absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"
-                        />
-                      </Link>
-
-                    </div>
+                <div className="relative hover:scale-110 duration-500">
+                  <Link
+                    href={service.url}
+                  >
+                    <Image
+                      className="w-full hover:scale-110 duration-500"
+                      src={service.imageUrl}
+                      alt={`${service.title} в Бельцах. Дерматолог Бельцы`}
+                      width={500}
+                      height={500}
+                      loading="lazy"
+                    />
                     <div
-                      className=" hover:scale-105 duration-300 hover:bg-green-400
+                      className="hover:bg-transparent transition duration-300
+                          absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"
+                    />
+                  </Link>
+
+                </div>
+                <div
+                  className=" hover:scale-105 duration-300 hover:bg-green-400
                       hover:text-white transition  ease-in-out"
-                    >
-                      <Link
-                        href={service.url}
-                        className="px-6 py-4 font-semibold text-lg inline-block w-full h-full"
-                      >
-                        {service.title}
-                      </Link>
-                    </div>
-                  </div>
-                ))
-            }
+                >
+                  <Link
+                    href={service.url}
+                    className="px-6 py-4 font-semibold text-lg inline-block w-full h-full"
+                  >
+                    {service.title}
+                  </Link>
+                </div>
+              </div>
+            ))
+          }
 
         </div>
       </div>

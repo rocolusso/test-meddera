@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { servicesLinksRo, servicesLinksRu } from '@/lib/db-content';
 import { FaMapLocationDot, FaPhoneVolume } from 'react-icons/fa6';
 
-function FooterNew({ locale }: {locale: string}) {
+function FooterNew({ locale }: { locale: string }) {
   const date = new Date();
   const currentYear = date.getFullYear();
   return (
@@ -35,23 +35,23 @@ function FooterNew({ locale }: {locale: string}) {
                     </div>
                   </div>
                 ))
-                }
+              }
               {
-                  locale === 'ro' && servicesLinksRo.map((service) => (
-                    <div key={service.id} className="overflow-hidden ">
+                locale === 'ro' && servicesLinksRo.map((service) => (
+                  <div key={service.id} className="overflow-hidden ">
 
-                      <div className=" hover:scale-105 duration-300 hover:bg-green-400
+                    <div className=" hover:scale-105 duration-300 hover:bg-green-400
                       hover:text-white transition  ease-in-out"
+                    >
+                      <Link
+                        href={service.url}
+                        className="px-6 py-4 underline text-sm  inline-block w-full h-full"
                       >
-                        <Link
-                          href={service.url}
-                          className="px-6 py-4 underline text-sm  inline-block w-full h-full"
-                        >
-                          {service.title}
-                        </Link>
-                      </div>
+                        {service.title}
+                      </Link>
                     </div>
-                  ))
+                  </div>
+                ))
               }
             </div>
           </div>
