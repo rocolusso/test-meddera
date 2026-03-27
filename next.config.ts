@@ -50,6 +50,11 @@ const getSecurityHeaders = (isDev: boolean) => [
 const nextConfig: NextConfig = {
   /* config options here */
 
+  // Inline global CSS into HTML in production to avoid an extra render-blocking stylesheet request (LCP/FCP).
+  experimental: {
+    inlineCss: true,
+  },
+
   generateBuildId: async () => `${Date.now()}`, // Forces new build ID on each deploy
 
   webpack: (config, { isServer, webpack: webpackApi }) => {
