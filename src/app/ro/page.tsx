@@ -287,7 +287,8 @@ export default function Home() {
                   alt="pintea"
                   width={500}
                   height={500}
-                  loading="lazy"
+                  priority
+                  fetchPriority="high"
                 />
               </div>
             </div>
