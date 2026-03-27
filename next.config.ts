@@ -11,7 +11,7 @@ const getCsp = (isDev: boolean) => {
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com https://connect.facebook.net https://www.facebook.com https://www.google.com https://www.google.pl https://purecatamphetamine.github.io",
     "font-src 'self' data: https:",
-    "connect-src 'self' https://www.google-analytics.com https://region1.analytics.google.com https://www.googletagmanager.com https://www.google.com https://www.facebook.com https://graph.facebook.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms https://scripts.clarity.ms https://a.clarity.ms https://analytics.ahrefs.com",
+    "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.analytics.google.com https://www.googletagmanager.com https://www.google.com https://www.facebook.com https://graph.facebook.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms https://scripts.clarity.ms https://a.clarity.ms https://k.clarity.ms https://analytics.ahrefs.com",
     "frame-src 'self' https://www.googletagmanager.com https://www.facebook.com https://maps.google.com https://www.google.com https://vercel.live",
     "form-action 'self'",
     'upgrade-insecure-requests',
