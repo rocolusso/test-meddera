@@ -1,4 +1,9 @@
+import path from 'node:path';
+
 import type { NextConfig } from 'next';
+
+/** Replaces Next.js built-in polyfill bundle (modern browsers only). */
+const emptyPolyfillPath = path.join(process.cwd(), 'src/lib/empty-polyfill.js');
 
 const getCsp = (isDev: boolean) => {
   const enableTrustedTypes = process.env.ENABLE_TRUSTED_TYPES === 'true';
@@ -45,6 +50,25 @@ const nextConfig: NextConfig = {
   /* config options here */
 
   generateBuildId: async () => `${Date.now()}`, // Forces new build ID on each deploy
+
+  webpack: (config, { isServer, webpack: webpackApi }) => {
+    if (!isServer) {
+      config.resolve = config.resolve ?? {};
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        'next/dist/build/polyfills/polyfill-module': emptyPolyfillPath,
+        'next/dist/build/polyfills/polyfill-module.js': emptyPolyfillPath,
+      };
+      config.plugins = config.plugins ?? [];
+      config.plugins.push(
+        new webpackApi.NormalModuleReplacementPlugin(
+          /next[/\\]dist[/\\]build[/\\]polyfills[/\\]polyfill-module\.js$/,
+          emptyPolyfillPath,
+        ),
+      );
+    }
+    return config;
+  },
 
   async headers() {
     const isDev = process.env.NODE_ENV !== 'production';
