@@ -12,6 +12,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const isVercel = process.env.VERCEL === '1';
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Physician',
@@ -60,6 +61,16 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-language" content="ru" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
+        <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="" />
+        <link rel="preconnect" href="https://connect.facebook.net" crossOrigin="" />
+        <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" />
+        <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" />
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="rXIslMFNaqfd12QEhlizeQ" async />
         <script
           type="application/ld+json"
@@ -69,12 +80,12 @@ export default function RootLayout({
         <script
           type="text/javascript"
           /* eslint-disable-next-line react/no-danger */
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(microsoftClarity) }}
+          dangerouslySetInnerHTML={{ __html: microsoftClarity }}
         />
       </head>
       {/* <GoogleAnalytics /> */}
-      <Analytics />
-      <SpeedInsights />
+      {isVercel ? <Analytics /> : null}
+      {isVercel ? <SpeedInsights /> : null}
       <GoogleTagManager gtmId="GTM-KFCP3D5F" />
       <body>
         {children}

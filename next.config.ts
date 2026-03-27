@@ -1,9 +1,61 @@
 import type { NextConfig } from 'next';
 
+const getCsp = (isDev: boolean) => {
+  const enableTrustedTypes = process.env.ENABLE_TRUSTED_TYPES === 'true';
+  const directives = [
+    "default-src 'self'",
+    "base-uri 'self'",
+    "object-src 'none'",
+    "frame-ancestors 'none'",
+    `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms https://scripts.clarity.ms https://analytics.ahrefs.com`,
+    "style-src 'self' 'unsafe-inline'",
+    "img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com https://connect.facebook.net https://www.facebook.com https://www.google.com https://purecatamphetamine.github.io",
+    "font-src 'self' data: https:",
+    "connect-src 'self' https://www.google-analytics.com https://region1.analytics.google.com https://www.googletagmanager.com https://www.google.com https://www.facebook.com https://graph.facebook.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms https://scripts.clarity.ms https://analytics.ahrefs.com",
+    "frame-src 'self' https://www.googletagmanager.com https://www.facebook.com https://maps.google.com https://www.google.com",
+    "form-action 'self'",
+    'upgrade-insecure-requests',
+  ];
+
+  // Trusted Types may break some third-party scripts/runtime paths.
+  // Keep it opt-in for production via env flag.
+  if (!isDev && enableTrustedTypes) {
+    directives.push("require-trusted-types-for 'script'");
+    directives.push('trusted-types default');
+  }
+
+  return directives.join('; ');
+};
+
+const getSecurityHeaders = (isDev: boolean) => [
+  { key: 'Content-Security-Policy', value: getCsp(isDev) },
+  // Keep HSTS only in production to avoid sticky localhost/browser behavior.
+  ...(isDev ? [] : [{ key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' }]),
+  { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
+  { key: 'X-Frame-Options', value: 'DENY' },
+  { key: 'X-Content-Type-Options', value: 'nosniff' },
+  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+  {
+    key: 'Permissions-Policy',
+    value: 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()',
+  },
+];
+
 const nextConfig: NextConfig = {
   /* config options here */
 
   generateBuildId: async () => `${Date.now()}`, // Forces new build ID on each deploy
+
+  async headers() {
+    const isDev = process.env.NODE_ENV !== 'production';
+
+    return [
+      {
+        source: '/:path*',
+        headers: getSecurityHeaders(isDev),
+      },
+    ];
+  },
 
   async redirects() {
     return [
