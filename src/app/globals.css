@@ -5,6 +5,12 @@
 */
 @custom-variant dark (&:is(.dark *));
 
+html,
+body {
+  width: 100%;
+  overflow-x: clip;
+}
+
 .list-icon::before{
   content: '✔︎';
   padding: 0 10px 0 0;
@@ -63,9 +69,9 @@ fonts for title cerificate
     background: #555;
 }  */
 
-html {
-  scroll-behavior: smooth;
-}
+/*html {*/
+/*  scroll-behavior: smooth;*/
+/*}*/
 
 /*
 

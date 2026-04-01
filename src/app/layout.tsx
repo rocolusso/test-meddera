@@ -59,7 +59,11 @@ export default async function RootLayout({
           })(window, document, "clarity", "script", "w2ch4v2j05");
   `;
   return (
-    <html lang="ru">
+    <html
+      lang="ru"
+      data-scroll-behavior="smooth"
+      style={{ overflowX: 'hidden' }}
+    >
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
