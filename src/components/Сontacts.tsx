@@ -100,11 +100,11 @@ function Contacts({ locale }:{ locale:string }) {
   };
 
   return (
-    <div className="contacts mt-10 bg-white" id="contacts">
+    <div className="contacts  bg-white" id="contacts">
 
       <div className="container mx-auto">
         <div className="text-center ">
-          <p className="mt-6 p-5 w-fit mx-auto
+          <p className=" w-fit mx-auto
               text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"
           >
             {locale === 'ru' ? 'Контакты' : 'Contacte'}
@@ -182,7 +182,7 @@ function Contacts({ locale }:{ locale:string }) {
                   </div>
 
                   <div className="form__block__wrapper  sm:rounded-lg shadow-2xl">
-                    <div className="mx-auto flex justify-center mb-10">
+                    <div className="mx-auto flex justify-center mt-5">
                       <p className="mt-2 font-heading  text-2xl leading-8 font-semibold tracking-tight text-gray-900">
                         {locale === 'ru' ? 'Запись на консультацию' : 'Programare pentru consultanță'}
                       </p>
