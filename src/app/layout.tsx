@@ -67,10 +67,7 @@ export default async function RootLayout({
         url: 'https://meddera.md/',
         telephone: '+373-68-550-030',
         address: clinicAddress,
-        medicalSpecialty: {
-          '@type': 'MedicalSpecialty',
-          name: 'Dermatology',
-        },
+        medicalSpecialty: 'https://schema.org/Dermatology',
       },
       {
         '@type': 'MedicalClinic',
