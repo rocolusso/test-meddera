@@ -2,7 +2,7 @@
   "name": "meddera-todo-shadcn",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "npm@11.6.2",
+  "packageManager": "npm@11.12.1",
   "browserslist": {
     "production": [
       "chrome >= 109",
