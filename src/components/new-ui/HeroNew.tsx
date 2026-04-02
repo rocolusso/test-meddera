@@ -10,6 +10,7 @@ function HeroNew() {
           src={baner1}
           alt="pintea"
           priority
+          fetchPriority="high"
           fill
           className="object-contain"
         />
