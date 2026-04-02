@@ -30,9 +30,9 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'konsultaciya-pered-uvelicheniem-gub-voprosy-vrachu',
     slugRo: 'consultatie-marire-buze-intrebari-medic',
     publishedAt: '2026-04-01',
-    dateModified: '2026-04-01',
+    dateModified: '2026-04-03',
     titleRu: 'Консультация перед увеличением губ: вопросы врачу | Meddera',
-    titleRo: 'Consultația înainte de mărirea buzelor: întrebări pentru medic | Meddera',
+    titleRo: 'Întrebări la consultație: mărirea buzelor | Meddera',
     descriptionRu:
       'Что спросить на приёме перед инъекционной коррекцией губ: безопасность, техника, наблюдение. Информационный материал клиники Meddera в Бельцах.',
     descriptionRo:
@@ -66,13 +66,13 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'mify-i-fakty-o-fillerah-dlya-gub',
     slugRo: 'mituri-si-fapte-filler-buze',
     publishedAt: '2026-04-02',
-    dateModified: '2026-04-02',
+    dateModified: '2026-04-03',
     titleRu: 'Мифы и факты о филлерах для губ | Meddera',
     titleRo: 'Mituri și fapte despre filler-ele pentru buze | Meddera',
     descriptionRu:
-      'Разбор распространённых утверждений об инъекционной коррекции губ и что реально обсуждают с врачом. Meddera, Бельцы.',
+      'Разбор распространённых утверждений об инъекционной коррекции губ: что обсуждают с врачом на консультации и от чего зависит план лечения. Информационный материал клиники Meddera в Бельцах.',
     descriptionRo:
-      'Clarificări despre afirmații frecvente privind corecția injectabilă a buzelor. Meddera, Bălți.',
+      'Clarificări despre afirmații frecvente privind corecția injectabilă a buzelor: ce se discută la consultație și ce influențează planul. Material informativ, clinica Meddera din Bălți.',
     excerptRu: 'Отделяем обобщения от того, что зависит от индивидуального плана.',
     excerptRo: 'Separăm generalitățile de ceea ce ține de planul personal.',
     bodyKey: 'lip-cluster-article',
@@ -84,13 +84,13 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'estestvennyj-obem-gub-ozhidaniya',
     slugRo: 'volum-natural-buze-asteptari',
     publishedAt: '2026-04-02',
-    dateModified: '2026-04-02',
+    dateModified: '2026-04-03',
     titleRu: 'Естественный объём губ: как формулировать ожидания | Meddera',
     titleRo: 'Volum natural al buzelor: cum să formulați așteptările | Meddera',
     descriptionRu:
-      'Как описать желаемый результат врачу и почему анатомия влияет на план. Информационная статья Meddera.',
+      'Как описать желаемый результат врачу до процедуры и почему анатомия губ влияет на допустимый объём и форму. Пошаговая коррекция без перегруза. Информационная статья Meddera, Бельцы.',
     descriptionRo:
-      'Cum descrieți rezultatul dorit medicului și rolul anatomiei în plan. Articol informativ Meddera.',
+      'Cum descrieți rezultatul dorit medicului înainte de procedură și cum influențează anatomia volumul și forma permise. Corecție în etape, fără exces. Articol informativ Meddera, Bălți.',
     excerptRu: 'Референсы, формулировки и пошаговая коррекция без перегруза.',
     excerptRo: 'Referințe, formulări și corecție în etape fără exces.',
     bodyKey: 'lip-cluster-article',
@@ -106,9 +106,9 @@ const BLOG_POSTS: BlogPost[] = [
     titleRu: 'Отёк и синяки после инъекций в губы: что нормально | Meddera',
     titleRo: 'Edem și vânătăi după injecții în buze: ce este frecvent | Meddera',
     descriptionRu:
-      'Типичные явления первых дней и когда обращаться за помощью. Не заменяет рекомендации вашего врача Meddera.',
+      'Типичные явления первых дней после инъекций в губы и когда срочно обращаться к врачу или скорой помощи. Не заменяет персональные рекомендации вашего врача в клинике Meddera.',
     descriptionRo:
-      'Fenomene obișnuite în primele zile și când să cereți ajutor. Nu înlocuiește sfatul medicului Meddera.',
+      'Fenomene obișnuite în primele zile după injecțiile în buze și când este necesar să contactați urgent medicul sau urgența. Nu înlocuiește recomandările personale de la Meddera.',
     excerptRu: 'Ориентиры по наблюдению за собой после процедуры.',
     excerptRo: 'Repere pentru observarea după procedură.',
     bodyKey: 'lip-cluster-article',
@@ -124,9 +124,9 @@ const BLOG_POSTS: BlogPost[] = [
     titleRu: 'Противопоказания к увеличению губ: общая информация | Meddera',
     titleRo: 'Contraindicații la mărirea buzelor: informații generale | Meddera',
     descriptionRu:
-      'Зачем собирают анамнез и почему решение только после осмотра. Meddera, Бельцы.',
+      'Зачем на консультации собирают анамнез и какие темы обычно обсуждают до инъекционной коррекции губ. Решение о процедуре возможно только после очного осмотра врачом Meddera, Бельцы.',
     descriptionRo:
-      'Rolul anamnezei și de ce decizia este după examen. Meddera, Bălți.',
+      'De ce se colectează anamneza la consultație și ce subiecte se discută înainte de corecția injectabilă a buzelor. Decizia aparține medicului după examen la Meddera, Bălți.',
     excerptRu: 'Темы для честного разговора на консультации.',
     excerptRo: 'Subiecte pentru o discuție clară la consultație.',
     bodyKey: 'lip-cluster-article',
@@ -138,13 +138,13 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'forma-i-simmetriya-gub-bez-peregruzki-obema',
     slugRo: 'forma-simetrie-buze-fara-supraincarcare',
     publishedAt: '2026-04-04',
-    dateModified: '2026-04-04',
+    dateModified: '2026-04-03',
     titleRu: 'Форма и симметрия губ без перегрузки объёма | Meddera',
     titleRo: 'Formă și simetrie a buzelor fără supraîncărcare de volum | Meddera',
     descriptionRu:
-      'Когда задача — контур и баланс, а не максимальный объём. Образовательный материал Meddera.',
+      'Когда при коррекции губ приоритетны симметрия и контур, а не максимальный объём: как это согласуют с врачом и какие ограничения бывают. Образовательный материал Meddera, Бельцы.',
     descriptionRo:
-      'Când obiectivul este conturul și echilibrul, nu volumul maxim. Material educativ Meddera.',
+      'Când prioritatea la corecția buzelor este simetria și conturul, nu volumul maxim: cum se stabilește împreună cu medicul și ce limite există. Material educativ Meddera, Bălți.',
     excerptRu: 'Гармония лица и индивидуальный план коррекции.',
     excerptRo: 'Armonia feței și planul individual de corecție.',
     bodyKey: 'lip-cluster-article',
@@ -156,13 +156,13 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'uhod-posle-uvelicheniya-gub-obschie-printsipy',
     slugRo: 'ingrijire-dupa-marire-buze-principii',
     publishedAt: '2026-04-05',
-    dateModified: '2026-04-05',
+    dateModified: '2026-04-03',
     titleRu: 'Уход после увеличения губ: общие принципы | Meddera',
     titleRo: 'Îngrijire după mărirea buzelor: principii generale | Meddera',
     descriptionRu:
-      'Почему рекомендации клиники важнее обобщённых статей. Meddera, Бельцы.',
+      'Общие принципы ухода после увеличения губ и почему инструкции вашей клиники важнее советов из интернета. Типичные ограничения на короткий срок — как ориентир. Meddera, Бельцы.',
     descriptionRo:
-      'De ce recomandările clinicii primează față de articole generale. Meddera, Bălți.',
+      'Principii generale de îngrijire după mărirea buzelor și de ce instrucțiunile clinicii tale primează față de sfaturi generale online. Restricții frecvente pe termen scurt — ca reper. Meddera, Bălți.',
     excerptRu: 'Типичные ограничения на короткий срок — только как ориентир.',
     excerptRo: 'Restricții frecvente pe termen scurt — doar ca reper.',
     bodyKey: 'lip-cluster-article',
@@ -174,13 +174,13 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'kak-vybrat-kliniku-dlya-injekcij-v-belczah',
     slugRo: 'cum-alegi-clinica-injectii-balti',
     publishedAt: '2026-04-06',
-    dateModified: '2026-04-06',
+    dateModified: '2026-04-03',
     titleRu: 'Как выбрать клинику для инъекций в Бельцах | Meddera',
     titleRo: 'Cum alegi clinica pentru injecții în Bălți | Meddera',
     descriptionRu:
-      'Критерии прозрачности, стерильности и поддержки после процедуры. Информационный гид Meddera.',
+      'На что обратить внимание при выборе клиники для инъекций в Бельцах: опыт врача, прозрачность по препарату, стерильность и связь после процедуры. Информационный гид Meddera.',
     descriptionRo:
-      'Criterii de transparență, asepsie și suport după procedură. Ghid informativ Meddera.',
+      'La ce să fiți atenți când alegeți clinica pentru injecții în Bălți: experiența medicului, transparența preparatului, asepsie și suport după procedură. Ghid informativ Meddera.',
     excerptRu: 'На что смотреть и какие сигналы насторожить.',
     excerptRo: 'La ce să fiți atenți și semnale de precauție.',
     bodyKey: 'lip-cluster-article',
@@ -192,13 +192,13 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'skolko-derzhitsya-effekt-uvelicheniya-gub',
     slugRo: 'cat-tine-efectul-marire-buze',
     publishedAt: '2026-04-07',
-    dateModified: '2026-04-07',
+    dateModified: '2026-04-03',
     titleRu: 'Сколько держится эффект увеличения губ | Meddera',
     titleRo: 'Cât timp ține efectul măririi buzelor | Meddera',
     descriptionRu:
-      'Почему срок индивидуален и как планировать наблюдение с врачом. Meddera.',
+      'Почему срок действия эффекта после увеличения губ индивидуален и как планировать повторную оценку с врачом, без опоры на «средние цифры» из сети. Информационно, Meddera, Бельцы.',
     descriptionRo:
-      'De ce durata variază și cum planificați urmărirea cu medicul. Meddera.',
+      'De ce durata efectului după mărirea buzelor variază și cum planificați reevaluarea cu medicul, fără a vă baza pe medii anonime de pe internet. Informații generale, Meddera, Bălți.',
     excerptRu: 'Метаболизм, препарат, зона — без «средних цифр из сети».',
     excerptRo: 'Metabolism, preparat, zonă — fără medii anonime de pe net.',
     bodyKey: 'lip-cluster-article',

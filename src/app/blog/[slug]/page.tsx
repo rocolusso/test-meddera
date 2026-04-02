@@ -6,6 +6,7 @@ import HeaderNew from '@/components/new-ui/HeaderNew';
 import FooterNew from '@/components/new-ui/FooterNew';
 import { blogArticleJsonLd } from '@/lib/jsonld/blog-article';
 import { lipAugmentationHubJsonLd } from '@/lib/jsonld/lip-augmentation-hub';
+import { blogSocialMetadata } from '@/lib/site-og';
 import { getAllSlugParams, getPostBySlug, ORIGIN } from '@/blog-data/registry';
 import { renderBlogPostBody } from '@/blog-data/render-post-body';
 
@@ -32,13 +33,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'x-default': canonical,
       },
     },
-    openGraph: {
+    ...blogSocialMetadata({
       title: post.titleRu,
       description: post.descriptionRu,
       url: canonical,
-      type: 'article',
       locale: 'ru_MD',
-    },
+      type: 'article',
+    }),
   };
 }
 

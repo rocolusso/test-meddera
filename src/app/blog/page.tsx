@@ -4,11 +4,16 @@ import type { Metadata } from 'next';
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import FooterNew from '@/components/new-ui/FooterNew';
 import { BlogIndexView } from '@/components/blog/BlogIndexView';
+import { blogSocialMetadata } from '@/lib/site-og';
 import { ORIGIN } from '@/blog-data/registry';
 
+const blogIndexTitle = 'Блог клиники Meddera в Бельцах';
+const blogIndexDescription =
+  'Статьи и гиды клиники Meddera в Бельцах: косметология, дерматология и эстетические процедуры. Полезные материалы для пациентов перед консультацией.';
+
 export const metadata: Metadata = {
-  title: 'Блог | Meddera',
-  description: 'Статьи и гиды клиники Meddera в Бельцах: косметология и дерматология.',
+  title: `${blogIndexTitle} | Meddera`,
+  description: blogIndexDescription,
   alternates: {
     canonical: `${ORIGIN}/blog`,
     languages: {
@@ -17,12 +22,13 @@ export const metadata: Metadata = {
       'x-default': `${ORIGIN}/blog`,
     },
   },
-  openGraph: {
-    title: 'Блог | Meddera',
+  ...blogSocialMetadata({
+    title: `${blogIndexTitle} | Meddera`,
+    description: blogIndexDescription,
     url: `${ORIGIN}/blog`,
-    type: 'website',
     locale: 'ru_MD',
-  },
+    type: 'website',
+  }),
 };
 
 export default function BlogIndexPage() {

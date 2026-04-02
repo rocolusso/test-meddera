@@ -5,6 +5,7 @@ import { notFound, permanentRedirect } from 'next/navigation';
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import FooterNew from '@/components/new-ui/FooterNew';
 import { BlogIndexView } from '@/components/blog/BlogIndexView';
+import { blogSocialMetadata } from '@/lib/site-og';
 import { getMaxIndexPage, ORIGIN } from '@/blog-data/registry';
 
 type Props = { params: Promise<{ page: string }> };
@@ -28,9 +29,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
   const canonical = `${ORIGIN}/ro/blog/page/${n}`;
+  const description = `Articole și ghiduri Meddera, Bălți — pagina ${n}. Dermatologie și cosmetologie: informații pentru pacienți care se pregătesc pentru consultație.`;
   return {
     title: `Blog — pagina ${n} | Meddera`,
-    description: 'Articole și ghiduri — Meddera, Bălți.',
+    description,
     alternates: {
       canonical,
       languages: {
@@ -39,6 +41,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'x-default': `${ORIGIN}/blog/page/${n}`,
       },
     },
+    ...blogSocialMetadata({
+      title: `Blog — pagina ${n} | Meddera`,
+      description,
+      url: canonical,
+      locale: 'ro_MD',
+      type: 'website',
+    }),
   };
 }
 

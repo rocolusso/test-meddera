@@ -1,7 +1,11 @@
 import React from 'react';
-
+import type { Metadata } from 'next';
 import Script from 'next/script';
 import { headers } from 'next/headers';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://meddera.md'),
+};
 
 import './globals.css';
 // import GoogleAnalytics from '@/components/GoogleAnalytics';
@@ -43,7 +47,12 @@ export default async function RootLayout({
     return null;
   })();
 
-  const htmlLang = normalizedPath === '/ro' || normalizedPath.endsWith('/ro') ? 'ro' : 'ru';
+  // RO locale: `/ro`, `/ro/blog`, `/ro/...`, and services mirror `.../ro` (not `/ro/...` prefix).
+  const isRoLocale =
+    normalizedPath === '/ro' ||
+    normalizedPath.startsWith('/ro/') ||
+    (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
+  const htmlLang = isRoLocale ? 'ro' : 'ru';
   const isVercel = process.env.VERCEL === '1';
   const clinicAddress = {
     '@type': 'PostalAddress' as const,

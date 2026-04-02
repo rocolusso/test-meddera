@@ -5,6 +5,7 @@ import { notFound, permanentRedirect } from 'next/navigation';
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import FooterNew from '@/components/new-ui/FooterNew';
 import { BlogIndexView } from '@/components/blog/BlogIndexView';
+import { blogSocialMetadata } from '@/lib/site-og';
 import { getMaxIndexPage, ORIGIN } from '@/blog-data/registry';
 
 type Props = { params: Promise<{ page: string }> };
@@ -28,9 +29,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
   const canonical = `${ORIGIN}/blog/page/${n}`;
+  const description = `Статьи и гиды клиники Meddera в Бельцах — страница ${n}. Косметология и дерматология; материалы для пациентов, которые рассматривают процедуры в Бельцах.`;
   return {
     title: `Блог — страница ${n} | Meddera`,
-    description: 'Статьи и гиды клиники Meddera в Бельцах.',
+    description,
     alternates: {
       canonical,
       languages: {
@@ -40,6 +42,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     robots: n > max ? { index: false } : undefined,
+    ...blogSocialMetadata({
+      title: `Блог — страница ${n} | Meddera`,
+      description,
+      url: canonical,
+      locale: 'ru_MD',
+      type: 'website',
+    }),
   };
 }
 
