@@ -100,7 +100,7 @@ function ContactsLips({ locale }:{ locale:string }) {
   };
 
   return (
-    <div className="contacts  bg-white" id="contacts">
+    <div className="contacts-lips  bg-white" id="contacts">
 
       <div className="container mx-auto">
         <div className="text-center ">

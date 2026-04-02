@@ -131,7 +131,7 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
               </Link>
             </li>
             <li>
-              <Link href="/?section=contacts" className="text-gray-800 underline hover:text-gray-950">
+              <Link href="/services/uvelychenye-gub-v-belczah" className="text-gray-800 underline hover:text-gray-950">
                 Контакты и запись
               </Link>
             </li>
@@ -277,7 +277,7 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
             </Link>
           </li>
           <li>
-            <Link href="/ro?section=contacts" className="text-gray-800 underline hover:text-gray-950">
+            <Link href="/services/uvelychenye-gub-v-belczah/ro" className="text-gray-800 underline hover:text-gray-950">
               Contacte și programare
             </Link>
           </li>
