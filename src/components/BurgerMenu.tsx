@@ -23,7 +23,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
 
   return (
     <div>
-      <DropdownMenu open={open} onOpenChange={setOpen}>
+      <DropdownMenu open={open} onOpenChange={setOpen} modal={false}>
         <DropdownMenuTrigger asChild>
           <button
             type="button"
@@ -89,7 +89,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
                 <div className="flex justify-center w-full">
                   <Link
                     href="/ro"
-                    className="underline border border-black hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
+                    className="underline rounded-xl border border-black hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
                     onClick={() => setOpen(false)}
                   >
                     RO
@@ -149,7 +149,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
                 <div className="flex justify-center w-full">
                   <Link
                     href="/"
-                    className="underline border border-black hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
+                    className="underline rounded-xl border border-black hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
                     onClick={() => setOpen(false)}
                   >
                     RU
