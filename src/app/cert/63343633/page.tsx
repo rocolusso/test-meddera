@@ -40,19 +40,19 @@ function Page() {
             <div className="flex justify-between items-center sm:w-full">
               <nav className="hidden sm:flex ml-20  gap-10 uppercase underline font-bold text-xl">
                 <Link
-                  href="/#about"
+                  href="/?section=about"
                   className="hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
                 >
                   Обо мне
                 </Link>
                 <Link
-                  href="/#services"
+                  href="/?section=services"
                   className="hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
                 >
                   Услуги
                 </Link>
                 <Link
-                  href="/#contacts"
+                  href="/?section=contacts"
                   className="hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
                 >
                   Контакты

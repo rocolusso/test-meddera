@@ -17,7 +17,7 @@ function NavigationLinks({ locale }: { locale: string }) {
               className="underline bg-transparent hover:scale-105 hover:bg-green-400 hover:text-white hover:border-transparent border border-gray-400 duration-300"
               variant="outline"
               size="lg"
-              onClick={() => router.push(locale === 'ru' ? '/#about' : '/ro/#about')}
+              onClick={() => router.push(locale === 'ru' ? '/?section=about' : '/ro?section=about')}
             >
               {locale === 'ru' ? 'Обо мне' : 'Despre mine'}
             </Button>
@@ -29,7 +29,7 @@ function NavigationLinks({ locale }: { locale: string }) {
               className="underline bg-transparent hover:scale-105 hover:bg-green-400 hover:text-white hover:border-transparent border border-gray-400 duration-300"
               variant="outline"
               size="lg"
-              onClick={() => router.push(locale === 'ru' ? '/#services' : '/ro/#services')}
+              onClick={() => router.push(locale === 'ru' ? '/?section=services' : '/ro?section=services')}
             >
               {locale === 'ru' ? 'Услуги' : 'Servicii'}
             </Button>
@@ -41,7 +41,7 @@ function NavigationLinks({ locale }: { locale: string }) {
               className="underline bg-transparent hover:scale-105 hover:bg-green-400 hover:text-white hover:border-transparent border border-gray-400 duration-300"
               variant="outline"
               size="lg"
-              onClick={() => router.push(locale === 'ru' ? '/#contacts' : '/ro/#contacts')}
+              onClick={() => router.push(locale === 'ru' ? '/?section=contacts' : '/ro?section=contacts')}
             >
               {locale === 'ru' ? 'Контакты' : 'Contacte'}
             </Button>

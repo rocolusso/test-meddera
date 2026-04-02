@@ -7,6 +7,7 @@ import './globals.css';
 // import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
+import SectionQueryScroll from '@/components/SectionQueryScroll';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -132,6 +133,7 @@ export default async function RootLayout({
       {isVercel ? <SpeedInsights /> : null}
       <DeferredGoogleTagManager nonce={nonce} />
       <body>
+        <SectionQueryScroll />
         {children}
       </body>
     </html>

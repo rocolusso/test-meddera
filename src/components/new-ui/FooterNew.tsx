@@ -69,7 +69,7 @@ function FooterNew({ locale }: { locale: string }) {
                       hover:text-white transition  ease-in-out"
                     >
                       <Link
-                        href={locale === 'ru' ? '/#about' : '/ro/#about'}
+                        href={locale === 'ru' ? '/?section=about' : '/ro?section=about'}
                         className="px-6 py-4 underline text-sm  inline-block w-full h-full"
                       >
                         {locale === 'ru' ? 'Обо мне' : 'Despre mine'}
@@ -82,7 +82,7 @@ function FooterNew({ locale }: { locale: string }) {
                       hover:text-white transition  ease-in-out"
                     >
                       <Link
-                        href={locale === 'ru' ? '/#services' : '/ro/#services'}
+                        href={locale === 'ru' ? '/?section=services' : '/ro?section=services'}
                         className="px-6 py-4 underline text-sm  inline-block w-full h-full"
                       >
                         {locale === 'ru' ? 'Услуги' : 'Servicii'}
@@ -95,7 +95,7 @@ function FooterNew({ locale }: { locale: string }) {
                       hover:text-white transition  ease-in-out"
                     >
                       <Link
-                        href={locale === 'ru' ? '/#contacts' : '/ro/#contacts'}
+                        href={locale === 'ru' ? '/?section=contacts' : '/ro?section=contacts'}
                         className="px-6 py-4 underline text-sm  inline-block w-full h-full"
                       >
                         {locale === 'ru' ? 'Контакты' : 'Contacte'}
@@ -116,7 +116,10 @@ function FooterNew({ locale }: { locale: string }) {
                 <ul className="flex items-start gap-5 flex-col">
                   <li>
                     <div className="flex gap-2 items-center justify-center hover:scale-105 duration-300">
-                      <Link href="/#lazy-map" className=" font-bold uppercase text-xs sm:text-sm flex items-center gap-2">
+                      <Link
+                        href={locale === 'ru' ? '/?section=lazy-map' : '/ro?section=lazy-map'}
+                        className=" font-bold uppercase text-xs sm:text-sm flex items-center gap-2"
+                      >
                         <div>
                           <FaMapLocationDot size="24px" />
                         </div>

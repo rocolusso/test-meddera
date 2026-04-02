@@ -43,7 +43,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
                 <button
                   type="button"
                   onClick={() => {
-                    router.push('/#about');
+                    router.push('/?section=about');
                     setIsOpen(false);
                   }}
                   className="flex items-center"
@@ -58,7 +58,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
                 <button
                   type="button"
                   onClick={() => {
-                    router.push('/#services');
+                    router.push('/?section=services');
                     setIsOpen(false);
                   }}
                   className="flex items-center"
@@ -73,7 +73,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
                 <button
                   type="button"
                   onClick={() => {
-                    router.push('/#contacts');
+                    router.push('/?section=contacts');
                     setIsOpen(false);
                   }}
                   className="flex items-center"
@@ -108,7 +108,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
                 <button
                   type="button"
                   onClick={() => {
-                    router.push('/ro#about');
+                    router.push('/ro?section=about');
                     setIsOpen(false);
                   }}
                   className="flex items-center"
@@ -124,7 +124,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
                 <button
                   type="button"
                   onClick={() => {
-                    router.push('/ro#services');
+                    router.push('/ro?section=services');
                     setIsOpen(false);
                   }}
                   className="flex items-center"
@@ -140,7 +140,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
                 <button
                   type="button"
                   onClick={() => {
-                    router.push('/ro#contacts');
+                    router.push('/ro?section=contacts');
                     setIsOpen(false);
                   }}
                   className="flex items-center"
