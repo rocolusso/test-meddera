@@ -329,7 +329,7 @@ function Contacts({ locale }:{ locale:string }) {
 
       </div>
 
-      <LazyMap />
+      <LazyMap locale={locale === 'ro' ? 'ro' : 'ru'} />
 
     </div>
   );

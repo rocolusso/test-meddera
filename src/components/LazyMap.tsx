@@ -4,7 +4,7 @@ import React from 'react';
 
 import LazyGoogleMapIframe from '@/components/LazyGoogleMapIframe';
 
-function LazyMap() {
+function LazyMap({ locale }: { locale: 'ru' | 'ro' }) {
   return (
     <div id="lazy-map">
       <div className="map-container mx-auto flex justify-center">
@@ -14,6 +14,7 @@ function LazyMap() {
               <LazyGoogleMapIframe
                 width={3840}
                 height={450}
+                locale={locale}
               />
             </div>
           </div>
