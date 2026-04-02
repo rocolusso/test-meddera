@@ -61,7 +61,6 @@ export default async function RootLayout({
   return (
     <html
       lang="ru"
-      data-scroll-behavior="smooth"
       style={{ overflowX: 'hidden' }}
     >
       <head>
