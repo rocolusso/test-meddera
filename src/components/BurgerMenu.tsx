@@ -17,34 +17,34 @@ import {
 } from '@/components/ui/dropdown-menu';
 
 function BurgerMenu({ locale }:{ locale:string }) {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
 
   const router = useRouter();
 
   return (
     <div>
-      <DropdownMenu>
-        <DropdownMenuTrigger>
-          <div>
-            {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-            <div aria-label="burger-btn-trigger" className="pl-5 py-5" onClick={() => setIsOpen(!isOpen)}>
-              <div className="block sm:hidden  border rounded p-2 ">
-                <HiOutlineMenuAlt3 size="48px" />
-              </div>
-            </div>
-          </div>
+      <DropdownMenu open={open} onOpenChange={setOpen}>
+        <DropdownMenuTrigger asChild>
+          <button
+            type="button"
+            aria-label="burger-btn-trigger"
+            className="pl-5 py-5"
+          >
+            <span className="block sm:hidden border rounded p-2">
+              <HiOutlineMenuAlt3 size="48px" />
+            </span>
+          </button>
         </DropdownMenuTrigger>
 
-        {
-          isOpen && locale === 'ru' && (
-            <DropdownMenuContent>
-
+        <DropdownMenuContent>
+          {locale === 'ru' ? (
+            <>
               <DropdownMenuItem>
                 <button
                   type="button"
                   onClick={() => {
                     router.push('/?section=about');
-                    setIsOpen(false);
+                    setOpen(false);
                   }}
                   className="flex items-center"
                 >
@@ -59,7 +59,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
                   type="button"
                   onClick={() => {
                     router.push('/?section=services');
-                    setIsOpen(false);
+                    setOpen(false);
                   }}
                   className="flex items-center"
                 >
@@ -74,7 +74,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
                   type="button"
                   onClick={() => {
                     router.push('/?section=contacts');
-                    setIsOpen(false);
+                    setOpen(false);
                   }}
                   className="flex items-center"
                 >
@@ -86,30 +86,25 @@ function BurgerMenu({ locale }:{ locale:string }) {
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>
-                <div className=" flex justify-center w-full">
+                <div className="flex justify-center w-full">
                   <Link
                     href="/ro"
-                    className="underline border border-black  hover:bg-black
-                                    hover:underline hover:text-white p-5 duration-300 hover:scale-105"
+                    className="underline border border-black hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
+                    onClick={() => setOpen(false)}
                   >
                     RO
                   </Link>
                 </div>
               </DropdownMenuItem>
-            </DropdownMenuContent>
-          )
-        }
-
-        {
-          isOpen && locale === 'ro' && (
-            <DropdownMenuContent>
-
+            </>
+          ) : (
+            <>
               <DropdownMenuItem>
                 <button
                   type="button"
                   onClick={() => {
                     router.push('/ro?section=about');
-                    setIsOpen(false);
+                    setOpen(false);
                   }}
                   className="flex items-center"
                 >
@@ -118,14 +113,13 @@ function BurgerMenu({ locale }:{ locale:string }) {
                     <BsArrowRightCircle size="25px" />
                   </div>
                 </button>
-
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <button
                   type="button"
                   onClick={() => {
                     router.push('/ro?section=services');
-                    setIsOpen(false);
+                    setOpen(false);
                   }}
                   className="flex items-center"
                 >
@@ -134,14 +128,13 @@ function BurgerMenu({ locale }:{ locale:string }) {
                     <BsArrowRightCircle size="25px" />
                   </div>
                 </button>
-
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <button
                   type="button"
                   onClick={() => {
                     router.push('/ro?section=contacts');
-                    setIsOpen(false);
+                    setOpen(false);
                   }}
                   className="flex items-center"
                 >
@@ -153,20 +146,19 @@ function BurgerMenu({ locale }:{ locale:string }) {
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>
-                <div className=" flex justify-center w-full">
+                <div className="flex justify-center w-full">
                   <Link
                     href="/"
-                    className="underline border border-black  hover:bg-black hover:underline
-                                    hover:text-white p-5 duration-300 hover:scale-105"
+                    className="underline border border-black hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
+                    onClick={() => setOpen(false)}
                   >
                     RU
                   </Link>
                 </div>
               </DropdownMenuItem>
-            </DropdownMenuContent>
-          )
-        }
-
+            </>
+          )}
+        </DropdownMenuContent>
       </DropdownMenu>
 
     </div>
