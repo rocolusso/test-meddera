@@ -212,13 +212,13 @@ import ContactsLipsDynamicRo from '@/components/ContactsLipsDynamicRo';
 
 export const metadata = {
   icons: { icon: '/favicon.ico' },
-  alternates: { canonical: 'https://meddera.md/ro/services/marire-buze-balts' },
+  alternates: { canonical: 'https://meddera.md/services/uvelychenye-gub-v-belczah/ro' },
   title: 'Mărire buze în Bălți — Proceduri eficiente și sigure',
   description: 'Mărire profesională a buzelor în Bălți. Conturare, acid hialuronic, fillere sigure. Programați-vă pentru consultație astăzi!',
   openGraph: {
     title: 'Mărire buze în Bălți — Proceduri eficiente și sigure',
     description: 'Mărire profesională a buzelor în Bălți. Conturare, acid hialuronic, fillere sigure. Programați-vă pentru consultație astăzi!',
-    url: 'https://meddera.md/ro/services/marire-buze-balts',
+    url: 'https://meddera.md/services/uvelychenye-gub-v-belczah/ro',
     type: 'website',
     images: [
       { url: 'https://meddera.md/assets/img/services/uvelicheniegub.png', width: 1200, height: 630, alt: 'Ekaterina Pyntya – Dermatolog-cosmetolog în Bălți' }

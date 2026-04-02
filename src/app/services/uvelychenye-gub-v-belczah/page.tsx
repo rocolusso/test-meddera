@@ -201,8 +201,7 @@ import uvelichenieGub7 from '../../../../public/assets/img/services/lips/lips7.p
 import uvelichenieGub8 from '../../../../public/assets/img/services/lips/lips8.png';
 import uvelichenieGub9 from '../../../../public/assets/img/services/lips/lips9.png';
 import uvelichenieGub10 from '../../../../public/assets/img/services/lips/lips10.png';
-import ContactsLips from '@/components/СontactsLips';
-import ContactsLipsDynamicRu from "@/components/ContactsLipsDynamicRu";
+import ContactsLipsDynamicRu from '@/components/ContactsLipsDynamicRu';
 
 export const metadata = {
   icons: { icon: '/favicon.ico' },
