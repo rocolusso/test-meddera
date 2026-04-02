@@ -193,6 +193,7 @@
 //
 // export default ServicePage13Ro;
 import React from 'react';
+import Link from 'next/link';
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import ServicesNew from '@/components/new-ui/ServicesNew';
 import FooterNew from '@/components/new-ui/FooterNew';
@@ -244,6 +245,11 @@ function ServicePageMoneyRO() {
           <h1 className="text-[1.8rem] sm:text-[3rem] mx-auto font-bold mb-8 max-w-[900px] text-center">
             Mărire buze în Bălți — sigur, frumos și natural
           </h1>
+          <p className="max-w-[900px] mx-auto mb-6 text-center text-sm text-gray-600">
+            <Link href="/ro/blog/marire-buzelor-balti" className="underline text-green-800 hover:text-green-950">
+              Ghid despre procedură (blog)
+            </Link>
+          </p>
 
           {/* Introducere */}
           <p className="max-w-[900px] mx-auto mb-10 text-lg leading-7">

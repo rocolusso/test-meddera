@@ -95,6 +95,19 @@ function FooterNew({ locale }: { locale: string }) {
                       hover:text-white transition  ease-in-out"
                     >
                       <Link
+                        href={locale === 'ru' ? '/blog' : '/ro/blog'}
+                        className="px-6 py-4 underline text-sm  inline-block w-full h-full"
+                      >
+                        {locale === 'ru' ? 'Блог' : 'Blog'}
+                      </Link>
+                    </div>
+
+                  </li>
+                  <li>
+                    <div className=" hover:scale-105 duration-300 hover:bg-green-400
+                      hover:text-white transition  ease-in-out"
+                    >
+                      <Link
                         href={locale === 'ru' ? '/?section=contacts' : '/ro?section=contacts'}
                         className="px-6 py-4 underline text-sm  inline-block w-full h-full"
                       >

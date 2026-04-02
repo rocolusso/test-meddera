@@ -1,7 +1,62 @@
 import { MetadataRoute } from 'next';
 
+import { getAllPosts, getMaxIndexPage } from '@/blog-data/registry';
+
+function blogSitemapEntries(): MetadataRoute.Sitemap {
+  const now = new Date();
+  const entries: MetadataRoute.Sitemap = [
+    {
+      url: 'https://meddera.md/blog',
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.75,
+    },
+    {
+      url: 'https://meddera.md/ro/blog',
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.75,
+    },
+  ];
+  for (const post of getAllPosts()) {
+    entries.push(
+      {
+        url: `https://meddera.md/blog/${post.slugRu}`,
+        lastModified: new Date(post.dateModified),
+        changeFrequency: 'monthly',
+        priority: post.kind === 'hub' ? 0.72 : 0.65,
+      },
+      {
+        url: `https://meddera.md/ro/blog/${post.slugRo}`,
+        lastModified: new Date(post.dateModified),
+        changeFrequency: 'monthly',
+        priority: post.kind === 'hub' ? 0.72 : 0.65,
+      },
+    );
+  }
+  const maxPage = getMaxIndexPage();
+  for (let p = 2; p <= maxPage; p += 1) {
+    entries.push(
+      {
+        url: `https://meddera.md/blog/page/${p}`,
+        lastModified: now,
+        changeFrequency: 'weekly',
+        priority: 0.6,
+      },
+      {
+        url: `https://meddera.md/ro/blog/page/${p}`,
+        lastModified: now,
+        changeFrequency: 'weekly',
+        priority: 0.6,
+      },
+    );
+  }
+  return entries;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const urls: MetadataRoute.Sitemap = [
+    ...blogSitemapEntries(),
     {
       url: 'https://meddera.md/',
       lastModified: new Date(),

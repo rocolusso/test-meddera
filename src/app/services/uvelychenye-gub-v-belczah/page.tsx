@@ -186,6 +186,7 @@
 // export default ServicePage13;
 
 import React from 'react';
+import Link from 'next/link';
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import ServicesNew from '@/components/new-ui/ServicesNew';
 import FooterNew from '@/components/new-ui/FooterNew';
@@ -237,6 +238,11 @@ function ServicePageMoney() {
           <h1 className="text-[1.8rem] sm:text-[3rem] mx-auto font-bold mb-8  max-w-[900px]">
             Увеличение губ в Бельцах — безопасно, красиво и естественно
           </h1>
+          <p className="max-w-[900px] mx-auto mb-6 text-center text-sm text-gray-600">
+            <Link href="/blog/uvelichenie-gub-beltsy" className="underline text-green-800 hover:text-green-950">
+              Гид по процедуре в блоге
+            </Link>
+          </p>
 
           {/* Вступление */}
           <p className="max-w-[900px] mx-auto mb-10 text-lg leading-7">

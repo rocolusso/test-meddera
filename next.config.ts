@@ -65,6 +65,37 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
+      // Blog: page 1 canonical on /blog and /ro/blog; bare /blog/page → /blog (reserved segment; do not use slug "page")
+      {
+        source: '/blog/page/1',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/ro/blog/page/1',
+        destination: '/ro/blog',
+        permanent: true,
+      },
+      {
+        source: '/blog/page',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/blog/page/',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/ro/blog/page',
+        destination: '/ro/blog',
+        permanent: true,
+      },
+      {
+        source: '/ro/blog/page/',
+        destination: '/ro/blog',
+        permanent: true,
+      },
       {
         source: '/services/massazh-lycza-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
         destination: '/ro',
