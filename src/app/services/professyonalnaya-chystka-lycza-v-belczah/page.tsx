@@ -192,7 +192,7 @@ function ServicePage3() {
                 {' '}
                 г. Бельцы, ул. Штефан Чел Маре, 13
               </p>
-              <p><a href="https://meddera.md/services/3">Подробнее о услуге на нашем сайте</a></p>
+              <p><a href="https://meddera.md/services/professyonalnaya-chystka-lycza-v-belczah">Подробнее о услуге на нашем сайте</a></p>
             </section>
 
           </div>
