@@ -15,7 +15,33 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const nonce = (await headers()).get('x-nonce') ?? undefined;
+  const reqHeaders = await headers();
+  const nonce = reqHeaders.get('x-nonce') ?? undefined;
+  const pathname = reqHeaders.get('x-pathname') ?? '/';
+  const origin = 'https://meddera.md';
+
+  const alternates = (() => {
+    // Only emit alternates when we know both RU and RO exist.
+    if (pathname === '/') {
+      return { ru: `${origin}/`, ro: `${origin}/ro` };
+    }
+    if (pathname === '/ro') {
+      return { ru: `${origin}/`, ro: `${origin}/ro` };
+    }
+
+    // Services use suffix `/ro`.
+    if (pathname.startsWith('/services/')) {
+      if (pathname.endsWith('/ro')) {
+        const ruPath = pathname.replace(/\/ro$/, '');
+        return { ru: `${origin}${ruPath}`, ro: `${origin}${pathname}` };
+      }
+      return { ru: `${origin}${pathname}`, ro: `${origin}${pathname}/ro` };
+    }
+
+    return null;
+  })();
+
+  const htmlLang = pathname === '/ro' || pathname.endsWith('/ro') ? 'ro' : 'ru';
   const isVercel = process.env.VERCEL === '1';
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -60,14 +86,21 @@ export default async function RootLayout({
   `;
   return (
     <html
-      lang="ru"
+      lang={htmlLang}
       style={{ overflowX: 'hidden' }}
     >
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-language" content="ru" />
+        <meta httpEquiv="content-language" content={htmlLang} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {alternates ? (
+          <>
+            <link rel="alternate" hrefLang="ru" href={alternates.ru} />
+            <link rel="alternate" hrefLang="ro" href={alternates.ro} />
+            <link rel="alternate" hrefLang="x-default" href={alternates.ru} />
+          </>
+        ) : null}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />

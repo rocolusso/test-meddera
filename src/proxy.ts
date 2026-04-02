@@ -21,6 +21,7 @@ function nextWithCsp(request: NextRequest): NextResponse {
 
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set('x-nonce', nonce);
+  requestHeaders.set('x-pathname', request.nextUrl.pathname);
 
   const response = NextResponse.next({
     request: { headers: requestHeaders },
