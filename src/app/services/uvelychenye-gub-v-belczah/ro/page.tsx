@@ -195,7 +195,6 @@
 import React from 'react';
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import ServicesNew from '@/components/new-ui/ServicesNew';
-import ContactsDynamicWrapperRo from '@/components/ContactsDynamicWrapperRo';
 import FooterNew from '@/components/new-ui/FooterNew';
 import Image from 'next/image';
 import uvelichenieGub from '@/../public/assets/img/services/uvelicheniegub.png';
@@ -209,6 +208,7 @@ import uvelichenieGub7 from '@/../public/assets/img/services/lips/lips7.png';
 import uvelichenieGub8 from '@/../public/assets/img/services/lips/lips8.png';
 import uvelichenieGub9 from '@/../public/assets/img/services/lips/lips9.png';
 import uvelichenieGub10 from '@/../public/assets/img/services/lips/lips10.png';
+import ContactsLipsDynamicRo from '@/components/ContactsLipsDynamicRo';
 
 export const metadata = {
   icons: { icon: '/favicon.ico' },
@@ -356,7 +356,7 @@ function ServicePageMoneyRO() {
           </div>
         </div>
 
-        <ContactsDynamicWrapperRo />
+        <ContactsLipsDynamicRo/>
         <ServicesNew locale="ro" />
         <FooterNew locale="ro" />
 
