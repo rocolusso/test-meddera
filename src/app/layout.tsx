@@ -45,38 +45,44 @@ export default async function RootLayout({
 
   const htmlLang = normalizedPath === '/ro' || normalizedPath.endsWith('/ro') ? 'ro' : 'ru';
   const isVercel = process.env.VERCEL === '1';
+  const clinicAddress = {
+    '@type': 'PostalAddress' as const,
+    streetAddress: 'Strada Stefan Cel Mare 13',
+    addressLocality: 'Bălți',
+    postalCode: 'MD-3100',
+    addressCountry: 'MD',
+  };
+
+  const physicianId = `${origin}/#physician`;
+  const clinicId = `${origin}/#clinic`;
+
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Physician',
-    name: 'Дерматолог Бельци Екатерина Пынтя',
-    image: 'https://meddera.md/assets/img/about_2k.jpg',
-    jobTitle: 'Dermatolog',
-    worksFor: {
-      '@type': 'MedicalClinic',
-      name: 'Meddera Beauty Clinic',
-      image: 'https://meddera.md/assets/img/img_contacts.jpg',
-      url: 'https://meddera.md/',
-      telephone: '+373-68-550-030',
-      priceRange: '$$',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Strada Stefan Cel Mare 13',
-        addressLocality: 'Вălti',
-        postalCode: 'MD-3100',
-        addressCountry: 'MD',
+    '@graph': [
+      {
+        '@type': 'Physician',
+        '@id': physicianId,
+        name: 'Дерматолог Бельци Екатерина Пынтя',
+        image: 'https://meddera.md/assets/img/about_2k.jpg',
+        url: 'https://meddera.md/',
+        telephone: '+373-68-550-030',
+        address: clinicAddress,
+        medicalSpecialty: {
+          '@type': 'MedicalSpecialty',
+          name: 'Dermatology',
+        },
       },
-    },
-    priceRange: '$$',
-    url: 'https://meddera.md/',
-    medicalSpecialty: 'Дерматология',
-    telephone: '+373-68-550-030',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Strada Stefan Cel Mare 13',
-      addressLocality: 'Вălti',
-      postalCode: 'MD-3100',
-      addressCountry: 'MD',
-    },
+      {
+        '@type': 'MedicalClinic',
+        '@id': clinicId,
+        name: 'Meddera Beauty Clinic',
+        image: 'https://meddera.md/assets/img/img_contacts.jpg',
+        url: 'https://meddera.md/',
+        telephone: '+373-68-550-030',
+        priceRange: '$$',
+        address: clinicAddress,
+      },
+    ],
   };
 
   const microsoftClarity = `
