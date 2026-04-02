@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from '@/components/ui/navigation-menu';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
@@ -50,16 +51,13 @@ function NavigationLinks({ locale }: { locale: string }) {
         </NavigationMenuList>
       </NavigationMenu>
       <div className="hidden sm:block">
-
-        <Button
-          className="underline hover:scale-105 hover:bg-green-400 hover:text-white hover:border-transparent border border-gray-400 duration-300"
+        <Link
+          href={locale === 'ru' ? '/ro' : '/'}
+          className="underline p-3 rounded-2xl hover:scale-105 hover:bg-green-400 hover:text-white hover:border-transparent border border-gray-400 duration-300"
           aria-label="locale-btn"
-          variant="default"
-          size="lg"
-          onClick={() => router.push(locale === 'ru' ? '/ro' : '/')}
         >
           {locale === 'ru' ? 'RO' : 'RU'}
-        </Button>
+        </Link>
 
       </div>
     </div>
