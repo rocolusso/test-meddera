@@ -9,7 +9,8 @@ export function GET() {
     {
       user_agent: 'prefetch-proxy',
       google_prefetch_proxy_eap: {
-        fraction: 0.5,
+        // fraction: 0.5,
+        fraction: 0.0,
       },
     },
   ];
