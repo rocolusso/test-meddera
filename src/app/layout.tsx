@@ -19,30 +19,31 @@ export default async function RootLayout({
   const reqHeaders = await headers();
   const nonce = reqHeaders.get('x-nonce') ?? undefined;
   const pathname = reqHeaders.get('x-pathname') ?? '/';
+  const normalizedPath = pathname !== '/' ? pathname.replace(/\/+$/, '') : '/';
   const origin = 'https://meddera.md';
 
   const alternates = (() => {
     // Only emit alternates when we know both RU and RO exist.
-    if (pathname === '/') {
+    if (normalizedPath === '/') {
       return { ru: `${origin}/`, ro: `${origin}/ro` };
     }
-    if (pathname === '/ro') {
+    if (normalizedPath === '/ro') {
       return { ru: `${origin}/`, ro: `${origin}/ro` };
     }
 
     // Services use suffix `/ro`.
-    if (pathname.startsWith('/services/')) {
-      if (pathname.endsWith('/ro')) {
-        const ruPath = pathname.replace(/\/ro$/, '');
-        return { ru: `${origin}${ruPath}`, ro: `${origin}${pathname}` };
+    if (normalizedPath.startsWith('/services/')) {
+      if (normalizedPath.endsWith('/ro')) {
+        const ruPath = normalizedPath.replace(/\/ro$/, '');
+        return { ru: `${origin}${ruPath}`, ro: `${origin}${normalizedPath}` };
       }
-      return { ru: `${origin}${pathname}`, ro: `${origin}${pathname}/ro` };
+      return { ru: `${origin}${normalizedPath}`, ro: `${origin}${normalizedPath}/ro` };
     }
 
     return null;
   })();
 
-  const htmlLang = pathname === '/ro' || pathname.endsWith('/ro') ? 'ro' : 'ru';
+  const htmlLang = normalizedPath === '/ro' || normalizedPath.endsWith('/ro') ? 'ro' : 'ru';
   const isVercel = process.env.VERCEL === '1';
   const jsonLd = {
     '@context': 'https://schema.org',
