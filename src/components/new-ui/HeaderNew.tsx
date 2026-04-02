@@ -8,21 +8,24 @@ import NavigationLinks from '@/components/new-ui/NavigationLinks';
 
 function HeaderNew({ locale }: { locale: string }) {
   return (
-    <header className="sticky top-0 left-0 sm:pt-10 backdrop-blur-2xl  z-40  border-b border-gray-400">
+    <header className="sticky top-0 left-0 sm:pt-10 backdrop-blur-2xl   z-40  border-b border-gray-400">
       <div
         className="container mx-auto "
       >
         <div
-          className="flex gap-5 p-5 items-center"
+          className="flex gap-2 sm:gap-5 pl-5 py-5 items-center"
         >
           <Link href="/">
-            <div className="max-w-[300px]">
+            <div className="w-[300px] min-h-[20px] shrink-0 flex items-center">
               <Image
                 src={pintea}
                 alt="pintea_logo"
                 width={300}
                 height={20}
                 priority
+                fetchPriority={'high'}
+                sizes="300px"
+                className="block"
               />
             </div>
           </Link>
