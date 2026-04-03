@@ -1,7 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+import { verifyRecaptchaToken } from '@/lib/recaptcha-verify';
+
 export async function POST(request: NextRequest) {
   const body = await request.json();
+
+  if (!process.env.RECAPTCHA_SECRET_KEY) {
+    return NextResponse.json({ error: 'Service unavailable' }, { status: 503 });
+  }
+
+  const token = typeof body.recaptchaToken === 'string' ? body.recaptchaToken : '';
+  if (!token) {
+    return NextResponse.json({ error: 'Bad request' }, { status: 400 });
+  }
+
+  const verified = await verifyRecaptchaToken(token);
+  if (!verified.ok) {
+    return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+  }
 
   const formName = 'Форма/ Увеличение Губ / LEAD';
   const name = body.message.username;

@@ -11,6 +11,8 @@ import imgAddress from '@/../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { trackEvent } from '@/lib/gtm';
+import { executeRecaptcha } from '@/lib/recaptcha-client';
+import RecaptchaDisclaimer from '@/components/RecaptchaDisclaimer';
 import DOMPurify from 'dompurify';
 
 function ContactsLips({ locale }:{ locale:string }) {
@@ -53,39 +55,63 @@ function ContactsLips({ locale }:{ locale:string }) {
   const [locked, setLocked] = useState(false);
 
   const [submitAlert, setSubmitAlert] = useState<boolean>(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const submitHandler = async (e:React.BaseSyntheticEvent) => {
     e.preventDefault();
     e.stopPropagation();
 
+    setSubmitError(null);
     setLocked(true);
 
     if (!name.length) {
       setLocked(false);
+      return;
     }
 
     if (!phone.length) {
       setLocked(false);
+      return;
     }
 
     if (name.length > 2 && phone.length > 5) {
-      const sendForm = async () => {
-        await fetch('/api/lips-form', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            message: {
-              username: name,
-              userphone: phone,
-              message,
-            },
-          }),
-        });
-      };
+      const recaptchaToken = await executeRecaptcha('lips_contact');
+      if (!recaptchaToken) {
+        setLocked(false);
+        setSubmitError(
+          locale === 'ru'
+            ? 'Не удалось проверить отправку. Обновите страницу и попробуйте снова.'
+            : 'Nu s-a putut verifica trimiterea. Reîmprospătați pagina și încercați din nou.',
+        );
+        return;
+      }
 
-      await sendForm();
+      const sendForm = async () => fetch('/api/lips-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          recaptchaToken,
+          message: {
+            username: name,
+            userphone: phone,
+            message,
+          },
+        }),
+      });
+
+      const res = await sendForm();
+
+      if (!res.ok) {
+        setLocked(false);
+        setSubmitError(
+          locale === 'ru'
+            ? 'Не удалось отправить сообщение. Попробуйте позже.'
+            : 'Nu s-a putut trimite mesajul. Încercați mai târziu.',
+        );
+        return;
+      }
 
       setName('');
       setPhone('');
@@ -96,6 +122,8 @@ function ContactsLips({ locale }:{ locale:string }) {
       setTimeout(() => {
         setSubmitAlert(false);
       }, 3000);
+    } else {
+      setLocked(false);
     }
   };
 
@@ -299,6 +327,16 @@ function ContactsLips({ locale }:{ locale:string }) {
                           />
 
                           {
+                            submitError
+                              && (
+                                <div className="submit_alert" id="formSubmitError">
+                                  <p className="p-5 bg-red-200 text-red-900 mb-5">
+                                    {submitError}
+                                  </p>
+                                </div>
+                              )
+                          }
+                          {
                             submitAlert
                               && (
                                 <div className="submit_alert" id="formSubmitAlert">
@@ -311,6 +349,8 @@ function ContactsLips({ locale }:{ locale:string }) {
                               )
                           }
                         </div>
+
+                        <RecaptchaDisclaimer locale={locale} />
 
                         <Button
                           className=" mt-6 w-full sm:w-fit font-bold underline hover:scale-105

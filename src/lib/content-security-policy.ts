@@ -21,6 +21,8 @@ export function buildContentSecurityPolicy(
   { isDev, enableTrustedTypes }: ContentSecurityPolicyOptions,
 ): string {
   const scriptSrcHosts = [
+    'https://www.google.com',
+    'https://www.gstatic.com',
     'https://www.googletagmanager.com',
     'https://www.google-analytics.com',
     'https://connect.facebook.net',
@@ -51,7 +53,7 @@ export function buildContentSecurityPolicy(
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com https://connect.facebook.net https://www.facebook.com https://www.google.com https://www.google.pl https://www.google.md https://googleads.g.doubleclick.net https://c.clarity.ms https://c.bing.com https://purecatamphetamine.github.io",
     "font-src 'self' data: https:",
-    "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.analytics.google.com https://www.googletagmanager.com https://www.google.com https://www.facebook.com https://graph.facebook.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms https://scripts.clarity.ms https://a.clarity.ms https://k.clarity.ms https://l.clarity.ms https://stats.g.doubleclick.net https://analytics.ahrefs.com",
+    "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.analytics.google.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://www.facebook.com https://graph.facebook.com https://connect.facebook.net https://clarity.ms https://www.clarity.ms https://scripts.clarity.ms https://a.clarity.ms https://k.clarity.ms https://l.clarity.ms https://stats.g.doubleclick.net https://analytics.ahrefs.com",
     "frame-src 'self' https://www.googletagmanager.com https://www.facebook.com https://maps.google.com https://www.google.com https://vercel.live",
     "form-action 'self'",
     'upgrade-insecure-requests',

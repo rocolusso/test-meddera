@@ -54,6 +54,7 @@ export default async function RootLayout({
     (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
   const htmlLang = isRoLocale ? 'ro' : 'ru';
   const isVercel = process.env.VERCEL === '1';
+  const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
   const clinicAddress = {
     '@type': 'PostalAddress' as const,
     streetAddress: 'Strada Stefan Cel Mare 13',
@@ -140,6 +141,13 @@ export default async function RootLayout({
           /* eslint-disable-next-line react/no-danger */
           dangerouslySetInnerHTML={{ __html: microsoftClarity }}
         />
+        {recaptchaSiteKey ? (
+          <Script
+            src={`https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`}
+            strategy="lazyOnload"
+            nonce={nonce}
+          />
+        ) : null}
       </head>
       {/* <GoogleAnalytics /> */}
       {isVercel ? <Analytics /> : null}
