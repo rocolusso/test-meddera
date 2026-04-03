@@ -188,14 +188,34 @@ function ContactsLips({ locale }:{ locale:string }) {
                       </p>
                     </div>
                     <div
-                      className="max-w-[400px] p-5 mx-auto  working-time-message flex flex-col items-center justify-center"
+                      className="max-w-[400px] mx-auto  working-time-message flex flex-col items-center justify-center"
                     >
+                      <div className="text-center pb-4">
+                        <p className="p-3 uppercase">
+                          {locale === 'ru' ? 'Часы работы по предварительной записи:' : 'Program de lucru doar cu programare prealabilă:'}
+                          {' '}
+                          13:00
+                          - 18:00
+                        </p>
+                      </div>
+
+                      <div className="text-center pb-4">
+                        <p className="rounded p-3 font-bold">
+                          {
+                            (locale === 'ru'
+                              ? 'Базовая стоимость консультации 400 MDL. Повторно - 200 MDL'
+                              : 'Costul de bază al consultației este de 400 MDL. Repetată — 200 MDL'
+                            )
+                          }
+                        </p>
+                      </div>
                       <div className="text-center">
                         <p className={!isWorkingHours
                           ? 'bg-red-700 text-white rounded p-3'
                           : 'bg-green-700 mb-6 text-white rounded p-3'}
                         >
                           {
+                            // eslint-disable-next-line no-nested-ternary
                             isWorkingHours
                               ? (locale === 'ru' ? 'Мы открыты!' : 'Suntem deschiși!')
                               : (locale === 'ru'
@@ -206,22 +226,22 @@ function ContactsLips({ locale }:{ locale:string }) {
                         </p>
                       </div>
                       {!isWorkingHours
-                          && (
-                            <p className="p-3 uppercase">
-                              {locale === 'ru' ? 'Текущее время:' : 'ora curentă'}
-                              {' '}
-                              {currentTime}
-                            </p>
-                          )}
+                              && (
+                                <p className="p-3 uppercase">
+                                  {locale === 'ru' ? 'Текущее время:' : 'ora curentă'}
+                                  {' '}
+                                  {currentTime}
+                                </p>
+                              )}
                       {!isWorkingHours
-                          && (
-                            <p className="p-3 uppercase">
-                              {locale === 'ru' ? 'Часы работы:' : 'Program de lucru:'}
-                              {' '}
-                              09:00
-                              - 20:00
-                            </p>
-                          )}
+                              && (
+                                <p className="p-3 uppercase">
+                                  {locale === 'ru' ? 'Часы работы:' : 'Program de lucru:'}
+                                  {' '}
+                                  13:00
+                                  - 18:00
+                                </p>
+                              )}
                     </div>
                     <form onSubmit={submitHandler} className="p-6 flex flex-col justify-center">
                       <fieldset disabled={locked}>

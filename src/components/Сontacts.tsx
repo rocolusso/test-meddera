@@ -17,8 +17,8 @@ function Contacts({ locale }:{ locale:string }) {
   const [isWorkingHours, setIsWorkingHours] = useState(false);
   const [currentTime, setCurrentTime] = useState('');
 
-  const workStart = 9; // 10:00
-  const workEnd = 20; // 17:00
+  const workStart = 13; // 13:00
+  const workEnd = 18; // 18:00
 
   const now = new Date();
   const hours = now.getHours();
@@ -191,11 +191,20 @@ function Contacts({ locale }:{ locale:string }) {
                       className="max-w-[400px] mx-auto  working-time-message flex flex-col items-center justify-center"
                     >
                       <div className="text-center pb-4">
+                        <p className="p-3 uppercase">
+                          {locale === 'ru' ? 'Часы работы по предварительной записи:' : 'Program de lucru doar cu programare prealabilă:'}
+                          {' '}
+                          13:00
+                          - 18:00
+                        </p>
+                      </div>
+
+                      <div className="text-center pb-4">
                         <p className="rounded p-3 font-bold">
                           {
                             (locale === 'ru'
-                              ? 'Базовая стоимость консультации 300 MDL.'
-                              : 'Costul de bază al consultației este de 300 MDL.'
+                              ? 'Базовая стоимость консультации 400 MDL. Повторно - 200 MDL'
+                              : 'Costul de bază al consultației este de 400 MDL. Repetată — 200 MDL'
                             )
                           }
                         </p>
@@ -229,8 +238,8 @@ function Contacts({ locale }:{ locale:string }) {
                             <p className="p-3 uppercase">
                               {locale === 'ru' ? 'Часы работы:' : 'Program de lucru:'}
                               {' '}
-                              09:00
-                              - 20:00
+                              13:00
+                              - 18:00
                             </p>
                           )}
                     </div>
