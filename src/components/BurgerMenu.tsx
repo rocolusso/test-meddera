@@ -6,7 +6,9 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { BsArrowRightCircle } from 'react-icons/bs';
 
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+
+import { getAlternateLocaleHref } from '@/lib/locale-switch';
 
 import {
   DropdownMenu,
@@ -20,6 +22,10 @@ function BurgerMenu({ locale }:{ locale:string }) {
   const [open, setOpen] = React.useState(false);
 
   const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const loc = locale === 'ru' ? 'ru' : 'ro';
+  const localeSwitchHref = getAlternateLocaleHref(pathname, searchParams, loc);
 
   return (
     <div>
@@ -88,7 +94,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
               <DropdownMenuItem>
                 <div className="flex justify-center w-full">
                   <Link
-                    href="/ro"
+                    href={localeSwitchHref}
                     className="underline rounded-xl border border-black hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
                     onClick={() => setOpen(false)}
                   >
@@ -148,7 +154,7 @@ function BurgerMenu({ locale }:{ locale:string }) {
               <DropdownMenuItem>
                 <div className="flex justify-center w-full">
                   <Link
-                    href="/"
+                    href={localeSwitchHref}
                     className="underline rounded-xl border border-black hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
                     onClick={() => setOpen(false)}
                   >

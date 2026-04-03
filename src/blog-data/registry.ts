@@ -213,6 +213,11 @@ export function getPostBySlug(slug: string, locale: BlogLocale): BlogPost | unde
   return BLOG_POSTS.find((p) => (locale === 'ru' ? p.slugRu === slug : p.slugRo === slug));
 }
 
+/** Resolve a post when the URL slug may be either RU or RO (e.g. language switcher). */
+export function findPostByAnySlug(slug: string): BlogPost | undefined {
+  return BLOG_POSTS.find((p) => p.slugRu === slug || p.slugRo === slug);
+}
+
 export function getPostById(id: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.id === id);
 }
