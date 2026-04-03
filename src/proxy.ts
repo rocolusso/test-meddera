@@ -46,6 +46,15 @@ export function proxy(request: NextRequest) {
     href: request.nextUrl.href,
   });
 
+  if (['IL', 'IN'].includes(countryCode)) {
+    console.log('[geo-block] redirect to /blocked', {
+      countryCode,
+      pathname: request.nextUrl.pathname,
+      href: request.nextUrl.href,
+    });
+    return NextResponse.redirect(new URL('/blocked', request.url));
+  }
+
   // if (['IL', 'IN', 'RU', 'JP', 'SE'].includes(countryCode)) {
   //   console.log('[geo-block] redirect to /blocked', {
   //     countryCode,
