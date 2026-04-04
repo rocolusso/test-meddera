@@ -36,9 +36,9 @@ function nextWithCsp(request: NextRequest): NextResponse {
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (pathname === '/blocked') {
-    return nextWithCsp(request);
-  }
+  // if (pathname === '/blocked') {
+  //   return nextWithCsp(request);
+  // }
 
   const country = request.geo?.country || request.headers.get('x-vercel-ip-country') || '';
   const countryCode = country.toUpperCase();
@@ -50,12 +50,41 @@ export function proxy(request: NextRequest) {
   });
 
   if (['IL', 'IN'].includes(countryCode)) {
-    console.log('[geo-block] redirect to /blocked', {
+    console.log('[geo-block] Access denied', {
       countryCode,
       pathname: request.nextUrl.pathname,
       href: request.nextUrl.href,
     });
-    return NextResponse.redirect(new URL('/blocked', request.url));
+
+    // Возвращаем ответ со статусом 403 напрямую
+    return new NextResponse(
+      JSON.stringify({ message: 'Access denied' }),
+      {
+        status: 403,
+        headers: { 'Content-Type': 'application/json' }
+      }
+    );
+  }
+
+  if (pathname === '/cert') {
+    // Возвращаем ответ со статусом 403 напрямую
+    return new NextResponse(
+      JSON.stringify({ message: 'Access denied' }),
+      {
+        status: 403,
+        headers: { 'Content-Type': 'application/json' }
+      }
+    );
+  }
+  if (pathname === '/blocked') {
+    // Возвращаем ответ со статусом 403 напрямую
+    return new NextResponse(
+      JSON.stringify({ message: 'Access denied' }),
+      {
+        status: 403,
+        headers: { 'Content-Type': 'application/json' }
+      }
+    );
   }
 
   // if (['IL', 'IN', 'RU', 'JP', 'SE'].includes(countryCode)) {
