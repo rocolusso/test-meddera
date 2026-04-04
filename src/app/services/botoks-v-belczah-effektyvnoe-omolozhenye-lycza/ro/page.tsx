@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza/ro',
   },
   title: 'Terapie antirid cu Botox în Bălți | Reîntinerește-ți aspectul',
-  description: 'Descoperă terapia antirid cu Botox în Bălți. Elimină ridurile și redă pielii tale un aspect tânăr și proaspăt. Programează-te acum!',
+  description:
+    'Botox în Bălți: riduri de expresie și hiperhidroză. Tratament sigur la Meddera. Programează consultație pentru rejuvenare facială.',
   openGraph: {
     title: 'Terapie antirid cu Botox în Bălți | Reîntinerește-ți aspectul',
-    description: 'Descoperă terapia antirid cu Botox în Bălți. Elimină ridurile și redă pielii tale un aspect tânăr și proaspăt. Programează-te acum!',
+    description:
+      'Botox în Bălți: riduri de expresie și hiperhidroză. Tratament sigur la Meddera. Programează consultație pentru rejuvenare facială.',
 
     url: 'https://meddera.md/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Terapie antirid cu Botox în Bălți | Reîntinerește-ți aspectul',
-    description: 'Descoperă terapia antirid cu Botox în Bălți. Elimină ridurile și redă pielii tale un aspect tânăr și proaspăt. Programează-te acum!',
+    description:
+      'Botox în Bălți: riduri de expresie și hiperhidroză. Tratament sigur la Meddera. Programează consultație pentru rejuvenare facială.',
 
     images: ['https://meddera.md/assets/img/services/botoks.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage14Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Terapie antirid Botox'}
+      title={'Terapie antirid cu Botox în Bălți'}
       heroImage={botoks}
       heroImageAlt={'Terapie antirid Botox — clinica Meddera, Bălți'}
     >

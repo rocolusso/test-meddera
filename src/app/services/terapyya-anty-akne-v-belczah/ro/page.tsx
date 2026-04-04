@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/terapyya-anty-akne-v-belczah/ro',
   },
   title: 'Terapie anti-acnee Bălți | Ten curat și sănătos',
-  description: 'Descoperă terapia anti-acnee în Bălți oferită de clinica Meddera. Tratament profesional pentru un ten curat și sănătos. Programează-te acum!',
+  description:
+    'Terapie anti-acnee în Bălți: ten curat, protocol personalizat la Meddera. Dermatocosmetolog, programări online.',
   openGraph: {
     title: 'Terapie anti-acnee Bălți | Ten curat și sănătos',
-    description: 'Descoperă terapia anti-acnee în Bălți oferită de clinica Meddera. Tratament profesional pentru un ten curat și sănătos. Programează-te acum!',
+    description:
+      'Terapie anti-acnee în Bălți: ten curat, protocol personalizat la Meddera. Dermatocosmetolog, programări online.',
 
     url: 'https://meddera.md/services/terapyya-anty-akne-v-belczah/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Terapie anti-acnee Bălți | Ten curat și sănătos',
-    description: 'Descoperă terapia anti-acnee în Bălți oferită de clinica Meddera. Tratament profesional pentru un ten curat și sănătos. Programează-te acum!',
+    description:
+      'Terapie anti-acnee în Bălți: ten curat, protocol personalizat la Meddera. Dermatocosmetolog, programări online.',
 
     images: ['https://meddera.md/assets/img/services/anti-akne.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage8Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Terapia anti-acnee'}
+      title={'Terapie anti-acnee în Bălți – tratament acnee și cicatrici'}
       heroImage={maskaLica}
       heroImageAlt={'Terapia anti-acnee — clinica Meddera, Bălți'}
     >

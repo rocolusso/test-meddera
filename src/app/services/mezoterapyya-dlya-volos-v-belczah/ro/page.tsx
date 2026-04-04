@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/mezoterapyya-dlya-volos-v-belczah/ro',
   },
   title: 'Mezoterapie păr Bălți – Stop căderii și regenerare',
-  description: 'Descoperă mezoterapia pentru păr în Bălți, o soluție eficientă împotriva căderii părului și alopeciei. Programează-te acum pentru un tratament personalizat.',
+  description:
+    'Mezoterapie pentru păr în Bălți: căderea părului, alopecie, îngrijire scalp. Tratament personalizat la Meddera. Programează-te.',
   openGraph: {
     title: 'Mezoterapie păr Bălți – Stop căderii și regenerare',
-    description: 'Descoperă mezoterapia pentru păr în Bălți, o soluție eficientă împotriva căderii părului și alopeciei. Programează-te acum pentru un tratament personalizat.',
+    description:
+      'Mezoterapie pentru păr în Bălți: căderea părului, alopecie, îngrijire scalp. Tratament personalizat la Meddera. Programează-te.',
 
     url: 'https://meddera.md/services/mezoterapyya-dlya-volos-v-belczah/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Mezoterapie păr Bălți – Stop căderii și regenerare',
-    description: 'Descoperă mezoterapia pentru păr în Bălți, o soluție eficientă împotriva căderii părului și alopeciei. Programează-te acum pentru un tratament personalizat.',
+    description:
+      'Mezoterapie pentru păr în Bălți: căderea părului, alopecie, îngrijire scalp. Tratament personalizat la Meddera. Programează-te.',
 
     images: ['https://meddera.md/assets/img/services/mezovolos.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage12Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Mezoterapia pentru păr'}
+      title={'Mezoterapie păr Bălți – Stop căderii și regenerare'}
       heroImage={mezovolos}
       heroImageAlt={'Mezoterapia pentru păr — clinica Meddera, Bălți'}
     >

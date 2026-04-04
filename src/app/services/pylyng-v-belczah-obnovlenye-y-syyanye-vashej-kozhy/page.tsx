@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
   },
   title: 'Пилинг в Бельцах – Косметологические услуги в Молдове | Meddera',
-  description: 'Профессиональный пилинг в Бельцах. Эффективные процедуры для обновления кожи лица и тела. Запишитесь на консультацию в Meddera.',
+  description:
+    'Пилинг в Бельцах: обновление кожи лица и тела. Консультация и процедуры клиники Meddera.',
   openGraph: {
     title: 'Пилинг в Бельцах – Косметологические услуги в Молдове | Meddera',
-    description: 'Профессиональный пилинг в Бельцах. Эффективные процедуры для обновления кожи лица и тела. Запишитесь на консультацию в Meddera.',
+    description:
+      'Пилинг в Бельцах: обновление кожи лица и тела. Консультация и процедуры клиники Meddera.',
 
     url: 'https://meddera.md/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Пилинг в Бельцах – Косметологические услуги в Молдове | Meddera',
-    description: 'Профессиональный пилинг в Бельцах. Эффективные процедуры для обновления кожи лица и тела. Запишитесь на консультацию в Meddera.',
+    description:
+      'Пилинг в Бельцах: обновление кожи лица и тела. Консультация и процедуры клиники Meddera.',
 
     images: ['https://meddera.md/assets/img/services/pilling.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage6() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Пилинг'}
+      title={'Пилинг в Бельцах – Косметологические услуги в Молдове'}
       heroImage={pilling}
       heroImageAlt={'Пилинг — клиника Meddera, Бельцы'}
     >

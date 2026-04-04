@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye/ro',
   },
   title: 'Consultație Dermatologică în Bălți | Clinica Meddera',
-  description: 'Programează o consultație dermatologică la Clinica Meddera din Bălți. Tratăm acnee, psoriazis, eczeme și alte afecțiuni ale pielii.',
+  description:
+    'Consultație dermatologică Meddera Bălți: acnee, psoriazis, eczeme. Tratamente pentru sănătatea pielii. Programări online.',
   openGraph: {
     title: 'Consultație Dermatologică în Bălți | Clinica Meddera',
-    description: 'Programează o consultație dermatologică la Clinica Meddera din Bălți. Tratăm acnee, psoriazis, eczeme și alte afecțiuni ale pielii.',
+    description:
+      'Consultație dermatologică Meddera Bălți: acnee, psoriazis, eczeme. Tratamente pentru sănătatea pielii. Programări online.',
     url: 'https://meddera.md/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye/ro',
     type: 'website',
     images: [
@@ -30,7 +32,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Consultație Dermatologică în Bălți | Clinica Meddera',
-    description: 'Programează o consultație dermatologică la Clinica Meddera din Bălți. Tratăm acnee, psoriazis, eczeme și alte afecțiuni ale pielii.',
+    description:
+      'Consultație dermatologică Meddera Bălți: acnee, psoriazis, eczeme. Tratamente pentru sănătatea pielii. Programări online.',
     images: ['https://meddera.md/assets/img/services/consult-derm.png'],
     site: '@your_twitter_handle',
   },
@@ -40,7 +43,7 @@ function ServicePage2Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Consultația dermatologică'}
+      title={'Consultație Dermatologică în Bălți | Clinica Meddera'}
       heroImage={consultderm}
       heroImageAlt={'Consultația dermatologică — clinica Meddera, Bălți'}
     >

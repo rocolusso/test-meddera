@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/karboksyterapyya-v-belczah',
   },
   title: 'Карбокситерапия в Бельцах – Омоложение и лечение кожи | Meddera',
-  description: 'Карбокситерапия в Бельцах от клиники Meddera – эффективное омоложение кожи, лечение акне, пигментации и целлюлита. Запишитесь на процедуру уже сегодня!',
+  description:
+    'Карбокситерапия в Бельцах (Meddera): омоложение кожи, акне, пигментация, целлюлит. Запись на процедуру.',
   openGraph: {
     title: 'Карбокситерапия в Бельцах – Омоложение и лечение кожи | Meddera',
-    description: 'Карбокситерапия в Бельцах от клиники Meddera – эффективное омоложение кожи, лечение акне, пигментации и целлюлита. Запишитесь на процедуру уже сегодня!',
+    description:
+      'Карбокситерапия в Бельцах (Meddera): омоложение кожи, акне, пигментация, целлюлит. Запись на процедуру.',
 
     url: 'https://meddera.md/services/karboksyterapyya-v-belczah',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Карбокситерапия в Бельцах – Омоложение и лечение кожи | Meddera',
-    description: 'Карбокситерапия в Бельцах от клиники Meddera – эффективное омоложение кожи, лечение акне, пигментации и целлюлита. Запишитесь на процедуру уже сегодня!',
+    description:
+      'Карбокситерапия в Бельцах (Meddera): омоложение кожи, акне, пигментация, целлюлит. Запись на процедуру.',
 
     images: ['https://meddera.md/assets/img/services/karbiksiterapiya.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage5() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Карбокситерапия'}
+      title={'Карбокситерапия в Бельцах – Омоложение и лечение кожи'}
       heroImage={karboksiterapiya}
       heroImageAlt={'Карбокситерапия — клиника Meddera, Бельцы'}
     >

@@ -14,7 +14,7 @@ export type AboutCopy = {
 
 export const aboutCopy: Record<'ru' | 'ro', AboutCopy> = {
   ru: {
-    sectionTitle: 'Обо мне',
+    sectionTitle: 'Обо мне — Екатерина Пынтя, дерматолог в Бельцах',
     badge: 'Почему выбирают меня?',
     name: 'Пынтя Екатерина',
     bioColumns: [
@@ -59,7 +59,7 @@ export const aboutCopy: Record<'ru' | 'ro', AboutCopy> = {
     imageAlt: 'Екатерина Пынтя — дерматолог-косметолог, клиника Meddera, Бельцы',
   },
   ro: {
-    sectionTitle: 'Despre mine',
+    sectionTitle: 'Despre mine — Ecaterina Pîntea, dermatolog în Bălți',
     badge: 'De ce mă aleg pe mine?',
     name: 'Pîntea Ecaterina',
     bioColumns: [

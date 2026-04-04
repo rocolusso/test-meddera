@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
   },
   title: 'Дермапен в Бельцах – фракционная мезотерапия для омоложения кожи',
-  description: 'Безболезненное омоложение кожи в Бельцах: устранение морщин, рубцов и пигментации с минимальным восстановлением. Запишитесь на процедуру Дермапен!',
+  description:
+    'Дермапен в Бельцах: морщины, рубцы, пигментация, мягкая реабилитация. Запись на процедуру в Meddera.',
   openGraph: {
     title: 'Дермапен в Бельцах – фракционная мезотерапия для омоложения кожи',
-    description: 'Безболезненное омоложение кожи в Бельцах: устранение морщин, рубцов и пигментации с минимальным восстановлением. Запишитесь на процедуру Дермапен!',
+    description:
+      'Дермапен в Бельцах: морщины, рубцы, пигментация, мягкая реабилитация. Запись на процедуру в Meddera.',
 
     url: 'https://meddera.md/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Дермапен в Бельцах – фракционная мезотерапия для омоложения кожи',
-    description: 'Безболезненное омоложение кожи в Бельцах: устранение морщин, рубцов и пигментации с минимальным восстановлением. Запишитесь на процедуру Дермапен!',
+    description:
+      'Дермапен в Бельцах: морщины, рубцы, пигментация, мягкая реабилитация. Запись на процедуру в Meddera.',
 
     images: ['https://meddera.md/assets/img/services/dermapen.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage10() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Дермапен'}
+      title={'Дермапен в Бельцах – фракционная мезотерапия для омоложения кожи'}
       heroImage={dermapen}
       heroImageAlt={'Дермапен — клиника Meddera, Бельцы'}
     >

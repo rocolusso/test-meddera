@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe/ro',
   },
   title: 'Mezoterapie Facială în Bălți | Rejuvenare și Hidratare Profesională',
-  description: 'Descoperă mezoterapia facială în Bălți pentru o piele hidratată și întinerită. Programează-te acum pentru un tratament profesional de rejuvenare facială.',
+  description:
+    'Mezoterapie facială în Bălți: ten hidratat, întinerit, riduri și pigmentație. Tratament personalizat la clinica Meddera.',
   openGraph: {
     title: 'Mezoterapie Facială în Bălți | Rejuvenare și Hidratare Profesională',
-    description: 'Descoperă mezoterapia facială în Bălți pentru o piele hidratată și întinerită. Programează-te acum pentru un tratament profesional de rejuvenare facială.',
+    description:
+      'Mezoterapie facială în Bălți: ten hidratat, întinerit, riduri și pigmentație. Tratament personalizat la clinica Meddera.',
 
     url: 'https://meddera.md/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Mezoterapie Facială în Bălți | Rejuvenare și Hidratare Profesională',
-    description: 'Descoperă mezoterapia facială în Bălți pentru o piele hidratată și întinerită. Programează-te acum pentru un tratament profesional de rejuvenare facială.',
+    description:
+      'Mezoterapie facială în Bălți: ten hidratat, întinerit, riduri și pigmentație. Tratament personalizat la clinica Meddera.',
 
     images: ['https://meddera.md/assets/img/services/mezolica.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage11Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Mezoterapia facială'}
+      title={'Mezoterapie facială în Bălți – rejuvenare și hidratare ten'}
       heroImage={mezolica}
       heroImageAlt={'Mezoterapia facială — clinica Meddera, Bălți'}
     >

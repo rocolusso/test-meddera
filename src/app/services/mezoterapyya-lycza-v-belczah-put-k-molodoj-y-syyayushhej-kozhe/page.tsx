@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
   },
   title: 'Мезотерапия лица в Бельцах – омоложение и сияние кожи | Meddera',
-  description: 'Профессиональная мезотерапия лица в Бельцах. Омоложение, увлажнение, устранение морщин и пигментации. Запишитесь на процедуру в клинике Meddera.',
+  description:
+    'Мезотерапия лица в Бельцах: увлажнение, омоложение, морщины и пигментация. Запись на процедуру в клинике Meddera.',
   openGraph: {
     title: 'Мезотерапия лица в Бельцах – омоложение и сияние кожи | Meddera',
-    description: 'Профессиональная мезотерапия лица в Бельцах. Омоложение, увлажнение, устранение морщин и пигментации. Запишитесь на процедуру в клинике Meddera.',
+    description:
+      'Мезотерапия лица в Бельцах: увлажнение, омоложение, морщины и пигментация. Запись на процедуру в клинике Meddera.',
 
     url: 'https://meddera.md/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Мезотерапия лица в Бельцах – омоложение и сияние кожи | Meddera',
-    description: 'Профессиональная мезотерапия лица в Бельцах. Омоложение, увлажнение, устранение морщин и пигментации. Запишитесь на процедуру в клинике Meddera.',
+    description:
+      'Мезотерапия лица в Бельцах: увлажнение, омоложение, морщины и пигментация. Запись на процедуру в клинике Meddera.',
 
     images: ['https://meddera.md/assets/img/services/mezolica.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage11() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Мезотерапия лица'}
+      title={'Мезотерапия лица в Бельцах – омоложение и сияние кожи'}
       heroImage={mezolica}
       heroImageAlt={'Мезотерапия лица — клиника Meddera, Бельцы'}
     >

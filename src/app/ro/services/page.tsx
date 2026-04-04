@@ -11,9 +11,9 @@ import { OG_SITE_NAME } from '@/lib/site-og';
 const canonical = 'https://meddera.md/ro/services';
 const ruUrl = 'https://meddera.md/services';
 
-const PAGE_TITLE = 'Servicii clinica Meddera Bălți — dermatologie și cosmetologie | Meddera';
+const PAGE_TITLE = 'Servicii Meddera Bălți — dermatologie și cosmetologie | Meddera';
 const PAGE_DESC =
-  'Lista serviciilor: consultații dermatolog și dermatocosmetolog, curățare facială, peeling, mezoterapie, botox, fillere, mărirea buzelor, dermapen și alte proceduri la Bălți.';
+  'Servicii Meddera Bălți: dermatolog, dermatocosmetolog, curățare, peeling, mezoterapie, botox, fillere, dermapen. Programări online.';
 const OG_IMAGE = 'https://meddera.md/assets/img/baner5.jpg';
 
 const jsonLd = servicesIndexJsonLd({

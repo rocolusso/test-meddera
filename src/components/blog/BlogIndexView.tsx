@@ -21,7 +21,7 @@ export function BlogIndexView({ locale, page }: Props) {
   const posts = getPostsForIndexPage(locale, page);
   const lipsHub = getHubForCluster('lips');
 
-  const title = isRu ? 'Блог' : 'Blog';
+  const title = isRu ? 'Блог клиники Meddera в Бельцах' : 'Blog — clinica Meddera din Bălți';
   const clusterTitle = isRu ? 'Кластер: увеличение губ' : 'Cluster: mărirea buzelor';
   const clusterDesc = isRu
     ? 'Гид по процедуре, этапам и записи в Meddera.'

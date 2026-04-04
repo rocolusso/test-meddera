@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy/ro',
   },
   title: 'Peeling facial profesional în Bălți – Reînnoiește-ți pielea cu Meddera',
-  description: 'Descoperă beneficiile peelingului facial la clinica Meddera din Bălți. Proceduri personalizate pentru un ten luminos și sănătos. Programează-te acum!',
+  description:
+    'Peeling facial în Bălți: ten luminos, proceduri personalizate la Meddera. Programează consultația.',
   openGraph: {
     title: 'Peeling facial profesional în Bălți – Reînnoiește-ți pielea cu Meddera',
-    description: 'Descoperă beneficiile peelingului facial la clinica Meddera din Bălți. Proceduri personalizate pentru un ten luminos și sănătos. Programează-te acum!',
+    description:
+      'Peeling facial în Bălți: ten luminos, proceduri personalizate la Meddera. Programează consultația.',
 
     url: 'https://meddera.md/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Peeling facial profesional în Bălți – Reînnoiește-ți pielea cu Meddera',
-    description: 'Descoperă beneficiile peelingului facial la clinica Meddera din Bălți. Proceduri personalizate pentru un ten luminos și sănătos. Programează-te acum!',
+    description:
+      'Peeling facial în Bălți: ten luminos, proceduri personalizate la Meddera. Programează consultația.',
 
     images: ['https://meddera.md/assets/img/services/pilling.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage6Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Peelingul'}
+      title={'Peeling facial profesional în Bălți – piele reînnoită'}
       heroImage={pilling}
       heroImageAlt={'Peelingul — clinica Meddera, Bălți'}
     >

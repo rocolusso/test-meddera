@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
   },
   title: 'Masca alginată în Bălți – Ten hidratat și luminos',
-  description: 'Masca alginată în Bălți: hidratare intensă, lifting și revitalizare pentru un ten luminos. Programează-te acum!',
+  description:
+    'Mască alginată în Bălți: hidratare, lifting, ten luminos. Programează procedura la clinica Meddera.',
   openGraph: {
     title: 'Masca alginată în Bălți – Ten hidratat și luminos',
-    description: 'Masca alginată în Bălți: hidratare intensă, lifting și revitalizare pentru un ten luminos. Programează-te acum!',
+    description:
+      'Mască alginată în Bălți: hidratare, lifting, ten luminos. Programează procedura la clinica Meddera.',
 
     url: 'https://meddera.md/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Masca alginată în Bălți – Ten hidratat și luminos',
-    description: 'Masca alginată în Bălți: hidratare intensă, lifting și revitalizare pentru un ten luminos. Programează-te acum!',
+    description:
+      'Mască alginată în Bălți: hidratare, lifting, ten luminos. Programează procedura la clinica Meddera.',
 
     images: ['https://meddera.md/assets/img/services/maska_lica.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage7Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Masca alginată'}
+      title={'Masca alginată în Bălți – ten hidratat și luminos'}
       heroImage={maskaLica}
       heroImageAlt={'Masca alginată — clinica Meddera, Bălți'}
     >

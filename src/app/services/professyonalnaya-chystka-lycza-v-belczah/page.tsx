@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/professyonalnaya-chystka-lycza-v-belczah',
   },
   title: 'Чистка лица в Бельцах — косметология Meddera',
-  description: 'Профессиональная чистка лица в Бельцах от дерматолога Екатерины Пынтя — глубокое очищение кожи с индивидуальным подходом.',
+  description:
+    'Чистка лица в Бельцах: глубокое очищение и индивидуальный план у дерматолога Meddera. Запись на приём.',
   openGraph: {
     title: 'Чистка лица в Бельцах — косметология Meddera',
-    description: 'Профессиональная чистка лица в Бельцах от дерматолога Екатерины Пынтя — глубокое очищение кожи с индивидуальным подходом.',
+    description:
+      'Чистка лица в Бельцах: глубокое очищение и индивидуальный план у дерматолога Meddera. Запись на приём.',
     url: 'https://meddera.md/services/professyonalnaya-chystka-lycza-v-belczah',
     type: 'website',
     images: [
@@ -30,7 +32,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Чистка лица в Бельцах — косметология Meddera',
-    description: 'Профессиональная чистка лица в Бельцах от дерматолога Екатерины Пынтя — глубокое очищение кожи с индивидуальным подходом.',
+    description:
+      'Чистка лица в Бельцах: глубокое очищение и индивидуальный план у дерматолога Meddera. Запись на приём.',
     images: ['https://meddera.md/assets/img/services/chistka_lica.png'],
     site: '@your_twitter_handle',
   },
@@ -40,7 +43,7 @@ function ServicePage3() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Чистка лица'}
+      title={'Чистка лица в Бельцах — косметология Meddera'}
       heroImage={chistkaLica}
       heroImageAlt={'Чистка лица — клиника Meddera, Бельцы'}
     >

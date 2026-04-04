@@ -61,7 +61,9 @@ function ServicesNew({
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 md:py-24 lg:px-8">
         <header className="mx-auto max-w-2xl text-center">
           <TitleTag className="px-2 text-[clamp(1.5rem,4vw,2.75rem)] font-semibold leading-tight tracking-tight text-foreground">
-            {loc === 'ru' ? 'Услуги' : 'Servicii'}
+            {loc === 'ru'
+              ? 'Услуги клиники Meddera в Бельцах'
+              : 'Servicii clinica Meddera în Bălți'}
           </TitleTag>
           <div className="mx-auto mt-5 h-px w-14 bg-border sm:mt-6" aria-hidden />
         </header>

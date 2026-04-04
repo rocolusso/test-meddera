@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/ynjekczyy-lypolytykov-v-belczah/ro',
   },
   title: 'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei',
-  description: 'Elimină grăsimea localizată în Bălți cu lipoliza injectabilă – procedură non-invazivă, fără chirurgie. Programează-te acum pentru o consultație gratuită!',
+  description:
+    'Lipoliză injectabilă în Bălți: grăsime localizată, fără operație. Consultație la Meddera. Programează-te online.',
   openGraph: {
     title: 'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei',
-    description: 'Elimină grăsimea localizată în Bălți cu lipoliza injectabilă – procedură non-invazivă, fără chirurgie. Programează-te acum pentru o consultație gratuită!',
+    description:
+      'Lipoliză injectabilă în Bălți: grăsime localizată, fără operație. Consultație la Meddera. Programează-te online.',
 
     url: 'https://meddera.md/services/ynjekczyy-lypolytykov-v-belczah/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei',
-    description: 'Elimină grăsimea localizată în Bălți cu lipoliza injectabilă – procedură non-invazivă, fără chirurgie. Programează-te acum pentru o consultație gratuită!',
+    description:
+      'Lipoliză injectabilă în Bălți: grăsime localizată, fără operație. Consultație la Meddera. Programează-te online.',
 
     images: ['https://meddera.md/assets/img/services/lipolitiki.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage17Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Injecții lipolitice'}
+      title={'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei'}
       heroImage={lipolitiki}
       heroImageAlt={'Injecții lipolitice — clinica Meddera, Bălți'}
     >

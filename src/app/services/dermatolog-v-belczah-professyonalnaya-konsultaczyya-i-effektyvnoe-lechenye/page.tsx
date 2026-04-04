@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
   },
   title: 'Дерматолог в Бельцах – Консультация и Лечение Кожи',
-  description: 'Профессиональная консультация дерматолога в Бельцах: диагностика и лечение акне, экземы, псориаза, удаление новообразований. Запишитесь онлайн.',
+  description:
+    'Дерматолог в Бельцах: диагностика и лечение акне, экземы, псориаза, новообразований. Запись онлайн в Meddera.',
   openGraph: {
     title: 'Дерматолог в Бельцах – Консультация и Лечение Кожи',
-    description: 'Профессиональная консультация дерматолога в Бельцах: диагностика и лечение акне, экземы, псориаза, удаление новообразований. Запишитесь онлайн.',
+    description:
+      'Дерматолог в Бельцах: диагностика и лечение акне, экземы, псориаза, новообразований. Запись онлайн в Meddera.',
     url: 'https://meddera.md/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
     type: 'website',
     images: [
@@ -30,7 +32,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Дерматолог в Бельцах – Консультация и Лечение Кожи',
-    description: 'Профессиональная консультация дерматолога в Бельцах: диагностика и лечение акне, экземы, псориаза, удаление новообразований. Запишитесь онлайн.',
+    description:
+      'Дерматолог в Бельцах: диагностика и лечение акне, экземы, псориаза, новообразований. Запись онлайн в Meddera.',
 
     images: ['https://meddera.md/assets/img/services/consult-derm.png'],
     site: '@your_twitter_handle',
@@ -41,7 +44,7 @@ function ServicePage2() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Дерматологическая консультация'}
+      title={'Дерматолог в Бельцах – Консультация и Лечение Кожи'}
       heroImage={consultderm}
       heroImageAlt={'Дерматологическая консультация — клиника Meddera, Бельцы'}
     >

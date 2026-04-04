@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/konsultaczyya-dermatokosmetologa-v-belczah/ro',
   },
   title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
-  description: 'Consultații dermatocosmetologice în Bălți: tratamente personalizate pentru acnee, pigmentare, riduri și o piele sănătoasă și radiantă.',
+  description:
+    'Consultații dermatocosmetologice în Bălți: acnee, pigmentare, riduri. Plan personalizat pentru un ten sănătos. Clinica Meddera.',
   openGraph: {
     title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
-    description: 'Consultații dermatocosmetologice în Bălți: tratamente personalizate pentru acnee, pigmentare, riduri și o piele sănătoasă și radiantă.',
+    description:
+      'Consultații dermatocosmetologice în Bălți: acnee, pigmentare, riduri. Plan personalizat pentru un ten sănătos. Clinica Meddera.',
 
     url: 'https://meddera.md/services/konsultaczyya-dermatokosmetologa-v-belczah/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
-    description: 'Consultații dermatocosmetologice în Bălți: tratamente personalizate pentru acnee, pigmentare, riduri și o piele sănătoasă și radiantă.',
+    description:
+      'Consultații dermatocosmetologice în Bălți: acnee, pigmentare, riduri. Plan personalizat pentru un ten sănătos. Clinica Meddera.',
 
     images: ['https://meddera.md/assets/img/services/consult-cosm.png'],
     site: '@your_twitter_handle',

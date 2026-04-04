@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/karboksyterapyya-v-belczah/ro',
   },
   title: 'Carboxiterapie Bălți - Rejuvenare Facială și Corporală | Meddera',
-  description: 'Descoperă carboxiterapia la Meddera Bălți - tratament non-invaziv pentru întinerirea pielii, reducerea celulitei și vergeturilor. Programează-te acum!',
+  description:
+    'Carboxiterapie Meddera Bălți: piele întinerită, celulită, vergeturi. Tratament non-invaziv. Programări online.',
   openGraph: {
     title: 'Carboxiterapie Bălți - Rejuvenare Facială și Corporală | Meddera',
-    description: 'Descoperă carboxiterapia la Meddera Bălți - tratament non-invaziv pentru întinerirea pielii, reducerea celulitei și vergeturilor. Programează-te acum!',
+    description:
+      'Carboxiterapie Meddera Bălți: piele întinerită, celulită, vergeturi. Tratament non-invaziv. Programări online.',
 
     url: 'https://meddera.md/services/karboksyterapyya-v-belczah/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Carboxiterapie Bălți - Rejuvenare Facială și Corporală | Meddera',
-    description: 'Descoperă carboxiterapia la Meddera Bălți - tratament non-invaziv pentru întinerirea pielii, reducerea celulitei și vergeturilor. Programează-te acum!',
+    description:
+      'Carboxiterapie Meddera Bălți: piele întinerită, celulită, vergeturi. Tratament non-invaziv. Programări online.',
 
     images: ['https://meddera.md/assets/img/services/karbiksiterapiya.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage5Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Carboxiterapie'}
+      title={'Carboxiterapie Bălți – rejuvenare facială și corporală'}
       heroImage={karboksiterapiya}
       heroImageAlt={'Carboxiterapie — clinica Meddera, Bălți'}
     >

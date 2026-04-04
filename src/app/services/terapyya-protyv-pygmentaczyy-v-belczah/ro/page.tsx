@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/terapyya-protyv-pygmentaczyy-v-belczah/ro',
   },
   title: 'Terapie Antipigmentară în Bălți | Elimină Petele Pigmentare cu Meddera',
-  description: 'Terapie antipigmentară profesională la Meddera Bălți. Elimină pete pigmentare, melasma și hiperpigmentarea. Programează-te acum!',
+  description:
+    'Terapie antipigmentară în Bălți: pete, melasma, hiperpigmentare. Tratamente la Meddera. Programează consultația.',
   openGraph: {
     title: 'Terapie Antipigmentară în Bălți | Elimină Petele Pigmentare cu Meddera',
-    description: 'Terapie antipigmentară profesională la Meddera Bălți. Elimină pete pigmentare, melasma și hiperpigmentarea. Programează-te acum!',
+    description:
+      'Terapie antipigmentară în Bălți: pete, melasma, hiperpigmentare. Tratamente la Meddera. Programează consultația.',
 
     url: 'https://meddera.md/services/terapyya-protyv-pygmentaczyy-v-belczah/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Terapie Antipigmentară în Bălți | Elimină Petele Pigmentare cu Meddera',
-    description: 'Terapie antipigmentară profesională la Meddera Bălți. Elimină pete pigmentare, melasma și hiperpigmentarea. Programează-te acum!',
+    description:
+      'Terapie antipigmentară în Bălți: pete, melasma, hiperpigmentare. Tratamente la Meddera. Programează consultația.',
 
     images: ['https://meddera.md/assets/img/services/terapiya-protiv-pigm.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage9Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Terapie antipigmentară'}
+      title={'Terapie antipigmentară în Bălți – eliminare pete pigmentare'}
       heroImage={terapiyaProtivPigment}
       heroImageAlt={'Terapie antipigmentară — clinica Meddera, Bălți'}
     >

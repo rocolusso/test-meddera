@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/byorevytalyzaczyya-v-belczah/ro',
   },
   title: 'Biorevitalizare în Bălți - Rejuvenare Facială Profesională',
-  description: 'Descoperă biorevitalizarea în Bălți - procedură avansată de rejuvenare facială. Hidratează, regenerează și redă strălucirea pielii tale. Programează-te acum!',
+  description:
+    'Biorevitalizare în Bălți: hidratare, regenerare și strălucire naturală a pielii. Proceduri la clinica Meddera.',
   openGraph: {
     title: 'Biorevitalizare în Bălți - Rejuvenare Facială Profesională',
-    description: 'Descoperă biorevitalizarea în Bălți - procedură avansată de rejuvenare facială. Hidratează, regenerează și redă strălucirea pielii tale. Programează-te acum!',
+    description:
+      'Biorevitalizare în Bălți: hidratare, regenerare și strălucire naturală a pielii. Proceduri la clinica Meddera.',
 
     url: 'https://meddera.md/services/byorevytalyzaczyya-v-belczah/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Biorevitalizare în Bălți - Rejuvenare Facială Profesională',
-    description: 'Descoperă biorevitalizarea în Bălți - procedură avansată de rejuvenare facială. Hidratează, regenerează și redă strălucirea pielii tale. Programează-te acum!',
+    description:
+      'Biorevitalizare în Bălți: hidratare, regenerare și strălucire naturală a pielii. Proceduri la clinica Meddera.',
 
     images: ['https://meddera.md/assets/img/services/biorevit.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage15Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Biorevitalizarea'}
+      title={'Biorevitalizare în Bălți – rejuvenare facială profesională'}
       heroImage={biorevit}
       heroImageAlt={'Biorevitalizarea — clinica Meddera, Bălți'}
     >

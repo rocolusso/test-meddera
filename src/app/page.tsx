@@ -14,9 +14,8 @@ import { blogSocialMetadata } from '@/lib/site-og';
 
 const canonical = 'https://meddera.md/';
 const HOME_TITLE = 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах';
-const HOME_DESCRIPTION = `Екатерина Пынтя – опытный дерматолог-косметолог в Бельцах.
-  Клиника Meddera: дерматология, косметология,
-  удаление образований, ботокс, филлеры, мезотерапия.`;
+const HOME_DESCRIPTION =
+  'Екатерина Пынтя — дерматолог-косметолог в Бельцах, клиника Meddera: дерматология, косметология, удаление образований, ботокс, филлеры, мезотерапия.';
 
 const jsonLd = webPageJsonLd({
   pageUrl: canonical,

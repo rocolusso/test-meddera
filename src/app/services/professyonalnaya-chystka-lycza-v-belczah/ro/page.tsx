@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/professyonalnaya-chystka-lycza-v-belczah/ro',
   },
   title: 'Curățare facială profesională în Bălți | Îngrijire completă a tenului',
-  description: 'Descoperă cele mai eficiente tratamente de curățare facială în Bălți. Îmbunătățește sănătatea și aspectul tenului tău cu ajutorul specialiștilor noștri.',
+  description:
+    'Curățare facială profesională în Bălți: ten curat, tratamente personalizate. Specialiști Meddera, programări online.',
   openGraph: {
     title: 'Curățare facială profesională în Bălți | Îngrijire completă a tenului',
-    description: 'Descoperă cele mai eficiente tratamente de curățare facială în Bălți. Îmbunătățește sănătatea și aspectul tenului tău cu ajutorul specialiștilor noștri.',
+    description:
+      'Curățare facială profesională în Bălți: ten curat, tratamente personalizate. Specialiști Meddera, programări online.',
 
     url: 'https://meddera.md/services/professyonalnaya-chystka-lycza-v-belczah/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Curățare facială profesională în Bălți | Îngrijire completă a tenului',
-    description: 'Descoperă cele mai eficiente tratamente de curățare facială în Bălți. Îmbunătățește sănătatea și aspectul tenului tău cu ajutorul specialiștilor noștri.',
+    description:
+      'Curățare facială profesională în Bălți: ten curat, tratamente personalizate. Specialiști Meddera, programări online.',
 
     images: ['https://meddera.md/assets/img/services/chistka_lica.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage3Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Curățirea feței'}
+      title={'Curățare facială profesională în Bălți | Îngrijire completă a tenului'}
       heroImage={chistkaLica}
       heroImageAlt={'Curățirea feței — clinica Meddera, Bălți'}
     >

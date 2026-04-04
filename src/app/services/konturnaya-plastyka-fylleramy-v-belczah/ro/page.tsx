@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/konturnaya-plastyka-fylleramy-v-belczah/ro',
   },
   title: 'Plastia de contur în Bălți – Corectare facială cu acid hialuronic',
-  description: 'Corectează trăsăturile faciale cu acid hialuronic. Obține un chip armonios și întinerit la clinica noastră din Bălți.',
+  description:
+    'Contur facial cu acid hialuronic în Bălți: rejuvenare și corecție trăsături. Programări la clinica Meddera.',
   openGraph: {
     title: 'Plastia de contur în Bălți – Corectare facială cu acid hialuronic',
-    description: 'Corectează trăsăturile faciale cu acid hialuronic. Obține un chip armonios și întinerit la clinica noastră din Bălți.',
+    description:
+      'Contur facial cu acid hialuronic în Bălți: rejuvenare și corecție trăsături. Programări la clinica Meddera.',
 
     url: 'https://meddera.md/services/konturnaya-plastyka-fylleramy-v-belczah/ro',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Plastia de contur în Bălți – Corectare facială cu acid hialuronic',
-    description: 'Corectează trăsăturile faciale cu acid hialuronic. Obține un chip armonios și întinerit la clinica noastră din Bălți.',
+    description:
+      'Contur facial cu acid hialuronic în Bălți: rejuvenare și corecție trăsături. Programări la clinica Meddera.',
 
     images: ['https://meddera.md/assets/img/services/konturnayaplastika.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage16Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Plastica de contur cu fillere'}
+      title={'Plastia de contur în Bălți – Corectare facială cu acid hialuronic'}
       heroImage={konturnayaPlastika}
       heroImageAlt={'Plastica de contur cu fillere — clinica Meddera, Bălți'}
     >

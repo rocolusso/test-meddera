@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza',
   },
   title: 'Ботокс в Бельцах – Инъекции для омоложения лица | Meddera',
-  description: 'Профессиональные инъекции ботокса в Бельцах для коррекции мимических морщин и лечения гипергидроза. Эффективное и безопасное омоложение лица в клинике Meddera.',
+  description:
+    'Инъекции ботокса в Бельцах: коррекция мимических морщин и гипергидроза. Безопасное омоложение в клинике Meddera. Запись на консультацию.',
   openGraph: {
     title: 'Ботокс в Бельцах – Инъекции для омоложения лица | Meddera',
-    description: 'Профессиональные инъекции ботокса в Бельцах для коррекции мимических морщин и лечения гипергидроза. Эффективное и безопасное омоложение лица в клинике Meddera.',
+    description:
+      'Инъекции ботокса в Бельцах: коррекция мимических морщин и гипергидроза. Безопасное омоложение в клинике Meddera. Запись на консультацию.',
 
     url: 'https://meddera.md/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Ботокс в Бельцах – Инъекции для омоложения лица | Meddera',
-    description: 'Профессиональные инъекции ботокса в Бельцах для коррекции мимических морщин и лечения гипергидроза. Эффективное и безопасное омоложение лица в клинике Meddera.',
+    description:
+      'Инъекции ботокса в Бельцах: коррекция мимических морщин и гипергидроза. Безопасное омоложение в клинике Meddera. Запись на консультацию.',
 
     images: ['https://meddera.md/assets/img/services/botoks.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage14() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Ботокс'}
+      title={'Ботокс в Бельцах – Инъекции для омоложения лица'}
       heroImage={botoks}
       heroImageAlt={'Ботокс — клиника Meddera, Бельцы'}
     >

@@ -20,11 +20,11 @@ export const metadata = {
   alternates: { canonical: 'https://meddera.md/services/uvelychenye-gub-v-belczah/ro' },
   title: 'Mărire buze în Bălți — Proceduri eficiente și sigure',
   description:
-    'Mărire profesională a buzelor în Bălți. Conturare, acid hialuronic, fillere sigure. Programați-vă pentru consultație astăzi!',
+    'Mărire buze în Bălți: conturare, acid hialuronic, fillere sigure. Consultație și tratament la clinica Meddera.',
   openGraph: {
     title: 'Mărire buze în Bălți — Proceduri eficiente și sigure',
     description:
-      'Mărire profesională a buzelor în Bălți. Conturare, acid hialuronic, fillere sigure. Programați-vă pentru consultație astăzi!',
+      'Mărire buze în Bălți: conturare, acid hialuronic, fillere sigure. Consultație și tratament la clinica Meddera.',
     url: 'https://meddera.md/services/uvelychenye-gub-v-belczah/ro',
     type: 'website',
     images: [
@@ -39,7 +39,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Mărire buze în Bălți — Proceduri eficiente și sigure',
-    description: 'Mărire profesională a buzelor în Bălți. Conturare, acid hialuronic, fillere sigure.',
+    description:
+      'Mărire buze în Bălți: conturare, acid hialuronic, fillere sigure. Consultație și tratament la clinica Meddera.',
     images: ['https://meddera.md/assets/img/services/uvelicheniegub.png'],
     site: '@your_twitter_handle',
   },

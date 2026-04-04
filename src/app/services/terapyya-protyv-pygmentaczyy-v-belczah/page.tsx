@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/terapyya-protyv-pygmentaczyy-v-belczah',
   },
   title: 'Лечение пигментных пятен в Бельцах',
-  description: 'Эффективное лечение пигментации в Бельцах: лазер, пилинги, мезотерапия. Удаление пятен современными методами. Запишитесь на консультацию!',
+  description:
+    'Лечение пигментации в Бельцах: лазер, пилинги, мезотерапия. Современные методы и консультация в Meddera.',
   openGraph: {
     title: 'Лечение пигментных пятен в Бельцах',
-    description: 'Эффективное лечение пигментации в Бельцах: лазер, пилинги, мезотерапия. Удаление пятен современными методами. Запишитесь на консультацию!',
+    description:
+      'Лечение пигментации в Бельцах: лазер, пилинги, мезотерапия. Современные методы и консультация в Meddera.',
 
     url: 'https://meddera.md/services/terapyya-protyv-pygmentaczyy-v-belczah',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Лечение пигментных пятен в Бельцах',
-    description: 'Эффективное лечение пигментации в Бельцах: лазер, пилинги, мезотерапия. Удаление пятен современными методами. Запишитесь на консультацию!',
+    description:
+      'Лечение пигментации в Бельцах: лазер, пилинги, мезотерапия. Современные методы и консультация в Meddera.',
 
     images: ['https://meddera.md/assets/img/services/terapiya-protiv-pigm.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage9() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Терапия против пигментации'}
+      title={'Лечение пигментных пятен в Бельцах'}
       heroImage={terapiyaProtivPigment}
       heroImageAlt={'Терапия против пигментации — клиника Meddera, Бельцы'}
     >

@@ -12,10 +12,12 @@ export const metadata = {
     canonical: 'https://meddera.md/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
   },
   title: 'Альгинатная маска в Бельцах – Увлажнение, лифтинг и сияние кожи',
-  description: 'Профессиональные альгинатные маски в Бельцах. Увлажнение, лифтинг и сияние кожи. Запишитесь на процедуру у опытного косметолога.',
+  description:
+    'Альгинатные маски в Бельцах: увлажнение, лифтинг и сияние кожи. Процедура у косметолога Meddera.',
   openGraph: {
     title: 'Альгинатная маска в Бельцах – Увлажнение, лифтинг и сияние кожи',
-    description: 'Профессиональные альгинатные маски в Бельцах. Увлажнение, лифтинг и сияние кожи. Запишитесь на процедуру у опытного косметолога.',
+    description:
+      'Альгинатные маски в Бельцах: увлажнение, лифтинг и сияние кожи. Процедура у косметолога Meddera.',
 
     url: 'https://meddera.md/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
     type: 'website',
@@ -31,7 +33,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Альгинатная маска в Бельцах – Увлажнение, лифтинг и сияние кожи',
-    description: 'Профессиональные альгинатные маски в Бельцах. Увлажнение, лифтинг и сияние кожи. Запишитесь на процедуру у опытного косметолога.',
+    description:
+      'Альгинатные маски в Бельцах: увлажнение, лифтинг и сияние кожи. Процедура у косметолога Meddera.',
 
     images: ['https://meddera.md/assets/img/services/maska_lica.png'],
     site: '@your_twitter_handle',
@@ -42,7 +45,7 @@ function ServicePage7() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Альгинатная маска'}
+      title={'Альгинатная маска в Бельцах – Увлажнение, лифтинг и сияние кожи'}
       heroImage={maskaLica}
       heroImageAlt={'Альгинатная маска — клиника Meddera, Бельцы'}
     >
