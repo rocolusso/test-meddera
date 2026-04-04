@@ -22,8 +22,6 @@ const aboutJsonLd = aboutPageJsonLd({
   pageName: PAGE_TITLE,
   description: PAGE_DESC,
   imageUrl: OG_IMAGE,
-  physicianName: 'Екатерина Пынтя',
-  jobTitle: 'Врач-дерматовенеролог, косметолог',
   breadcrumbItems: [
     { name: 'Главная', item: 'https://meddera.md/' },
     { name: 'Обо мне', item: canonical },

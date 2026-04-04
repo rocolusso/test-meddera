@@ -22,8 +22,6 @@ const aboutJsonLd = aboutPageJsonLd({
   pageName: PAGE_TITLE,
   description: PAGE_DESC,
   imageUrl: OG_IMAGE,
-  physicianName: 'Ecaterina Pîntea',
-  jobTitle: 'Medic dermatovenerolog, cosmetolog',
   breadcrumbItems: [
     { name: 'Acasă', item: 'https://meddera.md/ro' },
     { name: 'Despre mine', item: canonical },

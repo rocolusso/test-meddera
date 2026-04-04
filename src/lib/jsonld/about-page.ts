@@ -1,5 +1,8 @@
 const SITE = 'https://meddera.md';
 
+/** Same @id as root layout JSON-LD — avoid duplicate Physician/MedicalClinic nodes on /about. */
+const GLOBAL_PHYSICIAN_ID = `${SITE}/#physician`;
+
 export type AboutPageJsonLdInput = {
   pageUrl: string;
   locale: 'ru' | 'ro';
@@ -7,17 +10,15 @@ export type AboutPageJsonLdInput = {
   pageName: string;
   description: string;
   imageUrl: string;
-  physicianName: string;
-  jobTitle: string;
   breadcrumbItems: { name: string; item: string }[];
 };
 
 /**
- * Schema.org для страницы «Обо мне»: WebPage + Physician + BreadcrumbList.
+ * Schema.org for «Обо мне»: WebPage + BreadcrumbList only.
+ * Physician + MedicalClinic live in root layout (@graph) to prevent duplicate @id / validation errors.
  */
 export function aboutPageJsonLd(o: AboutPageJsonLdInput) {
   const inLanguage = o.locale === 'ro' ? 'ro-MD' : 'ru-MD';
-  const physicianId = `${o.pageUrl}#physician`;
   const webpageId = `${o.pageUrl}#webpage`;
 
   return {
@@ -39,28 +40,7 @@ export function aboutPageJsonLd(o: AboutPageJsonLdInput) {
           '@type': 'ImageObject',
           url: o.imageUrl,
         },
-        mainEntity: { '@id': physicianId },
-      },
-      {
-        '@type': 'Physician',
-        '@id': physicianId,
-        name: o.physicianName,
-        image: o.imageUrl,
-        url: o.pageUrl,
-        jobTitle: o.jobTitle,
-        worksFor: {
-          '@type': 'MedicalClinic',
-          '@id': `${SITE}/#clinic`,
-          name: 'Meddera Beauty Clinic',
-          url: SITE,
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: 'Ștefan cel Mare 13',
-            addressLocality: o.locale === 'ro' ? 'Bălți' : 'Бельцы',
-            addressCountry: 'MD',
-          },
-        },
-        medicalSpecialty: ['Dermatology', 'Cosmetic dermatology'],
+        mainEntity: { '@id': GLOBAL_PHYSICIAN_ID },
       },
       {
         '@type': 'BreadcrumbList',
