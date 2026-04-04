@@ -18,7 +18,7 @@ export default function DeferredGoogleTagManager({ nonce }: Props) {
 
   useEffect(() => {
     let idleId: number | undefined;
-    let fallbackId: ReturnType<typeof setTimeout> | undefined;
+    let fallbackId: number | undefined;
 
     const run = () => setReady(true);
 
