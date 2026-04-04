@@ -231,7 +231,7 @@ function Contacts({ locale }:{ locale:string }) {
                         <p className="rounded p-3 font-bold">
                           {
                             (locale === 'ru'
-                              ? 'Базовая стоимость консультации 400 MDL. Повторно - 200 MDL'
+                              ? 'Стоимость первичной консультации 400 MDL. Повторно - 200 MDL'
                               : 'Costul de bază al consultației este de 400 MDL. Repetată — 200 MDL'
                             )
                           }

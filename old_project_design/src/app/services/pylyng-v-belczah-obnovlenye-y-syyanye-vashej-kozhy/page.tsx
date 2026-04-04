@@ -171,15 +171,15 @@ function ServicePage6() {
                 </tr>
                 <tr>
                   <td>Поверхностный пилинг</td>
-                  <td>500</td>
+                  <td>от 500</td>
                 </tr>
                 <tr>
                   <td>Срединный пилинг</td>
-                  <td>800</td>
+                  <td>от 800</td>
                 </tr>
                 <tr>
                   <td>Глубокий пилинг</td>
-                  <td>1200</td>
+                  <td>от 1200</td>
                 </tr>
               </table>
             </section>
