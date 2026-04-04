@@ -243,8 +243,8 @@ function ContactsLips({ locale }:{ locale:string }) {
                       </div>
                       <div className="text-center">
                         <p className={!isWorkingHours
-                          ? 'rounded-lg bg-red-600 p-3 text-sm text-white sm:text-base'
-                          : 'mb-6 rounded-lg bg-emerald-600 p-3 text-sm text-white sm:text-base'}
+                          ? 'rounded-lg bg-red-800 p-3 text-sm text-white sm:text-base'
+                          : 'mb-6 rounded-lg bg-emerald-800 p-3 text-sm text-white sm:text-base'}
                         >
                           {
                             // eslint-disable-next-line no-nested-ternary
