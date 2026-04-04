@@ -2,5 +2,6 @@ User-Agent: *
 Disallow: /ads/
 Disallow: /api/
 Disallow: /cert/
+Disallow: /blocked/
 
 Sitemap: https://meddera.md/sitemap.xml
