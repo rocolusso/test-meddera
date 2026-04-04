@@ -56,6 +56,8 @@ export default async function RootLayout({
     (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
   const htmlLang = isRoLocale ? 'ro' : 'ru';
   const isVercel = process.env.VERCEL === '1';
+  /** Preview/dev deployments skip Vercel Analytics / Speed Insights to reduce main-thread JS. */
+  const showVercelInsights = isVercel && process.env.VERCEL_ENV === 'production';
   const clinicAddress = {
     '@type': 'PostalAddress' as const,
     streetAddress: 'Strada Stefan Cel Mare 13',
@@ -141,8 +143,8 @@ export default async function RootLayout({
       <body className="min-h-screen bg-background text-foreground antialiased">
         <SectionQueryScroll />
         {children}
-        {isVercel ? <Analytics /> : null}
-        {isVercel ? <SpeedInsights /> : null}
+        {showVercelInsights ? <Analytics /> : null}
+        {showVercelInsights ? <SpeedInsights /> : null}
         <DeferredGoogleTagManager nonce={nonce} />
         <DeferredClarity nonce={nonce} />
       </body>

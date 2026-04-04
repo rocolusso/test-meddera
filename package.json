@@ -21,6 +21,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --webpack",
+    "analyze": "ANALYZE=true next build --webpack",
     "start": "next start",
     "lint": "eslint new_design --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint new_design --ext .js,.jsx,.ts,.tsx --fix"
@@ -44,6 +45,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
+    "@next/bundle-analyzer": "^16.2.2",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",

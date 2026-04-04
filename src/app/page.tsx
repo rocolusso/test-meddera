@@ -1,14 +1,15 @@
 import React from 'react';
 import type { Metadata } from 'next';
 
-import AboutNew from '@/components/new-ui/AboutNew';
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import HeroNew from '@/components/new-ui/HeroNew';
-import FooterNew from '@/components/new-ui/FooterNew';
-
-import ServicesNew from '@/components/new-ui/ServicesNew';
-import HomeSeoContentRu from '@/components/new-ui/HomeSeoContentRu';
 import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
+import {
+  DynamicAboutNew,
+  DynamicFooterNew,
+  DynamicHomeSeoContentRu,
+  DynamicServicesNew,
+} from '@/components/home/HomeBelowFoldDynamic';
 import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { blogSocialMetadata } from '@/lib/site-og';
 
@@ -64,13 +65,13 @@ export default function Home() {
       <HeroNew />
 
       <main>
-        <HomeSeoContentRu />
-        <AboutNew locale="ru" />
-        <ServicesNew locale="ru" />
+        <DynamicHomeSeoContentRu />
+        <DynamicAboutNew locale="ru" />
+        <DynamicServicesNew locale="ru" />
       </main>
 
       <ContactsDynamicWrapperRu />
-      <FooterNew locale="ru" />
+      <DynamicFooterNew locale="ru" />
     </>
   );
 }
