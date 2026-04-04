@@ -13,11 +13,11 @@ export const metadata = {
   },
   title: 'Masca alginată în Bălți – Ten hidratat și luminos',
   description:
-    'Mască alginată în Bălți: hidratare, lifting, ten luminos. Programează procedura la clinica Meddera.',
+    'Mască alginată în Bălți: hidratare intensă, efect lifting și ten luminos după ședință. Programează consultația la clinica Meddera din Bălți.',
   openGraph: {
     title: 'Masca alginată în Bălți – Ten hidratat și luminos',
     description:
-      'Mască alginată în Bălți: hidratare, lifting, ten luminos. Programează procedura la clinica Meddera.',
+      'Mască alginată în Bălți: hidratare intensă, efect lifting și ten luminos după ședință. Programează consultația la clinica Meddera din Bălți.',
 
     url: 'https://meddera.md/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
     type: 'website',
@@ -34,7 +34,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Masca alginată în Bălți – Ten hidratat și luminos',
     description:
-      'Mască alginată în Bălți: hidratare, lifting, ten luminos. Programează procedura la clinica Meddera.',
+      'Mască alginată în Bălți: hidratare intensă, efect lifting și ten luminos după ședință. Programează consultația la clinica Meddera din Bălți.',
 
     images: ['https://meddera.md/assets/img/services/maska_lica.png'],
     site: '@your_twitter_handle',

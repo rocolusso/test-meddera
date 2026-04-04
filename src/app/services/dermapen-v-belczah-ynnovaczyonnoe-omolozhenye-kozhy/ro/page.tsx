@@ -13,11 +13,11 @@ export const metadata = {
   },
   title: 'Dermapen Bălți - Tratament Microneedling pentru Rejuvenare Facială',
   description:
-    'Dermapen în Bălți: rejuvenare piele, cicatrici, textură ten. Programări la clinica Meddera.',
+    'Dermapen în Bălți: microneedling pentru rejuvenare facială, cicatrici fine și textură uniformă a tenului. Programări la clinica Meddera, consultație prealabilă.',
   openGraph: {
     title: 'Dermapen Bălți - Tratament Microneedling pentru Rejuvenare Facială',
     description:
-      'Dermapen în Bălți: rejuvenare piele, cicatrici, textură ten. Programări la clinica Meddera.',
+      'Dermapen în Bălți: microneedling pentru rejuvenare facială, cicatrici fine și textură uniformă a tenului. Programări la clinica Meddera, consultație prealabilă.',
 
     url: 'https://meddera.md/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy/ro',
     type: 'website',
@@ -34,7 +34,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Dermapen Bălți - Tratament Microneedling pentru Rejuvenare Facială',
     description:
-      'Dermapen în Bălți: rejuvenare piele, cicatrici, textură ten. Programări la clinica Meddera.',
+      'Dermapen în Bălți: microneedling pentru rejuvenare facială, cicatrici fine și textură uniformă a tenului. Programări la clinica Meddera, consultație prealabilă.',
 
     images: ['https://meddera.md/assets/img/services/dermapen.png'],
     site: '@your_twitter_handle',
