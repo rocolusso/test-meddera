@@ -67,7 +67,7 @@ function ServicePage9() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Терапия против пигментации в Бельцах</h1>
+            <p className="font-semibold">Терапия против пигментации в Бельцах</p>
             <p>Избавьтесь от пигментных пятен с помощью современных методов лечения кожи</p>
           </section>
           <section>

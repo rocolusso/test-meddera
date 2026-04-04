@@ -65,7 +65,7 @@ function ServicePage12() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Мезотерапия для волос в Бельцах</h1>
+            <p className="font-semibold">Мезотерапия для волос в Бельцах</p>
             <p>
               Эффективное решение проблем с волосами: восстановление,
               укрепление и стимуляция роста

@@ -64,7 +64,7 @@ function ServicePage16() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Контурная пластика филлерами в Бельцах</h1>
+            <p className="font-semibold">Контурная пластика филлерами в Бельцах</p>
             <p>Эффективное и безопасное решение для омоложения и коррекции черт лица</p>
           </section>
           <section>

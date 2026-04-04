@@ -71,7 +71,7 @@ function ServicePage2Ro() {
         <div className="seo-block bg-gray-400">
 
           <section>
-            <h1>Consultație Dermatologică Profesională în Bălți</h1>
+            <p className="font-semibold">Consultație Dermatologică Profesională în Bălți</p>
             <p>Clinica Meddera - Îngrijire Dermatologică de Încredere</p>
           </section>
 

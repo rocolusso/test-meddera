@@ -68,7 +68,7 @@ function ServicePage15Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Biorevitalizare în Bălți - Rejuvenare Facială Profesională</h1>
+            <p className="font-semibold">Biorevitalizare în Bălți - Rejuvenare Facială Profesională</p>
             <p>
               Redă pielii tale vitalitatea și strălucirea cu ajutorul
               biorevitalizării - tratamentul modern de

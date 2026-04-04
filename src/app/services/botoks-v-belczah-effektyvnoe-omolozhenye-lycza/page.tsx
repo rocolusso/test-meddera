@@ -66,7 +66,7 @@ function ServicePage14() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Ботокс в Бельцах – Эффективное омоложение лица</h1>
+            <p className="font-semibold">Ботокс в Бельцах – Эффективное омоложение лица</p>
             <p>
               Профессиональные инъекции ботокса для устранения морщин
               и лечения гипергидроза в клинике Meddera.

@@ -67,7 +67,7 @@ function ServicePage10Ro() {
         <div className="seo-block bg-gray-400">
 
           <section>
-            <h1>Dermapen în Bălți - Rejuvenare Facială prin Microneedling</h1>
+            <p className="font-semibold">Dermapen în Bălți - Rejuvenare Facială prin Microneedling</p>
             <p>
               Redă pielii tale strălucirea naturală cu tratamentul Dermapen
               disponibil acum în Bălți.

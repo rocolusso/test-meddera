@@ -69,7 +69,7 @@ function ServicePage5Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Carboxiterapie în Bălți - Tratament Avansat pentru Rejuvenare</h1>
+            <p className="font-semibold">Carboxiterapie în Bălți - Tratament Avansat pentru Rejuvenare</p>
             <p>
               Redă pielii tale fermitatea și strălucirea cu ajutorul
               carboxiterapiei la Meddera Bălți.

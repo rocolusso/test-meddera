@@ -66,7 +66,7 @@ function ServicePage16Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Plastia de contur în Bălți – Redefinirea frumuseții tale</h1>
+            <p className="font-semibold">Plastia de contur în Bălți – Redefinirea frumuseții tale</p>
             <p>
               Descoperă secretul unui chip armonios și întinerit
               cu ajutorul plasticii de contur realizate de

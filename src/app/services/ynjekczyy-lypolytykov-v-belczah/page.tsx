@@ -68,7 +68,7 @@ function ServicePage17() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Инъекции липолитиков в Бельцах</h1>
+            <p className="font-semibold">Инъекции липолитиков в Бельцах</p>
             <p>Эффективное решение для удаления локальных жировых отложений и коррекции фигуры</p>
           </section>
           <section>

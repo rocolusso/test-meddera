@@ -66,7 +66,7 @@ function ServicePage8Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Terapia anti-acnee în Bălți</h1>
+            <p className="font-semibold">Terapia anti-acnee în Bălți</p>
             <p>Tratament profesional pentru un ten curat și sănătos</p>
           </section>
           <section>

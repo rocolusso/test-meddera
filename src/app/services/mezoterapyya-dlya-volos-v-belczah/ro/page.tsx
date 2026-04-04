@@ -68,7 +68,7 @@ function ServicePage12Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Mezoterapia pentru păr în Bălți</h1>
+            <p className="font-semibold">Mezoterapia pentru păr în Bălți</p>
             <p>Redă-ți încrederea cu un tratament eficient împotriva căderii părului</p>
           </section>
           <section>

@@ -69,7 +69,7 @@ function ServicePage3Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Curățare facială profesională în Bălți</h1>
+            <p className="font-semibold">Curățare facială profesională în Bălți</p>
             <p>
               Redă strălucirea și sănătatea tenului tău cu tratamente personalizate
               de curățare facială oferite de experții noștri în Bălți.

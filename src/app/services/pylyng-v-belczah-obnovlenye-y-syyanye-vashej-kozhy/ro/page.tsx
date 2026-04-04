@@ -66,7 +66,7 @@ function ServicePage6Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Peeling facial profesional în Bălți</h1>
+            <p className="font-semibold">Peeling facial profesional în Bălți</p>
             <p>
               Redă strălucirea naturală a tenului tău cu tratamente
               personalizate la clinica Meddera

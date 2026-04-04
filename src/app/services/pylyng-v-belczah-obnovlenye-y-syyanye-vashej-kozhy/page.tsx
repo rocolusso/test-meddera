@@ -68,7 +68,7 @@ function ServicePage6() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Пилинг в Бельцах – Обновление и сияние вашей кожи</h1>
+            <p className="font-semibold">Пилинг в Бельцах – Обновление и сияние вашей кожи</p>
             <p>
               Эффективные процедуры пилинга для лица и тела в косметологическом
               центре Meddera.

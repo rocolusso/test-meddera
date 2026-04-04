@@ -53,7 +53,7 @@ function ServicePage1Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Consultație la medicul dermatocosmetolog în Bălți</h1>
+            <p className="font-semibold">Consultație la medicul dermatocosmetolog în Bălți</p>
             <p>
               Descoperă secretul unei pieli sănătoase și strălucitoare cu ajutorul specialiștilor noștri.
             </p>

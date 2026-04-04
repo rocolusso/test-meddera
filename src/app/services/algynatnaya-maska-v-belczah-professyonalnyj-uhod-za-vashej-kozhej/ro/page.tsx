@@ -66,7 +66,7 @@ function ServicePage7Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Masca alginată în Bălți - Secretul unui ten luminos și sănătos</h1>
+            <p className="font-semibold">Masca alginată în Bălți - Secretul unui ten luminos și sănătos</p>
             <p>
               Redescoperă frumusețea naturală a pielii tale cu tratamentul nostru
               profesional de mască alginată.

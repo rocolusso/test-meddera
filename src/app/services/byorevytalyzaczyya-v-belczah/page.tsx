@@ -66,7 +66,7 @@ function ServicePage15() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Биоревитализация в Бельцах</h1>
+            <p className="font-semibold">Биоревитализация в Бельцах</p>
             <p>
               Эффективное омоложение и глубокое увлажнение кожи с
               использованием гиалуроновой кислоты

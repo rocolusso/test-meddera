@@ -68,10 +68,10 @@ function ServicePage17Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>
+            <p className="font-semibold">
               Lipoliză Injectabilă în Bălți – Soluția Modernă pentru
               Eliminarea Grăsimii Localizate
-            </h1>
+            </p>
             <p>
               Scapă de grăsimea persistentă fără eforturi extreme.
               Alege lipoliza injectabilă – tratamentul

@@ -67,7 +67,7 @@ function ServicePage11Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Mezoterapie Facială în Bălți – Rejuvenare și Hidratare Profesională</h1>
+            <p className="font-semibold">Mezoterapie Facială în Bălți – Rejuvenare și Hidratare Profesională</p>
             <p>
               Redescoperă frumusețea naturală a tenului tău cu ajutorul
               mezoterapiei faciale oferite de specialiștii

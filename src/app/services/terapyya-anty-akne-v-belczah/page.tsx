@@ -67,7 +67,7 @@ function ServicePage8() {
         <div className="seo-block bg-gray-400">
           <section>
             <div>
-              <h1>Терапия анти-акне в Бельцах</h1>
+              <p className="font-semibold">Терапия анти-акне в Бельцах</p>
               <p>Эффективное лечение акне и постакне с использованием современных методик</p>
             </div>
           </section>

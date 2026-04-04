@@ -61,7 +61,7 @@ function ServicePage9Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Terapie Antipigmentară în Bălți</h1>
+            <p className="font-semibold">Terapie Antipigmentară în Bălți</p>
             <p>
               Elimină petele pigmentare și redă strălucirea naturală a pielii tale
               cu tratamente profesionale la

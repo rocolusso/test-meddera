@@ -68,7 +68,7 @@ function ServicePage5() {
         <div className="seo-block bg-gray-400">
 
           <section>
-            <h1>Карбокситерапия в Бельцах</h1>
+            <p className="font-semibold">Карбокситерапия в Бельцах</p>
             <p>Эффективное омоложение и лечение кожи в клинике Meddera</p>
           </section>
 

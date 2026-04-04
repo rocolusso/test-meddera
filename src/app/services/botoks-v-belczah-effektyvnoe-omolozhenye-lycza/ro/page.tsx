@@ -67,7 +67,7 @@ function ServicePage14Ro() {
       <VisuallyHidden>
         <div className="seo-block bg-gray-400">
           <section>
-            <h1>Terapie antirid cu Botox în Bălți</h1>
+            <p className="font-semibold">Terapie antirid cu Botox în Bălți</p>
             <p>
               Redescoperă frumusețea naturală a pielii tale cu ajutorul terapiei
               antirid cu Botox. Elimină ridurile
