@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import { fontCorinthia } from '@/lib/fonts';
 import numBack from '../../public/assets/img/cert/num_back.svg';
 import pintea from '../../public/assets/img/cert/pintea.svg';
 import medderaCert from '../../public/assets/img/cert/meddera-logo.svg';
@@ -17,15 +18,9 @@ function Ertificate({
 
       <Head>
         <title>Client Certificate</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
-      <div>
+      <div className={fontCorinthia.className}>
 
         <div className="certificate  mx-2 my-10 bg-white flex justify-center ">
           <div className="relative">

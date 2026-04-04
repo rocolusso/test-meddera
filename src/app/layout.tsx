@@ -11,6 +11,7 @@ import './globals.css';
 // import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
+import DeferredClarity from '@/components/DeferredClarity';
 import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import SectionQueryScroll from '@/components/SectionQueryScroll';
 import { Analytics } from '@vercel/analytics/react';
@@ -55,7 +56,6 @@ export default async function RootLayout({
     (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
   const htmlLang = isRoLocale ? 'ro' : 'ru';
   const isVercel = process.env.VERCEL === '1';
-  const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
   const clinicAddress = {
     '@type': 'PostalAddress' as const,
     streetAddress: 'Strada Stefan Cel Mare 13',
@@ -93,13 +93,6 @@ export default async function RootLayout({
     ],
   };
 
-  const microsoftClarity = `
-  (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "w2ch4v2j05");
-  `;
   return (
     <html
       lang={htmlLang}
@@ -127,6 +120,7 @@ export default async function RootLayout({
         ) : null}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
+        <link rel="dns-prefetch" href="https://www.google.com" />
         <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
         <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" />
@@ -143,28 +137,14 @@ export default async function RootLayout({
           /* eslint-disable-next-line react/no-danger */
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Script
-          id="microsoft-clarity"
-          strategy="lazyOnload"
-          nonce={nonce}
-          /* eslint-disable-next-line react/no-danger */
-          dangerouslySetInnerHTML={{ __html: microsoftClarity }}
-        />
-        {recaptchaSiteKey ? (
-          <Script
-            src={`https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`}
-            strategy="lazyOnload"
-            nonce={nonce}
-          />
-        ) : null}
       </head>
-      {/* <GoogleAnalytics /> */}
-      {isVercel ? <Analytics /> : null}
-      {isVercel ? <SpeedInsights /> : null}
-      <DeferredGoogleTagManager nonce={nonce} />
       <body className="min-h-screen bg-background text-foreground antialiased">
         <SectionQueryScroll />
         {children}
+        {isVercel ? <Analytics /> : null}
+        {isVercel ? <SpeedInsights /> : null}
+        <DeferredGoogleTagManager nonce={nonce} />
+        <DeferredClarity nonce={nonce} />
       </body>
     </html>
   );

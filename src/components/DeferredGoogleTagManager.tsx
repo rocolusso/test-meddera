@@ -1,6 +1,7 @@
 'use client';
 
 import Script from 'next/script';
+import { useEffect, useState } from 'react';
 
 const GTM_ID = 'GTM-KFCP3D5F';
 
@@ -10,10 +11,37 @@ type Props = {
 };
 
 /**
- * Same behaviour as @next/third-parties/google GoogleTagManager, but scripts use
- * strategy="lazyOnload" so GTM/gtag load after window load (smaller main-thread cost, better PSI).
+ * GTM after window load (lazyOnload) and after requestIdleCallback — reduces overlap with main-thread work vs loading immediately after load.
  */
 export default function DeferredGoogleTagManager({ nonce }: Props) {
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    let idleId: number | undefined;
+    let fallbackId: ReturnType<typeof setTimeout> | undefined;
+
+    const run = () => setReady(true);
+
+    if (typeof window.requestIdleCallback === 'function') {
+      idleId = window.requestIdleCallback(run, { timeout: 2500 });
+    } else {
+      fallbackId = window.setTimeout(run, 2500);
+    }
+
+    return () => {
+      if (idleId != null && typeof window.cancelIdleCallback === 'function') {
+        window.cancelIdleCallback(idleId);
+      }
+      if (fallbackId != null) {
+        window.clearTimeout(fallbackId);
+      }
+    };
+  }, []);
+
+  if (!ready) {
+    return null;
+  }
+
   return (
     <>
       <Script

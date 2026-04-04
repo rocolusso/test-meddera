@@ -43,14 +43,15 @@ fonts for title cerificate
   /*font-weight: 400;*/
 }
 
+/* Corinthia: font-family comes from next/font wrapper (.certificate parent uses fontCorinthia.className) */
 .corinthia-regular {
-  font-family: "Corinthia", cursive;
+  font-family: inherit;
   font-weight: 400;
   font-style: normal;
 }
 
 .corinthia-bold {
-  font-family: "Corinthia", cursive;
+  font-family: inherit;
   font-weight: 700;
   font-style: normal;
 }

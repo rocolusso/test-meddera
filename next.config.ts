@@ -33,6 +33,11 @@ const nextConfig: NextConfig = {
 
   generateBuildId: async () => `${Date.now()}`, // Forces new build ID on each deploy
 
+  /** Allow next/image quality below default 75 (e.g. LCP logo in Header). */
+  images: {
+    qualities: [60, 75, 100],
+  },
+
   webpack: (config, { isServer, webpack: webpackApi }) => {
     if (!isServer) {
       config.resolve = config.resolve ?? {};

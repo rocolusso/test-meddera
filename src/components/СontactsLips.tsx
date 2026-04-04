@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FaMapLocationDot, FaPhoneVolume } from 'react-icons/fa6';
 import { MdPhoneInTalk } from 'react-icons/md';
 import Image from 'next/image';
@@ -11,7 +11,7 @@ import imgAddress from '../../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { trackEvent } from '@/lib/gtm';
-import { executeRecaptcha } from '@/lib/recaptcha-client';
+import { executeRecaptcha, prefetchRecaptchaScript } from '@/lib/recaptcha-client';
 import RecaptchaDisclaimer from '@/components/RecaptchaDisclaimer';
 import DOMPurify from 'dompurify';
 
@@ -56,6 +56,13 @@ function ContactsLips({ locale }:{ locale:string }) {
 
   const [submitAlert, setSubmitAlert] = useState<boolean>(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const recaptchaPrefetchDone = useRef(false);
+
+  const prefetchRecaptchaOnce = () => {
+    if (recaptchaPrefetchDone.current) return;
+    recaptchaPrefetchDone.current = true;
+    prefetchRecaptchaScript();
+  };
 
   const submitHandler = async (e:React.BaseSyntheticEvent) => {
     e.preventDefault();
@@ -269,7 +276,11 @@ function ContactsLips({ locale }:{ locale:string }) {
                                 </p>
                               )}
                     </div>
-                    <form onSubmit={submitHandler} className="flex flex-col justify-center p-5 sm:p-6">
+                    <form
+                      onSubmit={submitHandler}
+                      onFocusCapture={prefetchRecaptchaOnce}
+                      className="flex flex-col justify-center p-5 sm:p-6"
+                    >
                       <fieldset disabled={locked}>
                         <div className="flex flex-col">
                           <input

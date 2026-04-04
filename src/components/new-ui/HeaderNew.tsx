@@ -31,6 +31,7 @@ function HeaderNew({ locale }: { locale: string }) {
                   height={20}
                   priority
                   fetchPriority="high"
+                  quality={60}
                   sizes="(max-width: 640px) 148px, 300px"
                   className="block h-auto w-full"
                 />
