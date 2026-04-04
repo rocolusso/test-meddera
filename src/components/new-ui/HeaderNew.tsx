@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import BurgerMenu from '@/components/BurgerMenu';
-import pintea from '../../../public/assets/img/pintea.png';
+import pintea from '../../../public/assets/img/pintea_logo.svg';
 
 import NavigationLinks from '@/components/new-ui/NavigationLinks';
 import ThemeToggle from '@/components/new-ui/ThemeToggle';
@@ -26,12 +26,11 @@ function HeaderNew({ locale }: { locale: string }) {
               <div className="flex min-h-[20px] items-center">
                 <Image
                   src={pintea}
-                  alt="pintea_logo"
+                  alt={locale === 'ro' ? 'Meddera — logo clinica' : 'Meddera — логотип клиники'}
                   width={300}
-                  height={20}
+                  height={68}
                   priority
                   fetchPriority="high"
-                  quality={60}
                   sizes="(max-width: 640px) 148px, 300px"
                   className="block h-auto w-full"
                 />
