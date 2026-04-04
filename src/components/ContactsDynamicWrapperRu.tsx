@@ -9,6 +9,6 @@ const DynamicContacts = dynamic(() => import('@/components/Сontacts'), {
   ),
 });
 
-export default function ContactsDynamicWrapperRu() {
-  return <DynamicContacts locale="ru" />;
+export default function ContactsDynamicWrapperRu({ hideHeading = false }: { hideHeading?: boolean } = {}) {
+  return <DynamicContacts locale="ru" hideHeading={hideHeading} />;
 }

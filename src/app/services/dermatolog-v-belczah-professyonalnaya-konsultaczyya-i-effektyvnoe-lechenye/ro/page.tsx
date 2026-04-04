@@ -1,12 +1,8 @@
 import React from 'react';
-// import IpChecker from '@/components/new-ui/IpChecker';
-import HeaderNew from '@/components/new-ui/HeaderNew';
-import ServicesNew from '@/components/new-ui/ServicesNew';
+
+import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import FooterNew from '@/components/new-ui/FooterNew';
-import Image from 'next/image';
-import consultderm from '@/../public/assets/img/services/consult-derm.png';
-import ContactsDynamicWrapperRo from '@/components/ContactsDynamicWrapperRo';
+import consultderm from '../../../../../public/assets/img/services/consult-derm.png';
 
 export const metadata = {
   icons: {
@@ -42,184 +38,156 @@ export const metadata = {
 
 function ServicePage2Ro() {
   return (
-    <>
-      {/* <IpChecker /> */}
-      <HeaderNew locale="ro" />
+    <ContentPageShell
+      locale="ro"
+      title={'Consultația dermatologică'}
+      heroImage={consultderm}
+      heroImageAlt={'Consultația dermatologică — clinica Meddera, Bălți'}
+    >
+      <p>
+        Consultația dermatologică este o vizită specializată la medicul dermatolog,
+        în cadrul căreia
+        se
+        realizează o evaluare completă a stării pielii. În timpul consultației,
+        medicul analizează
+        simptomele care îl îngrijorează pe pacient, identifică posibilele cauze
+        ale afecțiunilor
+        cutanate și elaborează un plan de tratament individualizat. Dermatologul
+        poate recomanda
+        analize
+        necesare și investigații instrumentale pentru un diagnostic precis.
+        Consultația include
+        recomandări pentru îngrijirea pielii și stilul de viață, care ajută
+        la prevenirea
+        dezvoltării
+        afecțiunilor cutanate. Abordarea profesională permite depistarea și
+        tratarea la timp a unor
+        probleme precum eczema, psoriazisul, acneea, infecțiile fungice și
+        reacțiile alergice,
+        menținând
+        sănătatea pielii pe termen lung.
+      </p>
+      <VisuallyHidden>
+        <div className="seo-block bg-gray-400">
 
-      <main>
+          <section>
+            <h1>Consultație Dermatologică Profesională în Bălți</h1>
+            <p>Clinica Meddera - Îngrijire Dermatologică de Încredere</p>
+          </section>
 
-        <div className="container mx-auto">
-          <div className="py-10 px-5">
-            <p className="text-[1.5rem] sm:text-[3rem] sm:text-center bold">
-              Consultația dermatologică
+          <section>
+            <h2>Servicii Dermatologice Oferite</h2>
+            <ul>
+              <li>Diagnosticul și tratamentul acneei</li>
+              <li>Gestionarea psoriazisului și eczemelor</li>
+              <li>Înlăturarea alunițelor și verucilor</li>
+              <li>Tratamente pentru dermatită atopică și seboreică</li>
+              <li>Consultații pentru afecțiuni ale unghiilor și părului</li>
+            </ul>
+          </section>
+          <section>
+            <h2>De Ce Să Alegi Clinica Meddera?</h2>
+            <article>
+              <h3>Experiență și Profesionalism</h3>
+              <p>
+                Medicii noștri dermatologi au o vastă experiență în diagnosticarea
+                și tratarea diverselor afecțiuni
+                ale pielii.
+              </p>
+            </article>
+            <article>
+              <h3>Tehnologie Modernă</h3>
+              <p>
+                Utilizăm echipamente de ultimă generație pentru a asigura un
+                diagnostic precis și tratamente
+                eficiente.
+              </p>
+            </article>
+            <article>
+              <h3>Abordare Personalizată</h3>
+              <p>
+                Fiecare pacient beneficiază de un plan de tratament
+                adaptat nevoilor sale specifice.
+              </p>
+            </article>
+            <article>
+              <h3>Programări Flexibile</h3>
+              <p>
+                Oferim programări rapide și flexibile pentru a se
+                potrivi programului tău.
+              </p>
+            </article>
+          </section>
+          <section>
+            <h2>Simptome Comune Care Necesită Consultație Dermatologică</h2>
+            <p>
+              Dacă te confrunți cu oricare dintre următoarele simptome,
+              este recomandat să consulți un
+              dermatolog:
             </p>
-          </div>
-
-          <div className="flex justify-center">
-            <Image
-              className=""
-              src={consultderm}
-              alt="biorevit"
-              width={600}
-              height={500}
-              priority
-            />
-          </div>
-          <div>
-            <p className="max-w-[1000px] mx-auto py-10 px-5">
-              Consultația dermatologică este o vizită specializată la medicul dermatolog,
-              în cadrul căreia
-              se
-              realizează o evaluare completă a stării pielii. În timpul consultației,
-              medicul analizează
-              simptomele care îl îngrijorează pe pacient, identifică posibilele cauze
-              ale afecțiunilor
-              cutanate și elaborează un plan de tratament individualizat. Dermatologul
-              poate recomanda
-              analize
-              necesare și investigații instrumentale pentru un diagnostic precis.
-              Consultația include
-              recomandări pentru îngrijirea pielii și stilul de viață, care ajută
-              la prevenirea
-              dezvoltării
-              afecțiunilor cutanate. Abordarea profesională permite depistarea și
-              tratarea la timp a unor
-              probleme precum eczema, psoriazisul, acneea, infecțiile fungice și
-              reacțiile alergice,
-              menținând
-              sănătatea pielii pe termen lung.
+            <ul>
+              <li>Erupții cutanate sau mâncărimi persistente</li>
+              <li>Leziuni sau pete neobișnuite pe piele</li>
+              <li>Acnee severă sau recurentă</li>
+              <li>Modificări ale alunițelor existente</li>
+              <li>Uscăciune excesivă sau descuamare a pielii</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Tratamente Disponibile</h2>
+            <ul>
+              <li>Tratament medicamentos pentru diverse afecțiuni dermatologice</li>
+              <li>Proceduri minim invazive pentru îndepărtarea leziunilor cutanate</li>
+              <li>Consiliere pentru îngrijirea pielii și prevenirea recidivelor</li>
+              <li>Tratamente cosmetice pentru rejuvenarea pielii</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Informații Despre Medici</h2>
+            <p>
+              La Clinica Meddera, echipa noastră de dermatologi este formată
+              din specialiști cu o pregătire excelentă
+              și o abordare empatică față de pacienți.
             </p>
-          </div>
+          </section>
+          <section>
+            <h2>Tarife Consultații</h2>
+            <ul>
+              <li>Consultație inițială: 350 MDL</li>
+              <li>Consultație de control: 300 MDL</li>
+              <li>
+                Proceduri dermatologice: prețuri variabile
+                în funcție de complexitate
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Programează-te Acum</h2>
+            <p>
+              Completează formularul de mai jos sau contactează-ne
+              telefonic pentru a stabili o programare.
+            </p>
+            <form>
+
+              <br />
+              <input id="seo-dermatolog-nume" type="text" name="nume" autoComplete="name" required />
+              <br />
+
+              <br />
+              <input id="seo-dermatolog-telefon" type="tel" name="telefon" autoComplete="tel" required />
+              <br />
+
+              <br />
+              <textarea id="seo-dermatolog-mesaj" name="mesaj" autoComplete="off" />
+              <br />
+              <input type="submit" value="Trimite" />
+            </form>
+          </section>
+
         </div>
+      </VisuallyHidden>
 
-        <VisuallyHidden>
-          <div className="seo-block bg-gray-400">
-
-            <section>
-              <h1>Consultație Dermatologică Profesională în Bălți</h1>
-              <p>Clinica Meddera - Îngrijire Dermatologică de Încredere</p>
-            </section>
-
-            <section>
-              <h2>Servicii Dermatologice Oferite</h2>
-              <ul>
-                <li>Diagnosticul și tratamentul acneei</li>
-                <li>Gestionarea psoriazisului și eczemelor</li>
-                <li>Înlăturarea alunițelor și verucilor</li>
-                <li>Tratamente pentru dermatită atopică și seboreică</li>
-                <li>Consultații pentru afecțiuni ale unghiilor și părului</li>
-              </ul>
-            </section>
-            <section>
-              <h2>De Ce Să Alegi Clinica Meddera?</h2>
-              <article>
-                <h3>Experiență și Profesionalism</h3>
-                <p>
-                  Medicii noștri dermatologi au o vastă experiență în diagnosticarea
-                  și tratarea diverselor afecțiuni
-                  ale pielii.
-                </p>
-              </article>
-              <article>
-                <h3>Tehnologie Modernă</h3>
-                <p>
-                  Utilizăm echipamente de ultimă generație pentru a asigura un
-                  diagnostic precis și tratamente
-                  eficiente.
-                </p>
-              </article>
-              <article>
-                <h3>Abordare Personalizată</h3>
-                <p>
-                  Fiecare pacient beneficiază de un plan de tratament
-                  adaptat nevoilor sale specifice.
-                </p>
-              </article>
-              <article>
-                <h3>Programări Flexibile</h3>
-                <p>
-                  Oferim programări rapide și flexibile pentru a se
-                  potrivi programului tău.
-                </p>
-              </article>
-            </section>
-            <section>
-              <h2>Simptome Comune Care Necesită Consultație Dermatologică</h2>
-              <p>
-                Dacă te confrunți cu oricare dintre următoarele simptome,
-                este recomandat să consulți un
-                dermatolog:
-              </p>
-              <ul>
-                <li>Erupții cutanate sau mâncărimi persistente</li>
-                <li>Leziuni sau pete neobișnuite pe piele</li>
-                <li>Acnee severă sau recurentă</li>
-                <li>Modificări ale alunițelor existente</li>
-                <li>Uscăciune excesivă sau descuamare a pielii</li>
-              </ul>
-            </section>
-            <section>
-              <h2>Tratamente Disponibile</h2>
-              <ul>
-                <li>Tratament medicamentos pentru diverse afecțiuni dermatologice</li>
-                <li>Proceduri minim invazive pentru îndepărtarea leziunilor cutanate</li>
-                <li>Consiliere pentru îngrijirea pielii și prevenirea recidivelor</li>
-                <li>Tratamente cosmetice pentru rejuvenarea pielii</li>
-              </ul>
-            </section>
-            <section>
-              <h2>Informații Despre Medici</h2>
-              <p>
-                La Clinica Meddera, echipa noastră de dermatologi este formată
-                din specialiști cu o pregătire excelentă
-                și o abordare empatică față de pacienți.
-              </p>
-            </section>
-            <section>
-              <h2>Tarife Consultații</h2>
-              <ul>
-                <li>Consultație inițială: 350 MDL</li>
-                <li>Consultație de control: 300 MDL</li>
-                <li>
-                  Proceduri dermatologice: prețuri variabile
-                  în funcție de complexitate
-                </li>
-              </ul>
-            </section>
-            <section>
-              <h2>Programează-te Acum</h2>
-              <p>
-                Completează formularul de mai jos sau contactează-ne
-                telefonic pentru a stabili o programare.
-              </p>
-              <form>
-
-                <br />
-                <input id="seo-dermatolog-nume" type="text" name="nume" autoComplete="name" required />
-                <br />
-
-                <br />
-                <input id="seo-dermatolog-telefon" type="tel" name="telefon" autoComplete="tel" required />
-                <br />
-
-                <br />
-                <textarea id="seo-dermatolog-mesaj" name="mesaj" autoComplete="off" />
-                <br />
-                <input type="submit" value="Trimite" />
-              </form>
-            </section>
-
-          </div>
-        </VisuallyHidden>
-
-        <ContactsDynamicWrapperRo />
-
-        <ServicesNew locale="ro" />
-      </main>
-
-      <FooterNew locale="ro" />
-
-    </>
+    </ContentPageShell>
   );
 }
 

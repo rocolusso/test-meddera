@@ -64,6 +64,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 1.0,
     },
     {
+      url: 'https://meddera.md/about',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://meddera.md/services',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: 'https://meddera.md/contacts',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.84,
+    },
+    {
       url: 'https://meddera.md/services/konsultaczyya-dermatokosmetologa-v-belczah',
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -166,6 +184,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
+    },
+    {
+      url: 'https://meddera.md/ro/about',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://meddera.md/ro/services',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: 'https://meddera.md/ro/contacts',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.84,
     },
     {
       url: 'https://meddera.md/services/konsultaczyya-dermatokosmetologa-v-belczah/ro',

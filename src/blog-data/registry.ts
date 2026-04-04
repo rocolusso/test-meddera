@@ -2,6 +2,12 @@ import type { BlogLocale, BlogPost } from '@/blog-data/types';
 
 export const POSTS_PER_PAGE = 10;
 
+/**
+ * Сколько последних статей показывать в футере.
+ * Берутся из всех записей с `kind === 'article'`, сортировка: дата публикации (сначала новые), при равной дате — `dateModified`, затем `id`.
+ */
+export const FOOTER_RECENT_ARTICLE_COUNT = 10;
+
 export const ORIGIN = 'https://meddera.md';
 
 const BLOG_POSTS: BlogPost[] = [
@@ -225,7 +231,18 @@ export function getPostById(id: string): BlogPost | undefined {
 export function getArticlesSorted(): BlogPost[] {
   return BLOG_POSTS
     .filter((p) => p.kind === 'article')
-    .sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
+    .sort((a, b) => {
+      const byPublished = b.publishedAt.localeCompare(a.publishedAt);
+      if (byPublished !== 0) return byPublished;
+      const byModified = b.dateModified.localeCompare(a.dateModified);
+      if (byModified !== 0) return byModified;
+      return a.id.localeCompare(b.id);
+    });
+}
+
+/** Последние опубликованные статьи (без hub), по убыванию даты `publishedAt`. */
+export function getLatestArticles(limit: number): BlogPost[] {
+  return getArticlesSorted().slice(0, Math.max(0, limit));
 }
 
 export function getArticleCount(): number {

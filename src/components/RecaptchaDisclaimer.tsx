@@ -1,13 +1,13 @@
 export default function RecaptchaDisclaimer({ locale }: { locale: string }) {
   const isRu = locale === 'ru';
   return (
-    <p className="mt-4 text-xs text-gray-500 leading-relaxed max-w-xl">
+    <p className="mt-4 max-w-xl text-xs leading-relaxed text-muted-foreground">
       {isRu ? (
         <>
           Этот сайт защищён reCAPTCHA. Действуют
           {' '}
           <a
-            className="underline text-gray-600 hover:text-gray-900"
+            className="underline text-foreground/80 transition-colors hover:text-brand-gold"
             href="https://policies.google.com/privacy"
             rel="noopener noreferrer"
             target="_blank"
@@ -18,7 +18,7 @@ export default function RecaptchaDisclaimer({ locale }: { locale: string }) {
           и
           {' '}
           <a
-            className="underline text-gray-600 hover:text-gray-900"
+            className="underline text-foreground/80 transition-colors hover:text-brand-gold"
             href="https://policies.google.com/terms"
             rel="noopener noreferrer"
             target="_blank"
@@ -33,7 +33,7 @@ export default function RecaptchaDisclaimer({ locale }: { locale: string }) {
           Acest site este protejat de reCAPTCHA. Se aplică
           {' '}
           <a
-            className="underline text-gray-600 hover:text-gray-900"
+            className="underline text-foreground/80 transition-colors hover:text-brand-gold"
             href="https://policies.google.com/privacy"
             rel="noopener noreferrer"
             target="_blank"
@@ -44,7 +44,7 @@ export default function RecaptchaDisclaimer({ locale }: { locale: string }) {
           și
           {' '}
           <a
-            className="underline text-gray-600 hover:text-gray-900"
+            className="underline text-foreground/80 transition-colors hover:text-brand-gold"
             href="https://policies.google.com/terms"
             rel="noopener noreferrer"
             target="_blank"

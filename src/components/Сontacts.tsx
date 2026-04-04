@@ -7,7 +7,7 @@ import Image from 'next/image';
 import PhoneInputWithCountrySelect from 'react-phone-number-input';
 import flags from 'react-phone-number-input/flags';
 import LazyMap from '@/components/LazyMap';
-import imgAddress from '@/../public/assets/img/img_contacts.jpg';
+import imgAddress from '../../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { trackEvent } from '@/lib/gtm';
@@ -15,7 +15,7 @@ import { executeRecaptcha } from '@/lib/recaptcha-client';
 import RecaptchaDisclaimer from '@/components/RecaptchaDisclaimer';
 import DOMPurify from 'dompurify';
 
-function Contacts({ locale }:{ locale:string }) {
+function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading?: boolean }) {
   const [isWorkingHours, setIsWorkingHours] = useState(false);
   const [currentTime, setCurrentTime] = useState('');
 
@@ -127,17 +127,21 @@ function Contacts({ locale }:{ locale:string }) {
     }
   };
 
-  return (
-    <div className="contacts  bg-white" id="contacts">
+  const fieldClass =
+    'w-full mt-2 rounded-lg border border-border bg-card py-3 px-3 font-semibold text-foreground shadow-sm transition-colors placeholder:text-muted-foreground focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/35';
 
-      <div className="container mx-auto">
-        <div className="text-center ">
-          <p className=" w-fit mx-auto
-              text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"
-          >
-            {locale === 'ru' ? 'Контакты' : 'Contacte'}
-          </p>
-        </div>
+  return (
+    <div className="contacts scroll-mt-28 border-t border-border bg-background text-foreground" id="contacts">
+
+      <div className="container mx-auto max-w-6xl px-4 py-14 sm:px-5 sm:py-20">
+        {hideHeading ? null : (
+          <div className="text-center">
+            <p className="mx-auto w-fit px-4 py-3 text-[clamp(1.5rem,4vw,2.75rem)] font-semibold leading-tight tracking-tight text-foreground">
+              {locale === 'ru' ? 'Контакты' : 'Contacte'}
+            </p>
+            <div className="mx-auto mt-4 h-px w-16 bg-border" aria-hidden />
+          </div>
+        )}
 
         <div className="new__contacts" id="contacts">
           <div className="call-container-absolute bottom-0 right-0">
@@ -156,13 +160,13 @@ function Contacts({ locale }:{ locale:string }) {
 
           </div>
           <div
-            className="relative flex items-top justify-center  bg-white  sm:items-center sm:pt-0"
+            className="relative flex justify-center bg-background sm:items-center sm:pt-0"
           >
-            <div className="max-w-6xl mx-auto sm:px-6 lg:px-6">
-              <div className="mt-8 overflow-hidden">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10 sm:py-20 sm:px-10">
+            <div className="mx-auto w-full max-w-6xl sm:px-0">
+              <div className="mt-10 overflow-hidden sm:mt-12">
+                <div className="grid grid-cols-1 gap-10 py-6 md:grid-cols-2 md:gap-12 md:py-8 lg:gap-14">
 
-                  <div className="p-6 mr-2 bg-gray-100  sm:rounded-lg">
+                  <div className="rounded-xl border border-border/80 bg-muted p-5 sm:p-6">
                     <div>
                       <Image
                         className="w-full sm:rounded-md"
@@ -173,27 +177,23 @@ function Contacts({ locale }:{ locale:string }) {
                       />
                     </div>
 
-                    <div className="flex items-center mt-8 text-gray-600 dark:text-gray-400" />
-
                     <div className="contacts__buttons">
-                      <div className="mt-4 flex flex-col gap-5 items-center">
+                      <div className="mt-6 flex flex-col items-center gap-5">
 
-                        <div className="flex gap-2 items-center justify-center hover:scale-105 duration-300">
+                        <div className="flex items-center justify-center gap-2 transition-colors duration-200 hover:text-brand-gold">
                           <Link
-                            href="/#lazy-map"
-                            className=" font-bold uppercase text-xs sm:text-sm flex items-center gap-2"
+                            href="#lazy-map"
+                            className="flex items-center gap-2 text-xs font-bold uppercase sm:text-sm"
                           >
                             <div>
                               <FaMapLocationDot size="32px" />
                             </div>
-                            <p className=" font-bold uppercase  text-lg">Balti, Stefan Cel Mare, 13</p>
+                            <p className="text-lg font-bold uppercase">Balti, Stefan Cel Mare, 13</p>
                           </Link>
                         </div>
 
                         <Button
-                          className="btnCallPhoneContactForm mt-6 w-full sm:w-fit font-bold
-                          hover:scale-105 hover:bg-green-400 hover:text-white
-                          hover:border-transparent border border-gray-400 duration-300"
+                          className="btnCallPhoneContactForm mt-2 w-full font-bold sm:w-fit"
                           variant="default"
                           size="lg"
                           type="button"
@@ -209,17 +209,17 @@ function Contacts({ locale }:{ locale:string }) {
 
                   </div>
 
-                  <div className="form__block__wrapper  sm:rounded-lg shadow-2xl">
-                    <div className="mx-auto flex justify-center mt-5">
-                      <p className="mt-2 font-heading  text-2xl leading-8 font-semibold tracking-tight text-gray-900">
+                  <div className="form__block__wrapper rounded-xl border border-border bg-card shadow-lg sm:rounded-xl">
+                    <div className="mx-auto mt-6 flex justify-center px-4 sm:mt-8">
+                      <p className="mt-2 text-center font-heading text-2xl font-semibold leading-tight tracking-tight text-foreground">
                         {locale === 'ru' ? 'Запись на консультацию' : 'Programare pentru consultanță'}
                       </p>
                     </div>
                     <div
-                      className="max-w-[400px] mx-auto  working-time-message flex flex-col items-center justify-center"
+                      className="working-time-message mx-auto flex max-w-[400px] flex-col items-center justify-center px-4"
                     >
-                      <div className="text-center pb-4">
-                        <p className="p-3 uppercase">
+                      <div className="pb-4 text-center">
+                        <p className="p-3 text-sm uppercase text-muted-foreground sm:text-base">
                           {locale === 'ru' ? 'Часы работы по предварительной записи:' : 'Program de lucru doar cu programare prealabilă:'}
                           {' '}
                           13:00
@@ -227,8 +227,8 @@ function Contacts({ locale }:{ locale:string }) {
                         </p>
                       </div>
 
-                      <div className="text-center pb-4">
-                        <p className="rounded p-3 font-bold">
+                      <div className="pb-4 text-center">
+                        <p className="rounded-lg p-3 text-sm font-bold text-foreground">
                           {
                             (locale === 'ru'
                               ? 'Базовая стоимость консультации 400 MDL. Повторно - 200 MDL'
@@ -239,8 +239,8 @@ function Contacts({ locale }:{ locale:string }) {
                       </div>
                       <div className="text-center">
                         <p className={!isWorkingHours
-                          ? 'bg-red-700 text-white rounded p-3'
-                          : 'bg-green-700 mb-6 text-white rounded p-3'}
+                          ? 'rounded-lg bg-red-600 p-3 text-sm text-white sm:text-base'
+                          : 'mb-6 rounded-lg bg-emerald-600 p-3 text-sm text-white sm:text-base'}
                         >
                           {
                             // eslint-disable-next-line no-nested-ternary
@@ -255,7 +255,7 @@ function Contacts({ locale }:{ locale:string }) {
                       </div>
                       {!isWorkingHours
                           && (
-                            <p className="p-3 uppercase">
+                            <p className="p-3 text-sm uppercase text-muted-foreground">
                               {locale === 'ru' ? 'Текущее время:' : 'ora curentă'}
                               {' '}
                               {currentTime}
@@ -263,7 +263,7 @@ function Contacts({ locale }:{ locale:string }) {
                           )}
                       {!isWorkingHours
                           && (
-                            <p className="p-3 uppercase">
+                            <p className="p-3 text-sm uppercase text-muted-foreground">
                               {locale === 'ru' ? 'Часы работы:' : 'Program de lucru:'}
                               {' '}
                               13:00
@@ -271,7 +271,7 @@ function Contacts({ locale }:{ locale:string }) {
                             </p>
                           )}
                     </div>
-                    <form onSubmit={submitHandler} className="p-6 flex flex-col justify-center">
+                    <form onSubmit={submitHandler} className="flex flex-col justify-center p-5 sm:p-6">
                       <fieldset disabled={locked}>
                         <div className="flex flex-col">
                           <input
@@ -279,9 +279,7 @@ function Contacts({ locale }:{ locale:string }) {
                             name="name"
                             type="text"
                             autoComplete="name"
-                            className="w-full mt-2 py-3 px-3 rounded-lg bg-white
-                            border border-gray-400 dark:border-gray-700
-                            text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                            className={fieldClass}
                             placeholder={locale === 'ru' ? 'Имя' : 'Nume'}
                             value={name}
                             onChange={(e) => setName(DOMPurify.sanitize(e.target.value))}
@@ -293,14 +291,7 @@ function Contacts({ locale }:{ locale:string }) {
                             id="contact-phone"
                             name="phone"
                             autoComplete="tel"
-                            style={{
-                              padding: '13px 13px',
-                              margin: '0 0 14px 0',
-                              borderRadius: '6px',
-                            }}
-                            className="w-full mt-2 py-3 px-3 rounded-lg bg-white
-                            border border-gray-400 dark:border-gray-700
-                            text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                            className={fieldClass}
                             defaultCountry="MD"
                             placeholder={locale === 'ru' ? 'Ваш номер телефона' : 'Numărul dumneavoastră de telefon'}
                             value={phone}
@@ -318,9 +309,7 @@ function Contacts({ locale }:{ locale:string }) {
                             id="contact-message"
                             name="message"
                             autoComplete="off"
-                            className="w-full resize-none h-[150px] mt-2 py-3 px-3 rounded-lg
-                            bg-white border border-gray-400 dark:border-gray-700
-                            text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                            className={`${fieldClass} h-[150px] resize-none`}
                             placeholder={locale === 'ru' ? 'Cообщение' : 'Mesaj'}
                             value={message}
                             onChange={(e) => setMessage(DOMPurify.sanitize(e.target.value))}
@@ -330,7 +319,7 @@ function Contacts({ locale }:{ locale:string }) {
                             submitError
                               && (
                                 <div className="submit_alert" id="formSubmitError">
-                                  <p className="p-5 bg-red-200 text-red-900 mb-5">
+                                  <p className="mb-5 rounded-lg border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
                                     {submitError}
                                   </p>
                                 </div>
@@ -340,7 +329,7 @@ function Contacts({ locale }:{ locale:string }) {
                             submitAlert
                               && (
                                 <div className="submit_alert" id="formSubmitAlert">
-                                  <p className="p-5 bg-green-400 mb-5">
+                                  <p className="mb-5 rounded-lg border border-border bg-muted p-4 text-sm text-foreground">
                                     {locale === 'ru'
                                       ? 'Спасибо! Ваше сообщение получено'
                                       : 'Mulțumim! Mesajul dumneavoastră a fost primit'}
@@ -353,9 +342,7 @@ function Contacts({ locale }:{ locale:string }) {
                         <RecaptchaDisclaimer locale={locale} />
 
                         <Button
-                          className=" mt-6 w-full sm:w-fit font-bold underline hover:scale-105
-                          hover:bg-green-400 hover:text-white hover:border-transparent
-                          border border-gray-400 duration-300"
+                          className="mt-6 w-full font-bold sm:w-fit"
                           variant="default"
                           size="lg"
                           type="submit"

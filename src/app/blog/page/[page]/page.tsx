@@ -5,7 +5,9 @@ import { notFound, permanentRedirect } from 'next/navigation';
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import FooterNew from '@/components/new-ui/FooterNew';
 import { BlogIndexView } from '@/components/blog/BlogIndexView';
+import BlogIndexSeoContent from '@/components/new-ui/BlogIndexSeoContent';
 import { blogSocialMetadata } from '@/lib/site-og';
+import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { getMaxIndexPage, ORIGIN } from '@/blog-data/registry';
 
 type Props = { params: Promise<{ page: string }> };
@@ -63,11 +65,35 @@ export default async function BlogIndexPaginatedPage({ params }: Props) {
     notFound();
   }
 
+  const canonical = `${ORIGIN}/blog/page/${page}`;
+  const metaTitle = `Блог — страница ${page} | Meddera`;
+  const metaDescription = `Статьи и гиды клиники Meddera в Бельцах — страница ${page}. Косметология и дерматология; материалы для пациентов, которые рассматривают процедуры в Бельцах.`;
+  const paginatedJsonLd = webPageJsonLd({
+    pageUrl: canonical,
+    pageType: 'CollectionPage',
+    name: metaTitle,
+    description: metaDescription,
+    inLanguage: 'ru-MD',
+    breadcrumbItems: [
+      { name: 'Главная', item: `${ORIGIN}/` },
+      { name: 'Блог', item: `${ORIGIN}/blog` },
+      { name: `Страница ${page}`, item: canonical },
+    ],
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        /* eslint-disable-next-line react/no-danger */
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(paginatedJsonLd) }}
+      />
       <HeaderNew locale="ru" />
-      <main className="bg-white min-h-[50vh]">
-        <BlogIndexView locale="ru" page={page} />
+      <main className="min-h-[50vh] bg-background">
+        <div className="bg-white">
+          <BlogIndexView locale="ru" page={page} />
+        </div>
+        <BlogIndexSeoContent locale="ru" page={page} />
       </main>
       <FooterNew locale="ru" />
     </>

@@ -8,7 +8,8 @@
 html,
 body {
   width: 100%;
-  overflow-x: clip;
+  /* hidden: avoids clipping hit-targets at viewport edge (e.g. header actions on narrow phones). clip was hiding taps. */
+  overflow-x: hidden;
 }
 
 html {
@@ -378,24 +379,26 @@ button flash animation
   --PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus);
   --PhoneInputCountryFlag-backgroundColor--loading: rgba(0,0,0,0.1);
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.141 0.005 285.823);
+  --background: oklch(0.995 0.004 95);
+  --foreground: oklch(0.16 0.012 265);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.141 0.005 285.823);
+  --card-foreground: oklch(0.16 0.012 265);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: oklch(0.21 0.006 285.885);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.967 0.001 286.375);
-  --secondary-foreground: oklch(0.21 0.006 285.885);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.16 0.012 265);
+  --primary: oklch(0.14 0.015 265);
+  --primary-foreground: oklch(0.99 0.002 95);
+  --secondary: oklch(0.96 0.01 95);
+  --secondary-foreground: oklch(0.2 0.015 265);
+  --muted: oklch(0.96 0.008 95);
+  --muted-foreground: oklch(0.45 0.02 265);
+  --accent: oklch(0.94 0.028 82);
+  --accent-foreground: oklch(0.18 0.02 265);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.705 0.015 286.067);
+  --border: oklch(0.9 0.012 95);
+  --input: oklch(0.9 0.012 95);
+  --ring: oklch(0.58 0.055 78);
+  --brand-gold: oklch(0.52 0.065 78);
+  --brand-gold-muted: oklch(0.72 0.04 82);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -530,25 +533,19 @@ button flash animation
 /* btn-call */
 
 .btn-call {
-  /*background: #38a3fd;*/
-  /*border: 2px solid #38a3fd;*/
-  /*border-radius: 50%;*/
-  /*box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3);*/
   background: #00aa2d;
   border: 2px solid #00aa2d;
   border-radius: 50%;
-  /*box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3);*/
   box-shadow: 0 8px 10px rgba(0, 154, 22, 0.3);
   cursor: pointer;
   height: 70px;
   width: 70px;
   text-align: center;
   position: fixed;
-  /*left: 50px;*/
   right: 50px;
   bottom: 50px;
   z-index: 999;
-  transition: .3s;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
   isolation: isolate;
   display: flex;
   justify-content: center;
@@ -580,7 +577,7 @@ button flash animation
   color: white;
   font-size: 30px;
   padding-top: 5px;
-  transition: .3s all;
+  transition: color 0.3s ease;
 }
 
 .btn-call:hover {
@@ -589,6 +586,17 @@ button flash animation
 
 .btn-call:hover .btn-call__ico {
   color: #38a3fd;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-call::after {
+    animation: none;
+  }
+
+  .btn-call__ico {
+    animation: none;
+    -webkit-animation: none;
+  }
 }
 
 @keyframes btnCallPulse {
@@ -751,17 +759,12 @@ button flash animation
   background: #00aa2d;
   border: 2px solid #00aa2d;
   border-radius: 50%;
-  /*box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3);*/
   box-shadow: 0 8px 10px rgba(0, 154, 22, 0.3);
   cursor: pointer;
   height: 70px;
   width: 70px;
   text-align: center;
-  /*position: fixed;*/
-  /*left: 50px;*/
-  /*bottom: 50px;*/
-  /*z-index: 999;*/
-  transition: .3s;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
   isolation: isolate;
   display: flex;
   justify-content: center;
@@ -782,19 +785,6 @@ button flash animation
   animation: btnCallPulse 1400ms ease-out infinite;
 }
 
-.btn-call__ico {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: 1200ms ease 0s normal none 1 running shake;
-  animation-iteration-count: infinite;
-  -webkit-animation: 1200ms ease 0s normal none 1 running shake;
-  -webkit-animation-iteration-count: infinite;
-  color: white;
-  font-size: 30px;
-  padding-top: 5px;
-  transition: .3s all;
-}
 .btn-call__ico-2 {
   display: flex;
   justify-content: center;
@@ -806,15 +796,26 @@ button flash animation
   color: white;
   font-size: 30px;
   padding-top: 5px;
-  transition: .3s all;
+  transition: color 0.3s ease;
 }
 
 .btn-call-2:hover {
   background-color: #fff;
 }
 
-.btn-call-2:hover .btn-call__ico {
+.btn-call-2:hover .btn-call__ico-2 {
   color: #38a3fd;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-call-2::after {
+    animation: none;
+  }
+
+  .btn-call__ico-2 {
+    animation: none;
+    -webkit-animation: none;
+  }
 }
 
 /* removed non-composited box-shadow animation (hoverWave) */
@@ -990,6 +991,8 @@ button flash animation
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-gold-muted: var(--brand-gold-muted);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -1010,24 +1013,29 @@ button flash animation
 */
 
 .dark {
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.92 0.004 286.32);
-  --primary-foreground: oklch(0.21 0.006 285.885);
-  --secondary: oklch(0.274 0.006 286.033);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: oklch(0.13 0.018 265);
+  --foreground: oklch(0.97 0.006 95);
+  --card: oklch(0.17 0.02 265);
+  --card-foreground: oklch(0.97 0.006 95);
+  --popover: oklch(0.17 0.02 265);
+  --popover-foreground: oklch(0.97 0.006 95);
+  --primary: oklch(0.93 0.03 85);
+  --primary-foreground: oklch(0.14 0.02 265);
+  --secondary: oklch(0.22 0.02 265);
+  --secondary-foreground: oklch(0.96 0.01 95);
+  --muted: oklch(0.22 0.02 265);
+  --muted-foreground: oklch(0.72 0.02 95);
+  --accent: oklch(0.24 0.035 82);
+  --accent-foreground: oklch(0.97 0.01 95);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.552 0.016 285.938);
+  --border: oklch(0.28 0.02 265);
+  --input: oklch(0.28 0.02 265);
+  --ring: oklch(0.72 0.08 82);
+  --brand-gold: oklch(0.78 0.09 82);
+  --brand-gold-muted: oklch(0.62 0.06 78);
+  --PhoneInputCountryFlag-borderColor: rgba(255, 255, 255, 0.28);
+  --PhoneInputCountryFlag-backgroundColor--loading: rgba(255, 255, 255, 0.06);
+  --PhoneInput-color--focus: oklch(0.72 0.08 82);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);

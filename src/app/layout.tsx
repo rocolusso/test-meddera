@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 import './globals.css';
 // import GoogleAnalytics from '@/components/GoogleAnalytics';
 
+import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
 import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import SectionQueryScroll from '@/components/SectionQueryScroll';
 import { Analytics } from '@vercel/analytics/react';
@@ -103,12 +104,20 @@ export default async function RootLayout({
     <html
       lang={htmlLang}
       style={{ overflowX: 'hidden' }}
+      suppressHydrationWarning
     >
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-language" content={htmlLang} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {nonce ? (
+          <script
+            nonce={nonce}
+            // eslint-disable-next-line react/no-danger -- CSP nonce-bound bootstrap; matches ThemeToggle key
+            dangerouslySetInnerHTML={{ __html: getThemeBootstrapScript() }}
+          />
+        ) : null}
         {alternates ? (
           <>
             <link rel="alternate" hrefLang="ru" href={alternates.ru} />
@@ -153,7 +162,7 @@ export default async function RootLayout({
       {isVercel ? <Analytics /> : null}
       {isVercel ? <SpeedInsights /> : null}
       <DeferredGoogleTagManager nonce={nonce} />
-      <body>
+      <body className="min-h-screen bg-background text-foreground antialiased">
         <SectionQueryScroll />
         {children}
       </body>

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import FooterNew from '@/components/new-ui/FooterNew';
+import { ContentArticleBody } from '@/components/new-ui/ContentPageShell';
 import { blogArticleJsonLd } from '@/lib/jsonld/blog-article';
 import { lipAugmentationHubJsonLd } from '@/lib/jsonld/lip-augmentation-hub';
 import { blogSocialMetadata } from '@/lib/site-og';
@@ -101,10 +102,8 @@ export default async function BlogPostRuPage({ params }: Props) {
         />
       ) : null}
       <HeaderNew locale="ru" />
-      <main className="bg-white">
-        <div className="container mx-auto max-w-3xl px-5 py-10">
-          {body}
-        </div>
+      <main className="border-b border-border/40 bg-gradient-to-b from-muted/20 via-background to-background">
+        <ContentArticleBody>{body}</ContentArticleBody>
       </main>
       <FooterNew locale="ru" />
     </>

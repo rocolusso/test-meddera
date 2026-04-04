@@ -1,0 +1,4 @@
+Contact: mailto:admin@meddera.md
+Preferred-Languages: en, ru
+Policy: https://meddera.md/
+Expires: 2026-12-31T23:59:59.000Z

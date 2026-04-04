@@ -33,7 +33,7 @@ export function LipClusterArticleBody({ post, locale }: Props) {
     return (
       <>
         <nav className="text-sm text-gray-500 mb-6" aria-label="Хлебные крошки">
-          <Link href="/" className="underline hover:text-gray-800">Главная</Link>
+          <Link href="/public" className="underline hover:text-gray-800">Главная</Link>
           <span className="mx-2">/</span>
           <Link href="/blog" className="underline hover:text-gray-800">Блог</Link>
           <span className="mx-2">/</span>

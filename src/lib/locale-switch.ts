@@ -7,7 +7,7 @@ function normalizePathname(pathname: string): string {
 
 /**
  * Target path for the other site language, preserving route kind (home, blog, post, pagination, services).
- * Query string should be appended by the caller (e.g. ?section=about on home).
+ * Query string should be appended by the caller (e.g. ?section=contacts on home).
  */
 export function getAlternateLocalePath(pathname: string, locale: 'ru' | 'ro'): string {
   const p = normalizePathname(pathname);
@@ -19,6 +19,27 @@ export function getAlternateLocalePath(pathname: string, locale: 'ru' | 'ro'): s
   }
   if (p === '/ro') {
     return toRu ? '/' : '/ro';
+  }
+
+  if (p === '/about') {
+    return toRo ? '/ro/about' : '/about';
+  }
+  if (p === '/ro/about') {
+    return toRu ? '/about' : '/ro/about';
+  }
+
+  if (p === '/services') {
+    return toRo ? '/ro/services' : '/services';
+  }
+  if (p === '/ro/services') {
+    return toRu ? '/services' : '/ro/services';
+  }
+
+  if (p === '/contacts') {
+    return toRo ? '/ro/contacts' : '/contacts';
+  }
+  if (p === '/ro/contacts') {
+    return toRu ? '/contacts' : '/ro/contacts';
   }
 
   if (p === '/blog') {

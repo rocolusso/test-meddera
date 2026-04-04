@@ -6,19 +6,9 @@ import LazyGoogleMapIframe from '@/components/LazyGoogleMapIframe';
 
 function LazyMap({ locale }: { locale: 'ru' | 'ro' }) {
   return (
-    <div id="lazy-map">
-      <div className="map-container mx-auto flex justify-center">
-        <div className="mx-auto mt-10">
-          <div className="mapouter">
-            <div className="gmap_canvas">
-              <LazyGoogleMapIframe
-                width={3840}
-                height={450}
-                locale={locale}
-              />
-            </div>
-          </div>
-        </div>
+    <div className="w-full border-t border-border bg-muted/20" id="lazy-map">
+      <div className="w-full pb-16 pt-10 sm:pb-20">
+        <LazyGoogleMapIframe height={480} locale={locale} />
       </div>
     </div>
   );
