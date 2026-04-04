@@ -156,8 +156,8 @@ function ServicePage2Ro() {
           <section>
             <h2>Tarife Consultații</h2>
             <ul>
-              <li>Consultație inițială: 350 MDL</li>
-              <li>Consultație de control: 300 MDL</li>
+              <li>Consultație inițială: 400 MDL</li>
+              <li>Consultație de control: 200 MDL</li>
               <li>
                 Proceduri dermatologice: prețuri variabile
                 în funcție de complexitate
