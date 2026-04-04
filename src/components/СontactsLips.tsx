@@ -8,7 +8,6 @@ import PhoneInputWithCountrySelect from 'react-phone-number-input';
 import LazyMap from '@/components/LazyMap';
 import imgAddress from '../../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import { trackEvent } from '@/lib/gtm';
 import { executeRecaptcha, prefetchRecaptchaScript } from '@/lib/recaptcha-client';
 import RecaptchaDisclaimer from '@/components/RecaptchaDisclaimer';
@@ -185,15 +184,17 @@ function ContactsLips({ locale }:{ locale:string }) {
                       <div className="mt-6 flex flex-col items-center gap-5">
 
                         <div className="flex items-center justify-center gap-2 transition-colors duration-200 hover:text-brand-gold">
-                          <Link
-                            href="/#lazy-map"
-                            className="flex items-center gap-2 text-xs font-bold uppercase sm:text-sm"
-                          >
-                            <div>
-                              <FaMapLocationDot size="32px" />
-                            </div>
-                            <p className="text-lg font-bold uppercase">Balti, Stefan Cel Mare, 13</p>
-                          </Link>
+                          <div className="group -mx-1 flex min-w-0 items-start gap-3.5 rounded-lg px-1 py-1 text-foreground transition-colors hover:text-brand-gold sm:items-center">
+                            <span
+                              className="mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-full bg-muted/45 text-brand-gold transition-colors group-hover:bg-muted group-hover:text-brand-gold sm:mt-0"
+                              aria-hidden
+                            >
+                              <FaMapLocationDot className="size-[18px] opacity-90" />
+                            </span>
+                            <span className="min-w-0 flex-1 break-words text-left text-xs font-medium uppercase leading-relaxed tracking-wide text-foreground/95 sm:text-sm sm:font-semibold sm:normal-case sm:tracking-normal">
+                              Balti, Stefan Cel Mare, 13
+                            </span>
+                          </div>
                         </div>
 
                         <Button
