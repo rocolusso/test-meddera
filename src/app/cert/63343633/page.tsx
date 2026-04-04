@@ -27,7 +27,7 @@ function Page() {
             <div
               className="flex gap-5 items-center border p-5 backdrop-blur-2xl sm:rounded-3xl sm:shadow-2xl z-50"
             >
-              <Link href="/public">
+              <Link href="/">
                 <div className="max-w-[300px]">
                   <Image
                     src={pintea}
@@ -53,7 +53,7 @@ function Page() {
                     Услуги
                   </Link>
                   <Link
-                    href="/public?section=contacts"
+                    href="/?section=contacts"
                     className="hover:bg-black hover:underline hover:text-white p-5 duration-300 hover:scale-105"
                   >
                     Контакты

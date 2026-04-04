@@ -180,7 +180,7 @@ function ContactsLips({ locale }:{ locale:string }) {
 
                         <div className="flex items-center justify-center gap-2 transition-colors duration-200 hover:text-brand-gold">
                           <Link
-                            href="/public#lazy-map"
+                            href="/#lazy-map"
                             className="flex items-center gap-2 text-xs font-bold uppercase sm:text-sm"
                           >
                             <div>

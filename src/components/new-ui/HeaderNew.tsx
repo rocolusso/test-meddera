@@ -20,7 +20,7 @@ function HeaderNew({ locale }: { locale: string }) {
         <div className="relative z-10 container mx-auto max-w-6xl px-3 sm:px-5 lg:px-6">
           <div className="flex min-h-[5.25rem] w-full min-w-0 items-center justify-between gap-2 py-4 sm:min-h-16 sm:gap-4 sm:py-4">
             <Link
-              href="/public"
+              href={locale === 'ro' ? '/ro' : '/'}
               className="relative z-[1] min-w-0 max-w-[min(148px,40vw)] shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:max-w-[220px] lg:max-w-[300px]"
             >
               <div className="flex min-h-[20px] items-center">
