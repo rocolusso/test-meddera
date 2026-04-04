@@ -148,9 +148,9 @@ const BLOG_POSTS: BlogPost[] = [
     titleRu: 'Форма и симметрия губ без перегрузки объёма | Meddera',
     titleRo: 'Formă și simetrie a buzelor fără supraîncărcare de volum | Meddera',
     descriptionRu:
-      'Симметрия и контур губ без перегруза объёма: как согласовывают план с врачом в Meddera, Бельцы. Образовательный материал для пациентов перед консультацией.',
+      'Симметрия и контур губ без перегруза объёма: план с врачом в Meddera, Бельцы. Образовательный материал перед консультацией.',
     descriptionRo:
-      'Simetrie și contur al buzelor fără volum excesiv: cum stabiliți obiectivele cu medicul la Meddera în Bălți. Material educativ pentru pacienți înainte de consultație.',
+      'Simetrie și contur buze fără volum excesiv: plan cu medicul la Meddera în Bălți. Material educativ înainte de consultație.',
     excerptRu: 'Гармония лица и индивидуальный план коррекции.',
     excerptRo: 'Armonia feței și planul individual de corecție.',
     bodyKey: 'lip-cluster-article',
