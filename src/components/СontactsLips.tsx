@@ -19,8 +19,8 @@ function ContactsLips({ locale }:{ locale:string }) {
   const [isWorkingHours, setIsWorkingHours] = useState(false);
   const [currentTime, setCurrentTime] = useState('');
 
-  const workStart = 9; // 10:00
-  const workEnd = 20; // 17:00
+  const workStart = 13; // 10:00
+  const workEnd = 18; // 17:00
 
   const now = new Date();
   const hours = now.getHours();
