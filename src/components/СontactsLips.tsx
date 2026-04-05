@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { FaMapLocationDot, FaPhoneVolume } from 'react-icons/fa6';
 import { MdPhoneInTalk } from 'react-icons/md';
 import Image from 'next/image';
@@ -17,24 +17,10 @@ import { parseContactForm } from '@/lib/contact-form-schema';
 import { useContactFormAntiSpam } from '@/hooks/useContactFormAntiSpam';
 import { getFormTokenUnavailableMessage } from '@/lib/contact-form-token-client';
 import { ContactFormSubmittingStatus } from '@/components/ContactFormSubmittingStatus';
+import { useContactReceptionSchedule } from '@/hooks/useContactReceptionSchedule';
 
 function ContactsLips({ locale }:{ locale:string }) {
-  const [isWorkingHours, setIsWorkingHours] = useState(false);
-  const [currentTime, setCurrentTime] = useState('');
-
-  const workStart = 13; // 10:00
-  const workEnd = 18; // 17:00
-
-  const now = new Date();
-  const hours = now.getHours();
-
-  const isInWorkingHours = hours >= workStart && hours < workEnd;
-  const formattedTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-  useEffect(() => {
-    setIsWorkingHours(isInWorkingHours);
-    setCurrentTime(formattedTime);
-  }, [formattedTime, isInWorkingHours]);
+  const { isOpenNow, isSunday, currentTime, weekdayLong } = useContactReceptionSchedule(locale);
 
   const callPhone = () => {
     // eslint-disable-next-line no-undef
@@ -45,7 +31,7 @@ function ContactsLips({ locale }:{ locale:string }) {
     trackEvent('phone_click_fixed', {
       action: 'click',
       target: 'Phone_click_fixed',
-      label: `Нажатие тел фикс. ${formattedTime}`,
+      label: `Нажатие тел фикс. ${currentTime}`,
     });
     // eslint-disable-next-line no-undef
     window.location.href = 'tel:+37368550030';
@@ -298,6 +284,22 @@ function ContactsLips({ locale }:{ locale:string }) {
                         </p>
                       </div>
 
+                      <div className="pb-2 text-center">
+                        <p className="px-3 text-sm text-muted-foreground sm:text-base">
+                          {locale === 'ru'
+                            ? 'Дни приёма: понедельник — суббота. Воскресенье — выходной.'
+                            : 'Zile de recepție: luni — sâmbătă. Duminică — închis.'}
+                        </p>
+                      </div>
+
+                      <div className="pb-4 text-center">
+                        <p className="text-sm capitalize text-muted-foreground">
+                          {locale === 'ru' ? 'Сегодня:' : 'Astăzi:'}
+                          {' '}
+                          <span className="font-semibold text-foreground">{weekdayLong}</span>
+                        </p>
+                      </div>
+
                       <div className="pb-4 text-center">
                         <p className="rounded-lg p-3 text-sm font-bold text-foreground">
                           {
@@ -309,36 +311,36 @@ function ContactsLips({ locale }:{ locale:string }) {
                         </p>
                       </div>
                       <div className="text-center">
-                        <p className={!isWorkingHours
+                        <p className={!isOpenNow
                           ? 'rounded-lg bg-red-800 p-3 text-sm text-white sm:text-base'
                           : 'mb-6 rounded-lg bg-emerald-800 p-3 text-sm text-white sm:text-base'}
                         >
-                          {
-                            // eslint-disable-next-line no-nested-ternary
-                            isWorkingHours
-                              ? (locale === 'ru' ? 'Мы открыты!' : 'Suntem deschiși!')
+                          {isOpenNow
+                            ? (locale === 'ru' ? 'Мы открыты!' : 'Suntem deschiși!')
+                            : isSunday
+                              ? (locale === 'ru'
+                                ? 'Статус: закрыты. Сегодня выходной — мы не принимаем по воскресеньям. Но оставьте своё сообщение, и мы свяжемся с вами в рабочее время.'
+                                : 'Stare: închis. Astăzi este zi liberă — nu primim duminica. Dar lăsați mesajul dumneavoastră și vă vom contacta în timpul programului de lucru.')
                               : (locale === 'ru'
                                 ? 'Сейчас мы не работаем, но оставьте свои данные, и мы перезвоним в рабочее время.'
                                 : 'Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom suna în timpul programului de lucru.'
-                              )
-                          }
+                              )}
                         </p>
                       </div>
-                      {!isWorkingHours
+                      {!isOpenNow
                               && (
                                 <p className="p-3 text-sm uppercase text-muted-foreground">
-                                  {locale === 'ru' ? 'Текущее время:' : 'ora curentă'}
+                                  {locale === 'ru' ? 'Текущее время:' : 'Ora curentă:'}
                                   {' '}
                                   {currentTime}
                                 </p>
                               )}
-                      {!isWorkingHours
+                      {!isOpenNow
                               && (
-                                <p className="p-3 text-sm uppercase text-muted-foreground">
-                                  {locale === 'ru' ? 'Часы работы:' : 'Program de lucru:'}
-                                  {' '}
-                                  13:00
-                                  - 18:00
+                                <p className="mb-6 p-3 text-sm uppercase text-muted-foreground">
+                                  {locale === 'ru'
+                                    ? 'Пн–сб 13:00–18:00 · вс — выходной'
+                                    : 'Lun–sâm 13:00–18:00 · dum — închis'}
                                 </p>
                               )}
                     </div>
