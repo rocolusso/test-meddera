@@ -15,6 +15,7 @@ import DOMPurify from 'dompurify';
 import type { ContactFieldErrors } from '@/lib/contact-form-schema';
 import { parseContactForm } from '@/lib/contact-form-schema';
 import { useContactFormAntiSpam } from '@/hooks/useContactFormAntiSpam';
+import { getFormTokenUnavailableMessage } from '@/lib/contact-form-token-client';
 
 function ContactsLips({ locale }:{ locale:string }) {
   const [isWorkingHours, setIsWorkingHours] = useState(false);
@@ -108,22 +109,21 @@ function ContactsLips({ locale }:{ locale:string }) {
     }
 
     let tokenJson: { token?: string; disabled?: boolean } | null = null;
+    let tokenHttpStatus = 0;
     try {
       const tokenRes = await fetch('/api/form-token');
+      tokenHttpStatus = tokenRes.status;
       tokenJson = (await tokenRes.json()) as { token?: string; disabled?: boolean };
     } catch {
       tokenJson = null;
+      tokenHttpStatus = 0;
     }
 
     const abuseDisabled = tokenJson?.disabled === true;
     const formToken = typeof tokenJson?.token === 'string' ? tokenJson.token : '';
     if (!abuseDisabled && !formToken) {
       setLocked(false);
-      setSubmitError(
-        locale === 'ru'
-          ? 'Сервис временно недоступен. Попробуйте позже.'
-          : 'Serviciul este temporar indisponibil. Încercați mai târziu.',
-      );
+      setSubmitError(getFormTokenUnavailableMessage(locale, tokenHttpStatus));
       return;
     }
 
