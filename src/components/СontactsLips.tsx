@@ -12,6 +12,8 @@ import { trackEvent } from '@/lib/gtm';
 import { executeRecaptcha, prefetchRecaptchaScript } from '@/lib/recaptcha-client';
 import RecaptchaDisclaimer from '@/components/RecaptchaDisclaimer';
 import DOMPurify from 'dompurify';
+import type { ContactFieldErrors } from '@/lib/contact-form-schema';
+import { parseContactForm } from '@/lib/contact-form-schema';
 
 function ContactsLips({ locale }:{ locale:string }) {
   const [isWorkingHours, setIsWorkingHours] = useState(false);
@@ -54,6 +56,7 @@ function ContactsLips({ locale }:{ locale:string }) {
 
   const [submitAlert, setSubmitAlert] = useState<boolean>(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [fieldErrors, setFieldErrors] = useState<ContactFieldErrors>({});
   const recaptchaPrefetchDone = useRef(false);
 
   const prefetchRecaptchaOnce = () => {
@@ -67,73 +70,80 @@ function ContactsLips({ locale }:{ locale:string }) {
     e.stopPropagation();
 
     setSubmitError(null);
+    setFieldErrors({});
     setLocked(true);
 
-    if (!name.length) {
+    const parsed = parseContactForm(locale, {
+      username: name,
+      userphone: phone,
+      message,
+    });
+
+    if (!parsed.ok) {
+      setFieldErrors(parsed.fieldErrors);
       setLocked(false);
       return;
     }
 
-    if (!phone.length) {
+    const { username: validName, userphone: validPhone, message: validMessage } = parsed.data;
+
+    const recaptchaToken = await executeRecaptcha('lips_contact');
+    if (!recaptchaToken) {
       setLocked(false);
+      setSubmitError(
+        locale === 'ru'
+          ? 'Не удалось проверить отправку. Обновите страницу и попробуйте снова.'
+          : 'Nu s-a putut verifica trimiterea. Reîmprospătați pagina și încercați din nou.',
+      );
       return;
     }
 
-    if (name.length > 2 && phone.length > 5) {
-      const recaptchaToken = await executeRecaptcha('lips_contact');
-      if (!recaptchaToken) {
-        setLocked(false);
-        setSubmitError(
-          locale === 'ru'
-            ? 'Не удалось проверить отправку. Обновите страницу и попробуйте снова.'
-            : 'Nu s-a putut verifica trimiterea. Reîmprospătați pagina și încercați din nou.',
-        );
-        return;
-      }
-
-      const sendForm = async () => fetch('/api/lips-form', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+    const sendForm = async () => fetch('/api/lips-form', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        recaptchaToken,
+        message: {
+          username: validName,
+          userphone: validPhone,
+          message: validMessage,
         },
-        body: JSON.stringify({
-          recaptchaToken,
-          message: {
-            username: name,
-            userphone: phone,
-            message,
-          },
-        }),
-      });
+      }),
+    });
 
-      const res = await sendForm();
+    const res = await sendForm();
 
-      if (!res.ok) {
-        setLocked(false);
-        setSubmitError(
-          locale === 'ru'
-            ? 'Не удалось отправить сообщение. Попробуйте позже.'
-            : 'Nu s-a putut trimite mesajul. Încercați mai târziu.',
-        );
-        return;
-      }
-
-      setName('');
-      setPhone('');
-      setMessage('');
+    if (!res.ok) {
       setLocked(false);
-      setSubmitAlert(true);
-
-      setTimeout(() => {
-        setSubmitAlert(false);
-      }, 3000);
-    } else {
-      setLocked(false);
+      setSubmitError(
+        locale === 'ru'
+          ? 'Не удалось отправить сообщение. Попробуйте позже.'
+          : 'Nu s-a putut trimite mesajul. Încercați mai târziu.',
+      );
+      return;
     }
+
+    setName('');
+    setPhone('');
+    setMessage('');
+    setFieldErrors({});
+    setLocked(false);
+    setSubmitAlert(true);
+
+    setTimeout(() => {
+      setSubmitAlert(false);
+    }, 3000);
   };
 
-  const fieldClass =
-    'w-full mt-2 rounded-lg border border-border bg-card py-3 px-3 font-semibold text-foreground shadow-sm transition-colors placeholder:text-muted-foreground focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/35';
+  const fieldClass = (hasError: boolean) =>
+    [
+      'w-full mt-2 rounded-lg border bg-card py-3 px-3 font-semibold text-foreground shadow-sm transition-colors placeholder:text-muted-foreground focus:outline-none focus:ring-2',
+      hasError
+        ? 'border-red-600 focus:border-red-600 focus:ring-red-500/35 dark:border-red-500'
+        : 'border-border focus:border-ring focus:ring-ring/35',
+    ].join(' ');
 
   return (
     <div className="contacts-lips scroll-mt-28 border-t border-border bg-background text-foreground" id="contacts">
@@ -288,11 +298,20 @@ function ContactsLips({ locale }:{ locale:string }) {
                             name="name"
                             type="text"
                             autoComplete="name"
-                            className={fieldClass}
+                            aria-invalid={Boolean(fieldErrors.username)}
+                            className={fieldClass(Boolean(fieldErrors.username))}
                             placeholder={locale === 'ru' ? 'Имя' : 'Nume'}
                             value={name}
-                            onChange={(e) => setName(DOMPurify.sanitize(e.target.value))}
+                            onChange={(e) => {
+                              setFieldErrors((prev) => ({ ...prev, username: undefined }));
+                              setName(DOMPurify.sanitize(e.target.value));
+                            }}
                           />
+                          {fieldErrors.username ? (
+                            <p className="mt-1.5 text-sm text-red-600 dark:text-red-400" role="alert">
+                              {fieldErrors.username}
+                            </p>
+                          ) : null}
                         </div>
                         <div className="flex flex-col mt-4">
                           {/* Default flagUrl (CDN img) — avoid react-phone-number-input/flags (~300KB+ parsed JS from country-flag-icons). */}
@@ -300,17 +319,23 @@ function ContactsLips({ locale }:{ locale:string }) {
                             id="contact-phone"
                             name="phone"
                             autoComplete="tel"
-                            className={fieldClass}
+                            className={fieldClass(Boolean(fieldErrors.userphone))}
                             defaultCountry="MD"
                             placeholder={locale === 'ru' ? 'Ваш номер телефона' : 'Numărul dumneavoastră de telefon'}
                             value={phone}
                             onChange={(e) => {
+                              setFieldErrors((prev) => ({ ...prev, userphone: undefined }));
                               if (e !== undefined) {
                                 setPhone(DOMPurify.sanitize(e));
                               }
                             }}
                             countrySelectProps={{ id: 'contact-phone-country' }}
                           />
+                          {fieldErrors.userphone ? (
+                            <p className="mt-1.5 text-sm text-red-600 dark:text-red-400" role="alert">
+                              {fieldErrors.userphone}
+                            </p>
+                          ) : null}
                         </div>
 
                         <div className="flex flex-col mt-2">
@@ -318,17 +343,29 @@ function ContactsLips({ locale }:{ locale:string }) {
                             id="contact-message"
                             name="message"
                             autoComplete="off"
-                            className={`${fieldClass} h-[150px] resize-none`}
+                            aria-invalid={Boolean(fieldErrors.message)}
+                            className={`${fieldClass(Boolean(fieldErrors.message))} h-[150px] resize-none`}
                             placeholder={locale === 'ru' ? 'Cообщение' : 'Mesaj'}
                             value={message}
-                            onChange={(e) => setMessage(DOMPurify.sanitize(e.target.value))}
+                            onChange={(e) => {
+                              setFieldErrors((prev) => ({ ...prev, message: undefined }));
+                              setMessage(DOMPurify.sanitize(e.target.value));
+                            }}
                           />
+                          {fieldErrors.message ? (
+                            <p className="mt-1.5 text-sm text-red-600 dark:text-red-400" role="alert">
+                              {fieldErrors.message}
+                            </p>
+                          ) : null}
 
                           {
                             submitError
                               && (
                                 <div className="submit_alert" id="formSubmitError">
-                                  <p className="mb-5 rounded-lg border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
+                                  <p
+                                    className="mb-5 rounded-lg border border-red-600 bg-red-50 p-4 text-sm text-red-800 dark:border-red-500/50 dark:bg-red-950/50 dark:text-red-100"
+                                    role="alert"
+                                  >
                                     {submitError}
                                   </p>
                                 </div>
@@ -338,7 +375,10 @@ function ContactsLips({ locale }:{ locale:string }) {
                             submitAlert
                               && (
                                 <div className="submit_alert" id="formSubmitAlert">
-                                  <p className="mb-5 rounded-lg border border-border bg-muted p-4 text-sm text-foreground">
+                                  <p
+                                    className="mb-5 rounded-lg border border-green-600 bg-green-50 p-4 text-sm text-green-800 dark:border-green-500/50 dark:bg-green-950/40 dark:text-green-100"
+                                    role="status"
+                                  >
                                     {locale === 'ru'
                                       ? 'Спасибо! Ваше сообщение получено'
                                       : 'Mulțumim! Mesajul dumneavoastră a fost primit'}
