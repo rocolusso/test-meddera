@@ -10,6 +10,7 @@ import { verifyFormToken } from '@/lib/form-token';
 import { parseContactForm } from '@/lib/contact-form-schema';
 import { verifyRecaptchaForScoring, verifyRecaptchaToken } from '@/lib/recaptcha-verify';
 import { isFormAbuseProtectionDisabled } from '@/lib/form-abuse-flags';
+import { appendTelegramUrlBlock, resolveFormPathname } from '@/lib/form-page-url';
 import { consumeFormJtiOnce } from '@/lib/upstash-replay';
 
 const TELEGRAM_USER_IDS = [
@@ -54,13 +55,15 @@ async function legacyContactFormPost(
   const phone = typeof msg?.userphone === 'string' ? msg.userphone : '';
   const userMessage = typeof msg?.message === 'string' ? msg.message : '';
 
-  const message = `
+  const formPathname = resolveFormPathname(body, request);
+  const messageBase = `
 ${telegramFormTitle}
 
 Имя: ${name}
 Телефон: ${phone}
 Сообщение: ${userMessage}
 `;
+  const message = appendTelegramUrlBlock(messageBase.trimEnd(), formPathname);
 
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
   const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
@@ -165,11 +168,11 @@ export async function processContactFormPost(
   const behavior: BehaviorMetrics =
     b && typeof b === 'object'
       ? {
-          mousemove: clampBehavior(Number(b.mousemove)),
-          keydown: clampBehavior(Number(b.keydown)),
-          touchstart: clampBehavior(Number(b.touchstart)),
-          pointerdown: clampBehavior(Number(b.pointerdown)),
-        }
+        mousemove: clampBehavior(Number(b.mousemove)),
+        keydown: clampBehavior(Number(b.keydown)),
+        touchstart: clampBehavior(Number(b.touchstart)),
+        pointerdown: clampBehavior(Number(b.pointerdown)),
+      }
       : defaultBehavior();
 
   const ua = request.headers.get('user-agent');
@@ -191,13 +194,15 @@ export async function processContactFormPost(
 
   const { username: name, userphone: phone, message: messageText } = parsed.data;
 
-  const telegramBlock = `
+  const formPathname = resolveFormPathname(body, request);
+  const telegramBase = `
 ${options.telegramFormTitle}
 
 Имя: ${name}
 Телефон: ${phone}
 Сообщение: ${messageText}
 `;
+  const telegramBlock = appendTelegramUrlBlock(telegramBase.trimEnd(), formPathname);
 
   if (score <= 40) {
     return NextResponse.json({ success: true, shadow: true });

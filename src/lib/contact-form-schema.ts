@@ -1,7 +1,28 @@
-import { isValidPhoneNumber } from 'libphonenumber-js';
+import { parsePhoneNumberFromString } from 'libphonenumber-js';
 import { z } from 'zod';
 
 export type ContactFieldKey = 'username' | 'userphone' | 'message';
+
+/** Strip zero-width chars; trim. PhoneInput sometimes injects \u200B between segments. */
+export function cleanPhoneInput(raw: string): string {
+  return raw.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
+}
+
+/**
+ * Any valid international number, else national/international as Moldova (matches defaultCountry="MD" in forms).
+ */
+export function isValidContactPhone(raw: string): boolean {
+  const v = cleanPhoneInput(raw);
+  if (!v) {
+    return false;
+  }
+  const asIntl = parsePhoneNumberFromString(v);
+  if (asIntl?.isValid()) {
+    return true;
+  }
+  const asMd = parsePhoneNumberFromString(v, 'MD');
+  return asMd?.isValid() ?? false;
+}
 
 export type ContactFieldErrors = Partial<Record<ContactFieldKey, string>>;
 
@@ -11,7 +32,8 @@ function messages(locale: string) {
       nameShort: 'Введите имя (не менее 3 символов).',
       nameLong: 'Имя слишком длинное.',
       phoneRequired: 'Укажите номер телефона.',
-      phoneInvalid: 'Введите корректный номер телефона.',
+      phoneInvalid:
+        'Укажите номер в формате Молдовы: с 0 (например 069…) или с кодом +373. Если нужна другая страна — смените флаг в поле.',
       messageLong: 'Сообщение слишком длинное.',
     };
   }
@@ -19,7 +41,8 @@ function messages(locale: string) {
     nameShort: 'Introduceți numele (minimum 3 caractere).',
     nameLong: 'Numele este prea lung.',
     phoneRequired: 'Indicați numărul de telefon.',
-    phoneInvalid: 'Introduceți un număr de telefon valid.',
+    phoneInvalid:
+      'Indicați numărul în formatul Moldovei: cu 0 (ex. 069…) sau cu prefix +373. Pentru altă țară — schimbați steagul în câmp.',
     messageLong: 'Mesajul este prea lung.',
   };
 }
@@ -36,9 +59,13 @@ export function parseContactForm(
     username: z.string().trim().min(3, m.nameShort).max(200, m.nameLong),
     userphone: z
       .string()
-      .trim()
-      .min(1, m.phoneRequired)
-      .refine((v) => isValidPhoneNumber(v), { message: m.phoneInvalid }),
+      .transform((s) => cleanPhoneInput(s))
+      .pipe(
+        z
+          .string()
+          .min(1, m.phoneRequired)
+          .refine((v) => isValidContactPhone(v), { message: m.phoneInvalid }),
+      ),
     message: z.string().max(5000, m.messageLong),
   });
 

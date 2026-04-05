@@ -135,6 +135,7 @@ function ContactsLips({ locale }:{ locale:string }) {
         message: validMessage,
       },
       locale,
+      formPathname: typeof window !== 'undefined' ? window.location.href : '',
     };
     if (!abuseDisabled) {
       payload.formToken = formToken;
@@ -346,16 +347,6 @@ function ContactsLips({ locale }:{ locale:string }) {
                       className="flex flex-col justify-center p-5 sm:p-6"
                     >
                       <fieldset disabled={locked}>
-                        <input
-                          type="text"
-                          name="website"
-                          tabIndex={-1}
-                          autoComplete="off"
-                          aria-hidden
-                          className="pointer-events-none absolute -left-[9999px] h-px w-px opacity-0"
-                          value={website}
-                          onChange={(e) => setWebsite(e.target.value)}
-                        />
                         <div className="flex flex-col">
                           <input
                             id="contact-name"
@@ -390,7 +381,7 @@ function ContactsLips({ locale }:{ locale:string }) {
                             onChange={(e) => {
                               setFieldErrors((prev) => ({ ...prev, userphone: undefined }));
                               if (e !== undefined) {
-                                setPhone(DOMPurify.sanitize(e));
+                                setPhone(e);
                               }
                             }}
                             countrySelectProps={{ id: 'contact-phone-country' }}
@@ -453,6 +444,19 @@ function ContactsLips({ locale }:{ locale:string }) {
                         </div>
 
                         <RecaptchaDisclaimer locale={locale} />
+
+                        <input
+                          type="text"
+                          name="cf_hp"
+                          tabIndex={-1}
+                          autoComplete="off"
+                          aria-hidden
+                          data-1p-ignore
+                          data-lpignore="true"
+                          className="absolute -left-[9999px] h-px w-px opacity-0"
+                          value={website}
+                          onChange={(e) => setWebsite(e.target.value)}
+                        />
 
                         <Button
                           className="mt-6 w-full font-bold sm:w-fit"
