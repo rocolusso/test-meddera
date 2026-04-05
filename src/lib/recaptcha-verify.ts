@@ -7,10 +7,32 @@ export type RecaptchaVerifyResult = {
   score?: number;
 };
 
+export type RecaptchaScoreStatus =
+  | 'ok'
+  | 'low_score'
+  | 'invalid'
+  | 'network_error'
+  | 'missing_secret'
+  | 'empty_token';
+
+export type RecaptchaScoringResult = {
+  status: RecaptchaScoreStatus;
+  score?: number;
+};
+
 export async function verifyRecaptchaToken(token: string): Promise<RecaptchaVerifyResult> {
+  const detailed = await verifyRecaptchaForScoring(token);
+  return { ok: detailed.status === 'ok', score: detailed.score };
+}
+
+/** Full detail for anti-spam scoring and fallback when Google is down. */
+export async function verifyRecaptchaForScoring(token: string): Promise<RecaptchaScoringResult> {
   const secret = process.env.RECAPTCHA_SECRET_KEY;
   if (!secret) {
-    return { ok: false };
+    return { status: 'missing_secret' };
+  }
+  if (!token || token.trim() === '') {
+    return { status: 'empty_token' };
   }
 
   const rawMin = process.env.RECAPTCHA_MIN_SCORE;
@@ -18,7 +40,7 @@ export async function verifyRecaptchaToken(token: string): Promise<RecaptchaVeri
     ? 0.5
     : Number.parseFloat(rawMin);
   if (Number.isNaN(minScore)) {
-    return { ok: false };
+    return { status: 'invalid' };
   }
 
   const params = new URLSearchParams();
@@ -35,21 +57,24 @@ export async function verifyRecaptchaToken(token: string): Promise<RecaptchaVeri
       body: params.toString(),
     });
     if (!res.ok) {
-      return { ok: false };
+      return { status: 'network_error' };
     }
     data = await res.json() as { success?: boolean; score?: number };
   } catch {
-    return { ok: false };
+    return { status: 'network_error' };
   }
 
   if (!data.success) {
-    return { ok: false };
+    return { status: 'invalid' };
   }
 
   const { score } = data;
-  if (typeof score !== 'number' || score < minScore) {
-    return { ok: false, score };
+  if (typeof score !== 'number') {
+    return { status: 'invalid' };
+  }
+  if (score < minScore) {
+    return { status: 'low_score', score };
   }
 
-  return { ok: true, score };
+  return { status: 'ok', score };
 }

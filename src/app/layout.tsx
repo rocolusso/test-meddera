@@ -23,7 +23,6 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const reqHeaders = await headers();
-  const nonce = reqHeaders.get('x-nonce') ?? undefined;
   const pathname = reqHeaders.get('x-pathname') ?? '/';
   const normalizedPath = pathname !== '/' ? pathname.replace(/\/+$/, '') : '/';
   const origin = 'https://meddera.md';
@@ -106,13 +105,10 @@ export default async function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-language" content={htmlLang} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {nonce ? (
-          <script
-            nonce={nonce}
-            // eslint-disable-next-line react/no-danger -- CSP nonce-bound bootstrap; matches ThemeToggle key
-            dangerouslySetInnerHTML={{ __html: getThemeBootstrapScript() }}
-          />
-        ) : null}
+        <script
+          // eslint-disable-next-line react/no-danger -- theme bootstrap before paint; matches ThemeToggle key
+          dangerouslySetInnerHTML={{ __html: getThemeBootstrapScript() }}
+        />
         {alternates ? (
           <>
             <link rel="alternate" hrefLang="ru" href={alternates.ru} />
@@ -131,11 +127,9 @@ export default async function RootLayout({
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="rXIslMFNaqfd12QEhlizeQ"
           strategy="lazyOnload"
-          nonce={nonce}
         />
         <script
           type="application/ld+json"
-          nonce={nonce}
           /* eslint-disable-next-line react/no-danger */
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
@@ -145,8 +139,8 @@ export default async function RootLayout({
         {children}
         {showVercelInsights ? <Analytics /> : null}
         {showVercelInsights ? <SpeedInsights /> : null}
-        <DeferredGoogleTagManager nonce={nonce} />
-        <DeferredClarity nonce={nonce} />
+        <DeferredGoogleTagManager />
+        <DeferredClarity />
       </body>
     </html>
   );

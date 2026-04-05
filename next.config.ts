@@ -12,7 +12,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 /** Replaces Next.js built-in polyfill bundle (modern browsers only). Resolved from this config file so Vercel/cwd cannot break the path. */
 const emptyPolyfillPath = path.join(path.dirname(fileURLToPath(import.meta.url)), 'polyfills', 'empty-polyfill.js');
 
-/** CSP is set per request in src/proxy.ts (nonce + strict-dynamic). Do not duplicate here. */
+/** Security headers below; request pathname for layout is set in src/proxy.ts (x-pathname). */
 
 const getSecurityHeaders = (isDev: boolean) => [
   // Keep HSTS only in production to avoid sticky localhost/browser behavior.
@@ -29,6 +29,9 @@ const getSecurityHeaders = (isDev: boolean) => [
 
 const nextConfig: NextConfig = {
   /* config options here */
+
+  /** Avoid webpack re-bundling Upstash (fixes "Super expression must either be null or a function" in API routes). */
+  serverExternalPackages: ['@upstash/redis', '@upstash/ratelimit'],
 
   poweredByHeader: false,
 

@@ -5,15 +5,10 @@ import { useEffect, useState } from 'react';
 
 const GTM_ID = 'GTM-KFCP3D5F';
 
-type Props = {
-  /** From CSP proxy (x-nonce); required for strict script-src with nonce + strict-dynamic. */
-  nonce?: string;
-};
-
 /**
  * GTM after window load (lazyOnload) and after requestIdleCallback — reduces overlap with main-thread work vs loading immediately after load.
  */
-export default function DeferredGoogleTagManager({ nonce }: Props) {
+export default function DeferredGoogleTagManager() {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -47,7 +42,6 @@ export default function DeferredGoogleTagManager({ nonce }: Props) {
       <Script
         id="_next-gtm-init"
         strategy="lazyOnload"
-        nonce={nonce}
         dangerouslySetInnerHTML={{
           __html: `
       (function(w,l){
@@ -59,7 +53,6 @@ export default function DeferredGoogleTagManager({ nonce }: Props) {
       <Script
         id="_next-gtm"
         strategy="lazyOnload"
-        nonce={nonce}
         src={`https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`}
         data-ntpc="GTM"
       />

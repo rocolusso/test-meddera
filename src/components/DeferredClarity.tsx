@@ -3,10 +3,6 @@
 import Script from 'next/script';
 import { useEffect, useState } from 'react';
 
-type Props = {
-  nonce?: string;
-};
-
 const CLARITY_BOOTSTRAP = `
 (function(c,l,a,r,i,t,y){
   c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -18,7 +14,7 @@ const CLARITY_BOOTSTRAP = `
 /**
  * Loads Microsoft Clarity after the browser is idle (or timeout), so it does not compete with LCP/TBT.
  */
-export default function DeferredClarity({ nonce }: Props) {
+export default function DeferredClarity() {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -51,7 +47,6 @@ export default function DeferredClarity({ nonce }: Props) {
     <Script
       id="microsoft-clarity"
       strategy="lazyOnload"
-      nonce={nonce}
       /* eslint-disable-next-line react/no-danger */
       dangerouslySetInnerHTML={{ __html: CLARITY_BOOTSTRAP }}
     />

@@ -14,6 +14,7 @@ import RecaptchaDisclaimer from '@/components/RecaptchaDisclaimer';
 import DOMPurify from 'dompurify';
 import type { ContactFieldErrors } from '@/lib/contact-form-schema';
 import { parseContactForm } from '@/lib/contact-form-schema';
+import { useContactFormAntiSpam } from '@/hooks/useContactFormAntiSpam';
 
 function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading?: boolean }) {
   const [isWorkingHours, setIsWorkingHours] = useState(false);
@@ -59,6 +60,14 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
   const [fieldErrors, setFieldErrors] = useState<ContactFieldErrors>({});
   const recaptchaPrefetchDone = useRef(false);
 
+  const {
+    formRef,
+    website,
+    setWebsite,
+    getSubmitTimeMs,
+    getBehavior,
+  } = useContactFormAntiSpam();
+
   const prefetchRecaptchaOnce = () => {
     if (recaptchaPrefetchDone.current) return;
     recaptchaPrefetchDone.current = true;
@@ -98,25 +107,68 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
       return;
     }
 
-    const sendForm = async () => fetch('/api/main-contact-form', {
+    let tokenJson: { token?: string; disabled?: boolean } | null = null;
+    try {
+      const tokenRes = await fetch('/api/form-token');
+      tokenJson = (await tokenRes.json()) as { token?: string; disabled?: boolean };
+    } catch {
+      tokenJson = null;
+    }
+
+    const abuseDisabled = tokenJson?.disabled === true;
+    const formToken = typeof tokenJson?.token === 'string' ? tokenJson.token : '';
+    if (!abuseDisabled && !formToken) {
+      setLocked(false);
+      setSubmitError(
+        locale === 'ru'
+          ? 'Сервис временно недоступен. Попробуйте позже.'
+          : 'Serviciul este temporar indisponibil. Încercați mai târziu.',
+      );
+      return;
+    }
+
+    const payload: Record<string, unknown> = {
+      recaptchaToken,
+      message: {
+        username: validName,
+        userphone: validPhone,
+        message: validMessage,
+      },
+      locale,
+    };
+    if (!abuseDisabled) {
+      payload.formToken = formToken;
+      payload.website = website;
+      payload.behavior = getBehavior();
+      payload.submitTimeMs = getSubmitTimeMs();
+    }
+
+    const res = await fetch('/api/main-contact-form', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        recaptchaToken,
-        message: {
-          username: validName,
-          userphone: validPhone,
-          message: validMessage,
-        },
-      }),
+      body: JSON.stringify(payload),
     });
-
-    const res = await sendForm();
 
     if (!res.ok) {
       setLocked(false);
+      if (res.status === 429) {
+        setSubmitError(
+          locale === 'ru'
+            ? 'Слишком много попыток. Подождите и попробуйте снова.'
+            : 'Prea multe încercări. Așteptați și încercați din nou.',
+        );
+        return;
+      }
+      if (res.status === 403) {
+        setSubmitError(
+          locale === 'ru'
+            ? 'Отправка отклонена. Обновите страницу и попробуйте снова.'
+            : 'Trimiterea a fost respinsă. Reîmprospătați pagina și încercați din nou.',
+        );
+        return;
+      }
       setSubmitError(
         locale === 'ru'
           ? 'Не удалось отправить сообщение. Попробуйте позже.'
@@ -128,6 +180,7 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
     setName('');
     setPhone('');
     setMessage('');
+    setWebsite('');
     setFieldErrors({});
     setLocked(false);
     setSubmitAlert(true);
@@ -291,11 +344,22 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
                           )}
                     </div>
                     <form
+                      ref={formRef}
                       onSubmit={submitHandler}
                       onFocusCapture={prefetchRecaptchaOnce}
                       className="flex flex-col justify-center p-5 sm:p-6"
                     >
                       <fieldset disabled={locked}>
+                        <input
+                          type="text"
+                          name="website"
+                          tabIndex={-1}
+                          autoComplete="off"
+                          aria-hidden
+                          className="pointer-events-none absolute -left-[9999px] h-px w-px opacity-0"
+                          value={website}
+                          onChange={(e) => setWebsite(e.target.value)}
+                        />
                         <div className="flex flex-col">
                           <input
                             id="contact-name"
