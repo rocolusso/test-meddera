@@ -16,6 +16,7 @@ import type { ContactFieldErrors } from '@/lib/contact-form-schema';
 import { parseContactForm } from '@/lib/contact-form-schema';
 import { useContactFormAntiSpam } from '@/hooks/useContactFormAntiSpam';
 import { getFormTokenUnavailableMessage } from '@/lib/contact-form-token-client';
+import { ContactFormSubmittingStatus } from '@/components/ContactFormSubmittingStatus';
 
 function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading?: boolean }) {
   const [isWorkingHours, setIsWorkingHours] = useState(false);
@@ -80,6 +81,7 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
     e.stopPropagation();
 
     setSubmitError(null);
+    setSubmitAlert(false);
     setFieldErrors({});
     setLocked(true);
 
@@ -417,10 +419,14 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
                             </p>
                           ) : null}
 
+                          <ContactFormSubmittingStatus locale={locale} active={locked} />
                           {
                             submitError
                               && (
-                                <div className="submit_alert" id="formSubmitError">
+                                <div
+                                  className="submit_alert animate-in fade-in zoom-in-95 duration-300 motion-reduce:animate-none"
+                                  id="formSubmitError"
+                                >
                                   <p
                                     className="mb-5 rounded-lg border border-red-600 bg-red-50 p-4 text-sm text-red-800 dark:border-red-500/50 dark:bg-red-950/50 dark:text-red-100"
                                     role="alert"
@@ -433,7 +439,10 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
                           {
                             submitAlert
                               && (
-                                <div className="submit_alert" id="formSubmitAlert">
+                                <div
+                                  className="submit_alert animate-in fade-in zoom-in-95 duration-300 motion-reduce:animate-none"
+                                  id="formSubmitAlert"
+                                >
                                   <p
                                     className="mb-5 rounded-lg border border-green-600 bg-green-50 p-4 text-sm text-green-800 dark:border-green-500/50 dark:bg-green-950/40 dark:text-green-100"
                                     role="status"
@@ -467,11 +476,13 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
                           variant="default"
                           size="lg"
                           type="submit"
-
+                          disabled={locked}
                         >
-                          {locale === 'ru'
-                            ? 'Отправить сообщение'
-                            : 'Trimite mesaj'}
+                          {locked
+                            ? (locale === 'ru' ? 'Отправка…' : 'Se trimite…')
+                            : (locale === 'ru'
+                              ? 'Отправить сообщение'
+                              : 'Trimite mesaj')}
                         </Button>
 
                       </fieldset>
