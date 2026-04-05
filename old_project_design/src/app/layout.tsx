@@ -72,7 +72,7 @@ export default async function RootLayout({
       {
         '@type': 'Physician',
         '@id': physicianId,
-        name: 'Дерматолог Бельци Екатерина Пынтя',
+        name: 'Дерматолог Бельцы Екатерина Пынтя',
         image: 'https://meddera.md/assets/img/about_2k.jpg',
         url: 'https://meddera.md/',
         telephone: '+373-68-550-030',
