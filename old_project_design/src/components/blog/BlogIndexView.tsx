@@ -22,8 +22,8 @@ export function BlogIndexView({ locale, page }: Props) {
   const lipsHub = getHubForCluster('lips');
 
   const title = isRu ? 'Блог' : 'Blog';
-  const clusterTitle = isRu ? 'Кластер: увеличение губ' : 'Cluster: mărirea buzelor';
-  const clusterDesc = isRu
+  const rubricTitle = isRu ? 'Рубрика: увеличение губ' : 'Rubrică: mărirea buzelor';
+  const rubricDesc = isRu
     ? 'Гид по процедуре, этапам и записи в Meddera.'
     : 'Ghid despre procedură, etape și programare la Meddera.';
   const listTitle = isRu ? 'Все статьи' : 'Toate articolele';
@@ -42,12 +42,12 @@ export function BlogIndexView({ locale, page }: Props) {
       {lipsHub ? (
         <section
           className="mb-10 rounded-lg border border-green-200 bg-green-50/80 p-6"
-          aria-labelledby="cluster-lips"
+          aria-labelledby="rubric-lips"
         >
-          <h2 id="cluster-lips" className="text-xl font-semibold text-gray-900 mb-2">
-            {clusterTitle}
+          <h2 id="rubric-lips" className="text-xl font-semibold text-gray-900 mb-2">
+            {rubricTitle}
           </h2>
-          <p className="text-gray-700 text-sm mb-4">{clusterDesc}</p>
+          <p className="text-gray-700 text-sm mb-4">{rubricDesc}</p>
           <div className="flex flex-wrap gap-4">
             <Link
               href={`/blog/${lipsHub.slugRu}`}
