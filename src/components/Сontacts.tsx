@@ -308,8 +308,8 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
                         <p className="rounded-lg p-3 text-sm font-bold text-foreground">
                           {
                             (locale === 'ru'
-                              ? 'Стоимость первичной консультации 400 MDL. Повторно - 200 MDL'
-                              : 'Costul de bază al consultației este de 400 MDL. Repetată — 200 MDL'
+                              ? 'Стоимость первичной консультации 400 MDL. Повторно - 250 MDL'
+                              : 'Costul de bază al consultației este de 400 MDL. Repetată — 250 MDL'
                             )
                           }
                         </p>
