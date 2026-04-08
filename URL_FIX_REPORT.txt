@@ -1,0 +1,77 @@
+================================================================================
+ОТЧЁТ ОБ ИСПРАВЛЕНИИ БИТЫХ URLs
+Дата: 2026-04-08
+================================================================================
+
+🐛 ПРОБЛЕМА
+
+Обнаружены битые URLs с пробелом в slug:
+- gipergidro z (вместо gipergidroz)
+- botoks-gipergidro z (вместо botoks-gipergidroz)
+
+Причина: опечатка при генерации контента (пробел между "gipergidro" и "z")
+
+================================================================================
+
+✅ ИСПРАВЛЕНИЯ
+
+Исправлено в 4 файлах:
+
+1. src/blog-data/dermatologist-cluster-articles-part1.ts
+   - id: 'gipergidro z-lechenie-beltsy' → 'gipergidroz-lechenie-beltsy'
+   - slugRu: 'gipergidro z-lechenie-povyshennoj-potlivosti-beltsy' 
+     → 'gipergidroz-lechenie-povyshennoj-potlivosti-beltsy'
+
+2. src/blog-data/dermatologist-article-content.ts
+   - Ключ объекта: 'gipergidro z-lechenie-beltsy' → 'gipergidroz-lechenie-beltsy'
+
+3. src/blog-data/botox-cluster-articles-part1.ts
+   - id: 'botoks-gipergidro z-podmyshek' → 'botoks-gipergidroz-podmyshek'
+   - slugRu: 'botoks-gipergidro z-podmyshek-beltsy' 
+     → 'botoks-gipergidroz-podmyshek-beltsy'
+
+4. src/blog-data/botox-article-content.ts
+   - Ключ объекта: 'botoks-gipergidro z-podmyshek' → 'botoks-gipergidroz-podmyshek'
+
+================================================================================
+
+📊 РЕЗУЛЬТАТЫ
+
+Исправленные URLs (RU):
+✓ https://meddera.md/blog/gipergidroz-lechenie-povyshennoj-potlivosti-beltsy
+✓ https://meddera.md/blog/botoks-gipergidroz-podmyshek-beltsy
+
+Румынские версии (без изменений):
+✓ https://meddera.md/ro/blog/hiperhidroza-tratament-transpiratie-excesiva-balti
+✓ https://meddera.md/ro/blog/botox-hiperhidroza-axile-balti
+
+Проверка:
+✓ Сборка проекта: успешна (npm run build)
+✓ Битые URLs с пробелом: отсутствуют
+✓ Правильные URLs: присутствуют в списках
+✓ Общее количество URLs: 374 (без изменений)
+
+================================================================================
+
+🎯 СТАТУС
+
+✅ Проблема полностью решена
+✅ Все файлы обновлены
+✅ Списки URLs пересозданы
+✅ Проект пересобран успешно
+
+Готово к деплою на production.
+
+================================================================================
+
+📝 РЕКОМЕНДАЦИИ
+
+1. После деплоя URLs будут корректными:
+   - gipergidroz-lechenie-povyshennoj-potlivosti-beltsy ✓
+   - botoks-gipergidroz-podmyshek-beltsy ✓
+
+2. Indexing API и краулеры Google смогут корректно обработать эти URLs
+
+3. Не требуется настройка редиректов (URL были исправлены до публикации)
+
+================================================================================

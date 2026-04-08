@@ -1458,7 +1458,7 @@ export const BOTOX_ARTICLE_CONTENT: Record<string, BotoxArticleCopy> = {
       },
     ],
   },
-  'botoks-gipergidro z-podmyshek': {
+  'botoks-gipergidroz-podmyshek': {
     sectionsRu: [
       {
         h2: 'Что такое гипергидроз',

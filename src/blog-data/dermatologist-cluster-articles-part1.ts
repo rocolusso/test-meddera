@@ -348,10 +348,10 @@ export const dermatologistArticlesPart1: BlogPost[] = [
     authorByline: { ru: 'Meddera Beauty Clinic', ro: 'Meddera Beauty Clinic' },
   },
   {
-    id: 'gipergidro z-lechenie-beltsy',
+    id: 'gipergidroz-lechenie-beltsy',
     kind: 'article',
     clusterId: 'dermatologist',
-    slugRu: 'gipergidro z-lechenie-povyshennoj-potlivosti-beltsy',
+    slugRu: 'gipergidroz-lechenie-povyshennoj-potlivosti-beltsy',
     slugRo: 'hiperhidroza-tratament-transpiratie-excesiva-balti',
     publishedAt: '2026-04-29',
     dateModified: '2026-04-29',

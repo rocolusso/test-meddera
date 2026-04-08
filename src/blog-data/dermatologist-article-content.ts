@@ -1644,7 +1644,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT: Record<string, DermatologistArticleC
       },
     ],
   },
-  'gipergidro z-lechenie-beltsy': {
+  'gipergidroz-lechenie-beltsy': {
     sectionsRu: [
       {
         h2: 'Что такое гипергидроз',

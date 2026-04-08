@@ -329,10 +329,10 @@ export const botoxArticlesPart1: BlogPost[] = [
     authorByline: { ru: 'Meddera Beauty Clinic', ro: 'Meddera Beauty Clinic' },
   },
   {
-    id: 'botoks-gipergidro z-podmyshek',
+    id: 'botoks-gipergidroz-podmyshek',
     kind: 'article',
     clusterId: 'botox',
-    slugRu: 'botoks-gipergidro z-podmyshek-beltsy',
+    slugRu: 'botoks-gipergidroz-podmyshek-beltsy',
     slugRo: 'botox-hiperhidroza-axile-balti',
     publishedAt: '2026-06-11',
     dateModified: '2026-06-11',
