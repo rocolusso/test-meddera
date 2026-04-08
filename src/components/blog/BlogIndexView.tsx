@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import type { BlogLocale } from '@/blog-data/types';
 import {
-  getHubForCluster,
+  getAllHubs,
   getMaxIndexPage,
   getPostsForIndexPage,
 } from '@/blog-data/registry';
@@ -19,13 +19,10 @@ export function BlogIndexView({ locale, page }: Props) {
   const home = isRu ? '/' : '/ro';
   const maxPage = getMaxIndexPage();
   const posts = getPostsForIndexPage(locale, page);
-  const lipsHub = getHubForCluster('lips');
+  const allHubs = getAllHubs();
 
   const title = isRu ? 'Блог клиники Meddera в Бельцах' : 'Blog — clinica Meddera din Bălți';
-  const rubricTitle = isRu ? 'Рубрика: увеличение губ' : 'Rubrică: mărirea buzelor';
-  const rubricDesc = isRu
-    ? 'Гид по процедуре, этапам и записи в Meddera.'
-    : 'Ghid despre procedură, etape și programare la Meddera.';
+  const rubricsTitle = isRu ? 'Рубрики' : 'Rubrici';
   const listTitle = isRu ? 'Все статьи' : 'Toate articolele';
   const empty = isRu ? 'Скоро здесь появятся новые материалы.' : 'În curând vor apărea materiale noi.';
 
@@ -39,28 +36,42 @@ export function BlogIndexView({ locale, page }: Props) {
 
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">{title}</h1>
 
-      {lipsHub ? (
-        <section
-          className="mb-10 rounded-lg border border-green-200 bg-green-50/80 p-6"
-          aria-labelledby="rubric-lips"
-        >
-          <h2 id="rubric-lips" className="text-xl font-semibold text-gray-900 mb-2">
-            {rubricTitle}
-          </h2>
-          <p className="text-gray-700 text-sm mb-4">{rubricDesc}</p>
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href={`/blog/${lipsHub.slugRu}`}
-              className="text-green-800 font-medium underline hover:text-green-950"
-            >
-              {isRu ? 'Открыть гид (RU)' : 'Ghid RU'}
-            </Link>
-            <Link
-              href={`/ro/blog/${lipsHub.slugRo}`}
-              className="text-green-800 font-medium underline hover:text-green-950"
-            >
-              {isRu ? 'Ghid RO' : 'Deschide ghidul (RO)'}
-            </Link>
+      {allHubs.length > 0 ? (
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">{rubricsTitle}</h2>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {allHubs.map((hub) => {
+              const hubTitle = isRu ? hub.titleRu : hub.titleRo;
+              const hubExcerpt = isRu ? hub.excerptRu : hub.excerptRo;
+              const hubSlugRu = hub.slugRu;
+              const hubSlugRo = hub.slugRo;
+              
+              return (
+                <div
+                  key={hub.id}
+                  className="rounded-lg border border-green-200 bg-green-50/80 p-5 hover:border-green-300 transition-colors"
+                >
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    {hubTitle.replace(' | Meddera', '').replace(': гид по', '').replace(': ghid despre', '')}
+                  </h3>
+                  <p className="text-gray-700 text-sm mb-4">{hubExcerpt}</p>
+                  <div className="flex flex-wrap gap-3">
+                    <Link
+                      href={`/blog/${hubSlugRu}`}
+                      className="text-green-800 font-medium text-sm underline hover:text-green-950"
+                    >
+                      {isRu ? 'Открыть (RU)' : 'Ghid RU'}
+                    </Link>
+                    <Link
+                      href={`/ro/blog/${hubSlugRo}`}
+                      className="text-green-800 font-medium text-sm underline hover:text-green-950"
+                    >
+                      {isRu ? 'Ghid RO' : 'Deschide (RO)'}
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
       ) : null}

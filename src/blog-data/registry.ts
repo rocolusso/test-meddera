@@ -1,4 +1,10 @@
-import type { BlogLocale, BlogPost } from '@/blog-data/types';
+import type { BlogClusterId, BlogLocale, BlogPost } from '@/blog-data/types';
+import { dermatologistArticlesPart1 } from '@/blog-data/dermatologist-cluster-articles-part1';
+import { botoxArticlesPart1 } from '@/blog-data/botox-cluster-articles-part1';
+import { lipsArticlesPart1 } from '@/blog-data/lips-cluster-articles-part1';
+import { mesotherapyFaceArticlesPart1 } from '@/blog-data/mesotherapy-face-cluster-articles-part1';
+import { biorevitalizationArticlesPart1 } from '@/blog-data/biorevitalization-cluster-articles-part1';
+import { fillersArticlesPart1 } from '@/blog-data/fillers-cluster-articles-part1';
 
 export const POSTS_PER_PAGE = 10;
 
@@ -6,11 +12,106 @@ export const POSTS_PER_PAGE = 10;
  * Сколько последних статей показывать в футере.
  * Берутся из всех записей с `kind === 'article'`, сортировка: дата публикации (сначала новые), при равной дате — `dateModified`, затем `id`.
  */
-export const FOOTER_RECENT_ARTICLE_COUNT = 10;
+export const FOOTER_RECENT_ARTICLE_COUNT = 6;
 
 export const ORIGIN = 'https://meddera.md';
 
 const BLOG_POSTS: BlogPost[] = [
+  {
+    id: 'dermatologist-hub',
+    kind: 'hub',
+    clusterId: 'dermatologist',
+    slugRu: 'dermatolog-beltsy-hub',
+    slugRo: 'dermatolog-balti-hub',
+    publishedAt: '2026-04-08',
+    dateModified: '2026-04-08',
+    titleRu: 'Дерматолог в Бельцах: гид по консультации и лечению | Meddera',
+    titleRo: 'Dermatolog în Bălți: ghid despre consultație și tratament | Meddera',
+    descriptionRu:
+      'Дерматолог в Бельцах (Meddera): когда нужна консультация, какие заболевания лечим, как подготовиться к приёму. Информационный материал.',
+    descriptionRo:
+      'Dermatolog în Bălți (Meddera): când este necesară consultația, ce afecțiuni tratăm, cum să vă pregătiți pentru vizită. Material informativ.',
+    excerptRu: 'Гид по консультации дерматолога: показания, диагностика, лечение в Meddera.',
+    excerptRo: 'Ghid despre consultația dermatologului: indicații, diagnostic, tratament la Meddera.',
+    bodyKey: 'dermatologist-hub',
+  },
+  ...dermatologistArticlesPart1,
+  {
+    id: 'botox-hub',
+    kind: 'hub',
+    clusterId: 'botox',
+    slugRu: 'botoks-beltsy-hub',
+    slugRo: 'botox-balti-hub',
+    publishedAt: '2026-04-09',
+    dateModified: '2026-04-09',
+    titleRu: 'Ботокс в Бельцах: гид по инъекциям для омоложения | Meddera',
+    titleRo: 'Botox în Bălți: ghid despre injecții pentru întinerire | Meddera',
+    descriptionRu:
+      'Ботокс в Бельцах (Meddera): показания, этапы процедуры, результаты и запись на консультацию. Информационный материал.',
+    descriptionRo:
+      'Botox în Bălți (Meddera): indicații, etapele procedurii, rezultate și programare la consultație. Material informativ.',
+    excerptRu: 'Гид по инъекциям ботокса: показания, процедура, результаты в Meddera.',
+    excerptRo: 'Ghid despre injecțiile cu botox: indicații, procedură, rezultate la Meddera.',
+    bodyKey: 'botox-hub',
+  },
+  ...botoxArticlesPart1,
+  {
+    id: 'mesotherapy-face-hub',
+    kind: 'hub',
+    clusterId: 'mesotherapy-face',
+    slugRu: 'mezoterapiya-lica-beltsy-hub',
+    slugRo: 'mezoterapie-fata-balti-hub',
+    publishedAt: '2026-04-11',
+    dateModified: '2026-04-11',
+    titleRu: 'Мезотерапия лица в Бельцах: гид по процедуре | Meddera',
+    titleRo: 'Mezoterapia feței în Bălți: ghid despre procedură | Meddera',
+    descriptionRu:
+      'Мезотерапия лица в Бельцах (Meddera): показания, препараты, результаты и запись на консультацию. Информационный материал.',
+    descriptionRo:
+      'Mezoterapia feței în Bălți (Meddera): indicații, preparate, rezultate și programare la consultație. Material informativ.',
+    excerptRu: 'Гид по мезотерапии лица: показания, препараты, результаты в Meddera.',
+    excerptRo: 'Ghid despre mezoterapia feței: indicații, preparate, rezultate la Meddera.',
+    bodyKey: 'mesotherapy-face-hub',
+  },
+  ...mesotherapyFaceArticlesPart1,
+  {
+    id: 'biorevitalization-hub',
+    kind: 'hub',
+    clusterId: 'biorevitalization',
+    slugRu: 'biorevitalizaciya-beltsy-hub',
+    slugRo: 'biorevitalizare-balti-hub',
+    publishedAt: '2026-04-12',
+    dateModified: '2026-04-12',
+    titleRu: 'Биоревитализация в Бельцах: гид по процедуре | Meddera',
+    titleRo: 'Biorevitalizarea în Bălți: ghid despre procedură | Meddera',
+    descriptionRu:
+      'Биоревитализация в Бельцах (Meddera): показания, препараты, результаты и запись на консультацию. Информационный материал.',
+    descriptionRo:
+      'Biorevitalizarea în Bălți (Meddera): indicații, preparate, rezultate și programare la consultație. Material informativ.',
+    excerptRu: 'Гид по биоревитализации: показания, препараты, результаты в Meddera.',
+    excerptRo: 'Ghid despre biorevitalizare: indicații, preparate, rezultate la Meddera.',
+    bodyKey: 'biorevitalization-hub',
+  },
+  ...biorevitalizationArticlesPart1,
+  {
+    id: 'fillers-hub',
+    kind: 'hub',
+    clusterId: 'fillers',
+    slugRu: 'konturnaya-plastika-beltsy-hub',
+    slugRo: 'conturare-faciala-balti-hub',
+    publishedAt: '2026-04-13',
+    dateModified: '2026-04-13',
+    titleRu: 'Контурная пластика в Бельцах: гид по процедуре | Meddera',
+    titleRo: 'Conturarea facială în Bălți: ghid despre procedură | Meddera',
+    descriptionRu:
+      'Контурная пластика лица в Бельцах (Meddera): показания, зоны коррекции, результаты и запись на консультацию. Информационный материал.',
+    descriptionRo:
+      'Conturarea facială în Bălți (Meddera): indicații, zone de corecție, rezultate și programare la consultație. Material informativ.',
+    excerptRu: 'Гид по контурной пластике: показания, зоны коррекции, результаты в Meddera.',
+    excerptRo: 'Ghid despre conturarea facială: indicații, zone de corecție, rezultate la Meddera.',
+    bodyKey: 'fillers-hub',
+  },
+  ...fillersArticlesPart1,
   {
     id: 'lip-augmentation-hub',
     kind: 'hub',
@@ -29,6 +130,7 @@ const BLOG_POSTS: BlogPost[] = [
     excerptRo: 'Ghid despre conturarea buzelor: etape, siguranță, programare la Meddera.',
     bodyKey: 'lip-augmentation-hub',
   },
+  ...lipsArticlesPart1,
   {
     id: 'lip-consult-questions',
     kind: 'article',
@@ -265,8 +367,50 @@ export function getHubForCluster(clusterId: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.kind === 'hub' && p.clusterId === clusterId);
 }
 
+/**
+ * Получить все хабы для отображения на главной странице блога.
+ */
+export function getAllHubs(): BlogPost[] {
+  return BLOG_POSTS.filter((p) => p.kind === 'hub').sort((a, b) => {
+    return b.publishedAt.localeCompare(a.publishedAt);
+  });
+}
+
 export function getAllSlugParams(locale: BlogLocale): { slug: string }[] {
   return BLOG_POSTS.map((p) => ({
     slug: locale === 'ru' ? p.slugRu : p.slugRo,
   }));
+}
+
+/**
+ * Получить 3-5 связанных статей из той же рубрики (для блока Related Articles).
+ * Исключает текущую статью и хабы, сортирует по дате модификации (новые первые).
+ */
+export function getRelatedArticles(post: BlogPost, limit = 5): BlogPost[] {
+  if (!post.clusterId) return [];
+
+  return BLOG_POSTS
+    .filter((p) =>
+      p.clusterId === post.clusterId &&
+      p.id !== post.id &&
+      p.kind === 'article'
+    )
+    .sort((a, b) => {
+      const byModified = b.dateModified.localeCompare(a.dateModified);
+      if (byModified !== 0) return byModified;
+      return a.id.localeCompare(b.id);
+    })
+    .slice(0, limit);
+}
+
+/**
+ * Получить slug хаба по clusterId для кнопки "Вернуться к рубрике".
+ */
+export function getHubSlug(clusterId: string | null, locale: BlogLocale): string | null {
+  if (!clusterId) return null;
+
+  const hub = getHubForCluster(clusterId);
+  if (!hub) return null;
+
+  return locale === 'ru' ? hub.slugRu : hub.slugRo;
 }

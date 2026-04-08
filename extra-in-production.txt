@@ -1,0 +1,29 @@
+# УСТАРЕВШИЕ URLs В PRODUCTION SITEMAP
+# Дата: 2026-04-08
+# Всего: 22 URLs
+
+# URLs, которые есть в production, но отсутствуют в текущем build
+# Возможно, они были удалены или переименованы
+
+https://meddera.md/blog/uvelichenie-gub-beltsy
+https://meddera.md/ro/blog/marire-buzelor-balti
+https://meddera.md/blog/konsultaciya-pered-uvelicheniem-gub-voprosy-vrachu
+https://meddera.md/ro/blog/consultatie-marire-buze-intrebari-medic
+https://meddera.md/blog/uvelichenie-gub-po-shagam-procedura
+https://meddera.md/ro/blog/marire-buze-pasi-procedura
+https://meddera.md/blog/mify-i-fakty-o-fillerah-dlya-gub
+https://meddera.md/ro/blog/mituri-si-fapte-filler-buze
+https://meddera.md/blog/estestvennyj-obem-gub-ozhidaniya
+https://meddera.md/ro/blog/volum-natural-buze-asteptari
+https://meddera.md/blog/otek-sinyaki-posle-injekcij-v-guby
+https://meddera.md/ro/blog/edem-vanatai-dupa-injectii-buze
+https://meddera.md/blog/protivopokazaniya-uvelichenie-gub-obschaya-informaciya
+https://meddera.md/ro/blog/contraindicatii-marire-buze-informatii
+https://meddera.md/blog/forma-i-simmetriya-gub-bez-peregruzki-obema
+https://meddera.md/ro/blog/forma-simetrie-buze-fara-supraincarcare
+https://meddera.md/blog/uhod-posle-uvelicheniya-gub-obschie-printsipy
+https://meddera.md/ro/blog/ingrijire-dupa-marire-buze-principii
+https://meddera.md/blog/kak-vybrat-kliniku-dlya-injekcij-v-belczah
+https://meddera.md/ro/blog/cum-alegi-clinica-injectii-balti
+https://meddera.md/blog/skolko-derzhitsya-effekt-uvelicheniya-gub
+https://meddera.md/ro/blog/cat-tine-efectul-marire-buze
