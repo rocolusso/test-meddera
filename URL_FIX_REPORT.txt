@@ -8,14 +8,16 @@
 Обнаружены битые URLs с пробелом в slug:
 - gipergidro z (вместо gipergidroz)
 - botoks-gipergidro z (вместо botoks-gipergidroz)
+- konturnaya-plastika-slez naya-borozda (вместо sleznaya-borozda)
+- konturnaya-plastika-sheki (несоответствие с контентом shcheki)
 
-Причина: опечатка при генерации контента (пробел между "gipergidro" и "z")
+Причина: опечатки при генерации контента (пробелы в словах)
 
 ================================================================================
 
 ✅ ИСПРАВЛЕНИЯ
 
-Исправлено в 4 файлах:
+Исправлено в 6 файлах:
 
 1. src/blog-data/dermatologist-cluster-articles-part1.ts
    - id: 'gipergidro z-lechenie-beltsy' → 'gipergidroz-lechenie-beltsy'
@@ -33,6 +35,12 @@
 4. src/blog-data/botox-article-content.ts
    - Ключ объекта: 'botoks-gipergidro z-podmyshek' → 'botoks-gipergidroz-podmyshek'
 
+5. src/blog-data/fillers-cluster-articles-part1.ts
+   - id: 'konturnaya-plastika-slez naya-borozda' → 'konturnaya-plastika-sleznaya-borozda'
+   - id: 'konturnaya-plastika-sheki' → 'konturnaya-plastika-shcheki'
+
+6. Контент уже был корректен в fillers-article-content-part2.ts
+
 ================================================================================
 
 📊 РЕЗУЛЬТАТЫ
@@ -40,10 +48,14 @@
 Исправленные URLs (RU):
 ✓ https://meddera.md/blog/gipergidroz-lechenie-povyshennoj-potlivosti-beltsy
 ✓ https://meddera.md/blog/botoks-gipergidroz-podmyshek-beltsy
+✓ https://meddera.md/blog/konturnaya-plastika-sleznaya-borozda-beltsy
+✓ https://meddera.md/blog/konturnaya-plastika-shchek-beltsy
 
 Румынские версии (без изменений):
 ✓ https://meddera.md/ro/blog/hiperhidroza-tratament-transpiratie-excesiva-balti
 ✓ https://meddera.md/ro/blog/botox-hiperhidroza-axile-balti
+✓ https://meddera.md/ro/blog/conturare-sant-lacrimal-balti
+✓ https://meddera.md/ro/blog/conturare-obraji-balti
 
 Проверка:
 ✓ Сборка проекта: успешна (npm run build)
