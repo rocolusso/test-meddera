@@ -295,7 +295,7 @@ export const mesotherapyFaceArticlesPart1: BlogPost[] = [
     authorByline: { ru: 'Meddera Beauty Clinic', ro: 'Meddera Beauty Clinic' },
   },
   {
-    id: 'mezoterapiya-lica-kupero z',
+    id: 'mezoterapiya-lica-kuperoz',
     kind: 'article',
     clusterId: 'mesotherapy-face',
     slugRu: 'mezoterapiya-lica-kuperoz-beltsy',

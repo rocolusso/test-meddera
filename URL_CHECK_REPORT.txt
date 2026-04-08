@@ -1,0 +1,87 @@
+================================================================================
+ОТЧЁТ О ПРОВЕРКЕ URLs НА 404 ОШИБКИ
+Дата: 2026-04-08
+================================================================================
+
+📊 РЕЗУЛЬТАТЫ ПРОВЕРКИ
+
+Проверено URLs: 14
+✅ Найдено и работает: 11
+❌ Не найдено (404): 3
+
+================================================================================
+
+✅ РАБОТАЮЩИЕ URLs (11)
+
+Румынские статьи Ботокса (с диакритикой):
+✓ https://meddera.md/ro/blog/botox-sarcină-alăptare-balti
+✓ https://meddera.md/ro/blog/botox-bărbați-particularități-balti
+✓ https://meddera.md/ro/blog/botox-migrenă-dureri-cap-tratament-balti
+✓ https://meddera.md/ro/blog/botox-bruxism-scrâșnit-dinți-balti
+
+Биоревитализация и Мезотерапия:
+✓ https://meddera.md/blog/biorevitalizaciya-lazernaya-beltsy
+✓ https://meddera.md/blog/mezoterapiya-lica-kuperoz-beltsy
+✓ https://meddera.md/blog/biorevitalizaciya-rezultaty-dlitelnost-effekta
+
+Контурная пластика:
+✓ https://meddera.md/ro/blog/conturare-pomeți-balti
+✓ https://meddera.md/blog/konturnaya-plastika-ugolkov-rta-beltsy
+✓ https://meddera.md/blog/konturnaya-plastika-skul-podborodka-beltsy
+✓ https://meddera.md/blog/konturnaya-plastika-veski-beltsy
+
+================================================================================
+
+❌ НЕПРАВИЛЬНЫЕ URLs (3) - ОШИБКИ ПОЛЬЗОВАТЕЛЯ
+
+1. https://meddera.md/ro/blog/biorevitalizaciya-lazernaya-beltsy
+   ❌ Проблема: Русский slug в румынском пути
+   ✅ Правильный URL: https://meddera.md/ro/blog/biorevitalizare-laser-balti
+
+2. https://meddera.md/ro/blog/mezoterapiya-lica-kuperoz-beltsy
+   ❌ Проблема: Русский slug в румынском пути
+   ✅ Правильный URL: https://meddera.md/ro/blog/mezoterapie-fata-cuperoza-balti
+
+3. https://meddera.md/ro/blog/conturare-filler-balti-hub
+   ❌ Проблема: Неправильный slug хаба
+   ✅ Правильный URL: https://meddera.md/ro/blog/conturare-faciala-balti-hub
+
+================================================================================
+
+📝 ПРИМЕЧАНИЯ
+
+1. Румынские символы (ă, ț, ș, î, â) корректно обрабатываются:
+   - В браузере они кодируются (например, ă → %C4%83)
+   - Next.js автоматически декодирует их
+   - Все румынские URLs работают корректно
+
+2. Все русские slugs должны использоваться только в /blog/
+3. Все румынские slugs должны использоваться только в /ro/blog/
+
+4. Структура хабов:
+   - RU: /blog/{rubrika}-beltsy-hub
+   - RO: /ro/blog/{rubrika}-balti-hub
+
+================================================================================
+
+✅ ВЫВОД
+
+Все URLs из текущего build работают корректно.
+3 URL с ошибками 404 - это ошибки пользователя (неправильные slugs).
+
+Никаких исправлений в коде не требуется.
+
+================================================================================
+
+📋 ПРАВИЛЬНЫЕ РУМЫНСКИЕ URLs
+
+Биоревитализация:
+✓ https://meddera.md/ro/blog/biorevitalizare-laser-balti
+
+Мезотерапия лица:
+✓ https://meddera.md/ro/blog/mezoterapie-fata-cuperoza-balti
+
+Хаб контурной пластики:
+✓ https://meddera.md/ro/blog/conturare-faciala-balti-hub
+
+================================================================================

@@ -10,6 +10,7 @@
 - botoks-gipergidro z (вместо botoks-gipergidroz)
 - konturnaya-plastika-slez naya-borozda (вместо sleznaya-borozda)
 - konturnaya-plastika-sheki (несоответствие с контентом shcheki)
+- mezoterapiya-lica-kupero z (вместо kuperoz)
 
 Причина: опечатки при генерации контента (пробелы в словах)
 
@@ -17,7 +18,7 @@
 
 ✅ ИСПРАВЛЕНИЯ
 
-Исправлено в 6 файлах:
+Исправлено в 7 файлах:
 
 1. src/blog-data/dermatologist-cluster-articles-part1.ts
    - id: 'gipergidro z-lechenie-beltsy' → 'gipergidroz-lechenie-beltsy'
@@ -41,6 +42,10 @@
 
 6. Контент уже был корректен в fillers-article-content-part2.ts
 
+7. src/blog-data/mesotherapy-face-cluster-articles-part1.ts
+   - id: 'mezoterapiya-lica-kupero z' → 'mezoterapiya-lica-kuperoz'
+   - Контент уже был корректен в mesotherapy-face-article-content.ts
+
 ================================================================================
 
 📊 РЕЗУЛЬТАТЫ
@@ -50,12 +55,14 @@
 ✓ https://meddera.md/blog/botoks-gipergidroz-podmyshek-beltsy
 ✓ https://meddera.md/blog/konturnaya-plastika-sleznaya-borozda-beltsy
 ✓ https://meddera.md/blog/konturnaya-plastika-shchek-beltsy
+✓ https://meddera.md/blog/mezoterapiya-lica-kuperoz-beltsy
 
 Румынские версии (без изменений):
 ✓ https://meddera.md/ro/blog/hiperhidroza-tratament-transpiratie-excesiva-balti
 ✓ https://meddera.md/ro/blog/botox-hiperhidroza-axile-balti
 ✓ https://meddera.md/ro/blog/conturare-sant-lacrimal-balti
 ✓ https://meddera.md/ro/blog/conturare-obraji-balti
+✓ https://meddera.md/ro/blog/mezoterapie-fata-cuperoza-balti
 
 Проверка:
 ✓ Сборка проекта: успешна (npm run build)
