@@ -7,7 +7,7 @@ type Props = { locale: BlogLocale; dateModified: string };
 
 export function FillersHubBody({ locale, dateModified }: Props) {
   const ruUrl = `${ORIGIN}/blog/konturnaya-plastika-beltsy-hub`;
-  const roUrl = `${ORIGIN}/ro/blog/conturare-filler-balti-hub`;
+  const roUrl = `${ORIGIN}/ro/blog/conturare-faciala-balti-hub`;
 
   if (locale === 'ru') {
     return (
