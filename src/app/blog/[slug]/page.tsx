@@ -13,6 +13,9 @@ import { renderBlogPostBody } from '@/blog-data/render-post-body';
 
 type Props = { params: Promise<{ slug: string }> };
 
+export const dynamicParams = false; // Generate only pages from generateStaticParams
+export const revalidate = false; // Disable ISR, use only static generation
+
 export async function generateStaticParams() {
   return getAllSlugParams('ru');
 }
