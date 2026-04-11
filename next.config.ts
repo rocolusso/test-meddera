@@ -40,7 +40,7 @@ const nextConfig: NextConfig = {
     inlineCss: true,
   },
 
-  generateBuildId: async () => `${Date.now()}`, // Forces new build ID on each deploy (updated 2026-04-08)
+  generateBuildId: async () => `${Date.now()}`, // Forces new build ID on each deploy (updated 2026-04-11 fix-2)
 
   /** Allow next/image quality below default 75 (e.g. LCP logo in Header). */
   images: {
