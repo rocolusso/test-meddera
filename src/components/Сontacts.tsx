@@ -28,6 +28,13 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
   };
 
   const callPhoneFixed = () => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'phone_click_fixed_1', // Название события для GTM
+      'button_name': 'animate_button',  // Кастомный параметр (опционально)
+      'event_label': 'homepage'      // Кастомный параметр (опционально)
+    });
+
     trackEvent('phone_click_fixed', {
       action: 'click',
       target: 'Phone_click_fixed',
