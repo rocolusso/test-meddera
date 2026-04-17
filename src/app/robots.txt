@@ -3,5 +3,6 @@ Disallow: /ads/
 Disallow: /api/
 Disallow: /cert/
 Disallow: /blocked/
+Disallow: /rating/
 
 Sitemap: https://meddera.md/sitemap.xml
