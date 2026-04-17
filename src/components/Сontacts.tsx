@@ -230,53 +230,6 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
               <div className="mt-10 overflow-hidden sm:mt-12">
                 <div className="grid grid-cols-1 gap-10 py-6 md:grid-cols-2 md:gap-12 md:py-8 lg:gap-14">
 
-                  <div className="rounded-xl border border-border/80 bg-muted p-5 sm:p-6">
-                    <div>
-                      <Image
-                        className="w-full sm:rounded-md"
-                        src={imgAddress}
-                        alt="address"
-                        width={400}
-                        height={400}
-                      />
-                    </div>
-
-                    <div className="contacts__buttons">
-                      <div className="mt-6 flex flex-col items-center gap-5">
-
-                        <div className="flex items-center justify-center gap-2 transition-colors duration-200 hover:text-brand-gold">
-                          <div
-                            className="group -mx-1 flex min-w-0 items-start gap-3.5 rounded-lg px-1 py-1 text-foreground transition-colors hover:text-brand-gold sm:items-center"
-                          >
-                            <span
-                              className="mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-full bg-muted/45 text-brand-gold transition-colors group-hover:bg-muted group-hover:text-brand-gold sm:mt-0"
-                              aria-hidden
-                            >
-                              <FaMapLocationDot className="size-[18px] opacity-90" />
-                            </span>
-                            <span className="min-w-0 flex-1 break-words text-left text-xs font-medium uppercase leading-relaxed tracking-wide text-foreground/95 sm:text-sm sm:font-semibold sm:normal-case sm:tracking-normal">
-                              Balti, Stefan Cel Mare, 13
-                            </span>
-                          </div>
-                        </div>
-
-                        <Button
-                          className="btnCallPhoneContactForm mt-2 w-full font-bold sm:w-fit"
-                          variant="default"
-                          size="lg"
-                          type="button"
-                          onClick={callPhone}
-                          id="btnCallPhoneContactForm"
-                        >
-                          <FaPhoneVolume size="24px" className="" />
-                          +37368550030
-                        </Button>
-
-                      </div>
-                    </div>
-
-                  </div>
-
                   <div className="form__block__wrapper rounded-xl border border-border bg-card shadow-lg sm:rounded-xl">
                     <div className="mx-auto mt-6 flex justify-center px-4 sm:mt-8">
                       <p className="mt-2 text-center font-heading text-2xl font-semibold leading-tight tracking-tight text-foreground">
@@ -496,6 +449,53 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
 
                       </fieldset>
                     </form>
+                  </div>
+
+                  <div className="rounded-xl border border-border/80 bg-muted p-5 sm:p-6">
+                    <div>
+                      <Image
+                        className="w-full sm:rounded-md"
+                        src={imgAddress}
+                        alt="address"
+                        width={400}
+                        height={400}
+                      />
+                    </div>
+
+                    <div className="contacts__buttons">
+                      <div className="mt-6 flex flex-col items-center gap-5">
+
+                        <div className="flex items-center justify-center gap-2 transition-colors duration-200 hover:text-brand-gold">
+                          <div
+                            className="group -mx-1 flex min-w-0 items-start gap-3.5 rounded-lg px-1 py-1 text-foreground transition-colors hover:text-brand-gold sm:items-center"
+                          >
+                            <span
+                              className="mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-full bg-muted/45 text-brand-gold transition-colors group-hover:bg-muted group-hover:text-brand-gold sm:mt-0"
+                              aria-hidden
+                            >
+                              <FaMapLocationDot className="size-[18px] opacity-90" />
+                            </span>
+                            <span className="min-w-0 flex-1 break-words text-left text-xs font-medium uppercase leading-relaxed tracking-wide text-foreground/95 sm:text-sm sm:font-semibold sm:normal-case sm:tracking-normal">
+                              Balti, Stefan Cel Mare, 13
+                            </span>
+                          </div>
+                        </div>
+
+                        <Button
+                          className="btnCallPhoneContactForm mt-2 w-full font-bold sm:w-fit"
+                          variant="default"
+                          size="lg"
+                          type="button"
+                          onClick={callPhone}
+                          id="btnCallPhoneContactForm"
+                        >
+                          <FaPhoneVolume size="24px" className="" />
+                          +37368550030
+                        </Button>
+
+                      </div>
+                    </div>
+
                   </div>
 
                 </div>
