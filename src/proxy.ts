@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
+import { getCrawlerLabel } from '@/lib/crawler-label';
 import { getClientIp } from '@/lib/client-ip';
 import { isScannerProbePathname } from '@/lib/scanner-paths';
 import { isSuspiciousUserAgent } from '@/lib/suspicious-user-agents';
@@ -41,11 +42,17 @@ export async function proxy(request: NextRequest) {
 
   const country = request.geo?.country || request.headers.get('x-vercel-ip-country') || '';
   const countryCode = country.toUpperCase();
+  const userAgent = request.headers.get('user-agent') ?? '';
+  const signatureAgent = request.headers.get('signature-agent') ?? '';
+  const crawlerLabel = getCrawlerLabel(userAgent);
 
   console.log('[geo-block]', {
     countryCode,
     pathname: request.nextUrl.pathname,
     href: request.nextUrl.href,
+    crawlerLabel,
+    userAgent,
+    signatureAgent,
   });
 
   if (['IL', 'IN'].includes(countryCode)) {
@@ -53,6 +60,9 @@ export async function proxy(request: NextRequest) {
       countryCode,
       pathname: request.nextUrl.pathname,
       href: request.nextUrl.href,
+      crawlerLabel,
+      userAgent,
+      signatureAgent,
     });
 
     return new NextResponse(
