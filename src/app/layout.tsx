@@ -12,11 +12,11 @@ import './globals.css';
 
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
 import DeferredClarity from '@/components/DeferredClarity';
+import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
 import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import SectionQueryScroll from '@/components/SectionQueryScroll';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import CookiesPolicy from '@/components/CookiesPolicy';
 
 export default async function RootLayout({
   children,
@@ -107,7 +107,6 @@ export default async function RootLayout({
         <meta httpEquiv="content-language" content={htmlLang} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script
-          // eslint-disable-next-line react/no-danger -- theme bootstrap before paint; matches ThemeToggle key
           dangerouslySetInnerHTML={{ __html: getThemeBootstrapScript() }}
         />
         {alternates ? (
@@ -131,7 +130,6 @@ export default async function RootLayout({
         />
         <script
           type="application/ld+json"
-          /* eslint-disable-next-line react/no-danger */
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
@@ -142,7 +140,7 @@ export default async function RootLayout({
         {showVercelInsights ? <SpeedInsights /> : null}
         <DeferredGoogleTagManager />
         <DeferredClarity />
-        <CookiesPolicy/>
+        <DeferredCookiesPolicy />
       </body>
     </html>
   );
