@@ -544,7 +544,7 @@ button flash animation
   text-align: center;
   position: fixed;
   right: 50px;
-  bottom: 50px;
+  bottom: 100px;
   z-index: 999;
   transition: background-color 0.3s ease, border-color 0.3s ease;
   isolation: isolate;
