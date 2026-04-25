@@ -13,6 +13,7 @@ import DeferredAhrefs from '@/components/DeferredAhrefs';
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
 import DeferredClarity from '@/components/DeferredClarity';
 import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
+import DeferredFloatingCallButton from '@/components/DeferredFloatingCallButton';
 import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import SectionQueryScroll from '@/components/SectionQueryScroll';
 import { Analytics } from '@vercel/analytics/react';
@@ -56,6 +57,7 @@ export default async function RootLayout({
     (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
   const htmlLang = isRoLocale ? 'ro' : 'ru';
   const enableSectionQueryScroll = normalizedPath === '/' || normalizedPath === '/ro';
+  const showFloatingCallButton = !normalizedPath.startsWith('/ads');
   const isVercel = process.env.VERCEL === '1';
   const isProductionDeployment =
     process.env.NODE_ENV === 'production' &&
@@ -145,6 +147,7 @@ export default async function RootLayout({
         {enableGtm ? <DeferredGoogleTagManager /> : null}
         {enableClarity ? <DeferredClarity /> : null}
         {enableAhrefs ? <DeferredAhrefs /> : null}
+        {showFloatingCallButton ? <DeferredFloatingCallButton /> : null}
         <DeferredCookiesPolicy />
       </body>
     </html>

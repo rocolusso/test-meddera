@@ -2,7 +2,6 @@
 
 import React, { useRef, useState } from 'react';
 import { FaMapLocationDot, FaPhoneVolume } from 'react-icons/fa6';
-import { MdPhoneInTalk } from 'react-icons/md';
 import Image from 'next/image';
 import PhoneInputWithCountrySelect from 'react-phone-number-input';
 import LazyMap from '@/components/LazyMap';
@@ -27,16 +26,6 @@ function ContactsLips({ locale }:{ locale:string }) {
       'event': 'phone_button_contacts1', // Название события для GTM
       'button_name': 'phone_btn_contact',  // Кастомный параметр (опционально)
       'event_label': 'click_btn'      // Кастомный параметр (опционально)
-    });
-    window.location.href = 'tel:+37368550030';
-  };
-
-  const callPhoneFixed = () => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      'event': 'phone_click_fixed_1', // Название события для GTM
-      'button_name': 'animate_button',  // Кастомный параметр (опционально)
-      'event_label': 'homepage'      // Кастомный параметр (опционально)
     });
     window.location.href = 'tel:+37368550030';
   };
@@ -210,21 +199,6 @@ function ContactsLips({ locale }:{ locale:string }) {
         </div>
 
         <div className="new__contacts" id="contacts">
-          <div className="call-container-absolute bottom-0 right-0">
-
-            <button
-              aria-label="btn-call-trigger"
-              onClick={callPhoneFixed}
-              type="button"
-              className="btn-call"
-              id="btnCallFixedTrigger"
-            >
-              <div className="btn-call__ico">
-                <MdPhoneInTalk />
-              </div>
-            </button>
-
-          </div>
           <div
             className="relative flex justify-center bg-background sm:items-center sm:pt-0"
           >
