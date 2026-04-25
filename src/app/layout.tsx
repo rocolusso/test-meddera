@@ -55,6 +55,7 @@ export default async function RootLayout({
     normalizedPath.startsWith('/ro/') ||
     (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
   const htmlLang = isRoLocale ? 'ro' : 'ru';
+  const enableSectionQueryScroll = normalizedPath === '/' || normalizedPath === '/ro';
   const isVercel = process.env.VERCEL === '1';
   const isProductionDeployment =
     process.env.NODE_ENV === 'production' &&
@@ -137,7 +138,7 @@ export default async function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased">
-        <SectionQueryScroll />
+        {enableSectionQueryScroll ? <SectionQueryScroll /> : null}
         {children}
         {showVercelInsights ? <Analytics /> : null}
         {showVercelInsights ? <SpeedInsights /> : null}
