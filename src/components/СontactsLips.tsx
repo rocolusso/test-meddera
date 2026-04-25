@@ -285,11 +285,11 @@ function ContactsLips({ locale }:{ locale:string }) {
                             ? (locale === 'ru' ? 'Мы открыты!' : 'Suntem deschiși!')
                             : isSunday
                               ? (locale === 'ru'
-                                ? 'Статус: закрыты. Сегодня выходной — мы не принимаем по воскресеньям. Но оставьте своё сообщение, и мы свяжемся с вами в рабочее время.'
-                                : 'Stare: închis. Astăzi este zi liberă — nu primim duminica. Dar lăsați mesajul dumneavoastră și vă vom contacta în timpul programului de lucru.')
+                                ? 'Статус: закрыты. Сегодня выходной — мы не принимаем по воскресеньям. Но оставьте своё сообщение, и мы свяжемся с вами в ближайшее время.'
+                                : 'Stare: închis. Astăzi este zi liberă — nu lucrăm duminica. Dar lăsați mesajul dvs., iar noi vă vom contacta în cel mai scurt timp.')
                               : (locale === 'ru'
-                                ? 'Сейчас мы не работаем, но оставьте свои данные, и мы перезвоним в рабочее время.'
-                                : 'Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom suna în timpul programului de lucru.'
+                                ? 'Сейчас мы не работаем, но оставьте свои данные, и мы перезвоним в ближайшее время.'
+                                : 'Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom contacta în cel mai scurt timp.'
                               )}
                         </p>
                       </div>
