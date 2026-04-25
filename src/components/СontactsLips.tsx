@@ -22,6 +22,12 @@ function ContactsLips({ locale }:{ locale:string }) {
   const { isOpenNow, isSunday, currentTime, weekdayLong } = useContactReceptionSchedule(locale);
 
   const callPhone = () => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'phone_button_contacts1', // Название события для GTM
+      'button_name': 'phone_btn_contact',  // Кастомный параметр (опционально)
+      'event_label': 'click_btn'      // Кастомный параметр (опционально)
+    });
     window.location.href = 'tel:+37368550030';
   };
 
