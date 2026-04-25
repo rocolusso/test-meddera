@@ -3,11 +3,13 @@
 import dynamic from 'next/dynamic';
 import { useEffect, useRef, useState } from 'react';
 
+import { ContactsFormLoadingSkeleton } from '@/components/ContactsFormLoadingSkeleton';
+
+const LOADING_MSG = 'Загрузка формы';
+
 const DynamicContacts = dynamic(() => import('@/components/Сontacts'), {
   ssr: false,
-  loading: () => (
-    <div className="min-h-[24rem] w-full" aria-busy="true" aria-label="Загрузка формы" />
-  ),
+  loading: () => <ContactsFormLoadingSkeleton message={LOADING_MSG} />,
 });
 
 export default function ContactsDynamicWrapperRu({ hideHeading = false }: { hideHeading?: boolean } = {}) {
@@ -38,7 +40,11 @@ export default function ContactsDynamicWrapperRu({ hideHeading = false }: { hide
   }, []);
 
   if (!shouldLoad) {
-    return <div ref={sentinelRef} className="min-h-[24rem] w-full" aria-busy="true" aria-label="Загрузка формы" />;
+    return (
+      <div ref={sentinelRef}>
+        <ContactsFormLoadingSkeleton message={LOADING_MSG} />
+      </div>
+    );
   }
 
   return <DynamicContacts locale="ru" hideHeading={hideHeading} />;

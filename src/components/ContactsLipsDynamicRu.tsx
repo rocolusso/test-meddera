@@ -2,11 +2,11 @@
 
 import dynamic from 'next/dynamic';
 
+import { ContactsFormLoadingSkeleton } from '@/components/ContactsFormLoadingSkeleton';
+
 const DynamicContacts = dynamic(() => import('@/components/СontactsLips'), {
   ssr: false,
-  loading: () => (
-    <div className="min-h-[24rem] w-full" aria-busy="true" aria-label="Загрузка формы" />
-  ),
+  loading: () => <ContactsFormLoadingSkeleton message="Загрузка формы" />,
 });
 
 export default function ContactsLipsDynamicRu() {

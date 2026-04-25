@@ -37,12 +37,10 @@ export default function DeferredHeaderMobileControls({ locale }: Props) {
   }, []);
 
   if (!ready) {
+    const loadingMsg = loc === 'ru' ? 'Загрузка панели' : 'Se încarcă panoul';
     return (
-      <div
-        className="relative z-[101] flex shrink-0 items-center gap-2 sm:gap-2.5"
-        aria-busy="true"
-        aria-label={loc === 'ru' ? 'Загрузка панели' : 'Se încarcă panoul'}
-      >
+      <div className="relative z-[101] flex shrink-0 items-center gap-2 sm:gap-2.5" role="status" aria-live="polite">
+        <span className="sr-only">{loadingMsg}</span>
         <div
           className="size-12 shrink-0 rounded-full border border-border bg-background/80 sm:size-10"
           aria-hidden

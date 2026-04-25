@@ -3,11 +3,13 @@
 import dynamic from 'next/dynamic';
 import { useEffect, useRef, useState } from 'react';
 
+import { ContactsFormLoadingSkeleton } from '@/components/ContactsFormLoadingSkeleton';
+
+const LOADING_MSG = 'Se încarcă formularul';
+
 const DynamicContacts = dynamic(() => import('@/components/Сontacts'), {
   ssr: false,
-  loading: () => (
-    <div className="min-h-[24rem] w-full" aria-busy="true" aria-label="Se încarcă formularul" />
-  ),
+  loading: () => <ContactsFormLoadingSkeleton message={LOADING_MSG} />,
 });
 
 export default function ContactsDynamicWrapperRo({ hideHeading = false }: { hideHeading?: boolean } = {}) {
@@ -39,7 +41,9 @@ export default function ContactsDynamicWrapperRo({ hideHeading = false }: { hide
 
   if (!shouldLoad) {
     return (
-      <div ref={sentinelRef} className="min-h-[24rem] w-full" aria-busy="true" aria-label="Se încarcă formularul" />
+      <div ref={sentinelRef}>
+        <ContactsFormLoadingSkeleton message={LOADING_MSG} />
+      </div>
     );
   }
 
