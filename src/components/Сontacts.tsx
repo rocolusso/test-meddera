@@ -8,7 +8,6 @@ import PhoneInputWithCountrySelect from 'react-phone-number-input';
 import LazyMap from '@/components/LazyMap';
 import imgAddress from '../../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';
-import { trackEvent } from '@/lib/gtm';
 import { executeRecaptcha, prefetchRecaptchaScript } from '@/lib/recaptcha-client';
 import RecaptchaDisclaimer from '@/components/RecaptchaDisclaimer';
 import DOMPurify from 'dompurify';
@@ -34,13 +33,6 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
       'button_name': 'animate_button',  // Кастомный параметр (опционально)
       'event_label': 'homepage'      // Кастомный параметр (опционально)
     });
-
-    trackEvent('phone_click_fixed', {
-      action: 'click',
-      target: 'Phone_click_fixed',
-      label: `Нажатие тел фикс. ${currentTime}`,
-    });
-    // eslint-disable-next-line no-undef
     window.location.href = 'tel:+37368550030';
   };
 
@@ -180,6 +172,13 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
     setFieldErrors({});
     setLocked(false);
     setSubmitAlert(true);
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'form_sended_1', // Название события для GTM
+      'button_name': 'submit_btn',  // Кастомный параметр (опционально)
+      'event_label': 'sendform'      // Кастомный параметр (опционально)
+    });
 
     setTimeout(() => {
       setSubmitAlert(false);
