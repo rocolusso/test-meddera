@@ -1,19 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
-import baner1 from '../../../public/assets/img/baner_full1.jpg';
+import heroBanner from '../../../public/assets/img/baner5.jpg';
 
 function HeroNew() {
   return (
-    <section className="relative mx-auto min-h-[220px] overflow-hidden border-b border-border bg-muted/25 sm:min-h-[40vh]">
-      <div className="absolute inset-0 flex justify-center overflow-hidden">
+    <section className="relative mx-auto h-[230px] overflow-hidden border-b border-border bg-muted/25 sm:h-[42vh] sm:min-h-[300px] lg:h-[48vh]">
+      <div className="absolute inset-0">
         <Image
-          src={baner1}
+          src={heroBanner}
           alt="pintea"
           priority
-          quality={60}
+          quality={55}
           fetchPriority="high"
           fill
-          className="object-contain object-center transition-opacity duration-300"
+          sizes="100vw"
+          className="object-cover object-center md:object-contain"
         />
       </div>
     </section>

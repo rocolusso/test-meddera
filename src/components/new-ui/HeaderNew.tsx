@@ -12,7 +12,7 @@ function HeaderNew({ locale }: { locale: string }) {
       <header className="!fixed inset-x-0 top-0 z-50 w-full border-b border-border/90 pt-[env(safe-area-inset-top,0px)] relative isolate">
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 z-0 bg-background/92 backdrop-blur-md supports-[backdrop-filter]:bg-background/85"
+          className="pointer-events-none absolute inset-0 z-0 bg-background/95 sm:bg-background/92 sm:backdrop-blur-md sm:supports-[backdrop-filter]:bg-background/85"
         />
         <div className="relative z-10 container mx-auto max-w-6xl px-3 sm:px-5 lg:px-6">
           <div className="flex min-h-[5.25rem] w-full min-w-0 items-center justify-between gap-2 py-4 sm:min-h-16 sm:gap-4 sm:py-4">
@@ -26,8 +26,7 @@ function HeaderNew({ locale }: { locale: string }) {
                   alt={locale === 'ro' ? 'Meddera — logo clinica' : 'Meddera — логотип клиники'}
                   width={300}
                   height={68}
-                  priority
-                  fetchPriority="high"
+                  priority={false}
                   sizes="(max-width: 640px) 148px, 300px"
                   className="block h-auto w-full"
                 />
