@@ -1,6 +1,5 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import Script from 'next/script';
 import { headers } from 'next/headers';
 
 export const metadata: Metadata = {
@@ -10,6 +9,7 @@ export const metadata: Metadata = {
 import './globals.css';
 // import GoogleAnalytics from '@/components/GoogleAnalytics';
 
+import DeferredAhrefs from '@/components/DeferredAhrefs';
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
 import DeferredClarity from '@/components/DeferredClarity';
 import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
@@ -56,6 +56,14 @@ export default async function RootLayout({
     (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
   const htmlLang = isRoLocale ? 'ro' : 'ru';
   const isVercel = process.env.VERCEL === '1';
+  const isProductionDeployment =
+    process.env.NODE_ENV === 'production' &&
+    (isVercel ? process.env.VERCEL_ENV === 'production' : true);
+  const isEnabled = (value: string | undefined) =>
+    value !== '0' && value !== 'false' && value !== 'off';
+  const enableGtm = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_GTM);
+  const enableClarity = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_CLARITY);
+  const enableAhrefs = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_AHREFS);
   /** Preview/dev deployments skip Vercel Analytics / Speed Insights to reduce main-thread JS. */
   const showVercelInsights = isVercel && process.env.VERCEL_ENV === 'production';
   const clinicAddress = {
@@ -116,18 +124,13 @@ export default async function RootLayout({
             <link rel="alternate" hrefLang="x-default" href={alternates.ru} />
           </>
         ) : null}
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.clarity.ms" />
+        {enableGtm ? <link rel="dns-prefetch" href="https://www.googletagmanager.com" /> : null}
+        {enableClarity ? <link rel="dns-prefetch" href="https://www.clarity.ms" /> : null}
         <link rel="dns-prefetch" href="https://www.google.com" />
-        <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
-        <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" />
-        <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" />
-        <Script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="rXIslMFNaqfd12QEhlizeQ"
-          strategy="lazyOnload"
-        />
+        {enableAhrefs ? <link rel="dns-prefetch" href="https://analytics.ahrefs.com" /> : null}
+        {enableGtm ? <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" /> : null}
+        {enableClarity ? <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" /> : null}
+        {enableAhrefs ? <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" /> : null}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -138,8 +141,9 @@ export default async function RootLayout({
         {children}
         {showVercelInsights ? <Analytics /> : null}
         {showVercelInsights ? <SpeedInsights /> : null}
-        <DeferredGoogleTagManager />
-        <DeferredClarity />
+        {enableGtm ? <DeferredGoogleTagManager /> : null}
+        {enableClarity ? <DeferredClarity /> : null}
+        {enableAhrefs ? <DeferredAhrefs /> : null}
         <DeferredCookiesPolicy />
       </body>
     </html>
