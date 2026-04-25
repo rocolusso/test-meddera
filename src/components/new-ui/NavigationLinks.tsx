@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import LocaleSwitchLink from '@/components/new-ui/LocaleSwitchLink';
 const navBtnClass = [
   'inline-flex h-10 items-center justify-center rounded-full border border-border bg-transparent px-4',
   'text-sm font-medium text-foreground transition-colors',
@@ -8,7 +9,6 @@ const navBtnClass = [
 
 function NavigationLinks({ locale }: { locale: string }) {
   const isRu = locale === 'ru';
-  const localeSwitchHref = isRu ? '/ro' : '/';
 
   return (
     <div className="hidden min-w-0 flex-1 items-center justify-end gap-2 sm:flex md:gap-3">
@@ -29,13 +29,11 @@ function NavigationLinks({ locale }: { locale: string }) {
           {isRu ? 'Контакты' : 'Contacte'}
         </Link>
       </nav>
-      <Link
-        href={localeSwitchHref}
+      <LocaleSwitchLink
+        locale={isRu ? 'ru' : 'ro'}
         className="inline-flex h-10 shrink-0 items-center justify-center rounded-full border border-border px-3.5 text-xs font-semibold tracking-wider text-foreground transition-colors hover:border-ring hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-        aria-label="locale-btn"
-      >
-        {isRu ? 'RO' : 'RU'}
-      </Link>
+        ariaLabel="locale-btn"
+      />
     </div>
   );
 }
