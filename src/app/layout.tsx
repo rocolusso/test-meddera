@@ -16,6 +16,7 @@ import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import SectionQueryScroll from '@/components/SectionQueryScroll';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import CookiesPolicy from '@/components/CookiesPolicy';
 
 export default async function RootLayout({
   children,
@@ -141,6 +142,7 @@ export default async function RootLayout({
         {showVercelInsights ? <SpeedInsights /> : null}
         <DeferredGoogleTagManager />
         <DeferredClarity />
+        <CookiesPolicy/>
       </body>
     </html>
   );
