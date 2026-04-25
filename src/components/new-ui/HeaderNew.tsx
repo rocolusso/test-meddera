@@ -26,7 +26,6 @@ function HeaderNew({ locale }: { locale: string }) {
                   alt={locale === 'ro' ? 'Meddera — logo clinica' : 'Meddera — логотип клиники'}
                   width={300}
                   height={68}
-                  priority={false}
                   sizes="(max-width: 640px) 148px, 300px"
                   className="block h-auto w-full"
                 />
