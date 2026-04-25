@@ -1,15 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import BurgerMenu from '@/components/BurgerMenu';
 import pintea from '../../../public/assets/img/pintea_logo.svg';
 
+import DeferredHeaderMobileControls from '@/components/DeferredHeaderMobileControls';
 import NavigationLinks from '@/components/new-ui/NavigationLinks';
-import ThemeToggle from '@/components/new-ui/ThemeToggle';
 
 function HeaderNew({ locale }: { locale: string }) {
-  const loc = locale === 'ro' ? 'ro' : 'ru';
-
   return (
     <>
       <header className="!fixed inset-x-0 top-0 z-50 w-full border-b border-border/90 pt-[env(safe-area-inset-top,0px)] relative isolate">
@@ -39,10 +36,7 @@ function HeaderNew({ locale }: { locale: string }) {
 
             <div className="flex min-w-0 items-center max-sm:flex-initial max-sm:justify-end gap-1.5 sm:flex-1 sm:justify-end sm:gap-3">
               <NavigationLinks locale={locale} />
-              <div className="relative z-[101] flex shrink-0 items-center gap-2 sm:gap-2.5">
-                <ThemeToggle locale={loc} />
-                <BurgerMenu locale={locale} />
-              </div>
+              <DeferredHeaderMobileControls locale={locale} />
             </div>
           </div>
         </div>

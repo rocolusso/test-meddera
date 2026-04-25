@@ -9,7 +9,6 @@ import imgAddress from '../../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';
 import { executeRecaptcha, prefetchRecaptchaScript } from '@/lib/recaptcha-client';
 import RecaptchaDisclaimer from '@/components/RecaptchaDisclaimer';
-import DOMPurify from 'dompurify';
 import type { ContactFieldErrors } from '@/lib/contact-form-schema';
 import { parseContactForm } from '@/lib/contact-form-schema';
 import { useContactFormAntiSpam } from '@/hooks/useContactFormAntiSpam';
@@ -64,10 +63,14 @@ function ContactsLips({ locale }:{ locale:string }) {
     setFieldErrors({});
     setLocked(true);
 
+    const { default: DOMPurify } = await import('dompurify');
+    const safeName = DOMPurify.sanitize(name, { ALLOWED_TAGS: [] });
+    const safeMessage = DOMPurify.sanitize(message, { ALLOWED_TAGS: [] });
+
     const parsed = parseContactForm(locale, {
-      username: name,
+      username: safeName,
       userphone: phone,
-      message,
+      message: safeMessage,
     });
 
     if (!parsed.ok) {
@@ -303,7 +306,7 @@ function ContactsLips({ locale }:{ locale:string }) {
                             value={name}
                             onChange={(e) => {
                               setFieldErrors((prev) => ({ ...prev, username: undefined }));
-                              setName(DOMPurify.sanitize(e.target.value));
+                              setName(e.target.value);
                             }}
                           />
                           {fieldErrors.username ? (
@@ -348,7 +351,7 @@ function ContactsLips({ locale }:{ locale:string }) {
                             value={message}
                             onChange={(e) => {
                               setFieldErrors((prev) => ({ ...prev, message: undefined }));
-                              setMessage(DOMPurify.sanitize(e.target.value));
+                              setMessage(e.target.value);
                             }}
                           />
                           {fieldErrors.message ? (
