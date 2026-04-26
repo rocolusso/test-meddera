@@ -15,6 +15,7 @@ import DeferredClarity from '@/components/DeferredClarity';
 import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
 import DeferredFloatingCallButton from '@/components/DeferredFloatingCallButton';
 import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
+import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
 import SectionQueryScroll from '@/components/SectionQueryScroll';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -149,6 +150,7 @@ export default async function RootLayout({
         {enableAhrefs ? <DeferredAhrefs /> : null}
         {showFloatingCallButton ? <DeferredFloatingCallButton /> : null}
         <DeferredCookiesPolicy />
+        <DeferredTelClickTracker />
       </body>
     </html>
   );
