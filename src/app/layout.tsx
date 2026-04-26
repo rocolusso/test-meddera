@@ -20,6 +20,8 @@ import SectionQueryScroll from '@/components/SectionQueryScroll';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
+export const runtime = 'edge';
+
 export default async function RootLayout({
   children,
 }: Readonly<{
