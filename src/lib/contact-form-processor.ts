@@ -6,11 +6,13 @@ import {
   computeContactFormScore,
   type BehaviorMetrics,
 } from '@/lib/form-score';
+import { getClientIp } from '@/lib/client-ip';
 import { verifyFormToken } from '@/lib/form-token';
 import { parseContactForm } from '@/lib/contact-form-schema';
 import { verifyRecaptchaForScoring, verifyRecaptchaToken } from '@/lib/recaptcha-verify';
 import { isFormAbuseProtectionDisabled } from '@/lib/form-abuse-flags';
 import { appendTelegramUrlBlock, resolveFormPathname } from '@/lib/form-page-url';
+import { getFormPostRatelimit } from '@/lib/upstash-rate-limit';
 import { consumeFormJtiOnce } from '@/lib/upstash-replay';
 
 const TELEGRAM_USER_IDS = [
@@ -107,6 +109,23 @@ export async function processContactFormPost(
 
   if (!process.env.FORM_TOKEN_SECRET || process.env.FORM_TOKEN_SECRET.length < 16) {
     return NextResponse.json({ error: 'Service unavailable' }, { status: 503 });
+  }
+
+  const limiter = getFormPostRatelimit();
+  if (!limiter) {
+    return NextResponse.json({ error: 'Service unavailable' }, { status: 503 });
+  }
+  const ip = getClientIp(request);
+  const { success, reset } = await limiter.limit(ip);
+  if (!success) {
+    const retrySec = Math.max(1, Math.ceil((reset - Date.now()) / 1000));
+    return NextResponse.json(
+      { error: 'Too many requests' },
+      {
+        status: 429,
+        headers: { 'Retry-After': String(retrySec) },
+      },
+    );
   }
 
   let raw: string;
