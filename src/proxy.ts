@@ -17,8 +17,6 @@ declare module 'next/server' {
   }
 }
 
-export const runtime = 'edge';
-
 const PROTECTED_API_PREFIX = ['/api/form-token', '/api/lips-form', '/api/main-contact-form'] as const;
 
 function isProtectedApiPath(pathname: string): boolean {
