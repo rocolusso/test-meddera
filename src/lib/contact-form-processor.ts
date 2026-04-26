@@ -30,6 +30,7 @@ function defaultBehavior(): BehaviorMetrics {
 async function legacyContactFormPost(
   request: NextRequest,
   telegramFormTitle: string,
+  buildExtraTelegramBlock?: (body: Record<string, unknown>, locale: 'ru' | 'ro') => string,
 ): Promise<NextResponse> {
   let body: Record<string, unknown>;
   try {
@@ -57,6 +58,8 @@ async function legacyContactFormPost(
   const phone = typeof msg?.userphone === 'string' ? msg.userphone : '';
   const userMessage = typeof msg?.message === 'string' ? msg.message : '';
 
+  const locale = body.locale === 'ro' ? 'ro' : 'ru';
+  const extraTelegramBlock = buildExtraTelegramBlock?.(body, locale) ?? '';
   const formPathname = resolveFormPathname(body, request);
   const messageBase = `
 ${telegramFormTitle}
@@ -64,6 +67,7 @@ ${telegramFormTitle}
 Имя: ${name}
 Телефон: ${phone}
 Сообщение: ${userMessage}
+${extraTelegramBlock ? `\n${extraTelegramBlock}` : ''}
 `;
   const message = appendTelegramUrlBlock(messageBase.trimEnd(), formPathname);
 
@@ -97,10 +101,13 @@ ${telegramFormTitle}
 
 export async function processContactFormPost(
   request: NextRequest,
-  options: { telegramFormTitle: string },
+  options: {
+    telegramFormTitle: string;
+    buildExtraTelegramBlock?: (body: Record<string, unknown>, locale: 'ru' | 'ro') => string;
+  },
 ): Promise<NextResponse> {
   if (isFormAbuseProtectionDisabled()) {
-    return legacyContactFormPost(request, options.telegramFormTitle);
+    return legacyContactFormPost(request, options.telegramFormTitle, options.buildExtraTelegramBlock);
   }
 
   if (!process.env.RECAPTCHA_SECRET_KEY) {
@@ -214,12 +221,14 @@ export async function processContactFormPost(
   const { username: name, userphone: phone, message: messageText } = parsed.data;
 
   const formPathname = resolveFormPathname(body, request);
+  const extraTelegramBlock = options.buildExtraTelegramBlock?.(body, locale) ?? '';
   const telegramBase = `
 ${options.telegramFormTitle}
 
 Имя: ${name}
 Телефон: ${phone}
 Сообщение: ${messageText}
+${extraTelegramBlock ? `\n${extraTelegramBlock}` : ''}
 `;
   const telegramBlock = appendTelegramUrlBlock(telegramBase.trimEnd(), formPathname);
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import { headers } from 'next/headers';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://meddera.md'),
@@ -16,6 +17,7 @@ import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
 import DeferredFloatingCallButton from '@/components/DeferredFloatingCallButton';
 import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
+import DeferredStickyLeadCta from '@/components/DeferredStickyLeadCta';
 import SectionQueryScroll from '@/components/SectionQueryScroll';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -61,6 +63,7 @@ export default async function RootLayout({
   const htmlLang = isRoLocale ? 'ro' : 'ru';
   const enableSectionQueryScroll = normalizedPath === '/' || normalizedPath === '/ro';
   const showFloatingCallButton = !normalizedPath.startsWith('/ads');
+  const showLeadStickyCta = !normalizedPath.startsWith('/ads');
   const isVercel = process.env.VERCEL === '1';
   const isProductionDeployment =
     process.env.NODE_ENV === 'production' &&
@@ -115,14 +118,14 @@ export default async function RootLayout({
       style={{ overflowX: 'hidden' }}
       suppressHydrationWarning
     >
-      <head>
+      <head suppressHydrationWarning>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-language" content={htmlLang} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script
-          dangerouslySetInnerHTML={{ __html: getThemeBootstrapScript() }}
-        />
+        <Script id="theme-bootstrap" strategy="beforeInteractive">
+          {getThemeBootstrapScript()}
+        </Script>
         {alternates ? (
           <>
             <link rel="alternate" hrefLang="ru" href={alternates.ru} />
@@ -138,11 +141,12 @@ export default async function RootLayout({
         {enableClarity ? <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" /> : null}
         {enableAhrefs ? <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" /> : null}
         <script
+          suppressHydrationWarning
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen bg-background text-foreground antialiased">
+      <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
         {enableSectionQueryScroll ? <SectionQueryScroll /> : null}
         {children}
         {showVercelInsights ? <Analytics /> : null}
@@ -151,6 +155,7 @@ export default async function RootLayout({
         {enableClarity ? <DeferredClarity /> : null}
         {enableAhrefs ? <DeferredAhrefs /> : null}
         {showFloatingCallButton ? <DeferredFloatingCallButton /> : null}
+        {showLeadStickyCta ? <DeferredStickyLeadCta /> : null}
         <DeferredCookiesPolicy />
         <DeferredTelClickTracker />
       </body>

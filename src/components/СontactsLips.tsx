@@ -14,11 +14,9 @@ import { parseContactForm } from '@/lib/contact-form-schema';
 import { useContactFormAntiSpam } from '@/hooks/useContactFormAntiSpam';
 import { getFormTokenUnavailableMessage } from '@/lib/contact-form-token-client';
 import { ContactFormSubmittingStatus } from '@/components/ContactFormSubmittingStatus';
-import { useContactReceptionSchedule } from '@/hooks/useContactReceptionSchedule';
+import ClinicConsultationInfo from '@/components/ClinicConsultationInfo';
 
 function ContactsLips({ locale }:{ locale:string }) {
-  const { isOpenNow, isSunday, currentTime, weekdayLong } = useContactReceptionSchedule(locale);
-
   const callPhone = () => {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
@@ -215,78 +213,7 @@ function ContactsLips({ locale }:{ locale:string }) {
                         {locale === 'ru' ? 'Запись на консультацию' : 'Programare pentru consultanță'}
                       </p>
                     </div>
-                    <div
-                      className="working-time-message mx-auto flex max-w-[400px] flex-col items-center justify-center px-4"
-                    >
-                      <div className="pb-4 text-center">
-                        <p className="p-3 text-sm uppercase text-muted-foreground sm:text-base">
-                          {locale === 'ru' ? 'Часы работы по предварительной записи:' : 'Program de lucru doar cu programare prealabilă:'}
-                          {' '}
-                          13:00
-                          - 18:00
-                        </p>
-                      </div>
-
-                      <div className="pb-2 text-center">
-                        <p className="px-3 text-sm text-muted-foreground sm:text-base">
-                          {locale === 'ru'
-                            ? 'Дни приёма: понедельник — суббота. Воскресенье — выходной.'
-                            : 'Zile de recepție: luni — sâmbătă. Duminică — închis.'}
-                        </p>
-                      </div>
-
-                      <div className="pb-4 text-center">
-                        <p className="text-sm capitalize text-muted-foreground">
-                          {locale === 'ru' ? 'Сегодня:' : 'Astăzi:'}
-                          {' '}
-                          <span className="font-semibold text-foreground">{weekdayLong}</span>
-                        </p>
-                      </div>
-
-                      <div className="pb-4 text-center">
-                        <p className="rounded-lg p-3 text-sm font-bold text-foreground">
-                          {
-                            (locale === 'ru'
-                              ? 'Стоимость первичной консультации 400 MDL. Повторно - 250 MDL'
-                              : 'Costul de bază al consultației este de 400 MDL. Repetată — 250 MDL'
-                            )
-                          }
-                        </p>
-                      </div>
-                      <div className="text-center">
-                        <p className={!isOpenNow
-                          ? 'rounded-lg bg-red-800 p-3 text-sm text-white sm:text-base'
-                          : 'mb-6 rounded-lg bg-emerald-800 p-3 text-sm text-white sm:text-base'}
-                        >
-                          {isOpenNow
-                            ? (locale === 'ru' ? 'Мы открыты!' : 'Suntem deschiși!')
-                            : isSunday
-                              ? (locale === 'ru'
-                                ? 'Статус: закрыты. Сегодня выходной — мы не принимаем по воскресеньям. Но оставьте своё сообщение, и мы свяжемся с вами в ближайшее время.'
-                                : 'Stare: închis. Astăzi este zi liberă — nu lucrăm duminica. Dar lăsați mesajul dvs., iar noi vă vom contacta în cel mai scurt timp.')
-                              : (locale === 'ru'
-                                ? 'Сейчас мы не работаем, но оставьте свои данные, и мы перезвоним в ближайшее время.'
-                                : 'Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom contacta în cel mai scurt timp.'
-                              )}
-                        </p>
-                      </div>
-                      {!isOpenNow
-                              && (
-                                <p className="p-3 text-sm uppercase text-muted-foreground">
-                                  {locale === 'ru' ? 'Текущее время:' : 'Ora curentă:'}
-                                  {' '}
-                                  {currentTime}
-                                </p>
-                              )}
-                      {!isOpenNow
-                              && (
-                                <p className="mb-6 p-3 text-sm uppercase text-muted-foreground">
-                                  {locale === 'ru'
-                                    ? 'Пн–сб 13:00–18:00 · вс — выходной'
-                                    : 'Lun–sâm 13:00–18:00 · dum — închis'}
-                                </p>
-                              )}
-                    </div>
+                    <ClinicConsultationInfo locale={locale === 'ro' ? 'ro' : 'ru'} />
                     <form
                       ref={formRef}
                       onSubmit={submitHandler}
