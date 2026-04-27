@@ -27,6 +27,29 @@ html {
   padding: 0 10px 0 0;
 }
 
+
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes shine {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(200px); }
+}
+
+.animate-shine {
+    animation: shine 0.8s ease forwards;
+}
+
+
+
+
+
+
+
 /*
 fonts for title cerificate
 */
