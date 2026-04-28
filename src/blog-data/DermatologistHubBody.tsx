@@ -255,7 +255,7 @@ export function DermatologistHubBody({ locale, dateModified }: Props) {
         <ul className="space-y-3">
           <li>
             <Link
-              href="/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye/ro"
+              href="/ro/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye"
               className="text-green-700 font-medium underline hover:text-green-900"
             >
               Serviciul „Dermatolog în Bălți"
@@ -263,7 +263,7 @@ export function DermatologistHubBody({ locale, dateModified }: Props) {
           </li>
           <li>
             <Link
-              href="/services/konsultaczyya-dermatokosmetologa-v-belczah/ro"
+              href="/ro/services/konsultaczyya-dermatokosmetologa-v-belczah"
               className="text-green-700 font-medium underline hover:text-green-900"
             >
               Consultația dermatocosmetologului
@@ -271,14 +271,14 @@ export function DermatologistHubBody({ locale, dateModified }: Props) {
           </li>
           <li>
             <Link
-              href="/services/terapyya-anty-akne-v-belczah/ro"
+              href="/ro/services/terapyya-anty-akne-v-belczah"
               className="text-green-700 font-medium underline hover:text-green-900"
             >
               Terapia anti-acnee
             </Link>
           </li>
           <li>
-            <Link href="/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye/ro" className="text-gray-800 underline hover:text-gray-950">
+            <Link href="/ro/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye" className="text-gray-800 underline hover:text-gray-950">
               Contacte și programare
             </Link>
           </li>

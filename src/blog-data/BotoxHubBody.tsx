@@ -257,7 +257,7 @@ export function BotoxHubBody({ locale, dateModified }: Props) {
         <ul className="space-y-3">
           <li>
             <Link
-              href="/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza/ro"
+              href="/ro/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza"
               className="text-green-700 font-medium underline hover:text-green-900"
             >
               Serviciul „Botox în Bălți"
@@ -265,7 +265,7 @@ export function BotoxHubBody({ locale, dateModified }: Props) {
           </li>
           <li>
             <Link
-              href="/services/konsultaczyya-dermatokosmetologa-v-belczah/ro"
+              href="/ro/services/konsultaczyya-dermatokosmetologa-v-belczah"
               className="text-green-700 font-medium underline hover:text-green-900"
             >
               Consultația dermatocosmetologului
@@ -273,14 +273,14 @@ export function BotoxHubBody({ locale, dateModified }: Props) {
           </li>
           <li>
             <Link
-              href="/services/konturnaya-plastyka-fylleramy-v-belczah/ro"
+              href="/ro/services/konturnaya-plastyka-fylleramy-v-belczah"
               className="text-green-700 font-medium underline hover:text-green-900"
             >
               Conturarea cu filler-e
             </Link>
           </li>
           <li>
-            <Link href="/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza/ro" className="text-gray-800 underline hover:text-gray-950">
+            <Link href="/ro/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza" className="text-gray-800 underline hover:text-gray-950">
               Contacte și programare
             </Link>
           </li>

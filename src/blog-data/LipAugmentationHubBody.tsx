@@ -254,7 +254,7 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
         <ul className="space-y-3">
           <li>
             <Link
-              href="/services/uvelychenye-gub-v-belczah/ro"
+              href="/ro/services/uvelychenye-gub-v-belczah"
               className="text-green-700 font-medium underline hover:text-green-900"
             >
               Serviciul „Mărirea buzelor în Bălți”
@@ -262,7 +262,7 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
           </li>
           <li>
             <Link
-              href="/services/konsultaczyya-dermatokosmetologa-v-belczah/ro"
+              href="/ro/services/konsultaczyya-dermatokosmetologa-v-belczah"
               className="text-green-700 font-medium underline hover:text-green-900"
             >
               Consultația dermatocosmetologului
@@ -270,14 +270,14 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
           </li>
           <li>
             <Link
-              href="/services/konturnaya-plastyka-fylleramy-v-belczah/ro"
+              href="/ro/services/konturnaya-plastyka-fylleramy-v-belczah"
               className="text-green-700 font-medium underline hover:text-green-900"
             >
               Conturarea cu filler-e
             </Link>
           </li>
           <li>
-            <Link href="/services/uvelychenye-gub-v-belczah/ro" className="text-gray-800 underline hover:text-gray-950">
+            <Link href="/ro/services/uvelychenye-gub-v-belczah" className="text-gray-800 underline hover:text-gray-950">
               Contacte și programare
             </Link>
           </li>

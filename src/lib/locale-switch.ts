@@ -86,14 +86,15 @@ export function getAlternateLocalePath(pathname: string, locale: 'ru' | 'ro'): s
     return toRu ? '/blog' : '/ro/blog';
   }
 
-  const service = /^\/services\/([^/]+)(\/ro)?$/.exec(p);
-  if (service) {
-    const serviceSlug = service[1];
-    const hasRo = Boolean(service[2]);
-    if (hasRo) {
-      return toRu ? `/services/${serviceSlug}` : `/services/${serviceSlug}/ro`;
-    }
-    return toRo ? `/services/${serviceSlug}/ro` : `/services/${serviceSlug}`;
+  const serviceRu = /^\/services\/([^/]+)$/.exec(p);
+  if (serviceRu) {
+    const slug = serviceRu[1];
+    return toRo ? `/ro/services/${slug}` : `/services/${slug}`;
+  }
+  const serviceRo = /^\/ro\/services\/([^/]+)$/.exec(p);
+  if (serviceRo) {
+    const slug = serviceRo[1];
+    return toRu ? `/services/${slug}` : `/ro/services/${slug}`;
   }
 
   return toRo ? '/ro' : '/';

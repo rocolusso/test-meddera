@@ -102,7 +102,7 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
             <Link
               href={isRu 
                 ? '/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye'
-                : '/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye/ro'
+                : '/ro/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye'
               }
               className="text-green-700 font-medium underline hover:text-green-900"
             >
@@ -113,7 +113,7 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
             <Link
               href={isRu 
                 ? '/services/konsultaczyya-dermatokosmetologa-v-belczah'
-                : '/services/konsultaczyya-dermatokosmetologa-v-belczah/ro'
+                : '/ro/services/konsultaczyya-dermatokosmetologa-v-belczah'
               }
               className="text-green-700 font-medium underline hover:text-green-900"
             >

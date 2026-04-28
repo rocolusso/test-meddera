@@ -25,8 +25,7 @@ import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
 import DeferredStickyLeadCta from '@/components/DeferredStickyLeadCta';
 import SectionQueryScroll from '@/components/SectionQueryScroll';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import DeferredVercelInsights from '@/components/DeferredVercelInsights';
 
 export default async function RootLayout({
   children,
@@ -187,8 +186,7 @@ export default async function RootLayout({
       <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
         {enableSectionQueryScroll ? <SectionQueryScroll /> : null}
         {children}
-        {showVercelInsights ? <Analytics /> : null}
-        {showVercelInsights ? <SpeedInsights /> : null}
+        {showVercelInsights ? <DeferredVercelInsights /> : null}
         {enableGtm ? <DeferredGoogleTagManager /> : null}
         {enableClarity ? <DeferredClarity /> : null}
         {enableAhrefs ? <DeferredAhrefs /> : null}

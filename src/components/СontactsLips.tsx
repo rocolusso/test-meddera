@@ -4,6 +4,7 @@ import React, { useRef, useState } from 'react';
 import { FaMapLocationDot, FaPhoneVolume } from 'react-icons/fa6';
 import Image from 'next/image';
 import PhoneInputWithCountrySelect from 'react-phone-number-input';
+import './lead/phone-input.css';
 import LazyMap from '@/components/LazyMap';
 import imgAddress from '../../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';

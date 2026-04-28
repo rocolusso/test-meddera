@@ -132,8 +132,8 @@ export function MesotherapyFaceHubBody({ locale, dateModified }: Props) {
           Dacă analizați mezoterapia feței în Bălți, este rezonabil să începeți cu programarea la consultație.
         </p>
         <ul className="space-y-3">
-          <li><Link href="/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe/ro" className="text-green-700 font-medium underline hover:text-green-900">Serviciul „Mezoterapia feței"</Link></li>
-          <li><Link href="/services/konsultaczyya-dermatokosmetologa-v-belczah/ro" className="text-green-700 font-medium underline hover:text-green-900">Consultația dermatocosmetologului</Link></li>
+          <li><Link href="/ro/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe" className="text-green-700 font-medium underline hover:text-green-900">Serviciul „Mezoterapia feței"</Link></li>
+          <li><Link href="/ro/services/konsultaczyya-dermatokosmetologa-v-belczah" className="text-green-700 font-medium underline hover:text-green-900">Consultația dermatocosmetologului</Link></li>
         </ul>
       </section>
 

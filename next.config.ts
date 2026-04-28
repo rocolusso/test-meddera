@@ -120,6 +120,89 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true, // 301 redirect
       },
+      // Locale URL refactor 2026-04: RO services moved from suffix `/services/<slug>/ro` to prefix `/ro/services/<slug>`.
+      // 301 from old suffix URLs preserves SEO weight.
+      {
+        source: '/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
+        destination: '/ro/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
+        permanent: true,
+      },
+      {
+        source: '/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza/ro',
+        destination: '/ro/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza',
+        permanent: true,
+      },
+      {
+        source: '/services/byorevytalyzaczyya-v-belczah/ro',
+        destination: '/ro/services/byorevytalyzaczyya-v-belczah',
+        permanent: true,
+      },
+      {
+        source: '/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy/ro',
+        destination: '/ro/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
+        permanent: true,
+      },
+      {
+        source: '/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye/ro',
+        destination: '/ro/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
+        permanent: true,
+      },
+      {
+        source: '/services/karboksyterapyya-v-belczah/ro',
+        destination: '/ro/services/karboksyterapyya-v-belczah',
+        permanent: true,
+      },
+      {
+        source: '/services/konsultaczyya-dermatokosmetologa-v-belczah/ro',
+        destination: '/ro/services/konsultaczyya-dermatokosmetologa-v-belczah',
+        permanent: true,
+      },
+      {
+        source: '/services/konturnaya-plastyka-fylleramy-v-belczah/ro',
+        destination: '/ro/services/konturnaya-plastyka-fylleramy-v-belczah',
+        permanent: true,
+      },
+      {
+        source: '/services/mezoterapyya-dlya-volos-v-belczah/ro',
+        destination: '/ro/services/mezoterapyya-dlya-volos-v-belczah',
+        permanent: true,
+      },
+      {
+        source: '/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe/ro',
+        destination: '/ro/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
+        permanent: true,
+      },
+      {
+        source: '/services/professyonalnaya-chystka-lycza-v-belczah/ro',
+        destination: '/ro/services/professyonalnaya-chystka-lycza-v-belczah',
+        permanent: true,
+      },
+      {
+        source: '/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy/ro',
+        destination: '/ro/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
+        permanent: true,
+      },
+      {
+        source: '/services/terapyya-anty-akne-v-belczah/ro',
+        destination: '/ro/services/terapyya-anty-akne-v-belczah',
+        permanent: true,
+      },
+      {
+        source: '/services/terapyya-protyv-pygmentaczyy-v-belczah/ro',
+        destination: '/ro/services/terapyya-protyv-pygmentaczyy-v-belczah',
+        permanent: true,
+      },
+      {
+        source: '/services/uvelychenye-gub-v-belczah/ro',
+        destination: '/ro/services/uvelychenye-gub-v-belczah',
+        permanent: true,
+      },
+      {
+        source: '/services/ynjekczyy-lypolytykov-v-belczah/ro',
+        destination: '/ro/services/ynjekczyy-lypolytykov-v-belczah',
+        permanent: true,
+      },
+      // Numeric legacy redirects (`/services/N` → slug-based RU; `/services/N/ro` → prefix-based RO).
       {
         source: '/services/1',
         destination: '/services/konsultaczyya-dermatokosmetologa-v-belczah',
@@ -127,7 +210,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/1/ro',
-        destination: '/services/konsultaczyya-dermatokosmetologa-v-belczah/ro',
+        destination: '/ro/services/konsultaczyya-dermatokosmetologa-v-belczah',
         permanent: true, // 301 redirect
       },
       {
@@ -137,7 +220,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/2/ro',
-        destination: '/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye/ro',
+        destination: '/ro/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
         permanent: true, // 301 redirect
       },
       {
@@ -147,7 +230,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/3/ro',
-        destination: '/services/professyonalnaya-chystka-lycza-v-belczah/ro',
+        destination: '/ro/services/professyonalnaya-chystka-lycza-v-belczah',
         permanent: true, // 301 redirect
       },
       {
@@ -167,7 +250,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/5/ro',
-        destination: '/services/karboksyterapyya-v-belczah/ro',
+        destination: '/ro/services/karboksyterapyya-v-belczah',
         permanent: true, // 301 redirect
       },
       {
@@ -177,7 +260,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/6/ro',
-        destination: '/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy/ro',
+        destination: '/ro/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
         permanent: true, // 301 redirect
       },
       {
@@ -187,7 +270,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/7/ro',
-        destination: '/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
+        destination: '/ro/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
         permanent: true, // 301 redirect
       },
       {
@@ -197,7 +280,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/8/ro',
-        destination: '/services/terapyya-anty-akne-v-belczah/ro',
+        destination: '/ro/services/terapyya-anty-akne-v-belczah',
         permanent: true, // 301 redirect
       },
       {
@@ -207,7 +290,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/9/ro',
-        destination: '/services/terapyya-protyv-pygmentaczyy-v-belczah/ro',
+        destination: '/ro/services/terapyya-protyv-pygmentaczyy-v-belczah',
         permanent: true, // 301 redirect
       },
       {
@@ -217,7 +300,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/10/ro',
-        destination: '/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy/ro',
+        destination: '/ro/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
         permanent: true, // 301 redirect
       },
       {
@@ -227,7 +310,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/11/ro',
-        destination: '/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe/ro',
+        destination: '/ro/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
         permanent: true, // 301 redirect
       },
       {
@@ -237,7 +320,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/12/ro',
-        destination: '/services/mezoterapyya-dlya-volos-v-belczah/ro',
+        destination: '/ro/services/mezoterapyya-dlya-volos-v-belczah',
         permanent: true, // 301 redirect
       },
       {
@@ -247,7 +330,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/13/ro',
-        destination: '/services/uvelychenye-gub-v-belczah/ro',
+        destination: '/ro/services/uvelychenye-gub-v-belczah',
         permanent: true, // 301 redirect
       },
       {
@@ -257,7 +340,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/14/ro',
-        destination: '/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza/ro',
+        destination: '/ro/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza',
         permanent: true, // 301 redirect
       },
       {
@@ -267,7 +350,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/15/ro',
-        destination: '/services/byorevytalyzaczyya-v-belczah/ro',
+        destination: '/ro/services/byorevytalyzaczyya-v-belczah',
         permanent: true, // 301 redirect
       },
       {
@@ -277,7 +360,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/16/ro',
-        destination: '/services/konturnaya-plastyka-fylleramy-v-belczah/ro',
+        destination: '/ro/services/konturnaya-plastyka-fylleramy-v-belczah',
         permanent: true, // 301 redirect
       },
       {
@@ -287,7 +370,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/17/ro',
-        destination: '/services/ynjekczyy-lypolytykov-v-belczah/ro',
+        destination: '/ro/services/ynjekczyy-lypolytykov-v-belczah',
         permanent: true, // 301 redirect
       },
     ];

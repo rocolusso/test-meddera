@@ -70,7 +70,7 @@ export function MesotherapyFaceArticleBody({ post, locale, dateModified, section
           }
         </p>
         <ul className="space-y-2">
-          <li><Link href={isRu ? '/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe' : '/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe/ro'} className="text-green-700 font-medium underline hover:text-green-900">{isRu ? 'Услуга «Мезотерапия лица»' : 'Serviciul „Mezoterapia feței"'}</Link></li>
+          <li><Link href={isRu ? '/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe' : '/ro/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe'} className="text-green-700 font-medium underline hover:text-green-900">{isRu ? 'Услуга «Мезотерапия лица»' : 'Serviciul „Mezoterapia feței"'}</Link></li>
         </ul>
       </section>
 

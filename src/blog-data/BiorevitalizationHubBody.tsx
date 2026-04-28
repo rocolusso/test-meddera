@@ -93,8 +93,8 @@ export function BiorevitalizationHubBody({ locale, dateModified }: Props) {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-gray-900 mb-4">Pasul următor la Meddera</h2>
         <ul className="space-y-3">
-          <li><Link href="/services/byorevytalyzaczyya-v-belczah/ro" className="text-green-700 font-medium underline hover:text-green-900">Serviciul „Biorevitalizarea"</Link></li>
-          <li><Link href="/services/konsultaczyya-dermatokosmetologa-v-belczah/ro" className="text-green-700 font-medium underline hover:text-green-900">Consultația dermatocosmetologului</Link></li>
+          <li><Link href="/ro/services/byorevytalyzaczyya-v-belczah" className="text-green-700 font-medium underline hover:text-green-900">Serviciul „Biorevitalizarea"</Link></li>
+          <li><Link href="/ro/services/konsultaczyya-dermatokosmetologa-v-belczah" className="text-green-700 font-medium underline hover:text-green-900">Consultația dermatocosmetologului</Link></li>
         </ul>
       </section>
       <section className="rounded-lg border border-gray-200 bg-gray-50 p-6 mb-8">

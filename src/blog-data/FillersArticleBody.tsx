@@ -43,7 +43,7 @@ export function FillersArticleBody({ post, locale, dateModified, sections }: Pro
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-gray-900 mb-4">{isRu ? 'Запись на консультацию' : 'Programare'}</h2>
         <ul className="space-y-2">
-          <li><Link href={isRu ? '/services/konturnaya-plastyka-fylleramy-v-belczah' : '/services/konturnaya-plastyka-fylleramy-v-belczah/ro'} className="text-green-700 font-medium underline hover:text-green-900">{isRu ? 'Услуга «Контурная пластика филлерами»' : 'Serviciul „Conturarea cu filler-e"'}</Link></li>
+          <li><Link href={isRu ? '/services/konturnaya-plastyka-fylleramy-v-belczah' : '/ro/services/konturnaya-plastyka-fylleramy-v-belczah'} className="text-green-700 font-medium underline hover:text-green-900">{isRu ? 'Услуга «Контурная пластика филлерами»' : 'Serviciul „Conturarea cu filler-e"'}</Link></li>
         </ul>
       </section>
       <section className="rounded-lg border border-gray-200 bg-gray-50 p-6 mb-8">

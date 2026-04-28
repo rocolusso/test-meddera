@@ -102,7 +102,7 @@ export function BotoxArticleBody({ post, locale, dateModified, sections }: Props
             <Link
               href={isRu 
                 ? '/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza'
-                : '/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza/ro'
+                : '/ro/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza'
               }
               className="text-green-700 font-medium underline hover:text-green-900"
             >
@@ -113,7 +113,7 @@ export function BotoxArticleBody({ post, locale, dateModified, sections }: Props
             <Link
               href={isRu 
                 ? '/services/konsultaczyya-dermatokosmetologa-v-belczah'
-                : '/services/konsultaczyya-dermatokosmetologa-v-belczah/ro'
+                : '/ro/services/konsultaczyya-dermatokosmetologa-v-belczah'
               }
               className="text-green-700 font-medium underline hover:text-green-900"
             >

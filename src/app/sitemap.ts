@@ -93,7 +93,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const slug of serviceSlugs) {
     mainPages.push(
       { url: `https://meddera.md/services/${slug}`, lastModified: buildAt, changeFrequency: 'weekly', priority: 0.8 },
-      { url: `https://meddera.md/services/${slug}/ro`, lastModified: buildAt, changeFrequency: 'weekly', priority: 0.8 }
+      { url: `https://meddera.md/ro/services/${slug}`, lastModified: buildAt, changeFrequency: 'weekly', priority: 0.8 }
     );
   }
 

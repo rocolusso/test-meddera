@@ -1,14 +1,29 @@
 'use client';
 
-import Script from 'next/script';
+import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 
-const GTM_ID = 'GTM-KFCP3D5F';
-
 /**
- * GTM after window load (lazyOnload) and after requestIdleCallback — reduces overlap with main-thread work vs loading immediately after load.
+ * Vercel Analytics + Speed Insights are valuable but their JS payload competes
+ * with hydration-critical work. Defer them until the browser is idle (or until
+ * the first user interaction, whichever comes first) to keep TBT/FCP healthy
+ * while still capturing real-user metrics.
+ *
+ * Timeout 3200ms gives Insights enough time to capture the LCP cycle on slow
+ * connections without blocking the initial paint.
  */
-export default function DeferredGoogleTagManager() {
+
+const Analytics = dynamic(
+  () => import('@vercel/analytics/react').then((mod) => mod.Analytics),
+  { ssr: false }
+);
+
+const SpeedInsights = dynamic(
+  () => import('@vercel/speed-insights/next').then((mod) => mod.SpeedInsights),
+  { ssr: false }
+);
+
+export default function DeferredVercelInsights() {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -57,23 +72,8 @@ export default function DeferredGoogleTagManager() {
 
   return (
     <>
-      <Script
-        id="_next-gtm-init"
-        strategy="lazyOnload"
-        dangerouslySetInnerHTML={{
-          __html: `
-      (function(w,l){
-        w[l]=w[l]||[];
-        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-      })(window,'dataLayer');`,
-        }}
-      />
-      <Script
-        id="_next-gtm"
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`}
-        data-ntpc="GTM"
-      />
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 }

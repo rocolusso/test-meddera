@@ -3,6 +3,7 @@
 import { useMemo, useRef, useState, type FormEvent } from 'react';
 import Link from 'next/link';
 import PhoneInputWithCountrySelect from 'react-phone-number-input';
+import './phone-input.css';
 
 import { Button } from '@/components/ui/button';
 import ClinicConsultationInfo from '@/components/ClinicConsultationInfo';

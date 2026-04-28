@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import pintea from '../../../public/assets/img/pintea_logo.svg';
 
 import DeferredHeaderMobileControls from '@/components/DeferredHeaderMobileControls';
 import NavigationLinks from '@/components/new-ui/NavigationLinks';
+
+const LOGO_SRC = '/assets/img/pintea_logo.svg';
 
 function HeaderNew({ locale }: { locale: string }) {
   return (
@@ -21,13 +21,16 @@ function HeaderNew({ locale }: { locale: string }) {
               className="relative z-[1] min-w-0 max-w-[min(148px,40vw)] shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:max-w-[220px] lg:max-w-[300px]"
             >
               <div className="flex min-h-[20px] items-center">
-                <Image
-                  src={pintea}
+                {/* Native <img> for SVG: bypasses next/image optimizer (no benefit for vector assets), */}
+                {/* dropping a small chunk of JS from the critical path. */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={LOGO_SRC}
                   alt={locale === 'ro' ? 'Meddera — logo clinica' : 'Meddera — логотип клиники'}
                   width={300}
                   height={68}
-                  quality={50}
-                  sizes="(max-width: 640px) 148px, 300px"
+                  decoding="async"
+                  fetchPriority="high"
                   className="block h-auto w-full"
                 />
               </div>
