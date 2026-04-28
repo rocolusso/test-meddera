@@ -1,7 +1,13 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import { headers } from 'next/headers';
-import Script from 'next/script';
+import { getImageProps } from 'next/image';
+
+import {
+  HERO_IMAGE_QUALITY,
+  HERO_IMAGE_SIZES,
+  HERO_IMAGE_SRC,
+} from '@/components/new-ui/HeroNew';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://meddera.md'),
@@ -60,6 +66,28 @@ export default async function RootLayout({
     (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
   const htmlLang = isRoLocale ? 'ro' : 'ru';
   const enableSectionQueryScroll = normalizedPath === '/' || normalizedPath === '/ro';
+  const isHomePage = normalizedPath === '/' || normalizedPath === '/ro';
+  /**
+   * Preload the hero image on home routes so the browser starts the LCP request
+   * before discovering it through the rendered <Image>. Uses the same srcset that
+   * next/image will render to avoid double download.
+   */
+  const heroPreload = isHomePage
+    ? (() => {
+      const { props: heroProps } = getImageProps({
+        src: HERO_IMAGE_SRC,
+        alt: '',
+        quality: HERO_IMAGE_QUALITY,
+        sizes: HERO_IMAGE_SIZES,
+        priority: true,
+        fill: true,
+      });
+      return {
+        srcSet: heroProps.srcSet,
+        sizes: heroProps.sizes,
+      };
+    })()
+    : null;
   const showFloatingCallButton = !normalizedPath.startsWith('/ads');
   const showLeadStickyCta = !normalizedPath.startsWith('/ads');
   const isVercel = process.env.VERCEL === '1';
@@ -121,15 +149,27 @@ export default async function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-language" content={htmlLang} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Script id="theme-bootstrap" strategy="beforeInteractive">
-          {getThemeBootstrapScript()}
-        </Script>
+        <script
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: getThemeBootstrapScript() }}
+        />
         {alternates ? (
           <>
             <link rel="alternate" hrefLang="ru" href={alternates.ru} />
             <link rel="alternate" hrefLang="ro" href={alternates.ro} />
             <link rel="alternate" hrefLang="x-default" href={alternates.ru} />
           </>
+        ) : null}
+        {heroPreload && heroPreload.srcSet ? (
+          <link
+            rel="preload"
+            as="image"
+            // eslint-disable-next-line react/no-unknown-property
+            imageSrcSet={heroPreload.srcSet}
+            // eslint-disable-next-line react/no-unknown-property
+            imageSizes={heroPreload.sizes}
+            fetchPriority="high"
+          />
         ) : null}
         {enableGtm ? <link rel="dns-prefetch" href="https://www.googletagmanager.com" /> : null}
         {enableClarity ? <link rel="dns-prefetch" href="https://www.clarity.ms" /> : null}

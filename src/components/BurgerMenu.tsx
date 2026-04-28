@@ -1,13 +1,45 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import { HiOutlineMenuAlt3 } from 'react-icons/hi';
-import { ChevronRight } from 'lucide-react';
 
 import Link from 'next/link';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 
 import { getAlternateLocaleHref } from '@/lib/locale-switch';
+
+function MenuIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.75}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M5 8h14M5 12h14M5 16h14" />
+    </svg>
+  );
+}
+
+function ChevronRightIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="m9 18 6-6-6-6" />
+    </svg>
+  );
+}
 
 function BurgerMenu({ locale }: { locale: string }) {
   const [open, setOpen] = React.useState(false);
@@ -45,7 +77,7 @@ function BurgerMenu({ locale }: { locale: string }) {
         onClick={() => setOpen((v) => !v)}
         className="inline-flex size-12 shrink-0 cursor-pointer touch-manipulation items-center justify-center rounded-2xl border border-border bg-background text-foreground shadow-sm transition-colors hover:border-ring hover:bg-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.98]"
       >
-        <HiOutlineMenuAlt3 className="size-7" strokeWidth={1.75} />
+        <MenuIcon className="size-7" />
       </button>
 
       {open ? (
@@ -63,7 +95,7 @@ function BurgerMenu({ locale }: { locale: string }) {
               >
                 <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
                   <span className="text-sm font-medium tracking-tight">Главная</span>
-                  <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
+                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
                 </span>
               </button>
               <button
@@ -74,7 +106,7 @@ function BurgerMenu({ locale }: { locale: string }) {
               >
                 <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
                   <span className="text-sm font-medium tracking-tight">Обо мне</span>
-                  <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
+                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
                 </span>
               </button>
               <button
@@ -85,7 +117,7 @@ function BurgerMenu({ locale }: { locale: string }) {
               >
                 <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
                   <span className="text-sm font-medium tracking-tight">Услуги</span>
-                  <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
+                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
                 </span>
               </button>
               <button
@@ -96,7 +128,7 @@ function BurgerMenu({ locale }: { locale: string }) {
               >
                 <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
                   <span className="text-sm font-medium tracking-tight">Блог</span>
-                  <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
+                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
                 </span>
               </button>
               <button
@@ -107,7 +139,7 @@ function BurgerMenu({ locale }: { locale: string }) {
               >
                 <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
                   <span className="text-sm font-medium tracking-tight">Контакты</span>
-                  <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
+                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
                 </span>
               </button>
               <div className="my-1.5 h-px bg-border" aria-hidden />
@@ -130,7 +162,7 @@ function BurgerMenu({ locale }: { locale: string }) {
               >
                 <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
                   <span className="text-sm font-medium tracking-tight">Acasă</span>
-                  <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
+                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
                 </span>
               </button>
               <button
@@ -141,7 +173,7 @@ function BurgerMenu({ locale }: { locale: string }) {
               >
                 <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
                   <span className="text-sm font-medium tracking-tight">Despre mine</span>
-                  <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
+                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
                 </span>
               </button>
               <button
@@ -152,7 +184,7 @@ function BurgerMenu({ locale }: { locale: string }) {
               >
                 <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
                   <span className="text-sm font-medium tracking-tight">Servicii</span>
-                  <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
+                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
                 </span>
               </button>
               <button
@@ -163,7 +195,7 @@ function BurgerMenu({ locale }: { locale: string }) {
               >
                 <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
                   <span className="text-sm font-medium tracking-tight">Blog</span>
-                  <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
+                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
                 </span>
               </button>
               <button
@@ -174,7 +206,7 @@ function BurgerMenu({ locale }: { locale: string }) {
               >
                 <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
                   <span className="text-sm font-medium tracking-tight">Contacte</span>
-                  <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
+                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
                 </span>
               </button>
               <div className="my-1.5 h-px bg-border" aria-hidden />

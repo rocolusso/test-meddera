@@ -1,10 +1,44 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import { Moon, Sun } from 'lucide-react';
 
 import { THEME_STORAGE_KEY } from '@/lib/theme-inline-script';
 import { cn } from '@/lib/utils';
+
+function SunIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+    </svg>
+  );
+}
+
+function MoonIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+    </svg>
+  );
+}
 
 type Locale = 'ru' | 'ro';
 
@@ -58,9 +92,9 @@ function ThemeToggle({ locale }: { locale: Locale }) {
       {!mounted ? (
         <span className="size-6 sm:size-5" aria-hidden />
       ) : isDark ? (
-        <Sun className="size-6 sm:size-5" aria-hidden />
+        <SunIcon className="size-6 sm:size-5" />
       ) : (
-        <Moon className="size-6 sm:size-5" aria-hidden />
+        <MoonIcon className="size-6 sm:size-5" />
       )}
     </button>
   );
