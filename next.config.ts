@@ -12,8 +12,6 @@ const withBundleAnalyzer = bundleAnalyzer({
 /** Replaces Next.js built-in polyfill bundle (modern browsers only). Resolved from this config file so Vercel/cwd cannot break the path. */
 const emptyPolyfillPath = path.join(path.dirname(fileURLToPath(import.meta.url)), 'polyfills', 'empty-polyfill.js');
 
-/** Security headers below; request pathname for layout is set in src/proxy.ts (x-pathname). */
-
 const getSecurityHeaders = (isDev: boolean) => [
   // Keep HSTS only in production to avoid sticky localhost/browser behavior.
   ...(isDev ? [] : [{ key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' }]),
@@ -35,10 +33,13 @@ const nextConfig: NextConfig = {
 
   poweredByHeader: false,
 
-  // Inline global CSS into HTML in production to avoid an extra render-blocking stylesheet request (LCP/FCP).
-  experimental: {
-    inlineCss: true,
-  },
+  // Inline CSS was tried but the bundle (>100 KB Tailwind floor) bloats every
+  // HTML response and prevents cross-route browser caching of the stylesheet.
+  // Keeping it as a separate request lets the CDN cache the CSS by hash and
+  // the browser reuse it across the SPA-style navigation between RU/RO pages.
+  // experimental: {
+  //   inlineCss: true,
+  // },
 
   generateBuildId: async () => `${Date.now()}`, // Forces new build ID on each deploy (updated 2026-04-11 fix-2)
 
