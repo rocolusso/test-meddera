@@ -9,7 +9,7 @@ import NavigationLinks from '@/components/new-ui/NavigationLinks';
 function HeaderNew({ locale }: { locale: string }) {
   return (
     <>
-      <header className="!fixed inset-x-0 top-0 z-50 w-full border-b border-border/90 pt-[env(safe-area-inset-top,0px)] relative isolate">
+      <header className="!fixed inset-x-0 top-0 z-50 w-full border-b border-border/90 pt-[env(safe-area-inset-top,0px)] isolate">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 z-0 bg-background/95 sm:bg-background/92 sm:backdrop-blur-md sm:supports-[backdrop-filter]:bg-background/85"
