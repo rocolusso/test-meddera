@@ -42,3 +42,6 @@ yarn-error.log*
 next-env.d.ts
 
 /ahrefs-data
+
+# partytown lib regenerated via postinstall hook
+/public/~partytown/

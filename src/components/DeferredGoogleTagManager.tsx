@@ -60,6 +60,7 @@ export default function DeferredGoogleTagManager() {
       <Script
         id="_next-gtm-init"
         strategy="lazyOnload"
+        type="text/partytown"
         dangerouslySetInnerHTML={{
           __html: `
       (function(w,l){
@@ -71,6 +72,7 @@ export default function DeferredGoogleTagManager() {
       <Script
         id="_next-gtm"
         strategy="lazyOnload"
+        type="text/partytown"
         src={`https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`}
         data-ntpc="GTM"
       />

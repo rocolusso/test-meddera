@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Partytown } from '@builder.io/partytown/react';
+
 import DeferredAhrefs from '@/components/DeferredAhrefs';
 import DeferredClarity from '@/components/DeferredClarity';
 import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
@@ -91,6 +93,12 @@ export default function RootShell({
         {enableGtm ? <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" /> : null}
         {enableClarity ? <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" /> : null}
         {enableAhrefs ? <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" /> : null}
+        {(enableGtm || enableClarity || enableAhrefs) ? (
+          <Partytown
+            debug={false}
+            forward={['dataLayer.push', 'gtag', 'clarity']}
+          />
+        ) : null}
         <script
           suppressHydrationWarning
           type="application/ld+json"
