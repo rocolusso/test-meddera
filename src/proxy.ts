@@ -45,7 +45,11 @@ export function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     {
-      source: '/((?!_next/static|_next/image|favicon.ico).*)',
+      // robots.txt and sitemap.xml are excluded so they bypass the bot-UA
+      // blacklist below — REP requires robots.txt to be reachable to every
+      // crawler regardless of UA, and Ahrefs Site Audit was flagging it as
+      // "not accessible" when probing with curl/python-flavoured user agents.
+      source: '/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)',
       missing: [
         { type: 'header', key: 'next-router-prefetch' },
         { type: 'header', key: 'purpose', value: 'prefetch' },
