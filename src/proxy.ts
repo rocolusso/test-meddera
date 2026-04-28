@@ -49,25 +49,6 @@ export function proxy(request: NextRequest) {
     );
   }
 
-  if (pathname === '/cert') {
-    return new NextResponse(
-      JSON.stringify({ message: 'Access denied' }),
-      {
-        status: 403,
-        headers: { 'Content-Type': 'application/json' }
-      }
-    );
-  }
-  if (pathname === '/blocked') {
-    return new NextResponse(
-      JSON.stringify({ message: 'Access denied' }),
-      {
-        status: 403,
-        headers: { 'Content-Type': 'application/json' }
-      }
-    );
-  }
-
   return nextWithPathname(request);
 }
 
