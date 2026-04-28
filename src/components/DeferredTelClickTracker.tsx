@@ -17,9 +17,9 @@ export default function DeferredTelClickTracker() {
     const run = () => setReady(true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 2500 });
+      idleId = window.requestIdleCallback(run, { timeout: 11000 });
     } else {
-      fallbackId = window.setTimeout(run, 2500);
+      fallbackId = window.setTimeout(run, 11000);
     }
 
     return () => {

@@ -16,9 +16,9 @@ export default function DeferredFloatingCallButton() {
     const run = () => setReady(true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 5500 });
+      idleId = window.requestIdleCallback(run, { timeout: 3200 });
     } else {
-      fallbackId = window.setTimeout(run, 5500);
+      fallbackId = window.setTimeout(run, 3200);
     }
 
     return () => {
