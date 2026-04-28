@@ -100,13 +100,3 @@ export function getAlternateLocalePath(pathname: string, locale: 'ru' | 'ro'): s
   return toRo ? '/ro' : '/';
 }
 
-/** Path + preserved query string (e.g. ?section=contacts on home). */
-export function getAlternateLocaleHref(
-  pathname: string,
-  searchParams: URLSearchParams,
-  locale: 'ru' | 'ro',
-): string {
-  const path = getAlternateLocalePath(pathname, locale);
-  const q = searchParams.toString();
-  return q ? `${path}?${q}` : path;
-}

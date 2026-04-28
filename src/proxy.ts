@@ -13,16 +13,6 @@ declare module 'next/server' {
   }
 }
 
-/** Pass pathname to the App Router for alternates / locale (layout reads x-pathname). */
-function nextWithPathname(request: NextRequest): NextResponse {
-  const requestHeaders = new Headers(request.headers);
-  requestHeaders.set('x-pathname', request.nextUrl.pathname);
-
-  return NextResponse.next({
-    request: { headers: requestHeaders },
-  });
-}
-
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -49,7 +39,7 @@ export function proxy(request: NextRequest) {
     );
   }
 
-  return nextWithPathname(request);
+  return NextResponse.next();
 }
 
 export const config = {

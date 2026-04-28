@@ -3,9 +3,9 @@
 import React, { useEffect, useRef } from 'react';
 
 import Link from 'next/link';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
-import { getAlternateLocaleHref } from '@/lib/locale-switch';
+import { getAlternateLocalePath } from '@/lib/locale-switch';
 
 function MenuIcon({ className }: { className?: string }) {
   return (
@@ -47,9 +47,8 @@ function BurgerMenu({ locale }: { locale: string }) {
 
   const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const loc = locale === 'ru' ? 'ru' : 'ro';
-  const localeSwitchHref = getAlternateLocaleHref(pathname, searchParams, loc);
+  const localeSwitchHref = getAlternateLocalePath(pathname ?? '/', loc);
 
   const go = (href: string) => {
     router.push(href);
