@@ -60,8 +60,8 @@ export default async function RootLayout({
     (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
   const htmlLang = isRoLocale ? 'ro' : 'ru';
   const enableSectionQueryScroll = normalizedPath === '/' || normalizedPath === '/ro';
-  // const showFloatingCallButton = !normalizedPath.startsWith('/ads');
-  // const showLeadStickyCta = !normalizedPath.startsWith('/ads');
+  const showFloatingCallButton = !normalizedPath.startsWith('/ads');
+  const showLeadStickyCta = !normalizedPath.startsWith('/ads');
   const isVercel = process.env.VERCEL === '1';
   const isProductionDeployment =
     process.env.NODE_ENV === 'production' &&
@@ -152,10 +152,8 @@ export default async function RootLayout({
         {enableGtm ? <DeferredGoogleTagManager /> : null}
         {enableClarity ? <DeferredClarity /> : null}
         {enableAhrefs ? <DeferredAhrefs /> : null}
-        {/*{showFloatingCallButton ? <DeferredFloatingCallButton /> : null}*/}
-        {/*{showLeadStickyCta ? <DeferredStickyLeadCta /> : null}*/}
-        <DeferredFloatingCallButton />
-        <DeferredStickyLeadCta />
+        {showFloatingCallButton ? <DeferredFloatingCallButton /> : null}
+        {showLeadStickyCta ? <DeferredStickyLeadCta /> : null}
         <DeferredCookiesPolicy />
         <DeferredTelClickTracker />
       </body>
