@@ -24,7 +24,6 @@ import DeferredFloatingCallButton from '@/components/DeferredFloatingCallButton'
 import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
 import DeferredStickyLeadCta from '@/components/DeferredStickyLeadCta';
-import SectionQueryScroll from '@/components/SectionQueryScroll';
 import DeferredVercelInsights from '@/components/DeferredVercelInsights';
 
 export default async function RootLayout({
@@ -64,7 +63,6 @@ export default async function RootLayout({
     normalizedPath.startsWith('/ro/') ||
     (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
   const htmlLang = isRoLocale ? 'ro' : 'ru';
-  const enableSectionQueryScroll = normalizedPath === '/' || normalizedPath === '/ro';
   const isHomePage = normalizedPath === '/' || normalizedPath === '/ro';
   /**
    * Preload the hero image on home routes so the browser starts the LCP request
@@ -184,7 +182,6 @@ export default async function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
-        {enableSectionQueryScroll ? <SectionQueryScroll /> : null}
         {children}
         {showVercelInsights ? <DeferredVercelInsights /> : null}
         {enableGtm ? <DeferredGoogleTagManager /> : null}

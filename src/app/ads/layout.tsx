@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { blogSocialMetadata } from '@/lib/site-og';
 
+import './ads.css';
+
 const ADS_URL = 'https://meddera.md/ads';
 const ADS_TITLE = 'Meddera — рекламные страницы';
 const ADS_DESC = 'Целевые страницы для рекламных кампаний клиники Meddera.';

@@ -1,0 +1,159 @@
+/*
+ * /ads/* landing-specific styles.
+ * Imported only via `src/app/ads/layout.tsx` so the rest of the site does not
+ * pay for these animations. `@keyframes shake` and `@keyframes btnCallPulse`
+ * stay in `globals.css` because the regular `.btn-call` (FloatingCallButton)
+ * uses them site-wide.
+ */
+
+/* ── Heart pulse ──────────────────────────────────────────── */
+
+.heart {
+  font-size: 6em;
+  position: relative;
+}
+
+.heartbeat {
+  position: relative;
+  z-index: 1;
+  animation: beat 2s linear infinite;
+}
+
+.heartecho {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: echo 2s linear infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(0.9);
+  }
+  21% {
+    transform: scale(1.1) skew(0.004turn)
+  }
+  28% {
+    transform: scale(1) skew(0.008turn);
+  }
+  35% {
+    transform: scale(1) skew(0)
+  }
+}
+
+@keyframes echo {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  14% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+  21% {
+    opacity: 0.4;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+/* ── Animated stripe (red CTA variant) ────────────────────── */
+
+.animated-stripe-2 {
+  background-color: #dd0404;
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-stripe-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent 40%, white 50%, transparent 60%);
+  animation: stripe-slide 1.5s infinite linear;
+}
+
+@keyframes stripe-slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
+
+/* ── btn-call-2 (green round CTA on /ads/*) ───────────────── */
+
+.btn-call-2 {
+  background: #00aa2d;
+  border: 2px solid #00aa2d;
+  border-radius: 50%;
+  box-shadow: 0 8px 10px rgba(0, 154, 22, 0.3);
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  isolation: isolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-call-2::after {
+  content: '';
+  position: absolute;
+  inset: -14px;
+  border-radius: 9999px;
+  border: 2px solid rgba(0, 170, 45, 0.35);
+  opacity: 0;
+  transform: scale(0.85);
+  will-change: transform, opacity;
+  pointer-events: none;
+  animation: btnCallPulse 1400ms ease-out infinite;
+}
+
+.btn-call__ico-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 1200ms ease 0s normal none 1 running shake;
+  animation-iteration-count: infinite;
+  -webkit-animation: 1200ms ease 0s normal none 1 running shake;
+  -webkit-animation-iteration-count: infinite;
+  color: white;
+  font-size: 30px;
+  padding-top: 5px;
+  transition: color 0.3s ease;
+}
+
+.btn-call-2:hover {
+  background-color: #fff;
+}
+
+.btn-call-2:hover .btn-call__ico-2 {
+  color: #38a3fd;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-call-2::after {
+    animation: none;
+  }
+
+  .btn-call__ico-2 {
+    animation: none;
+    -webkit-animation: none;
+  }
+}
