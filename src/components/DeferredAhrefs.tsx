@@ -35,9 +35,9 @@ export default function DeferredAhrefs() {
     window.addEventListener('touchstart', interactionHandler, true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 11000 });
+      idleId = window.requestIdleCallback(run, { timeout: 10000 });
     } else {
-      fallbackId = window.setTimeout(run, 11000);
+      fallbackId = window.setTimeout(run, 10000);
     }
 
     return () => {

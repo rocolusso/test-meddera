@@ -41,9 +41,9 @@ export default function DeferredClarity() {
     window.addEventListener('touchstart', interactionHandler, true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 10000 });
+      idleId = window.requestIdleCallback(run, { timeout: 12000 });
     } else {
-      fallbackId = window.setTimeout(run, 10000);
+      fallbackId = window.setTimeout(run, 12000);
     }
 
     return () => {
