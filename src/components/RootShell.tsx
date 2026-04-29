@@ -9,6 +9,7 @@ import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
 import DeferredVercelInsights from '@/components/DeferredVercelInsights';
 import RouteAwareOverlays from '@/components/RouteAwareOverlays';
+import { isEnabled } from '@/lib/env-flags';
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
 
 const ORIGIN = 'https://meddera.md';
@@ -51,8 +52,6 @@ const isVercel = process.env.VERCEL === '1';
 const isProductionDeployment =
   process.env.NODE_ENV === 'production' &&
   (isVercel ? process.env.VERCEL_ENV === 'production' : true);
-const isEnabled = (value: string | undefined) =>
-  value !== '0' && value !== 'false' && value !== 'off';
 
 /**
  * Shared <html><body> shell used by both RU and RO root layouts. Must NOT call

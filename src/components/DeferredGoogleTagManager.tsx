@@ -3,11 +3,21 @@
 import Script from 'next/script';
 import { useEffect, useState } from 'react';
 
+import { isEnabled } from '@/lib/env-flags';
+
 const GTM_ID = 'GTM-KFCP3D5F';
 
 /**
- * GTM after window load (lazyOnload) and after requestIdleCallback — reduces overlap with main-thread work vs loading immediately after load.
+ * GTM after window load (lazyOnload) + first interaction.
+ *
+ * Execution mode is selected at build time via NEXT_PUBLIC_GTM_USE_PARTYTOWN:
+ *   - unset / "1" / "true" / "on" → loaded via Partytown (worker, TBT-friendly,
+ *     but Tag Assistant / GTM Preview Mode cannot inspect window globals).
+ *   - "0" / "false" / "off"       → loaded on the main thread so QA tools work.
+ * Switching the variable requires a re-deploy.
  */
+const USE_PARTYTOWN = isEnabled(process.env.NEXT_PUBLIC_GTM_USE_PARTYTOWN);
+
 export default function DeferredGoogleTagManager() {
   const [ready, setReady] = useState(false);
 
@@ -26,6 +36,8 @@ export default function DeferredGoogleTagManager() {
 
     const run = () => {
       cleanupInteraction();
+      // eslint-disable-next-line no-console
+      console.info('[GTM] mode:', USE_PARTYTOWN ? 'partytown (worker)' : 'main thread');
       setReady(true);
     };
 
@@ -60,7 +72,7 @@ export default function DeferredGoogleTagManager() {
       <Script
         id="_next-gtm-init"
         strategy="lazyOnload"
-        type="text/partytown"
+        type={USE_PARTYTOWN ? 'text/partytown' : undefined}
         dangerouslySetInnerHTML={{
           __html: `
       (function(w,l){
@@ -72,7 +84,7 @@ export default function DeferredGoogleTagManager() {
       <Script
         id="_next-gtm"
         strategy="lazyOnload"
-        type="text/partytown"
+        type={USE_PARTYTOWN ? 'text/partytown' : undefined}
         src={`https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`}
         data-ntpc="GTM"
       />
