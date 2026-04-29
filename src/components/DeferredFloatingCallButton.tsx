@@ -34,9 +34,9 @@ export default function DeferredFloatingCallButton() {
     window.addEventListener('touchstart', interactionHandler, true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 5000 });
+      idleId = window.requestIdleCallback(run, { timeout: 2000 });
     } else {
-      fallbackId = window.setTimeout(run, 5000);
+      fallbackId = window.setTimeout(run, 2000);
     }
 
     return () => {
