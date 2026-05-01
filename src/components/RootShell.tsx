@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Partytown } from '@qwik.dev/partytown/react';
-
 import DeferredAhrefs from '@/components/DeferredAhrefs';
 import DeferredClarity from '@/components/DeferredClarity';
 import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
@@ -53,9 +51,6 @@ const isProductionDeployment =
   process.env.NODE_ENV === 'production' &&
   (isVercel ? process.env.VERCEL_ENV === 'production' : true);
 
-/** GTM container id — only for <noscript> iframe in SSR (JS path uses DeferredGoogleTagManager). */
-const GTM_CONTAINER_ID = 'GTM-KFCP3D5F';
-
 /**
  * Shared <html><body> shell used by both RU and RO root layouts. Must NOT call
  * `headers()` or any other dynamic API — that would force every nested route
@@ -68,9 +63,11 @@ export default function RootShell({
   locale: 'ru' | 'ro';
   children: React.ReactNode;
 }) {
-  const loadGtm = isProductionDeployment;
-  const enableClarity = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_CLARITY);
-  const enableAhrefs = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_AHREFS);
+  const enableGtm = isProductionDeployment;
+  const enableClarity =
+    isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_CLARITY);
+  const enableAhrefs =
+    isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_AHREFS);
   const showVercelInsights = isVercel && process.env.VERCEL_ENV === 'production';
 
   return (
@@ -88,19 +85,13 @@ export default function RootShell({
           suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: getThemeBootstrapScript() }}
         />
-        {loadGtm ? <link rel="dns-prefetch" href="https://www.googletagmanager.com" /> : null}
+        {enableGtm ? <link rel="dns-prefetch" href="https://www.googletagmanager.com" /> : null}
         {enableClarity ? <link rel="dns-prefetch" href="https://www.clarity.ms" /> : null}
         <link rel="dns-prefetch" href="https://www.google.com" />
         {enableAhrefs ? <link rel="dns-prefetch" href="https://analytics.ahrefs.com" /> : null}
-        {loadGtm ? <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" /> : null}
+        {enableGtm ? <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" /> : null}
         {enableClarity ? <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" /> : null}
         {enableAhrefs ? <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" /> : null}
-        {(enableClarity || enableAhrefs) ? (
-          <Partytown
-            debug={false}
-            forward={['dataLayer.push', 'gtag', 'clarity']}
-          />
-        ) : null}
         <script
           suppressHydrationWarning
           type="application/ld+json"
@@ -108,20 +99,9 @@ export default function RootShell({
         />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
-        {loadGtm ? (
-          <noscript>
-            <iframe
-              title="Google Tag Manager"
-              src={`https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}`}
-              height={0}
-              width={0}
-              style={{ display: 'none', visibility: 'hidden' }}
-            />
-          </noscript>
-        ) : null}
         {children}
         {showVercelInsights ? <DeferredVercelInsights /> : null}
-        {loadGtm ? <DeferredGoogleTagManager /> : null}
+        {enableGtm ? <DeferredGoogleTagManager /> : null}
         {enableClarity ? <DeferredClarity /> : null}
         {enableAhrefs ? <DeferredAhrefs /> : null}
         <RouteAwareOverlays />

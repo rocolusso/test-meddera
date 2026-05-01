@@ -65,7 +65,6 @@ export default function DeferredClarity() {
     <Script
       id="microsoft-clarity"
       strategy="lazyOnload"
-      type="text/partytown"
       /* eslint-disable-next-line react/no-danger */
       dangerouslySetInnerHTML={{ __html: CLARITY_BOOTSTRAP }}
     />

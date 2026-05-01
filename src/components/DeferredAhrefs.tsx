@@ -61,7 +61,6 @@ export default function DeferredAhrefs() {
       src="https://analytics.ahrefs.com/analytics.js"
       data-key={AHREFS_KEY}
       strategy="lazyOnload"
-      type="text/partytown"
     />
   );
 }

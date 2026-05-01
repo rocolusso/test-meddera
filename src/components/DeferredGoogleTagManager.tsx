@@ -6,11 +6,7 @@ import { useEffect, useState } from 'react';
 const GTM_ID = 'GTM-KFCP3D5F';
 
 /**
- * GTM on the main thread (no Partytown). Deferred like Clarity/Ahrefs: idle
- * callback or first user interaction, then next/script. After `ready` we use
- * strategy="afterInteractive" (not lazyOnload) so gtm.js runs after hydration
- * without waiting for the window `load` event — better GA4 / container timing
- * while keeping the initial defer for Lighthouse.
+ * GTM after window load (lazyOnload) and after requestIdleCallback — reduces overlap with main-thread work vs loading immediately after load.
  */
 export default function DeferredGoogleTagManager() {
   const [ready, setReady] = useState(false);
@@ -63,7 +59,7 @@ export default function DeferredGoogleTagManager() {
     <>
       <Script
         id="_next-gtm-init"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
       (function(w,l){
@@ -74,8 +70,9 @@ export default function DeferredGoogleTagManager() {
       />
       <Script
         id="_next-gtm"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`}
+        data-ntpc="GTM"
       />
     </>
   );
