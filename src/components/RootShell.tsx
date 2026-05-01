@@ -68,9 +68,9 @@ export default function RootShell({
   locale: 'ru' | 'ro';
   children: React.ReactNode;
 }) {
-  const enableGtm = isProductionDeployment && 1;
-  const enableClarity = isProductionDeployment && 1;
-  const enableAhrefs = isProductionDeployment && 1;
+  const loadGtm = isProductionDeployment;
+  const enableClarity = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_CLARITY);
+  const enableAhrefs = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_AHREFS);
   const showVercelInsights = isVercel && process.env.VERCEL_ENV === 'production';
 
   return (
@@ -88,11 +88,11 @@ export default function RootShell({
           suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: getThemeBootstrapScript() }}
         />
-        {enableGtm ? <link rel="dns-prefetch" href="https://www.googletagmanager.com" /> : null}
+        {loadGtm ? <link rel="dns-prefetch" href="https://www.googletagmanager.com" /> : null}
         {enableClarity ? <link rel="dns-prefetch" href="https://www.clarity.ms" /> : null}
         <link rel="dns-prefetch" href="https://www.google.com" />
         {enableAhrefs ? <link rel="dns-prefetch" href="https://analytics.ahrefs.com" /> : null}
-        {enableGtm ? <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" /> : null}
+        {loadGtm ? <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" /> : null}
         {enableClarity ? <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" /> : null}
         {enableAhrefs ? <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" /> : null}
         {(enableClarity || enableAhrefs) ? (
@@ -108,7 +108,7 @@ export default function RootShell({
         />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
-        {enableGtm ? (
+        {loadGtm ? (
           <noscript>
             <iframe
               title="Google Tag Manager"
@@ -121,7 +121,7 @@ export default function RootShell({
         ) : null}
         {children}
         {showVercelInsights ? <DeferredVercelInsights /> : null}
-        {enableGtm ? <DeferredGoogleTagManager /> : null}
+        {loadGtm ? <DeferredGoogleTagManager /> : null}
         {enableClarity ? <DeferredClarity /> : null}
         {enableAhrefs ? <DeferredAhrefs /> : null}
         <RouteAwareOverlays />
