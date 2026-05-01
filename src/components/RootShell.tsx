@@ -68,9 +68,9 @@ export default function RootShell({
   locale: 'ru' | 'ro';
   children: React.ReactNode;
 }) {
-  const enableGtm = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_GTM);
-  const enableClarity = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_CLARITY);
-  const enableAhrefs = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_AHREFS);
+  const enableGtm = isProductionDeployment;
+  const enableClarity = isProductionDeployment;
+  const enableAhrefs = isProductionDeployment;
   const showVercelInsights = isVercel && process.env.VERCEL_ENV === 'production';
 
   return (
