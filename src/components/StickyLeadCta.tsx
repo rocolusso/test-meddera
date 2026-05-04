@@ -49,7 +49,10 @@ export default function StickyLeadCta() {
             setFormType('appointment');
             setOpen(true);
           }}
+          id={'primaryCta'}
+          type="button"
           className="
+            primary-cta-shine-loop
             group relative overflow-hidden
             rounded-full px-5 py-3
             text-xs sm:text-sm font-semibold
@@ -67,22 +70,29 @@ export default function StickyLeadCta() {
             animate-[float_4s_ease-in-out_infinite]
           "
         >
-          {/* Glow */}
-          <span className="
-            absolute inset-0
-            bg-white/10 opacity-0
-            group-hover:opacity-100
-            transition duration-300
-          "
+          <span
+            aria-hidden
+            className="pointer-events-none absolute inset-0 z-[1] overflow-hidden rounded-full"
+          >
+            <span className="primary-cta-shine-sweep" />
+          </span>
+
+          <span
+            className="
+              absolute inset-0 z-[2]
+              bg-white/10 opacity-0
+              group-hover:opacity-100
+              transition duration-300
+            "
           />
 
-          {/* Shine effect */}
-          <span className="
-            absolute -left-10 top-0 h-full w-10
-            rotate-12 bg-white/30 blur-md
-            opacity-0 group-hover:opacity-100
-            group-hover:animate-shine
-          "
+          <span
+            className="
+              absolute -left-10 top-0 z-[2] h-full w-10
+              rotate-12 bg-white/30 blur-md
+              opacity-0 group-hover:opacity-100
+              group-hover:animate-shine
+            "
           />
 
           <span className="relative z-10 flex items-center gap-2">
