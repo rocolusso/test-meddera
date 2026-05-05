@@ -35,9 +35,9 @@ export default function DeferredGoogleTagManager() {
     window.addEventListener('touchstart', interactionHandler, true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 5 });
+      idleId = window.requestIdleCallback(run, { timeout: 3200 });
     } else {
-      fallbackId = window.setTimeout(run, 5);
+      fallbackId = window.setTimeout(run, 3200);
     }
 
     return () => {
