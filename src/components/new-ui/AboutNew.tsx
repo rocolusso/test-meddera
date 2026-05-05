@@ -28,7 +28,7 @@ function AboutNew({
   titleAs = 'h2',
 }: {
   locale: string;
-  /** На отдельной странице `/about` и `/ro/about` используйте `h1` для SEO. */
+  /** На отдельной странице `/about` и `/ro/about` используйте `h1` для SEO */
   titleAs?: 'h1' | 'h2';
 }) {
   const loc = locale === 'ro' ? 'ro' : 'ru';
