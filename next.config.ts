@@ -45,7 +45,7 @@ const nextConfig: NextConfig = {
 
   /** Allow next/image quality below default 75 (e.g. LCP logo in Header). */
   images: {
-    qualities: [60, 75, 100],
+    qualities: [100, 40, 60, 75],
   },
 
   webpack: (config, { isServer, webpack: webpackApi }) => {
