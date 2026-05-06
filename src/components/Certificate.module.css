@@ -1,0 +1,20 @@
+.goldGradient {
+  background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  position: relative;
+  margin: 0;
+}
+
+.corinthiaRegular {
+  font-family: inherit;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.corinthiaBold {
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
+}

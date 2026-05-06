@@ -3,7 +3,6 @@ import React from 'react';
 import DeferredAhrefs from '@/components/DeferredAhrefs';
 import DeferredClarity from '@/components/DeferredClarity';
 import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
-import DeferredNonCriticalStyles from '@/components/DeferredNonCriticalStyles';
 // import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
 import DeferredVercelInsights from '@/components/DeferredVercelInsights';
@@ -102,7 +101,6 @@ export default function RootShell({
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
         {children}
-        <DeferredNonCriticalStyles />
         {showVercelInsights ? <DeferredVercelInsights /> : null}
         {/*{enableGtm ? <DeferredGoogleTagManager /> : null}*/}
         {enableClarity ? <DeferredClarity /> : null}

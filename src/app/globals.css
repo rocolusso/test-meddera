@@ -22,9 +22,6 @@ html {
   }
 }
 
-/* Non-critical decorative classes moved to `public/styles/non-critical.css`
-   and loaded after first paint. */
-
 /*
 fonts for title cerificate
 */
@@ -122,8 +119,7 @@ button flash animation
 /* PhoneInput rules moved to `src/components/lead/phone-input.css`.
    Variables (`--PhoneInput*`) remain above so dark/light theme overrides keep working. */
 
-/* Floating phone button styles moved to `public/styles/non-critical.css`
-   and loaded after first paint to keep critical CSS path smaller. */
+/* Floating phone button styles moved to `FloatingCallButton.tsx` (local styled-jsx). */
 
 /* btn-call-2 (red button on /ads/*) lives in `src/app/ads/ads.css`. */
 

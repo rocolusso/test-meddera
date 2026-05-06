@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { fontCorinthia } from '@/lib/fonts';
+import styles from '@/components/Certificate.module.css';
 import numBack from '../../public/assets/img/cert/num_back.svg';
 import pintea from '../../public/assets/img/cert/pintea.svg';
 import medderaCert from '../../public/assets/img/cert/meddera-logo.svg';
@@ -137,7 +138,7 @@ function Ertificate({
               className="user-name relative-parent "
             >
               <div className="absolute  text-center">
-                <p className="corinthia-bold gold-gradient text-[4rem] sm:text-[8em]">Certificate</p>
+                <p className={`${styles.corinthiaBold} ${styles.goldGradient} text-[4rem] sm:text-[8em]`}>Certificate</p>
               </div>
             </div>
 
