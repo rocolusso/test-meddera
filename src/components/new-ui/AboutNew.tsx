@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 import aboutImg from '../../../public/assets/img/about_2k.jpg';
 import { aboutCopy } from '@/lib/about-content';
-import styles from '@/components/new-ui/AboutNew.module.css';
 
 function TextList({ items }: { items: string[] }) {
   return (
@@ -11,7 +10,7 @@ function TextList({ items }: { items: string[] }) {
       {items.map((text, i) => (
         <li key={i}>
           <p
-            className={`${styles.listIcon} text-[14px] leading-relaxed text-muted-foreground sm:text-[15px] ${text.includes('\n') ? 'whitespace-pre-line' : ''}`}
+            className={`before:pr-2.5 before:content-['✔︎'] text-[14px] leading-relaxed text-muted-foreground sm:text-[15px] ${text.includes('\n') ? 'whitespace-pre-line' : ''}`}
           >
             {text}
           </p>
