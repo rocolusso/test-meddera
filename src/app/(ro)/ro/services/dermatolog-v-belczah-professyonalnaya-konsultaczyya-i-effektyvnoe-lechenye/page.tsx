@@ -189,6 +189,11 @@ function ServicePage2Ro() {
 
         </div>
       </VisuallyHidden>
+      <style jsx>{`
+        .grecaptcha-badge {
+          visibility: hidden;
+        }
+      `}</style>
 
     </ContentPageShell>
   );

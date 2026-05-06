@@ -231,7 +231,3 @@ button flash animation
   }
 }
 
-/* reCAPTCHA v3: скрыт стандартный значок; рядом с формами показан обязательный текст (требования Google). */
-.grecaptcha-badge {
-  visibility: hidden;
-}

@@ -412,6 +412,11 @@ function ContactsLips({ locale }:{ locale:string }) {
       </div>
 
       <LazyMap locale={locale === 'ro' ? 'ro' : 'ru'} />
+      <style jsx>{`
+        .grecaptcha-badge {
+          visibility: hidden;
+        }
+      `}</style>
 
     </div>
   );

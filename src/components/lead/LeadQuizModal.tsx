@@ -331,6 +331,11 @@ export default function LeadQuizModal({
             </div>
           </fieldset>
         </form>
+        <style jsx>{`
+          .grecaptcha-badge {
+            visibility: hidden;
+          }
+        `}</style>
       </div>
     </div>
   );

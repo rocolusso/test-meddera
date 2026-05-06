@@ -416,6 +416,11 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
       </div>
 
       <LazyMap locale={locale === 'ro' ? 'ro' : 'ru'} />
+      <style jsx>{`
+        .grecaptcha-badge {
+          visibility: hidden;
+        }
+      `}</style>
 
     </div>
   );

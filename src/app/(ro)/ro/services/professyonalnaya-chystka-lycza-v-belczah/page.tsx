@@ -193,6 +193,11 @@ function ServicePage3Ro() {
           </section>
         </div>
       </VisuallyHidden>
+      <style jsx>{`
+        .grecaptcha-badge {
+          visibility: hidden;
+        }
+      `}</style>
 
     </ContentPageShell>
   );
