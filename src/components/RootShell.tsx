@@ -3,12 +3,13 @@ import React from 'react';
 import DeferredAhrefs from '@/components/DeferredAhrefs';
 import DeferredClarity from '@/components/DeferredClarity';
 import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
-import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
+// import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
 import DeferredVercelInsights from '@/components/DeferredVercelInsights';
 import RouteAwareOverlays from '@/components/RouteAwareOverlays';
 import { isEnabled } from '@/lib/env-flags';
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const ORIGIN = 'https://meddera.md';
 
@@ -101,12 +102,13 @@ export default function RootShell({
       <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
         {children}
         {showVercelInsights ? <DeferredVercelInsights /> : null}
-        {enableGtm ? <DeferredGoogleTagManager /> : null}
+        {/*{enableGtm ? <DeferredGoogleTagManager /> : null}*/}
         {enableClarity ? <DeferredClarity /> : null}
         {enableAhrefs ? <DeferredAhrefs /> : null}
         <RouteAwareOverlays />
         <DeferredCookiesPolicy />
         <DeferredTelClickTracker />
+        <GoogleTagManager gtmId="GTM-KFCP3D5F" />
       </body>
     </html>
   );
