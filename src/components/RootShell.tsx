@@ -77,6 +77,7 @@ export default function RootShell({
       style={{ overflowX: 'hidden' }}
       suppressHydrationWarning
     >
+      {/* eslint-disable-next-line @next/next/no-head-element */}
       <head suppressHydrationWarning>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
