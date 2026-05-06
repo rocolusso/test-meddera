@@ -22,6 +22,12 @@ const TELEGRAM_USER_IDS = [
   '7378233926',
 ] as const;
 
+function jsonNoStore(body: unknown, init?: ResponseInit): NextResponse {
+  const headers = new Headers(init?.headers);
+  headers.set('Cache-Control', 'no-store, max-age=0');
+  return NextResponse.json(body, { ...init, headers });
+}
+
 function defaultBehavior(): BehaviorMetrics {
   return { mousemove: 0, keydown: 0, touchstart: 0, pointerdown: 0 };
 }
@@ -36,21 +42,21 @@ async function legacyContactFormPost(
   try {
     body = await request.json() as Record<string, unknown>;
   } catch {
-    return NextResponse.json({ error: 'Bad request' }, { status: 400 });
+    return jsonNoStore({ error: 'Bad request' }, { status: 400 });
   }
 
   if (!process.env.RECAPTCHA_SECRET_KEY) {
-    return NextResponse.json({ error: 'Service unavailable' }, { status: 503 });
+    return jsonNoStore({ error: 'Service unavailable' }, { status: 503 });
   }
 
   const token = typeof body.recaptchaToken === 'string' ? body.recaptchaToken : '';
   if (!token) {
-    return NextResponse.json({ error: 'Bad request' }, { status: 400 });
+    return jsonNoStore({ error: 'Bad request' }, { status: 400 });
   }
 
   const verified = await verifyRecaptchaToken(token);
   if (!verified.ok) {
-    return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+    return jsonNoStore({ error: 'Forbidden' }, { status: 403 });
   }
 
   const msg = body.message as Record<string, unknown> | undefined;
@@ -75,7 +81,7 @@ ${extraTelegramBlock ? `\n${extraTelegramBlock}` : ''}
   const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
   if (!message) {
-    return NextResponse.json({ error: 'Bad request' }, { status: 500 });
+    return jsonNoStore({ error: 'Bad request' }, { status: 500 });
   }
 
   try {
@@ -96,7 +102,7 @@ ${extraTelegramBlock ? `\n${extraTelegramBlock}` : ''}
     console.error('Error sending messages:', err.message);
   }
 
-  return NextResponse.json({ formSended: body });
+  return jsonNoStore({ formSended: body });
 }
 
 export async function processContactFormPost(
@@ -111,22 +117,22 @@ export async function processContactFormPost(
   }
 
   if (!process.env.RECAPTCHA_SECRET_KEY) {
-    return NextResponse.json({ error: 'Service unavailable' }, { status: 503 });
+    return jsonNoStore({ error: 'Service unavailable' }, { status: 503 });
   }
 
   if (!process.env.FORM_TOKEN_SECRET || process.env.FORM_TOKEN_SECRET.length < 16) {
-    return NextResponse.json({ error: 'Service unavailable' }, { status: 503 });
+    return jsonNoStore({ error: 'Service unavailable' }, { status: 503 });
   }
 
   const limiter = getFormPostRatelimit();
   if (!limiter) {
-    return NextResponse.json({ error: 'Service unavailable' }, { status: 503 });
+    return jsonNoStore({ error: 'Service unavailable' }, { status: 503 });
   }
   const ip = getClientIp(request);
   const { success, reset } = await limiter.limit(ip);
   if (!success) {
     const retrySec = Math.max(1, Math.ceil((reset - Date.now()) / 1000));
-    return NextResponse.json(
+    return jsonNoStore(
       { error: 'Too many requests' },
       {
         status: 429,
@@ -139,35 +145,35 @@ export async function processContactFormPost(
   try {
     raw = await request.text();
   } catch {
-    return NextResponse.json({ error: 'Bad request' }, { status: 400 });
+    return jsonNoStore({ error: 'Bad request' }, { status: 400 });
   }
   if (raw.length > 65536) {
-    return NextResponse.json({ error: 'Payload too large' }, { status: 413 });
+    return jsonNoStore({ error: 'Payload too large' }, { status: 413 });
   }
 
   let body: Record<string, unknown>;
   try {
     body = JSON.parse(raw) as Record<string, unknown>;
   } catch {
-    return NextResponse.json({ error: 'Bad request' }, { status: 400 });
+    return jsonNoStore({ error: 'Bad request' }, { status: 400 });
   }
 
   const formToken = typeof body.formToken === 'string' ? body.formToken : '';
   if (!formToken) {
-    return NextResponse.json({ error: 'Bad request' }, { status: 400 });
+    return jsonNoStore({ error: 'Bad request' }, { status: 400 });
   }
 
   const verified = verifyFormToken(formToken);
   if (!verified.ok) {
-    return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+    return jsonNoStore({ error: 'Forbidden' }, { status: 403 });
   }
 
   const replay = await consumeFormJtiOnce(verified.jti);
   if (replay === 'unavailable') {
-    return NextResponse.json({ error: 'Service unavailable' }, { status: 503 });
+    return jsonNoStore({ error: 'Service unavailable' }, { status: 503 });
   }
   if (replay === 'replay') {
-    return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+    return jsonNoStore({ error: 'Forbidden' }, { status: 403 });
   }
 
   const website = typeof body.website === 'string' ? body.website : '';
@@ -181,7 +187,7 @@ export async function processContactFormPost(
   const locale = body.locale === 'ro' ? 'ro' : 'ru';
   const parsed = parseContactForm(locale, { username, userphone, message: userMessage });
   if (!parsed.ok) {
-    return NextResponse.json({ error: 'Bad request', fieldErrors: parsed.fieldErrors }, { status: 400 });
+    return jsonNoStore({ error: 'Bad request', fieldErrors: parsed.fieldErrors }, { status: 400 });
   }
 
   const recaptchaToken = typeof body.recaptchaToken === 'string' ? body.recaptchaToken : '';
@@ -215,7 +221,7 @@ export async function processContactFormPost(
   }
 
   if (score < 20) {
-    return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+    return jsonNoStore({ error: 'Forbidden' }, { status: 403 });
   }
 
   const { username: name, userphone: phone, message: messageText } = parsed.data;
@@ -233,7 +239,7 @@ ${extraTelegramBlock ? `\n${extraTelegramBlock}` : ''}
   const telegramBlock = appendTelegramUrlBlock(telegramBase.trimEnd(), formPathname);
 
   if (score <= 40) {
-    return NextResponse.json({ success: true, shadow: true });
+    return jsonNoStore({ success: true, shadow: true });
   }
 
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
@@ -257,7 +263,7 @@ ${extraTelegramBlock ? `\n${extraTelegramBlock}` : ''}
     console.error('Error sending messages:', err.message);
   }
 
-  return NextResponse.json({
+  return jsonNoStore({
     formSended: body,
     success: true,
   });
