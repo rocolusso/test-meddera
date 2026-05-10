@@ -1,202 +1,112 @@
-# 🚀 Быстрый старт: Продолжение работы над блогом
+# Быстрый старт: работа над блогом Meddera
 
-## 📊 Текущий статус
+## Текущий статус (10.05.2026)
 
-**✅ Готово к публикации:**
-- 6 рубрик топ-6
-- 146 статей (24-25 на рубрику)
-- Все хабы и компоненты
-- Сборка успешна
+**В коде**
 
-**❌ Не выполнено:**
-- 454 статьи для завершения топ-6 до 100 статей каждая
-- 10 рубрик (1000 статей) полностью не созданы
+- **6** рубрик топ-6 с хабами и статьями в `registry`.
+- **306** статей (`kind: 'article'`), **6** хабов → **312** URL со slug для RU/RO блога при сборке.
+- **Part 2 (статьи 26–50)** для всех шести кластеров подключён; у дерматолога и ботокса по **50** статей; у губ / мезотерапии лица / биоревита / филлеров по **49** статей в файлах кластера + **10** отдельных статей по губам в `registry`.
+- Сборка Next.js **16**: в `package.json` уже есть **`next build --webpack`** (Turbopack по умолчанию конфликтует с кастомным webpack).
+
+**Ссылки в Dev**
+
+- В телах статей переключатель RU/RO использует **`blogPathRu` / `blogPathRo`** из `registry.ts` (относительные пути), а не `https://meddera.md`, чтобы на `localhost` не уводило на прод.
 
 ---
 
-## 🎯 Как продолжить работу
+## Как продолжить в Cursor
 
-### Шаг 1: Загрузите файлы в чат
+**Шаг 1.** Прикрепить контекст:
 
-Скажите AI:
-```
-Загружаю файлы для продолжения работы над блогом:
+```text
 @BLOG_TODO.md @BLOG_PROGRESS.md
 ```
 
-### Шаг 2: Выберите задачу
+**Шаг 2.** Сформулировать задачу, например:
 
-**Вариант A:** Завершить топ-6 до 100 статей каждая
-```
-Продолжи работу над топ-6: добавь по 75 статей для каждой рубрики
-```
+- Добавить **Part 3** (статьи 51–75) для выбранной рубрики.
+- Начать **новую рубрику** из фазы 2 в `BLOG_TODO.md`.
+- Прогнать проверки и пересобрать URL-лист Part 2.
 
-**Вариант B:** Создать остальные 10 рубрик
-```
-Создай рубрики 7-16 с базовым контентом (по 25 статей каждая)
-```
+**Шаг 3.** После правок локально:
 
-**Вариант C:** Расширить базовый контент до полного
-```
-Расширь базовый контент для Мезотерапии, Биоревитализации и Филлеров до полного (800-1500 слов)
-```
-
-**Вариант D:** SEO оптимизация
-```
-Добавь JSON-LD для всех хабов и статей, обнови sitemap
-```
-
-### Шаг 3: AI продолжит работу
-
-AI автоматически:
-- Создаст недостающие файлы
-- Добавит контент
-- Обновит registry
-- Проверит сборку
-- Предоставит отчёт
-
----
-
-## 📁 Структура файлов проекта
-
-### Метаданные статей:
-```
-src/blog-data/
-  ├── dermatologist-cluster-articles-part1.ts  (25 статей)
-  ├── botox-cluster-articles-part1.ts          (25 статей)
-  ├── lips-cluster-articles-part1.ts           (24 статьи)
-  ├── mesotherapy-face-cluster-articles-part1.ts (24 статьи)
-  ├── biorevitalization-cluster-articles-part1.ts (24 статьи)
-  └── fillers-cluster-articles-part1.ts        (24 статьи)
-```
-
-### Контент статей:
-```
-src/blog-data/
-  ├── dermatologist-article-content.ts         (25 статей)
-  ├── botox-article-content.ts                 (25 статей)
-  ├── lips-article-content.ts                  (24 статьи)
-  ├── mesotherapy-face-article-content.ts      (24 статьи)
-  ├── biorevitalization-article-content.ts     (3 статьи)
-  ├── biorevitalization-article-content-part2.ts (21 статья)
-  ├── fillers-article-content.ts               (3 статьи)
-  └── fillers-article-content-part2.ts         (21 статья)
-```
-
-### Компоненты:
-```
-src/blog-data/
-  ├── DermatologistHubBody.tsx
-  ├── DermatologistArticleBody.tsx
-  ├── BotoxHubBody.tsx
-  ├── BotoxArticleBody.tsx
-  ├── LipAugmentationHubBody.tsx
-  ├── LipAugmentationArticleBody.tsx
-  ├── MesotherapyFaceHubBody.tsx
-  ├── MesotherapyFaceArticleBody.tsx
-  ├── BiorevitalizationHubBody.tsx
-  ├── BiorevitalizationArticleBody.tsx
-  ├── FillersHubBody.tsx
-  └── FillersArticleBody.tsx
-```
-
----
-
-## 🔧 Полезные команды
-
-### Проверка статистики:
 ```bash
-node scripts/check-registry.mjs
-```
-
-### Сборка проекта:
-```bash
+npm run verify:blog-content
 npm run build
 ```
 
-### Запуск dev сервера:
-```bash
-npm run dev
+---
+
+## Структура данных (актуальное ядро)
+
+### Метаданные (пример топ-6)
+
+```text
+src/blog-data/
+  dermatologist-cluster-articles-part1.ts
+  dermatologist-cluster-articles-part2.ts
+  botox-cluster-articles-part1.ts
+  botox-cluster-articles-part2.ts
+  lips-cluster-articles-part1.ts
+  lips-cluster-articles-part2.ts
+  mesotherapy-face-cluster-articles-part1.ts
+  mesotherapy-face-cluster-articles-part2.ts
+  biorevitalization-cluster-articles-part1.ts
+  biorevitalization-cluster-articles-part2.ts
+  fillers-cluster-articles-part1.ts
+  fillers-cluster-articles-part2.ts
 ```
 
-### Запуск production:
-```bash
-npm run build && npm run start
+### Контент
+
+Часть рубрик разнесена на несколько файлов (`part2`, `part3` и т.д.). Итоговый объект собирается в корневом файле рубрики (например `fillers-article-content.ts` импортирует part2 и part3).
+
+### Компоненты тел и хабов
+
+```text
+src/blog-data/
+  DermatologistHubBody.tsx / DermatologistArticleBody.tsx
+  BotoxHubBody.tsx / BotoxArticleBody.tsx
+  LipAugmentationHubBody.tsx / LipArticleBody.tsx
+  LipClusterArticleBody.tsx   ← fallback / отдельный контент
+  MesotherapyFaceHubBody.tsx / MesotherapyFaceArticleBody.tsx
+  BiorevitalizationHubBody.tsx / BiorevitalizationArticleBody.tsx
+  FillersHubBody.tsx / FillersArticleBody.tsx
 ```
+
+Рендер тела поста: **`src/blog-data/render-post-body.tsx`** (`renderBlogPostBody`), не дублировать логику в `page.tsx`.
 
 ---
 
-## 📝 Примеры запросов для AI
+## Полезные команды
 
-### Для продолжения работы:
-
-1. **Добавить статьи в конкретную рубрику:**
-```
-Добавь 25 статей в рубрику "Дерматолог" (статьи 26-50)
-```
-
-2. **Создать новую рубрику:**
-```
-Создай рубрику "Пилинги" с хабом и 25 статьями
-```
-
-3. **Расширить базовый контент:**
-```
-Расширь базовый контент для "Мезотерапия лица" до полного (800-1500 слов)
-```
-
-4. **Массовое создание:**
-```
-Создай рубрики 7-11 (Пилинги, Чистка лица, Лазер, Карбокситерапия, Мезотерапия волос) по 25 статей каждая с базовым контентом
-```
+| Команда | Назначение |
+|---------|------------|
+| `npm run dev` | Dev (Turbopack в скрипте) |
+| `npm run build` | Production build (**webpack**) |
+| `npm run verify:blog-content` | Соответствие id метаданных и ключей контента |
+| `npm run generate:blog-urls` | Обновить `generated/blog-article-final-urls.txt` (**только Part 2**, 150 статей) |
+| `node scripts/check-registry.mjs` | Реестр / проверки из скрипта (если используете в проекте) |
 
 ---
 
-## ⚠️ ВАЖНО
+## Примеры запросов к AI
 
-### Перед продолжением работы:
-
-1. **Сделайте коммит текущих изменений:**
-   ```bash
-   git add .
-   git commit -m "feat: add 146 blog articles for top-6 categories"
-   ```
-
-2. **Создайте бэкап:**
-   ```bash
-   cp -r src/blog-data src/blog-data-backup-$(date +%Y%m%d)
-   ```
-
-3. **Проверьте сборку:**
-   ```bash
-   npm run build
-   ```
-
-### При продолжении работы:
-
-- AI будет использовать существующие шаблоны
-- Все новые статьи будут с переводами RU/RO
-- Контент будет соответствовать E-E-A-T принципам
-- Ссылки на услуги будут корректными
+1. «Добавь Part 3 для филлеров, статьи 51–75, метаданные + контент RU/RO, обнови `registry` и `render-post-body` при новом `bodyKey`.»
+2. «Проверь дубликаты `slugRo` после добавления статей.»
+3. «Перегенерируй `generated/blog-article-final-urls.txt` и прогони verify + build.»
 
 ---
 
-## 📞 Готовы продолжить?
+## Перед большими изменениями
 
-**Просто скажите:**
-```
-Продолжаем работу над блогом. Загружаю @BLOG_TODO.md
-Хочу [выберите задачу из списка выше]
-```
-
-**AI продолжит работу с того места, где остановились!**
+1. Коммит текущего состояния.
+2. По желанию копия `src/blog-data/` с датой в имени.
+3. После правок: `verify:blog-content` и `build`.
 
 ---
 
-**Файлы для загрузки при продолжении:**
-- `BLOG_TODO.md` (детальный план)
-- `BLOG_PROGRESS.md` (статистика)
-- `BLOG_QUICK_START.md` (этот файл)
+**Файлы для контекста в чате:** `BLOG_TODO.md`, `BLOG_PROGRESS.md`, при работе со slug — `src/blog-data/registry.ts`.
 
-**Дата создания:** 08.04.2026  
-**Версия:** 1.0
+**Версия:** 2.0 · **Дата:** 10.05.2026

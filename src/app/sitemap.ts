@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { getAllPosts, getMaxIndexPage } from '@/blog-data/registry';
+import { getMaxIndexPage, getPostsForSitemap } from '@/blog-data/registry';
 
 /**
  * Форматируем дату для sitemap (YYYY-MM-DD)
@@ -20,8 +20,8 @@ function blogSitemapEntries(buildAt: string): MetadataRoute.Sitemap {
     { url: 'https://meddera.md/ro/blog', lastModified: buildAt, changeFrequency: 'weekly', priority: 0.75 }
   );
 
-  // Посты блога
-  const posts = getAllPosts().filter(p => p.slugRu && p.slugRo && p.dateModified);
+  // Посты блога (все из registry: хабы + статьи, в т.ч. Part 2 и inline lip)
+  const posts = getPostsForSitemap();
   for (const post of posts) {
     const lastMod = toSitemapLastMod(new Date(post.dateModified));
     entries.push(

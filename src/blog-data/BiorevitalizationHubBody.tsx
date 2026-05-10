@@ -1,13 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import type { BlogLocale } from '@/blog-data/types';
-import { ORIGIN } from '@/blog-data/registry';
+import { blogPathRu, blogPathRo } from '@/blog-data/registry';
 
 type Props = { locale: BlogLocale; dateModified: string };
 
 export function BiorevitalizationHubBody({ locale, dateModified }: Props) {
-  const ruUrl = `${ORIGIN}/blog/biorevitalizaciya-beltsy-hub`;
-  const roUrl = `${ORIGIN}/ro/blog/biorevitalizare-balti-hub`;
+  const ruUrl = blogPathRu('biorevitalizaciya-beltsy-hub');
+  const roUrl = blogPathRo('biorevitalizare-balti-hub');
 
   if (locale === 'ru') {
     return (

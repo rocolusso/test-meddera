@@ -24,7 +24,10 @@
     "analyze": "ANALYZE=true next build --webpack",
     "start": "next start",
     "lint": "eslint new_design --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint new_design --ext .js,.jsx,.ts,.tsx --fix"
+    "lint:fix": "eslint new_design --ext .js,.jsx,.ts,.tsx --fix",
+    "generate:blog-part2": "node scripts/generate-blog-part2.mjs",
+    "generate:blog-urls": "node scripts/export-blog-article-urls.mjs",
+    "verify:blog-content": "node scripts/verify-blog-metadata-content.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^16.2.4",

@@ -1,13 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import type { BlogLocale } from '@/blog-data/types';
-import { ORIGIN } from '@/blog-data/registry';
+import { blogPathRu, blogPathRo } from '@/blog-data/registry';
 
 type Props = { locale: BlogLocale; dateModified: string };
 
 export function FillersHubBody({ locale, dateModified }: Props) {
-  const ruUrl = `${ORIGIN}/blog/konturnaya-plastika-beltsy-hub`;
-  const roUrl = `${ORIGIN}/ro/blog/conturare-faciala-balti-hub`;
+  const ruUrl = blogPathRu('konturnaya-plastika-beltsy-hub');
+  const roUrl = blogPathRo('conturare-faciala-balti-hub');
 
   if (locale === 'ru') {
     return (

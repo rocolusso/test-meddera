@@ -1,10 +1,16 @@
 import type { BlogClusterId, BlogLocale, BlogPost } from '@/blog-data/types';
 import { dermatologistArticlesPart1 } from '@/blog-data/dermatologist-cluster-articles-part1';
+import { dermatologistArticlesPart2 } from '@/blog-data/dermatologist-cluster-articles-part2';
 import { botoxArticlesPart1 } from '@/blog-data/botox-cluster-articles-part1';
+import { botoxArticlesPart2 } from '@/blog-data/botox-cluster-articles-part2';
 import { lipsArticlesPart1 } from '@/blog-data/lips-cluster-articles-part1';
+import { lipsArticlesPart2 } from '@/blog-data/lips-cluster-articles-part2';
 import { mesotherapyFaceArticlesPart1 } from '@/blog-data/mesotherapy-face-cluster-articles-part1';
+import { mesotherapyFaceArticlesPart2 } from '@/blog-data/mesotherapy-face-cluster-articles-part2';
 import { biorevitalizationArticlesPart1 } from '@/blog-data/biorevitalization-cluster-articles-part1';
+import { biorevitalizationArticlesPart2 } from '@/blog-data/biorevitalization-cluster-articles-part2';
 import { fillersArticlesPart1 } from '@/blog-data/fillers-cluster-articles-part1';
+import { fillersArticlesPart2 } from '@/blog-data/fillers-cluster-articles-part2';
 
 export const POSTS_PER_PAGE = 10;
 
@@ -15,6 +21,15 @@ export const POSTS_PER_PAGE = 10;
 export const FOOTER_RECENT_ARTICLE_COUNT = 6;
 
 export const ORIGIN = 'https://meddera.md';
+
+/** Relative paths for `<Link>` / client navigation. Keep `ORIGIN` for canonical metadata and JSON-LD only. */
+export function blogPathRu(slugRu: string): string {
+  return `/blog/${slugRu}`;
+}
+
+export function blogPathRo(slugRo: string): string {
+  return `/ro/blog/${slugRo}`;
+}
 
 const BLOG_POSTS: BlogPost[] = [
   {
@@ -36,6 +51,7 @@ const BLOG_POSTS: BlogPost[] = [
     bodyKey: 'dermatologist-hub',
   },
   ...dermatologistArticlesPart1,
+  ...dermatologistArticlesPart2,
   {
     id: 'botox-hub',
     kind: 'hub',
@@ -55,6 +71,7 @@ const BLOG_POSTS: BlogPost[] = [
     bodyKey: 'botox-hub',
   },
   ...botoxArticlesPart1,
+  ...botoxArticlesPart2,
   {
     id: 'mesotherapy-face-hub',
     kind: 'hub',
@@ -74,6 +91,7 @@ const BLOG_POSTS: BlogPost[] = [
     bodyKey: 'mesotherapy-face-hub',
   },
   ...mesotherapyFaceArticlesPart1,
+  ...mesotherapyFaceArticlesPart2,
   {
     id: 'biorevitalization-hub',
     kind: 'hub',
@@ -93,6 +111,7 @@ const BLOG_POSTS: BlogPost[] = [
     bodyKey: 'biorevitalization-hub',
   },
   ...biorevitalizationArticlesPart1,
+  ...biorevitalizationArticlesPart2,
   {
     id: 'fillers-hub',
     kind: 'hub',
@@ -112,6 +131,7 @@ const BLOG_POSTS: BlogPost[] = [
     bodyKey: 'fillers-hub',
   },
   ...fillersArticlesPart1,
+  ...fillersArticlesPart2,
   {
     id: 'lip-augmentation-hub',
     kind: 'hub',
@@ -131,6 +151,7 @@ const BLOG_POSTS: BlogPost[] = [
     bodyKey: 'lip-augmentation-hub',
   },
   ...lipsArticlesPart1,
+  ...lipsArticlesPart2,
   {
     id: 'lip-consult-questions',
     kind: 'article',
@@ -315,6 +336,11 @@ const BLOG_POSTS: BlogPost[] = [
 
 export function getAllPosts(): BlogPost[] {
   return BLOG_POSTS;
+}
+
+/** Записи блога для sitemap: те же slug, что у страниц `/blog/[slug]` и `/ro/blog/[slug]`. */
+export function getPostsForSitemap(): BlogPost[] {
+  return getAllPosts().filter((p) => p.slugRu && p.slugRo && p.dateModified);
 }
 
 export function getPostBySlug(slug: string, locale: BlogLocale): BlogPost | undefined {

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import type { BlogLocale } from '@/blog-data/types';
-import { ORIGIN } from '@/blog-data/registry';
+import { blogPathRu, blogPathRo } from '@/blog-data/registry';
 
 type Props = {
   locale: BlogLocale;
@@ -10,8 +10,8 @@ type Props = {
 };
 
 export function BotoxHubBody({ locale, dateModified }: Props) {
-  const ruUrl = `${ORIGIN}/blog/botoks-beltsy-hub`;
-  const roUrl = `${ORIGIN}/ro/blog/botox-balti-hub`;
+  const ruUrl = blogPathRu('botoks-beltsy-hub');
+  const roUrl = blogPathRo('botox-balti-hub');
 
   if (locale === 'ru') {
     return (

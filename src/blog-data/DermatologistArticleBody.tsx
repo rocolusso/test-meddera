@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
-import { ORIGIN, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
+import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
 
 type ArticleSection = { h2: string; paragraphs: string[] };
 
@@ -17,8 +17,8 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
   const isRu = locale === 'ru';
   const slug = isRu ? post.slugRu : post.slugRo;
   const title = isRu ? post.titleRu : post.titleRo;
-  const ruUrl = `${ORIGIN}/blog/${post.slugRu}`;
-  const roUrl = `${ORIGIN}/ro/blog/${post.slugRo}`;
+  const ruUrl = blogPathRu(post.slugRu);
+  const roUrl = blogPathRo(post.slugRo);
   
   const relatedPosts = getRelatedArticles(post, 5);
   const hubSlug = getHubSlug(post.clusterId, locale);

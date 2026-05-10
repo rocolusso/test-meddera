@@ -1,3 +1,5 @@
+import { MESOTHERAPY_FACE_ARTICLE_CONTENT_PART2 } from '@/blog-data/mesotherapy-face-article-content-part2';
+
 export type ArticleSection = { h2: string; paragraphs: string[] };
 
 export type MesotherapyFaceArticleCopy = {
@@ -5,7 +7,7 @@ export type MesotherapyFaceArticleCopy = {
   sectionsRo: ArticleSection[];
 };
 
-export const MESOTHERAPY_FACE_ARTICLE_CONTENT: Record<string, MesotherapyFaceArticleCopy> = {
+const MESOTHERAPY_FACE_ARTICLE_CONTENT_PART1: Record<string, MesotherapyFaceArticleCopy> = {
   'mezoterapiya-lica-beltsy-chto-eto': {
     sectionsRu: [
       {
@@ -474,4 +476,9 @@ export const MESOTHERAPY_FACE_ARTICLE_CONTENT: Record<string, MesotherapyFaceArt
       { h2: 'Avantajele combinării', paragraphs: ['Abordarea complexă oferă rezultat mai bun: mezoterapia îmbunătățește calitatea pielii, alte proceduri rezolvă probleme concrete (riduri, volum, textură).', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
+};
+
+export const MESOTHERAPY_FACE_ARTICLE_CONTENT: Record<string, MesotherapyFaceArticleCopy> = {
+  ...MESOTHERAPY_FACE_ARTICLE_CONTENT_PART1,
+  ...MESOTHERAPY_FACE_ARTICLE_CONTENT_PART2,
 };

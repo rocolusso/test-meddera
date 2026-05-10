@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import type { BlogLocale } from '@/blog-data/types';
-import { ORIGIN } from '@/blog-data/registry';
+import { blogPathRu, blogPathRo } from '@/blog-data/registry';
 
 type Props = {
   locale: BlogLocale;
@@ -10,8 +10,8 @@ type Props = {
 };
 
 export function LipAugmentationHubBody({ locale, dateModified }: Props) {
-  const ruUrl = `${ORIGIN}/blog/uvelichenie-gub-beltsy`;
-  const roUrl = `${ORIGIN}/ro/blog/marire-buzelor-balti`;
+  const ruUrl = blogPathRu('uvelichenie-gub-beltsy');
+  const roUrl = blogPathRo('marire-buzelor-balti');
 
   if (locale === 'ru') {
     return (

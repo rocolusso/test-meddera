@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { LIP_CLUSTER_ARTICLE_CONTENT } from '@/blog-data/lip-cluster-article-content';
-import { getHubForCluster, ORIGIN } from '@/blog-data/registry';
+import { blogPathRu, blogPathRo, getHubForCluster } from '@/blog-data/registry';
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
 
 type Props = {
@@ -16,8 +16,8 @@ function stripTitleSuffix(title: string) {
 
 export function LipClusterArticleBody({ post, locale }: Props) {
   const copy = LIP_CLUSTER_ARTICLE_CONTENT[post.id];
-  const ruUrl = `${ORIGIN}/blog/${post.slugRu}`;
-  const roUrl = `${ORIGIN}/ro/blog/${post.slugRo}`;
+  const ruUrl = blogPathRu(post.slugRu);
+  const roUrl = blogPathRo(post.slugRo);
   const hub = post.clusterId ? getHubForCluster(post.clusterId) : undefined;
 
   if (!copy) {

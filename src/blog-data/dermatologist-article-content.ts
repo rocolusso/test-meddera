@@ -1,5 +1,7 @@
 /** Structured copy for dermatologist cluster articles (informational; not personal medical advice). */
 
+import { DERMATOLOGIST_ARTICLE_CONTENT_PART2 } from '@/blog-data/dermatologist-article-content-part2';
+
 export type ArticleSection = { h2: string; paragraphs: string[] };
 
 export type DermatologistArticleCopy = {
@@ -7,7 +9,7 @@ export type DermatologistArticleCopy = {
   sectionsRo: ArticleSection[];
 };
 
-export const DERMATOLOGIST_ARTICLE_CONTENT: Record<string, DermatologistArticleCopy> = {
+const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCopy> = {
   'dermatolog-beltsy-kogda-nuzhna-konsultaciya': {
     sectionsRu: [
       {
@@ -1936,4 +1938,9 @@ export const DERMATOLOGIST_ARTICLE_CONTENT: Record<string, DermatologistArticleC
       },
     ],
   },
+};
+
+export const DERMATOLOGIST_ARTICLE_CONTENT: Record<string, DermatologistArticleCopy> = {
+  ...DERMATOLOGIST_ARTICLE_CONTENT_PART1,
+  ...DERMATOLOGIST_ARTICLE_CONTENT_PART2,
 };

@@ -1,3 +1,5 @@
+import { BOTOX_ARTICLE_CONTENT_PART2 } from '@/blog-data/botox-article-content-part2';
+
 export type ArticleSection = { h2: string; paragraphs: string[] };
 
 export type BotoxArticleCopy = {
@@ -5,7 +7,7 @@ export type BotoxArticleCopy = {
   sectionsRo: ArticleSection[];
 };
 
-export const BOTOX_ARTICLE_CONTENT: Record<string, BotoxArticleCopy> = {
+const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
   'botoks-beltsy-chto-nuzhno-znat': {
     sectionsRu: [
       {
@@ -1886,4 +1888,9 @@ export const BOTOX_ARTICLE_CONTENT: Record<string, BotoxArticleCopy> = {
       },
     ],
   },
+};
+
+export const BOTOX_ARTICLE_CONTENT: Record<string, BotoxArticleCopy> = {
+  ...BOTOX_ARTICLE_CONTENT_PART1,
+  ...BOTOX_ARTICLE_CONTENT_PART2,
 };

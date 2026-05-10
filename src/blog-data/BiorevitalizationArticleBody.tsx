@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
-import { ORIGIN, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
+import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
 
 type ArticleSection = { h2: string; paragraphs: string[] };
 type Props = { post: BlogPost; locale: BlogLocale; dateModified: string; sections: ArticleSection[] };
@@ -9,8 +9,8 @@ type Props = { post: BlogPost; locale: BlogLocale; dateModified: string; section
 export function BiorevitalizationArticleBody({ post, locale, dateModified, sections }: Props) {
   const isRu = locale === 'ru';
   const title = isRu ? post.titleRu : post.titleRo;
-  const ruUrl = `${ORIGIN}/blog/${post.slugRu}`;
-  const roUrl = `${ORIGIN}/ro/blog/${post.slugRo}`;
+  const ruUrl = blogPathRu(post.slugRu);
+  const roUrl = blogPathRo(post.slugRo);
   const relatedPosts = getRelatedArticles(post, 5);
   const hubSlug = getHubSlug(post.clusterId, locale);
   const authorByline = post.authorByline?.[locale] || 'Meddera Beauty Clinic';

@@ -1,4 +1,5 @@
 import { FILLERS_ARTICLE_CONTENT_PART2 } from './fillers-article-content-part2';
+import { FILLERS_ARTICLE_CONTENT_PART3 } from './fillers-article-content-part3';
 
 export type ArticleSection = { h2: string; paragraphs: string[] };
 
@@ -185,4 +186,5 @@ const FILLERS_ARTICLE_CONTENT_PART1: Record<string, FillersArticleCopy> = {
 export const FILLERS_ARTICLE_CONTENT: Record<string, FillersArticleCopy> = {
   ...FILLERS_ARTICLE_CONTENT_PART1,
   ...FILLERS_ARTICLE_CONTENT_PART2,
+  ...FILLERS_ARTICLE_CONTENT_PART3,
 };

@@ -1,4 +1,5 @@
 import { BIOREVITALIZATION_ARTICLE_CONTENT_PART2 } from './biorevitalization-article-content-part2';
+import { BIOREVITALIZATION_ARTICLE_CONTENT_PART3 } from './biorevitalization-article-content-part3';
 
 export type ArticleSection = { h2: string; paragraphs: string[] };
 
@@ -185,4 +186,5 @@ const BIOREVITALIZATION_ARTICLE_CONTENT_PART1: Record<string, BiorevitalizationA
 export const BIOREVITALIZATION_ARTICLE_CONTENT: Record<string, BiorevitalizationArticleCopy> = {
   ...BIOREVITALIZATION_ARTICLE_CONTENT_PART1,
   ...BIOREVITALIZATION_ARTICLE_CONTENT_PART2,
+  ...BIOREVITALIZATION_ARTICLE_CONTENT_PART3,
 };

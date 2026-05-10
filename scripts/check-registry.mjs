@@ -6,23 +6,35 @@ const blogDataPath = './src/blog-data';
 // Читаем все файлы метаданных
 const metadataFiles = [
   'dermatologist-cluster-articles-part1.ts',
+  'dermatologist-cluster-articles-part2.ts',
   'botox-cluster-articles-part1.ts',
+  'botox-cluster-articles-part2.ts',
   'lips-cluster-articles-part1.ts',
+  'lips-cluster-articles-part2.ts',
   'mesotherapy-face-cluster-articles-part1.ts',
+  'mesotherapy-face-cluster-articles-part2.ts',
   'biorevitalization-cluster-articles-part1.ts',
+  'biorevitalization-cluster-articles-part2.ts',
   'fillers-cluster-articles-part1.ts',
+  'fillers-cluster-articles-part2.ts',
 ];
 
 // Читаем все файлы контента
 const contentFiles = [
   'dermatologist-article-content.ts',
+  'dermatologist-article-content-part2.ts',
   'botox-article-content.ts',
+  'botox-article-content-part2.ts',
   'lips-article-content.ts',
+  'lips-article-content-part2.ts',
   'mesotherapy-face-article-content.ts',
+  'mesotherapy-face-article-content-part2.ts',
   'biorevitalization-article-content.ts',
   'biorevitalization-article-content-part2.ts',
+  'biorevitalization-article-content-part3.ts',
   'fillers-article-content.ts',
   'fillers-article-content-part2.ts',
+  'fillers-article-content-part3.ts',
 ];
 
 console.log('🔍 Проверка целостности контента блога\n');
@@ -73,11 +85,17 @@ const registryContent = readFileSync(registryPath, 'utf-8');
 // Проверка импортов
 const imports = [
   'dermatologistArticlesPart1',
+  'dermatologistArticlesPart2',
   'botoxArticlesPart1',
+  'botoxArticlesPart2',
   'lipsArticlesPart1',
+  'lipsArticlesPart2',
   'mesotherapyFaceArticlesPart1',
+  'mesotherapyFaceArticlesPart2',
   'biorevitalizationArticlesPart1',
+  'biorevitalizationArticlesPart2',
   'fillersArticlesPart1',
+  'fillersArticlesPart2',
 ];
 
 console.log('\n  Импорты:');

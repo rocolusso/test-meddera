@@ -1,3 +1,5 @@
+import { LIPS_ARTICLE_CONTENT_PART2 } from '@/blog-data/lips-article-content-part2';
+
 export type ArticleSection = { h2: string; paragraphs: string[] };
 
 export type LipsArticleCopy = {
@@ -5,7 +7,7 @@ export type LipsArticleCopy = {
   sectionsRo: ArticleSection[];
 };
 
-export const LIPS_ARTICLE_CONTENT: Record<string, LipsArticleCopy> = {
+const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
   'uvelichenie-gub-beltsy-vidy-fillerov': {
     sectionsRu: [
       {
@@ -1808,4 +1810,9 @@ export const LIPS_ARTICLE_CONTENT: Record<string, LipsArticleCopy> = {
       },
     ],
   },
+};
+
+export const LIPS_ARTICLE_CONTENT: Record<string, LipsArticleCopy> = {
+  ...LIPS_ARTICLE_CONTENT_PART1,
+  ...LIPS_ARTICLE_CONTENT_PART2,
 };
