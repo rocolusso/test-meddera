@@ -2,8 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 
 import HeaderNew from '@/components/new-ui/HeaderNew';
-import HeroImagePreload from '@/components/new-ui/HeroImagePreload';
-import HeroNew from '@/components/new-ui/HeroNew';
+// import HeroImagePreload from '@/components/new-ui/HeroImagePreload';
+// import HeroNew from '@/components/new-ui/HeroNew';
 import ContactsDynamicWrapperRo from '@/components/ContactsDynamicWrapperRo';
 import {
   DynamicAboutNew,
@@ -57,18 +57,18 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <HeroImagePreload />
+      {/*<HeroImagePreload />*/}
       <script
         type="application/ld+json"
         /* eslint-disable-next-line react/no-danger */
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HeaderNew locale="ro" />
-      <HeroNew />
+      {/*<HeroNew />*/}
       <main>
-        <DynamicHomeSeoContentRo />
         <DynamicAboutNew locale="ro" />
         <DynamicServicesNew locale="ro" />
+        <DynamicHomeSeoContentRo />
       </main>
 
       <ContactsDynamicWrapperRo />
