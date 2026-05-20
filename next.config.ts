@@ -374,6 +374,43 @@ const nextConfig: NextConfig = {
         destination: '/ro/services/ynjekczyy-lypolytykov-v-belczah',
         permanent: true, // 301 redirect
       },
+
+      {
+        source: '/ro/blog/botox-b%C4%83rba%C8%9Bi-particularit%C4%83%C8%9Bi-balti',
+        destination: '/ro',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/ro/blog/conturare-pome%C8%9Bi-barbie-balti',
+        destination: '/ro',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/ro/blog/conturare-pome%C8%9Bi-balti',
+        destination: '/ro',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/ro/blog/botox-sarcin%C4%83-al%C4%83ptare-balti',
+        destination: '/ro',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/ro/blog/botox-bruxism-scr%C3%A2%C8%99nit-din%C8%9Bi-balti',
+        destination: '/ro',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/ro/blog/botox-migren%C4%83-dureri-cap-tratament-balti',
+        destination: '/ro',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/$',
+        destination: '/',
+        permanent: true, // 301 redirect
+      },
+
     ];
   },
 };
