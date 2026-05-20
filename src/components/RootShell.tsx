@@ -105,7 +105,9 @@ export default function RootShell({
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
         <FacebookPixelNoScript />
-        <FacebookPixelPageViewTracker />
+        <React.Suspense fallback={null}>
+          <FacebookPixelPageViewTracker />
+        </React.Suspense>
         {children}
         {showVercelInsights ? <DeferredVercelInsights /> : null}
         {/*{enableGtm ? <DeferredGoogleTagManager /> : null}*/}
