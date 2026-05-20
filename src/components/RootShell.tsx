@@ -6,6 +6,8 @@ import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
 // import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
 import DeferredVercelInsights from '@/components/DeferredVercelInsights';
+import { FacebookPixelNoScript, FacebookPixelScript } from '@/components/FacebookPixel';
+import FacebookPixelPageViewTracker from '@/components/FacebookPixelPageViewTracker';
 import RouteAwareOverlays from '@/components/RouteAwareOverlays';
 import { isEnabled } from '@/lib/env-flags';
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
@@ -99,8 +101,11 @@ export default function RootShell({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
         />
+        <FacebookPixelScript />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
+        <FacebookPixelNoScript />
+        <FacebookPixelPageViewTracker />
         {children}
         {showVercelInsights ? <DeferredVercelInsights /> : null}
         {/*{enableGtm ? <DeferredGoogleTagManager /> : null}*/}
