@@ -81,7 +81,6 @@ export default function RootShell({
     >
       {/* eslint-disable-next-line @next/next/no-head-element */}
       <head suppressHydrationWarning>
-        <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-language" content={locale} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
