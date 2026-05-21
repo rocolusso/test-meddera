@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { ContentArticleBody } from '@/components/new-ui/ContentPageShell';
+import { RECEPTION_SCHEDULE_COPY } from '@/lib/contact-reception-schedule';
 
 const phoneClassName =
   'font-semibold text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-brand-gold';
@@ -44,6 +45,8 @@ export default function ContactsIndexSeoContent({ locale }: { locale: 'ru' | 'ro
 
         <h2>Program și cum ne găsiți</h2>
         <p>
+          {RECEPTION_SCHEDULE_COPY.ro.graphLine}
+          {' '}
           Lucrăm cu programare prealabilă; în formular puteți lăsa un mesaj sau cere apel înapoi. Puteți suna la
           {' '}
           <ClinicPhoneLink />
@@ -106,6 +109,8 @@ export default function ContactsIndexSeoContent({ locale }: { locale: 'ru' | 'ro
 
       <h2>Режим работы и как нас найти</h2>
       <p>
+        {RECEPTION_SCHEDULE_COPY.ru.graphLine}
+        {' '}
         Приём по предварительной записи; в форме можно оставить сообщение или запрос обратного звонка. Также можно
         позвонить по
         {' '}

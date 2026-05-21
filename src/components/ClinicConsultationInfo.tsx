@@ -1,6 +1,7 @@
 'use client';
 
 import { useContactReceptionSchedule } from '@/hooks/useContactReceptionSchedule';
+import { RECEPTION_SCHEDULE_COPY } from '@/lib/contact-reception-schedule';
 
 type Props = {
   locale: 'ru' | 'ro';
@@ -8,7 +9,8 @@ type Props = {
 };
 
 export default function ClinicConsultationInfo({ locale, compact = false }: Props) {
-  const { isOpenNow, isSunday, currentTime, weekdayLong } = useContactReceptionSchedule(locale);
+  const { isOpenNow, isSunday, isMonday, currentTime, weekdayLong } = useContactReceptionSchedule(locale);
+  const copy = RECEPTION_SCHEDULE_COPY[locale];
   const textClass = compact ? 'text-xs sm:text-sm' : 'text-sm sm:text-base';
 
   return (
@@ -17,15 +19,13 @@ export default function ClinicConsultationInfo({ locale, compact = false }: Prop
         <p className={`uppercase text-muted-foreground ${textClass}`}>
           {locale === 'ru' ? 'Часы работы по предварительной записи:' : 'Program de lucru doar cu programare prealabilă:'}
           {' '}
-          13:00 - 18:00
+          {copy.hoursRange.replace('–', ' - ')}
         </p>
       </div>
 
       <div className="pb-2 text-center">
         <p className={`text-muted-foreground ${textClass}`}>
-          {locale === 'ru'
-            ? 'Дни приёма: понедельник — суббота. Воскресенье — выходной.'
-            : 'Zile de recepție: luni — sâmbătă. Duminică — închis.'}
+          {copy.daysSummary}
         </p>
       </div>
 
@@ -52,13 +52,17 @@ export default function ClinicConsultationInfo({ locale, compact = false }: Prop
         >
           {isOpenNow
             ? (locale === 'ru' ? 'Мы открыты!' : 'Suntem deschiși!')
-            : isSunday
+            : isMonday
               ? (locale === 'ru'
-                ? 'Статус: закрыты. Сегодня выходной — мы не принимаем по воскресеньям. Но оставьте своё сообщение, и мы свяжемся с вами в ближайшее время.'
-                : 'Stare: închis. Astăzi este zi liberă — nu lucrăm duminica. Dar lăsați mesajul dvs., iar noi vă vom contacta în cel mai scurt timp.')
-              : (locale === 'ru'
-                ? 'Сейчас мы не работаем, но оставьте свои данные, и мы перезвоним в ближайшее время.'
-                : 'Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom contacta în cel mai scurt timp.')}
+                ? 'Статус: закрыты. Сегодня выходной — мы не принимаем по понедельникам. Но оставьте своё сообщение, и мы свяжемся с вами в ближайшее время.'
+                : 'Stare: închis. Astăzi este zi liberă — nu lucrăm luni. Dar lăsați mesajul dvs., iar noi vă vom contacta în cel mai scurt timp.')
+              : isSunday
+                ? (locale === 'ru'
+                  ? 'Статус: закрыты. Сегодня выходной — мы не принимаем по воскресеньям. Но оставьте своё сообщение, и мы свяжемся с вами в ближайшее время.'
+                  : 'Stare: închis. Astăzi este zi liberă — nu lucrăm duminica. Dar lăsați mesajul dvs., iar noi vă vom contacta în cel mai scurt timp.')
+                : (locale === 'ru'
+                  ? 'Сейчас мы не работаем, но оставьте свои данные, и мы перезвоним в ближайшее время.'
+                  : 'Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom contacta în cel mai scurt timp.')}
         </p>
       </div>
 
@@ -72,7 +76,7 @@ export default function ClinicConsultationInfo({ locale, compact = false }: Prop
 
       {!isOpenNow ? (
         <p className={`pb-3 uppercase text-muted-foreground ${textClass}`}>
-          {locale === 'ru' ? 'Пн–сб 13:00–18:00 · вс — выходной' : 'Lun–sâm 13:00–18:00 · dum — închis'}
+          {copy.hoursFooter}
         </p>
       ) : null}
     </div>

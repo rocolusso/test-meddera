@@ -1,13 +1,20 @@
 import { useEffect, useState } from 'react';
 
-const WORK_START = 13;
-const WORK_END = 18;
+import {
+  isReceptionDayOff,
+  isReceptionMonday,
+  isReceptionOpenAt,
+  isReceptionSunday,
+} from '@/lib/contact-reception-schedule';
 
 export type ContactReceptionSchedule = {
-  /** Mon–Sat, 13:00–18:00 local time */
+  /** Tue–Sat, 13:00–18:00 local time */
   isOpenNow: boolean;
   isSunday: boolean;
-  /** Monday–Saturday (reception days) */
+  isMonday: boolean;
+  /** Sunday or Monday */
+  isDayOff: boolean;
+  /** Tuesday–Saturday (reception days) */
   isReceptionDay: boolean;
   currentTime: string;
   weekdayLong: string;
@@ -15,11 +22,12 @@ export type ContactReceptionSchedule = {
 
 function compute(now: Date, locale: string): ContactReceptionSchedule {
   const dow = now.getDay();
-  const isSunday = dow === 0;
-  const isReceptionDay = dow >= 1 && dow <= 6;
+  const isSunday = isReceptionSunday(dow);
+  const isMonday = isReceptionMonday(dow);
+  const isDayOff = isReceptionDayOff(dow);
+  const isReceptionDay = !isDayOff;
   const hours = now.getHours();
-  const inHours = hours >= WORK_START && hours < WORK_END;
-  const isOpenNow = isReceptionDay && inHours;
+  const isOpenNow = isReceptionOpenAt(dow, hours);
 
   const loc = locale === 'ru' ? 'ru-RU' : 'ro-RO';
   const currentTime = now.toLocaleTimeString(loc, { hour: '2-digit', minute: '2-digit' });
@@ -28,6 +36,8 @@ function compute(now: Date, locale: string): ContactReceptionSchedule {
   return {
     isOpenNow,
     isSunday,
+    isMonday,
+    isDayOff,
     isReceptionDay,
     currentTime,
     weekdayLong,
@@ -35,7 +45,7 @@ function compute(now: Date, locale: string): ContactReceptionSchedule {
 }
 
 /**
- * Client-side reception schedule: Mon–Sat 13:00–18:00, Sunday closed.
+ * Client-side reception schedule: Tue–Sat 13:00–18:00, Mon & Sun closed.
  * Refreshes every minute so day/time stay accurate without heavy polling.
  */
 export function useContactReceptionSchedule(locale: string): ContactReceptionSchedule {
