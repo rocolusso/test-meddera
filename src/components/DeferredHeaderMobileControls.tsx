@@ -21,9 +21,9 @@ export default function DeferredHeaderMobileControls({ locale }: Props) {
     const run = () => setReady(true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 2500 });
+      idleId = window.requestIdleCallback(run, { timeout: 50 });
     } else {
-      fallbackId = window.setTimeout(run, 2500);
+      fallbackId = window.setTimeout(run, 50);
     }
 
     return () => {
