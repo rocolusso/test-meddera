@@ -20,16 +20,33 @@ export function proxy(request: NextRequest) {
     return new NextResponse(null, { status: 404 });
   }
 
-  const userAgent = request.headers.get('user-agent') || '';
+
+  const country = request.geo?.country || request.headers.get('x-vercel-ip-country') || '';
+  const countryCode = country.toUpperCase();
+  const userAgent = request.headers.get('user-agent') ?? '';
+  const signatureAgent = request.headers.get('signature-agent') ?? '';
+
   // Keep proxy checks ultra-cheap; detailed bot scoring is handled in API.
   if (/curl|wget|python|scrapy|aiohttp/i.test(userAgent)) {
     return new NextResponse(null, { status: 403 });
   }
 
-  const country = request.geo?.country || request.headers.get('x-vercel-ip-country') || '';
-  const countryCode = country.toUpperCase();
+  console.log('[geo-block]', {
+    countryCode,
+    pathname: request.nextUrl.pathname,
+    href: request.nextUrl.href,
+    userAgent,
+    signatureAgent,
+  });
 
   if (['IL', 'IN'].includes(countryCode)) {
+    console.log('[geo-block]', {
+      countryCode,
+      pathname: request.nextUrl.pathname,
+      href: request.nextUrl.href,
+      userAgent,
+      signatureAgent,
+    });
     return new NextResponse(
       JSON.stringify({ message: 'Access denied' }),
       {
