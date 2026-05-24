@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 import { isScannerProbePathname } from '@/lib/scanner-paths';
+import {getCrawlerLabel} from "@/lib/crawler-label";
 
 declare module 'next/server' {
   interface NextRequest {
@@ -20,11 +21,11 @@ export function proxy(request: NextRequest) {
     return new NextResponse(null, { status: 404 });
   }
 
-
   const country = request.geo?.country || request.headers.get('x-vercel-ip-country') || '';
   const countryCode = country.toUpperCase();
   const userAgent = request.headers.get('user-agent') ?? '';
   const signatureAgent = request.headers.get('signature-agent') ?? '';
+  const crawlerLabel = getCrawlerLabel(userAgent);
 
   // Keep proxy checks ultra-cheap; detailed bot scoring is handled in API.
   if (/curl|wget|python|scrapy|aiohttp/i.test(userAgent)) {
@@ -36,6 +37,7 @@ export function proxy(request: NextRequest) {
     pathname: request.nextUrl.pathname,
     href: request.nextUrl.href,
     userAgent,
+    crawlerLabel,
     signatureAgent,
   });
 
@@ -45,6 +47,7 @@ export function proxy(request: NextRequest) {
       pathname: request.nextUrl.pathname,
       href: request.nextUrl.href,
       userAgent,
+      crawlerLabel,
       signatureAgent,
     });
     return new NextResponse(
