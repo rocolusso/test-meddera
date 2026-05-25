@@ -8,6 +8,15 @@ export function isScannerProbePathname(pathname: string): boolean {
   if (lower.endsWith('.php')) {
     return true;
   }
+  if (lower.endsWith('.yaml')) {
+    return true;
+  }
+  if (lower.endsWith('.yml')) {
+    return true;
+  }
+  if (lower.endsWith('Dockerfile')) {
+    return true;
+  }
   if (lower.includes('/wp-admin') || lower.includes('wp-login')) {
     return true;
   }
@@ -18,6 +27,12 @@ export function isScannerProbePathname(pathname: string): boolean {
     return true;
   }
   if (lower === '/.env' || lower.endsWith('/.env')) {
+    return true;
+  }
+  if (lower.includes('/.env') ) {
+    return true;
+  }
+  if (lower.includes('/.git') ) {
     return true;
   }
   if (lower.includes('phpinfo')) {
