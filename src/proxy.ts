@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 import { isScannerProbePathname } from '@/lib/scanner-paths';
-import {getCrawlerLabel} from "@/lib/crawler-label";
+import { getCrawlerLabel } from '@/lib/crawler-label';
 
 declare module 'next/server' {
   interface NextRequest {
