@@ -1,4 +1,5 @@
 User-Agent: *
+User-agent: Yandex
 Disallow: /cgi-bin
 Disallow: /*gclid=*
 Disallow: /*yclid=*
