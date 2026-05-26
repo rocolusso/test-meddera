@@ -28,9 +28,9 @@ export function proxy(request: NextRequest) {
   const crawlerLabel = getCrawlerLabel(userAgent);
 
   // Keep proxy checks ultra-cheap; detailed bot scoring is handled in API.
-  if (/curl|wget|python|scrapy|aiohttp/i.test(userAgent)) {
-    return new NextResponse(null, { status: 403 });
-  }
+  // if (/curl|wget|python|scrapy|aiohttp/i.test(userAgent)) {
+  //   return new NextResponse(null, { status: 403 });
+  // }
 
   console.log('[geo-block]', {
     countryCode,
