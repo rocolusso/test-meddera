@@ -1,4 +1,9 @@
 User-Agent: *
+Disallow: /cgi-bin
+Disallow: /*gclid=*
+Disallow: /*yclid=*
+Disallow: /*?*
+Disallow: /*,*
 Disallow: /ads/
 Disallow: /api/
 Disallow: /cert/
@@ -6,3 +11,43 @@ Disallow: /blocked/
 Disallow: /rating/
 
 Sitemap: https://meddera.md/sitemap.xml
+
+
+User-agent: Yahoo
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Mediapartners-Google
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-Agent: trendictionbot
+Disallow: /
+
+User-agent: Seekport Crawler
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
