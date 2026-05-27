@@ -12,7 +12,7 @@ import RouteAwareOverlays from '@/components/RouteAwareOverlays';
 import { isEnabled } from '@/lib/env-flags';
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
 import { GoogleTagManager } from '@next/third-parties/google';
-import {TrackPageView} from "@/components/TrackPageView";
+import { TrackPageView } from '@/components/TrackPageView';
 
 const ORIGIN = 'https://meddera.md';
 
