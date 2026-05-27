@@ -5,7 +5,7 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    const context = getRequestContext();
+    const context = await getRequestContext();
 
     logger.info({
       event: body.event,
