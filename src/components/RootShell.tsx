@@ -12,6 +12,7 @@ import RouteAwareOverlays from '@/components/RouteAwareOverlays';
 import { isEnabled } from '@/lib/env-flags';
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
 import { GoogleTagManager } from '@next/third-parties/google';
+import {TrackPageView} from "@/components/TrackPageView";
 
 const ORIGIN = 'https://meddera.md';
 
@@ -106,6 +107,7 @@ export default function RootShell({
         <React.Suspense fallback={null}>
           <FacebookPixelPageViewTracker />
         </React.Suspense>
+        <TrackPageView />
         {children}
         {showVercelInsights ? <DeferredVercelInsights /> : null}
         {/*{enableGtm ? <DeferredGoogleTagManager /> : null}*/}
