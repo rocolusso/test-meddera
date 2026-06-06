@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import DeferredHeaderMobileControls from '@/components/DeferredHeaderMobileControls';
+import HeaderScrollProgress from '@/components/new-ui/HeaderScrollProgress';
 import NavigationLinks from '@/components/new-ui/NavigationLinks';
 
 const LOGO_SRC = '/assets/img/pintea_logo.svg';
@@ -9,6 +10,7 @@ const LOGO_SRC = '/assets/img/pintea_logo.svg';
 function HeaderNew({ locale }: { locale: string }) {
   return (
     <>
+      <HeaderScrollProgress locale={locale} />
       <header className="!fixed inset-x-0 top-0 z-50 w-full border-b border-border/90 pt-[env(safe-area-inset-top,0px)] isolate">
         <div
           aria-hidden
