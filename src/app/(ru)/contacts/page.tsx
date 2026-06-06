@@ -12,7 +12,7 @@ const roUrl = 'https://meddera.md/ro/contacts';
 
 const PAGE_TITLE = 'Контакты клиники Meddera в Бельцах — запись и адрес | Meddera';
 const PAGE_DESC =
-  'Контакты клиники Meddera в Бельцах: ул. Штефан чел Маре, 13, телефон, форма записи. Приём Вт–Сб 13:00–18:00, пн и вс — выходные. Карта.';
+  'Контакты клиники Meddera в Бельцах: ул. Штефан чел Маре, 13, телефон, форма записи. Приём Вт, Чт–Сб 13:00–18:00, пн, ср и вс — выходные. Карта.';
 const OG_IMAGE = 'https://meddera.md/assets/img/img_contacts.jpg';
 
 const jsonLd = contactsPageJsonLd({

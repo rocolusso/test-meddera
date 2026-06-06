@@ -5,16 +5,18 @@ import {
   isReceptionMonday,
   isReceptionOpenAt,
   isReceptionSunday,
+  isReceptionWednesday,
 } from '@/lib/contact-reception-schedule';
 
 export type ContactReceptionSchedule = {
-  /** Tue–Sat, 13:00–18:00 local time */
+  /** Tue, Thu–Sat, 13:00–18:00 local time */
   isOpenNow: boolean;
   isSunday: boolean;
   isMonday: boolean;
-  /** Sunday or Monday */
+  isWednesday: boolean;
+  /** Sunday, Monday or Wednesday */
   isDayOff: boolean;
-  /** Tuesday–Saturday (reception days) */
+  /** Tuesday, Thursday–Saturday (reception days) */
   isReceptionDay: boolean;
   currentTime: string;
   weekdayLong: string;
@@ -24,6 +26,7 @@ function compute(now: Date, locale: string): ContactReceptionSchedule {
   const dow = now.getDay();
   const isSunday = isReceptionSunday(dow);
   const isMonday = isReceptionMonday(dow);
+  const isWednesday = isReceptionWednesday(dow);
   const isDayOff = isReceptionDayOff(dow);
   const isReceptionDay = !isDayOff;
   const hours = now.getHours();
@@ -37,6 +40,7 @@ function compute(now: Date, locale: string): ContactReceptionSchedule {
     isOpenNow,
     isSunday,
     isMonday,
+    isWednesday,
     isDayOff,
     isReceptionDay,
     currentTime,
@@ -45,7 +49,7 @@ function compute(now: Date, locale: string): ContactReceptionSchedule {
 }
 
 /**
- * Client-side reception schedule: Tue–Sat 13:00–18:00, Mon & Sun closed.
+ * Client-side reception schedule: Tue, Thu–Sat 13:00–18:00, Mon, Wed & Sun closed.
  * Refreshes every minute so day/time stay accurate without heavy polling.
  */
 export function useContactReceptionSchedule(locale: string): ContactReceptionSchedule {

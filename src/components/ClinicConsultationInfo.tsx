@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default function ClinicConsultationInfo({ locale, compact = false }: Props) {
-  const { isOpenNow, isSunday, isMonday, currentTime, weekdayLong } = useContactReceptionSchedule(locale);
+  const { isOpenNow, isSunday, isMonday, isWednesday, currentTime, weekdayLong } = useContactReceptionSchedule(locale);
   const copy = RECEPTION_SCHEDULE_COPY[locale];
   const textClass = compact ? 'text-xs sm:text-sm' : 'text-sm sm:text-base';
 
@@ -56,13 +56,17 @@ export default function ClinicConsultationInfo({ locale, compact = false }: Prop
               ? (locale === 'ru'
                 ? 'Статус: закрыты. Сегодня выходной — мы не принимаем по понедельникам. Но оставьте своё сообщение, и мы свяжемся с вами в ближайшее время.'
                 : 'Stare: închis. Astăzi este zi liberă — nu lucrăm luni. Dar lăsați mesajul dvs., iar noi vă vom contacta în cel mai scurt timp.')
-              : isSunday
+              : isWednesday
                 ? (locale === 'ru'
-                  ? 'Статус: закрыты. Сегодня выходной — мы не принимаем по воскресеньям. Но оставьте своё сообщение, и мы свяжемся с вами в ближайшее время.'
-                  : 'Stare: închis. Astăzi este zi liberă — nu lucrăm duminica. Dar lăsați mesajul dvs., iar noi vă vom contacta în cel mai scurt timp.')
-                : (locale === 'ru'
-                  ? 'Сейчас мы не работаем, но оставьте свои данные, и мы перезвоним в ближайшее время.'
-                  : 'Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom contacta în cel mai scurt timp.')}
+                  ? 'Статус: закрыты. Сегодня выходной — мы не принимаем по средам. Но оставьте своё сообщение, и мы свяжемся с вами в ближайшее время.'
+                  : 'Stare: închis. Astăzi este zi liberă — nu lucrăm miercuri. Dar lăsați mesajul dvs., iar noi vă vom contacta în cel mai scurt timp.')
+                : isSunday
+                  ? (locale === 'ru'
+                    ? 'Статус: закрыты. Сегодня выходной — мы не принимаем по воскресеньям. Но оставьте своё сообщение, и мы свяжемся с вами в ближайшее время.'
+                    : 'Stare: închis. Astăzi este zi liberă — nu lucrăm duminica. Dar lăsați mesajul dvs., iar noi vă vom contacta în cel mai scurt timp.')
+                  : (locale === 'ru'
+                    ? 'Сейчас мы не работаем, но оставьте свои данные, и мы перезвоним в ближайшее время.'
+                    : 'Acum suntem închisi, dar lăsați datele dumneavoastră și vă vom contacta în cel mai scurt timp.')}
         </p>
       </div>
 

@@ -1,4 +1,4 @@
-/** Reception: Tue–Sat 13:00–18:00 local; Mon & Sun closed. */
+/** Reception: Tue, Thu–Sat 13:00–18:00 local; Mon, Wed & Sun closed. */
 export const RECEPTION_WORK_START = 13;
 export const RECEPTION_WORK_END = 18;
 
@@ -11,13 +11,17 @@ export function isReceptionMonday(dow: number): boolean {
   return dow === 1;
 }
 
-export function isReceptionDayOff(dow: number): boolean {
-  return isReceptionSunday(dow) || isReceptionMonday(dow);
+export function isReceptionWednesday(dow: number): boolean {
+  return dow === 3;
 }
 
-/** Tuesday–Saturday */
+export function isReceptionDayOff(dow: number): boolean {
+  return isReceptionSunday(dow) || isReceptionMonday(dow) || isReceptionWednesday(dow);
+}
+
+/** Tuesday, Thursday–Saturday */
 export function isReceptionWeekday(dow: number): boolean {
-  return dow >= 2 && dow <= 6;
+  return !isReceptionDayOff(dow);
 }
 
 export function isReceptionOpenAt(dow: number, hour: number): boolean {
@@ -27,14 +31,14 @@ export function isReceptionOpenAt(dow: number, hour: number): boolean {
 export const RECEPTION_SCHEDULE_COPY = {
   ru: {
     hoursRange: '13:00–18:00',
-    daysSummary: 'Дни приёма: вторник — суббота. Понедельник и воскресенье — выходные.',
-    hoursFooter: 'Вт–сб 13:00–18:00 · пн, вс — выходные',
-    graphLine: 'График: Вт–Сб 13:00–18:00 (по предварительной записи). Пн и Вс — выходные.',
+    daysSummary: 'Дни приёма: вторник, четверг — суббота. Понедельник, среда и воскресенье — выходные.',
+    hoursFooter: 'Вт, Чт–Сб 13:00–18:00 · пн, ср, вс — выходные',
+    graphLine: 'График: Вт, Чт–Сб 13:00–18:00 (по предварительной записи). Пн, Ср и Вс — выходные.',
   },
   ro: {
     hoursRange: '13:00–18:00',
-    daysSummary: 'Zile de recepție: marți — sâmbătă. Luni și duminică — închis.',
-    hoursFooter: 'Mar–sâm 13:00–18:00 · lun, dum — închis',
-    graphLine: 'Program: Mar–Sâm 13:00–18:00 (cu programare prealabilă). Luni și duminică — închis.',
+    daysSummary: 'Zile de recepție: marți, joi — sâmbătă. Luni, miercuri și duminică — închis.',
+    hoursFooter: 'Mar, Joi–Sâm 13:00–18:00 · lun, mie, dum — închis',
+    graphLine: 'Program: Mar, Joi–Sâm 13:00–18:00 (cu programare prealabilă). Luni, miercuri și duminică — închis.',
   },
 } as const;
