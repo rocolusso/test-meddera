@@ -5,12 +5,10 @@ import HeaderNew from '@/components/new-ui/HeaderNew';
 // import HeroImagePreload from '@/components/new-ui/HeroImagePreload';
 // import HeroNew from '@/components/new-ui/HeroNew';
 import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
-import {
-  DynamicAboutNew,
-  DynamicFooterNew,
-  DynamicHomeSeoContentRu,
-  DynamicServicesNew,
-} from '@/components/home/HomeBelowFoldDynamic';
+import AboutNew from '@/components/new-ui/AboutNew';
+import ServicesNew from '@/components/new-ui/ServicesNew';
+import HomeSeoContentRu from '@/components/new-ui/HomeSeoContentRu';
+import FooterNew from '@/components/new-ui/FooterNew';
 import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { blogSocialMetadata } from '@/lib/site-og';
 
@@ -67,13 +65,13 @@ export default function Home() {
       {/*<HeroNew />*/}
 
       <main>
-        <DynamicAboutNew locale="ru" />
-        <DynamicServicesNew locale="ru" />
-        <DynamicHomeSeoContentRu />
+        <AboutNew locale="ru" />
+        <ServicesNew locale="ru" />
+        <HomeSeoContentRu />
       </main>
 
       <ContactsDynamicWrapperRu />
-      <DynamicFooterNew locale="ru" />
+      <FooterNew locale="ru" />
     </>
   );
 }
