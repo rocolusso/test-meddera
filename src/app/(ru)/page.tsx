@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      {/*<HeroImagePreload />*/}
+      {/*<HeroImagePreload -/>*/}
       <script
         type="application/ld+json"
         /* eslint-disable-next-line react/no-danger */
