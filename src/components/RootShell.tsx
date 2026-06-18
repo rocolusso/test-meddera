@@ -101,6 +101,7 @@ export default function RootShell({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
         />
         <FacebookPixelScript />
+        <meta name="facebook-domain-verification" content="h3mpdqam7srb44jwnvq9khpw1d3bku" />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
         <FacebookPixelNoScript />
