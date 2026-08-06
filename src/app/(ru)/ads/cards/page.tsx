@@ -22,7 +22,8 @@ function GoogleWhitePage() {
     // });
 
     // eslint-disable-next-line no-undef
-    window.location.href = 'tel:+37368422024';
+    // window.location.href = 'tel:+37368422024';
+    window.location.href = 'tel:+37368550030';
   };
 
   const redirectToBlack = () => {
