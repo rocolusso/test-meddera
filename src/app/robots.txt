@@ -1,9 +1,7 @@
 User-Agent: *
-User-agent: Yandex
 Disallow: /cgi-bin
 Disallow: /*gclid=*
 Disallow: /*yclid=*
-Disallow: /*?*
 Disallow: /*,*
 Disallow: /ads/
 Disallow: /api/
@@ -13,6 +11,8 @@ Disallow: /rating/
 
 Sitemap: https://meddera.md/sitemap.xml
 
+User-agent: Yandex
+Disallow: /
 
 User-agent: Yahoo
 Disallow: /
