@@ -71,14 +71,16 @@ function FooterNew({ locale }: { locale: string }) {
                 <ul className="grid grid-cols-1 gap-x-6 gap-y-0.5 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
                   {services.map((service) => (
                     <li key={service.id}>
-                      <Link
+                      {/* Native <a>: footer link, below the fold — instant SPA transition isn't needed here, */}
+                      {/* skipping next/link drops these from the client hydration payload. */}
+                      <a
                         href={service.url}
                         className="group flex rounded-lg px-2 py-2.5 text-sm leading-snug text-foreground transition-colors hover:bg-accent/70 hover:text-brand-gold sm:px-3 sm:py-2"
                       >
                         <span className="border-b border-transparent pb-px transition-colors group-hover:border-brand-gold/50">
                           {service.title}
                         </span>
-                      </Link>
+                      </a>
                     </li>
                   ))}
                 </ul>
@@ -213,7 +215,9 @@ function FooterNew({ locale }: { locale: string }) {
                   const title = isRu ? post.titleRu : post.titleRo;
                   return (
                     <li key={post.id}>
-                      <Link
+                      {/* Native <a>: footer link, below the fold — instant SPA transition isn't needed here, */}
+                      {/* skipping next/link drops these from the client hydration payload. */}
+                      <a
                         href={href}
                         className="group relative flex gap-3 rounded-xl border border-border/55 bg-card/40 p-4 shadow-sm ring-1 ring-border/20 transition-all hover:-translate-y-0.5 hover:border-brand-gold/35 hover:bg-card/70 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0"
                       >
@@ -230,7 +234,7 @@ function FooterNew({ locale }: { locale: string }) {
                           className="absolute right-3 top-3 size-4 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-70"
                           aria-hidden
                         />
-                      </Link>
+                      </a>
                     </li>
                   );
                 })}

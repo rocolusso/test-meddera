@@ -3,15 +3,15 @@ import React from 'react';
 import DeferredAhrefs from '@/components/DeferredAhrefs';
 import DeferredClarity from '@/components/DeferredClarity';
 import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
-// import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
+import DeferredFacebookPixel from '@/components/DeferredFacebookPixel';
+import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
 import DeferredVercelInsights from '@/components/DeferredVercelInsights';
-import { FacebookPixelNoScript, FacebookPixelScript } from '@/components/FacebookPixel';
+import { FacebookPixelNoScript } from '@/components/FacebookPixel';
 import FacebookPixelPageViewTracker from '@/components/FacebookPixelPageViewTracker';
 import RouteAwareOverlays from '@/components/RouteAwareOverlays';
 import { isEnabled } from '@/lib/env-flags';
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
-import { GoogleTagManager } from '@next/third-parties/google';
 import { TrackPageView } from '@/components/TrackPageView';
 
 const ORIGIN = 'https://meddera.md';
@@ -100,7 +100,6 @@ export default function RootShell({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
         />
-        <FacebookPixelScript />
         <meta name="facebook-domain-verification" content="h3mpdqam7srb44jwnvq9khpw1d3bku" />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
@@ -111,13 +110,13 @@ export default function RootShell({
         <TrackPageView />
         {children}
         {showVercelInsights ? <DeferredVercelInsights /> : null}
-        {/*{enableGtm ? <DeferredGoogleTagManager /> : null}*/}
         {enableClarity ? <DeferredClarity /> : null}
         {enableAhrefs ? <DeferredAhrefs /> : null}
         <RouteAwareOverlays />
         <DeferredCookiesPolicy />
         <DeferredTelClickTracker />
-        <GoogleTagManager gtmId="GTM-KFCP3D5F" />
+        <DeferredFacebookPixel />
+        <DeferredGoogleTagManager />
       </body>
     </html>
   );
