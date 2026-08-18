@@ -16,9 +16,9 @@ export default function DeferredCookiesPolicy() {
     const run = () => setReady(true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 2000 });
+      idleId = window.requestIdleCallback(run, { timeout: 4100 });
     } else {
-      fallbackId = window.setTimeout(run, 2000);
+      fallbackId = window.setTimeout(run, 4100);
     }
 
     return () => {

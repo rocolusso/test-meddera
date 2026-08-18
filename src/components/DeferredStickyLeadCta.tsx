@@ -35,9 +35,9 @@ export default function DeferredStickyLeadCta() {
     window.addEventListener('touchstart', interactionHandler, true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 2000 });
+      idleId = window.requestIdleCallback(run, { timeout: 2700 });
     } else {
-      fallbackId = window.setTimeout(run, 2000);
+      fallbackId = window.setTimeout(run, 2700);
     }
 
     return () => {

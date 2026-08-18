@@ -9,8 +9,10 @@ import { useEffect, useState } from 'react';
  * the first user interaction, whichever comes first) to keep TBT/FCP healthy
  * while still capturing real-user metrics.
  *
- * Timeout 3200ms gives Insights enough time to capture the LCP cycle on slow
- * connections without blocking the initial paint.
+ * Timeout 5500ms gives Insights enough time to capture the LCP cycle on slow
+ * connections without blocking the initial paint. Kept last among the deferred
+ * marketing/analytics scripts — least business-critical, so it yields the earlier
+ * slots to GTM/FB Pixel and avoids clustering with them.
  */
 
 const Analytics = dynamic(
@@ -50,9 +52,9 @@ export default function DeferredVercelInsights() {
     window.addEventListener('touchstart', interactionHandler, true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 3200 });
+      idleId = window.requestIdleCallback(run, { timeout: 5500 });
     } else {
-      fallbackId = window.setTimeout(run, 3200);
+      fallbackId = window.setTimeout(run, 5500);
     }
 
     return () => {

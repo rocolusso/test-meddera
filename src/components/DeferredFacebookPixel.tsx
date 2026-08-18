@@ -35,9 +35,9 @@ export default function DeferredFacebookPixel() {
     window.addEventListener('touchstart', interactionHandler, true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 3200 });
+      idleId = window.requestIdleCallback(run, { timeout: 4800 });
     } else {
-      fallbackId = window.setTimeout(run, 3200);
+      fallbackId = window.setTimeout(run, 4800);
     }
 
     return () => {
