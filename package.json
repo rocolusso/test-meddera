@@ -2,7 +2,6 @@
   "name": "meddera-new-design",
   "version": "0.1.0",
   "private": true,
-
   "browserslist": {
     "production": [
       "chrome >= 109",

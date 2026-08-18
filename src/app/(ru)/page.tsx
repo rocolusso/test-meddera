@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 
 import HeaderNew from '@/components/new-ui/HeaderNew';
-// import HeroImagePreload from '@/components/new-ui/HeroImagePreload';
+/// import HeroImagePreload from '@/components/new-ui/HeroImagePreload';
 // import HeroNew from '@/components/new-ui/HeroNew';
 import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
 import AboutNew from '@/components/new-ui/AboutNew';
