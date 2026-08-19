@@ -15,6 +15,13 @@ export interface Env {
   GA4_MEASUREMENT_ID: string;
   /** Origin allowed to call this Worker, e.g. "https://meddera.md". */
   ALLOWED_ORIGIN: string;
+  /**
+   * "true" routes every forwarded event into GA4 DebugView (adds
+   * debug_mode: true to each event). Turn this OFF ("false") once
+   * verification is done — DebugView is a testing tool, not meant to be
+   * permanently full of real traffic. Set in wrangler.toml [vars].
+   */
+  GA4_DEBUG_MODE?: string;
 }
 
 type IncomingEvent = {
@@ -93,6 +100,8 @@ export default {
       return new Response('Bad request', { status: 400, headers: corsHeaders(allowedOrigin) });
     }
 
+    const debugMode = env.GA4_DEBUG_MODE === 'true';
+
     const events = payload.events
       .slice(0, MAX_EVENTS_PER_REQUEST)
       .map((event) => ({
@@ -101,6 +110,7 @@ export default {
           ...sanitizeParams(event.params),
           ...(sessionId ? { session_id: sessionId } : {}),
           engagement_time_msec: 1,
+          ...(debugMode ? { debug_mode: true } : {}),
         },
       }))
       .filter((event) => event.name.length > 0);
@@ -114,21 +124,32 @@ export default {
       `https://www.google-analytics.com/mp/collect` +
       `?measurement_id=${encodeURIComponent(env.GA4_MEASUREMENT_ID)}` +
       `&api_secret=${encodeURIComponent(env.GA4_API_SECRET)}`;
+    const mpBody = JSON.stringify({ client_id: clientId, events });
 
-    const forward = fetch(mpUrl, {
+    // Response to the visitor doesn't wait on Google — but the Worker must
+    // stay alive until the forward completes, or Cloudflare may cancel it
+    // right after the 204 is returned. Logs the outcome (status + a snippet
+    // of the response body) so Observability shows whether Google actually
+    // accepted the hit, not just that a request reached this Worker.
+    ctx.waitUntil(forwardToGa4(mpUrl, userAgent, mpBody));
+
+    return new Response(null, { status: 204, headers: corsHeaders(allowedOrigin) });
+  },
+};
+
+async function forwardToGa4(mpUrl: string, userAgent: string, body: string): Promise<void> {
+  try {
+    const res = await fetch(mpUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'User-Agent': userAgent,
       },
-      body: JSON.stringify({ client_id: clientId, events }),
-    }).catch(() => {});
-
-    // Response to the visitor doesn't wait on Google — but the Worker must
-    // stay alive until the forward completes, or Cloudflare may cancel it
-    // right after the 204 is returned.
-    ctx.waitUntil(forward);
-
-    return new Response(null, { status: 204, headers: corsHeaders(allowedOrigin) });
-  },
-};
+      body,
+    });
+    const text = await res.text().catch(() => '');
+    console.log(`GA4 MP forward: status=${res.status} body=${text.slice(0, 500)}`);
+  } catch (err) {
+    console.error(`GA4 MP forward failed: ${err instanceof Error ? err.message : String(err)}`);
+  }
+}

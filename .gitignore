@@ -42,3 +42,5 @@ yarn-error.log*
 next-env.d.ts
 
 /ahrefs-data
+cloudflare/node_modules
+cloudflare/.wrangler

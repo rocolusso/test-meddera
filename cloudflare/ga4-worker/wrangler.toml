@@ -14,6 +14,11 @@ routes = [
 GA4_MEASUREMENT_ID = "G-V98H1SG9KW"
 # Only requests with this Origin/Referer are accepted.
 ALLOWED_ORIGIN = "https://meddera.md"
+# "true" = every forwarded event also shows up in GA4 DebugView (for
+# verification). Set back to "false" once you've confirmed events look
+# correct in DebugView — it's a testing tool, not meant to stay on for all
+# real traffic. Each change here requires `npm run deploy` to take effect.
+GA4_DEBUG_MODE = "true"
 
 # GA4_API_SECRET is NOT set here — it's a secret, set via:
 #   wrangler secret put GA4_API_SECRET
