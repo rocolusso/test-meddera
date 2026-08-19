@@ -6,7 +6,8 @@ import { FacebookPixelScript } from '@/components/FacebookPixel';
 
 /**
  * Facebook Pixel bootstrap after browser idle (or first user interaction) — reduces overlap
- * with main-thread work vs loading immediately after hydration. Mirrors DeferredGoogleTagManager.
+ * with main-thread work vs loading immediately after hydration. Mirrors the idle/timeout
+ * gating pattern shared by the other Deferred* components (e.g. DeferredClarity, DeferredPlerdy).
  */
 export default function DeferredFacebookPixel() {
   const [ready, setReady] = useState(false);

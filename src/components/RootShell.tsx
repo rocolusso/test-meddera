@@ -4,7 +4,7 @@ import DeferredAhrefs from '@/components/DeferredAhrefs';
 import DeferredClarity from '@/components/DeferredClarity';
 import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
 import DeferredFacebookPixel from '@/components/DeferredFacebookPixel';
-import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
+import DeferredPlerdy from '@/components/DeferredPlerdy';
 import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
 import DeferredVercelInsights from '@/components/DeferredVercelInsights';
 import { FacebookPixelNoScript } from '@/components/FacebookPixel';
@@ -67,7 +67,7 @@ export default function RootShell({
   locale: 'ru' | 'ro';
   children: React.ReactNode;
 }) {
-  const enableGtm = isProductionDeployment;
+  const enablePlerdy = isProductionDeployment;
   const enableClarity =
     isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_CLARITY);
   const enableAhrefs =
@@ -88,11 +88,11 @@ export default function RootShell({
           suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: getThemeBootstrapScript() }}
         />
-        {enableGtm ? <link rel="dns-prefetch" href="https://www.googletagmanager.com" /> : null}
+        {enablePlerdy ? <link rel="dns-prefetch" href="https://a.plerdy.com" /> : null}
         {enableClarity ? <link rel="dns-prefetch" href="https://www.clarity.ms" /> : null}
         <link rel="dns-prefetch" href="https://www.google.com" />
         {enableAhrefs ? <link rel="dns-prefetch" href="https://analytics.ahrefs.com" /> : null}
-        {enableGtm ? <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" /> : null}
+        {enablePlerdy ? <link rel="preconnect" href="https://a.plerdy.com" crossOrigin="" /> : null}
         {enableClarity ? <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" /> : null}
         {enableAhrefs ? <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" /> : null}
         <script
@@ -116,7 +116,7 @@ export default function RootShell({
         <DeferredCookiesPolicy />
         <DeferredTelClickTracker />
         <DeferredFacebookPixel />
-        <DeferredGoogleTagManager />
+        {enablePlerdy ? <DeferredPlerdy /> : null}
       </body>
     </html>
   );
