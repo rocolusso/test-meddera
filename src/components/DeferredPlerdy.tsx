@@ -52,9 +52,9 @@ export default function DeferredPlerdy() {
     window.addEventListener('touchstart', interactionHandler, true);
 
     if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 9500 });
+      idleId = window.requestIdleCallback(run, { timeout: 3500 });
     } else {
-      fallbackId = window.setTimeout(run, 9500);
+      fallbackId = window.setTimeout(run, 3500);
     }
 
     return () => {
