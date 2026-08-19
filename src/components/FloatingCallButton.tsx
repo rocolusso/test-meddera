@@ -1,10 +1,9 @@
 'use client';
 
+import { sendGa4Event } from '@/lib/ga4-worker-client';
+
 function pushPhoneClickEvent() {
-  const w = window as Window & { dataLayer?: Array<Record<string, string>> };
-  w.dataLayer = w.dataLayer || [];
-  w.dataLayer.push({
-    event: 'phone_click_fixed_1',
+  sendGa4Event('phone_click_fixed_1', {
     button_name: 'animate_button',
     event_label: 'homepage',
   });

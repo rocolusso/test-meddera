@@ -1,3 +1,5 @@
+import { sendGa4Event } from '@/lib/ga4-worker-client';
+
 export type Locale = 'ru' | 'ro';
 export type FormType = 'appointment' | 'consultation';
 
@@ -146,10 +148,7 @@ export function getLocaleFromPath(pathname: string | null | undefined): Locale {
 
 export function pushLeadCtaEvent(label: string) {
   if (typeof window === 'undefined') return;
-  const w = window as Window & { dataLayer?: Array<Record<string, string>> };
-  w.dataLayer = w.dataLayer || [];
-  w.dataLayer.push({
-    event: 'lead_sticky_cta_click',
+  sendGa4Event('lead_sticky_cta_click', {
     button_name: label,
     event_label: 'sticky_lead',
   });

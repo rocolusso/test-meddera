@@ -16,14 +16,13 @@ import { useContactFormAntiSpam } from '@/hooks/useContactFormAntiSpam';
 import { getFormTokenUnavailableMessage } from '@/lib/contact-form-token-client';
 import { ContactFormSubmittingStatus } from '@/components/ContactFormSubmittingStatus';
 import ClinicConsultationInfo from '@/components/ClinicConsultationInfo';
+import { sendGa4Event } from '@/lib/ga4-worker-client';
 
 function ContactsLips({ locale }:{ locale:string }) {
   const callPhone = () => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      'event': 'phone_button_contacts1', // Название события для GTM
-      'button_name': 'phone_btn_contact',  // Кастомный параметр (опционально)
-      'event_label': 'click_btn'      // Кастомный параметр (опционально)
+    sendGa4Event('phone_button_contacts1', {
+      button_name: 'phone_btn_contact',
+      event_label: 'click_btn',
     });
     window.location.href = 'tel:+37368550030';
   };
@@ -169,11 +168,9 @@ function ContactsLips({ locale }:{ locale:string }) {
     setLocked(false);
     setSubmitAlert(true);
 
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      'event': 'form_sended_1', // Название события для GTM
-      'button_name': 'submit_btn',  // Кастомный параметр (опционально)
-      'event_label': 'sendform'      // Кастомный параметр (опционально)
+    sendGa4Event('form_sended_1', {
+      button_name: 'submit_btn',
+      event_label: 'sendform',
     });
 
     setTimeout(() => {

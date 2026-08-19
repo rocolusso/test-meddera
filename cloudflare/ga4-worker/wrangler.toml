@@ -1,0 +1,19 @@
+name = "meddera-ga4-collector"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+
+# Intercepts only this exact path at the Cloudflare edge; everything else
+# (including the rest of /api/* served by the Next.js app) still goes to
+# the Vercel origin untouched.
+routes = [
+  { pattern = "meddera.md/api/ga4-collect", zone_name = "meddera.md" }
+]
+
+[vars]
+# Non-secret: the GA4 stream id, same one used by the site today.
+GA4_MEASUREMENT_ID = "G-V98H1SG9KW"
+# Only requests with this Origin/Referer are accepted.
+ALLOWED_ORIGIN = "https://meddera.md"
+
+# GA4_API_SECRET is NOT set here — it's a secret, set via:
+#   wrangler secret put GA4_API_SECRET

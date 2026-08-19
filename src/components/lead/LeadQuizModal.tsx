@@ -14,6 +14,7 @@ import { getFormTokenUnavailableMessage } from '@/lib/contact-form-token-client'
 import type { ContactFieldErrors } from '@/lib/contact-form-schema';
 import { parseContactForm } from '@/lib/contact-form-schema';
 import { executeRecaptcha, prefetchRecaptchaScript } from '@/lib/recaptcha-client';
+import { sendGa4Event } from '@/lib/ga4-worker-client';
 
 import {
   TEXT,
@@ -167,10 +168,7 @@ export default function LeadQuizModal({
     setLocked(false);
     setSubmitAlert(true);
     if (typeof window !== 'undefined') {
-      const w = window as Window & { dataLayer?: Array<Record<string, string>> };
-      w.dataLayer = w.dataLayer || [];
-      w.dataLayer.push({
-        event: 'lead_sticky_form_sent',
+      sendGa4Event('lead_sticky_form_sent', {
         button_name: 'leadform_sent',
         event_label: 'sticky_lead',
       });

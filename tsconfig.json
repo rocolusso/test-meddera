@@ -40,6 +40,8 @@
   ],
   "exclude": [
     "node_modules",
-    "old_project_design"
+    "old_project_design",
+    "cloudflare",
+    "_to_delete"
   ]
 }
