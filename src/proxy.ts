@@ -32,8 +32,39 @@ const { props: aboutImageProps } = getImageProps({
   quality: 75,
 });
 
-const ABOUT_IMAGE_SIZES = '(max-width: 1024px) 100vw, 38vw';
-const ABOUT_IMAGE_LINK = `<${aboutImageProps.src}>; rel=preload; as=image; imagesrcset="${aboutImageProps.srcSet}"; imagesizes="${ABOUT_IMAGE_SIZES}"`;
+/**
+ * Cloudflare's Early Hints cache/replay step drops any Link entry whose
+ * parameter values contain commas — confirmed empirically: with the full
+ * `imagesrcset`/`imagesizes` candidates (which are comma-separated lists),
+ * the 103 response silently omits this resource entirely, even though the
+ * real 200 response carries it correctly. So for the 103-only header we
+ * hint a single concrete width instead of the full responsive set.
+ *
+ * The real HTML `<link rel="preload" imagesrcset=... imagesizes=...>` tag
+ * (auto-rendered by next/image's `priority` prop on <Image>) is untouched
+ * and still gives the browser the full responsive candidate list once the
+ * HTML itself arrives — this header only affects the earlier 103 signal.
+ *
+ * 828 is a middle-of-the-road width that covers both the common mobile case
+ * (sizes: 100vw below 1024px, most visitors) and the desktop case (38vw of
+ * a ~1152px container ≈ 830px at 2x DPR) reasonably well. A visitor whose
+ * viewport picks a different candidate just fetches that URL normally —
+ * same as if this header didn't exist, not worse.
+ */
+function pickSrcSetUrl(srcSet: string, width: number): string {
+  const entry = srcSet.split(', ').find((candidate) => candidate.endsWith(` ${width}w`));
+  if (!entry) {
+    throw new Error(`about_2k.jpg srcset has no ${width}w candidate — update PLAN-PERF-03's proxy.ts`);
+  }
+  return entry.slice(0, entry.lastIndexOf(' '));
+}
+
+if (!aboutImageProps.srcSet) {
+  throw new Error('about_2k.jpg: next/image returned no srcSet — check the getImageProps() call above');
+}
+
+const ABOUT_IMAGE_URL = pickSrcSetUrl(aboutImageProps.srcSet, 828);
+const ABOUT_IMAGE_LINK = `<${ABOUT_IMAGE_URL}>; rel=preload; as=image`;
 
 /**
  * HeaderNew's logo is a plain static SVG (native <img>, bypasses the next/image
