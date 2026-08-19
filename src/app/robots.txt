@@ -23,9 +23,6 @@ Disallow: /
 User-agent: Mediapartners-Google
 Disallow: /
 
-User-agent: AhrefsBot
-Disallow: /
-
 
 User-agent: ImagesiftBot
 Disallow: /
