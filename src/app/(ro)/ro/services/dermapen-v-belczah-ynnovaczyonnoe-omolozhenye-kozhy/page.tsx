@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import dermapen from '@public/assets/img/services/dermapen.png';
+import dermapen from '@public/assets/img/services/dermapen.jpg';
 
 export const metadata = {
   icons: {

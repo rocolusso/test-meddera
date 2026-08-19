@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import pilling from '@public/assets/img/services/pilling.png';
+import pilling from '@public/assets/img/services/pilling.jpg';
 
 export const metadata = {
   icons: {

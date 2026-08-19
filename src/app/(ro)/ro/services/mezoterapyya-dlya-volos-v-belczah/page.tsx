@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import mezovolos from '@public/assets/img/services/mezovolos.png';
+import mezovolos from '@public/assets/img/services/mezovolos.jpg';
 
 export const metadata = {
   icons: {

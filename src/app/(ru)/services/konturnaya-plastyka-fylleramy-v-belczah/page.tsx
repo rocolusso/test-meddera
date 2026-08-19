@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import konturnayaPlastika from '@public/assets/img/services/konturnayaplastika.png';
+import konturnayaPlastika from '@public/assets/img/services/konturnayaplastika.jpg';
 
 export const metadata = {
   icons: {

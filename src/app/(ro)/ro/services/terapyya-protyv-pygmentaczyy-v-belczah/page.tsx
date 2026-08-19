@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import terapiyaProtivPigment from '@public/assets/img/services/terapiya-protiv-pigm.png';
+import terapiyaProtivPigment from '@public/assets/img/services/terapiya-protiv-pigm.jpg';
 
 export const metadata = {
   icons: {

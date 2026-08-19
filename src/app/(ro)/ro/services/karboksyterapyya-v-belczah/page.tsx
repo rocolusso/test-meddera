@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import karboksiterapiya from '@public/assets/img/services/karbiksiterapiya.png';
+import karboksiterapiya from '@public/assets/img/services/karbiksiterapiya.jpg';
 
 export const metadata = {
   icons: {

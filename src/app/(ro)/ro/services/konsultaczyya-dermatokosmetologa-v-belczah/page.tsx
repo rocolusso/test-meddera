@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import consultcosm from '@public/assets/img/services/consult-cosm.png';
+import consultcosm from '@public/assets/img/services/consult-cosm.jpg';
 
 export const metadata = {
   icons: {

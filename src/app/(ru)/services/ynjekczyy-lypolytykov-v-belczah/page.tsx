@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import lipolitiki from '@public/assets/img/services/lipolitiki.png';
+import lipolitiki from '@public/assets/img/services/lipolitiki.jpg';
 
 export const metadata = {
   icons: {

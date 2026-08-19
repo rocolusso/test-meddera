@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import botoks from '@public/assets/img/services/botoks.png';
+import botoks from '@public/assets/img/services/botoks.jpg';
 
 export const metadata = {
   icons: {

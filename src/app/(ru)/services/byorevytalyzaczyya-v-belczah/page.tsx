@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import biorevit from '@public/assets/img/services/biorevit.png';
+import biorevit from '@public/assets/img/services/biorevit.jpg';
 
 export const metadata = {
   icons: {

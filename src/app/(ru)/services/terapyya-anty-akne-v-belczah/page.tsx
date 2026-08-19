@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import maskaLica from '@public/assets/img/services/anti-akne.png';
+import maskaLica from '@public/assets/img/services/anti-akne.jpg';
 
 export const metadata = {
   icons: {

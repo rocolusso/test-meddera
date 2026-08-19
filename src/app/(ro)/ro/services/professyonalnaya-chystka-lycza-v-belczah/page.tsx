@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
-import chistkaLica from '@public/assets/img/services/chistka_lica.png';
+import chistkaLica from '@public/assets/img/services/chistka_lica.jpg';
 
 export const metadata = {
   icons: {

@@ -3,17 +3,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
-import uvelichenieGub from '@public/assets/img/services/uvelicheniegub.png';
-import uvelichenieGub1 from '@public/assets/img/services/lips/lips1.png';
-import uvelichenieGub2 from '@public/assets/img/services/lips/lips2.png';
-import uvelichenieGub3 from '@public/assets/img/services/lips/lips3.png';
-import uvelichenieGub4 from '@public/assets/img/services/lips/lips4.png';
-import uvelichenieGub5 from '@public/assets/img/services/lips/lips5.png';
-import uvelichenieGub6 from '@public/assets/img/services/lips/lips6.png';
-import uvelichenieGub7 from '@public/assets/img/services/lips/lips7.png';
-import uvelichenieGub8 from '@public/assets/img/services/lips/lips8.png';
-import uvelichenieGub9 from '@public/assets/img/services/lips/lips9.png';
-import uvelichenieGub10 from '@public/assets/img/services/lips/lips10.png';
+import uvelichenieGub from '@public/assets/img/services/uvelicheniegub.jpg';
+import uvelichenieGub1 from '@public/assets/img/services/lips/lips1.jpg';
+import uvelichenieGub2 from '@public/assets/img/services/lips/lips2.jpg';
+import uvelichenieGub3 from '@public/assets/img/services/lips/lips3.jpg';
+import uvelichenieGub4 from '@public/assets/img/services/lips/lips4.jpg';
+import uvelichenieGub5 from '@public/assets/img/services/lips/lips5.jpg';
+import uvelichenieGub6 from '@public/assets/img/services/lips/lips6.jpg';
+import uvelichenieGub7 from '@public/assets/img/services/lips/lips7.jpg';
+import uvelichenieGub8 from '@public/assets/img/services/lips/lips8.jpg';
+import uvelichenieGub9 from '@public/assets/img/services/lips/lips9.jpg';
+import uvelichenieGub10 from '@public/assets/img/services/lips/lips10.jpg';
 
 export const metadata = {
   icons: { icon: '/favicon.ico' },
