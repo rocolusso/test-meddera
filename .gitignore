@@ -45,3 +45,5 @@ next-env.d.ts
 cloudflare/**/node_modules
 cloudflare/**/.wrangler
 cloudflare/**/.dev.vars
+
+pofo
