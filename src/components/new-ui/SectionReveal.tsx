@@ -4,24 +4,44 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import { cn } from '@/lib/utils';
 
+type Animation = 'fade' | 'fade-up' | 'fade-left' | 'fade-right';
+type Delay = 0 | 200 | 400;
+
+const ANIMATION_CLASS: Record<Animation, string> = {
+  fade: 'animate-fade-in',
+  'fade-up': 'animate-fade-in-up',
+  'fade-left': 'animate-fade-in-left',
+  'fade-right': 'animate-fade-in-right',
+};
+
 /**
- * Subtle scroll-in; disabled when the user prefers reduced motion.
+ * Pofo-like scroll reveal (replacement for WOW.js + animate.css) without dependencies.
+ * Do NOT wrap above-the-fold / LCP elements. Disabled for prefers-reduced-motion.
  */
 function SectionReveal({
   children,
   className,
+  animation = 'fade-up',
+  delay = 0,
+  as = 'div',
 }: {
   children: React.ReactNode;
   className?: string;
+  animation?: Animation;
+  delay?: Delay;
+  as?: 'div' | 'li';
 }) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    if (
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+      !('IntersectionObserver' in window)
+    ) {
       setVisible(true);
       return;
     }
@@ -33,23 +53,21 @@ function SectionReveal({
           obs.disconnect();
         }
       },
-      { rootMargin: '80px 0px 120px 0px', threshold: 0 },
+      { rootMargin: '0px 0px -40px 0px', threshold: 0 },
     );
     obs.observe(el);
     return () => obs.disconnect();
   }, []);
 
+  const Tag = as;
   return (
-    <div
-      ref={ref}
-      className={cn(
-        'transition-[opacity,transform] duration-700 ease-out motion-reduce:opacity-100 motion-reduce:translate-y-0',
-        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4',
-        className,
-      )}
+    <Tag
+      ref={ref as React.Ref<never>}
+      className={cn('motion-safe-reveal', visible ? ANIMATION_CLASS[animation] : 'opacity-0', className)}
+      style={visible && delay ? { animationDelay: `${delay}ms` } : undefined}
     >
       {children}
-    </div>
+    </Tag>
   );
 }
 

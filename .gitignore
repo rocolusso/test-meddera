@@ -46,4 +46,4 @@ cloudflare/**/node_modules
 cloudflare/**/.wrangler
 cloudflare/**/.dev.vars
 
-pofo
+/pofo/

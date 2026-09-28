@@ -20,12 +20,21 @@ const buttonVariants = cva(
         ghost:
           'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
         link: 'text-primary underline-offset-4 hover:underline',
+        /* Pofo buttons: square, 2px border, fill ↔ transparent on hover. */
+        pofo:
+          'border-2 border-deep-pink bg-deep-pink text-white hover:bg-transparent hover:text-deep-pink',
+        pofoOutline:
+          'border-2 border-pofo-heading bg-transparent text-pofo-heading hover:bg-pofo-heading hover:text-background',
+        pofoDark:
+          'border-2 border-[#232323] bg-[#232323] text-white hover:bg-transparent hover:text-pofo-heading dark:border-white/25 dark:bg-white/10 dark:hover:bg-transparent',
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',
         sm: 'h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5',
         lg: 'h-10 rounded-md px-6 has-[>svg]:px-4',
         icon: 'size-9',
+        pofo: 'h-auto rounded-none px-[34px] py-[9px] alt-font text-[13px] font-semibold uppercase leading-[25px] tracking-[0.5px] duration-300',
+        pofoSmall: 'h-auto rounded-none px-6 py-1 alt-font text-[11px] font-semibold uppercase leading-[24px] tracking-[0.5px] duration-300',
       },
     },
     defaultVariants: {
