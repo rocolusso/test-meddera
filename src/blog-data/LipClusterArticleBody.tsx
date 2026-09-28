@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { LIP_CLUSTER_ARTICLE_CONTENT } from '@/blog-data/lip-cluster-article-content';
 import { blogPathRu, blogPathRo, getHubForCluster } from '@/blog-data/registry';
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
+import { blogUi } from '@/blog-data/blog-ui';
 
 type Props = {
   post: BlogPost;
@@ -32,31 +33,31 @@ export function LipClusterArticleBody({ post, locale }: Props) {
   if (locale === 'ru') {
     return (
       <>
-        <nav className="text-sm text-gray-500 mb-6" aria-label="Хлебные крошки">
-          <Link href="/" className="underline hover:text-gray-800">Главная</Link>
+        <nav className={blogUi.breadcrumbs} aria-label="Хлебные крошки">
+          <Link href="/" className={blogUi.crumbLink}>Главная</Link>
           <span className="mx-2">/</span>
-          <Link href="/blog" className="underline hover:text-gray-800">Блог</Link>
+          <Link href="/blog" className={blogUi.crumbLink}>Блог</Link>
           <span className="mx-2">/</span>
-          <span className="text-gray-800">{crumbLabel}</span>
+          <span className={blogUi.crumbCurrent}>{crumbLabel}</span>
         </nav>
 
-        <p className="text-sm text-gray-500 mb-2">
+        <p className={blogUi.meta}>
           Опубликовано:
           {' '}
           <time dateTime={post.publishedAt}>{post.publishedAt}</time>
           {' · Обновлено: '}
           <time dateTime={post.dateModified}>{post.dateModified}</time>
           {' · '}
-          <Link href={roUrl} className="underline hover:text-gray-800" hrefLang="ro">Română</Link>
+          <Link href={roUrl} className={blogUi.crumbLink} hrefLang="ro">Română</Link>
         </p>
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">{h1}</h1>
+        <h1 className={blogUi.h1Loose}>{h1}</h1>
 
         {sections.map((sec, si) => (
           <section key={`${post.id}-ru-${si}`} className="mb-10">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-3">{sec.h2}</h2>
+            <h2 className={blogUi.h2Tight}>{sec.h2}</h2>
             {sec.paragraphs.map((p, pi) => (
-              <p key={`${post.id}-ru-${si}-${pi}`} className="text-gray-700 leading-relaxed mb-4 last:mb-0">
+              <p key={`${post.id}-ru-${si}-${pi}`} className={blogUi.pMb4Last}>
                 {p}
               </p>
             ))}
@@ -65,18 +66,18 @@ export function LipClusterArticleBody({ post, locale }: Props) {
 
         {hub ? (
           <section
-            className="mt-12 rounded-lg border border-green-200 bg-green-50/80 p-6"
+            className={blogUi.ctaBox}
             aria-labelledby="back-hub-ru"
           >
-            <h2 id="back-hub-ru" className="text-lg font-semibold text-gray-900 mb-2">
+            <h2 id="back-hub-ru" className={blogUi.boxTitleTight}>
               Гид по процедуре
             </h2>
-            <p className="text-gray-700 text-sm mb-3">
+            <p className={blogUi.smallMb3}>
               Полный обзор этапов, безопасности и записи в Meddera.
             </p>
             <Link
               href={`/blog/${hub.slugRu}`}
-              className="text-green-800 font-medium underline hover:text-green-950"
+              className={blogUi.link}
             >
               Открыть гид по увеличению губ
             </Link>
@@ -88,31 +89,31 @@ export function LipClusterArticleBody({ post, locale }: Props) {
 
   return (
     <>
-      <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
-        <Link href="/ro" className="underline hover:text-gray-800">Acasă</Link>
+      <nav className={blogUi.breadcrumbs} aria-label="Breadcrumb">
+        <Link href="/ro" className={blogUi.crumbLink}>Acasă</Link>
         <span className="mx-2">/</span>
-        <Link href="/ro/blog" className="underline hover:text-gray-800">Blog</Link>
+        <Link href="/ro/blog" className={blogUi.crumbLink}>Blog</Link>
         <span className="mx-2">/</span>
-        <span className="text-gray-800">{crumbLabel}</span>
+        <span className={blogUi.crumbCurrent}>{crumbLabel}</span>
       </nav>
 
-      <p className="text-sm text-gray-500 mb-2">
+      <p className={blogUi.meta}>
         Publicat:
         {' '}
         <time dateTime={post.publishedAt}>{post.publishedAt}</time>
         {' · Actualizat: '}
         <time dateTime={post.dateModified}>{post.dateModified}</time>
         {' · '}
-        <Link href={ruUrl} className="underline hover:text-gray-800" hrefLang="ru">Русский</Link>
+        <Link href={ruUrl} className={blogUi.crumbLink} hrefLang="ru">Русский</Link>
       </p>
 
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">{h1}</h1>
+      <h1 className={blogUi.h1Loose}>{h1}</h1>
 
       {sections.map((sec, si) => (
         <section key={`${post.id}-ro-${si}`} className="mb-10">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-3">{sec.h2}</h2>
+          <h2 className={blogUi.h2Tight}>{sec.h2}</h2>
           {sec.paragraphs.map((p, pi) => (
-            <p key={`${post.id}-ro-${si}-${pi}`} className="text-gray-700 leading-relaxed mb-4 last:mb-0">
+            <p key={`${post.id}-ro-${si}-${pi}`} className={blogUi.pMb4Last}>
               {p}
             </p>
           ))}
@@ -121,18 +122,18 @@ export function LipClusterArticleBody({ post, locale }: Props) {
 
       {hub ? (
         <section
-          className="mt-12 rounded-lg border border-green-200 bg-green-50/80 p-6"
+          className={blogUi.ctaBox}
           aria-labelledby="back-hub-ro"
         >
-          <h2 id="back-hub-ro" className="text-lg font-semibold text-gray-900 mb-2">
+          <h2 id="back-hub-ro" className={blogUi.boxTitleTight}>
             Ghid despre procedură
           </h2>
-          <p className="text-gray-700 text-sm mb-3">
+          <p className={blogUi.smallMb3}>
             Prezentare generală a etapelor, siguranței și programării la Meddera.
           </p>
           <Link
             href={`/ro/blog/${hub.slugRo}`}
-            className="text-green-800 font-medium underline hover:text-green-950"
+            className={blogUi.link}
           >
             Deschide ghidul despre mărirea buzelor
           </Link>

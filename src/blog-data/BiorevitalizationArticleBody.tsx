@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
+import { blogUi } from '@/blog-data/blog-ui';
 
 type ArticleSection = { h2: string; paragraphs: string[] };
 type Props = { post: BlogPost; locale: BlogLocale; dateModified: string; sections: ArticleSection[] };
@@ -21,43 +22,43 @@ export function BiorevitalizationArticleBody({ post, locale, dateModified, secti
 
   return (
     <>
-      <nav className="text-sm text-gray-500 mb-6">
-        <Link href={isRu ? '/' : '/ro'} className="underline hover:text-gray-800">{isRu ? 'Главная' : 'Acasă'}</Link>
+      <nav className={blogUi.breadcrumbs}>
+        <Link href={isRu ? '/' : '/ro'} className={blogUi.crumbLink}>{isRu ? 'Главная' : 'Acasă'}</Link>
         <span className="mx-2">/</span>
-        <Link href={isRu ? '/blog' : '/ro/blog'} className="underline hover:text-gray-800">{isRu ? 'Блог' : 'Blog'}</Link>
+        <Link href={isRu ? '/blog' : '/ro/blog'} className={blogUi.crumbLink}>{isRu ? 'Блог' : 'Blog'}</Link>
         <span className="mx-2">/</span>
-        <span className="text-gray-800">{title}</span>
+        <span className={blogUi.crumbCurrent}>{title}</span>
       </nav>
-      <p className="text-sm text-gray-600 mb-2">{isRu ? 'Автор:' : 'Autor:'} {authorByline}</p>
-      <p className="text-sm text-gray-500 mb-2">{isRu ? 'Обновлено:' : 'Actualizat:'} {dateModified} · <Link href={isRu ? roUrl : ruUrl} className="underline hover:text-gray-800" hrefLang={isRu ? 'ro' : 'ru'}>{isRu ? 'Română' : 'Русский'}</Link></p>
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">{title}</h1>
-      <div className="rounded-lg border border-yellow-200 bg-yellow-50 p-4 mb-8">
-        <p className="text-sm text-gray-700">{isRu ? 'Материал носит информационный характер.' : 'Materialul are caracter informativ.'}</p>
+      <p className={blogUi.meta}>{isRu ? 'Автор:' : 'Autor:'} {authorByline}</p>
+      <p className={blogUi.meta}>{isRu ? 'Обновлено:' : 'Actualizat:'} {dateModified} · <Link href={isRu ? roUrl : ruUrl} className={blogUi.crumbLink} hrefLang={isRu ? 'ro' : 'ru'}>{isRu ? 'Română' : 'Русский'}</Link></p>
+      <h1 className={blogUi.h1}>{title}</h1>
+      <div className={blogUi.disclaimerBox}>
+        <p className={blogUi.small}>{isRu ? 'Материал носит информационный характер.' : 'Materialul are caracter informativ.'}</p>
       </div>
       {sections.map((section, idx) => (
         <section key={idx} className="mb-10">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">{section.h2}</h2>
-          {section.paragraphs.map((para, pIdx) => (<p key={pIdx} className="text-gray-700 leading-relaxed mb-4">{para}</p>))}
+          <h2 className={blogUi.h2}>{section.h2}</h2>
+          {section.paragraphs.map((para, pIdx) => (<p key={pIdx} className={blogUi.pMb4}>{para}</p>))}
         </section>
       ))}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">{isRu ? 'Запись на консультацию' : 'Programare'}</h2>
+        <h2 className={blogUi.h2}>{isRu ? 'Запись на консультацию' : 'Programare'}</h2>
         <ul className="space-y-2">
-          <li><Link href={isRu ? '/services/byorevytalyzaczyya-v-belczah' : '/ro/services/byorevytalyzaczyya-v-belczah'} className="text-green-700 font-medium underline hover:text-green-900">{isRu ? 'Услуга «Биоревитализация»' : 'Serviciul „Biorevitalizarea"'}</Link></li>
+          <li><Link href={isRu ? '/services/byorevytalyzaczyya-v-belczah' : '/ro/services/byorevytalyzaczyya-v-belczah'} className={blogUi.link}>{isRu ? 'Услуга «Биоревитализация»' : 'Serviciul „Biorevitalizarea"'}</Link></li>
         </ul>
       </section>
-      <section className="rounded-lg border border-gray-200 bg-gray-50 p-6 mb-8">
-        <h2 className="text-lg font-semibold text-gray-900 mb-3">{isRu ? 'Медицинская проверка' : 'Verificare medicală'}</h2>
-        <p className="text-sm text-gray-700 leading-relaxed">{medicalReview}</p>
+      <section className={blogUi.reviewBox}>
+        <h2 className={blogUi.boxTitle}>{isRu ? 'Медицинская проверка' : 'Verificare medicală'}</h2>
+        <p className={blogUi.small}>{medicalReview}</p>
       </section>
       {relatedPosts.length > 0 && (
         <section className="mb-12">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">{isRu ? 'Читайте также' : 'Citiți și'}</h2>
-          <ul className="space-y-2">{relatedPosts.map((related) => (<li key={related.id}><Link href={isRu ? `/blog/${related.slugRu}` : `/ro/blog/${related.slugRo}`} className="text-green-700 underline hover:text-green-900">{isRu ? related.titleRu : related.titleRo}</Link></li>))}</ul>
+          <h2 className={blogUi.h2Small}>{isRu ? 'Читайте также' : 'Citiți și'}</h2>
+          <ul className="space-y-2">{relatedPosts.map((related) => (<li key={related.id}><Link href={isRu ? `/blog/${related.slugRu}` : `/ro/blog/${related.slugRo}`} className={blogUi.link}>{isRu ? related.titleRu : related.titleRo}</Link></li>))}</ul>
         </section>
       )}
-      {hubSlug && (<div className="mb-12"><Link href={isRu ? `/blog/${hubSlug}` : `/ro/blog/${hubSlug}`} className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700">{isRu ? '← Вернуться к рубрике' : '← Înapoi la rubrică'}</Link></div>)}
-      <p className="text-sm text-gray-500 border-t border-gray-200 pt-6">{isRu ? 'Медицинский дисклеймер: информация не является диагнозом.' : 'Exonerare: conținutul nu constituie diagnostic.'}</p>
+      {hubSlug && (<div className="mb-12"><Link href={isRu ? `/blog/${hubSlug}` : `/ro/blog/${hubSlug}`} className={blogUi.backButton}>{isRu ? '← Вернуться к рубрике' : '← Înapoi la rubrică'}</Link></div>)}
+      <p className={blogUi.footerDisclaimer}>{isRu ? 'Медицинский дисклеймер: информация не является диагнозом.' : 'Exonerare: conținutul nu constituie diagnostic.'}</p>
     </>
   );
 }

@@ -105,7 +105,7 @@ export default async function BlogPostRoPage({ params }: Props) {
         />
       ) : null}
       <HeaderNew locale="ro" />
-      <main className="border-b border-border/40 bg-gradient-to-b from-muted/20 via-background to-background">
+      <main className="bg-background">
         <ContentArticleBody>{body}</ContentArticleBody>
       </main>
       <FooterNew locale="ro" />

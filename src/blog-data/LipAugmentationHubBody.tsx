@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import type { BlogLocale } from '@/blog-data/types';
 import { blogPathRu, blogPathRo } from '@/blog-data/registry';
+import { blogUi } from '@/blog-data/blog-ui';
 
 type Props = {
   locale: BlogLocale;
@@ -16,37 +17,37 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
   if (locale === 'ru') {
     return (
       <>
-        <nav className="text-sm text-gray-500 mb-6" aria-label="Хлебные крошки">
-          <Link href="/" className="underline hover:text-gray-800">Главная</Link>
+        <nav className={blogUi.breadcrumbs} aria-label="Хлебные крошки">
+          <Link href="/" className={blogUi.crumbLink}>Главная</Link>
           <span className="mx-2">/</span>
-          <Link href="/blog" className="underline hover:text-gray-800">Блог</Link>
+          <Link href="/blog" className={blogUi.crumbLink}>Блог</Link>
           <span className="mx-2">/</span>
-          <span className="text-gray-800">Увеличение губ — гид</span>
+          <span className={blogUi.crumbCurrent}>Увеличение губ — гид</span>
         </nav>
 
-        <p className="text-sm text-gray-500 mb-2">
+        <p className={blogUi.meta}>
           Обновлено:
           {' '}
           {dateModified}
           {' · '}
-          <Link href={roUrl} className="underline hover:text-gray-800" hrefLang="ro">Română</Link>
+          <Link href={roUrl} className={blogUi.crumbLink} hrefLang="ro">Română</Link>
         </p>
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+        <h1 className={blogUi.h1}>
           Увеличение губ в Бельцах: гид по процедуре
         </h1>
 
-        <p className="text-gray-700 leading-relaxed mb-10">
+        <p className={blogUi.pMb10}>
           Этот материал помогает понять, как устроена контурная пластика губ с использованием
           препаратов на основе гиалуроновой кислоты, на что обратить внимание при выборе клиники
           и какие вопросы задать на консультации. Он не заменяет очный осмотр и индивидуальный план лечения.
         </p>
 
         <section className="mb-12" aria-labelledby="tofu">
-          <h2 id="tofu" className="text-2xl font-semibold text-gray-900 mb-4">
+          <h2 id="tofu" className={blogUi.h2}>
             С чего начать (осведомлённость)
           </h2>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed mb-4">
+          <ul className={blogUi.ul}>
             <li>
               <strong>Что это:</strong>
               {' '}
@@ -66,10 +67,10 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
         </section>
 
         <section className="mb-12" aria-labelledby="mofu">
-          <h2 id="mofu" className="text-2xl font-semibold text-gray-900 mb-4">
+          <h2 id="mofu" className={blogUi.h2}>
             Как проходит путь пациента (рассмотрение)
           </h2>
-          <ol className="list-decimal pl-6 space-y-3 text-gray-700 leading-relaxed mb-4">
+          <ol className={blogUi.ol}>
             <li>
               <strong>Консультация</strong>
               {' '}
@@ -91,17 +92,17 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
               — следование рекомендациям по уходу снижает отёк и риск осложнений.
             </li>
           </ol>
-          <p className="text-gray-700 leading-relaxed">
+          <p className={blogUi.p}>
             На консультации имеет смысл уточнить опыт врача, используемые препараты, варианты техники
             (игла/канюля) и план в случае нежелательного эффекта — это повышает прозрачность и доверие.
           </p>
         </section>
 
         <section className="mb-12" aria-labelledby="bofu">
-          <h2 id="bofu" className="text-2xl font-semibold text-gray-900 mb-4">
+          <h2 id="bofu" className={blogUi.h2}>
             Следующий шаг в Meddera (решение)
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
+          <p className={blogUi.pMb6}>
             Если вы рассматриваете увеличение губ в Бельцах, логично начать с очной консультации
             и страницы услуги — там описаны формат приёма и запись.
           </p>
@@ -109,7 +110,7 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
             <li>
               <Link
                 href="/services/uvelychenye-gub-v-belczah"
-                className="text-green-700 font-medium underline hover:text-green-900"
+                className={blogUi.link}
               >
                 Услуга «Увеличение губ в Бельцах»
               </Link>
@@ -117,7 +118,7 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
             <li>
               <Link
                 href="/services/konsultaczyya-dermatokosmetologa-v-belczah"
-                className="text-green-700 font-medium underline hover:text-green-900"
+                className={blogUi.link}
               >
                 Консультация дерматокосметолога
               </Link>
@@ -125,13 +126,13 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
             <li>
               <Link
                 href="/services/konturnaya-plastyka-fylleramy-v-belczah"
-                className="text-green-700 font-medium underline hover:text-green-900"
+                className={blogUi.link}
               >
                 Контурная пластика филлерами
               </Link>
             </li>
             <li>
-              <Link href="/services/uvelychenye-gub-v-belczah" className="text-gray-800 underline hover:text-gray-950">
+              <Link href="/services/uvelychenye-gub-v-belczah" className={blogUi.linkStrong}>
                 Контакты и запись
               </Link>
             </li>
@@ -139,20 +140,20 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
         </section>
 
         <section
-          className="rounded-lg border border-gray-200 bg-gray-50 p-6 mb-8"
+          className={blogUi.reviewBox}
           aria-labelledby="eeat"
         >
-          <h2 id="eeat" className="text-lg font-semibold text-gray-900 mb-3">
+          <h2 id="eeat" className={blogUi.boxTitle}>
             Кто готовит материалы и оказывает помощь
           </h2>
-          <p className="text-gray-700 text-sm leading-relaxed">
+          <p className={blogUi.small}>
             Клиника Meddera, Бельцы. Материал носит информационный характер и подготовлен для пациентов,
             рассматривающих процедуру; медицинские решения принимаются только после очной консультации
             с врачом-дерматокосметологом.
           </p>
         </section>
 
-        <p className="text-sm text-gray-500 border-t border-gray-200 pt-6">
+        <p className={blogUi.footerDisclaimer}>
           Медицинский дисклеймер: информация на странице не является диагнозом и не заменяет очный приём.
           При острых симптомах, аллергии на компоненты препаратов или сомнениях по показаниям обратитесь к врачу.
         </p>
@@ -162,37 +163,37 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
 
   return (
     <>
-      <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
-        <Link href="/ro" className="underline hover:text-gray-800">Acasă</Link>
+      <nav className={blogUi.breadcrumbs} aria-label="Breadcrumb">
+        <Link href="/ro" className={blogUi.crumbLink}>Acasă</Link>
         <span className="mx-2">/</span>
-        <Link href="/ro/blog" className="underline hover:text-gray-800">Blog</Link>
+        <Link href="/ro/blog" className={blogUi.crumbLink}>Blog</Link>
         <span className="mx-2">/</span>
-        <span className="text-gray-800">Mărirea buzelor — ghid</span>
+        <span className={blogUi.crumbCurrent}>Mărirea buzelor — ghid</span>
       </nav>
 
-      <p className="text-sm text-gray-500 mb-2">
+      <p className={blogUi.meta}>
         Actualizat:
         {' '}
         {dateModified}
         {' · '}
-        <Link href={ruUrl} className="underline hover:text-gray-800" hrefLang="ru">Русский</Link>
+        <Link href={ruUrl} className={blogUi.crumbLink} hrefLang="ru">Русский</Link>
       </p>
 
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+      <h1 className={blogUi.h1}>
         Mărirea buzelor în Bălți: ghid despre procedură
       </h1>
 
-      <p className="text-gray-700 leading-relaxed mb-10">
+      <p className={blogUi.pMb10}>
         Acest material explică, în linii mari, cum este realizată conturarea buzelor cu preparate pe bază
         de acid hialuronic, la ce să fiți atenți când alegeți o clinică și ce întrebări sunt utile la consultație.
         Nu înlocuiește examenul clinic și planul individual recomandat de medic.
       </p>
 
       <section className="mb-12" aria-labelledby="tofu-ro">
-        <h2 id="tofu-ro" className="text-2xl font-semibold text-gray-900 mb-4">
+        <h2 id="tofu-ro" className={blogUi.h2}>
           De unde începem (informare)
         </h2>
-        <ul className="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed mb-4">
+        <ul className={blogUi.ul}>
           <li>
             <strong>Ce presupune:</strong>
             {' '}
@@ -212,10 +213,10 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
       </section>
 
       <section className="mb-12" aria-labelledby="mofu-ro">
-        <h2 id="mofu-ro" className="text-2xl font-semibold text-gray-900 mb-4">
+        <h2 id="mofu-ro" className={blogUi.h2}>
           Cum arată parcursul pacientului (evaluare)
         </h2>
-        <ol className="list-decimal pl-6 space-y-3 text-gray-700 leading-relaxed mb-4">
+        <ol className={blogUi.ol}>
           <li>
             <strong>Consultația</strong>
             {' '}
@@ -237,17 +238,17 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
             — respectarea recomandărilor de îngrijire contribuie la confort și la reducerea edemului.
           </li>
         </ol>
-        <p className="text-gray-700 leading-relaxed">
+        <p className={blogUi.p}>
           La consultație puteți clarifica experiența medicului, tipurile de preparate, tehnica (ac/canion) și
           pașii în cazul unui efect nedorit — transparența ajută la încredere și la decizii informate.
         </p>
       </section>
 
       <section className="mb-12" aria-labelledby="bofu-ro">
-        <h2 id="bofu-ro" className="text-2xl font-semibold text-gray-900 mb-4">
+        <h2 id="bofu-ro" className={blogUi.h2}>
           Pasul următor la Meddera (decizie)
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-6">
+        <p className={blogUi.pMb6}>
           Dacă analizați mărirea buzelor în Bălți, este rezonabil să începeți cu o consultație la clinică
           și pagina serviciului dedicat.
         </p>
@@ -255,7 +256,7 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
           <li>
             <Link
               href="/ro/services/uvelychenye-gub-v-belczah"
-              className="text-green-700 font-medium underline hover:text-green-900"
+              className={blogUi.link}
             >
               Serviciul „Mărirea buzelor în Bălți”
             </Link>
@@ -263,7 +264,7 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
           <li>
             <Link
               href="/ro/services/konsultaczyya-dermatokosmetologa-v-belczah"
-              className="text-green-700 font-medium underline hover:text-green-900"
+              className={blogUi.link}
             >
               Consultația dermatocosmetologului
             </Link>
@@ -271,13 +272,13 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
           <li>
             <Link
               href="/ro/services/konturnaya-plastyka-fylleramy-v-belczah"
-              className="text-green-700 font-medium underline hover:text-green-900"
+              className={blogUi.link}
             >
               Conturarea cu filler-e
             </Link>
           </li>
           <li>
-            <Link href="/ro/services/uvelychenye-gub-v-belczah" className="text-gray-800 underline hover:text-gray-950">
+            <Link href="/ro/services/uvelychenye-gub-v-belczah" className={blogUi.linkStrong}>
               Contacte și programare
             </Link>
           </li>
@@ -285,19 +286,19 @@ export function LipAugmentationHubBody({ locale, dateModified }: Props) {
       </section>
 
       <section
-        className="rounded-lg border border-gray-200 bg-gray-50 p-6 mb-8"
+        className={blogUi.reviewBox}
         aria-labelledby="eeat-ro"
       >
-        <h2 id="eeat-ro" className="text-lg font-semibold text-gray-900 mb-3">
+        <h2 id="eeat-ro" className={blogUi.boxTitle}>
           Experiență și transparență
         </h2>
-        <p className="text-gray-700 text-sm leading-relaxed">
+        <p className={blogUi.small}>
           Clinica Meddera, Bălți. Material informativ pentru persoane care iau în calcul procedura;
           deciziile medicale se iau doar după consultație cu dermatocosmetologul.
         </p>
       </section>
 
-      <p className="text-sm text-gray-500 border-t border-gray-200 pt-6">
+      <p className={blogUi.footerDisclaimer}>
         Exonerare: conținutul nu constituie diagnostic și nu înlocuiește examenul medical.
         În caz de simptome acute, alergie la componente sau îndoieli privind indicațiile, adresați-vă medicului.
       </p>

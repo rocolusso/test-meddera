@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
+import { blogUi } from '@/blog-data/blog-ui';
 
 type ArticleSection = { h2: string; paragraphs: string[] };
 
@@ -31,42 +32,42 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
 
   return (
     <>
-      <nav className="text-sm text-gray-500 mb-6" aria-label={isRu ? 'Хлебные крошки' : 'Breadcrumb'}>
-        <Link href={isRu ? '/' : '/ro'} className="underline hover:text-gray-800">
+      <nav className={blogUi.breadcrumbs} aria-label={isRu ? 'Хлебные крошки' : 'Breadcrumb'}>
+        <Link href={isRu ? '/' : '/ro'} className={blogUi.crumbLink}>
           {isRu ? 'Главная' : 'Acasă'}
         </Link>
         <span className="mx-2">/</span>
-        <Link href={isRu ? '/blog' : '/ro/blog'} className="underline hover:text-gray-800">
+        <Link href={isRu ? '/blog' : '/ro/blog'} className={blogUi.crumbLink}>
           {isRu ? 'Блог' : 'Blog'}
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-gray-800">{title}</span>
+        <span className={blogUi.crumbCurrent}>{title}</span>
       </nav>
 
-      <p className="text-sm text-gray-600 mb-2">
+      <p className={blogUi.meta}>
         {isRu ? 'Автор:' : 'Autor:'} {authorByline}
       </p>
 
-      <p className="text-sm text-gray-500 mb-2">
+      <p className={blogUi.meta}>
         {isRu ? 'Обновлено:' : 'Actualizat:'}
         {' '}
         {dateModified}
         {' · '}
         <Link 
           href={isRu ? roUrl : ruUrl} 
-          className="underline hover:text-gray-800" 
+          className={blogUi.crumbLink} 
           hrefLang={isRu ? 'ro' : 'ru'}
         >
           {isRu ? 'Română' : 'Русский'}
         </Link>
       </p>
 
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+      <h1 className={blogUi.h1}>
         {title}
       </h1>
 
-      <div className="rounded-lg border border-yellow-200 bg-yellow-50 p-4 mb-8">
-        <p className="text-sm text-gray-700">
+      <div className={blogUi.disclaimerBox}>
+        <p className={blogUi.small}>
           {isRu 
             ? 'Материал носит информационный характер и не заменяет очную консультацию с врачом-дерматологом. При острых симптомах обратитесь к специалисту.'
             : 'Materialul are caracter informativ și nu înlocuiește consultația cu medicul dermatolog. În caz de simptome acute, adresați-vă specialistului.'
@@ -76,11 +77,11 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
 
       {sections.map((section, idx) => (
         <section key={idx} className="mb-10">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+          <h2 className={blogUi.h2}>
             {section.h2}
           </h2>
           {section.paragraphs.map((para, pIdx) => (
-            <p key={pIdx} className="text-gray-700 leading-relaxed mb-4">
+            <p key={pIdx} className={blogUi.pMb4}>
               {para}
             </p>
           ))}
@@ -88,10 +89,10 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
       ))}
 
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+        <h2 className={blogUi.h2}>
           {isRu ? 'Запись на консультацию' : 'Programare la consultație'}
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
+        <p className={blogUi.pMb4}>
           {isRu
             ? 'Если вы рассматриваете консультацию дерматолога в Бельцах, запишитесь на приём в клинике Meddera. Врач проведёт осмотр, поставит диагноз и назначит индивидуальный план лечения.'
             : 'Dacă analizați consultația dermatologului în Bălți, programați-vă la clinica Meddera. Medicul va efectua examinarea, va stabili diagnosticul și va prescrie un plan individual de tratament.'
@@ -104,7 +105,7 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
                 ? '/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye'
                 : '/ro/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye'
               }
-              className="text-green-700 font-medium underline hover:text-green-900"
+              className={blogUi.link}
             >
               {isRu ? 'Услуга «Дерматолог в Бельцах»' : 'Serviciul „Dermatolog în Bălți"'}
             </Link>
@@ -115,7 +116,7 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
                 ? '/services/konsultaczyya-dermatokosmetologa-v-belczah'
                 : '/ro/services/konsultaczyya-dermatokosmetologa-v-belczah'
               }
-              className="text-green-700 font-medium underline hover:text-green-900"
+              className={blogUi.link}
             >
               {isRu ? 'Консультация дерматокосметолога' : 'Consultația dermatocosmetologului'}
             </Link>
@@ -124,20 +125,20 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
       </section>
 
       <section
-        className="rounded-lg border border-gray-200 bg-gray-50 p-6 mb-8"
+        className={blogUi.reviewBox}
         aria-labelledby="medical-review"
       >
-        <h2 id="medical-review" className="text-lg font-semibold text-gray-900 mb-3">
+        <h2 id="medical-review" className={blogUi.boxTitle}>
           {isRu ? 'Медицинская проверка' : 'Verificare medicală'}
         </h2>
-        <p className="text-sm text-gray-700 leading-relaxed">
+        <p className={blogUi.small}>
           {medicalReview}
         </p>
       </section>
 
       {relatedPosts.length > 0 && (
         <section className="mb-12">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+          <h2 className={blogUi.h2Small}>
             {isRu ? 'Читайте также' : 'Citiți și'}
           </h2>
           <ul className="space-y-2">
@@ -145,7 +146,7 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
               <li key={related.id}>
                 <Link 
                   href={isRu ? `/blog/${related.slugRu}` : `/ro/blog/${related.slugRo}`}
-                  className="text-green-700 underline hover:text-green-900"
+                  className={blogUi.link}
                 >
                   {isRu ? related.titleRu : related.titleRo}
                 </Link>
@@ -159,14 +160,14 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
         <div className="mb-12">
           <Link 
             href={isRu ? `/blog/${hubSlug}` : `/ro/blog/${hubSlug}`}
-            className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors"
+            className={blogUi.backButton}
           >
             {isRu ? '← Вернуться к рубрике «Дерматолог»' : '← Înapoi la rubrica „Dermatolog"'}
           </Link>
         </div>
       )}
 
-      <p className="text-sm text-gray-500 border-t border-gray-200 pt-6">
+      <p className={blogUi.footerDisclaimer}>
         {isRu
           ? 'Медицинский дисклеймер: информация на странице не является диагнозом и не заменяет очный приём. При острых симптомах, аллергических реакциях или сомнениях по показаниям обратитесь к врачу.'
           : 'Exonerare medicală: conținutul nu constituie diagnostic și nu înlocuiește examenul medical. În caz de simptome acute, reacții alergice sau îndoieli privind indicațiile, adresați-vă medicului.'

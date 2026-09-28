@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
+import { blogUi } from '@/blog-data/blog-ui';
 
 type ArticleSection = { h2: string; paragraphs: string[] };
 
@@ -30,62 +31,62 @@ export function MesotherapyFaceArticleBody({ post, locale, dateModified, section
 
   return (
     <>
-      <nav className="text-sm text-gray-500 mb-6" aria-label={isRu ? 'Хлебные крошки' : 'Breadcrumb'}>
-        <Link href={isRu ? '/' : '/ro'} className="underline hover:text-gray-800">{isRu ? 'Главная' : 'Acasă'}</Link>
+      <nav className={blogUi.breadcrumbs} aria-label={isRu ? 'Хлебные крошки' : 'Breadcrumb'}>
+        <Link href={isRu ? '/' : '/ro'} className={blogUi.crumbLink}>{isRu ? 'Главная' : 'Acasă'}</Link>
         <span className="mx-2">/</span>
-        <Link href={isRu ? '/blog' : '/ro/blog'} className="underline hover:text-gray-800">{isRu ? 'Блог' : 'Blog'}</Link>
+        <Link href={isRu ? '/blog' : '/ro/blog'} className={blogUi.crumbLink}>{isRu ? 'Блог' : 'Blog'}</Link>
         <span className="mx-2">/</span>
-        <span className="text-gray-800">{title}</span>
+        <span className={blogUi.crumbCurrent}>{title}</span>
       </nav>
 
-      <p className="text-sm text-gray-600 mb-2">{isRu ? 'Автор:' : 'Autor:'} {authorByline}</p>
+      <p className={blogUi.meta}>{isRu ? 'Автор:' : 'Autor:'} {authorByline}</p>
 
-      <p className="text-sm text-gray-500 mb-2">
-        {isRu ? 'Обновлено:' : 'Actualizat:'} {dateModified} · <Link href={isRu ? roUrl : ruUrl} className="underline hover:text-gray-800" hrefLang={isRu ? 'ro' : 'ru'}>{isRu ? 'Română' : 'Русский'}</Link>
+      <p className={blogUi.meta}>
+        {isRu ? 'Обновлено:' : 'Actualizat:'} {dateModified} · <Link href={isRu ? roUrl : ruUrl} className={blogUi.crumbLink} hrefLang={isRu ? 'ro' : 'ru'}>{isRu ? 'Română' : 'Русский'}</Link>
       </p>
 
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">{title}</h1>
+      <h1 className={blogUi.h1}>{title}</h1>
 
-      <div className="rounded-lg border border-yellow-200 bg-yellow-50 p-4 mb-8">
-        <p className="text-sm text-gray-700">
+      <div className={blogUi.disclaimerBox}>
+        <p className={blogUi.small}>
           {isRu ? 'Материал носит информационный характер и не заменяет очную консультацию с врачом-дерматокосметологом.' : 'Materialul are caracter informativ și nu înlocuiește consultația cu medicul dermatocosmetolog.'}
         </p>
       </div>
 
       {sections.map((section, idx) => (
         <section key={idx} className="mb-10">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">{section.h2}</h2>
+          <h2 className={blogUi.h2}>{section.h2}</h2>
           {section.paragraphs.map((para, pIdx) => (
-            <p key={pIdx} className="text-gray-700 leading-relaxed mb-4">{para}</p>
+            <p key={pIdx} className={blogUi.pMb4}>{para}</p>
           ))}
         </section>
       ))}
 
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">{isRu ? 'Запись на консультацию' : 'Programare la consultație'}</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
+        <h2 className={blogUi.h2}>{isRu ? 'Запись на консультацию' : 'Programare la consultație'}</h2>
+        <p className={blogUi.pMb4}>
           {isRu
             ? 'Если вы рассматриваете мезотерапию лица в Бельцах, запишитесь на консультацию в клинике Meddera.'
             : 'Dacă analizați mezoterapia feței în Bălți, programați-vă la consultație la clinica Meddera.'
           }
         </p>
         <ul className="space-y-2">
-          <li><Link href={isRu ? '/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe' : '/ro/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe'} className="text-green-700 font-medium underline hover:text-green-900">{isRu ? 'Услуга «Мезотерапия лица»' : 'Serviciul „Mezoterapia feței"'}</Link></li>
+          <li><Link href={isRu ? '/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe' : '/ro/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe'} className={blogUi.link}>{isRu ? 'Услуга «Мезотерапия лица»' : 'Serviciul „Mezoterapia feței"'}</Link></li>
         </ul>
       </section>
 
-      <section className="rounded-lg border border-gray-200 bg-gray-50 p-6 mb-8" aria-labelledby="medical-review">
-        <h2 id="medical-review" className="text-lg font-semibold text-gray-900 mb-3">{isRu ? 'Медицинская проверка' : 'Verificare medicală'}</h2>
-        <p className="text-sm text-gray-700 leading-relaxed">{medicalReview}</p>
+      <section className={blogUi.reviewBox} aria-labelledby="medical-review">
+        <h2 id="medical-review" className={blogUi.boxTitle}>{isRu ? 'Медицинская проверка' : 'Verificare medicală'}</h2>
+        <p className={blogUi.small}>{medicalReview}</p>
       </section>
 
       {relatedPosts.length > 0 && (
         <section className="mb-12">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">{isRu ? 'Читайте также' : 'Citiți și'}</h2>
+          <h2 className={blogUi.h2Small}>{isRu ? 'Читайте также' : 'Citiți și'}</h2>
           <ul className="space-y-2">
             {relatedPosts.map((related) => (
               <li key={related.id}>
-                <Link href={isRu ? `/blog/${related.slugRu}` : `/ro/blog/${related.slugRo}`} className="text-green-700 underline hover:text-green-900">
+                <Link href={isRu ? `/blog/${related.slugRu}` : `/ro/blog/${related.slugRo}`} className={blogUi.link}>
                   {isRu ? related.titleRu : related.titleRo}
                 </Link>
               </li>
@@ -96,13 +97,13 @@ export function MesotherapyFaceArticleBody({ post, locale, dateModified, section
 
       {hubSlug && (
         <div className="mb-12">
-          <Link href={isRu ? `/blog/${hubSlug}` : `/ro/blog/${hubSlug}`} className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors">
+          <Link href={isRu ? `/blog/${hubSlug}` : `/ro/blog/${hubSlug}`} className={blogUi.backButton}>
             {isRu ? '← Вернуться к рубрике «Мезотерапия лица»' : '← Înapoi la rubrica „Mezoterapia feței"'}
           </Link>
         </div>
       )}
 
-      <p className="text-sm text-gray-500 border-t border-gray-200 pt-6">
+      <p className={blogUi.footerDisclaimer}>
         {isRu ? 'Медицинский дисклеймер: информация не является диагнозом и не заменяет очный приём.' : 'Exonerare medicală: conținutul nu constituie diagnostic și nu înlocuiește examenul medical.'}
       </p>
     </>
