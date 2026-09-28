@@ -5,7 +5,7 @@ import { ContentArticleBody } from '@/components/new-ui/ContentPageShell';
 import { RECEPTION_SCHEDULE_COPY } from '@/lib/contact-reception-schedule';
 
 const phoneClassName =
-  'font-semibold text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-brand-gold';
+  'font-semibold text-pofo-heading underline decoration-border underline-offset-4 transition-colors hover:text-deep-pink';
 
 function ClinicPhoneLink() {
   return (
@@ -21,11 +21,11 @@ function ClinicPhoneLink() {
 export default function ContactsIndexSeoContent({ locale }: { locale: 'ru' | 'ro' }) {
   if (locale === 'ro') {
     return (
-      <ContentArticleBody className="!max-w-6xl !pb-10 !pt-10 md:!pb-14 md:!pt-14">
-        <h1 className="!font-heading !text-3xl !font-semibold !tracking-tight !text-foreground sm:!text-4xl">
+      <ContentArticleBody className="!max-w-[1200px] !pb-10 !pt-10 md:!pb-14 md:!pt-14">
+        <h1 className="alt-font !text-[26px] !font-semibold !leading-[34px] !text-pofo-heading md:!text-[32px] md:!leading-[40px]">
           Contacte — clinica Meddera, Bălți
         </h1>
-        <p className="!mt-4 !text-lg !font-medium !leading-relaxed !text-foreground">
+        <p className="!mt-4 alt-font !text-[18px] !font-medium !leading-[30px] !text-pofo-heading">
           Adresa: str. Ștefan cel Mare, 13. Programări la consultație — prin
           {' '}
           <Link href="#contacts">formularul de mai jos</Link>
@@ -85,11 +85,11 @@ export default function ContactsIndexSeoContent({ locale }: { locale: 'ru' | 'ro
   }
 
   return (
-    <ContentArticleBody className="!max-w-6xl !pb-10 !pt-10 md:!pb-14 md:!pt-14">
-      <h1 className="!font-heading !text-3xl !font-semibold !tracking-tight !text-foreground sm:!text-4xl">
+    <ContentArticleBody className="!max-w-[1200px] !pb-10 !pt-10 md:!pb-14 md:!pt-14">
+      <h1 className="alt-font !text-[26px] !font-semibold !leading-[34px] !text-pofo-heading md:!text-[32px] md:!leading-[40px]">
         Контакты — клиника Meddera, Бельцы
       </h1>
-      <p className="!mt-4 !text-lg !font-medium !leading-relaxed !text-foreground">
+      <p className="!mt-4 alt-font !text-[18px] !font-medium !leading-[30px] !text-pofo-heading">
         Адрес: ул. Штефан чел Маре, 13. Запись на консультацию — через
         {' '}
         <Link href="#contacts">форму ниже</Link>

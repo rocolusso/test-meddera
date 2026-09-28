@@ -18,17 +18,17 @@ export default function BlogIndexSeoContent({ locale, page = 1 }: Props) {
   if (locale === 'ro') {
     if (isPaginated) {
       return (
-        <section className="border-t border-border/40 bg-gradient-to-b from-muted/15 to-background">
-          <ContentArticleBody className="!max-w-6xl !pb-12 !pt-10 md:!pb-14 md:!pt-12">
+        <section className="border-t border-border bg-pofo-light-gray">
+          <ContentArticleBody className="!max-w-[1200px] !pb-12 !pt-10 md:!pb-14 md:!pt-12">
             <p className="!text-sm !leading-relaxed !text-muted-foreground md:!text-base">
               Continuați lista articolelor Meddera. Pentru descrierea blogului și ghiduri tematice, deschideți
               {' '}
-              <Link className="font-medium text-brand-gold underline-offset-4 hover:underline" href="/ro/blog">
+              <Link className="font-medium text-accent-text underline-offset-4 hover:underline" href="/ro/blog">
                 prima pagină a blogului
               </Link>
               . Programare la clinică:
               {' '}
-              <Link className="font-medium text-brand-gold underline-offset-4 hover:underline" href="/ro/contacts">
+              <Link className="font-medium text-accent-text underline-offset-4 hover:underline" href="/ro/contacts">
                 contacte
               </Link>
               .
@@ -39,9 +39,9 @@ export default function BlogIndexSeoContent({ locale, page = 1 }: Props) {
     }
 
     return (
-      <section className="border-t border-border/40 bg-gradient-to-b from-muted/15 to-background">
-        <ContentArticleBody className="!max-w-6xl !pb-12 !pt-10 md:!pb-16 md:!pt-14">
-          <p className="!text-lg !font-medium !leading-relaxed !text-foreground">
+      <section className="border-t border-border bg-pofo-light-gray">
+        <ContentArticleBody className="!max-w-[1200px] !pb-12 !pt-10 md:!pb-16 md:!pt-14">
+          <p className="alt-font !text-[18px] !font-medium !leading-[30px] !text-pofo-heading">
             Blogul clinicii Meddera din Bălți adună materiale despre dermatologie, cosmetologie estetică și îngrijirea
             pielii — informații generale pentru pacienți care se pregătesc de consultație sau doresc să înțeleagă mai
             bine anumite proceduri. Conținutul nu înlocuiește examenul medical și recomandările personalizate ale
@@ -82,17 +82,17 @@ export default function BlogIndexSeoContent({ locale, page = 1 }: Props) {
 
   if (isPaginated) {
     return (
-      <section className="border-t border-border/40 bg-gradient-to-b from-muted/15 to-background">
-        <ContentArticleBody className="!max-w-6xl !pb-12 !pt-10 md:!pb-14 md:!pt-12">
+      <section className="border-t border-border bg-pofo-light-gray">
+        <ContentArticleBody className="!max-w-[1200px] !pb-12 !pt-10 md:!pb-14 md:!pt-12">
           <p className="!text-sm !leading-relaxed !text-muted-foreground md:!text-base">
             Продолжение списка статей клиники Meddera. Полное описание блога и тематические гиды — на
             {' '}
-            <Link className="font-medium text-brand-gold underline-offset-4 hover:underline" href="/blog">
+            <Link className="font-medium text-accent-text underline-offset-4 hover:underline" href="/blog">
               первой странице блога
             </Link>
             . Запись в клинику:
             {' '}
-            <Link className="font-medium text-brand-gold underline-offset-4 hover:underline" href="/contacts">
+            <Link className="font-medium text-accent-text underline-offset-4 hover:underline" href="/contacts">
               контакты
             </Link>
             .
@@ -103,9 +103,9 @@ export default function BlogIndexSeoContent({ locale, page = 1 }: Props) {
   }
 
   return (
-    <section className="border-t border-border/40 bg-gradient-to-b from-muted/15 to-background">
-      <ContentArticleBody className="!max-w-6xl !pb-12 !pt-10 md:!pb-16 md:!pt-14">
-        <p className="!text-lg !font-medium !leading-relaxed !text-foreground">
+    <section className="border-t border-border bg-pofo-light-gray">
+      <ContentArticleBody className="!max-w-[1200px] !pb-12 !pt-10 md:!pb-16 md:!pt-14">
+        <p className="alt-font !text-[18px] !font-medium !leading-[30px] !text-pofo-heading">
           Блог клиники Meddera в Бельцах — материалы о дерматологии, эстетической косметологии и уходе за кожей: для
           тех, кто готовится к консультации или хочет понять общие принципы процедур. Тексты носят информационный характер
           и не заменяют очный осмотр и индивидуальный план лечения врача.

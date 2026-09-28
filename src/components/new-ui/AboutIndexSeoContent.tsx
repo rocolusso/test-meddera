@@ -9,8 +9,8 @@ import { ContentArticleBody } from '@/components/new-ui/ContentPageShell';
 export default function AboutIndexSeoContent({ locale }: { locale: 'ru' | 'ro' }) {
   if (locale === 'ro') {
     return (
-      <ContentArticleBody className="!max-w-6xl border-t border-border/40 !pb-12 !pt-10 md:!pb-16 md:!pt-14">
-        <p className="!text-lg !font-medium !leading-relaxed !text-foreground">
+      <ContentArticleBody className="!max-w-[1200px] border-t border-border !pb-12 !pt-10 md:!pb-16 md:!pt-14">
+        <p className="alt-font !text-[18px] !font-medium !leading-[30px] !text-pofo-heading">
           Ecaterina Pîntea este medic dermatovenerolog de categorie I și cosmetolog cu peste 11 ani de experiență în
           dermatologie și 7 ani în cosmetologie. Din aprilie 2024 este fondatoarea și coordonatoarea clinicii Meddera
           din Bălți, str. Ștefan cel Mare, 13 — un centru care unește dermatologia medicală și estetica facială într-un
@@ -50,8 +50,8 @@ export default function AboutIndexSeoContent({ locale }: { locale: 'ru' | 'ro' }
   }
 
   return (
-    <ContentArticleBody className="!max-w-6xl border-t border-border/40 !pb-12 !pt-10 md:!pb-16 md:!pt-14">
-      <p className="!text-lg !font-medium !leading-relaxed !text-foreground">
+    <ContentArticleBody className="!max-w-[1200px] border-t border-border !pb-12 !pt-10 md:!pb-16 md:!pt-14">
+      <p className="alt-font !text-[18px] !font-medium !leading-[30px] !text-pofo-heading">
         Екатерина Пынтя — врач-дерматовенеролог первой категории и косметолог с более чем 11 годами опыта в дерматологии и
         7 годами в косметологии. С апреля 2024 года — основатель и ведущий специалист клиники Meddera в Бельцах, ул.
         Штефан чел Маре, 13: здесь сочетаются медицинская дерматология и эстетическая косметология с упором на безопасность

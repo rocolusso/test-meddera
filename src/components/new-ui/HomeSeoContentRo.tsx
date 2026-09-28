@@ -9,7 +9,7 @@ import {
 } from '@/components/new-ui/HomeSeoPrimitives';
 
 const faqItemClass =
-  'rounded-lg border-l-2 border-brand-gold/50 bg-muted/15 py-2 pl-4 pr-2 text-sm leading-relaxed sm:text-base';
+  'border-l-2 border-deep-pink bg-pofo-light-gray py-2.5 pl-4 pr-2 text-[14px] leading-[24px] sm:text-[15px] sm:leading-[26px]';
 
 /**
  * SEO-текст на главной (RO), видимый пользователям и поисковым системам.
@@ -62,25 +62,25 @@ export default function HomeSeoContentRo() {
       <HomeSeoPanel title="Întrebări frecvente" className="md:col-span-2">
         <ul className="space-y-3">
           <li className={faqItemClass}>
-            <strong className="text-foreground">Cât durează o consultație dermatologică?</strong>
+            <strong className="text-pofo-heading">Cât durează o consultație dermatologică?</strong>
             <span className="text-muted-foreground"> Aproximativ 30 de minute.</span>
           </li>
           <li className={faqItemClass}>
-            <strong className="text-foreground">Este necesară o programare în avans?</strong>
+            <strong className="text-pofo-heading">Este necesară o programare în avans?</strong>
             <span className="text-muted-foreground">
               {' '}
               Da, recomandăm programarea prealabilă pentru a evita timpii de așteptare.
             </span>
           </li>
           <li className={faqItemClass}>
-            <strong className="text-foreground">Oferiți tratamente pentru afecțiuni cronice ale pielii?</strong>
+            <strong className="text-pofo-heading">Oferiți tratamente pentru afecțiuni cronice ale pielii?</strong>
             <span className="text-muted-foreground">
               {' '}
               Da, tratăm o gamă largă de afecțiuni dermatologice, inclusiv cele cronice.
             </span>
           </li>
           <li className={faqItemClass}>
-            <strong className="text-foreground">Acceptați asigurări medicale?</strong>
+            <strong className="text-pofo-heading">Acceptați asigurări medicale?</strong>
             <span className="text-muted-foreground"> Da, colaborăm cu diverse companii de asigurări medicale.</span>
           </li>
         </ul>
@@ -92,7 +92,7 @@ export default function HomeSeoContentRo() {
           {' '}
           <a
             href="tel:+37368550030"
-            className="font-semibold text-foreground underline decoration-brand-gold/50 underline-offset-4 transition-colors hover:text-brand-gold"
+            className="font-semibold text-pofo-heading underline decoration-deep-pink/60 underline-offset-4 transition-colors hover:text-deep-pink"
           >
             +373 685 500 30
           </a>

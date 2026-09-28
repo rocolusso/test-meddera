@@ -9,8 +9,8 @@ import { ContentArticleBody } from '@/components/new-ui/ContentPageShell';
 export default function ServicesIndexSeoContent({ locale }: { locale: 'ru' | 'ro' }) {
   if (locale === 'ro') {
     return (
-      <ContentArticleBody className="!max-w-6xl border-t border-border/40 !pb-12 !pt-10 md:!pb-16 md:!pt-14">
-        <p className="!text-lg !font-medium !leading-relaxed !text-foreground">
+      <ContentArticleBody className="!max-w-[1200px] border-t border-border !pb-12 !pt-10 md:!pb-16 md:!pt-14">
+        <p className="alt-font !text-[18px] !font-medium !leading-[30px] !text-pofo-heading">
           La clinica Meddera din Bălți, pe str. Ștefan cel Mare, 13, oferim servicii de dermatologie medicală și
           cosmetologie estetică sub îndrumarea medicului dermatolog-cosmetolog Ecaterina Pîntea. Mai jos găsiți lista
           completă a procedurilor — de la consultații și tratamente pentru afecțiuni ale pielii până la terapii
@@ -56,8 +56,8 @@ export default function ServicesIndexSeoContent({ locale }: { locale: 'ru' | 'ro
   }
 
   return (
-    <ContentArticleBody className="!max-w-6xl border-t border-border/40 !pb-12 !pt-10 md:!pb-16 md:!pt-14">
-      <p className="!text-lg !font-medium !leading-relaxed !text-foreground">
+    <ContentArticleBody className="!max-w-[1200px] border-t border-border !pb-12 !pt-10 md:!pb-16 md:!pt-14">
+      <p className="alt-font !text-[18px] !font-medium !leading-[30px] !text-pofo-heading">
         В клинике Meddera в Бельцах, на ул. Штефан чел Маре, 13, мы оказываем услуги медицинской дерматологии и
         эстетической косметологии под руководством врача-дерматокосметолога Екатерины Пынтя. Ниже — полный перечень
         процедур: от консультаций и лечения заболеваний кожи до инъекционных методик и профессионального ухода за кожей

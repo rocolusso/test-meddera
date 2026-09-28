@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { cn } from '@/lib/utils';
+import SectionReveal from '@/components/new-ui/SectionReveal';
 
 type HomeSeoShellProps = {
   ariaLabel: string;
@@ -12,30 +13,20 @@ type HomeSeoShellProps = {
 
 export function HomeSeoShell({ ariaLabel, eyebrow, title, intro, children }: HomeSeoShellProps) {
   return (
-    <section
-      aria-label={ariaLabel}
-      className="relative overflow-hidden border-t border-border/50 bg-gradient-to-b from-muted/25 via-background to-muted/20"
-    >
-      <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-gold/45 to-transparent"
-        aria-hidden
-      />
-      <div className="pointer-events-none absolute -right-24 top-24 size-[min(55vw,28rem)] rounded-full bg-brand-gold/[0.06] blur-3xl md:-right-16 md:top-32" aria-hidden />
-      <div className="pointer-events-none absolute -left-20 bottom-20 size-[min(50vw,22rem)] rounded-full bg-muted-foreground/[0.04] blur-3xl" aria-hidden />
-
-      <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-5 md:py-20 lg:px-8">
-        <header className="mb-10 text-center md:mb-14 md:text-left">
-          <p className="text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-muted-foreground">{eyebrow}</p>
-          <h1 className="mt-3 font-heading text-[clamp(1.5rem,4vw,2.35rem)] font-semibold leading-tight tracking-tight text-foreground">
+    <section aria-label={ariaLabel} className="relative bg-pofo-light-gray">
+      <div className="pofo-container section-y">
+        <header className="mb-10 text-center md:mb-[70px]">
+          <p className="eyebrow">{eyebrow}</p>
+          <h1 className="alt-font mt-2.5 text-[24px] font-semibold leading-[30px] text-pofo-heading md:text-[32px] md:leading-[40px]">
             {title}
           </h1>
-          <div className="mx-auto mt-5 h-px w-14 bg-brand-gold/75 md:mx-0" aria-hidden />
-          <div className="mx-auto mt-6 max-w-3xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg md:mx-0 [&_strong]:font-semibold [&_strong]:text-foreground">
+          <span aria-hidden className="mx-auto mt-5 block h-px w-[100px] bg-deep-pink" />
+          <div className="mx-auto mt-6 max-w-3xl text-pretty text-[15px] leading-[26px] text-muted-foreground sm:text-[16px] sm:leading-[28px] [&_strong]:font-semibold [&_strong]:text-pofo-heading">
             {intro}
           </div>
         </header>
 
-        <div className="grid gap-5 md:grid-cols-2 md:gap-6">{children}</div>
+        <div className="grid gap-[30px] md:grid-cols-2">{children}</div>
       </div>
     </section>
   );
@@ -49,36 +40,31 @@ type HomeSeoPanelProps = {
 
 export function HomeSeoPanel({ title, children, className }: HomeSeoPanelProps) {
   return (
-    <div
-      className={cn(
-        'group rounded-2xl border border-border/60 bg-card/45 p-5 shadow-sm ring-1 ring-border/25 backdrop-blur-[1px] transition-colors duration-300 sm:p-6 md:p-7',
-        'hover:border-border hover:bg-card/60 hover:shadow-md hover:ring-border/40',
-        className,
-      )}
-    >
-      <div className="mb-1 flex items-start gap-3">
-        <span
-          className="mt-2.5 h-1 w-8 shrink-0 rounded-full bg-gradient-to-r from-brand-gold/90 to-brand-gold/40 opacity-90 transition-opacity group-hover:opacity-100"
-          aria-hidden
-        />
-        <h2 className="font-heading text-lg font-semibold leading-snug tracking-tight text-foreground sm:text-xl">
+    <SectionReveal className={cn('h-full', className)}>
+      <div
+        className={cn(
+          'group h-full bg-background p-[30px] shadow-pofo transition-shadow duration-300 md:p-[50px]',
+          'hover:shadow-pofo-lg',
+        )}
+      >
+        <h2 className="alt-font text-[18px] font-semibold leading-[26px] text-pofo-heading">
           {title}
         </h2>
+        <span aria-hidden className="mt-4 block h-px w-10 bg-deep-pink transition-[width] duration-300 group-hover:w-16" />
+        <div className="mt-5 text-[14px] leading-[24px] text-muted-foreground sm:text-[15px] sm:leading-[26px] [&_p+p]:mt-3 [&_p]:text-muted-foreground [&_strong]:font-semibold [&_strong]:text-pofo-heading">
+          {children}
+        </div>
       </div>
-      <div className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base [&_p+p]:mt-3 [&_p]:text-muted-foreground [&_strong]:font-semibold [&_strong]:text-foreground">
-        {children}
-      </div>
-    </div>
+    </SectionReveal>
   );
 }
 
 export function HomeSeoBulletList({ items }: { items: string[] }) {
   return (
-    <ul className="space-y-2.5">
+    <ul className="pofo-list-dash space-y-2.5">
       {items.map((text, i) => (
-        <li key={i} className="flex gap-3 text-sm leading-relaxed sm:text-base">
-          <span className="mt-2 size-1.5 shrink-0 rounded-full bg-brand-gold/85 shadow-[0_0_0_3px] shadow-brand-gold/15" aria-hidden />
-          <span className="text-muted-foreground">{text}</span>
+        <li key={i} className="text-[14px] leading-[24px] text-muted-foreground sm:text-[15px] sm:leading-[26px]">
+          {text}
         </li>
       ))}
     </ul>
@@ -101,11 +87,16 @@ type HomeSeoFeatureCardProps = {
   children: React.ReactNode;
 };
 
+/** Pofo feature-box motif: thin frame, pink top bar grows on hover. */
 export function HomeSeoFeatureCard({ title, children }: HomeSeoFeatureCardProps) {
   return (
-    <div className="rounded-xl border border-border/50 bg-muted/20 p-4 transition-colors hover:bg-muted/35 sm:p-5">
-      <h3 className="font-heading text-base font-semibold tracking-tight text-foreground">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{children}</p>
+    <div className="group relative border border-border p-5 transition-colors hover:border-transparent hover:bg-pofo-light-gray">
+      <span
+        aria-hidden
+        className="absolute inset-x-0 top-0 h-0.5 origin-left scale-x-0 bg-deep-pink transition-transform duration-500 group-hover:scale-x-100"
+      />
+      <h3 className="alt-font text-[15px] font-semibold leading-[22px] text-pofo-heading">{title}</h3>
+      <p className="mt-2 text-[14px] leading-[24px] text-muted-foreground">{children}</p>
     </div>
   );
 }
