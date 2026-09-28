@@ -146,7 +146,7 @@ export function BlogIndexView({ locale, page }: Props) {
                       <span aria-hidden className="mt-auto block pt-5">
                         <span className="block h-px w-full bg-[#dbdbdb] dark:bg-pofo-line" />
                       </span>
-                      <time dateTime={d} className="alt-font mt-5 block text-[11px] uppercase leading-[14px] tracking-[0.5px] text-pofo-medium-gray">
+                      <time dateTime={d} className="alt-font mt-5 block text-[11px] uppercase leading-[14px] tracking-[0.5px] text-muted-foreground">
                         {d}
                       </time>
                     </span>
@@ -169,7 +169,7 @@ export function BlogIndexView({ locale, page }: Props) {
                   {isRu ? 'Назад' : 'Înapoi'}
                 </Link>
               ) : null}
-              <span className="alt-font inline-flex items-center border-l border-border bg-pofo-light-gray px-[18px] text-[12px] font-medium uppercase leading-[40px] text-pofo-medium-gray first:border-l-0">
+              <span className="alt-font inline-flex items-center border-l border-border bg-pofo-light-gray px-[18px] text-[12px] font-medium uppercase leading-[40px] text-muted-foreground first:border-l-0">
                 {isRu ? 'Стр.' : 'Pag.'}
                 {' '}
                 {page}

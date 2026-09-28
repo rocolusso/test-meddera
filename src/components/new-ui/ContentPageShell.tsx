@@ -167,7 +167,7 @@ export function ContentArticleBody({
         '[:where(&)_p_a]:font-medium [:where(&)_p_a]:text-accent-text [:where(&)_p_a]:underline-offset-4 [:where(&)_p_a:hover]:underline',
         '[:where(&)_li_a]:font-medium [:where(&)_li_a]:text-pofo-heading [:where(&)_li_a]:underline [:where(&)_li_a]:decoration-deep-pink/50 [:where(&)_li_a]:underline-offset-4 [:where(&)_li_a:hover]:text-deep-pink',
         '[:where(&)_blockquote]:my-10 [:where(&)_blockquote]:border-l-2 [:where(&)_blockquote]:border-deep-pink [:where(&)_blockquote]:py-4 [:where(&)_blockquote]:pl-10 [:where(&)_blockquote]:text-[18px] [:where(&)_blockquote]:font-light [:where(&)_blockquote]:leading-[30px]',
-        '[:where(&)_nav]:alt-font [:where(&)_nav]:mb-6 [:where(&)_nav]:text-[12px] [:where(&)_nav]:uppercase [:where(&)_nav]:leading-5 [:where(&)_nav]:tracking-[0.5px] [:where(&)_nav]:text-pofo-medium-gray',
+        '[:where(&)_nav]:alt-font [:where(&)_nav]:mb-6 [:where(&)_nav]:text-[12px] [:where(&)_nav]:uppercase [:where(&)_nav]:leading-5 [:where(&)_nav]:tracking-[0.5px] [:where(&)_nav]:text-muted-foreground',
         '[:where(&)_nav_a]:text-inherit [:where(&)_nav_a]:no-underline [:where(&)_nav_a:hover]:text-accent-text',
         className ?? '',
       ].join(' ')}

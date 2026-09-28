@@ -2,7 +2,7 @@
  * Pofo (blog-post-layout-01) class names for blog article / hub bodies.
  * Presentation only; content and structure live in the *Body.tsx files.
  */
-const metaBase = 'alt-font text-[12px] uppercase leading-5 tracking-[0.5px] text-pofo-medium-gray';
+const metaBase = 'alt-font text-[12px] uppercase leading-5 tracking-[0.5px] text-muted-foreground';
 
 export const blogUi = {
   breadcrumbs: `${metaBase} mb-6`,
@@ -36,5 +36,5 @@ export const blogUi = {
   /** Pofo btn-dark-gray. */
   backButton:
     'alt-font inline-block border-2 border-[#232323] bg-[#232323] px-[34px] py-[9px] text-[12px] font-semibold uppercase leading-[25px] tracking-[0.5px] text-white transition-colors duration-300 hover:bg-transparent hover:text-pofo-heading dark:border-white/25 dark:bg-white/10 dark:hover:bg-transparent',
-  footerDisclaimer: 'border-t border-border pt-6 text-[13px] leading-[22px] text-pofo-medium-gray',
+  footerDisclaimer: 'border-t border-border pt-6 text-[13px] leading-[22px] text-muted-foreground',
 } as const;
