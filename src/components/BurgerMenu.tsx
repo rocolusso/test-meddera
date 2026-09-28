@@ -2,10 +2,8 @@
 
 import React, { useEffect, useRef } from 'react';
 
-import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
-import { getAlternateLocalePath } from '@/lib/locale-switch';
 import { NAV_LINKS } from '@/lib/nav-links';
 
 function MenuIcon({ className }: { className?: string }) {
@@ -50,9 +48,7 @@ function BurgerMenu({ locale }: { locale: string }) {
   const wrapRef = useRef<HTMLDivElement>(null);
 
   const router = useRouter();
-  const pathname = usePathname();
   const loc = locale === 'ru' ? 'ru' : 'ro';
-  const localeSwitchHref = getAlternateLocalePath(pathname ?? '/', loc);
 
   const go = (href: string) => {
     router.push(href);
@@ -100,14 +96,6 @@ function BurgerMenu({ locale }: { locale: string }) {
               <ChevronRightIcon className="size-4 shrink-0 opacity-60" />
             </button>
           ))}
-          <Link
-            href={localeSwitchHref}
-            role="menuitem"
-            className="mx-5 my-4 flex items-center justify-center border border-white/30 px-3 py-2.5 alt-font text-[12px] font-semibold uppercase tracking-[1px] text-white transition-colors hover:border-deep-pink hover:text-deep-pink"
-            onClick={() => setOpen(false)}
-          >
-            {loc === 'ru' ? 'RO' : 'RU'}
-          </Link>
         </div>
       ) : null}
     </div>
