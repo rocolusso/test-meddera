@@ -62,7 +62,7 @@ export function BlogIndexView({ locale, page }: Props) {
                 const ownHref = isRu ? `/blog/${hubSlugRu}` : `/ro/blog/${hubSlugRo}`;
 
                 return (
-                  <SectionReveal key={hub.id} delay={REVEAL_DELAYS[i % 3]} className="group text-center sm:text-left">
+                  <SectionReveal key={hub.id} delay={REVEAL_DELAYS[i % 3]} immediate={i < 3} className="group text-center sm:text-left">
                     {cover ? (
                       <Link
                         href={ownHref}
@@ -75,6 +75,7 @@ export function BlogIndexView({ locale, page }: Props) {
                           alt=""
                           fill
                           sizes={CARD_IMAGE_SIZES}
+                          priority={i === 0}
                           className="object-cover transition-[transform,opacity] duration-300 ease-out group-hover:scale-110 group-hover:opacity-50 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                         />
                       </Link>

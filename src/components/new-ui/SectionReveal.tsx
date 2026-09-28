@@ -24,19 +24,22 @@ function SectionReveal({
   animation = 'fade-up',
   delay = 0,
   as = 'div',
+  immediate = false,
 }: {
   children: React.ReactNode;
   className?: string;
   animation?: Animation;
   delay?: Delay;
   as?: 'div' | 'li';
+  /** Render visible without animation (use for above-the-fold / LCP content). */
+  immediate?: boolean;
 }) {
   const ref = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(immediate);
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || immediate) return;
 
     if (
       window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
@@ -57,14 +60,18 @@ function SectionReveal({
     );
     obs.observe(el);
     return () => obs.disconnect();
-  }, []);
+  }, [immediate]);
 
   const Tag = as;
   return (
     <Tag
       ref={ref as React.Ref<never>}
-      className={cn('motion-safe-reveal', visible ? ANIMATION_CLASS[animation] : 'opacity-0', className)}
-      style={visible && delay ? { animationDelay: `${delay}ms` } : undefined}
+      className={cn(
+        'motion-safe-reveal',
+        immediate ? null : visible ? ANIMATION_CLASS[animation] : 'opacity-0',
+        className,
+      )}
+      style={visible && delay && !immediate ? { animationDelay: `${delay}ms` } : undefined}
     >
       {children}
     </Tag>

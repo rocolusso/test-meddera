@@ -9,7 +9,16 @@ import SectionReveal from '@/components/new-ui/SectionReveal';
 type Locale = 'ru' | 'ro';
 
 /** Pofo blog-post-style1 card: dark image well, zoom + fade on hover, title, thin rule. */
-function ServiceCard({ service, locale }: { service: ServiceLink; locale: Locale }) {
+function ServiceCard({
+  service,
+  locale,
+  eager = false,
+}: {
+  service: ServiceLink;
+  locale: Locale;
+  /** First row on /services (LCP candidate): load eagerly instead of lazy. */
+  eager?: boolean;
+}) {
   const alt =
     locale === 'ro'
       ? `${service.title} — Meddera, Bălți`
@@ -25,7 +34,8 @@ function ServiceCard({ service, locale }: { service: ServiceLink; locale: Locale
             alt={alt}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            loading="lazy"
+            loading={eager ? 'eager' : 'lazy'}
+            fetchPriority={eager ? 'high' : undefined}
           />
         </Link>
       </div>
@@ -76,8 +86,9 @@ function ServicesNew({
               key={service.id}
               as="li"
               delay={([0, 200, 400] as const)[i % 3]}
+              immediate={i < 3}
             >
-              <ServiceCard service={service} locale={loc} />
+              <ServiceCard service={service} locale={loc} eager={titleAs === 'h1' && i < 3} />
             </SectionReveal>
           ))}
         </ul>
