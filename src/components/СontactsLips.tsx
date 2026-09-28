@@ -16,6 +16,15 @@ import { useContactFormAntiSpam } from '@/hooks/useContactFormAntiSpam';
 import { getFormTokenUnavailableMessage } from '@/lib/contact-form-token-client';
 import { ContactFormSubmittingStatus } from '@/components/ContactFormSubmittingStatus';
 import ClinicConsultationInfo from '@/components/ClinicConsultationInfo';
+import SectionHeading from '@/components/pofo/SectionHeading';
+import {
+  contactAlertErrorClass,
+  contactAlertSuccessClass,
+  contactCardTitleClass,
+  contactFieldClass,
+  contactFieldErrorClass,
+  contactIconRoundClass,
+} from '@/components/contact-form-ui';
 import { sendGa4Event } from '@/lib/ga4-worker-client';
 
 function ContactsLips({ locale }:{ locale:string }) {
@@ -178,23 +187,14 @@ function ContactsLips({ locale }:{ locale:string }) {
     }, 3000);
   };
 
-  const fieldClass = (hasError: boolean) =>
-    [
-      'w-full mt-2 rounded-lg border bg-card py-3 px-3 font-semibold text-foreground shadow-sm transition-colors placeholder:text-muted-foreground focus:outline-none focus:ring-2',
-      hasError
-        ? 'border-red-600 focus:border-red-600 focus:ring-red-500/35 dark:border-red-500'
-        : 'border-border focus:border-ring focus:ring-ring/35',
-    ].join(' ');
+  const fieldClass = contactFieldClass;
 
   return (
     <div className="contacts-lips scroll-mt-28 border-t border-border bg-background text-foreground" id="contacts">
 
-      <div className="container mx-auto max-w-6xl px-4 py-14 sm:px-5 sm:py-20">
+      <div className="pofo-container section-y">
         <div className="text-center">
-          <p className="mx-auto w-fit px-4 py-3 text-[clamp(1.5rem,4vw,2.75rem)] font-semibold leading-tight tracking-tight text-foreground">
-            {locale === 'ru' ? 'Контакты' : 'Contacte'}
-          </p>
-          <div className="mx-auto mt-4 h-px w-16 bg-border" aria-hidden />
+          <SectionHeading as="p" separator title={locale === 'ru' ? 'Контакты' : 'Contacte'} />
         </div>
 
         <div className="new__contacts" id="contacts">
@@ -205,9 +205,9 @@ function ContactsLips({ locale }:{ locale:string }) {
               <div className="mt-10 overflow-hidden sm:mt-12">
                 <div className="grid grid-cols-1 gap-10 py-6 md:grid-cols-2 md:gap-12 md:py-8 lg:gap-14">
 
-                  <div className="form__block__wrapper rounded-xl border border-border bg-card shadow-lg sm:rounded-xl">
+                  <div className="form__block__wrapper bg-card shadow-pofo">
                     <div className="mx-auto mt-6 flex justify-center px-4 sm:mt-8">
-                      <p className="mt-2 text-center font-heading text-2xl font-semibold leading-tight tracking-tight text-foreground">
+                      <p className={`mt-2 ${contactCardTitleClass}`}>
                         {locale === 'ru' ? 'Запись на консультацию' : 'Programare pentru consultanță'}
                       </p>
                     </div>
@@ -235,7 +235,7 @@ function ContactsLips({ locale }:{ locale:string }) {
                             }}
                           />
                           {fieldErrors.username ? (
-                            <p className="mt-1.5 text-sm text-red-600 dark:text-red-400" role="alert">
+                            <p className={contactFieldErrorClass} role="alert">
                               {fieldErrors.username}
                             </p>
                           ) : null}
@@ -259,7 +259,7 @@ function ContactsLips({ locale }:{ locale:string }) {
                             countrySelectProps={{ id: 'contact-phone-country' }}
                           />
                           {fieldErrors.userphone ? (
-                            <p className="mt-1.5 text-sm text-red-600 dark:text-red-400" role="alert">
+                            <p className={contactFieldErrorClass} role="alert">
                               {fieldErrors.userphone}
                             </p>
                           ) : null}
@@ -280,7 +280,7 @@ function ContactsLips({ locale }:{ locale:string }) {
                             }}
                           />
                           {fieldErrors.message ? (
-                            <p className="mt-1.5 text-sm text-red-600 dark:text-red-400" role="alert">
+                            <p className={contactFieldErrorClass} role="alert">
                               {fieldErrors.message}
                             </p>
                           ) : null}
@@ -294,7 +294,7 @@ function ContactsLips({ locale }:{ locale:string }) {
                                   id="formSubmitError"
                                 >
                                   <p
-                                    className="mb-5 rounded-lg border border-red-600 bg-red-50 p-4 text-sm text-red-800 dark:border-red-500/50 dark:bg-red-950/50 dark:text-red-100"
+                                    className={contactAlertErrorClass}
                                     role="alert"
                                   >
                                     {submitError}
@@ -310,7 +310,7 @@ function ContactsLips({ locale }:{ locale:string }) {
                                   id="formSubmitAlert"
                                 >
                                   <p
-                                    className="mb-5 rounded-lg border border-green-600 bg-green-50 p-4 text-sm text-green-800 dark:border-green-500/50 dark:bg-green-950/40 dark:text-green-100"
+                                    className={contactAlertSuccessClass}
                                     role="status"
                                   >
                                     {locale === 'ru'
@@ -338,9 +338,9 @@ function ContactsLips({ locale }:{ locale:string }) {
                         />
 
                         <Button
-                          className="mt-6 w-full font-bold sm:w-fit"
-                          variant="default"
-                          size="lg"
+                          className="mt-6 w-full sm:w-fit"
+                          variant="pofo"
+                          size="pofo"
                           type="submit"
                           disabled={locked}
                         >
@@ -355,10 +355,10 @@ function ContactsLips({ locale }:{ locale:string }) {
                     </form>
                   </div>
 
-                  <div className="rounded-xl border border-border/80 bg-muted p-5 sm:p-6">
+                  <div className="bg-pofo-light-gray p-5 sm:p-8">
                     <div>
                       <Image
-                        className="w-full sm:rounded-md"
+                        className="w-full"
                         src={imgAddress}
                         alt="address"
                         width={400}
@@ -369,24 +369,24 @@ function ContactsLips({ locale }:{ locale:string }) {
                     <div className="contacts__buttons">
                       <div className="mt-6 flex flex-col items-center gap-5">
 
-                        <div className="flex items-center justify-center gap-2 transition-colors duration-200 hover:text-brand-gold">
-                          <div className="group -mx-1 flex min-w-0 items-start gap-3.5 rounded-lg px-1 py-1 text-foreground transition-colors hover:text-brand-gold sm:items-center">
+                        <div className="flex items-center justify-center gap-2 transition-colors duration-200 hover:text-deep-pink">
+                          <div className="group -mx-1 flex min-w-0 items-start gap-3.5 px-1 py-1 text-pofo-heading transition-colors hover:text-deep-pink sm:items-center">
                             <span
-                              className="mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-full bg-muted/45 text-brand-gold transition-colors group-hover:bg-muted group-hover:text-brand-gold sm:mt-0"
+                              className={contactIconRoundClass}
                               aria-hidden
                             >
                               <FaMapLocationDot className="size-[18px] opacity-90" />
                             </span>
-                            <span className="min-w-0 flex-1 break-words text-left text-xs font-medium uppercase leading-relaxed tracking-wide text-foreground/95 sm:text-sm sm:font-semibold sm:normal-case sm:tracking-normal">
+                            <span className="alt-font min-w-0 flex-1 break-words text-left text-[12px] font-semibold uppercase leading-relaxed tracking-[0.5px] sm:text-[13px]">
                               Balti, Stefan Cel Mare, 13
                             </span>
                           </div>
                         </div>
 
                         <Button
-                          className="btnCallPhoneContactForm mt-2 w-full font-bold sm:w-fit"
-                          variant="default"
-                          size="lg"
+                          className="btnCallPhoneContactForm mt-2 w-full gap-2 sm:w-fit"
+                          variant="pofoDark"
+                          size="pofo"
                           type="button"
                           onClick={callPhone}
                           id="btnCallPhoneContactForm"

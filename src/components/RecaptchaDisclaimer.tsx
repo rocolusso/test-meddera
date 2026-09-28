@@ -7,7 +7,7 @@ export default function RecaptchaDisclaimer({ locale }: { locale: string }) {
           Этот сайт защищён reCAPTCHA. Действуют
           {' '}
           <a
-            className="underline text-foreground/80 transition-colors hover:text-brand-gold"
+            className="underline text-foreground/80 transition-colors hover:text-deep-pink"
             href="https://policies.google.com/privacy"
             rel="noopener noreferrer"
             target="_blank"
@@ -18,7 +18,7 @@ export default function RecaptchaDisclaimer({ locale }: { locale: string }) {
           и
           {' '}
           <a
-            className="underline text-foreground/80 transition-colors hover:text-brand-gold"
+            className="underline text-foreground/80 transition-colors hover:text-deep-pink"
             href="https://policies.google.com/terms"
             rel="noopener noreferrer"
             target="_blank"
@@ -33,7 +33,7 @@ export default function RecaptchaDisclaimer({ locale }: { locale: string }) {
           Acest site este protejat de reCAPTCHA. Se aplică
           {' '}
           <a
-            className="underline text-foreground/80 transition-colors hover:text-brand-gold"
+            className="underline text-foreground/80 transition-colors hover:text-deep-pink"
             href="https://policies.google.com/privacy"
             rel="noopener noreferrer"
             target="_blank"
@@ -44,7 +44,7 @@ export default function RecaptchaDisclaimer({ locale }: { locale: string }) {
           și
           {' '}
           <a
-            className="underline text-foreground/80 transition-colors hover:text-brand-gold"
+            className="underline text-foreground/80 transition-colors hover:text-deep-pink"
             href="https://policies.google.com/terms"
             rel="noopener noreferrer"
             target="_blank"
