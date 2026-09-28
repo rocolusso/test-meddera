@@ -58,7 +58,7 @@ export default function RoBlogIndexPage() {
       />
       <HeaderNew locale="ro" />
       <main className="min-h-[50vh] bg-background">
-        <div className="bg-white">
+        <div className="bg-background">
           <BlogIndexView locale="ro" page={1} />
         </div>
         <BlogIndexSeoContent locale="ro" page={1} />

@@ -90,7 +90,7 @@ export default async function BlogIndexPaginatedPage({ params }: Props) {
       />
       <HeaderNew locale="ru" />
       <main className="min-h-[50vh] bg-background">
-        <div className="bg-white">
+        <div className="bg-background">
           <BlogIndexView locale="ru" page={page} />
         </div>
         <BlogIndexSeoContent locale="ru" page={page} />

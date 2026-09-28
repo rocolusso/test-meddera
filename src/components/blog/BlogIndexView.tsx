@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 import type { BlogLocale } from '@/blog-data/types';
 import {
@@ -7,11 +9,22 @@ import {
   getMaxIndexPage,
   getPostsForIndexPage,
 } from '@/blog-data/registry';
+import { getBlogClusterImage } from '@/lib/blog-cluster-image';
+import PageTitleMini from '@/components/pofo/PageTitleMini';
+import SectionHeading from '@/components/pofo/SectionHeading';
+import SectionReveal from '@/components/new-ui/SectionReveal';
 
 type Props = {
   locale: BlogLocale;
   page: number;
 };
+
+const REVEAL_DELAYS = [0, 200, 400] as const;
+const CARD_IMAGE_SIZES = '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw';
+
+/** Pofo pagination cell. */
+const pageCellClass =
+  'alt-font inline-flex items-center gap-1.5 border-l border-border px-[18px] text-[12px] font-medium uppercase leading-[40px] text-pofo-heading transition-colors first:border-l-0 hover:bg-[#232323] hover:text-white';
 
 export function BlogIndexView({ locale, page }: Props) {
   const isRu = locale === 'ru';
@@ -27,109 +40,155 @@ export function BlogIndexView({ locale, page }: Props) {
   const empty = isRu ? 'Скоро здесь появятся новые материалы.' : 'În curând vor apărea materiale noi.';
 
   return (
-    <div className="container mx-auto max-w-3xl px-5 py-10">
-      <nav className="text-sm text-gray-500 mb-6" aria-label={isRu ? 'Хлебные крошки' : 'Breadcrumb'}>
-        <Link href={home} className="underline hover:text-gray-800">{isRu ? 'Главная' : 'Acasă'}</Link>
-        <span className="mx-2">/</span>
-        <span className="text-gray-800">{title}</span>
-      </nav>
+    <>
+      <PageTitleMini
+        title={title}
+        breadcrumbsLabel={isRu ? 'Хлебные крошки' : 'Breadcrumb'}
+        breadcrumbs={[{ href: home, label: isRu ? 'Главная' : 'Acasă' }, { label: title }]}
+      />
 
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">{title}</h1>
+      <div className="pofo-container section-y">
+        {allHubs.length > 0 ? (
+          <section className="mb-[70px] md:mb-[100px]">
+            <SectionHeading as="h2" title={rubricsTitle} separator className="mb-12 md:mb-[70px]" />
+            {/* Pofo blog-classic */}
+            <div className="grid gap-x-[30px] gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+              {allHubs.map((hub, i) => {
+                const hubTitle = isRu ? hub.titleRu : hub.titleRo;
+                const hubExcerpt = isRu ? hub.excerptRu : hub.excerptRo;
+                const hubSlugRu = hub.slugRu;
+                const hubSlugRo = hub.slugRo;
+                const cover = getBlogClusterImage(hub.clusterId);
+                const ownHref = isRu ? `/blog/${hubSlugRu}` : `/ro/blog/${hubSlugRo}`;
 
-      {allHubs.length > 0 ? (
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">{rubricsTitle}</h2>
-          <div className="grid gap-6 sm:grid-cols-2">
-            {allHubs.map((hub) => {
-              const hubTitle = isRu ? hub.titleRu : hub.titleRo;
-              const hubExcerpt = isRu ? hub.excerptRu : hub.excerptRo;
-              const hubSlugRu = hub.slugRu;
-              const hubSlugRo = hub.slugRo;
-              
+                return (
+                  <SectionReveal key={hub.id} delay={REVEAL_DELAYS[i % 3]} className="group text-center sm:text-left">
+                    {cover ? (
+                      <Link
+                        href={ownHref}
+                        tabIndex={-1}
+                        aria-hidden
+                        className="relative mb-6 block aspect-[16/10] overflow-hidden bg-muted transition-colors duration-300 group-hover:bg-[#232323]"
+                      >
+                        <Image
+                          src={cover}
+                          alt=""
+                          fill
+                          sizes={CARD_IMAGE_SIZES}
+                          className="object-cover transition-[transform,opacity] duration-300 ease-out group-hover:scale-110 group-hover:opacity-50 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+                        />
+                      </Link>
+                    ) : null}
+                    <h3 className="alt-font text-[16px] font-semibold leading-[23px] text-pofo-heading">
+                      {hubTitle.replace(' | Meddera', '').replace(': гид по', '').replace(': ghid despre', '')}
+                    </h3>
+                    <span aria-hidden className="my-5 block h-px w-full bg-border" />
+                    <p className="text-[14px] leading-[24px] text-muted-foreground">{hubExcerpt}</p>
+                    <div className="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-2 sm:justify-start">
+                      <Link
+                        href={`/blog/${hubSlugRu}`}
+                        className="alt-font border-b border-current pb-0.5 text-[12px] font-semibold uppercase tracking-[0.5px] text-pofo-heading transition-colors hover:text-deep-pink"
+                      >
+                        {isRu ? 'Открыть (RU)' : 'Ghid RU'}
+                      </Link>
+                      <Link
+                        href={`/ro/blog/${hubSlugRo}`}
+                        className="alt-font border-b border-current pb-0.5 text-[12px] font-semibold uppercase tracking-[0.5px] text-pofo-heading transition-colors hover:text-deep-pink"
+                      >
+                        {isRu ? 'Ghid RO' : 'Deschide (RO)'}
+                      </Link>
+                    </div>
+                  </SectionReveal>
+                );
+              })}
+            </div>
+          </section>
+        ) : null}
+
+        <SectionHeading as="h2" title={listTitle} separator className="mb-12 md:mb-[70px]" />
+        {posts.length === 0 ? (
+          <p className="text-center text-muted-foreground">{empty}</p>
+        ) : (
+          /* Pofo blog-grid (blog-post-style3) */
+          <ul className="grid list-none gap-[30px] sm:grid-cols-2 lg:grid-cols-3">
+            {posts.map((post, i) => {
+              const href = isRu ? `/blog/${post.slugRu}` : `/ro/blog/${post.slugRo}`;
+              const t = isRu ? post.titleRu : post.titleRo;
+              const ex = isRu ? post.excerptRu : post.excerptRo;
+              const d = isRu ? post.publishedAt : post.publishedAt;
+              const cover = getBlogClusterImage(post.clusterId);
               return (
-                <div
-                  key={hub.id}
-                  className="rounded-lg border border-green-200 bg-green-50/80 p-5 hover:border-green-300 transition-colors"
-                >
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {hubTitle.replace(' | Meddera', '').replace(': гид по', '').replace(': ghid despre', '')}
-                  </h3>
-                  <p className="text-gray-700 text-sm mb-4">{hubExcerpt}</p>
-                  <div className="flex flex-wrap gap-3">
-                    <Link
-                      href={`/blog/${hubSlugRu}`}
-                      className="text-green-800 font-medium text-sm underline hover:text-green-950"
-                    >
-                      {isRu ? 'Открыть (RU)' : 'Ghid RU'}
-                    </Link>
-                    <Link
-                      href={`/ro/blog/${hubSlugRo}`}
-                      className="text-green-800 font-medium text-sm underline hover:text-green-950"
-                    >
-                      {isRu ? 'Ghid RO' : 'Deschide (RO)'}
-                    </Link>
-                  </div>
-                </div>
+                <SectionReveal as="li" key={post.id} delay={REVEAL_DELAYS[i % 3]}>
+                  <Link href={href} className="group flex h-full flex-col bg-pofo-light-gray text-center sm:text-left">
+                    {cover ? (
+                      <span className="relative block aspect-[16/10] overflow-hidden bg-muted">
+                        <Image
+                          src={cover}
+                          alt=""
+                          fill
+                          sizes={CARD_IMAGE_SIZES}
+                          loading={i < 3 ? 'eager' : 'lazy'}
+                          className="object-cover"
+                        />
+                        <span
+                          aria-hidden
+                          className="absolute inset-0 flex items-center justify-center bg-black/50 text-[48px] font-light leading-none text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                        >
+                          <span className="translate-y-3 transition-transform duration-300 group-hover:translate-y-0 motion-reduce:translate-y-0">+</span>
+                        </span>
+                      </span>
+                    ) : null}
+                    <span className="flex flex-1 flex-col p-5 md:p-10">
+                      <span className="alt-font block text-[16px] font-medium leading-[23px] text-pofo-heading transition-colors group-hover:text-deep-pink">
+                        {t.replace(' | Meddera', '')}
+                      </span>
+                      <p className="mt-4 text-[14px] leading-[24px] text-muted-foreground">{ex}</p>
+                      <span aria-hidden className="mt-auto block pt-5">
+                        <span className="block h-px w-full bg-[#dbdbdb] dark:bg-pofo-line" />
+                      </span>
+                      <time dateTime={d} className="alt-font mt-5 block text-[11px] uppercase leading-[14px] tracking-[0.5px] text-pofo-medium-gray">
+                        {d}
+                      </time>
+                    </span>
+                  </Link>
+                </SectionReveal>
               );
             })}
-          </div>
-        </section>
-      ) : null}
+          </ul>
+        )}
 
-      <h2 className="text-lg font-semibold text-gray-800 mb-4">{listTitle}</h2>
-      {posts.length === 0 ? (
-        <p className="text-gray-600">{empty}</p>
-      ) : (
-        <ul className="space-y-6">
-          {posts.map((post) => {
-            const href = isRu ? `/blog/${post.slugRu}` : `/ro/blog/${post.slugRo}`;
-            const t = isRu ? post.titleRu : post.titleRo;
-            const ex = isRu ? post.excerptRu : post.excerptRo;
-            const d = isRu ? post.publishedAt : post.publishedAt;
-            return (
-              <li key={post.id} className="border-b border-gray-100 pb-6">
-                <Link href={href} className="group">
-                  <span className="block text-xl font-semibold text-gray-900 group-hover:text-green-800 underline-offset-2 group-hover:underline">
-                    {t.replace(' | Meddera', '')}
-                  </span>
-                  <time dateTime={d} className="text-sm text-gray-500 mt-1 block">
-                    {d}
-                  </time>
-                  <p className="text-gray-600 mt-2 text-sm leading-relaxed">{ex}</p>
+        {maxPage > 1 ? (
+          <nav className="mt-[65px] flex justify-center" aria-label={isRu ? 'Страницы' : 'Pagini'}>
+            <div className="inline-flex border border-border bg-background">
+              {page > 1 ? (
+                <Link
+                  href={page === 2 ? base : `${base}/page/${page - 1}`}
+                  className={pageCellClass}
+                >
+                  <ArrowLeft aria-hidden className="hidden size-3.5 md:inline-block" />
+                  {isRu ? 'Назад' : 'Înapoi'}
                 </Link>
-              </li>
-            );
-          })}
-        </ul>
-      )}
-
-      {maxPage > 1 ? (
-        <nav className="mt-10 flex flex-wrap items-center gap-4 text-sm" aria-label={isRu ? 'Страницы' : 'Pagini'}>
-          {page > 1 ? (
-            <Link
-              href={page === 2 ? base : `${base}/page/${page - 1}`}
-              className="underline text-gray-800 hover:text-green-800"
-            >
-              {isRu ? 'Назад' : 'Înapoi'}
-            </Link>
-          ) : null}
-          <span className="text-gray-500">
-            {isRu ? 'Стр.' : 'Pag.'}
-            {' '}
-            {page}
-            {' / '}
-            {maxPage}
-          </span>
-          {page < maxPage ? (
-            <Link
-              href={`${base}/page/${page + 1}`}
-              className="underline text-gray-800 hover:text-green-800"
-            >
-              {isRu ? 'Вперёд' : 'Înainte'}
-            </Link>
-          ) : null}
-        </nav>
-      ) : null}
-    </div>
+              ) : null}
+              <span className="alt-font inline-flex items-center border-l border-border bg-pofo-light-gray px-[18px] text-[12px] font-medium uppercase leading-[40px] text-pofo-medium-gray first:border-l-0">
+                {isRu ? 'Стр.' : 'Pag.'}
+                {' '}
+                {page}
+                {' / '}
+                {maxPage}
+              </span>
+              {page < maxPage ? (
+                <Link
+                  href={`${base}/page/${page + 1}`}
+                  className={pageCellClass}
+                >
+                  {isRu ? 'Вперёд' : 'Înainte'}
+                  <ArrowRight aria-hidden className="hidden size-3.5 md:inline-block" />
+                </Link>
+              ) : null}
+            </div>
+          </nav>
+        ) : null}
+      </div>
+    </>
   );
 }

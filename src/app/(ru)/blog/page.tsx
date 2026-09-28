@@ -58,7 +58,7 @@ export default function BlogIndexPage() {
       />
       <HeaderNew locale="ru" />
       <main className="min-h-[50vh] bg-background">
-        <div className="bg-white">
+        <div className="bg-background">
           <BlogIndexView locale="ru" page={1} />
         </div>
         <BlogIndexSeoContent locale="ru" page={1} />
