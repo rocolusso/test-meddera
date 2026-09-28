@@ -3,14 +3,15 @@ import Image from 'next/image';
 
 import aboutImg from '../../../public/assets/img/about_2k.jpg';
 import { aboutCopy } from '@/lib/about-content';
+import SectionReveal from '@/components/new-ui/SectionReveal';
 
 function TextList({ items }: { items: string[] }) {
   return (
-    <ul className="space-y-3.5">
+    <ul className="pofo-list-dash space-y-3.5">
       {items.map((text, i) => (
         <li key={i}>
           <p
-            className={`before:pr-2.5 before:content-['✔︎'] text-[14px] leading-relaxed text-muted-foreground sm:text-[15px] ${text.includes('\n') ? 'whitespace-pre-line' : ''}`}
+            className={`text-[14px] leading-[24px] text-muted-foreground sm:text-[15px] sm:leading-[26px] ${text.includes('\n') ? 'whitespace-pre-line' : ''}`}
           >
             {text}
           </p>
@@ -20,8 +21,9 @@ function TextList({ items }: { items: string[] }) {
   );
 }
 
+/** Pofo h5-style section title (Montserrat 600). */
 const sectionTitleClass =
-  'text-[clamp(1.5rem,4vw,2.75rem)] font-semibold leading-tight tracking-tight text-foreground';
+  'alt-font text-[26px] font-semibold leading-[32px] text-pofo-heading md:text-[32px] md:leading-[40px] lg:text-[36px] lg:leading-[44px]';
 
 function AboutNew({
   locale,
@@ -34,71 +36,65 @@ function AboutNew({
   const loc = locale === 'ro' ? 'ro' : 'ru';
   const c = aboutCopy[loc];
   const specHeadingClass =
-    'font-heading text-center text-2xl font-semibold tracking-tight text-foreground sm:text-3xl lg:text-left';
+    'alt-font text-center text-[22px] font-semibold leading-[30px] text-pofo-heading sm:text-[26px] sm:leading-[34px] lg:text-left';
 
   return (
-    <section className="hero__about scroll-mt-28 border-b border-border/40 bg-gradient-to-b from-muted/15 via-background to-background" id="about">
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 md:py-20 lg:px-8">
-        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_min(340px,38vw)] lg:items-start lg:gap-12 xl:grid-cols-[minmax(0,1fr)_min(400px,36vw)] xl:gap-16">
-          <div className="order-2 space-y-10 lg:order-1 lg:space-y-12">
-            <header className="text-center lg:text-left">
-              {titleAs === 'h1' ? (
-                <h1 className={sectionTitleClass}>{c.sectionTitle}</h1>
-              ) : (
-                <h2 className={sectionTitleClass}>{c.sectionTitle}</h2>
-              )}
-              <div className="mx-auto mt-4 h-px w-16 bg-border lg:mx-0" aria-hidden />
-            </header>
-
-            <div className="space-y-5 text-center lg:text-left">
-              <p className="title-font inline-block rounded-full border border-border/60 bg-muted/50 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-foreground">
-                {c.badge}
-              </p>
-              <p className="font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                {c.name}
-              </p>
-            </div>
-
-            <div className="grid gap-5 sm:grid-cols-2 sm:gap-6">
-              <div className="rounded-2xl border border-border/50 bg-card/60 p-5 shadow-sm sm:p-6">
-                <TextList items={c.bioColumns[0]} />
-              </div>
-              <div className="rounded-2xl border border-border/50 bg-card/60 p-5 shadow-sm sm:p-6">
-                <TextList items={c.bioColumns[1]} />
-              </div>
-            </div>
-
-            <div className="space-y-6 pt-2">
-              {titleAs === 'h1' ? (
-                <h2 className={specHeadingClass}>{c.specializationTitle}</h2>
-              ) : (
-                <h3 className={specHeadingClass}>{c.specializationTitle}</h3>
-              )}
-              <div className="grid gap-5 sm:grid-cols-2 sm:gap-6">
-                <div className="rounded-2xl border border-border/50 bg-muted/25 p-5 sm:p-6">
-                  <TextList items={c.specColumns[0]} />
-                </div>
-                <div className="rounded-2xl border border-border/50 bg-muted/25 p-5 sm:p-6">
-                  <TextList items={c.specColumns[1]} />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <aside className="order-1 mb-10 lg:sticky lg:top-28 lg:order-2 lg:mb-0 lg:self-start">
-            <div className="relative mx-auto aspect-[4/5] max-w-md overflow-hidden rounded-2xl bg-muted shadow-lg ring-1 ring-border/40 lg:max-w-none lg:aspect-[3/4]">
+    <section className="hero__about scroll-mt-28 bg-background" id="about">
+      <div className="pofo-container section-y">
+        <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-[70px]">
+          {/* Photo: stays the LCP element, therefore never animated. */}
+          <aside className="relative mx-auto w-full max-w-md lg:sticky lg:top-28 lg:max-w-none">
+            <span
+              aria-hidden
+              className="pointer-events-none absolute -bottom-4 -right-4 hidden h-full w-full border border-deep-pink sm:block lg:-bottom-6 lg:-right-6"
+            />
+            <div className="relative aspect-[4/5] overflow-hidden bg-muted lg:aspect-[3/4]">
               <Image
                 src={aboutImg}
                 alt={c.imageAlt}
                 fill
                 className="object-cover object-top"
-                sizes="(max-width: 1024px) 100vw, 38vw"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
                 fetchPriority="high"
               />
             </div>
           </aside>
+
+          <div className="space-y-10 lg:space-y-12">
+            <header className="text-center lg:text-left">
+              <p className="eyebrow mb-3">{c.badge}</p>
+              {titleAs === 'h1' ? (
+                <h1 className={sectionTitleClass}>{c.sectionTitle}</h1>
+              ) : (
+                <h2 className={sectionTitleClass}>{c.sectionTitle}</h2>
+              )}
+              <p className="alt-font mt-5 text-[18px] font-semibold uppercase leading-[26px] tracking-[1px] text-pofo-heading">
+                {c.name}
+              </p>
+              <span aria-hidden className="mx-auto mt-5 block h-px w-[100px] bg-deep-pink lg:mx-0" />
+            </header>
+
+            <div className="grid gap-8 sm:grid-cols-2 sm:gap-10">
+              <TextList items={c.bioColumns[0]} />
+              <TextList items={c.bioColumns[1]} />
+            </div>
+          </div>
         </div>
+
+        <SectionReveal className="mt-14 bg-pofo-light-gray px-6 py-10 sm:px-10 md:mt-20 md:py-14 lg:px-14">
+          <div className="space-y-8">
+            {titleAs === 'h1' ? (
+              <h2 className={specHeadingClass}>{c.specializationTitle}</h2>
+            ) : (
+              <h3 className={specHeadingClass}>{c.specializationTitle}</h3>
+            )}
+            <div className="grid gap-8 sm:grid-cols-2 sm:gap-10">
+              <TextList items={c.specColumns[0]} />
+              <TextList items={c.specColumns[1]} />
+            </div>
+          </div>
+        </SectionReveal>
       </div>
     </section>
   );
