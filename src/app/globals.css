@@ -21,10 +21,9 @@ html {
   }
 }
 
-
-/* CSS variables. */
+/* CSS variables. Palette follows the Pofo template (base color #ff214f). */
 :root {
-  --PhoneInput-color--focus: #03b2cb;
+  --PhoneInput-color--focus: #ff214f;
   --PhoneInputInternationalIconPhone-opacity: 0.8;
   --PhoneInputInternationalIconGlobe-opacity: 0.65;
   --PhoneInputCountrySelect-marginRight: 0.35em;
@@ -41,27 +40,46 @@ html {
   --PhoneInputCountryFlag-borderColor: rgba(0,0,0,0.5);
   --PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus);
   --PhoneInputCountryFlag-backgroundColor--loading: rgba(0,0,0,0.1);
+
+  /* Self-hosted variable fonts (@fontsource-variable), imported in RootShell. */
+  --font-montserrat: 'Montserrat Variable';
+  --font-roboto: 'Roboto Variable';
+
+  /* Pofo palette */
+  --base-color: #ff214f;
+  --accent-text: #d6093a;
+  --pofo-heading: #232323;
+  --pofo-text: #6f6f6f;
+  --pofo-medium-gray: #939393;
+  --pofo-light-gray: #f7f7f7;
+  --pofo-very-light-gray: #fafafa;
+  --pofo-dark: #1c1c1c;
+  --pofo-darker: #141414;
+  --pofo-line: #373737;
+
+  /* Kept unchanged on purpose: excluded components (ads, review, cookies, cert) rely on it. */
   --radius: 0.625rem;
-  --background: oklch(0.995 0.004 95);
-  --foreground: oklch(0.16 0.012 265);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.16 0.012 265);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.16 0.012 265);
-  --primary: oklch(0.14 0.015 265);
-  --primary-foreground: oklch(0.99 0.002 95);
-  --secondary: oklch(0.96 0.01 95);
-  --secondary-foreground: oklch(0.2 0.015 265);
-  --muted: oklch(0.96 0.008 95);
-  --muted-foreground: oklch(0.45 0.02 265);
-  --accent: oklch(0.94 0.028 82);
-  --accent-foreground: oklch(0.18 0.02 265);
+
+  --background: #ffffff;
+  --foreground: #232323;
+  --card: #ffffff;
+  --card-foreground: #232323;
+  --popover: #ffffff;
+  --popover-foreground: #232323;
+  --primary: #ff214f;
+  --primary-foreground: #ffffff;
+  --secondary: #f7f7f7;
+  --secondary-foreground: #232323;
+  --muted: #f7f7f7;
+  --muted-foreground: #6f6f6f;
+  --accent: #f7f7f7;
+  --accent-foreground: #232323;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.9 0.012 95);
-  --input: oklch(0.9 0.012 95);
-  --ring: oklch(0.58 0.055 78);
-  --brand-gold: oklch(0.52 0.065 78);
-  --brand-gold-muted: oklch(0.72 0.04 82);
+  --border: #ededed;
+  --input: #dbdbdb;
+  --ring: #ff214f;
+  --brand-gold: var(--accent-text);
+  --brand-gold-muted: var(--base-color);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -77,9 +95,11 @@ html {
   --sidebar-ring: oklch(0.705 0.015 286.067);
 }
 
-
-
 @theme inline {
+  --font-sans: var(--font-roboto), 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-montserrat), 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-alt: var(--font-montserrat), 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -104,6 +124,15 @@ html {
   --color-ring: var(--ring);
   --color-brand-gold: var(--brand-gold);
   --color-brand-gold-muted: var(--brand-gold-muted);
+  --color-deep-pink: var(--base-color);
+  --color-accent-text: var(--accent-text);
+  --color-pofo-heading: var(--pofo-heading);
+  --color-pofo-text: var(--pofo-text);
+  --color-pofo-medium-gray: var(--pofo-medium-gray);
+  --color-pofo-light-gray: var(--pofo-light-gray);
+  --color-pofo-dark: var(--pofo-dark);
+  --color-pofo-darker: var(--pofo-darker);
+  --color-pofo-line: var(--pofo-line);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -117,6 +146,32 @@ html {
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  --shadow-pofo: 0 0 3px rgba(0, 0, 0, 0.2);
+  --shadow-pofo-lg: 0 0 12px rgba(0, 0, 0, 0.1);
+  --shadow-header: 0 0 35px rgba(0, 0, 0, 0.1);
+
+  --animate-fade-in: pofo-fade-in 0.7s ease-out both;
+  --animate-fade-in-up: pofo-fade-in-up 0.7s ease-out both;
+  --animate-fade-in-left: pofo-fade-in-left 0.7s ease-out both;
+  --animate-fade-in-right: pofo-fade-in-right 0.7s ease-out both;
+
+  @keyframes pofo-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes pofo-fade-in-up {
+    from { opacity: 0; transform: translate3d(0, 30px, 0); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes pofo-fade-in-left {
+    from { opacity: 0; transform: translate3d(-30px, 0, 0); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes pofo-fade-in-right {
+    from { opacity: 0; transform: translate3d(30px, 0, 0); }
+    to { opacity: 1; transform: none; }
+  }
 }
 
 /*
@@ -124,29 +179,33 @@ html {
 */
 
 .dark {
-  --background: oklch(0.13 0.018 265);
-  --foreground: oklch(0.97 0.006 95);
-  --card: oklch(0.17 0.02 265);
-  --card-foreground: oklch(0.97 0.006 95);
-  --popover: oklch(0.17 0.02 265);
-  --popover-foreground: oklch(0.97 0.006 95);
-  --primary: oklch(0.93 0.03 85);
-  --primary-foreground: oklch(0.14 0.02 265);
-  --secondary: oklch(0.22 0.02 265);
-  --secondary-foreground: oklch(0.96 0.01 95);
-  --muted: oklch(0.22 0.02 265);
-  --muted-foreground: oklch(0.72 0.02 95);
-  --accent: oklch(0.24 0.035 82);
-  --accent-foreground: oklch(0.97 0.01 95);
+  --accent-text: #ff214f;
+  --pofo-heading: #ffffff;
+  --pofo-text: #939393;
+  --pofo-light-gray: #1c1c1c;
+  --pofo-very-light-gray: #1c1c1c;
+
+  --background: #141414;
+  --foreground: #ffffff;
+  --card: #1c1c1c;
+  --card-foreground: #ffffff;
+  --popover: #1c1c1c;
+  --popover-foreground: #ffffff;
+  --primary: #ff214f;
+  --primary-foreground: #ffffff;
+  --secondary: #232323;
+  --secondary-foreground: #ffffff;
+  --muted: #232323;
+  --muted-foreground: #939393;
+  --accent: #232323;
+  --accent-foreground: #ffffff;
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(0.28 0.02 265);
-  --input: oklch(0.28 0.02 265);
-  --ring: oklch(0.72 0.08 82);
-  --brand-gold: oklch(0.78 0.09 82);
-  --brand-gold-muted: oklch(0.62 0.06 78);
+  --border: #373737;
+  --input: #373737;
+  --ring: #ff214f;
   --PhoneInputCountryFlag-borderColor: rgba(255, 255, 255, 0.28);
   --PhoneInputCountryFlag-backgroundColor--loading: rgba(255, 255, 255, 0.06);
-  --PhoneInput-color--focus: oklch(0.72 0.08 82);
+  --PhoneInput-color--focus: #ff214f;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -171,7 +230,104 @@ html {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  ::selection {
+    color: #000;
+    background: #dbdbdb;
   }
 }
 
+/* ── Pofo utilities ─────────────────────────────────────────── */
+
+@utility alt-font {
+  font-family: var(--font-alt);
+  font-weight: 500;
+}
+
+/* Section vertical rhythm (style.css + responsive.css of Pofo). */
+@utility section-y {
+  padding-block: 50px;
+  @media (min-width: 768px) { padding-block: 75px; }
+  @media (min-width: 992px) { padding-block: 90px; }
+  @media (min-width: 1200px) { padding-block: 130px; }
+}
+
+@utility section-y-half {
+  padding-block: 25px;
+  @media (min-width: 768px) { padding-block: 40px; }
+  @media (min-width: 1200px) { padding-block: 80px; }
+}
+
+/* Small uppercase caption above headings. */
+@utility eyebrow {
+  font-family: var(--font-alt);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--accent-text);
+}
+
+/* list-style-3: short pink dash as bullet. */
+@utility pofo-list-dash {
+  list-style: none;
+  padding-left: 0;
+  & > li {
+    position: relative;
+    padding-left: 22px;
+  }
+  & > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.75em;
+    width: 10px;
+    height: 1px;
+    background-color: var(--base-color);
+  }
+}
+
+@utility pofo-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+/*
+ * Theme-aware remap for legacy hardcoded Tailwind palette classes (gray/green/yellow)
+ * inside long-form content: safety net for markup that was not migrated by class.
+ */
+.pofo-remap {
+  --color-gray-50: var(--pofo-light-gray);
+  --color-gray-100: var(--border);
+  --color-gray-200: var(--border);
+  --color-gray-500: var(--muted-foreground);
+  --color-gray-600: var(--muted-foreground);
+  --color-gray-700: var(--muted-foreground);
+  --color-gray-800: var(--foreground);
+  --color-gray-900: var(--foreground);
+  --color-gray-950: var(--foreground);
+  --color-green-50: var(--pofo-light-gray);
+  --color-green-200: var(--border);
+  --color-green-300: var(--base-color);
+  --color-green-600: var(--pofo-heading);
+  --color-green-700: var(--accent-text);
+  --color-green-800: var(--accent-text);
+  --color-green-900: var(--foreground);
+  --color-green-950: var(--foreground);
+  --color-yellow-50: var(--pofo-light-gray);
+  --color-yellow-200: var(--border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-safe-reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

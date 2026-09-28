@@ -1,4 +1,6 @@
 import React from 'react';
+import '@fontsource-variable/montserrat/wght.css';
+import '@fontsource-variable/roboto/wght.css';
 
 import DeferredAhrefs from '@/components/DeferredAhrefs';
 import DeferredClarity from '@/components/DeferredClarity';

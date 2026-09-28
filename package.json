@@ -29,6 +29,8 @@
     "verify:blog-content": "node scripts/verify-blog-metadata-content.mjs"
   },
   "dependencies": {
+    "@fontsource-variable/montserrat": "^5.3.0",
+    "@fontsource-variable/roboto": "^5.3.0",
     "@next/third-parties": "^16.2.4",
     "@radix-ui/react-dropdown-menu": "^2.1.14",
     "@radix-ui/react-navigation-menu": "^1.2.12",
