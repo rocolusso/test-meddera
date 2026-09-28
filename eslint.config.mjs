@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint';
 
 const config = [
   {
-    ignores: ['.next/**', 'out/**', 'dist/**', 'node_modules/**', 'next-env.d.ts', 'eslint.config.mjs'],
+    ignores: ['.next/**', 'out/**', 'dist/**', 'node_modules/**', 'next-env.d.ts', 'eslint.config.mjs', 'pofo/**'],
     linterOptions: {
       reportUnusedDisableDirectives: 'off',
     },
