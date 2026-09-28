@@ -16,7 +16,7 @@ export default function ClinicConsultationInfo({ locale, compact = false }: Prop
   return (
     <div className="working-time-message mx-auto flex max-w-[520px] flex-col items-center justify-center px-2">
       <div className="pb-3 text-center">
-        <p className={`uppercase text-muted-foreground ${textClass}`}>
+        <p className={`alt-font uppercase tracking-[0.5px] text-muted-foreground ${textClass}`}>
           {locale === 'ru' ? 'Часы работы по предварительной записи:' : 'Program de lucru doar cu programare prealabilă:'}
           {' '}
           {copy.hoursRange.replace('–', ' - ')}
@@ -30,15 +30,15 @@ export default function ClinicConsultationInfo({ locale, compact = false }: Prop
       </div>
 
       <div className="pb-3 text-center">
-        <p className={`capitalize text-muted-foreground ${textClass}`}>
+        <p className={`alt-font capitalize text-muted-foreground ${textClass}`}>
           {locale === 'ru' ? 'Сегодня:' : 'Astăzi:'}
           {' '}
-          <span className="font-semibold text-foreground">{weekdayLong}</span>
+          <span className="font-semibold text-pofo-heading">{weekdayLong}</span>
         </p>
       </div>
 
       <div className="pb-3 text-center">
-        <p className={`rounded-lg font-bold text-foreground ${compact ? 'p-2 text-xs sm:text-sm' : 'p-3 text-sm'}`}>
+        <p className={`alt-font border-y border-border font-semibold text-pofo-heading ${compact ? 'p-2 text-xs sm:text-sm' : 'p-3 text-sm'}`}>
           {locale === 'ru'
             ? 'Стоимость первичной консультации 400 MDL. Повторно - 250 MDL'
             : 'Costul de bază al consultației este de 400 MDL. Repetată — 250 MDL'}
@@ -47,8 +47,8 @@ export default function ClinicConsultationInfo({ locale, compact = false }: Prop
 
       <div className="text-center">
         <p className={!isOpenNow
-          ? `rounded-lg bg-red-800 p-3 text-white ${textClass}`
-          : `mb-4 rounded-lg bg-emerald-800 p-3 text-white ${textClass}`}
+          ? `bg-red-800 p-3 text-white ${textClass}`
+          : `mb-4 bg-emerald-800 p-3 text-white ${textClass}`}
         >
           {isOpenNow
             ? (locale === 'ru' ? 'Мы открыты!' : 'Suntem deschiși!')
@@ -71,7 +71,7 @@ export default function ClinicConsultationInfo({ locale, compact = false }: Prop
       </div>
 
       {!isOpenNow ? (
-        <p className={`py-2 uppercase text-muted-foreground ${textClass}`}>
+        <p className={`alt-font py-2 uppercase tracking-[0.5px] text-muted-foreground ${textClass}`}>
           {locale === 'ru' ? 'Текущее время:' : 'Ora curentă:'}
           {' '}
           {currentTime}
@@ -79,7 +79,7 @@ export default function ClinicConsultationInfo({ locale, compact = false }: Prop
       ) : null}
 
       {!isOpenNow ? (
-        <p className={`pb-3 uppercase text-muted-foreground ${textClass}`}>
+        <p className={`alt-font pb-3 uppercase tracking-[0.5px] text-muted-foreground ${textClass}`}>
           {copy.hoursFooter}
         </p>
       ) : null}
