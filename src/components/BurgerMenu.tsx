@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 
 import { getAlternateLocalePath } from '@/lib/locale-switch';
+import { NAV_LINKS } from '@/lib/nav-links';
 
 function MenuIcon({ className }: { className?: string }) {
   return (
@@ -14,12 +15,12 @@ function MenuIcon({ className }: { className?: string }) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth={1.75}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      strokeWidth={2}
+      strokeLinecap="square"
+      strokeLinejoin="miter"
       aria-hidden
     >
-      <path d="M5 8h14M5 12h14M5 16h14" />
+      <path d="M4 7h16M4 12h16M4 17h16" />
     </svg>
   );
 }
@@ -40,6 +41,9 @@ function ChevronRightIcon({ className }: { className?: string }) {
     </svg>
   );
 }
+
+const itemClass =
+  'flex w-full cursor-pointer items-center justify-between gap-3 border-b border-pofo-line px-5 py-3.5 text-left alt-font text-[12px] font-semibold uppercase tracking-[0.5px] text-white transition-colors hover:text-deep-pink focus:text-deep-pink focus:outline-none';
 
 function BurgerMenu({ locale }: { locale: string }) {
   const [open, setOpen] = React.useState(false);
@@ -74,7 +78,7 @@ function BurgerMenu({ locale }: { locale: string }) {
         aria-expanded={open}
         aria-haspopup="true"
         onClick={() => setOpen((v) => !v)}
-        className="inline-flex size-12 shrink-0 cursor-pointer touch-manipulation items-center justify-center rounded-2xl border border-border bg-background text-foreground shadow-sm transition-colors hover:border-ring hover:bg-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.98]"
+        className="inline-flex size-12 shrink-0 cursor-pointer touch-manipulation items-center justify-center text-pofo-heading transition-colors hover:text-deep-pink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
       >
         <MenuIcon className="size-7" />
       </button>
@@ -82,143 +86,28 @@ function BurgerMenu({ locale }: { locale: string }) {
       {open ? (
         <div
           role="menu"
-          className="absolute right-0 top-[calc(100%+0.5rem)] z-[200] w-[min(100vw-1.5rem,18rem)] rounded-xl border border-border bg-popover p-2 text-popover-foreground shadow-lg"
+          className="fixed inset-x-0 top-[calc(5.25rem+env(safe-area-inset-top,0px))] z-[200] max-h-[calc(100dvh-5.25rem)] overflow-y-auto bg-[#232323] pb-1 shadow-header animate-fade-in [animation-duration:0.25s]"
         >
-          {locale === 'ru' ? (
-            <>
-              <button
-                type="button"
-                role="menuitem"
-                className="flex w-full cursor-pointer rounded-lg px-2 py-0 text-left focus:bg-accent focus:outline-none"
-                onClick={() => go('/')}
-              >
-                <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
-                  <span className="text-sm font-medium tracking-tight">Главная</span>
-                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                </span>
-              </button>
-              <button
-                type="button"
-                role="menuitem"
-                className="flex w-full cursor-pointer rounded-lg px-2 py-0 text-left focus:bg-accent focus:outline-none"
-                onClick={() => go('/about')}
-              >
-                <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
-                  <span className="text-sm font-medium tracking-tight">Обо мне</span>
-                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                </span>
-              </button>
-              <button
-                type="button"
-                role="menuitem"
-                className="flex w-full cursor-pointer rounded-lg px-2 py-0 text-left focus:bg-accent focus:outline-none"
-                onClick={() => go('/services')}
-              >
-                <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
-                  <span className="text-sm font-medium tracking-tight">Услуги</span>
-                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                </span>
-              </button>
-              <button
-                type="button"
-                role="menuitem"
-                className="flex w-full cursor-pointer rounded-lg px-2 py-0 text-left focus:bg-accent focus:outline-none"
-                onClick={() => go('/blog')}
-              >
-                <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
-                  <span className="text-sm font-medium tracking-tight">Блог</span>
-                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                </span>
-              </button>
-              <button
-                type="button"
-                role="menuitem"
-                className="flex w-full cursor-pointer rounded-lg px-2 py-0 text-left focus:bg-accent focus:outline-none"
-                onClick={() => go('/contacts')}
-              >
-                <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
-                  <span className="text-sm font-medium tracking-tight">Контакты</span>
-                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                </span>
-              </button>
-              <div className="my-1.5 h-px bg-border" aria-hidden />
-              <Link
-                href={localeSwitchHref}
-                role="menuitem"
-                className="flex w-full items-center justify-center rounded-lg border border-border bg-muted/40 px-3 py-2.5 text-sm font-semibold tracking-wider text-foreground transition-colors hover:border-ring hover:bg-accent"
-                onClick={() => setOpen(false)}
-              >
-                RO
-              </Link>
-            </>
-          ) : (
-            <>
-              <button
-                type="button"
-                role="menuitem"
-                className="flex w-full cursor-pointer rounded-lg px-2 py-0 text-left focus:bg-accent focus:outline-none"
-                onClick={() => go('/ro')}
-              >
-                <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
-                  <span className="text-sm font-medium tracking-tight">Acasă</span>
-                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                </span>
-              </button>
-              <button
-                type="button"
-                role="menuitem"
-                className="flex w-full cursor-pointer rounded-lg px-2 py-0 text-left focus:bg-accent focus:outline-none"
-                onClick={() => go('/ro/about')}
-              >
-                <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
-                  <span className="text-sm font-medium tracking-tight">Despre mine</span>
-                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                </span>
-              </button>
-              <button
-                type="button"
-                role="menuitem"
-                className="flex w-full cursor-pointer rounded-lg px-2 py-0 text-left focus:bg-accent focus:outline-none"
-                onClick={() => go('/ro/services')}
-              >
-                <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
-                  <span className="text-sm font-medium tracking-tight">Servicii</span>
-                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                </span>
-              </button>
-              <button
-                type="button"
-                role="menuitem"
-                className="flex w-full cursor-pointer rounded-lg px-2 py-0 text-left focus:bg-accent focus:outline-none"
-                onClick={() => go('/ro/blog')}
-              >
-                <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
-                  <span className="text-sm font-medium tracking-tight">Blog</span>
-                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                </span>
-              </button>
-              <button
-                type="button"
-                role="menuitem"
-                className="flex w-full cursor-pointer rounded-lg px-2 py-0 text-left focus:bg-accent focus:outline-none"
-                onClick={() => go('/ro/contacts')}
-              >
-                <span className="flex w-full items-center justify-between gap-3 py-2.5 pl-1 pr-1">
-                  <span className="text-sm font-medium tracking-tight">Contacte</span>
-                  <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                </span>
-              </button>
-              <div className="my-1.5 h-px bg-border" aria-hidden />
-              <Link
-                href={localeSwitchHref}
-                role="menuitem"
-                className="flex w-full items-center justify-center rounded-lg border border-border bg-muted/40 px-3 py-2.5 text-sm font-semibold tracking-wider text-foreground transition-colors hover:border-ring hover:bg-accent"
-                onClick={() => setOpen(false)}
-              >
-                RU
-              </Link>
-            </>
-          )}
+          {NAV_LINKS.map((item) => (
+            <button
+              key={item.key}
+              type="button"
+              role="menuitem"
+              className={itemClass}
+              onClick={() => go(item.href[loc])}
+            >
+              <span>{item.label[loc]}</span>
+              <ChevronRightIcon className="size-4 shrink-0 opacity-60" />
+            </button>
+          ))}
+          <Link
+            href={localeSwitchHref}
+            role="menuitem"
+            className="mx-5 my-4 flex items-center justify-center border border-white/30 px-3 py-2.5 alt-font text-[12px] font-semibold uppercase tracking-[1px] text-white transition-colors hover:border-deep-pink hover:text-deep-pink"
+            onClick={() => setOpen(false)}
+          >
+            {loc === 'ru' ? 'RO' : 'RU'}
+          </Link>
         </div>
       ) : null}
     </div>

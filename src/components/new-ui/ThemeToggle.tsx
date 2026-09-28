@@ -83,9 +83,9 @@ function ThemeToggle({ locale }: { locale: Locale }) {
       onClick={toggle}
       aria-label={ariaLabel}
       className={cn(
-        'relative z-10 flex size-12 shrink-0 cursor-pointer touch-manipulation items-center justify-center rounded-full border border-border sm:size-10',
-        'bg-background/80 text-foreground transition-colors duration-200',
-        'hover:border-ring hover:text-brand-gold',
+        'relative z-10 flex size-12 shrink-0 cursor-pointer touch-manipulation items-center justify-center sm:size-10',
+        'bg-transparent text-pofo-heading transition-colors duration-200',
+        'hover:text-deep-pink',
         'pointer-events-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background',
       )}
     >

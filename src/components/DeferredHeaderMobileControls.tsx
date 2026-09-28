@@ -42,7 +42,7 @@ export default function DeferredHeaderMobileControls({ locale }: Props) {
       <div className="relative z-[101] flex shrink-0 items-center gap-2 sm:gap-2.5" role="status" aria-live="polite">
         <span className="sr-only">{loadingMsg}</span>
         <div
-          className="size-12 shrink-0 rounded-full border border-border bg-background/80 sm:size-10"
+          className="size-12 shrink-0 sm:size-10"
           aria-hidden
         />
         <div className="flex size-12 shrink-0 items-center justify-center sm:hidden" aria-hidden />

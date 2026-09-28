@@ -21,7 +21,7 @@ export default function HeaderScrollProgress({ locale }: Props) {
       className="pointer-events-none fixed inset-x-0 top-0 z-[60] h-[3px] bg-border/30"
     >
       <div
-        className="h-full w-full origin-left bg-red-600 will-change-transform motion-reduce:transition-none dark:bg-red-500"
+        className="h-full w-full origin-left bg-deep-pink will-change-transform motion-reduce:transition-none"
         style={{ transform: `scaleX(${progress / 100})` }}
       />
     </div>
