@@ -7,6 +7,11 @@ import './phone-input.css';
 
 import { Button } from '@/components/ui/button';
 import ClinicConsultationInfo from '@/components/ClinicConsultationInfo';
+import {
+  contactAlertErrorClass,
+  contactAlertSuccessClass,
+  contactFieldClass,
+} from '@/components/contact-form-ui';
 import { ContactFormSubmittingStatus } from '@/components/ContactFormSubmittingStatus';
 import RecaptchaDisclaimer from '@/components/RecaptchaDisclaimer';
 import { useContactFormAntiSpam } from '@/hooks/useContactFormAntiSpam';
@@ -179,16 +184,10 @@ export default function LeadQuizModal({
     }
   };
 
-  const fieldClass = (hasError: boolean) =>
-    [
-      'w-full mt-2 rounded-lg border bg-card py-3 px-3 font-semibold text-foreground shadow-sm transition-colors placeholder:text-muted-foreground focus:outline-none focus:ring-2',
-      hasError
-        ? 'border-red-600 focus:border-red-600 focus:ring-red-500/35 dark:border-red-500'
-        : 'border-border focus:border-ring focus:ring-ring/35',
-    ].join(' ');
+  const fieldClass = contactFieldClass;
 
   return (
-    <div className="fixed inset-0 z-[1100] flex items-end justify-center bg-black/55 p-3 sm:items-center sm:p-6">
+    <div className="fixed inset-0 z-[1100] flex items-end justify-center bg-black/80 p-3 animate-fade-in [animation-duration:0.3s] motion-reduce:animate-none sm:items-center sm:p-6">
       <button
         type="button"
         aria-label={t.close}
@@ -196,13 +195,13 @@ export default function LeadQuizModal({
         onClick={onClose}
       />
 
-      <div className="relative z-[1] max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-xl border border-border bg-background p-4 shadow-2xl sm:p-6">
+      <div className="relative z-[1] max-h-[92vh] w-full max-w-2xl overflow-y-auto bg-background p-5 shadow-pofo-lg dark:bg-card sm:p-10">
         <div className="mb-3 flex items-start justify-between gap-4">
           <div>
-            <h3 className="text-xl font-bold text-foreground">{t.modalTitle[formType]}</h3>
+            <h3 className="alt-font text-[20px] font-semibold leading-[28px] text-pofo-heading">{t.modalTitle[formType]}</h3>
             <p className="mt-1 text-sm text-muted-foreground">{t.modalSubtitle[formType]}</p>
           </div>
-          <Button variant="ghost" size="sm" type="button" onClick={onClose}>
+          <Button variant="pofoOutline" size="pofoSmall" type="button" onClick={onClose}>
             {t.close}
           </Button>
         </div>
@@ -228,7 +227,7 @@ export default function LeadQuizModal({
                     setName(e.target.value);
                   }}
                 />
-                {fieldErrors.username ? <p className="mt-1 text-sm text-red-600">{fieldErrors.username}</p> : null}
+                {fieldErrors.username ? <p className="mt-1.5 text-sm text-red-600 dark:text-red-400">{fieldErrors.username}</p> : null}
               </div>
               <div className="sm:col-span-1">
                 <PhoneInputWithCountrySelect
@@ -245,7 +244,7 @@ export default function LeadQuizModal({
                     }
                   }}
                 />
-                {fieldErrors.userphone ? <p className="mt-1 text-sm text-red-600">{fieldErrors.userphone}</p> : null}
+                {fieldErrors.userphone ? <p className="mt-1.5 text-sm text-red-600 dark:text-red-400">{fieldErrors.userphone}</p> : null}
               </div>
             </div>
 
@@ -262,16 +261,16 @@ export default function LeadQuizModal({
                   setMessage(e.target.value);
                 }}
               />
-              {fieldErrors.message ? <p className="mt-1 text-sm text-red-600">{fieldErrors.message}</p> : null}
+              {fieldErrors.message ? <p className="mt-1.5 text-sm text-red-600 dark:text-red-400">{fieldErrors.message}</p> : null}
             </div>
 
             <div className="mt-4 space-y-4">
               {questions.map((question) => (
-                <div key={question.key} className="rounded-lg border border-border p-3">
-                  <p className="text-sm font-semibold text-foreground">{question.prompt[locale]}</p>
+                <div key={question.key} className="border border-border p-4">
+                  <p className="alt-font text-[13px] font-semibold leading-5 text-pofo-heading">{question.prompt[locale]}</p>
                   <div className="mt-2 space-y-2">
                     {question.options[locale].map((option) => (
-                      <label key={`${question.key}-${option}`} className="flex cursor-pointer items-center gap-2 text-sm text-foreground">
+                      <label key={`${question.key}-${option}`} className="flex cursor-pointer items-center gap-2.5 border-l-2 border-transparent py-1 pl-2.5 text-sm text-foreground transition-colors hover:border-border has-[:checked]:border-deep-pink has-[:checked]:bg-pofo-light-gray [&_input]:accent-deep-pink">
                         <input
                           type="radio"
                           name={`quiz-${question.key}`}
@@ -294,12 +293,12 @@ export default function LeadQuizModal({
 
             <ContactFormSubmittingStatus locale={locale} active={locked} />
             {submitError ? (
-              <p className="mt-3 rounded-lg border border-red-600 bg-red-50 p-3 text-sm text-red-800 dark:border-red-500/50 dark:bg-red-950/50 dark:text-red-100">
+              <p className={`mt-3 ${contactAlertErrorClass}`}>
                 {submitError}
               </p>
             ) : null}
             {submitAlert ? (
-              <p className="mt-3 rounded-lg border border-green-600 bg-green-50 p-3 text-sm text-green-800 dark:border-green-500/50 dark:bg-green-950/40 dark:text-green-100">
+              <p className={`mt-3 ${contactAlertSuccessClass}`}>
                 {t.success}
               </p>
             ) : null}
@@ -318,12 +317,12 @@ export default function LeadQuizModal({
               onChange={(e) => setWebsite(e.target.value)}
             />
 
-            <Button className="mt-5 mb-5 w-full font-bold" variant="default" size="lg" type="submit" disabled={locked}>
+            <Button className="mt-5 mb-5 w-full" variant="pofo" size="pofo" type="submit" disabled={locked}>
               {locked ? t.sending : t.submit}
             </Button>
-            <div className="mt-4 rounded-lg border border-border/80 bg-muted/35 p-3">
+            <div className="mt-4 bg-pofo-light-gray p-4 dark:bg-[#232323]">
               <p className="text-sm text-foreground">{t.clinicAddress}</p>
-              <Button asChild className="mt-3 w-full" variant="secondary" size="sm">
+              <Button asChild className="mt-3 w-full" variant="pofoOutline" size="pofoSmall">
                 <Link href={contactsRoute} onClick={onClose}>{t.showRoute}</Link>
               </Button>
             </div>
