@@ -49,7 +49,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'В клинике Meddera приём ведёт опытный дерматолог, который проводит диагностику и лечение заболеваний кожи, волос и ногтей. Мы используем современное оборудование для дерматоскопии и других исследований.',
           'Консультация включает детальный осмотр, постановку диагноза, назначение лечения и рекомендации по уходу за кожей. При необходимости врач направит на дополнительные исследования или к смежным специалистам.',
-          'Запись на консультацию доступна онлайн или по телефону. Стоимость первичной консультации — 400 MDL, повторной — 250 MDL. Адрес клиники: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию доступна онлайн или по телефону. Адрес клиники: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -91,7 +91,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'La clinica Meddera, consultațiile sunt efectuate de un dermatolog experimentat, care realizează diagnosticul și tratamentul afecțiunilor pielii, părului și unghiilor. Utilizăm echipamente moderne pentru dermatoscopie și alte investigații.',
           'Consultația include examinarea detaliată, stabilirea diagnosticului, prescrierea tratamentului și recomandări pentru îngrijirea pielii. Dacă este necesar, medicul vă va trimite pentru investigații suplimentare sau la alți specialiști.',
-          'Programarea la consultație este disponibilă online sau telefonic. Costul consultației primare — 400 MDL, repetate — 250 MDL. Adresa clinicii: Bălți, str. Ștefan cel Mare, 13.',
+          'Programarea la consultație este disponibilă online sau telefonic. Adresa clinicii: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -136,7 +136,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'В Meddera мы используем комплексный подход: диагностика степени акне, выявление провоцирующих факторов, подбор индивидуальной схемы лечения (местная и/или системная терапия).',
           'При необходимости назначаем анализы (гормоны, биохимия крови), консультации смежных специалистов (эндокринолог, гинеколог). Контрольные визиты каждые 4-6 недель для оценки эффективности и коррекции терапии.',
-          'Запись на консультацию: онлайн или по телефону. Стоимость первичной консультации — 400 MDL, повторной — 250 MDL. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: онлайн или по телефону. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -179,7 +179,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'La Meddera folosim o abordare complexă: diagnosticul gradului de acnee, identificarea factorilor provocatori, selectarea schemei individuale de tratament (terapie locală și/sau sistemică).',
           'Dacă este necesar, prescrim analize (hormoni, biochimie sanguină), consultații cu alți specialiști (endocrinolog, ginecolog). Vizite de control la fiecare 4-6 săptămâni pentru evaluarea eficacității și ajustarea terapiei.',
-          'Programare la consultație: online sau telefonic. Costul consultației primare — 400 MDL, repetate — 250 MDL. Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: online sau telefonic. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -223,7 +223,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'В клинике Meddera мы проводим диагностику формы и степени тяжести псориаза, подбираем индивидуальную схему лечения, обучаем правильному уходу за кожей.',
           'При необходимости направляем на дополнительные исследования (анализы крови, консультация ревматолога при подозрении на псориатический артрит).',
-          'Запись на консультацию дерматолога: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию дерматолога: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -265,7 +265,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'La clinica Meddera efectuăm diagnosticul formei și gradului de severitate al psoriazisului, selectăm schema individuală de tratament, învățăm îngrijirea corectă a pielii.',
           'Dacă este necesar, trimitem pentru investigații suplimentare (analize de sânge, consultație reumatolog în caz de suspiciune de artrită psoriazică).',
-          'Programare la consultația dermatologului: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultația dermatologului: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -309,7 +309,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'В клинике Meddera мы проводим диагностику типа экземы, выявляем триггеры, подбираем индивидуальную схему лечения и обучаем правильному уходу за кожей.',
           'При необходимости назначаем аллергопробы, консультации аллерголога. Контрольные визиты для оценки эффективности терапии и коррекции схемы.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -351,7 +351,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'La clinica Meddera efectuăm diagnosticul tipului de eczemă, identificăm factorii declanșatori, selectăm schema individuală de tratament și învățăm îngrijirea corectă a pielii.',
           'Dacă este necesar, prescrim teste alergice, consultații cu alergologul. Vizite de control pentru evaluarea eficacității terapiei și ajustarea schemei.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -394,7 +394,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Дерматоскопия в Meddera',
         paragraphs: [
           'В клинике Meddera используется цифровой дерматоскоп с сохранением изображений для мониторинга в динамике. Осмотр проводит опытный дерматолог.',
-          'Стоимость дерматоскопии входит в консультацию дерматолога (400 MDL первичная, 250 MDL повторная). При необходимости удаления новообразования — направление на гистологию.',
+          'Стоимость дерматоскопии входит в консультацию дерматолога. При необходимости удаления новообразования — направление на гистологию.',
           'Запись онлайн или по телефону. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
@@ -436,7 +436,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Dermatoscopia la Meddera',
         paragraphs: [
           'La clinica Meddera se utilizează dermatoscop digital cu salvarea imaginilor pentru monitorizare în dinamică. Examinarea este efectuată de un dermatolog experimentat.',
-          'Costul dermatoscopiei este inclus în consultația dermatologului (400 MDL primară, 250 MDL repetată). Dacă este necesară îndepărtarea neoplasmei — trimitere pentru histologie.',
+          'Costul dermatoscopiei este inclus în consultația dermatologului. Dacă este necesară îndepărtarea neoplasmei — trimitere pentru histologie.',
           'Programare online sau telefonic. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
@@ -481,7 +481,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'В клинике Meddera проводим дерматоскопию всех подозрительных родинок, фотографируем для наблюдения в динамике, при необходимости — удаление с гистологическим исследованием.',
           'Рекомендуем профилактические осмотры раз в год (при множественных родинках — раз в 6 месяцев). Ведём карту родинок для отслеживания изменений.',
-          'Запись на консультацию с дерматоскопией: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию с дерматоскопией: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -522,7 +522,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Dermatoscopia la Meddera',
         paragraphs: [
           'La clinica Meddera se utilizează dermatoscop digital cu salvarea imaginilor pentru monitorizare în dinamică. Examinarea este efectuată de un dermatolog experimentat.',
-          'Costul dermatoscopiei este inclus în consultația dermatologului (400 MDL primară, 250 MDL repetată). Dacă este necesară îndepărtarea neoplasmei — trimitere pentru histologie.',
+          'Costul dermatoscopiei este inclus în consultația dermatologului. Dacă este necesară îndepărtarea neoplasmei — trimitere pentru histologie.',
           'Programare online sau telefonic. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
@@ -567,7 +567,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'В клинике Meddera проводим диагностику и лечение вирусных заболеваний кожи: клинический осмотр, при необходимости — ПЦР-диагностика для определения типа вируса.',
           'Удаление бородавок, контагиозного моллюска современными методами (криодеструкция, лазер). Назначение противовирусной терапии при герпесе.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -609,7 +609,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic și tratament al bolilor virale ale pielii: examinare clinică, dacă este necesar — diagnostic PCR pentru determinarea tipului de virus.',
           'Îndepărtarea negilor, moluscului contagios prin metode moderne (criodestrucție, laser). Prescrierea terapiei antivirale la herpes.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -721,7 +721,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'В клинике Meddera проводим диагностику и лечение вросшего ногтя: консервативное лечение на ранних стадиях, хирургическое — при неэффективности или тяжёлых формах.',
           'Консультация включает: оценку стадии, выбор метода лечения, обучение правильной стрижке ногтей для профилактики рецидивов.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -763,7 +763,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic și tratament al unghiei încarnate: tratament conservator în stadiile timpurii, chirurgical — la ineficiență sau forme severe.',
           'Consultația include: evaluarea stadiului, alegerea metodei de tratament, învățarea tăierii corecte a unghiilor pentru prevenirea recidivelor.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -802,7 +802,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Профилактика фотостарения в Meddera',
         paragraphs: [
           'В клинике Meddera проводим диагностику фотостарения, подбираем индивидуальную программу профилактики и лечения: косметологические процедуры, домашний уход.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -839,7 +839,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Prevenirea fotoîmbătrânirii la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic de fotoîmbătrânire, selectăm program individual de prevenire și tratament: proceduri cosmetologice, îngrijire la domiciliu.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -879,7 +879,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Лечение импетиго в Meddera',
         paragraphs: [
           'В клинике Meddera проводим диагностику и лечение импетиго: клинический осмотр, при необходимости — бактериологический посев для определения возбудителя и чувствительности к антибиотикам.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -917,7 +917,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Tratamentul impetigului la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic și tratament al impetigului: examinare clinică, dacă este necesar — cultivare bacteriologică pentru determinarea agentului patogen și sensibilitatea la antibiotice.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -957,7 +957,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Лечение крапивницы в Meddera',
         paragraphs: [
           'В клинике Meddera проводим диагностику крапивницы: клинический осмотр, аллергологические тесты, анализы крови для выявления причины.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -995,7 +995,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Tratamentul urticariei la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic de urticarie: examinare clinică, teste alergologice, analize de sânge pentru identificarea cauzei.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1036,7 +1036,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Лечение атопического дерматита в Meddera',
         paragraphs: [
           'В клинике Meddera проводим диагностику и лечение атопического дерматита: клинический осмотр, аллергологические тесты, подбор индивидуальной схемы лечения и ухода.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1075,7 +1075,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Tratamentul dermatitei atopice la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic și tratament al dermatitei atopice: examinare clinică, teste alergologice, selectarea schemei individuale de tratament și îngrijire.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1115,7 +1115,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Лечение себорейного дерматита в Meddera',
         paragraphs: [
           'В клинике Meddera проводим диагностику и лечение себорейного дерматита: клинический осмотр, подбор индивидуальной схемы лечения.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1153,7 +1153,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Tratamentul dermatitei seboreice la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic și tratament al dermatitei seboreice: examinare clinică, selectarea schemei individuale de tratament.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1192,7 +1192,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Лечение контактного дерматита в Meddera',
         paragraphs: [
           'В клинике Meddera проводим диагностику контактного дерматита: клинический осмотр, патч-тесты для выявления аллергенов.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1229,7 +1229,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Tratamentul dermatitei de contact la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic de dermatită de contact: examinare clinică, teste patch pentru identificarea alergenilor.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1268,7 +1268,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Лечение витилиго в Meddera',
         paragraphs: [
           'В клинике Meddera проводим диагностику и лечение витилиго: клинический осмотр, лампа Вуда для выявления скрытых пятен, подбор индивидуальной схемы лечения.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1305,7 +1305,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Tratamentul vitiligo la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic și tratament al vitiligo: examinare clinică, lampă Wood pentru detectarea petelor ascunse, selectarea schemei individuale de tratament.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1344,7 +1344,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Удаление папиллом и бородавок в Meddera',
         paragraphs: [
           'В клинике Meddera проводим удаление папиллом и бородавок современными методами: криодеструкция, лазер. Процедура амбулаторно, под местной анестезией.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1381,7 +1381,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Îndepărtarea papiloamelor și negilor la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm îndepărtarea papiloamelor și negilor prin metode moderne: criodestrucție, laser. Procedura ambulatoriu, sub anestezie locală.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1419,7 +1419,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Удаление кератом в Meddera',
         paragraphs: [
           'В клинике Meddera проводим диагностику и удаление кератом: дерматоскопия для оценки характера образования, удаление современными методами, гистология при необходимости.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1455,7 +1455,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Îndepărtarea keratoamelor la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic și îndepărtare a keratoamelor: dermatoscopie pentru evaluarea naturii formațiunii, îndepărtare prin metode moderne, histologie dacă este necesar.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1494,7 +1494,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Лечение алопеции в Meddera',
         paragraphs: [
           'В клинике Meddera проводим диагностику и лечение алопеции: клинический осмотр, трихоскопия, направление на анализы, подбор индивидуальной схемы лечения.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1531,7 +1531,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Tratamentul alopeciei la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic și tratament al alopeciei: examinare clinică, trichoscopie, trimitere pentru analize, selectarea schemei individuale de tratament.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1680,7 +1680,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Лечение гипергидроза в Meddera',
         paragraphs: [
           'В клинике Meddera проводим лечение гипергидроза: инъекции ботулотоксина (наиболее эффективный метод), подбор антиперспирантов.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1717,7 +1717,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Tratamentul hiperhidrozei la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm tratament al hiperhidrozei: injecții cu toxină botulinică (metoda cea mai eficientă), selectarea antiperspirantelor.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1754,7 +1754,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Лечение фолликулита в Meddera',
         paragraphs: [
           'В клинике Meddera проводим диагностику и лечение фолликулита: клинический осмотр, при необходимости — бактериологический посев, подбор лечения.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1789,7 +1789,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Tratamentul foliculitei la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic și tratament al foliculitei: examinare clinică, dacă este necesar — cultivare bacteriologică, selectarea tratamentului.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1827,7 +1827,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Лечение пигментации в Meddera',
         paragraphs: [
           'В клинике Meddera проводим диагностику и лечение пигментных пятен: дерматоскопия, подбор отбеливающих средств, пилинги, лазерные процедуры.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1863,7 +1863,7 @@ const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCo
         h2: 'Tratamentul pigmentării la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic și tratament al petelor pigmentare: dermatoscopie, selectarea produselor de albire, peeling-uri, proceduri cu laser.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],

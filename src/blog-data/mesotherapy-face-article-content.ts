@@ -47,7 +47,7 @@ const MESOTHERAPY_FACE_ARTICLE_CONTENT_PART1: Record<string, MesotherapyFaceArti
         paragraphs: [
           'В Meddera используются сертифицированные препараты для мезотерапии. Процедуру проводит опытный дерматокосметолог.',
           'Консультация включает: оценку показаний, выбор препарата, расчёт количества процедур (обычно курс 3-5 сеансов с интервалом 7-14 дней).',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -89,7 +89,7 @@ const MESOTHERAPY_FACE_ARTICLE_CONTENT_PART1: Record<string, MesotherapyFaceArti
         paragraphs: [
           'La Meddera folosim preparate certificate pentru mezoterapie. Procedura este efectuată de un dermatocosmetolog experimentat.',
           'Consultația include: evaluarea indicațiilor, alegerea preparatului, calculul numărului de proceduri (de obicei curs de 3-5 ședințe cu interval de 7-14 zile).',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -133,7 +133,7 @@ const MESOTHERAPY_FACE_ARTICLE_CONTENT_PART1: Record<string, MesotherapyFaceArti
         paragraphs: [
           'В Meddera используются сертифицированные мезококтейли ведущих производителей (Filorga, Mesoline, Dermaheal). Подбираем препарат под конкретную проблему кожи.',
           'Консультация включает: оценку состояния кожи, выбор препарата и протокола (количество процедур, интервалы), обсуждение ожиданий.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -175,7 +175,7 @@ const MESOTHERAPY_FACE_ARTICLE_CONTENT_PART1: Record<string, MesotherapyFaceArti
         paragraphs: [
           'La Meddera folosim cocktail-uri mezo certificate de la producători de top (Filorga, Mesoline, Dermaheal). Selectăm preparatul pentru problema specifică a pielii.',
           'Consultația include: evaluarea stării pielii, alegerea preparatului și protocolului (număr de proceduri, intervale), discutarea așteptărilor.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -219,7 +219,7 @@ const MESOTHERAPY_FACE_ARTICLE_CONTENT_PART1: Record<string, MesotherapyFaceArti
         paragraphs: [
           'В Meddera используются сертифицированные препараты для мезотерапии. Процедуру проводит опытный дерматокосметолог с соблюдением стерильности.',
           'Консультация включает: оценку показаний, выбор препарата, расчёт курса, обсуждение ожиданий и возможных побочных эффектов.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -261,7 +261,7 @@ const MESOTHERAPY_FACE_ARTICLE_CONTENT_PART1: Record<string, MesotherapyFaceArti
         paragraphs: [
           'La Meddera folosim preparate certificate pentru mezoterapie. Procedura este efectuată de un dermatocosmetolog experimentat cu respectarea sterilității.',
           'Consultația include: evaluarea indicațiilor, alegerea preparatului, calculul cursului, discutarea așteptărilor și posibilelor efecte secundare.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -269,211 +269,211 @@ const MESOTHERAPY_FACE_ARTICLE_CONTENT_PART1: Record<string, MesotherapyFaceArti
   'mezoterapiya-lica-rezultaty-dlitelnost': {
     sectionsRu: [
       { h2: 'Когда виден результат', paragraphs: ['Первые результаты мезотерапии видны через 3-7 дней: кожа становится более увлажнённой, свежей, сияющей. Максимальный эффект — через 2-4 недели после завершения курса.', 'Накопительный эффект: с каждой процедурой результат усиливается. После курса из 3-5 процедур кожа выглядит значительно лучше.'] },
-      { h2: 'Длительность эффекта', paragraphs: ['Эффект мезотерапии держится 4-6 месяцев. Зависит от возраста, состояния кожи, образа жизни. Для поддержания результата рекомендуются поддерживающие процедуры 1 раз в 2-3 месяца.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Длительность эффекта', paragraphs: ['Эффект мезотерапии держится 4-6 месяцев. Зависит от возраста, состояния кожи, образа жизни. Для поддержания результата рекомендуются поддерживающие процедуры 1 раз в 2-3 месяца.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Când este vizibil rezultatul', paragraphs: ['Primele rezultate ale mezoterapiei sunt vizibile în 3-7 zile: pielea devine mai hidratată, proaspătă, strălucitoare. Efect maxim — în 2-4 săptămâni după finalizarea cursului.', 'Efect cumulativ: cu fiecare procedură rezultatul se intensifică. După cursul de 3-5 proceduri pielea arată semnificativ mai bine.'] },
-      { h2: 'Durata efectului', paragraphs: ['Efectul mezoterapiei ține 4-6 luni. Depinde de vârstă, starea pielii, stilul de viață. Pentru menținerea rezultatului se recomandă proceduri de susținere o dată la 2-3 luni.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Durata efectului', paragraphs: ['Efectul mezoterapiei ține 4-6 luni. Depinde de vârstă, starea pielii, stilul de viață. Pentru menținerea rezultatului se recomandă proceduri de susținere o dată la 2-3 luni.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-protivopokazaniya': {
     sectionsRu: [
       { h2: 'Абсолютные противопоказания', paragraphs: ['Беременность и кормление грудью, аллергия на компоненты препарата, активная инфекция кожи (герпес, гнойные высыпания), онкологические заболевания (активный процесс), тяжёлые системные заболевания.'] },
-      { h2: 'Относительные противопоказания', paragraphs: ['Приём антикоагулянтов (прекратить за 2 недели), менструация (усиленный отёк, синяки), обострение хронических заболеваний кожи (дождаться ремиссии).', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Относительные противопоказания', paragraphs: ['Приём антикоагулянтов (прекратить за 2 недели), менструация (усиленный отёк, синяки), обострение хронических заболеваний кожи (дождаться ремиссии).', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Contraindicații absolute', paragraphs: ['Sarcină și alăptare, alergie la componentele preparatului, infecție activă a pielii (herpes, erupții purulente), boli oncologice (proces activ), boli sistemice grave.'] },
-      { h2: 'Contraindicații relative', paragraphs: ['Administrarea de anticoagulante (opriți cu 2 săptămâni înainte), menstruație (edem intensificat, vânătăi), exacerbarea bolilor cronice ale pielii (așteptați remisiunea).', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Contraindicații relative', paragraphs: ['Administrarea de anticoagulante (opriți cu 2 săptămâni înainte), menstruație (edem intensificat, vânătăi), exacerbarea bolilor cronice ale pielii (așteptați remisiunea).', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-uhod-posle': {
     sectionsRu: [
       { h2: 'Первые 24 часа', paragraphs: ['Не трогать лицо, не наносить макияж, не умываться горячей водой. Избегать солнца, сауны, бассейна, спорта. Можно использовать мягкий увлажняющий крем.'] },
-      { h2: 'Первая неделя', paragraphs: ['Использовать SPF 30-50, избегать агрессивных средств (скрабы, кислоты), не делать массаж лица. Можно вернуться к обычному уходу через 3-5 дней.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Первая неделя', paragraphs: ['Использовать SPF 30-50, избегать агрессивных средств (скрабы, кислоты), не делать массаж лица. Можно вернуться к обычному уходу через 3-5 дней.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Primele 24 ore', paragraphs: ['Nu atingeți fața, nu aplicați machiaj, nu spălați cu apă fierbinte. Evitați soarele, sauna, piscina, sportul. Puteți folosi cremă hidratantă blândă.'] },
-      { h2: 'Prima săptămână', paragraphs: ['Folosiți SPF 30-50, evitați produse agresive (scruburi, acizi), nu faceți masaj facial. Puteți reveni la îngrijirea obișnuită în 3-5 zile.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Prima săptămână', paragraphs: ['Folosiți SPF 30-50, evitați produse agresive (scruburi, acizi), nu faceți masaj facial. Puteți reveni la îngrijirea obișnuită în 3-5 zile.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-vozrast': {
     sectionsRu: [
       { h2: 'Оптимальный возраст', paragraphs: ['Мезотерапию можно делать с 18 лет. Оптимальный возраст для начала — 25-30 лет (профилактика старения). После 35-40 лет мезотерапия помогает улучшить качество кожи, уменьшить признаки старения.'] },
-      { h2: 'Мезотерапия в разном возрасте', paragraphs: ['25-35 лет: профилактика, увлажнение, поддержание тонуса. 35-45 лет: коррекция первых признаков старения, улучшение качества кожи. 45+ лет: омоложение, стимуляция синтеза коллагена, комбинация с другими процедурами.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Мезотерапия в разном возрасте', paragraphs: ['25-35 лет: профилактика, увлажнение, поддержание тонуса. 35-45 лет: коррекция первых признаков старения, улучшение качества кожи. 45+ лет: омоложение, стимуляция синтеза коллагена, комбинация с другими процедурами.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Vârsta optimă', paragraphs: ['Mezoterapia se poate face de la 18 ani. Vârsta optimă pentru început — 25-30 ani (prevenirea îmbătrânirii). După 35-40 ani mezoterapia ajută să îmbunătățească calitatea pielii, să reducă semnele îmbătrânirii.'] },
-      { h2: 'Mezoterapia la diferite vârste', paragraphs: ['25-35 ani: prevenire, hidratare, menținerea tonusului. 35-45 ani: corecția primelor semne de îmbătrânire, îmbunătățirea calității pielii. 45+ ani: întinerire, stimularea sintezei de colagen, combinare cu alte proceduri.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Mezoterapia la diferite vârste', paragraphs: ['25-35 ani: prevenire, hidratare, menținerea tonusului. 35-45 ani: corecția primelor semne de îmbătrânire, îmbunătățirea calității pielii. 45+ ani: întinerire, stimularea sintezei de colagen, combinare cu alte proceduri.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-kurs-procedur': {
     sectionsRu: [
       { h2: 'Стандартный курс', paragraphs: ['Обычно курс мезотерапии состоит из 3-5 процедур с интервалом 7-14 дней. Количество процедур зависит от состояния кожи, возраста, желаемого результата.'] },
-      { h2: 'Поддерживающие процедуры', paragraphs: ['После основного курса рекомендуются поддерживающие процедуры 1 раз в 2-3 месяца для сохранения результата.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Поддерживающие процедуры', paragraphs: ['После основного курса рекомендуются поддерживающие процедуры 1 раз в 2-3 месяца для сохранения результата.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Curs standard', paragraphs: ['De obicei cursul de mezoterapie constă din 3-5 proceduri cu interval de 7-14 zile. Numărul de proceduri depinde de starea pielii, vârstă, rezultatul dorit.'] },
-      { h2: 'Proceduri de susținere', paragraphs: ['După cursul principal se recomandă proceduri de susținere o dată la 2-3 luni pentru păstrarea rezultatului.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Proceduri de susținere', paragraphs: ['După cursul principal se recomandă proceduri de susținere o dată la 2-3 luni pentru păstrarea rezultatului.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-bolevye-oshchushcheniya': {
     sectionsRu: [
       { h2: 'Насколько больно', paragraphs: ['Мезотерапия — малоболезненная процедура. Большинство пациентов описывают ощущения как лёгкий дискомфорт, покалывание. Используется анестезирующий крем для снижения чувствительности.'] },
-      { h2: 'Методы обезболивания', paragraphs: ['Анестезирующий крем (лидокаин, прилокаин) наносится за 15-20 минут до процедуры. Холодные компрессы также помогают уменьшить чувствительность.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Методы обезболивания', paragraphs: ['Анестезирующий крем (лидокаин, прилокаин) наносится за 15-20 минут до процедуры. Холодные компрессы также помогают уменьшить чувствительность.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Cât de dureros', paragraphs: ['Mezoterapia — procedură puțin dureroasă. Majoritatea pacienților descriu senzațiile ca disconfort ușor, înțepături. Se folosește cremă anestezianta pentru reducerea sensibilității.'] },
-      { h2: 'Metode de anestezie', paragraphs: ['Crema anestezianta (lidocaină, prilocaină) se aplică cu 15-20 minute înainte de procedură. Compresele reci ajută și ele să reducă sensibilitatea.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Metode de anestezie', paragraphs: ['Crema anestezianta (lidocaină, prilocaină) se aplică cu 15-20 minute înainte de procedură. Compresele reci ajută și ele să reducă sensibilitatea.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-otek-sinyaki': {
     sectionsRu: [
       { h2: 'Отёк после мезотерапии', paragraphs: ['Лёгкий отёк — нормальная реакция. Максимум в первые 2-4 часа, проходит за 1-2 дня. Холодные компрессы помогают уменьшить отёк.'] },
-      { h2: 'Синяки', paragraphs: ['Синяки возможны у 10-20% пациентов. Проходят за 5-7 дней. Арника (гель, таблетки) ускоряет заживление.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Синяки', paragraphs: ['Синяки возможны у 10-20% пациентов. Проходят за 5-7 дней. Арника (гель, таблетки) ускоряет заживление.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Edem după mezoterapie', paragraphs: ['Edem ușor — reacție normală. Maxim în primele 2-4 ore, trece în 1-2 zile. Compresele reci ajută să reducă edemul.'] },
-      { h2: 'Vânătăi', paragraphs: ['Vânătăile sunt posibile la 10-20% dintre pacienți. Trec în 5-7 zile. Arnica (gel, comprimate) accelerează vindecarea.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Vânătăi', paragraphs: ['Vânătăile sunt posibile la 10-20% dintre pacienți. Trec în 5-7 zile. Arnica (gel, comprimate) accelerează vindecarea.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-sezon': {
     sectionsRu: [
       { h2: 'Лучший сезон', paragraphs: ['Мезотерапию можно делать круглый год. Осень-зима — оптимальный период (меньше солнца, легче соблюдать ограничения). Летом важно использовать SPF 30-50 и избегать прямого солнца первые 2 недели.'] },
-      { h2: 'Рекомендации по сезону', paragraphs: ['Если планируете отпуск на море, сделайте мезотерапию за 2-3 недели до поездки или после возвращения.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Рекомендации по сезону', paragraphs: ['Если планируете отпуск на море, сделайте мезотерапию за 2-3 недели до поездки или после возвращения.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Cel mai bun sezon', paragraphs: ['Mezoterapia se poate face tot anul. Toamna-iarna — perioada optimă (mai puțin soare, mai ușor de respectat restricțiile). Vara este important să folosiți SPF 30-50 și să evitați soarele direct primele 2 săptămâni.'] },
-      { h2: 'Recomandări pe sezon', paragraphs: ['Dacă planificați vacanță la mare, faceți mezoterapia cu 2-3 săptămâni înainte de călătorie sau după întoarcere.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Recomandări pe sezon', paragraphs: ['Dacă planificați vacanță la mare, faceți mezoterapia cu 2-3 săptămâni înainte de călătorie sau după întoarcere.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-akne-postakne': {
     sectionsRu: [
       { h2: 'Мезотерапия при акне', paragraphs: ['Мезотерапия помогает при акне: препараты с цинком, серой, салициловой кислотой уменьшают воспаление, нормализуют работу сальных желёз. Курс 4-6 процедур.'] },
-      { h2: 'Мезотерапия при постакне', paragraphs: ['Мезотерапия эффективна при постакне: рубцах, пигментации. Препараты с пептидами, витамином C стимулируют регенерацию, осветляют пятна.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Мезотерапия при постакне', paragraphs: ['Мезотерапия эффективна при постакне: рубцах, пигментации. Препараты с пептидами, витамином C стимулируют регенерацию, осветляют пятна.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Mezoterapia la acnee', paragraphs: ['Mezoterapia ajută la acnee: preparate cu zinc, sulf, acid salicilic reduc inflamația, normalizează funcționarea glandelor sebacee. Curs de 4-6 proceduri.'] },
-      { h2: 'Mezoterapia la postacnee', paragraphs: ['Mezoterapia este eficientă la postacnee: cicatrici, pigmentare. Preparate cu peptide, vitamina C stimulează regenerarea, deschid petele.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Mezoterapia la postacnee', paragraphs: ['Mezoterapia este eficientă la postacnee: cicatrici, pigmentare. Preparate cu peptide, vitamina C stimulează regenerarea, deschid petele.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-pigmentaciya': {
     sectionsRu: [
       { h2: 'Как мезотерапия помогает от пигментации', paragraphs: ['Мезотерапия с витамином C, койевой кислотой, глутатионом осветляет пигментные пятна, выравнивает тон кожи. Курс 4-6 процедур с интервалом 7-10 дней.'] },
-      { h2: 'Результаты', paragraphs: ['Пигментация становится менее заметной через 2-4 недели. Для стойкого результата важно использовать SPF 30-50 ежедневно.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Результаты', paragraphs: ['Пигментация становится менее заметной через 2-4 недели. Для стойкого результата важно использовать SPF 30-50 ежедневно.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Cum ajută mezoterapia la pigmentare', paragraphs: ['Mezoterapia cu vitamina C, acid koic, glutation deschide petele pigmentare, uniformizează tonul pielii. Curs de 4-6 proceduri cu interval de 7-10 zile.'] },
-      { h2: 'Rezultate', paragraphs: ['Pigmentarea devine mai puțin vizibilă în 2-4 săptămâni. Pentru rezultat stabil este important să folosiți SPF 30-50 zilnic.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Rezultate', paragraphs: ['Pigmentarea devine mai puțin vizibilă în 2-4 săptămâni. Pentru rezultat stabil este important să folosiți SPF 30-50 zilnic.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-morshchiny': {
     sectionsRu: [
       { h2: 'Мезотерапия от морщин', paragraphs: ['Мезотерапия эффективна при мелких морщинах: препараты с гиалуроновой кислотой, пептидами увлажняют кожу, стимулируют синтез коллагена. Морщины становятся менее заметными.'] },
-      { h2: 'Ограничения', paragraphs: ['Мезотерапия не заполняет глубокие морщины (для этого нужны филлеры или ботокс). Но улучшает качество кожи, делает морщины менее выраженными.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Ограничения', paragraphs: ['Мезотерапия не заполняет глубокие морщины (для этого нужны филлеры или ботокс). Но улучшает качество кожи, делает морщины менее выраженными.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Mezoterapia pentru riduri', paragraphs: ['Mezoterapia este eficientă la riduri mici: preparate cu acid hialuronic, peptide hidratează pielea, stimulează sinteza de colagen. Ridurile devin mai puțin vizibile.'] },
-      { h2: 'Limitări', paragraphs: ['Mezoterapia nu umple ridurile profunde (pentru aceasta sunt necesare fillere sau botox). Dar îmbunătățește calitatea pielii, face ridurile mai puțin pronunțate.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Limitări', paragraphs: ['Mezoterapia nu umple ridurile profunde (pentru aceasta sunt necesare fillere sau botox). Dar îmbunătățește calitatea pielii, face ridurile mai puțin pronunțate.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-suhaya-kozha': {
     sectionsRu: [
       { h2: 'Мезотерапия для сухой кожи', paragraphs: ['Мезотерапия с гиалуроновой кислотой, витаминами E, B5 интенсивно увлажняет сухую кожу. Результат — кожа становится более увлажнённой, гладкой, сияющей.'] },
-      { h2: 'Курс процедур', paragraphs: ['Для сухой кожи рекомендуется курс из 3-4 процедур с интервалом 7-10 дней. Поддерживающие процедуры — 1 раз в 2-3 месяца.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Курс процедур', paragraphs: ['Для сухой кожи рекомендуется курс из 3-4 процедур с интервалом 7-10 дней. Поддерживающие процедуры — 1 раз в 2-3 месяца.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Mezoterapia pentru piele uscată', paragraphs: ['Mezoterapia cu acid hialuronic, vitamine E, B5 hidratează intens pielea uscată. Rezultat — pielea devine mai hidratată, netedă, strălucitoare.'] },
-      { h2: 'Curs de proceduri', paragraphs: ['Pentru pielea uscată se recomandă curs de 3-4 proceduri cu interval de 7-10 zile. Proceduri de susținere — o dată la 2-3 luni.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Curs de proceduri', paragraphs: ['Pentru pielea uscată se recomandă curs de 3-4 proceduri cu interval de 7-10 zile. Proceduri de susținere — o dată la 2-3 luni.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-zhirnaya-kozha': {
     sectionsRu: [
       { h2: 'Мезотерапия для жирной кожи', paragraphs: ['Мезотерапия с цинком, серой, салициловой кислотой нормализует работу сальных желёз, уменьшает жирный блеск, сужает поры.'] },
-      { h2: 'Результаты', paragraphs: ['Кожа становится менее жирной, поры сужаются, цвет лица выравнивается. Курс 4-5 процедур.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Результаты', paragraphs: ['Кожа становится менее жирной, поры сужаются, цвет лица выравнивается. Курс 4-5 процедур.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Mezoterapia pentru piele grasă', paragraphs: ['Mezoterapia cu zinc, sulf, acid salicilic normalizează funcționarea glandelor sebacee, reduce luciul gras, strânge porii.'] },
-      { h2: 'Rezultate', paragraphs: ['Pielea devine mai puțin grasă, porii se strâng, tonul feței se uniformizează. Curs de 4-5 proceduri.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Rezultate', paragraphs: ['Pielea devine mai puțin grasă, porii se strâng, tonul feței se uniformizează. Curs de 4-5 proceduri.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-rasshirennye-pory': {
     sectionsRu: [
       { h2: 'Как мезотерапия помогает от расширенных пор', paragraphs: ['Мезотерапия с пептидами, цинком, витамином B3 повышает тонус кожи, сужает поры. Курс 4-5 процедур с интервалом 7-10 дней.'] },
-      { h2: 'Результаты', paragraphs: ['Поры становятся менее заметными, кожа более гладкой. Для стойкого результата важен правильный домашний уход.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Результаты', paragraphs: ['Поры становятся менее заметными, кожа более гладкой. Для стойкого результата важен правильный домашний уход.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Cum ajută mezoterapia la pori dilatați', paragraphs: ['Mezoterapia cu peptide, zinc, vitamina B3 crește tonusul pielii, strânge porii. Curs de 4-5 proceduri cu interval de 7-10 zile.'] },
-      { h2: 'Rezultate', paragraphs: ['Porii devin mai puțin vizibili, pielea mai netedă. Pentru rezultat stabil este importantă îngrijirea corectă acasă.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Rezultate', paragraphs: ['Porii devin mai puțin vizibili, pielea mai netedă. Pentru rezultat stabil este importantă îngrijirea corectă acasă.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-kuperoz': {
     sectionsRu: [
       { h2: 'Мезотерапия при куперозе', paragraphs: ['Мезотерапия с рутином, витамином K, экстрактом арники укрепляет стенки сосудов, уменьшает проявления купероза. Курс 4-6 процедур.'] },
-      { h2: 'Важно', paragraphs: ['Мезотерапия не удаляет сосудистые звёздочки (для этого нужен лазер), но укрепляет сосуды, предотвращает появление новых.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Важно', paragraphs: ['Мезотерапия не удаляет сосудистые звёздочки (для этого нужен лазер), но укрепляет сосуды, предотвращает появление новых.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Mezoterapia la cuperoza', paragraphs: ['Mezoterapia cu rutină, vitamina K, extract de arnică întărește pereții vaselor, reduce manifestările cuperozei. Curs de 4-6 proceduri.'] },
-      { h2: 'Important', paragraphs: ['Mezoterapia nu elimină venele păianjen (pentru aceasta este necesar laser), dar întărește vasele, previne apariția unora noi.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Important', paragraphs: ['Mezoterapia nu elimină venele păianjen (pentru aceasta este necesar laser), dar întărește vasele, previne apariția unora noi.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-vokrug-glaz': {
     sectionsRu: [
       { h2: 'Мезотерапия вокруг глаз', paragraphs: ['Мезотерапия для области вокруг глаз с гиалуроновой кислотой, пептидами, витамином C увлажняет тонкую кожу, уменьшает тёмные круги, мелкие морщины.'] },
-      { h2: 'Особенности', paragraphs: ['Используются мягкие препараты, тонкие иглы. Процедура деликатная, малоболезненная. Курс 3-4 процедуры.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Особенности', paragraphs: ['Используются мягкие препараты, тонкие иглы. Процедура деликатная, малоболезненная. Курс 3-4 процедуры.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Mezoterapia în jurul ochilor', paragraphs: ['Mezoterapia pentru zona din jurul ochilor cu acid hialuronic, peptide, vitamina C hidratează pielea subțire, reduce cercurile întunecate, ridurile mici.'] },
-      { h2: 'Particularități', paragraphs: ['Se folosesc preparate moi, ace subțiri. Procedura este delicată, puțin dureroasă. Curs de 3-4 proceduri.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Particularități', paragraphs: ['Se folosesc preparate moi, ace subțiri. Procedura este delicată, puțin dureroasă. Curs de 3-4 proceduri.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-sheya-dekolt': {
     sectionsRu: [
       { h2: 'Мезотерапия шеи и декольте', paragraphs: ['Мезотерапия для шеи и декольте с гиалуроновой кислотой, пептидами, витаминами повышает тонус кожи, уменьшает морщины, улучшает текстуру.'] },
-      { h2: 'Курс процедур', paragraphs: ['Рекомендуется курс из 4-5 процедур с интервалом 7-14 дней. Можно сочетать с мезотерапией лица для гармоничного омоложения.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Курс процедур', paragraphs: ['Рекомендуется курс из 4-5 процедур с интервалом 7-14 дней. Можно сочетать с мезотерапией лица для гармоничного омоложения.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Mezoterapia gâtului și decolteului', paragraphs: ['Mezoterapia pentru gât și decolteu cu acid hialuronic, peptide, vitamine crește tonusul pielii, reduce ridurile, îmbunătățește textura.'] },
-      { h2: 'Curs de proceduri', paragraphs: ['Se recomandă curs de 4-5 proceduri cu interval de 7-14 zile. Se poate combina cu mezoterapia feței pentru întinerire armonioasă.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Curs de proceduri', paragraphs: ['Se recomandă curs de 4-5 proceduri cu interval de 7-14 zile. Se poate combina cu mezoterapia feței pentru întinerire armonioasă.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-ruki': {
     sectionsRu: [
       { h2: 'Мезотерапия рук', paragraphs: ['Мезотерапия для рук с гиалуроновой кислотой, витаминами увлажняет кожу, уменьшает пигментацию, улучшает текстуру. Руки выглядят моложе.'] },
-      { h2: 'Курс процедур', paragraphs: ['Курс 3-4 процедуры с интервалом 7-10 дней. Результат держится 4-6 месяцев.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Курс процедур', paragraphs: ['Курс 3-4 процедуры с интервалом 7-10 дней. Результат держится 4-6 месяцев.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Mezoterapia mâinilor', paragraphs: ['Mezoterapia pentru mâini cu acid hialuronic, vitamine hidratează pielea, reduce pigmentarea, îmbunătățește textura. Mâinile arată mai tinere.'] },
-      { h2: 'Curs de proceduri', paragraphs: ['Curs de 3-4 proceduri cu interval de 7-10 zile. Rezultatul ține 4-6 luni.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Curs de proceduri', paragraphs: ['Curs de 3-4 proceduri cu interval de 7-10 zile. Rezultatul ține 4-6 luni.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-vs-biorevitalizaciya': {
     sectionsRu: [
       { h2: 'Разница между мезотерапией и биоревитализацией', paragraphs: ['Мезотерапия: коктейли из витаминов, пептидов, аминокислот, ГК. Биоревитализация: только гиалуроновая кислота. Мезотерапия решает конкретные проблемы (акне, пигментация), биоревитализация — увлажнение, омоложение.'] },
-      { h2: 'Что выбрать', paragraphs: ['Зависит от проблемы: для увлажнения — биоревитализация, для акне, пигментации — мезотерапия. Врач подберёт оптимальную процедуру.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Что выбрать', paragraphs: ['Зависит от проблемы: для увлажнения — биоревитализация, для акне, пигментации — мезотерапия. Врач подберёт оптимальную процедуру.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Diferența dintre mezoterapie și biorevitalizare', paragraphs: ['Mezoterapia: cocktailuri din vitamine, peptide, aminoacizi, AH. Biorevitalizarea: doar acid hialuronic. Mezoterapia rezolvă probleme concrete (acnee, pigmentare), biorevitalizarea — hidratare, întinerire.'] },
-      { h2: 'Ce să alegeți', paragraphs: ['Depinde de problemă: pentru hidratare — biorevitalizare, pentru acnee, pigmentare — mezoterapie. Medicul va selecta procedura optimă.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Ce să alegeți', paragraphs: ['Depinde de problemă: pentru hidratare — biorevitalizare, pentru acnee, pigmentare — mezoterapie. Medicul va selecta procedura optimă.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-vs-botoks': {
     sectionsRu: [
       { h2: 'Разница между мезотерапией и ботоксом', paragraphs: ['Мезотерапия: улучшает качество кожи, увлажняет, стимулирует коллаген. Ботокс: расслабляет мышцы, разглаживает мимические морщины. Это разные процедуры с разными целями.'] },
-      { h2: 'Можно ли сочетать', paragraphs: ['Да, мезотерапия и ботокс хорошо сочетаются. Ботокс разглаживает морщины, мезотерапия улучшает качество кожи.', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Можно ли сочетать', paragraphs: ['Да, мезотерапия и ботокс хорошо сочетаются. Ботокс разглаживает морщины, мезотерапия улучшает качество кожи.', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Diferența dintre mezoterapie și botox', paragraphs: ['Mezoterapia: îmbunătățește calitatea pielii, hidratează, stimulează colagenul. Botoxul: relaxează mușchii, netezește ridurile mimice. Sunt proceduri diferite cu scopuri diferite.'] },
-      { h2: 'Se pot combina', paragraphs: ['Da, mezoterapia și botoxul se combină bine. Botoxul netezește ridurile, mezoterapia îmbunătățește calitatea pielii.', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Se pot combina', paragraphs: ['Da, mezoterapia și botoxul se combină bine. Botoxul netezește ridurile, mezoterapia îmbunătățește calitatea pielii.', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
   'mezoterapiya-lica-kombinaciya-procedur': {
     sectionsRu: [
       { h2: 'Комбинация мезотерапии с другими процедурами', paragraphs: ['Мезотерапию можно сочетать с: ботоксом (интервал 2 недели), филлерами (интервал 2 недели), пилингами (интервал 2-4 недели), лазером (интервал 2-4 недели), биоревитализацией (можно в один день или чередовать).'] },
-      { h2: 'Преимущества комбинации', paragraphs: ['Комплексный подход даёт лучший результат: мезотерапия улучшает качество кожи, другие процедуры решают конкретные проблемы (морщины, объём, текстура).', 'Запись на консультацию в Meddera: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
+      { h2: 'Преимущества комбинации', paragraphs: ['Комплексный подход даёт лучший результат: мезотерапия улучшает качество кожи, другие процедуры решают конкретные проблемы (морщины, объём, текстура).', 'Запись на консультацию в Meddera: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.'] },
     ],
     sectionsRo: [
       { h2: 'Combinarea mezoterapiei cu alte proceduri', paragraphs: ['Mezoterapia se poate combina cu: botox (interval 2 săptămâni), fillere (interval 2 săptămâni), peeling-uri (interval 2-4 săptămâni), laser (interval 2-4 săptămâni), biorevitalizare (se poate în aceeași zi sau alterna).'] },
-      { h2: 'Avantajele combinării', paragraphs: ['Abordarea complexă oferă rezultat mai bun: mezoterapia îmbunătățește calitatea pielii, alte proceduri rezolvă probleme concrete (riduri, volum, textură).', 'Programare la consultație la Meddera: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
+      { h2: 'Avantajele combinării', paragraphs: ['Abordarea complexă oferă rezultat mai bun: mezoterapia îmbunătățește calitatea pielii, alte proceduri rezolvă probleme concrete (riduri, volum, textură).', 'Programare la consultație la Meddera: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.'] },
     ],
   },
 };

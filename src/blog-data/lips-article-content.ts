@@ -47,7 +47,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         paragraphs: [
           'В Meddera используются сертифицированные филлеры ведущих производителей (Juvederm, Restylane, Teosyal). Процедуру проводит опытный дерматокосметолог.',
           'Консультация включает: оценку формы губ, выбор филлера и объёма, обсуждение желаемого результата, расчёт стоимости.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -89,7 +89,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         paragraphs: [
           'La Meddera folosim fillere certificate de la producători de top (Juvederm, Restylane, Teosyal). Procedura este efectuată de un dermatocosmetolog experimentat.',
           'Consultația include: evaluarea formei buzelor, alegerea filler-ului și volumului, discutarea rezultatului dorit, calculul costului.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -133,7 +133,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         paragraphs: [
           'В Meddera врач оценивает форму губ, пропорции лица, обсуждает желаемый результат. Используем технику послойного введения филлера для естественного объёма.',
           'Консультация включает: анализ формы губ, выбор техники и объёма филлера, обсуждение ожиданий, фотографирование для оценки результата.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -175,7 +175,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         paragraphs: [
           'La Meddera medicul evaluează forma buzelor, proporțiile feței, discută rezultatul dorit. Folosim tehnica de introducere stratificată a filler-ului pentru volum natural.',
           'Consultația include: analiza formei buzelor, alegerea tehnicii și volumului de filler, discutarea așteptărilor, fotografiere pentru evaluarea rezultatului.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -219,7 +219,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         paragraphs: [
           'В Meddera после процедуры вы получаете подробные рекомендации по уходу, номер телефона для связи с врачом при возникновении вопросов.',
           'Контрольный осмотр: через 2 недели для оценки результата, при необходимости — коррекция (бесплатно в течение 2 недель после процедуры).',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -261,7 +261,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         paragraphs: [
           'La Meddera după procedură primiți recomandări detaliate pentru îngrijire, număr de telefon pentru contactarea medicului în caz de întrebări.',
           'Examinare de control: după 2 săptămâni pentru evaluarea rezultatului, dacă este necesar — corecție (gratuită în decurs de 2 săptămâni după procedură).',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -299,7 +299,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Безопасность в Meddera',
         paragraphs: [
           'В клинике Meddera используем оригинальные филлеры, соблюдаем стерильность. Квалифицированные врачи, знание анатомии. Экстренная помощь при осложнениях.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -335,7 +335,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Siguranță la Meddera',
         paragraphs: [
           'La clinica Meddera folosim fillere originale, respectăm sterilitatea. Medici calificați, cunoașterea anatomiei. Ajutor de urgență la complicații.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -373,7 +373,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Длительность эффекта в Meddera',
         paragraphs: [
           'В клинике Meddera используем качественные филлеры с предсказуемой длительностью. Индивидуальный подход: подбираем плотность филлера с учётом ваших целей.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -409,7 +409,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Durata efectului la Meddera',
         paragraphs: [
           'La clinica Meddera folosim fillere de calitate cu durată previzibilă. Abordare individuală: selectăm densitatea fillerului ținând cont de obiectivele dumneavoastră.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -447,7 +447,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Естественное увеличение в Meddera',
         paragraphs: [
           'В клинике Meddera придерживаемся философии естественной красоты. Индивидуальный подход: оцениваем пропорции лица, рекомендуем оптимальный объём.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -483,7 +483,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Mărirea naturală la Meddera',
         paragraphs: [
           'La clinica Meddera respectăm filosofia frumuseții naturale. Abordare individuală: evaluăm proporțiile feței, recomandăm volumul optim.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -520,7 +520,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Увеличение тонких губ в Meddera',
         paragraphs: [
           'В клинике Meddera специализируемся на увеличении тонких губ. Поэтапный подход, индивидуальный план коррекции.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -555,7 +555,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Mărirea buzelor subțiri la Meddera',
         paragraphs: [
           'La clinica Meddera ne specializăm în mărirea buzelor subțiri. Abordare etapizată, plan individual de corecție.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -592,7 +592,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Коррекция асимметрии в Meddera',
         paragraphs: [
           'В клинике Meddera проводим точную диагностику и коррекцию асимметрии губ. Индивидуальный план с учётом причины асимметрии.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -627,7 +627,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Corecția asimetriei la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm diagnostic precis și corecție a asimetriei buzelor. Plan individual ținând cont de cauza asimetriei.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -664,7 +664,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Контурирование губ в Meddera',
         paragraphs: [
           'В клинике Meddera проводим контурирование губ для создания чёткой формы. Можно сочетать с увеличением объёма для комплексного результата.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -699,7 +699,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Conturarea buzelor la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm conturarea buzelor pentru crearea formei clare. Se poate combina cu mărirea volumului pentru rezultat complex.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -737,7 +737,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Увеличение одной губы в Meddera',
         paragraphs: [
           'В клинике Meddera проводим увеличение верхней или нижней губы для восстановления пропорций. Индивидуальный подход, оценка баланса.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -773,7 +773,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Mărirea unei buze la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm mărirea buzei superioare sau inferioare pentru restabilirea proporțiilor. Abordare individuală, evaluarea echilibrului.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -811,7 +811,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Омоложение губ в Meddera',
         paragraphs: [
           'В клинике Meddera специализируемся на возрастной коррекции губ. Комплексный подход: объём, контур, морщины, уголки рта.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -847,7 +847,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Întinerirea buzelor la Meddera',
         paragraphs: [
           'La clinica Meddera ne specializăm în corecția buzelor legată de vârstă. Abordare complexă: volum, contur, riduri, colțuri ale gurii.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -884,7 +884,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Коррекция морщин в Meddera',
         paragraphs: [
           'В клинике Meddera проводим коррекцию кисетных морщин филлерами. Можем сочетать с ботоксом, пилингами для комплексного результата.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -919,7 +919,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Corecția ridurilor la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm corecția ridurilor periorbitale cu fillere. Putem combina cu botox, peeling-uri pentru rezultat complex.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -955,7 +955,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Комплексная коррекция в Meddera',
         paragraphs: [
           'В клинике Meddera проводим комплексную коррекцию губ и носогубных складок. Индивидуальный план с учётом типа старения, зон коррекции.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -989,7 +989,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Corecția complexă la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm corecție complexă a buzelor și pliurilor nazolabiale. Plan individual ținând cont de tipul de îmbătrânire, zonele de corecție.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1027,7 +1027,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Филлеры на основе ГК в Meddera',
         paragraphs: [
           'В клинике Meddera используем только оригинальные филлеры на основе гиалуроновой кислоты. Индивидуальный подбор препарата с учётом ваших целей.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1063,7 +1063,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Fillere pe bază de AH la Meddera',
         paragraphs: [
           'La clinica Meddera folosim doar fillere originale pe bază de acid hialuronic. Selectare individuală a preparatului ținând cont de obiectivele dumneavoastră.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1107,7 +1107,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Выбор филлера в Meddera',
         paragraphs: [
           'В клинике Meddera подбираем плотность филлера индивидуально. Используем филлеры разной плотности для разных зон губ (контур, тело, уголки).',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1149,7 +1149,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Alegerea fillerului la Meddera',
         paragraphs: [
           'La clinica Meddera selectăm densitatea fillerului individual. Folosim fillere de densitate diferită pentru zone diferite ale buzelor (contur, corp, colțuri).',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1190,7 +1190,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Филлеры в Meddera',
         paragraphs: [
           'В клинике Meddera используем филлеры ведущих производителей: Juvederm, Restylane, Belotero, Stylage. Подбираем препарат индивидуально.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1229,7 +1229,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Fillere la Meddera',
         paragraphs: [
           'La clinica Meddera folosim fillere de la producători de top: Juvederm, Restylane, Belotero, Stylage. Selectăm preparatul individual.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1265,7 +1265,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Комфорт в Meddera',
         paragraphs: [
           'В клинике Meddera используем все методы обезболивания: анестезирующий крем, филлеры с лидокаином, инъекционная анестезия по желанию. Ваш комфорт — приоритет.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1299,7 +1299,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Confort la Meddera',
         paragraphs: [
           'La clinica Meddera folosim toate metodele de anestezie: cremă anestezianta, fillere cu lidocaină, anestezie prin injecție la dorință. Confortul dumneavoastră — prioritate.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1337,7 +1337,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Минимизация отёка в Meddera',
         paragraphs: [
           'В клинике Meddera используем техники, минимизирующие отёк: атравматичные канюли, правильная глубина введения. Рекомендации по уходу для быстрого восстановления.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1373,7 +1373,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Minimizarea edemului la Meddera',
         paragraphs: [
           'La clinica Meddera folosim tehnici care minimizează edemul: canule atraumatice, adâncime corectă de introducere. Recomandări pentru îngrijire pentru recuperare rapidă.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1410,7 +1410,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Растворение филлера в Meddera',
         paragraphs: [
           'В клинике Meddera проводим растворение филлера гиалуронидазой при необходимости. Безопасно, эффективно, быстро.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1445,7 +1445,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Dizolvarea fillerului la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm dizolvarea fillerului cu hialuronidază dacă este necesar. Sigur, eficient, rapid.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1483,7 +1483,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Первое увеличение в Meddera',
         paragraphs: [
           'В клинике Meddera уделяем особое внимание первой процедуре: подробная консультация, консервативный объём, контрольный осмотр через 2 недели.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1519,7 +1519,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Prima mărire la Meddera',
         paragraphs: [
           'La clinica Meddera acordăm atenție specială primei proceduri: consultație detaliată, volum conservator, examinare de control după 2 săptămâni.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1555,7 +1555,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Повторное увеличение в Meddera',
         paragraphs: [
           'В клинике Meddera составляем индивидуальный график процедур. Оцениваем остаточный объём, рекомендуем оптимальное время для повторной процедуры.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1589,7 +1589,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Mărirea repetată la Meddera',
         paragraphs: [
           'La clinica Meddera elaborăm program individual de proceduri. Evaluăm volumul rezidual, recomandăm timpul optim pentru procedura repetată.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1626,7 +1626,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Оценка противопоказаний в Meddera',
         paragraphs: [
           'В клинике Meddera проводим тщательный сбор анамнеза, оцениваем противопоказания. Ваша безопасность — приоритет.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1661,7 +1661,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Evaluarea contraindicațiilor la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm colectare atentă a anamnezei, evaluăm contraindicațiile. Siguranța dumneavoastră — prioritate.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1699,7 +1699,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Профилактика герпеса в Meddera',
         paragraphs: [
           'В клинике Meddera при наличии герпеса в анамнезе рекомендуем профилактический приём противовирусных препаратов. Это снижает риск обострения.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1735,7 +1735,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Prevenirea herpesului la Meddera',
         paragraphs: [
           'La clinica Meddera în prezența herpesului în anamneză recomandăm administrarea profilactică de preparate antivirale. Acest lucru reduce riscul de exacerbare.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1771,7 +1771,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Увеличение губ в любой сезон в Meddera',
         paragraphs: [
           'В клинике Meddera проводим процедуры круглый год. Даём индивидуальные рекомендации с учётом сезона, вашего образа жизни.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1805,7 +1805,7 @@ const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
         h2: 'Mărirea buzelor în orice sezon la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm proceduri tot anul. Oferim recomandări individuale ținând cont de sezon, stilul dumneavoastră de viață.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],

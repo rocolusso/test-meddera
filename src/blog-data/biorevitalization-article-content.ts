@@ -48,7 +48,7 @@ const BIOREVITALIZATION_ARTICLE_CONTENT_PART1: Record<string, BiorevitalizationA
         paragraphs: [
           'В Meddera используются сертифицированные препараты для биоревитализации. Процедуру проводит опытный дерматокосметолог.',
           'Консультация включает: оценку показаний, выбор препарата, расчёт количества процедур (обычно курс 2-3 сеанса с интервалом 14-21 день).',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -90,7 +90,7 @@ const BIOREVITALIZATION_ARTICLE_CONTENT_PART1: Record<string, BiorevitalizationA
         paragraphs: [
           'La Meddera folosim preparate certificate pentru biorevitalizare. Procedura este efectuată de un dermatocosmetolog experimentat.',
           'Consultația include: evaluarea indicațiilor, alegerea preparatului, calculul numărului de proceduri (de obicei curs de 2-3 ședințe cu interval de 14-21 zile).',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -134,7 +134,7 @@ const BIOREVITALIZATION_ARTICLE_CONTENT_PART1: Record<string, BiorevitalizationA
         paragraphs: [
           'В Meddera используются сертифицированные препараты ведущих производителей. Подбираем препарат с учётом возраста, состояния кожи, целей.',
           'Консультация включает: оценку состояния кожи, выбор препарата и протокола, расчёт стоимости курса.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -176,7 +176,7 @@ const BIOREVITALIZATION_ARTICLE_CONTENT_PART1: Record<string, BiorevitalizationA
         paragraphs: [
           'La Meddera folosim preparate certificate de la producători de top. Selectăm preparatul ținând cont de vârstă, starea pielii, scopuri.',
           'Consultația include: evaluarea stării pielii, alegerea preparatului și protocolului, calculul costului cursului.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],

@@ -25,7 +25,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -59,7 +59,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -95,7 +95,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -129,7 +129,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -165,7 +165,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -199,7 +199,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -235,7 +235,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -269,7 +269,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -305,7 +305,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -339,7 +339,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -375,7 +375,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -409,7 +409,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -445,7 +445,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -479,7 +479,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -515,7 +515,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -549,7 +549,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -585,7 +585,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -619,7 +619,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -655,7 +655,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -689,7 +689,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -725,7 +725,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -759,7 +759,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -795,7 +795,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -829,7 +829,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -865,7 +865,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -899,7 +899,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -935,7 +935,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -969,7 +969,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -1005,7 +1005,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -1039,7 +1039,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -1075,7 +1075,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -1109,7 +1109,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -1145,7 +1145,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -1179,7 +1179,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -1215,7 +1215,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -1249,7 +1249,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -1285,7 +1285,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -1319,7 +1319,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -1355,7 +1355,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -1389,7 +1389,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -1425,7 +1425,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -1459,7 +1459,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -1495,7 +1495,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -1529,7 +1529,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -1565,7 +1565,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -1599,7 +1599,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -1635,7 +1635,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -1669,7 +1669,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],
@@ -1705,7 +1705,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Что обсуждают в Meddera',
         paragraphs: [
-          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике; консультация: первичная 400 MDL, повторная 250 MDL.',
+          'Специалист оценивает показания, объясняет альтернативы и возможные реакции. Стоимость услуг уточняйте в клинике.',
           'Вы получаете понятные рекомендации по уходу дома и срокам контрольного визита.',
           'Индивидуальный план важнее обобщённых советов из интернета.',
         ],
@@ -1739,7 +1739,7 @@ export const DERMATOLOGIST_ARTICLE_CONTENT_PART2: Record<
       {
         h2: 'Discuția la Meddera',
         paragraphs: [
-          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică; consultația: primară 400 MDL, repetată 250 MDL.',
+          'Specialistul evaluează indicațiile, explică variante și reacții posibile. Tarifele se clarifică la clinică.',
           'Primiți recomandări clare pentru îngrijire acasă și control.',
           'Planul personal este mai important decât sfaturi generale online.',
         ],

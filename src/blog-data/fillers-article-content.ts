@@ -48,7 +48,7 @@ const FILLERS_ARTICLE_CONTENT_PART1: Record<string, FillersArticleCopy> = {
         paragraphs: [
           'В Meddera используются сертифицированные филлеры ведущих производителей. Процедуру проводит опытный дерматокосметолог.',
           'Консультация включает: оценку показаний, выбор зон для коррекции, расчёт количества филлера, обсуждение ожиданий.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -90,7 +90,7 @@ const FILLERS_ARTICLE_CONTENT_PART1: Record<string, FillersArticleCopy> = {
         paragraphs: [
           'La Meddera folosim fillere certificate de la producători de top. Procedura este efectuată de un dermatocosmetolog experimentat.',
           'Consultația include: evaluarea indicațiilor, alegerea zonelor pentru corecție, calculul cantității de filler, discutarea așteptărilor.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -134,7 +134,7 @@ const FILLERS_ARTICLE_CONTENT_PART1: Record<string, FillersArticleCopy> = {
         paragraphs: [
           'В Meddera используются только оригинальные сертифицированные филлеры ведущих производителей. Врач подбирает препарат с учётом зоны коррекции, желаемого результата.',
           'Консультация включает: оценку пропорций лица, выбор зон для коррекции, расчёт количества филлера, обсуждение ожиданий.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -176,7 +176,7 @@ const FILLERS_ARTICLE_CONTENT_PART1: Record<string, FillersArticleCopy> = {
         paragraphs: [
           'La Meddera folosim doar fillere originale certificate de la producători de top. Medicul selectează preparatul ținând cont de zona de corecție, rezultatul dorit.',
           'Consultația include: evaluarea proporțiilor feței, alegerea zonelor pentru corecție, calculul cantității de filler, discutarea așteptărilor.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],

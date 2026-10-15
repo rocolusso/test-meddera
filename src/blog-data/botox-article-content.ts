@@ -47,7 +47,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         paragraphs: [
           'В Meddera используются сертифицированные препараты ботулотоксина типа А. Процедуру проводит опытный дерматокосметолог с учётом анатомии лица и активности мимических мышц.',
           'Консультация включает: оценку показаний, выбор зон для коррекции, расчёт дозы, обсуждение ожиданий и возможных побочных эффектов.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -89,7 +89,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         paragraphs: [
           'La Meddera folosim preparate certificate de toxină botulinică tip A. Procedura este efectuată de un dermatocosmetolog experimentat, ținând cont de anatomia feței și activitatea mușchilor mimici.',
           'Consultația include: evaluarea indicațiilor, alegerea zonelor pentru corecție, calculul dozei, discutarea așteptărilor și posibilelor efecte secundare.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -133,7 +133,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         paragraphs: [
           'На консультации врач оценивает показания и противопоказания, изучает анамнез (хронические заболевания, приём препаратов, предыдущие процедуры ботокса).',
           'Обсуждаем ожидания: какие зоны хотите скорректировать, какой результат хотите получить. Врач объясняет, что реально достижимо, какие дозы потребуются.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -175,7 +175,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         paragraphs: [
           'La consultație medicul evaluează indicațiile și contraindicațiile, studiază anamneza (boli cronice, administrarea de preparate, proceduri anterioare cu botox).',
           'Discutăm așteptările: ce zone doriți să corectați, ce rezultat doriți să obțineți. Medicul explică ce este realizabil, ce doze vor fi necesare.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -219,7 +219,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         paragraphs: [
           'В Meddera используются сертифицированные препараты ботулотоксина типа А. Процедуру проводит опытный дерматокосметолог с учётом анатомии лица.',
           'Консультация включает: оценку показаний, выбор зон для коррекции, расчёт дозы, обсуждение ожиданий и возможных побочных эффектов.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -261,7 +261,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         paragraphs: [
           'La Meddera folosim preparate certificate de toxină botulinică tip A. Procedura este efectuată de un dermatocosmetolog experimentat ținând cont de anatomia feței.',
           'Consultația include: evaluarea indicațiilor, alegerea zonelor pentru corecție, calculul dozei, discutarea așteptărilor și posibilelor efecte secundare.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -300,7 +300,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Результаты ботокса в Meddera',
         paragraphs: [
           'В клинике Meddera используем оригинальные препараты ботулотоксина. Индивидуальный подход: оцениваем глубину морщин, тип кожи, мимическую активность.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -337,7 +337,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Rezultatele botoxului la Meddera',
         paragraphs: [
           'La clinica Meddera folosim preparate originale de toxină botulină. Abordare individuală: evaluăm adâncimea ridurilor, tipul de piele, activitatea mimică.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -375,7 +375,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Рекомендации Meddera',
         paragraphs: [
           'В клинике Meddera после процедуры вы получаете подробные письменные рекомендации. Контрольный осмотр через 2 недели для оценки результата.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -411,7 +411,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Recomandările Meddera',
         paragraphs: [
           'La clinica Meddera după procedură primiți recomandări detaliate scrise. Examinare de control în 2 săptămâni pentru evaluarea rezultatului.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -449,7 +449,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Зоны коррекции в Meddera',
         paragraphs: [
           'В клинике Meddera проводим инъекции ботокса во все зоны. Индивидуальный подход: оцениваем мимику, глубину морщин, желаемый результат.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -485,7 +485,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Zone de corecție la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm injecții cu botox în toate zonele. Abordare individuală: evaluăm mimica, adâncimea ridurilor, rezultatul dorit.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -523,7 +523,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Безопасность ботокса в Meddera',
         paragraphs: [
           'В клинике Meddera используем только оригинальные препараты. Квалифицированные врачи с опытом работы. Индивидуальный подход, точные дозировки.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -559,7 +559,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Siguranța botoxului la Meddera',
         paragraphs: [
           'La clinica Meddera folosim doar preparate originale. Medici calificați cu experiență de lucru. Abordare individuală, dozaje precise.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -597,7 +597,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Рекомендации Meddera',
         paragraphs: [
           'В клинике Meddera составляем индивидуальный график процедур. Контрольный осмотр через 2 недели, планирование следующей процедуры.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -633,7 +633,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Recomandările Meddera',
         paragraphs: [
           'La clinica Meddera elaborăm program individual de proceduri. Examinare de control în 2 săptămâni, planificarea procedurii următoare.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -671,7 +671,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Консультация в Meddera',
         paragraphs: [
           'В клинике Meddera оцениваем состояние кожи, глубину морщин, мимическую активность. Подбираем оптимальный возраст и схему процедур.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -707,7 +707,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Consultație la Meddera',
         paragraphs: [
           'La clinica Meddera evaluăm starea pielii, adâncimea ridurilor, activitatea mimică. Selectăm vârsta optimă și schema de proceduri.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -746,7 +746,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Ботокс и филлеры в Meddera',
         paragraphs: [
           'В клинике Meddera проводим обе процедуры. Индивидуальный подход: оцениваем тип старения, зоны коррекции, составляем комплексный план.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -783,7 +783,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Botox și fillere la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm ambele proceduri. Abordare individuală: evaluăm tipul de îmbătrânire, zonele de corecție, elaborăm plan complex.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -827,7 +827,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Факты о ботоксе в Meddera',
         paragraphs: [
           'В клинике Meddera используем оригинальные препараты, индивидуальный подход. Развенчиваем мифы на консультации, показываем реальные результаты.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -869,7 +869,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Fapte despre botox la Meddera',
         paragraphs: [
           'La clinica Meddera folosim preparate originale, abordare individuală. Demontăm miturile la consultație, arătăm rezultate reale.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -907,7 +907,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Препараты в Meddera',
         paragraphs: [
           'В клинике Meddera используем оригинальные препараты: Ботокс, Диспорт, Ксеомин. Подбираем препарат индивидуально с учётом зоны коррекции и ваших предпочтений.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -943,7 +943,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Preparate la Meddera',
         paragraphs: [
           'La clinica Meddera folosim preparate originale: Botox, Dysport, Xeomin. Selectăm preparatul individual ținând cont de zona de corecție și preferințele dumneavoastră.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -982,7 +982,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Коррекция гусиных лапок в Meddera',
         paragraphs: [
           'В клинике Meddera проводим инъекции ботокса для коррекции гусиных лапок. Индивидуальный подход: оцениваем глубину морщин, силу мышц, желаемый результат.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1019,7 +1019,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Corecția picioarelor de gâscă la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm injecții cu botox pentru corecția picioarelor de gâscă. Abordare individuală: evaluăm adâncimea ridurilor, forța mușchilor, rezultatul dorit.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1058,7 +1058,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Коррекция межбровья в Meddera',
         paragraphs: [
           'В клинике Meddera проводим инъекции ботокса для коррекции складки льва. Индивидуальный подход: оцениваем глубину морщин, силу мышц, анатомические особенности.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1095,7 +1095,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Corecția între sprâncene la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm injecții cu botox pentru corecția cutei leului. Abordare individuală: evaluăm adâncimea ridurilor, forța mușchilor, particularitățile anatomice.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1133,7 +1133,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Коррекция лба в Meddera',
         paragraphs: [
           'В клинике Meddera проводим инъекции ботокса для коррекции морщин лба. Индивидуальный подход: оцениваем высоту лба, положение бровей, глубину морщин.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1169,7 +1169,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Corecția frunții la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm injecții cu botox pentru corecția ridurilor de pe frunte. Abordare individuală: evaluăm înălțimea frunții, poziția sprâncenelor, adâncimea ridurilor.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1207,7 +1207,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Лифтинг бровей в Meddera',
         paragraphs: [
           'В клинике Meddera проводим лифтинг бровей ботоксом. Индивидуальный подход: оцениваем положение бровей, степень птоза, желаемый результат.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1243,7 +1243,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Liftingul sprâncenelor la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm lifting de sprâncene cu botox. Abordare individuală: evaluăm poziția sprâncenelor, gradul de ptoză, rezultatul dorit.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1280,7 +1280,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Коррекция носа в Meddera',
         paragraphs: [
           'В клинике Meddera проводим коррекцию носа ботоксом. Индивидуальный подход: оцениваем форму носа, степень опущения кончика, желаемый результат.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1315,7 +1315,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Corecția nasului la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm corecție a nasului cu botox. Abordare individuală: evaluăm forma nasului, gradul de coborâre a vârfului, rezultatul dorit.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1351,7 +1351,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Коррекция подбородка в Meddera',
         paragraphs: [
           'В клинике Meddera проводим инъекции ботокса для коррекции морщин подбородка. Индивидуальный подход: оцениваем выраженность морщин, тонус мышц.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1385,7 +1385,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Corecția bărbiei la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm injecții cu botox pentru corecția ridurilor bărbiei. Abordare individuală: evaluăm pronunțarea ridurilor, tonusul mușchilor.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1421,7 +1421,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Коррекция шеи в Meddera',
         paragraphs: [
           'В клинике Meddera проводим инъекции ботокса для коррекции тяжей шеи. Индивидуальный подход: оцениваем выраженность тяжей, состояние кожи шеи.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1455,7 +1455,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Corecția gâtului la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm injecții cu botox pentru corecția cordoanelor gâtului. Abordare individuală: evaluăm pronunțarea cordoanelor, starea pielii gâtului.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1491,7 +1491,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Лечение гипергидроза в Meddera',
         paragraphs: [
           'В клинике Meddera проводим лечение гипергидроза подмышек ботоксом. Эффективный, безопасный метод. Процедура 20-30 минут.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1525,7 +1525,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Tratamentul hiperhidrozei la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm tratament al hiperhidrozei axilelor cu botox. Metodă eficientă, sigură. Procedura 20-30 minute.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1561,7 +1561,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Лечение бруксизма в Meddera',
         paragraphs: [
           'В клинике Meddera проводим лечение бруксизма ботоксом. Эффективный метод снижения скрежетания зубами, защиты эмали.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1595,7 +1595,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Tratamentul bruxismului la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm tratament al bruxismului cu botox. Metodă eficientă de reducere a scrâșnitului dinților, protecție a smalțului.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1632,7 +1632,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Коррекция десневой улыбки в Meddera',
         paragraphs: [
           'В клинике Meddera проводим коррекцию десневой улыбки ботоксом. Индивидуальный подход: оцениваем причину, степень обнажения дёсен.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1667,7 +1667,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Corecția zâmbetului gingival la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm corecție a zâmbetului gingival cu botox. Abordare individuală: evaluăm cauza, gradul de expunere a gingiilor.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1704,7 +1704,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Лечение мигрени в Meddera',
         paragraphs: [
           'В клинике Meddera проводим лечение хронической мигрени ботоксом по протоколу FDA. Требуется консультация невролога для подтверждения диагноза.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1739,7 +1739,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Tratamentul migrenei la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm tratament al migrenei cronice cu botox conform protocolului FDA. Este necesară consultația neurologului pentru confirmarea diagnosticului.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1776,7 +1776,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Консультация в Meddera',
         paragraphs: [
           'В клинике Meddera соблюдаем все противопоказания. Перед процедурой уточняем: беременность, ГВ, планирование беременности. Безопасность пациентки — приоритет.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1811,7 +1811,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Consultație la Meddera',
         paragraphs: [
           'La clinica Meddera respectăm toate contraindicațiile. Înainte de procedură clarificăm: sarcină, alăptare, planificarea sarcinii. Siguranța pacientei — prioritate.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -1848,7 +1848,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Ботокс для мужчин в Meddera',
         paragraphs: [
           'В клинике Meddera проводим инъекции ботокса мужчинам. Понимаем особенности мужской анатомии, психологии. Конфиденциальность гарантирована.',
-          'Запись на консультацию: 400 MDL (первичная), 250 MDL (повторная). Адрес: Бельцы, ул. Штефан чел Маре, 13.',
+          'Запись на консультацию: по телефону или через форму на сайте. Адрес: Бельцы, ул. Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -1883,7 +1883,7 @@ const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
         h2: 'Botox pentru bărbați la Meddera',
         paragraphs: [
           'La clinica Meddera efectuăm injecții cu botox pentru bărbați. Înțelegem particularitățile anatomiei masculine, psihologiei. Confidențialitate garantată.',
-          'Programare la consultație: 400 MDL (primară), 250 MDL (repetată). Adresa: Bălți, str. Ștefan cel Mare, 13.',
+          'Programare la consultație: la telefon sau prin formularul de pe site. Adresa: Bălți, str. Ștefan cel Mare, 13.',
         ],
       },
     ],
