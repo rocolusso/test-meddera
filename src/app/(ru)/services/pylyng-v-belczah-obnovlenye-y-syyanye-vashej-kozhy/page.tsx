@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import pilling from '@public/assets/img/services/pilling.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
-  },
+  alternates: bilingualAlternates('/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy', 'ru'),
   title: 'Пилинг в Бельцах – Косметологические услуги в Молдове',
   description:
     'Пилинг в Бельцах: обновление кожи лица и тела, подбор состава под тип кожи. Консультация косметолога и процедуры в клинике Meddera. Запись онлайн.',

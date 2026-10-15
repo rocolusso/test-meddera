@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import konturnayaPlastika from '@public/assets/img/services/konturnayaplastika.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/konturnaya-plastyka-fylleramy-v-belczah',
-  },
+  alternates: bilingualAlternates('/services/konturnaya-plastyka-fylleramy-v-belczah', 'ro'),
   title: 'Plastia de contur în Bălți – Corectare facială cu acid hialuronic',
   description:
     'Contur facial cu acid hialuronic în Bălți: rejuvenare și corecție trăsături. Programări la clinica Meddera.',

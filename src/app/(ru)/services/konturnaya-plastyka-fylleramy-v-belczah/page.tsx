@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import konturnayaPlastika from '@public/assets/img/services/konturnayaplastika.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/services/konturnaya-plastyka-fylleramy-v-belczah',
-  },
+  alternates: bilingualAlternates('/services/konturnaya-plastyka-fylleramy-v-belczah', 'ru'),
   title: 'Контурная пластика филлерами в Бельцах — Омоложение и коррекция лица',
   description:
     'Контурная пластика филлерами в Бельцах: гиалуроновая кислота для омоложения и коррекции лица. Консультация в Meddera.',

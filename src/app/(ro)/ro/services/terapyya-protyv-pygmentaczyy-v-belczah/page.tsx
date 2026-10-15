@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import terapiyaProtivPigment from '@public/assets/img/services/terapiya-protiv-pigm.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/terapyya-protyv-pygmentaczyy-v-belczah',
-  },
+  alternates: bilingualAlternates('/services/terapyya-protyv-pygmentaczyy-v-belczah', 'ro'),
   title: 'Terapie Antipigmentară în Bălți | Elimină Petele Pigmentare cu Meddera',
   description:
     'Terapie antipigmentară în Bălți: pete, melasma, hiperpigmentare. Tratamente la Meddera. Programează consultația.',

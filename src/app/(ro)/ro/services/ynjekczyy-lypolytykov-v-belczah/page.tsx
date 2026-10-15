@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import lipolitiki from '@public/assets/img/services/lipolitiki.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/ynjekczyy-lypolytykov-v-belczah',
-  },
+  alternates: bilingualAlternates('/services/ynjekczyy-lypolytykov-v-belczah', 'ro'),
   title: 'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei',
   description:
     'Lipoliză injectabilă în Bălți: grăsime localizată, fără operație. Consultație la Meddera. Programează-te online.',

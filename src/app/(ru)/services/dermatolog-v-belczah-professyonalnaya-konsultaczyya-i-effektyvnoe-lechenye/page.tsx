@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import consultderm from '@public/assets/img/services/consult-derm.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
-  },
+  alternates: bilingualAlternates('/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye', 'ru'),
   title: 'Дерматолог в Бельцах – Консультация и Лечение Кожи',
   description:
     'Дерматолог в Бельцах: диагностика и лечение акне, экземы, псориаза, новообразований. Запись онлайн в Meddera.',

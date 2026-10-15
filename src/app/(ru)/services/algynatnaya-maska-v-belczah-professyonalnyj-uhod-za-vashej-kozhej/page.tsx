@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import maskaLica from '@public/assets/img/services/maska_lica.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
-  },
+  alternates: bilingualAlternates('/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej', 'ru'),
   title: 'Альгинатная маска в Бельцах – Увлажнение, лифтинг и сияние кожи',
   description:
     'Альгинатные маски в Бельцах: глубокое увлажнение, лифтинг-эффект и сияние кожи. Процедура у косметолога клиники Meddera в Бельцах. Запись на приём.',

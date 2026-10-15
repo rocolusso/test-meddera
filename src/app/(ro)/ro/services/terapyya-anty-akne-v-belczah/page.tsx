@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import maskaLica from '@public/assets/img/services/anti-akne.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/terapyya-anty-akne-v-belczah',
-  },
+  alternates: bilingualAlternates('/services/terapyya-anty-akne-v-belczah', 'ro'),
   title: 'Terapie anti-acnee Bălți | Ten curat și sănătos',
   description:
     'Terapie anti-acnee în Bălți: ten curat, protocol personalizat la Meddera. Dermatocosmetolog, programări online.',

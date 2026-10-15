@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import maskaLica from '@public/assets/img/services/maska_lica.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
-  },
+  alternates: bilingualAlternates('/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej', 'ro'),
   title: 'Masca alginată în Bălți – Ten hidratat și luminos',
   description:
     'Mască alginată în Bălți: hidratare intensă, efect lifting și ten luminos după ședință. Programează consultația la clinica Meddera din Bălți.',

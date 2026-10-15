@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import mezolica from '@public/assets/img/services/mezolica.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
-  },
+  alternates: bilingualAlternates('/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe', 'ru'),
   title: 'Мезотерапия лица в Бельцах – омоложение и сияние кожи',
   description:
     'Мезотерапия лица в Бельцах: увлажнение, омоложение, морщины и пигментация. Запись на процедуру в клинике Meddera.',

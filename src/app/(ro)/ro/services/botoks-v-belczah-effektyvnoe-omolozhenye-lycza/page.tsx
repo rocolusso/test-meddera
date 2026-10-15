@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import botoks from '@public/assets/img/services/botoks.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza',
-  },
+  alternates: bilingualAlternates('/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza', 'ro'),
   title: 'Terapie antirid cu Botox în Bălți | Reîntinerește-ți aspectul',
   description:
     'Botox în Bălți: riduri de expresie și hiperhidroză. Tratament sigur la Meddera. Programează consultație pentru rejuvenare facială.',

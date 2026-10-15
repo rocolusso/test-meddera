@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import pilling from '@public/assets/img/services/pilling.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
-  },
+  alternates: bilingualAlternates('/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy', 'ro'),
   title: 'Peeling facial profesional în Bălți – Reînnoiește-ți pielea cu Meddera',
   description:
     'Peeling facial în Bălți: reînnoirea tenului, tratamente personalizate după tipul de piele. Consultație la clinica Meddera. Programează-te online.',

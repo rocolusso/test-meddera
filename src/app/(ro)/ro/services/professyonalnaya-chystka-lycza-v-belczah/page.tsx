@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import chistkaLica from '@public/assets/img/services/chistka_lica.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/professyonalnaya-chystka-lycza-v-belczah',
-  },
+  alternates: bilingualAlternates('/services/professyonalnaya-chystka-lycza-v-belczah', 'ro'),
   title: 'Curățare facială profesională în Bălți | Îngrijire completă a tenului',
   description:
     'Curățare facială profesională în Bălți: ten curat, tratamente personalizate. Specialiști Meddera, programări online.',

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import mezovolos from '@public/assets/img/services/mezovolos.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/services/mezoterapyya-dlya-volos-v-belczah',
-  },
+  alternates: bilingualAlternates('/services/mezoterapyya-dlya-volos-v-belczah', 'ru'),
   title: 'Мезотерапия для волос в Бельцах – восстановление и стимуляция роста',
   description:
     'Мезотерапия волос в Бельцах: выпадение, укрепление фолликул, рост и кожа головы. Запись в клинике Meddera.',

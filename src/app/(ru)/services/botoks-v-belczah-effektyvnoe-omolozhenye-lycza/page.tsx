@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import botoks from '@public/assets/img/services/botoks.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza',
-  },
+  alternates: bilingualAlternates('/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza', 'ru'),
   title: 'Ботокс в Бельцах – Инъекции для омоложения лица',
   description:
     'Инъекции ботокса в Бельцах: коррекция мимических морщин и гипергидроза. Безопасное омоложение в клинике Meddera. Запись на консультацию.',

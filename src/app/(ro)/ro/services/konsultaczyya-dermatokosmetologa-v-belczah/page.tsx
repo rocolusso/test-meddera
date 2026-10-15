@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import consultcosm from '@public/assets/img/services/consult-cosm.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/konsultaczyya-dermatokosmetologa-v-belczah',
-  },
+  alternates: bilingualAlternates('/services/konsultaczyya-dermatokosmetologa-v-belczah', 'ro'),
   title: 'Consultație dermatocosmetolog Bălți – Piele sănătoasă și frumoasă',
   description:
     'Consultații dermatocosmetologice în Bălți: acnee, pigmentare, riduri. Plan personalizat pentru un ten sănătos. Clinica Meddera.',

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import terapiyaProtivPigment from '@public/assets/img/services/terapiya-protiv-pigm.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/services/terapyya-protyv-pygmentaczyy-v-belczah',
-  },
+  alternates: bilingualAlternates('/services/terapyya-protyv-pygmentaczyy-v-belczah', 'ru'),
   title: 'Лечение пигментных пятен в Бельцах',
   description:
     'Лечение пигментации в Бельцах: лазер, пилинги, мезотерапия. Современные методы и консультация в Meddera.',

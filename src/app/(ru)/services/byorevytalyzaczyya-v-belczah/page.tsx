@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import biorevit from '@public/assets/img/services/biorevit.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/services/byorevytalyzaczyya-v-belczah',
-  },
+  alternates: bilingualAlternates('/services/byorevytalyzaczyya-v-belczah', 'ru'),
   title: 'Биоревитализация в Бельцах - Омоложение и Увлажнение Кожи',
   description:
     'Биоревитализация в Бельцах: увлажнение и омоложение кожи с гиалуроновой кислотой. Процедуры в клинике Meddera.',

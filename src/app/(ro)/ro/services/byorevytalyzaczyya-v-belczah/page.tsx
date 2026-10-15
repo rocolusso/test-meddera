@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import biorevit from '@public/assets/img/services/biorevit.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/byorevytalyzaczyya-v-belczah',
-  },
+  alternates: bilingualAlternates('/services/byorevytalyzaczyya-v-belczah', 'ro'),
   title: 'Biorevitalizare în Bălți - Rejuvenare Facială Profesională',
   description:
     'Biorevitalizare în Bălți: hidratare, regenerare și strălucire naturală a pielii. Proceduri la clinica Meddera.',

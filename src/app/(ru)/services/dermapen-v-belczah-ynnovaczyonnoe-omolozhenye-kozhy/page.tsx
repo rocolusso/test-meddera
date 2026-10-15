@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import dermapen from '@public/assets/img/services/dermapen.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
-  },
+  alternates: bilingualAlternates('/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy', 'ru'),
   title: 'Дермапен в Бельцах – фракционная мезотерапия для омоложения кожи',
   description:
     'Дермапен в Бельцах: морщины, рубцы, пигментация, мягкая реабилитация. Запись на процедуру в Meddera.',

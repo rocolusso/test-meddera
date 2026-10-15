@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import dermapen from '@public/assets/img/services/dermapen.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
-  },
+  alternates: bilingualAlternates('/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy', 'ro'),
   title: 'Dermapen Bălți - Tratament Microneedling pentru Rejuvenare Facială',
   description:
     'Dermapen în Bălți: microneedling pentru rejuvenare facială, cicatrici fine și textură uniformă a tenului. Programări la clinica Meddera, consultație prealabilă.',

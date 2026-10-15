@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { bilingualAlternates } from '@/lib/hreflang';
+
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import { VisuallyHidden } from '@/components/Visually-hidden';
 import mezolica from '@public/assets/img/services/mezolica.jpg';
@@ -8,9 +10,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  alternates: {
-    canonical: 'https://meddera.md/ro/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
-  },
+  alternates: bilingualAlternates('/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe', 'ro'),
   title: 'Mezoterapie Facială în Bălți | Rejuvenare și Hidratare Profesională',
   description:
     'Mezoterapie facială în Bălți: ten hidratat, întinerit, riduri și pigmentație. Tratament personalizat la clinica Meddera.',
