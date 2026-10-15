@@ -3,7 +3,7 @@ import React from 'react';
 import { bilingualAlternates } from '@/lib/hreflang';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
-import { VisuallyHidden } from '@/components/Visually-hidden';
+import ServiceSeoContent from '@/components/service/ServiceSeoContent';
 import biorevit from '@public/assets/img/services/biorevit.jpg';
 
 export const metadata = {
@@ -68,81 +68,12 @@ function ServicePage15Ro() {
         îmbătrânire și oboseală a
         pielii.
       </p>
-      <VisuallyHidden>
-        <div className="seo-block bg-gray-400">
-          <section>
-            <p className="font-semibold">Biorevitalizare în Bălți - Rejuvenare Facială Profesională</p>
-            <p>
-              Redă pielii tale vitalitatea și strălucirea cu ajutorul
-              biorevitalizării - tratamentul modern de
-              întinerire facială disponibil acum în Bălți.
-            </p>
-          </section>
-          <section>
-            <h2>Ce este Biorevitalizarea?</h2>
-            <p>
-              Biorevitalizarea este o procedură minim invazivă care
-              implică injectarea de acid hialuronic în piele
-              pentru a restabili hidratarea, elasticitatea și tonusul
-              acesteia. Este ideală pentru combaterea semnelor
-              de îmbătrânire și pentru revitalizarea tenului obosit.
-            </p>
-          </section>
-          <section>
-            <h2>Beneficiile Biorevitalizării</h2>
-            <ul>
-              <li>Hidratare profundă a pielii</li>
-              <li>Reducerea ridurilor fine și a liniilor de expresie</li>
-              <li>Îmbunătățirea elasticității și fermității pielii</li>
-              <li>Redarea strălucirii naturale a tenului</li>
-              <li>Stimularea producției de colagen și elastină</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Indicații pentru Biorevitalizare</h2>
-            <p>Biorevitalizarea este recomandată pentru:</p>
-            <ul>
-              <li>Ten deshidratat sau tern</li>
-              <li>Semne de îmbătrânire prematură</li>
-              <li>Piele afectată de expunerea la soare</li>
-              <li>Recuperare după proceduri dermatologice</li>
-              <li>Prevenirea îmbătrânirii cutanate</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Procedura de Biorevitalizare</h2>
-            <p>
-              Tratamentul constă în injectarea de acid hialuronic în
-              zonele afectate ale feței. Procedura durează
-              aproximativ 60 de minute și nu necesită timp de recuperare.
-              Rezultatele sunt vizibile după prima
-              ședință, cu efecte cumulative în urma tratamentelor repetate.
-            </p>
-          </section>
-          <section>
-            <h2>De ce să alegi clinica noastră din Bălți?</h2>
-            <ul>
-              <li>Specialiști cu experiență în dermatologie estetică</li>
-              <li>Produse de calitate superioară, aprobate internațional</li>
-              <li>Abordare personalizată pentru fiecare pacient</li>
-              <li>Ambianță confortabilă și echipamente moderne</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Programează-te acum</h2>
-            <p>
-              Contactează-ne pentru o consultație gratuită și descoperă
-              cum biorevitalizarea poate transforma
-              aspectul pielii tale.
-            </p>
-            <p>
-              Telefon:
-              <a href="tel:+37368550030">+373 685 500 30</a>
-            </p>
-            <p>Adresă: Balti, Stefan Cel Mare, 13, Moldova</p>
-          </section>
-        </div>
-      </VisuallyHidden>
+      <ServiceSeoContent
+        locale="ro"
+        slug="byorevytalyzaczyya-v-belczah"
+        title={metadata.title}
+        description={metadata.description}
+      />
 
     </ContentPageShell>
   );

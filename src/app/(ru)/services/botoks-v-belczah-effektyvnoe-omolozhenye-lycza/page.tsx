@@ -3,7 +3,7 @@ import React from 'react';
 import { bilingualAlternates } from '@/lib/hreflang';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
-import { VisuallyHidden } from '@/components/Visually-hidden';
+import ServiceSeoContent from '@/components/service/ServiceSeoContent';
 import botoks from '@public/assets/img/services/botoks.jpg';
 
 export const metadata = {
@@ -66,73 +66,12 @@ function ServicePage14() {
         улучшая общий внешний вид
         кожи.
       </p>
-      <VisuallyHidden>
-        <div className="seo-block bg-gray-400">
-          <section>
-            <p className="font-semibold">Ботокс в Бельцах – Эффективное омоложение лица</p>
-            <p>
-              Профессиональные инъекции ботокса для устранения морщин
-              и лечения гипергидроза в клинике Meddera.
-            </p>
-          </section>
-          <section>
-            <h2>Преимущества процедуры ботокса</h2>
-            <ul>
-              <li>Быстрый эффект – результат заметен уже через 3-5 дней</li>
-              <li>Длительное действие – до 6 месяцев</li>
-              <li>Безопасность и минимальный риск побочных эффектов</li>
-              <li>Отсутствие периода реабилитации</li>
-              <li>Естественный результат без потери мимики</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Показания к применению ботокса</h2>
-            <article>
-              <h3>Коррекция мимических морщин</h3>
-              <p>
-                Устранение морщин на лбу, между бровями и в области глаз
-                &quot;гусиные лапки&quot;.
-              </p>
-            </article>
-            <article>
-              <h3>Лечение гипергидроза</h3>
-              <p>Снижение чрезмерного потоотделения в области подмышек, ладоней и стоп.</p>
-            </article>
-            <article>
-              <h3>Подтяжка лица и шеи</h3>
-              <p>Безоперационное омоложение и улучшение контура лица и шеи.</p>
-            </article>
-            <article>
-              <h3>Профилактика появления новых морщин</h3>
-              <p>
-                Предотвращение образования новых мимических морщин при
-                регулярном применении.
-              </p>
-            </article>
-          </section>
-          <section>
-            <h2>Как проходит процедура</h2>
-            <p>
-              Процедура инъекций ботокса занимает около 15–30 минут
-              и не требует анестезии. Специалист определяет
-              зоны введения препарата и проводит инъекции с использованием
-              тонкой иглы. После процедуры пациент может
-              сразу вернуться к обычной жизни.
-            </p>
-          </section>
-          <section>
-            <h2>Почему выбирают клинику Meddera в Бельцах</h2>
-            <p>
-              Наша клиника предлагает профессиональные услуги инъекционной
-              косметологии с использованием
-              сертифицированных препаратов. Опытные специалисты,
-              индивидуальный подход и современное оборудование
-              гарантируют высокое качество процедур и безопасность
-              для пациентов.
-            </p>
-          </section>
-        </div>
-      </VisuallyHidden>
+      <ServiceSeoContent
+        locale="ru"
+        slug="botoks-v-belczah-effektyvnoe-omolozhenye-lycza"
+        title={metadata.title}
+        description={metadata.description}
+      />
 
     </ContentPageShell>
   );

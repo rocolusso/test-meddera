@@ -3,7 +3,7 @@ import React from 'react';
 import { bilingualAlternates } from '@/lib/hreflang';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
-import { VisuallyHidden } from '@/components/Visually-hidden';
+import ServiceSeoContent from '@/components/service/ServiceSeoContent';
 import maskaLica from '@public/assets/img/services/maska_lica.jpg';
 
 export const metadata = {
@@ -71,92 +71,12 @@ function ServicePage7() {
         от
         других процедур.
       </p>
-      <VisuallyHidden>
-        <div className="seo-block bg-gray-400">
-          <section>
-            <p className="font-semibold">Альгинатная маска в Бельцах – Профессиональный уход за вашей кожей</p>
-            <p>
-              Ощутите мгновенное увлажнение, лифтинг и сияние с помощью
-              альгинатной маски от опытного косметолога в
-              Бельцах.
-            </p>
-          </section>
-          <section>
-            <h2>Преимущества альгинатной маски</h2>
-            <ul>
-              <li>Глубокое увлажнение и питание кожи</li>
-              <li>Мгновенный лифтинг-эффект</li>
-              <li>Устранение воспалений и улучшение текстуры кожи</li>
-              <li>Осветление пигментации и выравнивание тона</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Почему выбирают нас в Бельцах?</h2>
-            <article>
-              <h3>Опытный косметолог</h3>
-              <p>
-                Наш специалист имеет более 10 лет опыта в области косметологии и
-                постоянно совершенствует свои
-                навыки.
-              </p>
-            </article>
-            <article>
-              <h3>Индивидуальный подход</h3>
-              <p>
-                Мы подбираем состав маски в зависимости от типа и состояния вашей
-                кожи для достижения максимального
-                эффекта.
-              </p>
-            </article>
-            <article>
-              <h3>Современные методики</h3>
-              <p>
-                Используем только сертифицированные и проверенные препараты,
-                соответствующие международным
-                стандартам.
-              </p>
-            </article>
-            <article>
-              <h3>Удобное расположение</h3>
-              <p>
-                Наш кабинет находится в центре Бельц, что обеспечивает легкий
-                доступ для всех клиентов.
-              </p>
-            </article>
-          </section>
-          <section>
-            <h2>Как проходит процедура?</h2>
-            <p>
-              Процедура начинается с очищения кожи, после чего наносится альгинатная маска.
-              После застывания маска
-              снимается, а кожа обрабатывается увлажняющим средством. Весь процесс занимает
-              около 30-40 минут.
-            </p>
-          </section>
-          <section>
-            <h2>Отзывы наших клиентов</h2>
-            <ul>
-              <li>
-                После процедуры кожа стала заметно свежее и подтянутой. Очень довольна
-                результатом! – Мария, 35
-                лет
-              </li>
-              <li>Рекомендую всем! Отличный сервис и профессиональный подход. – Елена, 28 лет</li>
-              <li>Моя кожа никогда не выглядела так хорошо. Спасибо! – Ольга, 42 года</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Запишитесь на процедуру уже сегодня!</h2>
-            <p>
-              Позвоните нам по телефону
-              <strong>+373 68550030</strong>
-              {' '}
-              или заполните форму на сайте для записи на
-              процедуру альгинатной маски в Бельцах.
-            </p>
-          </section>
-        </div>
-      </VisuallyHidden>
+      <ServiceSeoContent
+        locale="ru"
+        slug="algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej"
+        title={metadata.title}
+        description={metadata.description}
+      />
 
     </ContentPageShell>
   );

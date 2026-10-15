@@ -3,7 +3,7 @@ import React from 'react';
 import { bilingualAlternates } from '@/lib/hreflang';
 
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
-import { VisuallyHidden } from '@/components/Visually-hidden';
+import ServiceSeoContent from '@/components/service/ServiceSeoContent';
 import mezovolos from '@public/assets/img/services/mezovolos.jpg';
 
 export const metadata = {
@@ -68,108 +68,12 @@ function ServicePage12Ro() {
         ajută la restabilirea sănătății părului, îmbunătățirea densității și
         texturii acestuia.
       </p>
-      <VisuallyHidden>
-        <div className="seo-block bg-gray-400">
-          <section>
-            <p className="font-semibold">Mezoterapia pentru păr în Bălți</p>
-            <p>Redă-ți încrederea cu un tratament eficient împotriva căderii părului</p>
-          </section>
-          <section>
-            <h2>Ce este mezoterapia pentru păr?</h2>
-            <p>
-              Mezoterapia este o procedură minim invazivă care implică injectarea
-              de substanțe nutritive direct în
-              scalp pentru a stimula creșterea părului și a preveni căderea acestuia.
-              Această tehnică este eficientă
-              în tratarea alopeciei și a altor probleme ale scalpului.
-            </p>
-          </section>
-          <section>
-            <h2>Beneficiile mezoterapiei pentru păr</h2>
-            <ul>
-              <li>Stimulează creșterea părului nou</li>
-              <li>Îmbunătățește circulația sanguină la nivelul scalpului</li>
-              <li>Întărește foliculii de păr</li>
-              <li>Reduce căderea părului</li>
-              <li>Îmbunătățește textura și aspectul părului</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Indicații și contraindicații</h2>
-            <article>
-              <h3>Indicații</h3>
-              <p>Mezoterapia este recomandată pentru persoane care se confruntă cu:</p>
-              <ul>
-                <li>Căderea excesivă a părului</li>
-                <li>Alopecie androgenetică sau difuză</li>
-                <li>Păr subțire și fragil</li>
-                <li>Scalp uscat sau gras</li>
-              </ul>
-            </article>
-            <article>
-              <h3>Contraindicații</h3>
-              <p>Procedura nu este recomandată în următoarele cazuri:</p>
-              <ul>
-                <li>Sarcină și alăptare</li>
-                <li>Infecții active ale scalpului</li>
-                <li>Alergii la substanțele utilizate</li>
-                <li>Tulburări de coagulare a sângelui</li>
-              </ul>
-            </article>
-          </section>
-          <section>
-            <h2>Procedura și durata tratamentului</h2>
-            <p>
-              O ședință de mezoterapie durează aproximativ 30-60 de minute.
-            </p>
-            <p>
-              Pentru rezultate optime, se recomandă un ciclu de 6-10
-              ședințe, efectuate la intervale de 1-2
-              săptămâni.
-            </p>
-          </section>
-          <section>
-            <h2>Rezultate așteptate</h2>
-            <p>
-              Pacienții observă o reducere semnificativă a
-              căderii părului și o îmbunătățire a densității și texturii
-              părului după câteva ședințe.
-
-            </p>
-          </section>
-          <section>
-            <h2>Testimoniale</h2>
-            <blockquote>
-              <p>
-                După doar câteva ședințe de mezoterapie, am observat o
-                îmbunătățire semnificativă a stării părului
-                meu. Recomand cu încredere! – Maria, 34 ani
-              </p>
-            </blockquote>
-            <blockquote>
-              <p>
-                Profesionalism și rezultate excelente. Părul meu arată
-                mai sănătos ca niciodată. – Ion, 40 ani
-              </p>
-            </blockquote>
-          </section>
-          <section>
-            <h2>Programează-te acum</h2>
-            <p>
-              Redescoperă frumusețea părului tău cu ajutorul mezoterapiei.
-              Contactează-ne pentru o consultație
-              personalizată.
-            </p>
-            <ul>
-              <li>
-                Telefon:
-                <a href="tel:+37368550030">+37368550030</a>
-              </li>
-              <li>Adresă: Balti, Stefan Cel Mare, 13, Moldova</li>
-            </ul>
-          </section>
-        </div>
-      </VisuallyHidden>
+      <ServiceSeoContent
+        locale="ro"
+        slug="mezoterapyya-dlya-volos-v-belczah"
+        title={metadata.title}
+        description={metadata.description}
+      />
 
     </ContentPageShell>
   );
