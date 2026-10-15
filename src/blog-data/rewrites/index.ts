@@ -2,6 +2,9 @@ import { DERMATOLOGIST_A } from '@/blog-data/rewrites/dermatologist-a';
 import { DERMATOLOGIST_B } from '@/blog-data/rewrites/dermatologist-b';
 import { DERMATOLOGIST_C } from '@/blog-data/rewrites/dermatologist-c';
 import { DERMATOLOGIST_D } from '@/blog-data/rewrites/dermatologist-d';
+import { BOTOX_A } from '@/blog-data/rewrites/botox-a';
+import { BOTOX_B } from '@/blog-data/rewrites/botox-b';
+import { BOTOX_C } from '@/blog-data/rewrites/botox-c';
 import { DERMATOLOGIST_E } from '@/blog-data/rewrites/dermatologist-e';
 import type { ArticleRewrites } from '@/blog-data/rewrites/types';
 
@@ -12,4 +15,7 @@ export const BLOG_REWRITES: ArticleRewrites = {
   ...DERMATOLOGIST_C,
   ...DERMATOLOGIST_D,
   ...DERMATOLOGIST_E,
+  ...BOTOX_A,
+  ...BOTOX_B,
+  ...BOTOX_C,
 };
