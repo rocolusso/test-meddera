@@ -19,6 +19,7 @@ import { LIPS_ARTICLE_CONTENT } from '@/blog-data/lips-article-content';
 import { MESOTHERAPY_FACE_ARTICLE_CONTENT } from '@/blog-data/mesotherapy-face-article-content';
 import { BIOREVITALIZATION_ARTICLE_CONTENT } from '@/blog-data/biorevitalization-article-content';
 import { FILLERS_ARTICLE_CONTENT } from '@/blog-data/fillers-article-content';
+import { BLOG_REWRITES } from '@/blog-data/rewrites';
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
 
 export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.ReactNode {
@@ -26,7 +27,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
     case 'lip-augmentation-hub':
       return <LipAugmentationHubBody locale={locale} dateModified={post.dateModified} />;
     case 'lip-cluster-article': {
-      const content = LIPS_ARTICLE_CONTENT[post.id];
+      const content = BLOG_REWRITES[post.id] ?? LIPS_ARTICLE_CONTENT[post.id];
       if (content) {
         const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
         return <LipArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
@@ -38,7 +39,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
     case 'dermatologist-hub':
       return <DermatologistHubBody locale={locale} dateModified={post.dateModified} />;
     case 'dermatologist-article': {
-      const content = DERMATOLOGIST_ARTICLE_CONTENT[post.id];
+      const content = BLOG_REWRITES[post.id] ?? DERMATOLOGIST_ARTICLE_CONTENT[post.id];
       if (!content) return null;
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
       return <DermatologistArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
@@ -47,7 +48,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
     case 'botox-hub':
       return <BotoxHubBody locale={locale} dateModified={post.dateModified} />;
     case 'botox-article': {
-      const content = BOTOX_ARTICLE_CONTENT[post.id];
+      const content = BLOG_REWRITES[post.id] ?? BOTOX_ARTICLE_CONTENT[post.id];
       if (!content) return null;
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
       return <BotoxArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
@@ -56,7 +57,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
     case 'mesotherapy-face-hub':
       return <MesotherapyFaceHubBody locale={locale} dateModified={post.dateModified} />;
     case 'mesotherapy-face-article': {
-      const content = MESOTHERAPY_FACE_ARTICLE_CONTENT[post.id];
+      const content = BLOG_REWRITES[post.id] ?? MESOTHERAPY_FACE_ARTICLE_CONTENT[post.id];
       if (!content) return null;
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
       return <MesotherapyFaceArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
@@ -65,7 +66,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
     case 'biorevitalization-hub':
       return <BiorevitalizationHubBody locale={locale} dateModified={post.dateModified} />;
     case 'biorevitalization-article': {
-      const content = BIOREVITALIZATION_ARTICLE_CONTENT[post.id];
+      const content = BLOG_REWRITES[post.id] ?? BIOREVITALIZATION_ARTICLE_CONTENT[post.id];
       if (!content) return null;
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
       return <BiorevitalizationArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
@@ -74,7 +75,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
     case 'fillers-hub':
       return <FillersHubBody locale={locale} dateModified={post.dateModified} />;
     case 'fillers-article': {
-      const content = FILLERS_ARTICLE_CONTENT[post.id];
+      const content = BLOG_REWRITES[post.id] ?? FILLERS_ARTICLE_CONTENT[post.id];
       if (!content) return null;
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
       return <FillersArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;

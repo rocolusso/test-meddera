@@ -10,6 +10,7 @@ type Props = { post: BlogPost; locale: BlogLocale; dateModified: string; section
 export function FillersArticleBody({ post, locale, dateModified, sections }: Props) {
   const isRu = locale === 'ru';
   const title = isRu ? post.titleRu : post.titleRo;
+  const h1Text = title.replace(/\s*\|\s*Meddera.*$/i, '');
   const ruUrl = blogPathRu(post.slugRu);
   const roUrl = blogPathRo(post.slugRo);
   const relatedPosts = getRelatedArticles(post, 5);
@@ -31,7 +32,7 @@ export function FillersArticleBody({ post, locale, dateModified, sections }: Pro
       </nav>
       <p className={blogUi.meta}>{isRu ? 'Автор:' : 'Autor:'} {authorByline}</p>
       <p className={blogUi.meta}>{isRu ? 'Обновлено:' : 'Actualizat:'} {dateModified} · <Link href={isRu ? roUrl : ruUrl} className={blogUi.crumbLink} hrefLang={isRu ? 'ro' : 'ru'}>{isRu ? 'Română' : 'Русский'}</Link></p>
-      <h1 className={blogUi.h1}>{title}</h1>
+      <h1 className={blogUi.h1}>{h1Text}</h1>
       <div className={blogUi.disclaimerBox}>
         <p className={blogUi.small}>{isRu ? 'Материал носит информационный характер.' : 'Materialul are caracter informativ.'}</p>
       </div>

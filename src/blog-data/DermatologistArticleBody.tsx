@@ -18,6 +18,7 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
   const isRu = locale === 'ru';
   const slug = isRu ? post.slugRu : post.slugRo;
   const title = isRu ? post.titleRu : post.titleRo;
+  const h1Text = title.replace(/\s*\|\s*Meddera.*$/i, '');
   const ruUrl = blogPathRu(post.slugRu);
   const roUrl = blogPathRo(post.slugRo);
   
@@ -63,7 +64,7 @@ export function DermatologistArticleBody({ post, locale, dateModified, sections 
       </p>
 
       <h1 className={blogUi.h1}>
-        {title}
+        {h1Text}
       </h1>
 
       <div className={blogUi.disclaimerBox}>
