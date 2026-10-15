@@ -13,7 +13,7 @@ import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { blogSocialMetadata } from '@/lib/site-og';
 
 const canonical = 'https://meddera.md/ro';
-const RO_HOME_TITLE = 'Dermatolog Bălți - Consultații Dermatologice Profesionale | Meddera';
+const RO_HOME_TITLE = 'Dermatolog Bălți - Consultații Dermatologice Profesionale';
 const RO_HOME_DESCRIPTION =
   'Dermatolog în Bălți — Meddera: consultații pentru acnee, eczeme, psoriazis, alunițe și alte afecțiuni ale pielii. Programări online.';
 

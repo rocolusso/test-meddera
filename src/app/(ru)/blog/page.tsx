@@ -14,7 +14,7 @@ const blogIndexDescription =
   'Статьи и гиды клиники Meddera в Бельцах: косметология, дерматология и эстетические процедуры. Полезные материалы для пациентов перед консультацией.';
 
 const blogIndexUrl = `${ORIGIN}/blog`;
-const blogIndexMetaTitle = `${blogIndexTitle} | Meddera`;
+const blogIndexMetaTitle = blogIndexTitle;
 
 const blogIndexJsonLd = webPageJsonLd({
   pageUrl: blogIndexUrl,

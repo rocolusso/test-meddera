@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `${ORIGIN}/ro/blog/page/${n}`;
   const description = `Articole și ghiduri Meddera, Bălți — pagina ${n}. Dermatologie și cosmetologie: informații pentru pacienți care se pregătesc pentru consultație.`;
   return {
-    title: `Blog — pagina ${n} | Meddera`,
+    title: `Blog — articole și ghiduri Meddera Bălți, pagina ${n}`,
     description,
     alternates: {
       canonical,
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     ...blogSocialMetadata({
-      title: `Blog — pagina ${n} | Meddera`,
+      title: `Blog — articole și ghiduri Meddera Bălți, pagina ${n}`,
       description,
       url: canonical,
       locale: 'ro_MD',
@@ -65,7 +65,7 @@ export default async function RoBlogIndexPaginatedPage({ params }: Props) {
   }
 
   const canonical = `${ORIGIN}/ro/blog/page/${page}`;
-  const metaTitle = `Blog — pagina ${page} | Meddera`;
+  const metaTitle = `Blog — articole și ghiduri Meddera Bălți, pagina ${page}`;
   const metaDescription = `Articole și ghiduri Meddera, Bălți — pagina ${page}. Dermatologie și cosmetologie: informații pentru pacienți care se pregătesc pentru consultație.`;
   const paginatedJsonLd = webPageJsonLd({
     pageUrl: canonical,

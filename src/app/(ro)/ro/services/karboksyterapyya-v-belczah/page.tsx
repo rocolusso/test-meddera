@@ -11,11 +11,11 @@ export const metadata = {
   alternates: {
     canonical: 'https://meddera.md/ro/services/karboksyterapyya-v-belczah',
   },
-  title: 'Carboxiterapie Bălți - Rejuvenare Facială și Corporală | Meddera',
+  title: 'Carboxiterapie Bălți - Rejuvenare Facială și Corporală',
   description:
     'Carboxiterapie Meddera Bălți: piele întinerită, celulită, vergeturi. Tratament non-invaziv. Programări online.',
   openGraph: {
-    title: 'Carboxiterapie Bălți - Rejuvenare Facială și Corporală | Meddera',
+    title: 'Carboxiterapie Bălți - Rejuvenare Facială și Corporală',
     description:
       'Carboxiterapie Meddera Bălți: piele întinerită, celulită, vergeturi. Tratament non-invaziv. Programări online.',
 
@@ -32,7 +32,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Carboxiterapie Bălți - Rejuvenare Facială și Corporală | Meddera',
+    title: 'Carboxiterapie Bălți - Rejuvenare Facială și Corporală',
     description:
       'Carboxiterapie Meddera Bălți: piele întinerită, celulită, vergeturi. Tratament non-invaziv. Programări online.',
 

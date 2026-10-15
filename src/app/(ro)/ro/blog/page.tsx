@@ -14,7 +14,7 @@ const roBlogIndexDescription =
   'Articole și ghiduri de la clinica Meddera din Bălți: dermatologie, cosmetologie și proceduri estetice. Informații utile pentru pacienți înainte de consultație.';
 
 const roBlogIndexUrl = `${ORIGIN}/ro/blog`;
-const roBlogIndexMetaTitle = `${roBlogIndexTitle} | Meddera`;
+const roBlogIndexMetaTitle = roBlogIndexTitle;
 
 const roBlogIndexJsonLd = webPageJsonLd({
   pageUrl: roBlogIndexUrl,

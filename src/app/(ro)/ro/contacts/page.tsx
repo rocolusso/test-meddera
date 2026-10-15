@@ -10,7 +10,7 @@ import { OG_SITE_NAME } from '@/lib/site-og';
 const canonical = 'https://meddera.md/ro/contacts';
 const ruUrl = 'https://meddera.md/contacts';
 
-const PAGE_TITLE = 'Contacte clinica Meddera Bălți — programare și adresă | Meddera';
+const PAGE_TITLE = 'Contacte clinica Meddera Bălți — programare și adresă';
 const PAGE_DESC =
   'Contacte clinica Meddera la Bălți: str. Ștefan cel Mare, 13, telefon, formular. Recepție Mar, Joi–Sâm 13:00–18:00, luni, miercuri și duminică — închis. Hartă.';
 const OG_IMAGE = 'https://meddera.md/assets/img/img_contacts.jpg';

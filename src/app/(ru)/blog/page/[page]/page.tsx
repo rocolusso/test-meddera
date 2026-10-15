@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `${ORIGIN}/blog/page/${n}`;
   const description = `Статьи и гиды клиники Meddera в Бельцах — страница ${n}. Косметология и дерматология; материалы для пациентов, которые рассматривают процедуры в Бельцах.`;
   return {
-    title: `Блог — страница ${n} | Meddera`,
+    title: `Блог клиники Meddera в Бельцах, страница ${n}`,
     description,
     alternates: {
       canonical,
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     robots: n > max ? { index: false } : undefined,
     ...blogSocialMetadata({
-      title: `Блог — страница ${n} | Meddera`,
+      title: `Блог клиники Meddera в Бельцах, страница ${n}`,
       description,
       url: canonical,
       locale: 'ru_MD',
@@ -66,7 +66,7 @@ export default async function BlogIndexPaginatedPage({ params }: Props) {
   }
 
   const canonical = `${ORIGIN}/blog/page/${page}`;
-  const metaTitle = `Блог — страница ${page} | Meddera`;
+  const metaTitle = `Блог клиники Meddera в Бельцах, страница ${page}`;
   const metaDescription = `Статьи и гиды клиники Meddera в Бельцах — страница ${page}. Косметология и дерматология; материалы для пациентов, которые рассматривают процедуры в Бельцах.`;
   const paginatedJsonLd = webPageJsonLd({
     pageUrl: canonical,

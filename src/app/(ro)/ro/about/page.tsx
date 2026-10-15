@@ -11,7 +11,7 @@ import { OG_SITE_NAME } from '@/lib/site-og';
 const canonical = 'https://meddera.md/ro/about';
 const ruUrl = 'https://meddera.md/about';
 
-const PAGE_TITLE = 'Despre mine — Ecaterina Pîntea, dermatolog Bălți | Meddera';
+const PAGE_TITLE = 'Despre mine — Ecaterina Pîntea, dermatolog Bălți';
 const PAGE_DESC =
   'Biografie, studii și specializare: Ecaterina Pîntea — medic dermatovenerolog și cosmetolog, fondatoarea clinicii Meddera din Bălți. Peste 11 ani de experiență.';
 const OG_IMAGE = 'https://meddera.md/assets/img/about_2k.jpg';

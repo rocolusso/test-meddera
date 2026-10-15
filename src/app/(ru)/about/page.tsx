@@ -11,7 +11,7 @@ import { OG_SITE_NAME } from '@/lib/site-og';
 const canonical = 'https://meddera.md/about';
 const roUrl = 'https://meddera.md/ro/about';
 
-const PAGE_TITLE = 'Обо мне — Екатерина Пынтя, дерматолог-косметолог в Бельцах | Meddera';
+const PAGE_TITLE = 'Обо мне — Екатерина Пынтя, дерматолог-косметолог в Бельцах';
 const PAGE_DESC =
   'Биография, образование и специализация Екатерины Пынтя — врача-дерматовенеролога и косметолога, основателя клиники Meddera в Бельцах. Опыт более 11 лет.';
 const OG_IMAGE = 'https://meddera.md/assets/img/about_2k.jpg';

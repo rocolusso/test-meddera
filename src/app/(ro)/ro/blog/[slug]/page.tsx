@@ -26,8 +26,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
   const canonical = `${ORIGIN}/ro/blog/${post.slugRo}`;
   const ruUrl = `${ORIGIN}/blog/${post.slugRu}`;
+  const seoTitle = post.titleRo.replace(/\s*\|\s*Meddera$/, '');
   return {
-    title: post.titleRo,
+    title: seoTitle,
     description: post.descriptionRo,
     alternates: {
       canonical,
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     ...blogSocialMetadata({
-      title: post.titleRo,
+      title: seoTitle,
       description: post.descriptionRo,
       url: canonical,
       locale: 'ro_MD',
