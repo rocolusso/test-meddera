@@ -5,6 +5,7 @@ import { DERMATOLOGIST_D } from '@/blog-data/rewrites/dermatologist-d';
 import { BOTOX_A } from '@/blog-data/rewrites/botox-a';
 import { BOTOX_B } from '@/blog-data/rewrites/botox-b';
 import { BOTOX_C } from '@/blog-data/rewrites/botox-c';
+import { BIOREV_A } from '@/blog-data/rewrites/biorev-a';
 import { DERMATOLOGIST_E } from '@/blog-data/rewrites/dermatologist-e';
 import type { ArticleRewrites } from '@/blog-data/rewrites/types';
 
@@ -18,4 +19,5 @@ export const BLOG_REWRITES: ArticleRewrites = {
   ...BOTOX_A,
   ...BOTOX_B,
   ...BOTOX_C,
+  ...BIOREV_A,
 };
