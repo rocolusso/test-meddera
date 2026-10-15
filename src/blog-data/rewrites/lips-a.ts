@@ -260,7 +260,6 @@ export const LIPS_A: ArticleRewrites = {
         h2: 'Cum îl ajutați pe medic să vă înțeleagă dorințele',
         paragraphs: [
           'Aduceți fotografii pe care vă place forma buzelor și arătați ce anume vă atrage. Spuneți ce trăsături ale buzelor ați vrea să schimbați și care să rămână. Medicul va evalua ce se poate realiza pe fața dumneavoastră și vă va spune sincer dacă dorința nu se potrivește proporțiilor.',
-          'Comparația cu buzele altora nu este întotdeauna potrivită, deoarece ele se află pe altă față.',
         ],
       },
       {
@@ -272,7 +271,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Cum decideți dacă e nevoie de o vizită repetată',
         paragraphs: [
-          'Când edemul scade, priviți buzele la lumina zilei, în repaus și la zâmbet. Dacă ceva vă deranjează, discutați cu medicul. El evaluează forma și propune dacă sunt necesare ajustări. Nu încercați să obțineți perfecțiunea dintr-o singură vizită.',
+          'Când edemul scade, priviți buzele la lumina zilei, în repaus și la zâmbet. Dacă ceva vă deranjează, discutați cu medicul. El evaluează forma și propune dacă sunt necesare ajustări.',
         ],
       },
       {

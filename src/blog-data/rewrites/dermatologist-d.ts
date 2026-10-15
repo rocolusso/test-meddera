@@ -86,7 +86,6 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
         h2: 'Cum stabilește medicul cauza',
         paragraphs: [
           'La consultație medicul întreabă când au apărut petele, cum s-au schimbat, ce a precedat, dacă sunt legate de sarcină, preparate hormonale sau de expunerea îndelungată la soare. Trebuie să spuneți ce medicamente și produse de îngrijire folosiți: unele cresc sensibilitatea pielii la soare.',
-          'Dacă se suspectează cauze hormonale, medicul poate propune investigații suplimentare.',
         ],
       },
       {
@@ -99,7 +98,7 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
       {
         h2: 'Protecția solară',
         paragraphs: [
-          'Fără protecție zilnică împotriva ultravioletelor orice tratament își pierde sensul: petele revin și se închid. Aplicați crema cu protecție solară dimineața și reînnoiți-o la șederea îndelungată afară, purtați pălărie cu boruri și evitați soarele în orele cele mai puternice. Vremea noroasă nu anulează protecția.',
+          'Fără protecție zilnică împotriva ultravioletelor orice tratament își pierde sensul: petele revin și se închid. Aplicați crema cu protecție solară dimineața și reînnoiți-o la șederea îndelungată afară, purtați pălărie cu boruri și evitați soarele în orele cele mai puternice.',
         ],
       },
       {
@@ -111,7 +110,7 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
       {
         h2: 'Cum vă pregătiți pentru vizită',
         paragraphs: [
-          'Veniți fără machiaj, ca medicul să vadă pielea întreagă. Amintiți-vă când au apărut petele, dacă au mai existat, dacă s-au schimbat după soare sau preparate hormonale. Aduceți lista produselor și medicamentelor.',
+          'Veniți fără machiaj, ca medicul să vadă pielea întreagă. Amintiți-vă când au apărut petele, dacă au mai existat, dacă s-au schimbat după soare sau preparate hormonale.',
         ],
       },
       {
