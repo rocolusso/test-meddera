@@ -9,7 +9,9 @@ import AboutNew from '@/components/new-ui/AboutNew';
 import ServicesNew from '@/components/new-ui/ServicesNew';
 import HomeSeoContentRo from '@/components/new-ui/HomeSeoContentRo';
 import FooterNew from '@/components/new-ui/FooterNew';
+import { HOME_FAQ_RO } from '@/lib/home-faq';
 import { webPageJsonLd } from '@/lib/jsonld/web-page';
+import { faqNode } from '@/lib/schema/graph';
 import { blogSocialMetadata } from '@/lib/site-og';
 
 const canonical = 'https://meddera.md/ro';
@@ -23,6 +25,7 @@ const jsonLd = webPageJsonLd({
   description: RO_HOME_DESCRIPTION.replace(/\s+/g, ' ').trim(),
   inLanguage: 'ro-MD',
   breadcrumbItems: [{ name: 'Acasă', item: canonical }],
+  extra: [faqNode(canonical, HOME_FAQ_RO)],
 });
 
 export const metadata: Metadata = {

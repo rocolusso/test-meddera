@@ -32,7 +32,7 @@ function BookingBlock({ locale }: { locale: Locale }) {
       <h2 className={h2Class}>{ru ? 'Запись на приём' : 'Programare la consultație'}</h2>
       <p>
         {ru ? 'Записаться можно по телефону ' : 'Vă puteți programa la telefon '}
-        <a href={`tel:${PHONE}`}>+373 68 550 030</a>
+        <a href={`tel:${PHONE}`}>+373 685 500 30</a>
         {ru
           ? ' или через форму записи на этой странице. Клиника Meddera находится в Бельцах, на улице Штефан чел Маре, 13. '
           : ' sau prin formularul de programare de pe această pagină. Clinica Meddera se află în Bălți, pe strada Ștefan cel Mare, 13. '}

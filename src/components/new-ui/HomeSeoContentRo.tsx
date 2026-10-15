@@ -7,6 +7,7 @@ import {
   HomeSeoPanel,
   HomeSeoShell,
 } from '@/components/new-ui/HomeSeoPrimitives';
+import { HOME_FAQ_RO } from '@/lib/home-faq';
 
 const faqItemClass =
   'border-l-2 border-deep-pink bg-pofo-light-gray py-2.5 pl-4 pr-2 text-[14px] leading-[24px] sm:text-[15px] sm:leading-[26px]';
@@ -61,28 +62,12 @@ export default function HomeSeoContentRo() {
 
       <HomeSeoPanel title="Întrebări frecvente" className="md:col-span-2">
         <ul className="space-y-3">
-          <li className={faqItemClass}>
-            <strong className="text-pofo-heading">Cât durează o consultație dermatologică?</strong>
-            <span className="text-muted-foreground"> Aproximativ 30 de minute.</span>
-          </li>
-          <li className={faqItemClass}>
-            <strong className="text-pofo-heading">Este necesară o programare în avans?</strong>
-            <span className="text-muted-foreground">
-              {' '}
-              Da, recomandăm programarea prealabilă pentru a evita timpii de așteptare.
-            </span>
-          </li>
-          <li className={faqItemClass}>
-            <strong className="text-pofo-heading">Oferiți tratamente pentru afecțiuni cronice ale pielii?</strong>
-            <span className="text-muted-foreground">
-              {' '}
-              Da, tratăm o gamă largă de afecțiuni dermatologice, inclusiv cele cronice.
-            </span>
-          </li>
-          <li className={faqItemClass}>
-            <strong className="text-pofo-heading">Acceptați asigurări medicale?</strong>
-            <span className="text-muted-foreground"> Da, colaborăm cu diverse companii de asigurări medicale.</span>
-          </li>
+          {HOME_FAQ_RO.map((item) => (
+            <li key={item.question} className={faqItemClass}>
+              <strong className="text-pofo-heading">{item.question}</strong>
+              <span className="text-muted-foreground"> {item.answer}</span>
+            </li>
+          ))}
         </ul>
       </HomeSeoPanel>
 
