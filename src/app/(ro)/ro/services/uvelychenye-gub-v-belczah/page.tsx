@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { bilingualAlternates } from '@/lib/hreflang';
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import uvelichenieGub from '@public/assets/img/services/uvelicheniegub.jpg';
 import uvelichenieGub1 from '@public/assets/img/services/lips/lips1.jpg';
@@ -17,7 +18,7 @@ import uvelichenieGub10 from '@public/assets/img/services/lips/lips10.jpg';
 
 export const metadata = {
   icons: { icon: '/favicon.ico' },
-  alternates: { canonical: 'https://meddera.md/ro/services/uvelychenye-gub-v-belczah' },
+  alternates: bilingualAlternates('/services/uvelychenye-gub-v-belczah', 'ro'),
   title: 'Mărire buze în Bălți — Proceduri eficiente și sigure',
   description:
     'Mărire buze în Bălți: conturare, acid hialuronic, fillere sigure. Consultație și tratament la clinica Meddera.',
