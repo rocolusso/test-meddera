@@ -4,6 +4,7 @@ import Link from 'next/link';
 import type { BlogLocale } from '@/blog-data/types';
 import { blogPathRu, blogPathRo } from '@/blog-data/registry';
 import { blogUi } from '@/blog-data/blog-ui';
+import { HubArticleList } from '@/blog-data/HubArticleList';
 
 type Props = {
   locale: BlogLocale;
@@ -45,7 +46,7 @@ export function BotoxHubBody({ locale, dateModified }: Props) {
 
         <section className="mb-12" aria-labelledby="tofu">
           <h2 id="tofu" className={blogUi.h2}>
-            С чего начать (осведомлённость)
+            С чего начать
           </h2>
           <ul className={blogUi.ul}>
             <li>
@@ -70,7 +71,7 @@ export function BotoxHubBody({ locale, dateModified }: Props) {
 
         <section className="mb-12" aria-labelledby="mofu">
           <h2 id="mofu" className={blogUi.h2}>
-            Как проходит процедура (оценка)
+            Как проходит процедура
           </h2>
           <ol className={blogUi.ol}>
             <li>
@@ -102,7 +103,7 @@ export function BotoxHubBody({ locale, dateModified }: Props) {
 
         <section className="mb-12" aria-labelledby="bofu">
           <h2 id="bofu" className={blogUi.h2}>
-            Следующий шаг в Meddera (решение)
+            Следующий шаг в Meddera
           </h2>
           <p className={blogUi.pMb6}>
             Если вы рассматриваете инъекции ботокса в Бельцах, логично начать с записи на консультацию
@@ -140,6 +141,8 @@ export function BotoxHubBody({ locale, dateModified }: Props) {
             </li>
           </ul>
         </section>
+
+        <HubArticleList clusterId="botox" locale="ru" />
 
         <section
           className={blogUi.reviewBox}
@@ -192,7 +195,7 @@ export function BotoxHubBody({ locale, dateModified }: Props) {
 
       <section className="mb-12" aria-labelledby="tofu-ro">
         <h2 id="tofu-ro" className={blogUi.h2}>
-          De unde începem (informare)
+          De unde începem
         </h2>
         <ul className={blogUi.ul}>
           <li>
@@ -217,7 +220,7 @@ export function BotoxHubBody({ locale, dateModified }: Props) {
 
       <section className="mb-12" aria-labelledby="mofu-ro">
         <h2 id="mofu-ro" className={blogUi.h2}>
-          Cum decurge procedura (evaluare)
+          Cum decurge procedura
         </h2>
         <ol className={blogUi.ol}>
           <li>
@@ -249,7 +252,7 @@ export function BotoxHubBody({ locale, dateModified }: Props) {
 
       <section className="mb-12" aria-labelledby="bofu-ro">
         <h2 id="bofu-ro" className={blogUi.h2}>
-          Pasul următor la Meddera (decizie)
+          Pasul următor la Meddera
         </h2>
         <p className={blogUi.pMb6}>
           Dacă analizați injecțiile cu botox în Bălți, este rezonabil să începeți cu programarea la consultație
@@ -287,6 +290,8 @@ export function BotoxHubBody({ locale, dateModified }: Props) {
           </li>
         </ul>
       </section>
+
+      <HubArticleList clusterId="botox" locale="ro" />
 
       <section
         className={blogUi.reviewBox}

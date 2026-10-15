@@ -6,9 +6,10 @@ import HeaderNew from '@/components/new-ui/HeaderNew';
 import FooterNew from '@/components/new-ui/FooterNew';
 import { ContentArticleBody } from '@/components/new-ui/ContentPageShell';
 import { blogArticleJsonLd } from '@/lib/jsonld/blog-article';
+import { blogHubJsonLd } from '@/lib/jsonld/blog-hub';
 import { lipAugmentationHubJsonLd } from '@/lib/jsonld/lip-augmentation-hub';
 import { blogSocialMetadata } from '@/lib/site-og';
-import { getAllSlugParams, getPostBySlug, ORIGIN } from '@/blog-data/registry';
+import { getAllSlugParams, getClusterArticles, getPostBySlug, ORIGIN } from '@/blog-data/registry';
 import { renderBlogPostBody } from '@/blog-data/render-post-body';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -60,8 +61,7 @@ export default async function BlogPostRuPage({ params }: Props) {
 
   const canonical = `${ORIGIN}/blog/${post.slugRu}`;
   const headline = post.titleRu.replace(' | Meddera', '');
-  let jsonLd: ReturnType<typeof lipAugmentationHubJsonLd> | ReturnType<typeof blogArticleJsonLd> | null =
-    null;
+  let jsonLd: object | null = null;
   if (post.bodyKey === 'lip-augmentation-hub') {
     jsonLd = lipAugmentationHubJsonLd({
       pageUrl: canonical,
@@ -88,6 +88,23 @@ export default async function BlogPostRuPage({ params }: Props) {
         { name: 'Блог', item: `${ORIGIN}/blog` },
         { name: headline.length > 64 ? `${headline.slice(0, 61)}…` : headline, item: canonical },
       ],
+    });
+  } else if (post.kind === 'hub') {
+    jsonLd = blogHubJsonLd({
+      pageUrl: canonical,
+      locale: 'ru',
+      title: headline,
+      description: post.descriptionRu,
+      dateModified: post.dateModified,
+      breadcrumbItems: [
+        { name: 'Главная', item: `${ORIGIN}/` },
+        { name: 'Блог', item: `${ORIGIN}/blog` },
+        { name: headline, item: canonical },
+      ],
+      articles: getClusterArticles(post.clusterId).map((a) => ({
+        name: a.titleRu.replace(' | Meddera', ''),
+        path: `/blog/${a.slugRu}`,
+      })),
     });
   }
 

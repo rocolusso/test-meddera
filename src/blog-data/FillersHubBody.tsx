@@ -3,6 +3,7 @@ import Link from 'next/link';
 import type { BlogLocale } from '@/blog-data/types';
 import { blogPathRu, blogPathRo } from '@/blog-data/registry';
 import { blogUi } from '@/blog-data/blog-ui';
+import { HubArticleList } from '@/blog-data/HubArticleList';
 
 type Props = { locale: BlogLocale; dateModified: string };
 
@@ -27,7 +28,7 @@ export function FillersHubBody({ locale, dateModified }: Props) {
           Он не заменяет очный осмотр и индивидуальный план лечения.
         </p>
         <section className="mb-12" aria-labelledby="tofu">
-          <h2 id="tofu" className={blogUi.h2}>С чего начать (осведомлённость)</h2>
+          <h2 id="tofu" className={blogUi.h2}>С чего начать</h2>
           <ul className={blogUi.ul}>
             <li><strong>Что включает:</strong> инъекции филлеров на основе гиалуроновой кислоты для коррекции объёма, формы и симметрии лица (скулы, подбородок, носогубные складки, губы).</li>
             <li><strong>Кому подходит:</strong> пациентам с потерей объёма лица, асимметрией, глубокими складками, желающим улучшить контуры без хирургии.</li>
@@ -35,7 +36,7 @@ export function FillersHubBody({ locale, dateModified }: Props) {
           </ul>
         </section>
         <section className="mb-12" aria-labelledby="mofu">
-          <h2 id="mofu" className={blogUi.h2}>Как проходит процедура (оценка)</h2>
+          <h2 id="mofu" className={blogUi.h2}>Как проходит процедура</h2>
           <ol className={blogUi.ol}>
             <li><strong>Консультация</strong> — врач оценивает анатомию лица, выбирает зоны для коррекции и обсуждает ожидания.</li>
             <li><strong>Подготовка</strong> — очищение кожи, разметка, нанесение анестетика (по показаниям).</li>
@@ -44,12 +45,14 @@ export function FillersHubBody({ locale, dateModified }: Props) {
           </ol>
         </section>
         <section className="mb-12" aria-labelledby="bofu">
-          <h2 id="bofu" className={blogUi.h2}>Следующий шаг в Meddera (решение)</h2>
+          <h2 id="bofu" className={blogUi.h2}>Следующий шаг в Meddera</h2>
           <ul className="space-y-3">
             <li><Link href="/services/konturnaya-plastyka-fylleramy-v-belczah" className={blogUi.link}>Услуга «Контурная пластика филлерами»</Link></li>
             <li><Link href="/services/konsultaczyya-dermatokosmetologa-v-belczah" className={blogUi.link}>Консультация дерматокосметолога</Link></li>
           </ul>
         </section>
+        <HubArticleList clusterId="fillers" locale="ru" />
+
         <section className={blogUi.reviewBox}>
           <h2 className={blogUi.boxTitle}>Кто готовит материалы</h2>
           <p className={blogUi.small}>Клиника Meddera, Бельцы. Материал носит информационный характер.</p>
@@ -75,7 +78,7 @@ export function FillersHubBody({ locale, dateModified }: Props) {
         Nu înlocuiește examenul clinic și planul individual.
       </p>
       <section className="mb-12">
-        <h2 className={blogUi.h2}>De unde începem (informare)</h2>
+        <h2 className={blogUi.h2}>De unde începem</h2>
         <ul className={blogUi.ul}>
           <li><strong>Ce presupune:</strong> injecții cu filler-e pe bază de acid hialuronic pentru corecția volumului, formei și simetriei feței (pomeți, bărbie, pliuri nazolabiale, buze).</li>
           <li><strong>Cui i se potrivește:</strong> pacienților cu pierderea volumului facial, asimetrie, pliuri profunde, dornici să îmbunătățească contururile fără chirurgie.</li>
@@ -98,6 +101,8 @@ export function FillersHubBody({ locale, dateModified }: Props) {
           <li><Link href="/ro/services/konsultaczyya-dermatokosmetologa-v-belczah" className={blogUi.link}>Consultația dermatocosmetologului</Link></li>
         </ul>
       </section>
+      <HubArticleList clusterId="fillers" locale="ro" />
+
       <section className={blogUi.reviewBox}>
         <h2 className={blogUi.boxTitle}>Experiență și transparență</h2>
         <p className={blogUi.small}>Clinica Meddera, Bălți. Material informativ.</p>

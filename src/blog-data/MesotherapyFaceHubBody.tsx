@@ -4,6 +4,7 @@ import Link from 'next/link';
 import type { BlogLocale } from '@/blog-data/types';
 import { blogPathRu, blogPathRo } from '@/blog-data/registry';
 import { blogUi } from '@/blog-data/blog-ui';
+import { HubArticleList } from '@/blog-data/HubArticleList';
 
 type Props = {
   locale: BlogLocale;
@@ -40,7 +41,7 @@ export function MesotherapyFaceHubBody({ locale, dateModified }: Props) {
         </p>
 
         <section className="mb-12" aria-labelledby="tofu">
-          <h2 id="tofu" className={blogUi.h2}>С чего начать (осведомлённость)</h2>
+          <h2 id="tofu" className={blogUi.h2}>С чего начать</h2>
           <ul className={blogUi.ul}>
             <li><strong>Что включает процедура:</strong> инъекции мезококтейлей (витамины, аминокислоты, гиалуроновая кислота) для улучшения качества кожи, увлажнения и стимуляции регенерации.</li>
             <li><strong>Кому подходит:</strong> пациентам с сухостью кожи, тусклым цветом лица, первыми признаками старения, постакне, пигментацией.</li>
@@ -49,7 +50,7 @@ export function MesotherapyFaceHubBody({ locale, dateModified }: Props) {
         </section>
 
         <section className="mb-12" aria-labelledby="mofu">
-          <h2 id="mofu" className={blogUi.h2}>Как проходит процедура (оценка)</h2>
+          <h2 id="mofu" className={blogUi.h2}>Как проходит процедура</h2>
           <ol className={blogUi.ol}>
             <li><strong>Консультация</strong> — врач оценивает состояние кожи, выбирает состав мезококтейля и обсуждает ожидания.</li>
             <li><strong>Подготовка</strong> — очищение кожи, нанесение анестетика (по показаниям).</li>
@@ -59,7 +60,7 @@ export function MesotherapyFaceHubBody({ locale, dateModified }: Props) {
         </section>
 
         <section className="mb-12" aria-labelledby="bofu">
-          <h2 id="bofu" className={blogUi.h2}>Следующий шаг в Meddera (решение)</h2>
+          <h2 id="bofu" className={blogUi.h2}>Следующий шаг в Meddera</h2>
           <p className={blogUi.pMb6}>
             Если вы рассматриваете мезотерапию лица в Бельцах, логично начать с записи на консультацию.
           </p>
@@ -68,6 +69,8 @@ export function MesotherapyFaceHubBody({ locale, dateModified }: Props) {
             <li><Link href="/services/konsultaczyya-dermatokosmetologa-v-belczah" className={blogUi.link}>Консультация дерматокосметолога</Link></li>
           </ul>
         </section>
+
+        <HubArticleList clusterId="mesotherapy-face" locale="ru" />
 
         <section className={blogUi.reviewBox} aria-labelledby="eeat">
           <h2 id="eeat" className={blogUi.boxTitle}>Кто готовит материалы и оказывает помощь</h2>
@@ -109,7 +112,7 @@ export function MesotherapyFaceHubBody({ locale, dateModified }: Props) {
       </p>
 
       <section className="mb-12" aria-labelledby="tofu-ro">
-        <h2 id="tofu-ro" className={blogUi.h2}>De unde începem (informare)</h2>
+        <h2 id="tofu-ro" className={blogUi.h2}>De unde începem</h2>
         <ul className={blogUi.ul}>
           <li><strong>Ce presupune procedura:</strong> injecții cu mezocockteiluri (vitamine, aminoacizi, acid hialuronic) pentru îmbunătățirea calității pielii, hidratare și stimularea regenerării.</li>
           <li><strong>Cui i se potrivește:</strong> pacienților cu pielea uscată, ten mat, primele semne de îmbătrânire, postacnee, pigmentare.</li>
@@ -118,7 +121,7 @@ export function MesotherapyFaceHubBody({ locale, dateModified }: Props) {
       </section>
 
       <section className="mb-12" aria-labelledby="mofu-ro">
-        <h2 id="mofu-ro" className={blogUi.h2}>Cum decurge procedura (evaluare)</h2>
+        <h2 id="mofu-ro" className={blogUi.h2}>Cum decurge procedura</h2>
         <ol className={blogUi.ol}>
           <li><strong>Consultația</strong> — medicul evaluează starea pielii, alege compoziția mezocockteilului și discută așteptările.</li>
           <li><strong>Pregătirea</strong> — curățarea pielii, aplicarea anesteticului (după indicații).</li>
@@ -128,7 +131,7 @@ export function MesotherapyFaceHubBody({ locale, dateModified }: Props) {
       </section>
 
       <section className="mb-12" aria-labelledby="bofu-ro">
-        <h2 id="bofu-ro" className={blogUi.h2}>Pasul următor la Meddera (decizie)</h2>
+        <h2 id="bofu-ro" className={blogUi.h2}>Pasul următor la Meddera</h2>
         <p className={blogUi.pMb6}>
           Dacă analizați mezoterapia feței în Bălți, este rezonabil să începeți cu programarea la consultație.
         </p>
@@ -137,6 +140,8 @@ export function MesotherapyFaceHubBody({ locale, dateModified }: Props) {
           <li><Link href="/ro/services/konsultaczyya-dermatokosmetologa-v-belczah" className={blogUi.link}>Consultația dermatocosmetologului</Link></li>
         </ul>
       </section>
+
+      <HubArticleList clusterId="mesotherapy-face" locale="ro" />
 
       <section className={blogUi.reviewBox} aria-labelledby="eeat-ro">
         <h2 id="eeat-ro" className={blogUi.boxTitle}>Experiență și transparență</h2>

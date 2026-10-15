@@ -440,3 +440,15 @@ export function getHubSlug(clusterId: string | null, locale: BlogLocale): string
 
   return locale === 'ru' ? hub.slugRu : hub.slugRo;
 }
+
+/** All articles of a cluster (hubs excluded), newest first. Used for hub markup and cross-links. */
+export function getClusterArticles(clusterId: string | null): BlogPost[] {
+  if (!clusterId) return [];
+  return BLOG_POSTS
+    .filter((p) => p.kind === 'article' && p.clusterId === clusterId)
+    .sort((a, b) => {
+      const byPublished = b.publishedAt.localeCompare(a.publishedAt);
+      if (byPublished !== 0) return byPublished;
+      return a.id.localeCompare(b.id);
+    });
+}
