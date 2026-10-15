@@ -1,43 +1,23 @@
-const SITE = 'https://meddera.md';
+import { ID, type Locale } from '@/lib/schema/constants';
+import { pageGraph } from '@/lib/schema/graph';
 
 export type ContactsPageJsonLdInput = {
   pageUrl: string;
-  locale: 'ru' | 'ro';
+  locale: Locale;
   pageName: string;
   description: string;
   breadcrumbItems: { name: string; item: string }[];
 };
 
-/** WebPage + ContactPage + BreadcrumbList */
+/** ContactPage whose main entity is the clinic (address, phone, hours, map). */
 export function contactsPageJsonLd(o: ContactsPageJsonLdInput) {
-  const inLanguage = o.locale === 'ro' ? 'ro-MD' : 'ru-MD';
-  const webpageId = `${o.pageUrl}#webpage`;
-
-  return {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': ['WebPage', 'ContactPage'],
-        '@id': webpageId,
-        url: o.pageUrl,
-        name: o.pageName,
-        description: o.description,
-        inLanguage,
-        isPartOf: {
-          '@type': 'WebSite',
-          url: SITE,
-          name: 'Meddera',
-        },
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: o.breadcrumbItems.map((b, i) => ({
-          '@type': 'ListItem',
-          position: i + 1,
-          name: b.name,
-          item: b.item,
-        })),
-      },
-    ],
-  };
+  return pageGraph({
+    locale: o.locale,
+    url: o.pageUrl,
+    name: o.pageName,
+    description: o.description,
+    types: ['ContactPage'],
+    breadcrumbs: o.breadcrumbItems.map((b) => ({ name: b.name, url: b.item })),
+    mainEntityId: ID.clinic,
+  });
 }

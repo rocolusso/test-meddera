@@ -1,62 +1,32 @@
 import { servicesLinksRo, servicesLinksRu } from '@/lib/db-content';
-
-const SITE = 'https://meddera.md';
+import { SITE_ORIGIN, type Locale } from '@/lib/schema/constants';
+import { itemListNode, pageGraph } from '@/lib/schema/graph';
 
 export type ServicesIndexJsonLdInput = {
   pageUrl: string;
-  locale: 'ru' | 'ro';
+  locale: Locale;
   pageName: string;
   description: string;
   breadcrumbItems: { name: string; item: string }[];
 };
 
-/**
- * WebPage + ItemList (каталог услуг) + BreadcrumbList.
- */
+/** CollectionPage with an ItemList of every service page. */
 export function servicesIndexJsonLd(o: ServicesIndexJsonLdInput) {
-  const inLanguage = o.locale === 'ro' ? 'ro-MD' : 'ru-MD';
   const items = o.locale === 'ro' ? servicesLinksRo : servicesLinksRu;
-  const listId = `${o.pageUrl}#itemlist`;
-  const webpageId = `${o.pageUrl}#webpage`;
-
-  return {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'WebPage',
-        '@id': webpageId,
-        url: o.pageUrl,
-        name: o.pageName,
-        description: o.description,
-        inLanguage,
-        isPartOf: {
-          '@type': 'WebSite',
-          url: SITE,
-          name: 'Meddera',
-        },
-        mainEntity: { '@id': listId },
-      },
-      {
-        '@type': 'ItemList',
-        '@id': listId,
-        name: o.pageName,
-        numberOfItems: items.length,
-        itemListElement: items.map((s, i) => ({
-          '@type': 'ListItem',
-          position: i + 1,
-          name: s.title,
-          item: `${SITE}${s.url}`,
-        })),
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: o.breadcrumbItems.map((b, i) => ({
-          '@type': 'ListItem',
-          position: i + 1,
-          name: b.name,
-          item: b.item,
-        })),
-      },
-    ],
-  };
+  const list = itemListNode(
+    o.pageUrl,
+    'itemlist',
+    o.pageName,
+    items.map((s) => ({ name: s.title, url: `${SITE_ORIGIN}${s.url}` })),
+  );
+  return pageGraph({
+    locale: o.locale,
+    url: o.pageUrl,
+    name: o.pageName,
+    description: o.description,
+    types: ['CollectionPage'],
+    breadcrumbs: o.breadcrumbItems.map((b) => ({ name: b.name, url: b.item })),
+    mainEntityId: `${o.pageUrl}#itemlist`,
+    extra: [list],
+  });
 }

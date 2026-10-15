@@ -22,6 +22,7 @@ const jsonLd = webPageJsonLd({
   name: HOME_TITLE,
   description: HOME_DESCRIPTION.replace(/\s+/g, ' ').trim(),
   inLanguage: 'ru-MD',
+  founder: true,
   breadcrumbItems: [{ name: 'Главная', item: canonical }],
 });
 

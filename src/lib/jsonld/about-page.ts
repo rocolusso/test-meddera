@@ -1,11 +1,9 @@
-const SITE = 'https://meddera.md';
-
-/** Same @id as root layout JSON-LD — avoid duplicate Physician/MedicalClinic nodes on /about. */
-const GLOBAL_PHYSICIAN_ID = `${SITE}/#physician`;
+import { ID, type Locale } from '@/lib/schema/constants';
+import { pageGraph } from '@/lib/schema/graph';
 
 export type AboutPageJsonLdInput = {
   pageUrl: string;
-  locale: 'ru' | 'ro';
+  locale: Locale;
   /** Page title (visible / meta) */
   pageName: string;
   description: string;
@@ -14,43 +12,21 @@ export type AboutPageJsonLdInput = {
 };
 
 /**
- * Schema.org for «Обо мне»: WebPage + BreadcrumbList only.
- * Physician + MedicalClinic live in root layout (@graph) to prevent duplicate @id / validation errors.
+ * «Обо мне»: ProfilePage about the physician. This is the only page where the physician
+ * node carries education and specialisation, because that is where they are visible.
  */
 export function aboutPageJsonLd(o: AboutPageJsonLdInput) {
-  const inLanguage = o.locale === 'ro' ? 'ro-MD' : 'ru-MD';
-  const webpageId = `${o.pageUrl}#webpage`;
-
-  return {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'WebPage',
-        '@id': webpageId,
-        url: o.pageUrl,
-        name: o.pageName,
-        description: o.description,
-        inLanguage,
-        isPartOf: {
-          '@type': 'WebSite',
-          url: SITE,
-          name: 'Meddera',
-        },
-        primaryImageOfPage: {
-          '@type': 'ImageObject',
-          url: o.imageUrl,
-        },
-        mainEntity: { '@id': GLOBAL_PHYSICIAN_ID },
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: o.breadcrumbItems.map((b, i) => ({
-          '@type': 'ListItem',
-          position: i + 1,
-          name: b.name,
-          item: b.item,
-        })),
-      },
-    ],
-  };
+  return pageGraph({
+    locale: o.locale,
+    url: o.pageUrl,
+    name: o.pageName,
+    description: o.description,
+    types: ['ProfilePage', 'AboutPage'],
+    breadcrumbs: o.breadcrumbItems.map((b) => ({ name: b.name, url: b.item })),
+    physician: 'full',
+    founder: true,
+    about: 'physician',
+    mainEntityId: ID.physician,
+    primaryImage: o.imageUrl,
+  });
 }

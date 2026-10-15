@@ -19,6 +19,7 @@ const blogIndexMetaTitle = blogIndexTitle;
 const blogIndexJsonLd = webPageJsonLd({
   pageUrl: blogIndexUrl,
   pageType: 'CollectionPage',
+  includeBlog: true,
   name: blogIndexMetaTitle,
   description: blogIndexDescription,
   inLanguage: 'ru-MD',

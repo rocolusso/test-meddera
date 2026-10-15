@@ -19,6 +19,7 @@ const roBlogIndexMetaTitle = roBlogIndexTitle;
 const roBlogIndexJsonLd = webPageJsonLd({
   pageUrl: roBlogIndexUrl,
   pageType: 'CollectionPage',
+  includeBlog: true,
   name: roBlogIndexMetaTitle,
   description: roBlogIndexDescription,
   inLanguage: 'ro-MD',

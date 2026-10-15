@@ -1,5 +1,7 @@
 /** JSON-LD for lip augmentation content hub (YMYL-safe: no dosage, no guarantees). */
 
+import { clinicNode, physicianNode, websiteNode } from '@/lib/schema/entities';
+
 const SITE = 'https://meddera.md';
 const PHYSICIAN_ID = `${SITE}/#physician`;
 const CLINIC_ID = `${SITE}/#clinic`;
@@ -21,6 +23,9 @@ export function lipAugmentationHubJsonLd(o: LipHubJsonLdOptions) {
   return {
     '@context': 'https://schema.org',
     '@graph': [
+      websiteNode(),
+      clinicNode(o.locale),
+      physicianNode(o.locale),
       {
         '@type': 'MedicalWebPage',
         '@id': `${o.pageUrl}#webpage`,

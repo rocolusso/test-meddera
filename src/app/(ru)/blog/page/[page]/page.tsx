@@ -71,6 +71,7 @@ export default async function BlogIndexPaginatedPage({ params }: Props) {
   const paginatedJsonLd = webPageJsonLd({
     pageUrl: canonical,
     pageType: 'CollectionPage',
+    includeBlog: true,
     name: metaTitle,
     description: metaDescription,
     inLanguage: 'ru-MD',

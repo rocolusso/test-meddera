@@ -16,42 +16,6 @@ import { isEnabled } from '@/lib/env-flags';
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
 import { TrackPageView } from '@/components/TrackPageView';
 
-const ORIGIN = 'https://meddera.md';
-
-const CLINIC_ADDRESS = {
-  '@type': 'PostalAddress' as const,
-  streetAddress: 'Strada Stefan Cel Mare 13',
-  addressLocality: 'Bălți',
-  postalCode: 'MD-3100',
-  addressCountry: 'MD',
-};
-
-const JSON_LD = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Physician',
-      '@id': `${ORIGIN}/#physician`,
-      name: 'Дерматолог Бельци Екатерина Пынтя',
-      image: `${ORIGIN}/assets/img/about_2k.jpg`,
-      url: `${ORIGIN}/`,
-      telephone: '+373-68-550-030',
-      address: CLINIC_ADDRESS,
-      medicalSpecialty: 'https://schema.org/Dermatology',
-    },
-    {
-      '@type': 'MedicalClinic',
-      '@id': `${ORIGIN}/#clinic`,
-      name: 'Meddera Beauty Clinic',
-      image: `${ORIGIN}/assets/img/img_contacts.jpg`,
-      url: `${ORIGIN}/`,
-      telephone: '+373-68-550-030',
-      priceRange: '$$',
-      address: CLINIC_ADDRESS,
-    },
-  ],
-};
-
 const isVercel = process.env.VERCEL === '1';
 const isProductionDeployment =
   process.env.NODE_ENV === 'production' &&
@@ -97,11 +61,6 @@ export default function RootShell({
         {enablePlerdy ? <link rel="preconnect" href="https://a.plerdy.com" crossOrigin="" /> : null}
         {enableClarity ? <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" /> : null}
         {enableAhrefs ? <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" /> : null}
-        <script
-          suppressHydrationWarning
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
-        />
         <meta name="facebook-domain-verification" content="h3mpdqam7srb44jwnvq9khpw1d3bku" />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased" suppressHydrationWarning>
