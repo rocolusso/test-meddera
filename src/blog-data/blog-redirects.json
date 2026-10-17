@@ -1426,5 +1426,75 @@
     "roSlug": "marirea-buzelor-edem-vanatai-balti",
     "ruTo": "/blog/uvelichenie-gub-oslozhneniya-profilaktika-beltsy",
     "roTo": "/ro/blog/marirea-buzelor-complicatii-profilaxie-balti"
+  },
+  {
+    "id": "lip-after-swelling",
+    "ruSlug": "otek-sinyaki-posle-injekcij-v-guby",
+    "roSlug": "edem-vanatai-dupa-injectii-buze",
+    "ruTo": "/blog/uvelichenie-gub-oslozhneniya-profilaktika-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-complicatii-profilaxie-balti"
+  },
+  {
+    "id": "lip-aftercare-general",
+    "ruSlug": "uhod-posle-uvelicheniya-gub-obschie-printsipy",
+    "roSlug": "ingrijire-dupa-marire-buze-principii",
+    "ruTo": "/blog/uvelichenie-gub-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "lip-choose-clinic",
+    "ruSlug": "kak-vybrat-kliniku-dlya-injekcij-v-belczah",
+    "roSlug": "cum-alegi-clinica-injectii-balti",
+    "ruTo": "/blog/uvelichenie-gub-pervyj-raz-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-prima-data-balti"
+  },
+  {
+    "id": "lip-consult-questions",
+    "ruSlug": "konsultaciya-pered-uvelicheniem-gub-voprosy-vrachu",
+    "roSlug": "consultatie-marire-buze-intrebari-medic",
+    "ruTo": "/blog/uvelichenie-gub-pervyj-raz-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-prima-data-balti"
+  },
+  {
+    "id": "lip-contraindications",
+    "ruSlug": "protivopokazaniya-uvelichenie-gub-obschaya-informaciya",
+    "roSlug": "contraindicatii-marire-buze-informatii",
+    "ruTo": "/blog/uvelichenie-gub-protivopokazaniya-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-contraindicatii-balti"
+  },
+  {
+    "id": "lip-duration-effect",
+    "ruSlug": "skolko-derzhitsya-effekt-uvelicheniya-gub",
+    "roSlug": "cat-tine-efectul-marire-buze",
+    "ruTo": "/blog/uvelichenie-gub-povtornaya-procedura-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-procedura-repetata-balti"
+  },
+  {
+    "id": "lip-expectations",
+    "ruSlug": "estestvennyj-obem-gub-ozhidaniya",
+    "roSlug": "volum-natural-buze-asteptari",
+    "ruTo": "/blog/uvelichenie-gub-estestvennyj-rezultat-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-rezultat-natural-balti"
+  },
+  {
+    "id": "lip-myths-facts",
+    "ruSlug": "mify-i-fakty-o-fillerah-dlya-gub",
+    "roSlug": "mituri-si-fapte-filler-buze",
+    "ruTo": "/blog/uvelichenie-gub-beltsy-vidy-fillerov",
+    "roTo": "/ro/blog/marirea-buzelor-balti-tipuri-fillere"
+  },
+  {
+    "id": "lip-procedure-steps",
+    "ruSlug": "uvelichenie-gub-po-shagam-procedura",
+    "roSlug": "marire-buze-pasi-procedura",
+    "ruTo": "/blog/uvelichenie-gub-pervyj-raz-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-prima-data-balti"
+  },
+  {
+    "id": "lip-shape-symmetry",
+    "ruSlug": "forma-i-simmetriya-gub-bez-peregruzki-obema",
+    "roSlug": "forma-simetrie-buze-fara-supraincarcare",
+    "ruTo": "/blog/uvelichenie-gub-forma-simmetriya-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-forma-simetrie-balti"
   }
 ]
