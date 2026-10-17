@@ -39,7 +39,7 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'dermatolog-beltsy-hub',
     slugRo: 'dermatolog-balti-hub',
     publishedAt: '2026-04-08',
-    dateModified: '2026-04-08',
+    dateModified: '2026-10-17',
     titleRu: 'Дерматолог в Бельцах: гид по консультации и лечению | Meddera',
     titleRo: 'Dermatolog în Bălți: ghid despre consultație și tratament | Meddera',
     descriptionRu:
@@ -79,7 +79,7 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'mezoterapiya-lica-beltsy-hub',
     slugRo: 'mezoterapie-fata-balti-hub',
     publishedAt: '2026-04-11',
-    dateModified: '2026-04-11',
+    dateModified: '2026-10-17',
     titleRu: 'Мезотерапия лица в Бельцах: гид по процедуре | Meddera',
     titleRo: 'Mezoterapia feței în Bălți: ghid despre procedură | Meddera',
     descriptionRu:
@@ -119,7 +119,7 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'konturnaya-plastika-beltsy-hub',
     slugRo: 'conturare-faciala-balti-hub',
     publishedAt: '2026-04-13',
-    dateModified: '2026-04-13',
+    dateModified: '2026-10-17',
     titleRu: 'Контурная пластика в Бельцах: гид по процедуре | Meddera',
     titleRo: 'Conturarea facială în Bălți: ghid despre procedură | Meddera',
     descriptionRu:
@@ -139,7 +139,7 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'uvelichenie-gub-beltsy',
     slugRo: 'marire-buzelor-balti',
     publishedAt: '2026-04-02',
-    dateModified: '2026-04-02',
+    dateModified: '2026-10-17',
     titleRu: 'Увеличение губ в Бельцах: гид по процедуре | Meddera',
     titleRo: 'Mărirea buzelor în Bălți: ghid despre procedură | Meddera',
     descriptionRu:

@@ -1,17 +1,12 @@
 import React from 'react';
 
-import { LipAugmentationHubBody } from '@/blog-data/LipAugmentationHubBody';
 import { LipClusterArticleBody } from '@/blog-data/LipClusterArticleBody';
-import { DermatologistHubBody } from '@/blog-data/DermatologistHubBody';
+import { HubBody } from '@/blog-data/HubBody';
 import { DermatologistArticleBody } from '@/blog-data/DermatologistArticleBody';
-import { BotoxHubBody } from '@/blog-data/BotoxHubBody';
 import { BotoxArticleBody } from '@/blog-data/BotoxArticleBody';
 import { LipArticleBody } from '@/blog-data/LipArticleBody';
-import { MesotherapyFaceHubBody } from '@/blog-data/MesotherapyFaceHubBody';
 import { MesotherapyFaceArticleBody } from '@/blog-data/MesotherapyFaceArticleBody';
-import { BiorevitalizationHubBody } from '@/blog-data/BiorevitalizationHubBody';
 import { BiorevitalizationArticleBody } from '@/blog-data/BiorevitalizationArticleBody';
-import { FillersHubBody } from '@/blog-data/FillersHubBody';
 import { FillersArticleBody } from '@/blog-data/FillersArticleBody';
 import { DERMATOLOGIST_ARTICLE_CONTENT } from '@/blog-data/dermatologist-article-content';
 import { BOTOX_ARTICLE_CONTENT } from '@/blog-data/botox-article-content';
@@ -25,7 +20,7 @@ import type { BlogLocale, BlogPost } from '@/blog-data/types';
 export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.ReactNode {
   switch (post.bodyKey) {
     case 'lip-augmentation-hub':
-      return <LipAugmentationHubBody locale={locale} dateModified={post.dateModified} />;
+      return <HubBody clusterId="lips" locale={locale} dateModified={post.dateModified} />;
     case 'lip-cluster-article': {
       const content = BLOG_REWRITES[post.id] ?? LIPS_ARTICLE_CONTENT[post.id];
       if (content) {
@@ -37,7 +32,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
     }
     
     case 'dermatologist-hub':
-      return <DermatologistHubBody locale={locale} dateModified={post.dateModified} />;
+      return <HubBody clusterId="dermatologist" locale={locale} dateModified={post.dateModified} />;
     case 'dermatologist-article': {
       const content = BLOG_REWRITES[post.id] ?? DERMATOLOGIST_ARTICLE_CONTENT[post.id];
       if (!content) return null;
@@ -46,7 +41,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
     }
     
     case 'botox-hub':
-      return <BotoxHubBody locale={locale} dateModified={post.dateModified} />;
+      return <HubBody clusterId="botox" locale={locale} dateModified={post.dateModified} />;
     case 'botox-article': {
       const content = BLOG_REWRITES[post.id] ?? BOTOX_ARTICLE_CONTENT[post.id];
       if (!content) return null;
@@ -55,7 +50,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
     }
     
     case 'mesotherapy-face-hub':
-      return <MesotherapyFaceHubBody locale={locale} dateModified={post.dateModified} />;
+      return <HubBody clusterId="mesotherapy-face" locale={locale} dateModified={post.dateModified} />;
     case 'mesotherapy-face-article': {
       const content = BLOG_REWRITES[post.id] ?? MESOTHERAPY_FACE_ARTICLE_CONTENT[post.id];
       if (!content) return null;
@@ -64,7 +59,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
     }
     
     case 'biorevitalization-hub':
-      return <BiorevitalizationHubBody locale={locale} dateModified={post.dateModified} />;
+      return <HubBody clusterId="biorevitalization" locale={locale} dateModified={post.dateModified} />;
     case 'biorevitalization-article': {
       const content = BLOG_REWRITES[post.id] ?? BIOREVITALIZATION_ARTICLE_CONTENT[post.id];
       if (!content) return null;
@@ -73,7 +68,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
     }
     
     case 'fillers-hub':
-      return <FillersHubBody locale={locale} dateModified={post.dateModified} />;
+      return <HubBody clusterId="fillers" locale={locale} dateModified={post.dateModified} />;
     case 'fillers-article': {
       const content = BLOG_REWRITES[post.id] ?? FILLERS_ARTICLE_CONTENT[post.id];
       if (!content) return null;
