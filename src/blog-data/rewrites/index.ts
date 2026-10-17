@@ -1,3 +1,8 @@
+import { LIPS_D } from '@/blog-data/rewrites/lips-d';
+import { LIPS_C } from '@/blog-data/rewrites/lips-c';
+import { DERM_K } from '@/blog-data/rewrites/derm-k';
+import { DERM_J } from '@/blog-data/rewrites/derm-j';
+import { DERM_I } from '@/blog-data/rewrites/derm-i';
 import { DERMATOLOGIST_A } from '@/blog-data/rewrites/dermatologist-a';
 import { DERMATOLOGIST_B } from '@/blog-data/rewrites/dermatologist-b';
 import { DERMATOLOGIST_C } from '@/blog-data/rewrites/dermatologist-c';
@@ -42,4 +47,9 @@ export const BLOG_REWRITES: ArticleRewrites = {
   ...MISC_C,
   ...MISC_B,
   ...BIOREV_B,
+  ...LIPS_D,
+  ...LIPS_C,
+  ...DERM_K,
+  ...DERM_J,
+  ...DERM_I,
 };

@@ -68,7 +68,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Ce zone se discută frecvent la consultație',
         paragraphs: [
-          'De cele mai multe ori este vorba despre frunte, spațiul dintre sprâncene și colțurile externe ale ochilor. Mai rar se cere corecția nasului, a zonei din jurul gurii, a mușchilor maseteri și a gâtului. Există și scopuri fără legătură cu aspectul: transpirația excesivă, durerile de cap de tensiune, scrâșnirea dinților. Pentru fiecare zonă medicul alege schema separat, pentru că structura mușchilor diferă de la om la om.',
+          'De cele mai multe ori este vorba despre frunte, spațiul dintre sprâncene și colțurile externe ale ochilor. Mai rar se cere corecția nasului, a zonei din jurul gurii, a mușchilor maseteri și a gâtului. Pentru fiecare zonă medicul alege schema separat, pentru că structura mușchilor diferă de la om la om.',
         ],
       },
       {
@@ -86,7 +86,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Cum vă pregătiți pentru vizită',
         paragraphs: [
-          'Nu este nevoie de o pregătire specială. Veniți fără machiaj gros sau fiți pregătit ca pielea să fie curățată. În ziua dinaintea procedurii e mai bine să evitați alcoolul, iar medicamentele care subțiază sângele discutați-le cu medicul: fără ele echimozele apar mai rar. Medicamentele pe care le luați constant nu le opriți singur.',
+          'Nu este nevoie de o pregătire specială. Veniți fără machiaj gros sau fiți pregătit ca pielea să fie curățată. În ziua dinaintea procedurii e mai bine să evitați alcoolul, iar medicamentele care subțiază sângele discutați-le cu medicul: fără ele echimozele apar mai rar.',
         ],
       },
       {
@@ -194,7 +194,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Administrarea preparatului',
         paragraphs: [
-          'Preparatul se introduce cu un ac subțire în mușchi sau lângă el. Fiecare înțepătură durează foarte puțin, iar întreaga procedură se desfășoară de obicei repede, fără o ședere lungă în cabinet. Nu trebuie să stați întins toată ziua după ea, iar la treburi vă puteți întoarce aproape imediat, respectând recomandările medicului.',
+          'Preparatul se introduce cu un ac subțire în mușchi sau lângă el. Fiecare înțepătură durează foarte puțin, iar întreaga procedură se desfășoară de obicei repede, fără o ședere lungă în cabinet. La treburi vă puteți întoarce aproape imediat, respectând recomandările medicului.',
         ],
       },
       {
@@ -320,7 +320,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Zona din jurul ochilor',
         paragraphs: [
-          'Liniile fine de la colțurile externe ale ochilor apar din zâmbet și din miorlăirea ochilor. Ele se atenuează prin injecții în mușchiul orbicular al ochiului. Aici precizia contează mult, pentru că alături trec alți mușchi care influențează pleoapa. Despre această zonă am scris mai detaliat într-un articol separat despre «ridurile de expresie din jurul ochilor».',
+          'Liniile fine de la colțurile externe ale ochilor apar din zâmbet și din miorlăirea ochilor. Ele se atenuează prin injecții în mușchiul orbicular al ochiului. Aici precizia contează mult, pentru că alături trec alți mușchi care influențează pleoapa.',
         ],
       },
       {
@@ -560,7 +560,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Cum înțelegeți că e timpul să repetați',
         paragraphs: [
-          'Semnele slăbirii efectului apar treptat: mimica revine, pe frunte sau între sprâncene se văd din nou pliuri, fața capătă expresia de dinainte. Nu e nevoie să așteptați până când totul arată ca înainte de procedură. Pe de altă parte, nici grabă nu este: așteptați până când schimbările devin vizibile și programați-vă la medic.',
+          'Semnele slăbirii efectului apar treptat: mimica revine, pe frunte sau între sprâncene se văd din nou pliuri, fața capătă expresia de dinainte. Pe de altă parte, nici grabă nu este: așteptați până când schimbările devin vizibile și programați-vă la medic.',
         ],
       },
       {
