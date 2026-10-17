@@ -88,16 +88,6 @@ export const SERVICE_BLOG: Record<string, { cluster: BlogClusterId; articles: st
     cluster: 'dermatologist',
     articles: ['alopeciya-vypadenie-volos-prichiny', 'seboreya-kozhi-golovy-lechenie', 'seboreynyj-dermatit-prichiny-lechenie'],
   },
-  'uvelychenye-gub-v-belczah': {
-    cluster: 'lips',
-    articles: [
-      'uvelichenie-gub-pervyj-raz',
-      'uvelichenie-gub-gialuronovaya-kislota',
-      'uvelichenie-gub-bolevye-oshchushcheniya',
-      'uvelichenie-gub-protivopokazaniya',
-      'uvelichenie-gub-uhod-posle-procedury',
-    ],
-  },
   'botoks-v-belczah-effektyvnoe-omolozhenye-lycza': {
     cluster: 'botox',
     articles: [

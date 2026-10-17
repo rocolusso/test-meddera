@@ -10,7 +10,7 @@
  *  - every article has at least 2 distinct links to other articles and at least 1 link to a service;
  *  - every article has at least 2 inbound links from other articles;
  *  - every article is listed in exactly one hub of its language, and every hub lists only its own cluster once;
- *  - every service page links to 2..6 blog pages and to the booking contacts.
+ *  - every service page links to 2..6 blog pages (the protected lips service page keeps its single link to the lips hub).
  * Warnings (do not fail): articles without inline links inside paragraphs.
  */
 import fs from 'node:fs';
@@ -30,6 +30,8 @@ const HUBS = new Set([
   '/blog/konturnaya-plastika-beltsy-hub', '/ro/blog/conturare-faciala-balti-hub',
   '/blog/uvelichenie-gub-beltsy', '/ro/blog/marire-buzelor-balti',
 ]);
+
+const PROTECTED_SERVICES = new Set(['/services/uvelychenye-gub-v-belczah', '/ro/services/uvelychenye-gub-v-belczah']);
 
 const decode = (s) =>
   s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
@@ -103,7 +105,8 @@ for (const [p, pg] of pages) {
   }
   if (isService(p)) {
     const blog = targets.filter((t) => isBlogPath(t));
-    if (blog.length < 2) err(`${p}: only ${blog.length} blog links`);
+    // the lips service page is a protected page (text stays as it is): one link to the lips hub is enough there
+    if (blog.length < (PROTECTED_SERVICES.has(p) ? 1 : 2)) err(`${p}: only ${blog.length} blog links`);
     if (blog.length > 6) err(`${p}: ${blog.length} blog links (max 6)`);
     if (!targets.some((t) => t.endsWith('/contacts'))) warns.push(`${p}: no link to contacts`);
   }

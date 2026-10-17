@@ -43,7 +43,7 @@ function BookingBlock({ locale }: { locale: Locale }) {
   );
 }
 
-export function RelatedBlock({ locale, slug }: { locale: Locale; slug: string }) {
+function RelatedBlock({ locale, slug }: { locale: Locale; slug: string }) {
   const ru = locale === 'ru';
   const services = ru ? servicesLinksRu : servicesLinksRo;
   const blog = SERVICE_BLOG[slug];
