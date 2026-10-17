@@ -139,7 +139,7 @@ const BLOG_POSTS: BlogPost[] = [
     slugRu: 'uvelichenie-gub-beltsy',
     slugRo: 'marire-buzelor-balti',
     publishedAt: '2026-04-02',
-    dateModified: '2026-10-17',
+    dateModified: '2026-04-02',
     titleRu: 'Увеличение губ в Бельцах: гид по процедуре | Meddera',
     titleRo: 'Mărirea buzelor în Bălți: ghid despre procedură | Meddera',
     descriptionRu:

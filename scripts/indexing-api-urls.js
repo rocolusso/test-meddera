@@ -1,15 +1,15 @@
 /**
  * URLs для отправки в Google Indexing API
- * Сгенерировано из production sitemap.xml
- * Дата: 2026-04-08
+ * Сгенерировано из sitemap.xml (блог)
+ * Дата: 2026-10-17
  */
 
 const urlsToUpdate = [
-  // Главные страницы блога
+  // Главные страницы блога (2 URLs)
   'https://meddera.md/blog',
   'https://meddera.md/ro/blog',
-  
-  // Хабы (6 рубрик × 2 языка = 12 URLs)
+
+  // Хабы (12 URLs)
   'https://meddera.md/blog/dermatolog-beltsy-hub',
   'https://meddera.md/ro/blog/dermatolog-balti-hub',
   'https://meddera.md/blog/botoks-beltsy-hub',
@@ -22,8 +22,8 @@ const urlsToUpdate = [
   'https://meddera.md/ro/blog/conturare-faciala-balti-hub',
   'https://meddera.md/blog/uvelichenie-gub-beltsy',
   'https://meddera.md/ro/blog/marire-buzelor-balti',
-  
-  // Дерматолог (25 статей × 2 языка = 50 URLs)
+
+  // Дерматолог (74 URLs)
   'https://meddera.md/blog/dermatolog-beltsy-kogda-nuzhna-konsultaciya',
   'https://meddera.md/ro/blog/dermatolog-balti-cand-este-necesara-consultatie',
   'https://meddera.md/blog/akne-prichiny-stadii-lechenie-beltsy',
@@ -74,18 +74,38 @@ const urlsToUpdate = [
   'https://meddera.md/ro/blog/fotoimbatranire-piele-prevenire-balti',
   'https://meddera.md/blog/solnechnye-ozhogi-pervaya-pomoshch-beltsy',
   'https://meddera.md/ro/blog/arsuri-solare-prim-ajutor-balti',
-  
-  // Ботокс (25 статей × 2 языка = 50 URLs)
+  'https://meddera.md/blog/melanoma-rannyaya-diagnostika-beltsy',
+  'https://meddera.md/ro/blog/melanom-diagnostic-precoce-balti',
+  'https://meddera.md/blog/bazalioma-lechenie-udalenie-beltsy',
+  'https://meddera.md/ro/blog/baziom-tratament-indepartare-balti',
+  'https://meddera.md/blog/ploskokletochnyj-rak-kozhi-beltsy',
+  'https://meddera.md/ro/blog/carcinom-scuamos-piele-balti',
+  'https://meddera.md/blog/detskij-atopicheskij-dermatit-beltsy',
+  'https://meddera.md/ro/blog/dermatita-atopica-copii-balti',
+  'https://meddera.md/blog/detskij-kontaktnyj-dermatit-beltsy',
+  'https://meddera.md/ro/blog/dermatita-contact-copii-balti',
+  'https://meddera.md/blog/fotodermatozy-solnce-beltsy',
+  'https://meddera.md/ro/blog/fotodermatoza-soare-balti',
+  'https://meddera.md/blog/mikoz-stop-konsultaciya-beltsy',
+  'https://meddera.md/ro/blog/micoza-picioare-consultatie-balti',
+  'https://meddera.md/blog/gidradenit-hronicheskij-beltsy',
+  'https://meddera.md/ro/blog/hidradenita-cronica-balti',
+  'https://meddera.md/blog/lichen-planus-obzor-beltsy',
+  'https://meddera.md/ro/blog/lichen-planus-prezentare-balti',
+  'https://meddera.md/blog/ihthyoz-obzor-beltsy',
+  'https://meddera.md/ro/blog/ichtioza-prezentare-balti',
+  'https://meddera.md/blog/kronicheskaya-krapivnica-beltsy',
+  'https://meddera.md/ro/blog/urticarie-cronica-balti',
+  'https://meddera.md/blog/pyogenic-granuloma-beltsy',
+  'https://meddera.md/ro/blog/granulom-piogenic-balti',
+
+  // Ботокс (38 URLs)
   'https://meddera.md/blog/botoks-beltsy-chto-nuzhno-znat-pered-proceduroy',
   'https://meddera.md/ro/blog/botox-balti-ce-trebuie-sa-stiti-inainte-procedura',
   'https://meddera.md/blog/botoks-pokazaniya-protivopokazaniya-beltsy',
   'https://meddera.md/ro/blog/botox-indicatii-contraindicatii-balti',
   'https://meddera.md/blog/botoks-kak-prohodit-procedura-etapy-beltsy',
   'https://meddera.md/ro/blog/botox-cum-decurge-procedura-etape-balti',
-  'https://meddera.md/blog/botoks-rezultaty-dlitelnost-effekta-beltsy',
-  'https://meddera.md/ro/blog/botox-rezultate-durata-efectului-balti',
-  'https://meddera.md/blog/botoks-uhod-posle-procedury-rekomendacii',
-  'https://meddera.md/ro/blog/botox-ingrijire-dupa-procedura-recomandari',
   'https://meddera.md/blog/botoks-zony-injekcij-lob-mezhbrove-beltsy',
   'https://meddera.md/ro/blog/botox-zone-injectii-frunte-intre-sprancene-balti',
   'https://meddera.md/blog/botoks-oslozhneniya-pobochnye-effekty-beltsy',
@@ -96,22 +116,14 @@ const urlsToUpdate = [
   'https://meddera.md/ro/blog/botox-varsta-cand-sa-incepeti-balti',
   'https://meddera.md/blog/botoks-vs-fillery-v-chem-raznica-beltsy',
   'https://meddera.md/ro/blog/botox-vs-fillere-care-diferenta-balti',
-  'https://meddera.md/blog/botoks-mify-i-pravda-beltsy',
-  'https://meddera.md/ro/blog/botox-mituri-si-adevar-balti',
   'https://meddera.md/blog/botoks-preparaty-vidy-botulotoksina-beltsy',
   'https://meddera.md/ro/blog/botox-preparate-tipuri-toxina-botulinica-balti',
   'https://meddera.md/blog/botoks-gusinye-lapki-morshchiny-glaz-beltsy',
   'https://meddera.md/ro/blog/botox-picioare-gasca-riduri-ochi-balti',
-  'https://meddera.md/blog/botoks-mezhbrove-skladka-lva-beltsy',
-  'https://meddera.md/ro/blog/botox-intre-sprancene-cuta-leului-balti',
   'https://meddera.md/blog/botoks-lob-gorizontalnye-morshchiny-beltsy',
   'https://meddera.md/ro/blog/botox-frunte-riduri-orizontale-balti',
-  'https://meddera.md/blog/botoks-brovi-lifting-podemka-beltsy',
-  'https://meddera.md/ro/blog/botox-sprancene-lifting-ridicare-balti',
   'https://meddera.md/blog/botoks-nos-korrekciya-beltsy',
   'https://meddera.md/ro/blog/botox-nas-corectie-balti',
-  'https://meddera.md/blog/botoks-podborodok-morshchiny-beltsy',
-  'https://meddera.md/ro/blog/botox-barbie-riduri-balti',
   'https://meddera.md/blog/botoks-sheya-korrekciya-platizmy-beltsy',
   'https://meddera.md/ro/blog/botox-gat-corectie-platisma-balti',
   'https://meddera.md/blog/botoks-gipergidroz-podmyshek-beltsy',
@@ -126,8 +138,8 @@ const urlsToUpdate = [
   'https://meddera.md/ro/blog/botox-sarcina-alaptare-balti',
   'https://meddera.md/blog/botoks-muzhchinam-osobennosti-beltsy',
   'https://meddera.md/ro/blog/botox-barbati-particularitati-balti',
-  
-  // Мезотерапия лица (24 статьи × 2 языка = 48 URLs)
+
+  // Мезотерапия лица (14 URLs)
   'https://meddera.md/blog/mezoterapiya-lica-beltsy-chto-eto-pokazaniya',
   'https://meddera.md/ro/blog/mezoterapie-fata-balti-ce-este-indicatii',
   'https://meddera.md/blog/mezoterapiya-lica-preparaty-sostav-beltsy',
@@ -142,8 +154,8 @@ const urlsToUpdate = [
   'https://meddera.md/ro/blog/mezoterapie-fata-acnee-postacnee-balti',
   'https://meddera.md/blog/mezoterapiya-vokrug-glaz-beltsy',
   'https://meddera.md/ro/blog/mezoterapie-in-jurul-ochilor-balti',
-  
-  // Биоревитализация (24 статьи × 2 языка = 48 URLs)
+
+  // Биоревитализация (18 URLs)
   'https://meddera.md/blog/biorevitalizaciya-beltsy-chto-eto-pokazaniya',
   'https://meddera.md/ro/blog/biorevitalizare-balti-ce-este-indicatii',
   'https://meddera.md/blog/biorevitalizaciya-preparaty-gialoronovaya-kislota',
@@ -162,8 +174,8 @@ const urlsToUpdate = [
   'https://meddera.md/ro/blog/biorevitalizare-in-jurul-ochilor-balti',
   'https://meddera.md/blog/biorevitalizaciya-kombinaciya-procedur-beltsy',
   'https://meddera.md/ro/blog/biorevitalizare-combinare-proceduri-balti',
-  
-  // Филлеры (24 статьи × 2 языка = 48 URLs)
+
+  // Филлеры (12 URLs)
   'https://meddera.md/blog/konturnaya-plastika-beltsy-chto-eto-pokazaniya',
   'https://meddera.md/ro/blog/conturare-faciala-balti-ce-este-indicatii',
   'https://meddera.md/blog/fillery-vidy-sostav-proizvoditeli-beltsy',
@@ -176,8 +188,8 @@ const urlsToUpdate = [
   'https://meddera.md/ro/blog/conturare-complicatii-balti',
   'https://meddera.md/blog/konturnaya-plastika-kombinaciya-procedur-beltsy',
   'https://meddera.md/ro/blog/conturare-combinare-proceduri-balti',
-  
-  // Губы (24 статьи × 2 языка = 48 URLs)
+
+  // Губы (28 URLs)
   'https://meddera.md/blog/uvelichenie-gub-beltsy-vidy-fillerov',
   'https://meddera.md/ro/blog/marirea-buzelor-balti-tipuri-fillere',
   'https://meddera.md/blog/uvelichenie-gub-forma-simmetriya-beltsy',
@@ -186,36 +198,18 @@ const urlsToUpdate = [
   'https://meddera.md/ro/blog/marirea-buzelor-ingrijire-dupa-procedura-balti',
   'https://meddera.md/blog/uvelichenie-gub-oslozhneniya-profilaktika-beltsy',
   'https://meddera.md/ro/blog/marirea-buzelor-complicatii-profilaxie-balti',
-  'https://meddera.md/blog/uvelichenie-gub-dlitelnost-effekta-beltsy',
-  'https://meddera.md/ro/blog/marirea-buzelor-durata-efectului-balti',
   'https://meddera.md/blog/uvelichenie-gub-estestvennyj-rezultat-beltsy',
   'https://meddera.md/ro/blog/marirea-buzelor-rezultat-natural-balti',
-  'https://meddera.md/blog/uvelichenie-gub-tonkie-guby-beltsy',
-  'https://meddera.md/ro/blog/marirea-buzelor-buze-subtiri-balti',
   'https://meddera.md/blog/uvelichenie-gub-asimmetriya-korrekciya-beltsy',
   'https://meddera.md/ro/blog/marirea-buzelor-asimetrie-corectie-balti',
-  'https://meddera.md/blog/uvelichenie-gub-kontury-chetkost-beltsy',
-  'https://meddera.md/ro/blog/marirea-buzelor-contururi-claritate-balti',
   'https://meddera.md/blog/uvelichenie-gub-verkhnyaya-nizhnyaya-beltsy',
   'https://meddera.md/ro/blog/marirea-buzelor-superioara-inferioara-balti',
   'https://meddera.md/blog/uvelichenie-gub-vozrastnye-izmeneniya-beltsy',
   'https://meddera.md/ro/blog/marirea-buzelor-modificari-varsta-balti',
-  'https://meddera.md/blog/uvelichenie-gub-morshchiny-vokrug-beltsy',
-  'https://meddera.md/ro/blog/marirea-buzelor-riduri-jurul-balti',
-  'https://meddera.md/blog/uvelichenie-gub-nososgubnye-skladki-beltsy',
-  'https://meddera.md/ro/blog/marirea-buzelor-pliuri-nazolabiale-balti',
   'https://meddera.md/blog/uvelichenie-gub-gialuronovaya-kislota-beltsy',
   'https://meddera.md/ro/blog/marirea-buzelor-acid-hialuronic-balti',
-  'https://meddera.md/blog/uvelichenie-gub-plotnost-fillera-beltsy',
-  'https://meddera.md/ro/blog/marirea-buzelor-densitate-filler-balti',
-  'https://meddera.md/blog/uvelichenie-gub-proizvoditeli-fillerov-beltsy',
-  'https://meddera.md/ro/blog/marirea-buzelor-producatori-fillere-balti',
   'https://meddera.md/blog/uvelichenie-gub-bolevye-oshchushcheniya-beltsy',
   'https://meddera.md/ro/blog/marirea-buzelor-senzatii-dureroase-balti',
-  'https://meddera.md/blog/uvelichenie-gub-otek-sinyaki-beltsy',
-  'https://meddera.md/ro/blog/marirea-buzelor-edem-vanatai-balti',
-  'https://meddera.md/blog/uvelichenie-gub-rastvorenie-gialuronidazoj-beltsy',
-  'https://meddera.md/ro/blog/marirea-buzelor-dizolvare-hialuronidaza-balti',
   'https://meddera.md/blog/uvelichenie-gub-pervyj-raz-beltsy',
   'https://meddera.md/ro/blog/marirea-buzelor-prima-data-balti',
   'https://meddera.md/blog/uvelichenie-gub-povtornaya-procedura-beltsy',
@@ -224,20 +218,18 @@ const urlsToUpdate = [
   'https://meddera.md/ro/blog/marirea-buzelor-contraindicatii-balti',
   'https://meddera.md/blog/uvelichenie-gub-gerpes-profilaktika-beltsy',
   'https://meddera.md/ro/blog/marirea-buzelor-herpes-profilaxie-balti',
-  'https://meddera.md/blog/uvelichenie-gub-sezon-vremya-goda-beltsy',
-  'https://meddera.md/ro/blog/marirea-buzelor-sezon-anotimp-balti',
 ];
 
 // Статистика
 const stats = {
   total: urlsToUpdate.length,
   hubs: 12,
-  dermatologist: 50,
-  botox: 50,
-  mesotherapy: 48,
-  biorevitalization: 48,
-  fillers: 48,
-  lips: 48,
+  dermatologist: 74,
+  botox: 38,
+  mesotherapy: 14,
+  biorevitalization: 18,
+  fillers: 12,
+  lips: 28,
   mainPages: 2,
 };
 
