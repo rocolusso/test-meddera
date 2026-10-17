@@ -5,6 +5,8 @@ import { DERMATOLOGIST_D } from '@/blog-data/rewrites/dermatologist-d';
 import { BOTOX_A } from '@/blog-data/rewrites/botox-a';
 import { BOTOX_B } from '@/blog-data/rewrites/botox-b';
 import { BOTOX_C } from '@/blog-data/rewrites/botox-c';
+import { BOTOX_D } from '@/blog-data/rewrites/botox-d';
+import { BOTOX_E } from '@/blog-data/rewrites/botox-e';
 import { BIOREV_A } from '@/blog-data/rewrites/biorev-a';
 import { MISC_A } from '@/blog-data/rewrites/misc-a';
 import { LIPS_A } from '@/blog-data/rewrites/lips-a';
@@ -31,6 +33,8 @@ export const BLOG_REWRITES: ArticleRewrites = {
   ...BOTOX_A,
   ...BOTOX_B,
   ...BOTOX_C,
+  ...BOTOX_D,
+  ...BOTOX_E,
   ...BIOREV_A,
   ...MISC_A,
   ...LIPS_A,
