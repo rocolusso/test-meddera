@@ -941,8 +941,8 @@
     "id": "botoks-podborodochnaya-myshca",
     "ruSlug": "botoks-podborodochnaya-myshca-beltsy",
     "roSlug": "botox-muschi-barbie-balti",
-    "ruTo": "/blog/botoks-podborodok-morshchiny-beltsy",
-    "roTo": "/ro/blog/botox-barbie-riduri-balti"
+    "ruTo": "/blog/botoks-zony-injekcij-lob-mezhbrove-beltsy",
+    "roTo": "/ro/blog/botox-zone-injectii-frunte-intre-sprancene-balti"
   },
   {
     "id": "botoks-platisma-grubyj-kontur",
@@ -1067,8 +1067,8 @@
     "id": "guby-korekciya-tonkih-konicheskih",
     "ruSlug": "guby-korekciya-tonkih-konicheskih-beltsy",
     "roSlug": "buze-subti-corectie-balti",
-    "ruTo": "/blog/uvelichenie-gub-tonkie-guby-beltsy",
-    "roTo": "/ro/blog/marirea-buzelor-buze-subtiri-balti"
+    "ruTo": "/blog/uvelichenie-gub-estestvennyj-rezultat-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-rezultat-natural-balti"
   },
   {
     "id": "guby-asimetriya-posle-travmy",
@@ -1081,8 +1081,8 @@
     "id": "fillery-guby-marki-sravnenie",
     "ruSlug": "fillery-guby-marki-sravnenie-beltsy",
     "roSlug": "fillere-buze-branduri-comparatie-balti",
-    "ruTo": "/blog/uvelichenie-gub-proizvoditeli-fillerov-beltsy",
-    "roTo": "/ro/blog/marirea-buzelor-producatori-fillere-balti"
+    "ruTo": "/blog/uvelichenie-gub-beltsy-vidy-fillerov",
+    "roTo": "/ro/blog/marirea-buzelor-balti-tipuri-fillere"
   },
   {
     "id": "guby-estetika-balans-licza",
@@ -1151,8 +1151,8 @@
     "id": "guby-i-komicheskie-linii",
     "ruSlug": "guby-i-komicheskie-linii-beltsy",
     "roSlug": "buze-linii-comice-balti",
-    "ruTo": "/blog/uvelichenie-gub-nososgubnye-skladki-beltsy",
-    "roTo": "/ro/blog/marirea-buzelor-pliuri-nazolabiale-balti"
+    "ruTo": "/blog/uvelichenie-gub-vozrastnye-izmeneniya-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-modificari-varsta-balti"
   },
   {
     "id": "guby-podgotovka-k-prazdniku",
@@ -1179,22 +1179,22 @@
     "id": "guby-filler-rari-retragere",
     "ruSlug": "guby-filler-rari-retragere-beltsy",
     "roSlug": "buze-filler-migrare-rara-balti",
-    "ruTo": "/blog/uvelichenie-gub-rastvorenie-gialuronidazoj-beltsy",
-    "roTo": "/ro/blog/marirea-buzelor-dizolvare-hialuronidaza-balti"
+    "ruTo": "/blog/uvelichenie-gub-oslozhneniya-profilaktika-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-complicatii-profilaxie-balti"
   },
   {
     "id": "guby-rejuvenare-periferie",
     "ruSlug": "guby-rejuvenare-periferie-beltsy",
     "roSlug": "buze-intinerire-periferie-balti",
-    "ruTo": "/blog/uvelichenie-gub-morshchiny-vokrug-beltsy",
-    "roTo": "/ro/blog/marirea-buzelor-riduri-jurul-balti"
+    "ruTo": "/blog/uvelichenie-gub-vozrastnye-izmeneniya-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-modificari-varsta-balti"
   },
   {
     "id": "guby-kontur-karandash-korekciya",
     "ruSlug": "guby-kontur-karandash-korekciya-beltsy",
     "roSlug": "buze-contur-creion-corectie-balti",
-    "ruTo": "/blog/uvelichenie-gub-kontury-chetkost-beltsy",
-    "roTo": "/ro/blog/marirea-buzelor-contururi-claritate-balti"
+    "ruTo": "/blog/uvelichenie-gub-estestvennyj-rezultat-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-rezultat-natural-balti"
   },
   {
     "id": "guby-gialuron-rascvet",
@@ -1221,8 +1221,8 @@
     "id": "guby-compres-reci-prima-or",
     "ruSlug": "guby-compres-reci-prima-or-beltsy",
     "roSlug": "buze-comprese-reci-prima-ora-balti",
-    "ruTo": "/blog/uvelichenie-gub-otek-sinyaki-beltsy",
-    "roTo": "/ro/blog/marirea-buzelor-edem-vanatai-balti"
+    "ruTo": "/blog/uvelichenie-gub-oslozhneniya-profilaktika-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-complicatii-profilaxie-balti"
   },
   {
     "id": "podrostkovoe-akne-protokol",
@@ -1314,5 +1314,117 @@
     "roSlug": "risc-cheloid-piercing-balti",
     "ruTo": "/",
     "roTo": "/ro"
+  },
+  {
+    "id": "botoks-uhod-posle-procedury",
+    "ruSlug": "botoks-uhod-posle-procedury-rekomendacii",
+    "roSlug": "botox-ingrijire-dupa-procedura-recomandari",
+    "ruTo": "/blog/botoks-kak-prohodit-procedura-etapy-beltsy",
+    "roTo": "/ro/blog/botox-cum-decurge-procedura-etape-balti"
+  },
+  {
+    "id": "botoks-mify-pravda",
+    "ruSlug": "botoks-mify-i-pravda-beltsy",
+    "roSlug": "botox-mituri-si-adevar-balti",
+    "ruTo": "/blog/botoks-beltsy-chto-nuzhno-znat-pered-proceduroy",
+    "roTo": "/ro/blog/botox-balti-ce-trebuie-sa-stiti-inainte-procedura"
+  },
+  {
+    "id": "botoks-rezultaty-dlitelnost",
+    "ruSlug": "botoks-rezultaty-dlitelnost-effekta-beltsy",
+    "roSlug": "botox-rezultate-durata-efectului-balti",
+    "ruTo": "/blog/botoks-chastota-povtornyh-procedur-beltsy",
+    "roTo": "/ro/blog/botox-frecventa-procedurilor-repetate-balti"
+  },
+  {
+    "id": "botoks-mezhbrove-skladka-lva",
+    "ruSlug": "botoks-mezhbrove-skladka-lva-beltsy",
+    "roSlug": "botox-intre-sprancene-cuta-leului-balti",
+    "ruTo": "/blog/botoks-zony-injekcij-lob-mezhbrove-beltsy",
+    "roTo": "/ro/blog/botox-zone-injectii-frunte-intre-sprancene-balti"
+  },
+  {
+    "id": "botoks-brovi-lifting",
+    "ruSlug": "botoks-brovi-lifting-podemka-beltsy",
+    "roSlug": "botox-sprancene-lifting-ridicare-balti",
+    "ruTo": "/blog/botoks-zony-injekcij-lob-mezhbrove-beltsy",
+    "roTo": "/ro/blog/botox-zone-injectii-frunte-intre-sprancene-balti"
+  },
+  {
+    "id": "botoks-podborodok-morshchiny",
+    "ruSlug": "botoks-podborodok-morshchiny-beltsy",
+    "roSlug": "botox-barbie-riduri-balti",
+    "ruTo": "/blog/botoks-zony-injekcij-lob-mezhbrove-beltsy",
+    "roTo": "/ro/blog/botox-zone-injectii-frunte-intre-sprancene-balti"
+  },
+  {
+    "id": "uvelichenie-gub-plotnost-fillera",
+    "ruSlug": "uvelichenie-gub-plotnost-fillera-beltsy",
+    "roSlug": "marirea-buzelor-densitate-filler-balti",
+    "ruTo": "/blog/uvelichenie-gub-beltsy-vidy-fillerov",
+    "roTo": "/ro/blog/marirea-buzelor-balti-tipuri-fillere"
+  },
+  {
+    "id": "uvelichenie-gub-proizvoditeli-fillerov",
+    "ruSlug": "uvelichenie-gub-proizvoditeli-fillerov-beltsy",
+    "roSlug": "marirea-buzelor-producatori-fillere-balti",
+    "ruTo": "/blog/uvelichenie-gub-beltsy-vidy-fillerov",
+    "roTo": "/ro/blog/marirea-buzelor-balti-tipuri-fillere"
+  },
+  {
+    "id": "uvelichenie-gub-dlitelnost-effekta",
+    "ruSlug": "uvelichenie-gub-dlitelnost-effekta-beltsy",
+    "roSlug": "marirea-buzelor-durata-efectului-balti",
+    "ruTo": "/blog/uvelichenie-gub-povtornaya-procedura-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-procedura-repetata-balti"
+  },
+  {
+    "id": "uvelichenie-gub-sezon-vremya-goda",
+    "ruSlug": "uvelichenie-gub-sezon-vremya-goda-beltsy",
+    "roSlug": "marirea-buzelor-sezon-anotimp-balti",
+    "ruTo": "/blog/uvelichenie-gub-povtornaya-procedura-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-procedura-repetata-balti"
+  },
+  {
+    "id": "uvelichenie-gub-tonkie-guby",
+    "ruSlug": "uvelichenie-gub-tonkie-guby-beltsy",
+    "roSlug": "marirea-buzelor-buze-subtiri-balti",
+    "ruTo": "/blog/uvelichenie-gub-estestvennyj-rezultat-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-rezultat-natural-balti"
+  },
+  {
+    "id": "uvelichenie-gub-kontury-chetkost",
+    "ruSlug": "uvelichenie-gub-kontury-chetkost-beltsy",
+    "roSlug": "marirea-buzelor-contururi-claritate-balti",
+    "ruTo": "/blog/uvelichenie-gub-estestvennyj-rezultat-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-rezultat-natural-balti"
+  },
+  {
+    "id": "uvelichenie-gub-morshchiny-vokrug",
+    "ruSlug": "uvelichenie-gub-morshchiny-vokrug-beltsy",
+    "roSlug": "marirea-buzelor-riduri-jurul-balti",
+    "ruTo": "/blog/uvelichenie-gub-vozrastnye-izmeneniya-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-modificari-varsta-balti"
+  },
+  {
+    "id": "uvelichenie-gub-nososgubnye-skladki",
+    "ruSlug": "uvelichenie-gub-nososgubnye-skladki-beltsy",
+    "roSlug": "marirea-buzelor-pliuri-nazolabiale-balti",
+    "ruTo": "/blog/uvelichenie-gub-vozrastnye-izmeneniya-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-modificari-varsta-balti"
+  },
+  {
+    "id": "uvelichenie-gub-rastvorenie-gialuronidazoj",
+    "ruSlug": "uvelichenie-gub-rastvorenie-gialuronidazoj-beltsy",
+    "roSlug": "marirea-buzelor-dizolvare-hialuronidaza-balti",
+    "ruTo": "/blog/uvelichenie-gub-oslozhneniya-profilaktika-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-complicatii-profilaxie-balti"
+  },
+  {
+    "id": "uvelichenie-gub-otek-sinyaki",
+    "ruSlug": "uvelichenie-gub-otek-sinyaki-beltsy",
+    "roSlug": "marirea-buzelor-edem-vanatai-balti",
+    "ruTo": "/blog/uvelichenie-gub-oslozhneniya-profilaktika-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-complicatii-profilaxie-balti"
   }
 ]
