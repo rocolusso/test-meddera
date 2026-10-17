@@ -13,6 +13,7 @@ import { DERMATOLOGIST_E } from '@/blog-data/rewrites/dermatologist-e';
 import { DERMATOLOGIST_F } from '@/blog-data/rewrites/derm-f';
 import { DERMATOLOGIST_G } from '@/blog-data/rewrites/derm-g';
 import { DERMATOLOGIST_H } from '@/blog-data/rewrites/derm-h';
+import { BIOREV_B } from '@/blog-data/rewrites/biorev-b';
 import type { ArticleRewrites } from '@/blog-data/rewrites/types';
 
 /** Reworked article bodies. They take precedence over the older copy with the same article id. */
@@ -32,4 +33,5 @@ export const BLOG_REWRITES: ArticleRewrites = {
   ...MISC_A,
   ...LIPS_A,
   ...LIPS_B,
+  ...BIOREV_B,
 };
