@@ -1,4 +1,5 @@
 import type { BlogClusterId, BlogLocale, BlogPost } from '@/blog-data/types';
+import { RELATED_ARTICLES } from '@/blog-data/related-articles';
 import { dermatologistArticlesPart1 } from '@/blog-data/dermatologist-cluster-articles-part1';
 import { dermatologistArticlesPart2 } from '@/blog-data/dermatologist-cluster-articles-part2';
 import { botoxArticlesPart1 } from '@/blog-data/botox-cluster-articles-part1';
@@ -229,10 +230,17 @@ export function getAllSlugParams(locale: BlogLocale): { slug: string }[] {
 }
 
 /**
- * Получить 3-5 связанных статей из той же рубрики (для блока Related Articles).
- * Исключает текущую статью и хабы, сортирует по дате модификации (новые первые).
+ * Блок «Читайте также»: подобранные вручную по теме статьи (related-articles.ts).
+ * Если для статьи список не задан, берутся статьи той же рубрики, новые первые.
  */
 export function getRelatedArticles(post: BlogPost, limit = 5): BlogPost[] {
+  const curated = RELATED_ARTICLES[post.id];
+  if (curated) {
+    const picked = curated
+      .map((id) => getPostById(id))
+      .filter((p): p is BlogPost => Boolean(p) && p!.kind === 'article' && p!.id !== post.id);
+    if (picked.length > 0) return picked.slice(0, limit);
+  }
   if (!post.clusterId) return [];
 
   return BLOG_POSTS

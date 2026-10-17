@@ -4,6 +4,8 @@ import Link from 'next/link';
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
 import { blogUi } from '@/blog-data/blog-ui';
+import { ArticleServiceLinks } from '@/blog-data/ArticleServiceLinks';
+import { articleAnchor, renderInline } from '@/blog-data/inline-links';
 
 type ArticleSection = { h2: string; paragraphs: string[] };
 
@@ -58,7 +60,7 @@ export function MesotherapyFaceArticleBody({ post, locale, dateModified, section
         <section key={idx} className="mb-10">
           <h2 className={blogUi.h2}>{section.h2}</h2>
           {section.paragraphs.map((para, pIdx) => (
-            <p key={pIdx} className={blogUi.pMb4}>{para}</p>
+            <p key={pIdx} className={blogUi.pMb4}>{renderInline(para, locale, blogUi.link)}</p>
           ))}
         </section>
       ))}
@@ -71,9 +73,7 @@ export function MesotherapyFaceArticleBody({ post, locale, dateModified, section
             : 'Dacă analizați mezoterapia feței în Bălți, programați-vă la consultație la clinica Meddera.'
           }
         </p>
-        <ul className="space-y-2">
-          <li><Link href={isRu ? '/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe' : '/ro/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe'} className={blogUi.link}>{isRu ? 'Услуга «Мезотерапия лица»' : 'Serviciul „Mezoterapia feței"'}</Link></li>
-        </ul>
+        <ArticleServiceLinks post={post} locale={locale} />
       </section>
 
       <section className={blogUi.reviewBox} aria-labelledby="medical-review">
@@ -88,7 +88,7 @@ export function MesotherapyFaceArticleBody({ post, locale, dateModified, section
             {relatedPosts.map((related) => (
               <li key={related.id}>
                 <Link href={isRu ? `/blog/${related.slugRu}` : `/ro/blog/${related.slugRo}`} className={blogUi.link}>
-                  {isRu ? related.titleRu : related.titleRo}
+                  {articleAnchor(related, locale)}
                 </Link>
               </li>
             ))}

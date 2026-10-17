@@ -3,6 +3,8 @@ import Link from 'next/link';
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
 import { blogUi } from '@/blog-data/blog-ui';
+import { ArticleServiceLinks } from '@/blog-data/ArticleServiceLinks';
+import { articleAnchor, renderInline } from '@/blog-data/inline-links';
 
 type ArticleSection = { h2: string; paragraphs: string[] };
 type Props = { post: BlogPost; locale: BlogLocale; dateModified: string; sections: ArticleSection[] };
@@ -39,14 +41,12 @@ export function BiorevitalizationArticleBody({ post, locale, dateModified, secti
       {sections.map((section, idx) => (
         <section key={idx} className="mb-10">
           <h2 className={blogUi.h2}>{section.h2}</h2>
-          {section.paragraphs.map((para, pIdx) => (<p key={pIdx} className={blogUi.pMb4}>{para}</p>))}
+          {section.paragraphs.map((para, pIdx) => (<p key={pIdx} className={blogUi.pMb4}>{renderInline(para, locale, blogUi.link)}</p>))}
         </section>
       ))}
       <section className="mb-10">
         <h2 className={blogUi.h2}>{isRu ? 'Запись на консультацию' : 'Programare'}</h2>
-        <ul className="space-y-2">
-          <li><Link href={isRu ? '/services/byorevytalyzaczyya-v-belczah' : '/ro/services/byorevytalyzaczyya-v-belczah'} className={blogUi.link}>{isRu ? 'Услуга «Биоревитализация»' : 'Serviciul „Biorevitalizarea"'}</Link></li>
-        </ul>
+        <ArticleServiceLinks post={post} locale={locale} />
       </section>
       <section className={blogUi.reviewBox}>
         <h2 className={blogUi.boxTitle}>{isRu ? 'Медицинская проверка' : 'Verificare medicală'}</h2>
@@ -55,7 +55,7 @@ export function BiorevitalizationArticleBody({ post, locale, dateModified, secti
       {relatedPosts.length > 0 && (
         <section className="mb-12">
           <h2 className={blogUi.h2Small}>{isRu ? 'Читайте также' : 'Citiți și'}</h2>
-          <ul className="space-y-2">{relatedPosts.map((related) => (<li key={related.id}><Link href={isRu ? `/blog/${related.slugRu}` : `/ro/blog/${related.slugRo}`} className={blogUi.link}>{isRu ? related.titleRu : related.titleRo}</Link></li>))}</ul>
+          <ul className="space-y-2">{relatedPosts.map((related) => (<li key={related.id}><Link href={isRu ? `/blog/${related.slugRu}` : `/ro/blog/${related.slugRo}`} className={blogUi.link}>{articleAnchor(related, locale)}</Link></li>))}</ul>
         </section>
       )}
       {hubSlug && (<div className="mb-12"><Link href={isRu ? `/blog/${hubSlug}` : `/ro/blog/${hubSlug}`} className={blogUi.backButton}>{isRu ? '← Вернуться к рубрике' : '← Înapoi la rubrică'}</Link></div>)}

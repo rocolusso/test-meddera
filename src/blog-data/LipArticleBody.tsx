@@ -4,6 +4,8 @@ import Link from 'next/link';
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
 import { blogUi } from '@/blog-data/blog-ui';
+import { ArticleServiceLinks } from '@/blog-data/ArticleServiceLinks';
+import { articleAnchor, renderInline } from '@/blog-data/inline-links';
 
 type ArticleSection = { h2: string; paragraphs: string[] };
 
@@ -82,9 +84,7 @@ export function LipArticleBody({ post, locale, dateModified, sections }: Props) 
             {section.h2}
           </h2>
           {section.paragraphs.map((para, pIdx) => (
-            <p key={pIdx} className={blogUi.pMb4}>
-              {para}
-            </p>
+            <p key={pIdx} className={blogUi.pMb4}>{renderInline(para, locale, blogUi.link)}</p>
           ))}
         </section>
       ))}
@@ -99,30 +99,7 @@ export function LipArticleBody({ post, locale, dateModified, sections }: Props) 
             : 'Dacă analizați mărirea buzelor în Bălți, programați-vă la consultație la clinica Meddera. Medicul va evalua anatomia buzelor, va discuta așteptările și va întocmi un plan individual.'
           }
         </p>
-        <ul className="space-y-2">
-          <li>
-            <Link
-              href={isRu 
-                ? '/services/uvelychenye-gub-v-belczah'
-                : '/ro/services/uvelychenye-gub-v-belczah'
-              }
-              className={blogUi.link}
-            >
-              {isRu ? 'Услуга «Увеличение губ в Бельцах»' : 'Serviciul „Mărirea buzelor în Bălți"'}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={isRu 
-                ? '/services/konsultaczyya-dermatokosmetologa-v-belczah'
-                : '/ro/services/konsultaczyya-dermatokosmetologa-v-belczah'
-              }
-              className={blogUi.link}
-            >
-              {isRu ? 'Консультация дерматокосметолога' : 'Consultația dermatocosmetologului'}
-            </Link>
-          </li>
-        </ul>
+        <ArticleServiceLinks post={post} locale={locale} />
       </section>
 
       <section
@@ -149,7 +126,7 @@ export function LipArticleBody({ post, locale, dateModified, sections }: Props) 
                   href={isRu ? `/blog/${related.slugRu}` : `/ro/blog/${related.slugRo}`}
                   className={blogUi.link}
                 >
-                  {isRu ? related.titleRu : related.titleRo}
+                  {articleAnchor(related, locale)}
                 </Link>
               </li>
             ))}

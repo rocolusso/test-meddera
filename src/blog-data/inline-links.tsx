@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import type { BlogLocale } from '@/blog-data/types';
+import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import { blogPathRo, blogPathRu, getPostById } from '@/blog-data/registry';
 import { SERVICE_SLUGS, servicePath } from '@/lib/service-slugs';
 
@@ -47,4 +47,11 @@ export function renderInline(text: string, locale: BlogLocale, linkClassName: st
   }
   if (last < text.length) out.push(text.slice(last));
   return out;
+}
+
+/** Link text for an article in lists: the H1 when set, otherwise the title without the site suffix. */
+export function articleAnchor(post: BlogPost, locale: BlogLocale): string {
+  const h1 = locale === 'ru' ? post.h1Ru : post.h1Ro;
+  const title = locale === 'ru' ? post.titleRu : post.titleRo;
+  return (h1 ?? title).replace(/\s*\|\s*Meddera.*$/i, '');
 }
