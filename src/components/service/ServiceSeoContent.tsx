@@ -2,10 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 
 import { JsonLd } from '@/components/JsonLd';
-import { getClusterArticles, getHubForCluster } from '@/blog-data/registry';
+import { getHubForCluster, getPostById } from '@/blog-data/registry';
 import { servicesLinksRo, servicesLinksRu } from '@/lib/db-content';
 import { RECEPTION_SCHEDULE_COPY } from '@/lib/contact-reception-schedule';
-import { SERVICE_CLUSTER, SERVICE_RELATED } from '@/lib/service-seo/related';
+import { SERVICE_BLOG, SERVICE_RELATED } from '@/lib/service-seo/related';
 import { SERVICE_SEO } from '@/lib/service-seo';
 import { PHONE, SITE_ORIGIN, type Locale } from '@/lib/schema/constants';
 import { faqNode, pageGraph, serviceNode } from '@/lib/schema/graph';
@@ -43,12 +43,14 @@ function BookingBlock({ locale }: { locale: Locale }) {
   );
 }
 
-function RelatedBlock({ locale, slug }: { locale: Locale; slug: string }) {
+export function RelatedBlock({ locale, slug }: { locale: Locale; slug: string }) {
   const ru = locale === 'ru';
   const services = ru ? servicesLinksRu : servicesLinksRo;
-  const cluster = SERVICE_CLUSTER[slug];
-  const hub = cluster ? getHubForCluster(cluster) : undefined;
-  const articles = cluster ? getClusterArticles(cluster).slice(0, 3) : [];
+  const blog = SERVICE_BLOG[slug];
+  const hub = blog ? getHubForCluster(blog.cluster) : undefined;
+  const articles = blog
+    ? blog.articles.map((id) => getPostById(id)).filter((a): a is NonNullable<ReturnType<typeof getPostById>> => Boolean(a))
+    : [];
   const relatedServices = (SERVICE_RELATED[slug] ?? [])
     .map((s) => services.find((x) => x.url.endsWith(`/services/${s}`)))
     .filter((x): x is (typeof services)[number] => Boolean(x));

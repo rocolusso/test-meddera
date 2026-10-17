@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import { bilingualAlternates } from '@/lib/hreflang';
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
+import { RelatedBlock } from '@/components/service/ServiceSeoContent';
 import uvelichenieGub from '@public/assets/img/services/uvelicheniegub.png';
 import uvelichenieGub1 from '@public/assets/img/services/lips/lips1.jpg';
 import uvelichenieGub2 from '@public/assets/img/services/lips/lips2.jpg';
@@ -226,6 +227,9 @@ function ServicePageMoney() {
         <div className="mt-12 rounded-xl border border-border/50 bg-muted/30 p-6 text-center">
           <p className="font-semibold text-lg text-foreground">Готовы подчеркнуть свою красоту?</p>
           <p className="mt-2 text-foreground/90">Свяжитесь с нами по телефону или запишитесь онлайн.</p>
+        </div>
+        <div className="mt-8 w-full max-w-3xl">
+          <RelatedBlock locale="ru" slug="uvelychenye-gub-v-belczah" />
         </div>
       </ContentPageShell>
     </>

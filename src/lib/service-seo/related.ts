@@ -1,13 +1,137 @@
 import type { BlogClusterId } from '@/blog-data/types';
 
-/** Service page slug -> blog rubric whose hub and articles it links to. */
-export const SERVICE_CLUSTER: Record<string, BlogClusterId | undefined> = {
-  'botoks-v-belczah-effektyvnoe-omolozhenye-lycza': 'botox',
-  'konturnaya-plastyka-fylleramy-v-belczah': 'fillers',
-  'byorevytalyzaczyya-v-belczah': 'biorevitalization',
-  'mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe': 'mesotherapy-face',
-  'dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye': 'dermatologist',
-  'konsultaczyya-dermatokosmetologa-v-belczah': 'dermatologist',
+/**
+ * Service page slug -> blog rubric hub plus hand-picked articles (3 to 5) that answer the questions
+ * a patient has about that service. The block on the page links to the hub and to these articles.
+ */
+export const SERVICE_BLOG: Record<string, { cluster: BlogClusterId; articles: string[] }> = {
+  'konsultaczyya-dermatokosmetologa-v-belczah': {
+    cluster: 'dermatologist',
+    articles: [
+      'dermatolog-beltsy-kogda-nuzhna-konsultaciya',
+      'rodinki-kogda-obratitsya-k-dermatologu',
+      'akne-prichiny-stadii-lechenie',
+      'pigmentnye-pyatna-prichiny-lechenie',
+    ],
+  },
+  'dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye': {
+    cluster: 'dermatologist',
+    articles: [
+      'dermatolog-beltsy-kogda-nuzhna-konsultaciya',
+      'dermatoskopiya-chto-eto-zachem-nuzhna',
+      'atopicheskij-dermatit-uhod-profilaktika',
+      'ekzema-kak-oblegchit-simptomy',
+      'akne-prichiny-stadii-lechenie',
+    ],
+  },
+  'professyonalnaya-chystka-lycza-v-belczah': {
+    cluster: 'dermatologist',
+    articles: ['akne-prichiny-stadii-lechenie', 'rozacea-prichiny-metody-korrekcii', 'follikulit-vospalenie-volosyanyh-follikulov'],
+  },
+  'karboksyterapyya-v-belczah': {
+    cluster: 'mesotherapy-face',
+    articles: ['mezoterapiya-lica-kurs-procedur', 'biorevitalizaciya-kombinaciya-procedur', 'fotostareenie-kozhi-profilaktika'],
+  },
+  'pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy': {
+    cluster: 'dermatologist',
+    articles: [
+      'pigmentnye-pyatna-prichiny-lechenie',
+      'fotostareenie-kozhi-profilaktika',
+      'akne-prichiny-stadii-lechenie',
+      'solnechnye-ozhogi-pervaya-pomoshch',
+    ],
+  },
+  'algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej': {
+    cluster: 'biorevitalization',
+    articles: ['biorevitalizaciya-uhod-posle', 'mezoterapiya-lica-otek-sinyaki', 'fotostareenie-kozhi-profilaktika'],
+  },
+  'terapyya-anty-akne-v-belczah': {
+    cluster: 'dermatologist',
+    articles: [
+      'akne-prichiny-stadii-lechenie',
+      'rozacea-prichiny-metody-korrekcii',
+      'seboreynyj-dermatit-prichiny-lechenie',
+      'mezoterapiya-lica-akne-postakne',
+      'follikulit-vospalenie-volosyanyh-follikulov',
+    ],
+  },
+  'terapyya-protyv-pygmentaczyy-v-belczah': {
+    cluster: 'dermatologist',
+    articles: [
+      'pigmentnye-pyatna-prichiny-lechenie',
+      'fotostareenie-kozhi-profilaktika',
+      'vitiligo-chto-eto-mozhno-li-lechit',
+      'solnechnye-ozhogi-pervaya-pomoshch',
+      'fotodermatozy-solnce',
+    ],
+  },
+  'dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy': {
+    cluster: 'mesotherapy-face',
+    articles: [
+      'mezoterapiya-lica-akne-postakne',
+      'mezoterapiya-lica-kurs-procedur',
+      'biorevitalizaciya-kombinaciya-procedur',
+      'fotostareenie-kozhi-profilaktika',
+    ],
+  },
+  'mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe': {
+    cluster: 'mesotherapy-face',
+    articles: [
+      'mezoterapiya-lica-beltsy-chto-eto',
+      'mezoterapiya-lica-preparaty-sostav',
+      'mezoterapiya-lica-kak-prohodit-procedura',
+      'mezoterapiya-lica-kurs-procedur',
+      'mezoterapiya-lica-otek-sinyaki',
+    ],
+  },
+  'mezoterapyya-dlya-volos-v-belczah': {
+    cluster: 'dermatologist',
+    articles: ['alopeciya-vypadenie-volos-prichiny', 'seboreya-kozhi-golovy-lechenie', 'seboreynyj-dermatit-prichiny-lechenie'],
+  },
+  'uvelychenye-gub-v-belczah': {
+    cluster: 'lips',
+    articles: [
+      'uvelichenie-gub-pervyj-raz',
+      'uvelichenie-gub-gialuronovaya-kislota',
+      'uvelichenie-gub-bolevye-oshchushcheniya',
+      'uvelichenie-gub-protivopokazaniya',
+      'uvelichenie-gub-uhod-posle-procedury',
+    ],
+  },
+  'botoks-v-belczah-effektyvnoe-omolozhenye-lycza': {
+    cluster: 'botox',
+    articles: [
+      'botoks-beltsy-chto-nuzhno-znat',
+      'botoks-kak-prohodit-procedura',
+      'botoks-zony-injekcij',
+      'botoks-pokazaniya-protivopokazaniya',
+      'botoks-oslozhneniya-pobelochnye-effekty',
+    ],
+  },
+  'byorevytalyzaczyya-v-belczah': {
+    cluster: 'biorevitalization',
+    articles: [
+      'biorevitalizaciya-beltsy-chto-eto',
+      'biorevitalizaciya-preparaty-gialoronovaya-kislota',
+      'biorevitalizaciya-rezultaty-dlitelnost',
+      'biorevitalizaciya-kurs-procedur',
+      'biorevitalizaciya-protivopokazaniya',
+    ],
+  },
+  'konturnaya-plastyka-fylleramy-v-belczah': {
+    cluster: 'fillers',
+    articles: [
+      'konturnaya-plastika-beltsy-chto-eto',
+      'fillery-vidy-sostav-proizvoditeli',
+      'konturnaya-plastika-nososgubnye-skladki',
+      'konturnaya-plastika-skul-podborodka',
+      'konturnaya-plastika-oslozhneniya',
+    ],
+  },
+  'ynjekczyy-lypolytykov-v-belczah': {
+    cluster: 'fillers',
+    articles: ['konturnaya-plastika-skul-podborodka', 'konturnaya-plastika-kombinaciya-procedur'],
+  },
 };
 
 /** Service page slug -> other service slugs that a patient usually reads next. */
