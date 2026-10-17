@@ -1,0 +1,40 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    groups:
+      next-and-react:
+        patterns:
+          - next
+          - '@next/*'
+          - eslint-config-next
+          - react
+          - react-dom
+          - '@types/react'
+          - '@types/react-dom'
+      lint-and-types:
+        patterns:
+          - eslint*
+          - '@eslint/*'
+          - typescript-eslint
+          - '@stylistic/*'
+          - globals
+          - typescript
+      other:
+        update-types:
+          - minor
+          - patch
+    ignore:
+      # ESLint 10 is blocked by plugins (react, import, jsx-a11y); TypeScript 7 by typescript-eslint.
+      - dependency-name: eslint
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@eslint/js'
+        update-types: ['version-update:semver-major']
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major']
+      # Node 22 runtime types stay in step with engines.
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
