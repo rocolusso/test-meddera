@@ -1,1 +1,1318 @@
-[]
+[
+  {
+    "id": "biorevitalizaciya-kurs-nakopitelnyj",
+    "ruSlug": "biorevitalizaciya-kurs-nakopitelnyj-beltsy",
+    "roSlug": "biorevitalizare-curs-cumulativ-balti",
+    "ruTo": "/blog/biorevitalizaciya-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-curs-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-pervyj-kurs",
+    "ruSlug": "biorevitalizaciya-pervyj-kurs-beltsy",
+    "roSlug": "biorevitalizare-primul-curs-balti",
+    "ruTo": "/blog/biorevitalizaciya-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-curs-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-vtoroj-kurs",
+    "ruSlug": "biorevitalizaciya-vtoroj-kurs-beltsy",
+    "roSlug": "biorevitalizare-al-doilea-curs-balti",
+    "ruTo": "/blog/biorevitalizaciya-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-curs-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-povtornaya-procedura",
+    "ruSlug": "biorevitalizaciya-povtornaya-procedura-beltsy",
+    "roSlug": "biorevitalizare-procedura-repetata-balti",
+    "ruTo": "/blog/biorevitalizaciya-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-curs-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-kontrol-data",
+    "ruSlug": "biorevitalizaciya-kontrol-data-beltsy",
+    "roSlug": "biorevitalizare-data-control-balti",
+    "ruTo": "/blog/biorevitalizaciya-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-curs-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-sezon",
+    "ruSlug": "biorevitalizaciya-sezon-vremya-goda-beltsy",
+    "roSlug": "biorevitalizare-sezon-anotimp-balti",
+    "ruTo": "/blog/biorevitalizaciya-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-curs-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-letom-spf",
+    "ruSlug": "biorevitalizaciya-letom-spf-beltsy",
+    "roSlug": "biorevitalizare-vara-spf-balti",
+    "ruTo": "/blog/biorevitalizaciya-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-curs-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-zimoi-vlaga",
+    "ruSlug": "biorevitalizaciya-zimoi-vlaga-beltsy",
+    "roSlug": "biorevitalizare-iarna-umiditate-balti",
+    "ruTo": "/blog/biorevitalizaciya-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-curs-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-posle-puteshestviya",
+    "ruSlug": "biorevitalizaciya-posle-puteshestviya-beltsy",
+    "roSlug": "biorevitalizare-dupa-calatorie-balti",
+    "ruTo": "/blog/biorevitalizaciya-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-curs-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-ingrijire-dom-kombinat",
+    "ruSlug": "biorevitalizaciya-ingrijire-dom-kombinat-beltsy",
+    "roSlug": "biorevitalizare-ingrijire-acasa-combinata-balti",
+    "ruTo": "/blog/biorevitalizaciya-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "biorevitalizaciya-senzacii-posle",
+    "ruSlug": "biorevitalizaciya-senzacii-posle-beltsy",
+    "roSlug": "biorevitalizare-senzatii-dupa-balti",
+    "ruTo": "/blog/biorevitalizaciya-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "biorevitalizaciya-otek-sinyaki",
+    "ruSlug": "biorevitalizaciya-otek-sinyaki-beltsy",
+    "roSlug": "biorevitalizare-edem-vanatai-balti",
+    "ruTo": "/blog/biorevitalizaciya-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "biorevitalizaciya-bolevye-oshchushcheniya",
+    "ruSlug": "biorevitalizaciya-bolevye-oshchushcheniya-beltsy",
+    "roSlug": "biorevitalizare-senzatii-dureroase-balti",
+    "ruTo": "/blog/biorevitalizaciya-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "biorevitalizaciya-reabilitaciya-posle-solnca",
+    "ruSlug": "biorevitalizaciya-reabilitaciya-posle-solnca-beltsy",
+    "roSlug": "biorevitalizare-reabilitare-dupa-soare-balti",
+    "ruTo": "/blog/biorevitalizaciya-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "biorevitalizaciya-protivopokazaniya-kratko",
+    "ruSlug": "biorevitalizaciya-protivopokazaniya-kratko-beltsy",
+    "roSlug": "biorevitalizare-contraindicatii-scurt-balti",
+    "ruTo": "/blog/biorevitalizaciya-protivopokazaniya-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-contraindicatii-balti"
+  },
+  {
+    "id": "biorevitalizaciya-vozrast",
+    "ruSlug": "biorevitalizaciya-vozrast-kogda-nachinat-beltsy",
+    "roSlug": "biorevitalizare-varsta-cand-incepe-balti",
+    "ruTo": "/blog/biorevitalizaciya-protivopokazaniya-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-contraindicatii-balti"
+  },
+  {
+    "id": "biorevitalizaciya-zhirnaya-kozha",
+    "ruSlug": "biorevitalizaciya-zhirnaya-kozha-beltsy",
+    "roSlug": "biorevitalizare-piele-grasa-balti",
+    "ruTo": "/blog/biorevitalizaciya-suhaya-kozha-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-piele-uscata-balti"
+  },
+  {
+    "id": "biorevitalizaciya-tonkaja-kozha",
+    "ruSlug": "biorevitalizaciya-tonkaja-kozha-beltsy",
+    "roSlug": "biorevitalizare-piele-subtire-balti",
+    "ruTo": "/blog/biorevitalizaciya-suhaya-kozha-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-piele-uscata-balti"
+  },
+  {
+    "id": "biorevitalizaciya-zrelaja-kozha",
+    "ruSlug": "biorevitalizaciya-zrelaja-kozha-beltsy",
+    "roSlug": "biorevitalizare-piele-matura-balti",
+    "ruTo": "/blog/biorevitalizaciya-suhaya-kozha-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-piele-uscata-balti"
+  },
+  {
+    "id": "biorevitalizaciya-kozha-sklonnaya-akne",
+    "ruSlug": "biorevitalizaciya-kozha-sklonnaya-akne-beltsy",
+    "roSlug": "biorevitalizare-piele-tendinta-acnee-balti",
+    "ruTo": "/blog/biorevitalizaciya-suhaya-kozha-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-piele-uscata-balti"
+  },
+  {
+    "id": "biorevitalizaciya-post-vospaleniya",
+    "ruSlug": "biorevitalizacia-post-vospaleniya-beltsy",
+    "roSlug": "biorevitalizare-post-inflamatie-balti",
+    "ruTo": "/blog/biorevitalizaciya-suhaya-kozha-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-piele-uscata-balti"
+  },
+  {
+    "id": "biorevitalizaciya-morshchiny",
+    "ruSlug": "biorevitalizaciya-morshchiny-beltsy",
+    "roSlug": "biorevitalizare-riduri-balti",
+    "ruTo": "/blog/biorevitalizaciya-suhaya-kozha-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-piele-uscata-balti"
+  },
+  {
+    "id": "biorevitalizaciya-pigmentaciya",
+    "ruSlug": "biorevitalizaciya-pigmentaciya-beltsy",
+    "roSlug": "biorevitalizare-pigmentare-balti",
+    "ruTo": "/blog/biorevitalizaciya-suhaya-kozha-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-piele-uscata-balti"
+  },
+  {
+    "id": "biorevitalizaciya-zona-periorbit",
+    "ruSlug": "biorevitalizaciya-zona-periorbit-beltsy",
+    "roSlug": "biorevitalizare-periorbitar-balti",
+    "ruTo": "/blog/biorevitalizaciya-vokrug-glaz-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-in-jurul-ochilor-balti"
+  },
+  {
+    "id": "biorevitalizaciya-sheya-dekolt",
+    "ruSlug": "biorevitalizaciya-sheya-dekolt-beltsy",
+    "roSlug": "biorevitalizare-gat-decolteu-balti",
+    "ruTo": "/blog/biorevitalizaciya-vokrug-glaz-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-in-jurul-ochilor-balti"
+  },
+  {
+    "id": "biorevitalizaciya-zona-sheya",
+    "ruSlug": "biorevitalizaciya-zona-sheya-beltsy",
+    "roSlug": "biorevitalizare-gat-balti",
+    "ruTo": "/blog/biorevitalizaciya-vokrug-glaz-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-in-jurul-ochilor-balti"
+  },
+  {
+    "id": "biorevitalizaciya-zona-dekolte",
+    "ruSlug": "biorevitalizaciya-zona-dekolte-beltsy",
+    "roSlug": "biorevitalizare-decolteu-balti",
+    "ruTo": "/blog/biorevitalizaciya-vokrug-glaz-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-in-jurul-ochilor-balti"
+  },
+  {
+    "id": "biorevitalizaciya-ruki",
+    "ruSlug": "biorevitalizaciya-ruk-beltsy",
+    "roSlug": "biorevitalizare-maini-balti",
+    "ruTo": "/blog/biorevitalizaciya-vokrug-glaz-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-in-jurul-ochilor-balti"
+  },
+  {
+    "id": "biorevitalizaciya-vs-mezoterapiya",
+    "ruSlug": "biorevitalizaciya-vs-mezoterapiya-beltsy",
+    "roSlug": "biorevitalizare-vs-mezoterapie-balti",
+    "ruTo": "/blog/biorevitalizaciya-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-combinare-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-vs-botoks",
+    "ruSlug": "biorevitalizaciya-vs-botoks-beltsy",
+    "roSlug": "biorevitalizare-vs-botox-balti",
+    "ruTo": "/blog/biorevitalizaciya-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-combinare-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-vs-fillery",
+    "ruSlug": "biorevitalizaciya-vs-fillery-beltsy",
+    "roSlug": "biorevitalizare-vs-fillere-balti",
+    "ruTo": "/blog/biorevitalizaciya-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-combinare-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-i-kontur-chitat",
+    "ruSlug": "biorevitalizaciya-i-kontur-chitat-beltsy",
+    "roSlug": "biorevitalizare-contur-complet-balti",
+    "ruTo": "/blog/biorevitalizaciya-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-combinare-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-i-botoks-logika",
+    "ruSlug": "biorevitalizaciya-i-botoks-logika-beltsy",
+    "roSlug": "biorevitalizare-botox-logica-balti",
+    "ruTo": "/blog/biorevitalizaciya-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-combinare-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-i-peeling-interval",
+    "ruSlug": "biorevitalizaciya-i-peeling-interval-beltsy",
+    "roSlug": "biorevitalizare-peeling-interval-balti",
+    "ruTo": "/blog/biorevitalizaciya-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-combinare-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-ocherednost-s-drugimi",
+    "ruSlug": "biorevitalizaciya-ocherednost-s-drugimi-beltsy",
+    "roSlug": "biorevitalizare-ordine-alte-proceduri-balti",
+    "ruTo": "/blog/biorevitalizaciya-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-combinare-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-lazernaya",
+    "ruSlug": "biorevitalizaciya-lazernaya-beltsy",
+    "roSlug": "biorevitalizare-laser-balti",
+    "ruTo": "/blog/biorevitalizaciya-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/biorevitalizare-combinare-proceduri-balti"
+  },
+  {
+    "id": "biorevitalizaciya-preparaty-proizvoditeli",
+    "ruSlug": "biorevitalizaciya-preparaty-proizvoditeli-beltsy",
+    "roSlug": "biorevitalizare-preparate-producatori-balti",
+    "ruTo": "/blog/biorevitalizaciya-preparaty-gialoronovaya-kislota",
+    "roTo": "/ro/blog/biorevitalizare-preparate-acid-hialuronic"
+  },
+  {
+    "id": "biorevitalizaciya-vysokaya-koncentraciya",
+    "ruSlug": "biorevitalizaciya-vysokaya-koncentraciya-beltsy",
+    "roSlug": "biorevitalizare-concentratie-mare-balti",
+    "ruTo": "/blog/biorevitalizaciya-preparaty-gialoronovaya-kislota",
+    "roTo": "/ro/blog/biorevitalizare-preparate-acid-hialuronic"
+  },
+  {
+    "id": "biorevitalizaciya-nizkaya-koncentraciya",
+    "ruSlug": "biorevitalizaciya-nizkaya-koncentraciya-beltsy",
+    "roSlug": "biorevitalizare-concentratie-mica-balti",
+    "ruTo": "/blog/biorevitalizaciya-preparaty-gialoronovaya-kislota",
+    "roTo": "/ro/blog/biorevitalizare-preparate-acid-hialuronic"
+  },
+  {
+    "id": "biorevitalizaciya-zapis-konsultaciya",
+    "ruSlug": "biorevitalizaciya-zapis-konsultaciya-beltsy",
+    "roSlug": "biorevitalizare-programare-consultatie-balti",
+    "ruTo": "/",
+    "roTo": "/ro"
+  },
+  {
+    "id": "konturnaya-plastika-vs-botoks",
+    "ruSlug": "konturnaya-plastika-vs-botoks-beltsy",
+    "roSlug": "conturare-vs-botox-balti",
+    "ruTo": "/blog/konturnaya-plastika-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/conturare-faciala-balti-ce-este-indicatii"
+  },
+  {
+    "id": "konturnaya-plastika-vozrast",
+    "ruSlug": "konturnaya-plastika-vozrast-beltsy",
+    "roSlug": "conturare-varsta-balti",
+    "ruTo": "/blog/konturnaya-plastika-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/conturare-faciala-balti-ce-este-indicatii"
+  },
+  {
+    "id": "konturnaya-plastika-muzhchinam",
+    "ruSlug": "konturnaya-plastika-muzhchinam-beltsy",
+    "roSlug": "conturare-barbati-balti",
+    "ruTo": "/blog/konturnaya-plastika-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/conturare-faciala-balti-ce-este-indicatii"
+  },
+  {
+    "id": "fillery-anatomiya-proporcii-lica",
+    "ruSlug": "fillery-anatomiya-proporcii-lica-beltsy",
+    "roSlug": "fillere-anatomie-proportii-fata-balti",
+    "ruTo": "/blog/konturnaya-plastika-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/conturare-faciala-balti-ce-este-indicatii"
+  },
+  {
+    "id": "fillery-konsultaciya-oczenka-proporcij",
+    "ruSlug": "fillery-konsultaciya-oczenka-proporcij-beltsy",
+    "roSlug": "fillere-consultatie-proportii-balti",
+    "ruTo": "/blog/konturnaya-plastika-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/conturare-faciala-balti-ce-este-indicatii"
+  },
+  {
+    "id": "fillery-estetika-muzhchin-profil",
+    "ruSlug": "fillery-estetika-muzhchin-profil-beltsy",
+    "roSlug": "fillere-estetica-barbati-profil-balti",
+    "ruTo": "/blog/konturnaya-plastika-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/conturare-faciala-balti-ce-este-indicatii"
+  },
+  {
+    "id": "fillery-strategiya-minimalizm",
+    "ruSlug": "fillery-strategiya-minimalizm-beltsy",
+    "roSlug": "fillere-strategie-minimalism-balti",
+    "ruTo": "/blog/konturnaya-plastika-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/conturare-faciala-balti-ce-este-indicatii"
+  },
+  {
+    "id": "fillery-strategiya-maksimalizm",
+    "ruSlug": "fillery-strategiya-maksimalizm-beltsy",
+    "roSlug": "fillere-strategie-volum-balti",
+    "ruTo": "/blog/konturnaya-plastika-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/conturare-faciala-balti-ce-este-indicatii"
+  },
+  {
+    "id": "fillery-tehnika-linejnyh-vectorov",
+    "ruSlug": "fillery-tehnika-linejnyh-vectorov-beltsy",
+    "roSlug": "fillere-tehnica-vectori-balti",
+    "ruTo": "/blog/konturnaya-plastika-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/conturare-faciala-balti-ce-este-indicatii"
+  },
+  {
+    "id": "fillery-marka-preparata-znach",
+    "ruSlug": "fillery-marka-preparata-znach-beltsy",
+    "roSlug": "fillere-brand-semnificatie-balti",
+    "ruTo": "/blog/fillery-vidy-sostav-proizvoditeli-beltsy",
+    "roTo": "/ro/blog/fillere-tipuri-compozitie-producatori-balti"
+  },
+  {
+    "id": "fillery-dolgovechnost-zavisit",
+    "ruSlug": "fillery-dolgovechnost-zavisit-beltsy",
+    "roSlug": "fillere-durata-depinde-balti",
+    "ruTo": "/blog/fillery-vidy-sostav-proizvoditeli-beltsy",
+    "roTo": "/ro/blog/fillere-tipuri-compozitie-producatori-balti"
+  },
+  {
+    "id": "konturnaya-plastika-rezultaty-dlitelnost",
+    "ruSlug": "konturnaya-plastika-rezultaty-dlitelnost-beltsy",
+    "roSlug": "conturare-rezultate-durata-balti",
+    "ruTo": "/blog/fillery-vidy-sostav-proizvoditeli-beltsy",
+    "roTo": "/ro/blog/fillere-tipuri-compozitie-producatori-balti"
+  },
+  {
+    "id": "konturnaya-plastika-skuly",
+    "ruSlug": "konturnaya-plastika-skul-beltsy",
+    "roSlug": "conturare-pometi-balti",
+    "ruTo": "/blog/konturnaya-plastika-skul-podborodka-beltsy",
+    "roTo": "/ro/blog/conturare-pometi-barbie-balti"
+  },
+  {
+    "id": "konturnaya-plastika-podborodok",
+    "ruSlug": "konturnaya-plastika-podborodka-beltsy",
+    "roSlug": "conturare-barbie-balti",
+    "ruTo": "/blog/konturnaya-plastika-skul-podborodka-beltsy",
+    "roTo": "/ro/blog/conturare-pometi-barbie-balti"
+  },
+  {
+    "id": "konturnaya-plastika-shcheki",
+    "ruSlug": "konturnaya-plastika-shchek-beltsy",
+    "roSlug": "conturare-obraji-balti",
+    "ruTo": "/blog/konturnaya-plastika-skul-podborodka-beltsy",
+    "roTo": "/ro/blog/conturare-pometi-barbie-balti"
+  },
+  {
+    "id": "fillery-modulaciya-obema-shek",
+    "ruSlug": "fillery-modulaciya-obema-shek-beltsy",
+    "roSlug": "fillere-modulare-volum-obraji-balti",
+    "ruTo": "/blog/konturnaya-plastika-skul-podborodka-beltsy",
+    "roTo": "/ro/blog/conturare-pometi-barbie-balti"
+  },
+  {
+    "id": "fillery-posle-poteri-vesa",
+    "ruSlug": "fillery-posle-poteri-vesa-beltsy",
+    "roSlug": "fillere-dupa-pierdere-greutate-balti",
+    "ruTo": "/blog/konturnaya-plastika-skul-podborodka-beltsy",
+    "roTo": "/ro/blog/conturare-pometi-barbie-balti"
+  },
+  {
+    "id": "konturnaya-plastika-sleznaya-borozda",
+    "ruSlug": "konturnaya-plastika-sleznaya-borozda-beltsy",
+    "roSlug": "conturare-sant-lacrimal-balti",
+    "ruTo": "/blog/konturnaya-plastika-nososgubnye-skladki-beltsy",
+    "roTo": "/ro/blog/conturare-pliuri-nazolabiale-balti"
+  },
+  {
+    "id": "konturnaya-plastika-veski",
+    "ruSlug": "konturnaya-plastika-veski-beltsy",
+    "roSlug": "conturare-tample-balti",
+    "ruTo": "/blog/konturnaya-plastika-nososgubnye-skladki-beltsy",
+    "roTo": "/ro/blog/conturare-pliuri-nazolabiale-balti"
+  },
+  {
+    "id": "konturnaya-plastika-nos",
+    "ruSlug": "konturnaya-plastika-nosa-beltsy",
+    "roSlug": "conturare-nas-balti",
+    "ruTo": "/blog/konturnaya-plastika-nososgubnye-skladki-beltsy",
+    "roTo": "/ro/blog/conturare-pliuri-nazolabiale-balti"
+  },
+  {
+    "id": "konturnaya-plastika-ugolkov-rta",
+    "ruSlug": "konturnaya-plastika-ugolkov-rta-beltsy",
+    "roSlug": "conturare-colturi-gura-balti",
+    "ruTo": "/blog/konturnaya-plastika-nososgubnye-skladki-beltsy",
+    "roTo": "/ro/blog/conturare-pliuri-nazolabiale-balti"
+  },
+  {
+    "id": "fillery-nos-korekciya-linej",
+    "ruSlug": "fillery-nos-korekciya-linej-beltsy",
+    "roSlug": "fillere-nas-corectie-linii-balti",
+    "ruTo": "/blog/konturnaya-plastika-nososgubnye-skladki-beltsy",
+    "roTo": "/ro/blog/conturare-pliuri-nazolabiale-balti"
+  },
+  {
+    "id": "fillery-podglaz-zona-vnimanie",
+    "ruSlug": "fillery-podglaz-zona-vnimanie-beltsy",
+    "roSlug": "fillere-sub-ochi-zona-atentie-balti",
+    "ruTo": "/blog/konturnaya-plastika-nososgubnye-skladki-beltsy",
+    "roTo": "/ro/blog/conturare-pliuri-nazolabiale-balti"
+  },
+  {
+    "id": "konturnaya-plastika-protivopokazaniya",
+    "ruSlug": "konturnaya-plastika-protivopokazaniya-beltsy",
+    "roSlug": "conturare-contraindicatii-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "konturnaya-plastika-uhod-posle",
+    "ruSlug": "konturnaya-plastika-uhod-posle-procedury-beltsy",
+    "roSlug": "conturare-ingrijire-dupa-procedura-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "konturnaya-plastika-bolevye-oshchushcheniya",
+    "ruSlug": "konturnaya-plastika-bolevye-oshchushcheniya-beltsy",
+    "roSlug": "conturare-senzatii-dureroase-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "konturnaya-plastika-otek-sinyaki",
+    "ruSlug": "konturnaya-plastika-otek-sinyaki-beltsy",
+    "roSlug": "conturare-edem-vanatai-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "konturnaya-plastika-rastvorenie-gialuronidazoj",
+    "ruSlug": "konturnaya-plastika-rastvorenie-gialuronidazoj-beltsy",
+    "roSlug": "conturare-dizolvare-hialuronidaza-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "fillery-kontrol-posle-nedeli",
+    "ruSlug": "fillery-kontrol-nedelya-beltsy",
+    "roSlug": "fillere-control-dupa-saptamana-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "fillery-oslozhnenie-rannie-znaki",
+    "ruSlug": "fillery-oslozhnenie-rannie-znaki-beltsy",
+    "roSlug": "fillere-complicatii-semne-timpuriu-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "fillery-kogda-nuzhna-konsult",
+    "ruSlug": "fillery-kogda-nuzhna-konsult-beltsy",
+    "roSlug": "fillere-cand-consult-urgent-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "fillery-i-pregnancy-planning",
+    "ruSlug": "fillery-i-pregnancy-planning-beltsy",
+    "roSlug": "fillere-planificare-sarcina-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "fillery-i-kormlenie",
+    "ruSlug": "fillery-i-kormlenie-beltsy",
+    "roSlug": "fillere-si-alaptare-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "fillery-posle-stomatologii",
+    "ruSlug": "fillery-posle-stomatologii-beltsy",
+    "roSlug": "fillere-dupa-stomatologie-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "fillery-posle-plasticheskoj-ranshe",
+    "ruSlug": "fillery-posle-plasticheskoj-ranshe-beltsy",
+    "roSlug": "fillere-dupa-chirurgie-estetica-balti",
+    "ruTo": "/blog/konturnaya-plastika-oslozhneniya-beltsy",
+    "roTo": "/ro/blog/conturare-complicatii-balti"
+  },
+  {
+    "id": "fillery-kombinacia-mezoterapiya-lico",
+    "ruSlug": "fillery-kombinacia-mezoterapiya-lico-beltsy",
+    "roSlug": "fillere-combinatie-mezoterapie-fata-balti",
+    "ruTo": "/blog/konturnaya-plastika-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/conturare-combinare-proceduri-balti"
+  },
+  {
+    "id": "fillery-kombinacia-biorevital",
+    "ruSlug": "fillery-kombinacia-biorevital-beltsy",
+    "roSlug": "fillere-combinatie-biorevitalizare-balti",
+    "ruTo": "/blog/konturnaya-plastika-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/conturare-combinare-proceduri-balti"
+  },
+  {
+    "id": "fillery-kombinacia-niti-chitat",
+    "ruSlug": "fillery-kombinacia-niti-chitat-beltsy",
+    "roSlug": "fillere-combinatie-fire-balti",
+    "ruTo": "/blog/konturnaya-plastika-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/conturare-combinare-proceduri-balti"
+  },
+  {
+    "id": "konturnaya-plastika-sezon",
+    "ruSlug": "konturnaya-plastika-sezon-beltsy",
+    "roSlug": "conturare-sezon-balti",
+    "ruTo": "/blog/konturnaya-plastika-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/conturare-combinare-proceduri-balti"
+  },
+  {
+    "id": "konturnaya-plastika-povtornaya-procedura",
+    "ruSlug": "konturnaya-plastika-povtornaya-procedura-beltsy",
+    "roSlug": "conturare-procedura-repetata-balti",
+    "ruTo": "/blog/konturnaya-plastika-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/conturare-combinare-proceduri-balti"
+  },
+  {
+    "id": "fillery-povtornaya-korekciya-cherez-mesyac",
+    "ruSlug": "fillery-povtornaya-korekciya-cherez-mesyac-beltsy",
+    "roSlug": "fillere-corectie-dupa-luna-balti",
+    "ruTo": "/blog/konturnaya-plastika-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/conturare-combinare-proceduri-balti"
+  },
+  {
+    "id": "fillery-asimetriya-posle-travmy",
+    "ruSlug": "fillery-asimetriya-posle-travmy-beltsy",
+    "roSlug": "fillere-asimetrie-dupa-trauma-balti",
+    "ruTo": "/blog/konturnaya-plastika-kombinaciya-procedur-beltsy",
+    "roTo": "/ro/blog/conturare-combinare-proceduri-balti"
+  },
+  {
+    "id": "fillery-zapis-konsultaciya",
+    "ruSlug": "fillery-zapis-konsultaciya-beltsy",
+    "roSlug": "fillere-programare-consultatie-balti",
+    "ruTo": "/",
+    "roTo": "/ro"
+  },
+  {
+    "id": "mezoterapiya-lica-vozrast",
+    "ruSlug": "mezoterapiya-lica-vozrast-kogda-nachinat-beltsy",
+    "roSlug": "mezoterapie-fata-varsta-cand-incepe-balti",
+    "ruTo": "/blog/mezoterapiya-lica-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/mezoterapie-fata-balti-ce-este-indicatii"
+  },
+  {
+    "id": "mezoterapiya-lica-vs-biorevitalizaciya",
+    "ruSlug": "mezoterapiya-vs-biorevitalizaciya-beltsy",
+    "roSlug": "mezoterapie-vs-biorevitalizare-balti",
+    "ruTo": "/blog/mezoterapiya-lica-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/mezoterapie-fata-balti-ce-este-indicatii"
+  },
+  {
+    "id": "mezoterapiya-lica-vs-botoks",
+    "ruSlug": "mezoterapiya-vs-botoks-beltsy",
+    "roSlug": "mezoterapie-vs-botox-balti",
+    "ruTo": "/blog/mezoterapiya-lica-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/mezoterapie-fata-balti-ce-este-indicatii"
+  },
+  {
+    "id": "mezoterapiya-lica-kombinaciya-procedur",
+    "ruSlug": "mezoterapiya-kombinaciya-procedur-beltsy",
+    "roSlug": "mezoterapie-combinare-proceduri-balti",
+    "ruTo": "/blog/mezoterapiya-lica-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/mezoterapie-fata-balti-ce-este-indicatii"
+  },
+  {
+    "id": "mezoterapiya-kombinacia-s-massazhom",
+    "ruSlug": "mezoterapiya-kombinacia-s-massazhom-beltsy",
+    "roSlug": "mezoterapie-combinare-masaj-balti",
+    "ruTo": "/blog/mezoterapiya-lica-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/mezoterapie-fata-balti-ce-este-indicatii"
+  },
+  {
+    "id": "mezoterapiya-kombinacia-s-chistkoj",
+    "ruSlug": "mezoterapiya-kombinacia-s-chistkoj-beltsy",
+    "roSlug": "mezoterapie-combinare-curatare-balti",
+    "ruTo": "/blog/mezoterapiya-lica-beltsy-chto-eto-pokazaniya",
+    "roTo": "/ro/blog/mezoterapie-fata-balti-ce-este-indicatii"
+  },
+  {
+    "id": "mezoterapiya-amino-peptide",
+    "ruSlug": "mezoterapiya-amino-peptide-beltsy",
+    "roSlug": "mezoterapie-peptide-amino-balti",
+    "ruTo": "/blog/mezoterapiya-lica-preparaty-sostav-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-preparate-compozitie-balti"
+  },
+  {
+    "id": "mezoterapiya-vitamine-complex",
+    "ruSlug": "mezoterapiya-vitamine-complex-beltsy",
+    "roSlug": "mezoterapie-vitamine-complex-balti",
+    "ruTo": "/blog/mezoterapiya-lica-preparaty-sostav-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-preparate-compozitie-balti"
+  },
+  {
+    "id": "mezoterapiya-gipoallergennaya-liniya",
+    "ruSlug": "mezoterapiya-gipoallergennaya-liniya-beltsy",
+    "roSlug": "mezoterapie-linie-hipoalergenica-balti",
+    "ruTo": "/blog/mezoterapiya-lica-preparaty-sostav-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-preparate-compozitie-balti"
+  },
+  {
+    "id": "mezoterapiya-glubina-injekcii",
+    "ruSlug": "mezoterapiya-glubina-injekcii-beltsy",
+    "roSlug": "mezoterapie-adancime-injectii-balti",
+    "ruTo": "/blog/mezoterapiya-lica-preparaty-sostav-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-preparate-compozitie-balti"
+  },
+  {
+    "id": "mezoterapiya-ton-tonalnost",
+    "ruSlug": "mezoterapiya-ton-tonalnost-beltsy",
+    "roSlug": "mezoterapie-ton-uniform-balti",
+    "ruTo": "/blog/mezoterapiya-lica-preparaty-sostav-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-preparate-compozitie-balti"
+  },
+  {
+    "id": "mezoterapiya-i-retinoidy-dom",
+    "ruSlug": "mezoterapiya-i-retinoidy-dom-beltsy",
+    "roSlug": "mezoterapie-retinoizi-acasa-balti",
+    "ruTo": "/blog/mezoterapiya-lica-preparaty-sostav-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-preparate-compozitie-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-bolevye-oshchushcheniya",
+    "ruSlug": "mezoterapiya-lica-bolevye-oshchushcheniya-beltsy",
+    "roSlug": "mezoterapie-fata-senzatii-dureroase-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kak-prohodit-procedura-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-cum-decurge-procedura-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-uhod-posle",
+    "ruSlug": "mezoterapiya-lica-uhod-posle-procedury-beltsy",
+    "roSlug": "mezoterapie-fata-ingrijire-dupa-procedura-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kak-prohodit-procedura-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-cum-decurge-procedura-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-protivopokazaniya",
+    "ruSlug": "mezoterapiya-lica-protivopokazaniya-beltsy",
+    "roSlug": "mezoterapie-fata-contraindicatii-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kak-prohodit-procedura-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-cum-decurge-procedura-balti"
+  },
+  {
+    "id": "mezoterapiya-kurs-intensiv",
+    "ruSlug": "mezoterapiya-kurs-intensiv-beltsy",
+    "roSlug": "mezoterapie-curs-intensiv-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-kurs-podderzhka",
+    "ruSlug": "mezoterapiya-kurs-podderzhka-beltsy",
+    "roSlug": "mezoterapie-curs-mentenanta-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-rezultaty-dlitelnost",
+    "ruSlug": "mezoterapiya-lica-rezultaty-dlitelnost-beltsy",
+    "roSlug": "mezoterapie-fata-rezultate-durata-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-sezon",
+    "ruSlug": "mezoterapiya-lica-sezon-vremya-goda-beltsy",
+    "roSlug": "mezoterapie-fata-sezon-anotimp-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-primenenie-zimoi",
+    "ruSlug": "mezoterapiya-primenenie-zimoi-beltsy",
+    "roSlug": "mezoterapie-aplicare-iarna-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-primenenie-vesnoi",
+    "ruSlug": "mezoterapiya-primenenie-vesnoi-beltsy",
+    "roSlug": "mezoterapie-aplicare-primavara-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-primenenie-leto",
+    "ruSlug": "mezoterapiya-primenenie-leto-beltsy",
+    "roSlug": "mezoterapie-aplicare-vara-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-primenenie-osenyu",
+    "ruSlug": "mezoterapiya-primenenie-osenyu-beltsy",
+    "roSlug": "mezoterapie-aplicare-toamna-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-posle-otpusk",
+    "ruSlug": "mezoterapiya-posle-otpusk-beltsy",
+    "roSlug": "mezoterapie-dupa-concediu-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-posle-prostud",
+    "ruSlug": "mezoterapiya-posle-prostud-beltsy",
+    "roSlug": "mezoterapie-dupa-raceala-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-sezon-pylecvet",
+    "ruSlug": "mezoterapiya-sezon-pylecvet-beltsy",
+    "roSlug": "mezoterapie-sezon-polen-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-pred-svadba",
+    "ruSlug": "mezoterapiya-pred-svadba-beltsy",
+    "roSlug": "mezoterapie-inainte-nunta-balti",
+    "ruTo": "/blog/mezoterapiya-lica-kurs-procedur-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-curs-proceduri-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-pigmentaciya",
+    "ruSlug": "mezoterapiya-lica-pigmentaciya-beltsy",
+    "roSlug": "mezoterapie-fata-pigmentare-balti",
+    "ruTo": "/blog/mezoterapiya-lica-akne-postakne-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-acnee-postacnee-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-morshchiny",
+    "ruSlug": "mezoterapiya-lica-morshchiny-beltsy",
+    "roSlug": "mezoterapie-fata-riduri-balti",
+    "ruTo": "/blog/mezoterapiya-lica-akne-postakne-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-acnee-postacnee-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-suhaya-kozha",
+    "ruSlug": "mezoterapiya-lica-suhaya-kozha-beltsy",
+    "roSlug": "mezoterapie-fata-piele-uscata-balti",
+    "ruTo": "/blog/mezoterapiya-lica-akne-postakne-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-acnee-postacnee-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-zhirnaya-kozha",
+    "ruSlug": "mezoterapiya-lica-zhirnaya-kozha-beltsy",
+    "roSlug": "mezoterapie-fata-piele-grasa-balti",
+    "ruTo": "/blog/mezoterapiya-lica-akne-postakne-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-acnee-postacnee-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-rasshirennye-pory",
+    "ruSlug": "mezoterapiya-lica-rasshirennye-pory-beltsy",
+    "roSlug": "mezoterapie-fata-pori-dilatati-balti",
+    "ruTo": "/blog/mezoterapiya-lica-akne-postakne-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-acnee-postacnee-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-kuperoz",
+    "ruSlug": "mezoterapiya-lica-kuperoz-beltsy",
+    "roSlug": "mezoterapie-fata-cuperoza-balti",
+    "ruTo": "/blog/mezoterapiya-lica-akne-postakne-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-acnee-postacnee-balti"
+  },
+  {
+    "id": "mezoterapiya-i-kuperoz-lechenie",
+    "ruSlug": "mezoterapiya-i-kuperoz-lechenie-beltsy",
+    "roSlug": "mezoterapie-cuperoza-tratament-balti",
+    "ruTo": "/blog/mezoterapiya-lica-akne-postakne-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-acnee-postacnee-balti"
+  },
+  {
+    "id": "mezoterapiya-stress-koza",
+    "ruSlug": "mezoterapiya-stress-koza-beltsy",
+    "roSlug": "mezoterapie-stres-piele-balti",
+    "ruTo": "/blog/mezoterapiya-lica-akne-postakne-beltsy",
+    "roTo": "/ro/blog/mezoterapie-fata-acnee-postacnee-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-sheya-dekolt",
+    "ruSlug": "mezoterapiya-sheya-dekolt-beltsy",
+    "roSlug": "mezoterapie-gat-decolteu-balti",
+    "ruTo": "/blog/mezoterapiya-vokrug-glaz-beltsy",
+    "roTo": "/ro/blog/mezoterapie-in-jurul-ochilor-balti"
+  },
+  {
+    "id": "mezoterapiya-lica-ruki",
+    "ruSlug": "mezoterapiya-ruk-beltsy",
+    "roSlug": "mezoterapie-maini-balti",
+    "ruTo": "/blog/mezoterapiya-vokrug-glaz-beltsy",
+    "roTo": "/ro/blog/mezoterapie-in-jurul-ochilor-balti"
+  },
+  {
+    "id": "mezoterapiya-lico-zona-t",
+    "ruSlug": "mezoterapiya-lico-zona-t-beltsy",
+    "roSlug": "mezoterapie-fata-zona-t-balti",
+    "ruTo": "/blog/mezoterapiya-vokrug-glaz-beltsy",
+    "roTo": "/ro/blog/mezoterapie-in-jurul-ochilor-balti"
+  },
+  {
+    "id": "mezoterapiya-lico-skula-niz",
+    "ruSlug": "mezoterapiya-lico-skula-niz-beltsy",
+    "roSlug": "mezoterapie-pometi-jumatate-inferioara-balti",
+    "ruTo": "/blog/mezoterapiya-vokrug-glaz-beltsy",
+    "roTo": "/ro/blog/mezoterapie-in-jurul-ochilor-balti"
+  },
+  {
+    "id": "mezoterapiya-nadcumbaly",
+    "ruSlug": "mezoterapiya-nadcumbaly-beltsy",
+    "roSlug": "mezoterapie-supraction-balti",
+    "ruTo": "/blog/mezoterapiya-vokrug-glaz-beltsy",
+    "roTo": "/ro/blog/mezoterapie-in-jurul-ochilor-balti"
+  },
+  {
+    "id": "mezoterapiya-podborodochnyj-treugolnik",
+    "ruSlug": "mezoterapiya-podborodochnyj-treugolnik-beltsy",
+    "roSlug": "mezoterapie-triunghi-barbie-balti",
+    "ruTo": "/blog/mezoterapiya-vokrug-glaz-beltsy",
+    "roTo": "/ro/blog/mezoterapie-in-jurul-ochilor-balti"
+  },
+  {
+    "id": "mezoterapiya-zapis-konsultaciya",
+    "ruSlug": "mezoterapiya-zapis-konsultaciya-beltsy",
+    "roSlug": "mezoterapie-programare-consultatie-balti",
+    "ruTo": "/",
+    "roTo": "/ro"
+  },
+  {
+    "id": "botoks-mikrodozy-lbu",
+    "ruSlug": "botoks-mikrodozy-lbu-beltsy",
+    "roSlug": "botox-microdoze-frunte-balti",
+    "ruTo": "/blog/botoks-lob-gorizontalnye-morshchiny-beltsy",
+    "roTo": "/ro/blog/botox-frunte-riduri-orizontale-balti"
+  },
+  {
+    "id": "botoks-gorizontalnye-morshchiny-vtoroj-plan",
+    "ruSlug": "botoks-gorizontalnye-morshchiny-vtoroj-plan-beltsy",
+    "roSlug": "botox-riduri-orizontale-detaliu-balti",
+    "ruTo": "/blog/botoks-lob-gorizontalnye-morshchiny-beltsy",
+    "roTo": "/ro/blog/botox-frunte-riduri-orizontale-balti"
+  },
+  {
+    "id": "botoks-kombinaciya-fillery",
+    "ruSlug": "botoks-kombinaciya-fillery-beltsy",
+    "roSlug": "botox-combinatie-fillere-balti",
+    "ruTo": "/blog/botoks-vs-fillery-v-chem-raznica-beltsy",
+    "roTo": "/ro/blog/botox-vs-fillere-care-diferenta-balti"
+  },
+  {
+    "id": "botoks-kombinaciya-mezoterapiya",
+    "ruSlug": "botoks-kombinaciya-mezoterapiya-beltsy",
+    "roSlug": "botox-combinatie-mezoterapie-balti",
+    "ruTo": "/blog/botoks-vs-fillery-v-chem-raznica-beltsy",
+    "roTo": "/ro/blog/botox-vs-fillere-care-diferenta-balti"
+  },
+  {
+    "id": "botoks-vnutrimyshechnaya-gipergidroz",
+    "ruSlug": "botoks-vnutrimyshechnaya-gipergidroz-beltsy",
+    "roSlug": "botox-hiperhidroza-palme-balti",
+    "ruTo": "/blog/botoks-gipergidroz-podmyshek-beltsy",
+    "roTo": "/ro/blog/botox-hiperhidroza-axile-balti"
+  },
+  {
+    "id": "botoks-bruxizm-podborodok",
+    "ruSlug": "botoks-bruxizm-podborodok-beltsy",
+    "roSlug": "botox-bruxism-barbie-balti",
+    "ruTo": "/blog/botoks-bruksizm-skrezhetanie-zubami-beltsy",
+    "roTo": "/ro/blog/botox-bruxism-scrasnit-dinti-balti"
+  },
+  {
+    "id": "botoks-lateralnyj-vzglyad-glaza",
+    "ruSlug": "botoks-lateralnyj-vzglyad-glaza-beltsy",
+    "roSlug": "botox-mimica-laterala-ochi-balti",
+    "ruTo": "/blog/botoks-gusinye-lapki-morshchiny-glaz-beltsy",
+    "roTo": "/ro/blog/botox-picioare-gasca-riduri-ochi-balti"
+  },
+  {
+    "id": "botoks-asimmetriya-mimiki",
+    "ruSlug": "botoks-asimmetriya-mimiki-beltsy",
+    "roSlug": "botox-asimetrie-mimica-balti",
+    "ruTo": "/blog/botoks-beltsy-chto-nuzhno-znat-pered-proceduroy",
+    "roTo": "/ro/blog/botox-balti-ce-trebuie-sa-stiti-inainte-procedura"
+  },
+  {
+    "id": "botoks-perenosica-krolik",
+    "ruSlug": "botoks-perenosica-krolik-beltsy",
+    "roSlug": "botox-riduri-iepure-balti",
+    "ruTo": "/blog/botoks-nos-korrekciya-beltsy",
+    "roTo": "/ro/blog/botox-nas-corectie-balti"
+  },
+  {
+    "id": "botoks-podborodochnaya-myshca",
+    "ruSlug": "botoks-podborodochnaya-myshca-beltsy",
+    "roSlug": "botox-muschi-barbie-balti",
+    "ruTo": "/blog/botoks-podborodok-morshchiny-beltsy",
+    "roTo": "/ro/blog/botox-barbie-riduri-balti"
+  },
+  {
+    "id": "botoks-platisma-grubyj-kontur",
+    "ruSlug": "botoks-platisma-grubyj-kontur-beltsy",
+    "roSlug": "botox-platisma-contur-gros-balti",
+    "ruTo": "/blog/botoks-sheya-korrekciya-platizmy-beltsy",
+    "roTo": "/ro/blog/botox-gat-corectie-platisma-balti"
+  },
+  {
+    "id": "botoks-hronicheskaya-migranya",
+    "ruSlug": "botoks-hronicheskaya-migranya-beltsy",
+    "roSlug": "botox-migrena-cronica-balti",
+    "ruTo": "/blog/botoks-migreni-golovnye-boli-lechenie-beltsy",
+    "roTo": "/ro/blog/botox-migrena-dureri-cap-tratament-balti"
+  },
+  {
+    "id": "botoks-pobochnye-blizko-k-glazu",
+    "ruSlug": "botoks-pobochnye-blizko-k-glazu-beltsy",
+    "roSlug": "botox-efecte-lateral-ochi-balti",
+    "ruTo": "/blog/botoks-oslozhneniya-pobochnye-effekty-beltsy",
+    "roTo": "/ro/blog/botox-complicatii-efecte-secundare-balti"
+  },
+  {
+    "id": "botoks-chrezmernaya-relaksaciya",
+    "ruSlug": "botoks-chrezmernaya-relaksaciya-beltsy",
+    "roSlug": "botox-relaxare-excesiva-balti",
+    "ruTo": "/blog/botoks-oslozhneniya-pobochnye-effekty-beltsy",
+    "roTo": "/ro/blog/botox-complicatii-efecte-secundare-balti"
+  },
+  {
+    "id": "botoks-immunitet-k-preparatu",
+    "ruSlug": "botoks-immunitet-k-preparatu-beltsy",
+    "roSlug": "botox-imunitate-la-preparat-balti",
+    "ruTo": "/blog/botoks-chastota-povtornyh-procedur-beltsy",
+    "roTo": "/ro/blog/botox-frecventa-procedurilor-repetate-balti"
+  },
+  {
+    "id": "botoks-pervyj-raz-posle-dolgogo-pereryva",
+    "ruSlug": "botoks-pervyj-raz-posle-dolgogo-pereryva-beltsy",
+    "roSlug": "botox-prima-data-dupa-pauza-balti",
+    "ruTo": "/blog/botoks-chastota-povtornyh-procedur-beltsy",
+    "roTo": "/ro/blog/botox-frecventa-procedurilor-repetate-balti"
+  },
+  {
+    "id": "botoks-muzhskoj-licevoj-tip",
+    "ruSlug": "botoks-muzhskoj-licevoj-tip-beltsy",
+    "roSlug": "botox-tip-fata-barbati-balti",
+    "ruTo": "/blog/botoks-muzhchinam-osobennosti-beltsy",
+    "roTo": "/ro/blog/botox-barbati-particularitati-balti"
+  },
+  {
+    "id": "botoks-zhenschina-40-plus",
+    "ruSlug": "botoks-zhenschina-40-plus-beltsy",
+    "roSlug": "botox-femei-peste-40-balti",
+    "ruTo": "/blog/botoks-vozrast-kogda-nachinat-beltsy",
+    "roTo": "/ro/blog/botox-varsta-cand-sa-incepeti-balti"
+  },
+  {
+    "id": "botoks-zhenschina-55-plus",
+    "ruSlug": "botoks-zhenschina-55-plus-beltsy",
+    "roSlug": "botox-femei-peste-55-balti",
+    "ruTo": "/blog/botoks-vozrast-kogda-nachinat-beltsy",
+    "roTo": "/ro/blog/botox-varsta-cand-sa-incepeti-balti"
+  },
+  {
+    "id": "botoks-professionalnaya-mimika",
+    "ruSlug": "botoks-professionalnaya-mimika-beltsy",
+    "roSlug": "botox-mimica-profesionala-balti",
+    "ruTo": "/blog/botoks-zony-injekcij-lob-mezhbrove-beltsy",
+    "roTo": "/ro/blog/botox-zone-injectii-frunte-intre-sprancene-balti"
+  },
+  {
+    "id": "botoks-pered-vazhnoj-datoj",
+    "ruSlug": "botoks-pered-vazhnoj-datoj-beltsy",
+    "roSlug": "botox-inainte-eveniment-balti",
+    "ruTo": "/blog/botoks-kak-prohodit-procedura-etapy-beltsy",
+    "roTo": "/ro/blog/botox-cum-decurge-procedura-etape-balti"
+  },
+  {
+    "id": "botoks-posle-bolezni-perenos",
+    "ruSlug": "botoks-posle-bolezni-perenos-beltsy",
+    "roSlug": "botox-dupa-boala-amanare-balti",
+    "ruTo": "/blog/botoks-pokazaniya-protivopokazaniya-beltsy",
+    "roTo": "/ro/blog/botox-indicatii-contraindicatii-balti"
+  },
+  {
+    "id": "botoks-i-antikoagulyanty",
+    "ruSlug": "botoks-i-antikoagulyanty-beltsy",
+    "roSlug": "botox-si-anticoagulante-balti",
+    "ruTo": "/blog/botoks-pokazaniya-protivopokazaniya-beltsy",
+    "roTo": "/ro/blog/botox-indicatii-contraindicatii-balti"
+  },
+  {
+    "id": "botoks-i-antibiotiki",
+    "ruSlug": "botoks-i-antibiotiki-beltsy",
+    "roSlug": "botox-si-antibiotice-balti",
+    "ruTo": "/blog/botoks-pokazaniya-protivopokazaniya-beltsy",
+    "roTo": "/ro/blog/botox-indicatii-contraindicatii-balti"
+  },
+  {
+    "id": "botoks-zapis-konsultaciya",
+    "ruSlug": "botoks-zapis-konsultaciya-beltsy",
+    "roSlug": "botox-programare-consultatie-balti",
+    "ruTo": "/",
+    "roTo": "/ro"
+  },
+  {
+    "id": "guby-forma-serdce",
+    "ruSlug": "guby-forma-serdce-beltsy",
+    "roSlug": "buze-forma-inima-balti",
+    "ruTo": "/blog/uvelichenie-gub-forma-simmetriya-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-forma-simetrie-balti"
+  },
+  {
+    "id": "guby-forma-lukovichka",
+    "ruSlug": "guby-forma-lukovichka-beltsy",
+    "roSlug": "buze-forma-lamina-balti",
+    "ruTo": "/blog/uvelichenie-gub-forma-simmetriya-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-forma-simetrie-balti"
+  },
+  {
+    "id": "guby-korekciya-tonkih-konicheskih",
+    "ruSlug": "guby-korekciya-tonkih-konicheskih-beltsy",
+    "roSlug": "buze-subti-corectie-balti",
+    "ruTo": "/blog/uvelichenie-gub-tonkie-guby-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-buze-subtiri-balti"
+  },
+  {
+    "id": "guby-asimetriya-posle-travmy",
+    "ruSlug": "guby-asimetriya-posle-travmy-beltsy",
+    "roSlug": "asimetrie-buze-dupa-trauma-balti",
+    "ruTo": "/blog/uvelichenie-gub-asimmetriya-korrekciya-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-asimetrie-corectie-balti"
+  },
+  {
+    "id": "fillery-guby-marki-sravnenie",
+    "ruSlug": "fillery-guby-marki-sravnenie-beltsy",
+    "roSlug": "fillere-buze-branduri-comparatie-balti",
+    "ruTo": "/blog/uvelichenie-gub-proizvoditeli-fillerov-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-producatori-fillere-balti"
+  },
+  {
+    "id": "guby-estetika-balans-licza",
+    "ruSlug": "guby-estetika-balans-licza-beltsy",
+    "roSlug": "buze-estetica-balanta-fata-balti",
+    "ruTo": "/blog/uvelichenie-gub-estestvennyj-rezultat-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-rezultat-natural-balti"
+  },
+  {
+    "id": "guby-mode-laju-natural",
+    "ruSlug": "guby-mode-laju-natural-beltsy",
+    "roSlug": "buze-trend-natural-balti",
+    "ruTo": "/blog/uvelichenie-gub-estestvennyj-rezultat-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-rezultat-natural-balti"
+  },
+  {
+    "id": "guby-korekciya-opuschennyh-ugolkov",
+    "ruSlug": "guby-korekciya-opuschennyh-ugolkov-beltsy",
+    "roSlug": "buze-colturi-coborate-balti",
+    "ruTo": "/blog/uvelichenie-gub-vozrastnye-izmeneniya-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-modificari-varsta-balti"
+  },
+  {
+    "id": "guby-posle-rastyazheniya",
+    "ruSlug": "guby-posle-rastyazheniya-beltsy",
+    "roSlug": "buze-dupa-intindere-balti",
+    "ruTo": "/blog/uvelichenie-gub-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "guby-ingirire-prima-saptamina",
+    "ruSlug": "guby-ingirire-prima-saptamina-beltsy",
+    "roSlug": "buze-ingrijire-prima-saptamana-balti",
+    "ruTo": "/blog/uvelichenie-gub-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "guby-ingirire-lungi-termen",
+    "ruSlug": "guby-ingirire-lungi-termen-beltsy",
+    "roSlug": "buze-ingrijire-termen-lung-balti",
+    "ruTo": "/blog/uvelichenie-gub-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "guby-voda-plaja-piscina",
+    "ruSlug": "guby-voda-plaja-piscina-beltsy",
+    "roSlug": "buze-apa-plaja-piscina-balti",
+    "ruTo": "/blog/uvelichenie-gub-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "guby-dupa-exfoliere-chemical",
+    "ruSlug": "guby-dupa-exfoliere-chemical-beltsy",
+    "roSlug": "buze-dupa-exfoliere-chimica-balti",
+    "ruTo": "/blog/uvelichenie-gub-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "guby-dupa-laser-lic",
+    "ruSlug": "guby-dupa-laser-lic-beltsy",
+    "roSlug": "buze-dupa-laser-fata-balti",
+    "ruTo": "/blog/uvelichenie-gub-uhod-posle-procedury-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-ingrijire-dupa-procedura-balti"
+  },
+  {
+    "id": "guby-i-komicheskie-linii",
+    "ruSlug": "guby-i-komicheskie-linii-beltsy",
+    "roSlug": "buze-linii-comice-balti",
+    "ruTo": "/blog/uvelichenie-gub-nososgubnye-skladki-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-pliuri-nazolabiale-balti"
+  },
+  {
+    "id": "guby-podgotovka-k-prazdniku",
+    "ruSlug": "guby-podgotovka-k-prazdniku-beltsy",
+    "roSlug": "buze-pregatire-eveniment-balti",
+    "ruTo": "/blog/uvelichenie-gub-pervyj-raz-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-prima-data-balti"
+  },
+  {
+    "id": "guby-strategie-etape",
+    "ruSlug": "guby-strategie-etape-beltsy",
+    "roSlug": "buze-strategie-etape-balti",
+    "ruTo": "/blog/uvelichenie-gub-pervyj-raz-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-prima-data-balti"
+  },
+  {
+    "id": "guby-feedback-consultatie",
+    "ruSlug": "guby-feedback-consultatie-beltsy",
+    "roSlug": "buze-feedback-consultatie-balti",
+    "ruTo": "/blog/uvelichenie-gub-pervyj-raz-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-prima-data-balti"
+  },
+  {
+    "id": "guby-filler-rari-retragere",
+    "ruSlug": "guby-filler-rari-retragere-beltsy",
+    "roSlug": "buze-filler-migrare-rara-balti",
+    "ruTo": "/blog/uvelichenie-gub-rastvorenie-gialuronidazoj-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-dizolvare-hialuronidaza-balti"
+  },
+  {
+    "id": "guby-rejuvenare-periferie",
+    "ruSlug": "guby-rejuvenare-periferie-beltsy",
+    "roSlug": "buze-intinerire-periferie-balti",
+    "ruTo": "/blog/uvelichenie-gub-morshchiny-vokrug-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-riduri-jurul-balti"
+  },
+  {
+    "id": "guby-kontur-karandash-korekciya",
+    "ruSlug": "guby-kontur-karandash-korekciya-beltsy",
+    "roSlug": "buze-contur-creion-corectie-balti",
+    "ruTo": "/blog/uvelichenie-gub-kontury-chetkost-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-contururi-claritate-balti"
+  },
+  {
+    "id": "guby-gialuron-rascvet",
+    "ruSlug": "guby-gialuron-rascvet-beltsy",
+    "roSlug": "buze-acid-hialuronic-degrade-balti",
+    "ruTo": "/blog/uvelichenie-gub-gialuronovaya-kislota-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-acid-hialuronic-balti"
+  },
+  {
+    "id": "guby-reinjectie-la-luni",
+    "ruSlug": "guby-reinjectie-la-luni-beltsy",
+    "roSlug": "buze-reinjectare-luni-balti",
+    "ruTo": "/blog/uvelichenie-gub-povtornaya-procedura-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-procedura-repetata-balti"
+  },
+  {
+    "id": "guby-alergie-anestezie",
+    "ruSlug": "guby-alergie-anestezie-beltsy",
+    "roSlug": "buze-alergie-anestezie-balti",
+    "ruTo": "/blog/uvelichenie-gub-protivopokazaniya-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-contraindicatii-balti"
+  },
+  {
+    "id": "guby-compres-reci-prima-or",
+    "ruSlug": "guby-compres-reci-prima-or-beltsy",
+    "roSlug": "buze-comprese-reci-prima-ora-balti",
+    "ruTo": "/blog/uvelichenie-gub-otek-sinyaki-beltsy",
+    "roTo": "/ro/blog/marirea-buzelor-edem-vanatai-balti"
+  },
+  {
+    "id": "podrostkovoe-akne-protokol",
+    "ruSlug": "podrostkovoe-akne-protokol-beltsy",
+    "roSlug": "acnee-adolescenti-protocol-balti",
+    "ruTo": "/blog/akne-prichiny-stadii-lechenie-beltsy",
+    "roTo": "/ro/blog/acnee-cauze-stadii-tratament-balti"
+  },
+  {
+    "id": "rubcy-postakne",
+    "ruSlug": "rubcy-postakne-beltsy",
+    "roSlug": "cicatrici-postacnee-balti",
+    "ruTo": "/blog/akne-prichiny-stadii-lechenie-beltsy",
+    "roTo": "/ro/blog/acnee-cauze-stadii-tratament-balti"
+  },
+  {
+    "id": "zhirnaya-kozha-leto",
+    "ruSlug": "zhirnaya-kozha-leto-beltsy",
+    "roSlug": "piele-grasa-vara-balti",
+    "ruTo": "/blog/akne-prichiny-stadii-lechenie-beltsy",
+    "roTo": "/ro/blog/acnee-cauze-stadii-tratament-balti"
+  },
+  {
+    "id": "kosmeticheskaya-oczenka-rodinok",
+    "ruSlug": "kosmeticheskaya-oczenka-rodinok-beltsy",
+    "roSlug": "evaluare-alunite-consult-cosmetic-balti",
+    "ruTo": "/blog/rodinki-kogda-obratitsya-k-dermatologu-beltsy",
+    "roTo": "/ro/blog/alunite-cand-sa-consultati-dermatologul-balti"
+  },
+  {
+    "id": "uhod-kozha-posle-40",
+    "ruSlug": "uhod-kozha-posle-40-beltsy",
+    "roSlug": "ingrijire-piele-dupa-40-ani-balti",
+    "ruTo": "/blog/fotostareenie-kozhi-profilaktika-beltsy",
+    "roTo": "/ro/blog/fotoimbatranire-piele-prevenire-balti"
+  },
+  {
+    "id": "suhaya-kozha-zima",
+    "ruSlug": "suhaya-kozha-zima-beltsy",
+    "roSlug": "piele-uscata-iarna-balti",
+    "ruTo": "/blog/atopicheskij-dermatit-uhod-profilaktika-beltsy",
+    "roTo": "/ro/blog/dermatita-atopica-ingrijire-prevenire-balti"
+  },
+  {
+    "id": "chuvstvitelnaya-kozha-rutina",
+    "ruSlug": "chuvstvitelnaya-kozha-rutina-beltsy",
+    "roSlug": "piele-sensibila-rutina-balti",
+    "ruTo": "/blog/rozacea-prichiny-metody-korrekcii-beltsy",
+    "roTo": "/ro/blog/rozacee-cauze-metode-corectie-balti"
+  },
+  {
+    "id": "vesennie-allergii-kozha",
+    "ruSlug": "vesennie-allergii-kozha-beltsy",
+    "roSlug": "alergii-primavara-cutanate-balti",
+    "ruTo": "/blog/krapivnica-prichiny-lechenie-beltsy",
+    "roTo": "/ro/blog/urticarie-cauze-tratament-balti"
+  },
+  {
+    "id": "kozhnaya-reakciya-pische",
+    "ruSlug": "kozhnaya-reakciya-pische-beltsy",
+    "roSlug": "reactie-cutanata-alimentara-balti",
+    "ruTo": "/blog/krapivnica-prichiny-lechenie-beltsy",
+    "roTo": "/ro/blog/urticarie-cauze-tratament-balti"
+  },
+  {
+    "id": "osennee-vypadenie-volos",
+    "ruSlug": "osennee-vypadenie-volos-beltsy",
+    "roSlug": "caderea-parului-sezon-toamna-balti",
+    "ruTo": "/blog/alopeciya-vypadenie-volos-prichiny-beltsy",
+    "roTo": "/ro/blog/alopecie-caderea-parului-cauze-balti"
+  },
+  {
+    "id": "piling-licza-podgotovka",
+    "ruSlug": "piling-licza-podgotovka-beltsy",
+    "roSlug": "pregatire-piele-peeling-fata-balti",
+    "ruTo": "/",
+    "roTo": "/ro"
+  },
+  {
+    "id": "lazer-podgotovka-kozhi",
+    "ruSlug": "lazer-podgotovka-kozhi-beltsy",
+    "roSlug": "pregatire-piele-proceduri-laser-balti",
+    "ruTo": "/",
+    "roTo": "/ro"
+  },
+  {
+    "id": "keloidy-risk-prokol",
+    "ruSlug": "keloidy-risk-prokol-beltsy",
+    "roSlug": "risc-cheloid-piercing-balti",
+    "ruTo": "/",
+    "roTo": "/ro"
+  }
+]
