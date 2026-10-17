@@ -61,7 +61,7 @@ export default async function RoBlogIndexPaginatedPage({ params }: Props) {
   }
   const max = getMaxIndexPage();
   if (page > max) {
-    permanentRedirect(max < 2 ? '/ro/blog' : `/ro/blog/page/${max}`);
+    permanentRedirect('/ro/blog');
   }
 
   const canonical = `${ORIGIN}/ro/blog/page/${page}`;

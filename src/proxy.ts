@@ -4,6 +4,8 @@ import { getImageProps } from 'next/image';
 
 import aboutImg from '../public/assets/img/about_2k.jpg';
 
+import { notFoundRedirect, shouldRedirectUnknown } from '@/lib/not-found-redirect';
+
 /**
  * Early Hints (HTTP 103) support — PLAN-PERF-03.
  *
@@ -77,6 +79,11 @@ const LOGO_LINK = '</assets/img/pintea_logo.svg>; rel=preload; as=image; type="i
 const HOME_PATHS = new Set(['/', '/ro']);
 
 export function proxy(request: NextRequest) {
+  // Unknown page-like URLs get a 301 to the home page of their language (blog list pages out of range go to the blog).
+  if (shouldRedirectUnknown(request.nextUrl.pathname)) {
+    return notFoundRedirect({ url: request.nextUrl, headers: request.headers }, request.nextUrl.pathname);
+  }
+
   const response = NextResponse.next();
 
   const links = [LOGO_LINK];
@@ -94,7 +101,7 @@ export const config = {
       // Skip API routes, static/image-optimizer internals, public assets, and
       // well-known metadata files — no navigation ever happens on these.
       source:
-        '/((?!api|_next/static|_next/image|assets|favicon.ico|sitemap.xml|robots.txt).*)',
+        '/((?!api|_next|assets|favicon.ico|sitemap.xml|robots.txt|.*\\..*).*)',
       // Skip RSC prefetch/navigation requests — Early Hints only matters for
       // the initial document request, not client-side route prefetches.
       missing: [

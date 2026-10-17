@@ -97,6 +97,18 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  /**
+   * Safety net: a path that matched no page, file or dynamic route goes to /api/not-found, which answers GET and HEAD
+   * with a 301 to the home page (proxy.ts normally handles this earlier).
+   */
+  async rewrites() {
+    return {
+      beforeFiles: [],
+      afterFiles: [],
+      fallback: [{ source: '/:path*', destination: '/api/not-found?path=/:path*' }],
+    };
+  },
+
   async redirects() {
     return [
       ...blogRedirects(),

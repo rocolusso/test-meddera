@@ -62,7 +62,7 @@ export default async function BlogIndexPaginatedPage({ params }: Props) {
   }
   const max = getMaxIndexPage();
   if (page > max) {
-    permanentRedirect(max < 2 ? '/blog' : `/blog/page/${max}`);
+    permanentRedirect('/blog');
   }
 
   const canonical = `${ORIGIN}/blog/page/${page}`;

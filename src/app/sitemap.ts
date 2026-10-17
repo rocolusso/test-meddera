@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getMaxIndexPage, getPostsForSitemap } from '@/blog-data/registry';
+import { SERVICE_SLUGS } from '@/lib/service-slugs';
 
 /**
  * Форматируем дату для sitemap (YYYY-MM-DD)
@@ -71,26 +72,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   // Страницы услуг
-  const serviceSlugs = [
-    'konsultaczyya-dermatokosmetologa-v-belczah',
-    'dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
-    'professyonalnaya-chystka-lycza-v-belczah',
-    'karboksyterapyya-v-belczah',
-    'pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
-    'algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
-    'terapyya-anty-akne-v-belczah',
-    'terapyya-protyv-pygmentaczyy-v-belczah',
-    'dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
-    'mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
-    'mezoterapyya-dlya-volos-v-belczah',
-    'uvelychenye-gub-v-belczah',
-    'botoks-v-belczah-effektyvnoe-omolozhenye-lycza',
-    'byorevytalyzaczyya-v-belczah',
-    'konturnaya-plastyka-fylleramy-v-belczah',
-    'ynjekczyy-lypolytykov-v-belczah',
-  ];
 
-  for (const slug of serviceSlugs) {
+  for (const slug of SERVICE_SLUGS) {
     mainPages.push(
       { url: `https://meddera.md/services/${slug}`, lastModified: buildAt, changeFrequency: 'weekly', priority: 0.8 },
       { url: `https://meddera.md/ro/services/${slug}`, lastModified: buildAt, changeFrequency: 'weekly', priority: 0.8 }
