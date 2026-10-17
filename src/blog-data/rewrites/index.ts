@@ -10,6 +10,9 @@ import { MISC_A } from '@/blog-data/rewrites/misc-a';
 import { LIPS_A } from '@/blog-data/rewrites/lips-a';
 import { LIPS_B } from '@/blog-data/rewrites/lips-b';
 import { DERMATOLOGIST_E } from '@/blog-data/rewrites/dermatologist-e';
+import { DERMATOLOGIST_F } from '@/blog-data/rewrites/derm-f';
+import { DERMATOLOGIST_G } from '@/blog-data/rewrites/derm-g';
+import { DERMATOLOGIST_H } from '@/blog-data/rewrites/derm-h';
 import type { ArticleRewrites } from '@/blog-data/rewrites/types';
 
 /** Reworked article bodies. They take precedence over the older copy with the same article id. */
@@ -19,6 +22,9 @@ export const BLOG_REWRITES: ArticleRewrites = {
   ...DERMATOLOGIST_C,
   ...DERMATOLOGIST_D,
   ...DERMATOLOGIST_E,
+  ...DERMATOLOGIST_F,
+  ...DERMATOLOGIST_G,
+  ...DERMATOLOGIST_H,
   ...BOTOX_A,
   ...BOTOX_B,
   ...BOTOX_C,
