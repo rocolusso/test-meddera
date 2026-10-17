@@ -761,7 +761,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Gâtul',
         paragraphs: [
-          'Pielea gâtului este subțire, mobilă și începe devreme să-și piardă elasticitatea. Pe ea apar linii transversale și un aspect tern. Procedura ajută la hidratarea pielii și la îmbunătățirea aspectului, dar nu elimină lăsarea țesuturilor și nu înlocuiește lifting-ul. Rezultatul depinde de starea inițială a pielii.',
+          'Pielea gâtului este subțire, mobilă și începe devreme să-și piardă elasticitatea. Pe ea apar linii transversale și un aspect tern. Procedura ajută la hidratarea pielii și la îmbunătățirea aspectului, dar nu elimină lăsarea țesuturilor și nu înlocuiește lifting-ul.',
         ],
       },
       {
@@ -779,7 +779,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Cum decurge procedura',
         paragraphs: [
-          'Medicul tratează pielea cu antiseptic, la nevoie aplică o cremă anestezică și introduce preparatul cu un ac subțire în zonele necesare. Pentru gât și mâini tehnica diferă față de față, de aceea durata și senzațiile diferă. Detaliile se discută din timp.',
+          'Medicul tratează pielea cu antiseptic, la nevoie aplică o cremă anestezică și introduce preparatul cu un ac subțire în zonele necesare. Pentru gât și mâini tehnica diferă față de față, de aceea durata și senzațiile diferă.',
         ],
       },
       {
@@ -809,13 +809,13 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Gâtul și mâinile: ce faceți acasă',
         paragraphs: [
-          'Pentru gât și decolteu se potrivesc cremele hidratante și produsele cu protecție solară; crema obișnuită pentru față nu este de ajuns. Mâinile au nevoie de cremă hrănitoare după spălare și de protecție solară. O asemenea îngrijire susține rezultatul procedurii.',
+          'Pentru gât și decolteu se potrivesc cremele hidratante și produsele cu protecție solară; crema obișnuită pentru față nu este de ajuns. Mâinile au nevoie de cremă hrănitoare după spălare și de protecție solară.',
         ],
       },
       {
         h2: 'Cu ce începeți',
         paragraphs: [
-          'Spuneți medicului ce vă deranjează cel mai mult: uscăciunea, ridurile fine, aspectul tern. El vă propune ordinea lucrului și explică ce zone merită tratate în primul rând. Nu trebuie să vă apucați de toate deodată.',
+          'Spuneți medicului ce vă deranjează cel mai mult: uscăciunea, ridurile fine, aspectul tern. El vă propune ordinea lucrului și explică ce zone merită tratate în primul rând.',
           'Consultația se poate obține la clinica Meddera din Bălți. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },

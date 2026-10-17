@@ -50,7 +50,7 @@ export const DERMATOLOGIST_A: ArticleRewrites = {
         h2: 'Ce este vitiligo',
         paragraphs: [
           'În vitiligo pe piele apar pete albe lăptoase: în aceste locuri încetează să lucreze celulele care produc pigmentul. Cel mai des petele se văd pe față, pe mâini, în jurul gurii și al ochilor, în pliurile pielii, dar poate fi afectată orice zonă. Boala nu este contagioasă, nu afectează organele interne și nu pune viața în pericol, deși pentru mulți oameni provoacă un disconfort psihologic evident.',
-          'Cauza exactă nu se cunoaște. Se discută rolul sistemului imunitar, al eredității, al stresului și al traumatismelor pielii. La fiecare persoană combinația de factori este alta.',
+          'Cauza exactă nu se cunoaște. Se discută rolul sistemului imunitar, al eredității, al stresului și al traumatismelor pielii.',
         ],
       },
       {
@@ -63,7 +63,7 @@ export const DERMATOLOGIST_A: ArticleRewrites = {
       {
         h2: 'Se poate vindeca vitiligo',
         paragraphs: [
-          'Vitiligo evoluează în valuri. Petele pot rămâne mult timp neschimbate, se pot mări sau își pot recăpăta parțial culoarea. Evoluția la o anumită persoană nu poate fi prezisă. Medicul nu poate garanta dispariția completă a petelor, dar în multe cazuri se reușește oprirea apariției altora noi și revenirea culorii pe o parte din zone.',
+          'Petele pot rămâne mult timp neschimbate, se pot mări sau își pot recăpăta parțial culoarea. Medicul nu poate garanta dispariția completă a petelor, dar în multe cazuri se reușește oprirea apariției altora noi și revenirea culorii pe o parte din zone.',
           'Răspund mai bine la tratament petele proaspete și cele de pe față, mai greu se tratează mâinile și tălpile. Tratamentul este de lungă durată: schimbările se evaluează după luni.',
         ],
       },

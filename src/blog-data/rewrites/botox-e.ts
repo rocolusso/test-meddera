@@ -80,13 +80,13 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Cum decurge procedura',
         paragraphs: [
-          'Procedura durează puțin. Medicul curăță pielea, marchează punctele pe marginea externă a ochiului și introduce preparatul cu un ac foarte subțire. Senzațiile sunt de obicei slabe, ca o ușoară înțepătură. Numărul și amplasarea punctelor depind de felul în care lucrează mușchiul dumneavoastră, de aceea ele se stabilesc individual și nu se copiază după schema altcuiva.',
+          'Medicul curăță pielea, marchează punctele pe marginea externă a ochiului și introduce preparatul cu un ac foarte subțire. Senzațiile sunt de obicei slabe, ca o ușoară înțepătură. Numărul și amplasarea punctelor depind de felul în care lucrează mușchiul dumneavoastră, de aceea ele se stabilesc individual și nu se copiază după schema altcuiva.',
         ],
       },
       {
         h2: 'La ce să vă așteptați',
         paragraphs: [
-          'Efectul apare treptat, de obicei după câteva zile. Scopul este ca liniile să se atenueze, iar fața să-și păstreze expresivitatea și zâmbetul să rămână viu. Rezultatul este temporar, iar după un timp mimica revine. Atunci procedura poate fi repetată la sfatul medicului. Termenele sunt diferite pentru fiecare, și nu e nevoie să le comparați cu ale altora.',
+          'Efectul apare treptat, de obicei după câteva zile. Scopul este ca liniile să se atenueze, iar fața să-și păstreze expresivitatea și zâmbetul să rămână viu. Rezultatul este temporar, iar după un timp mimica revine. Atunci procedura poate fi repetată la sfatul medicului.',
         ],
       },
       {
@@ -194,7 +194,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Ce rol au injecțiile',
         paragraphs: [
-          'Toxina botulinică se introduce în mușchii masticatori, iar aceștia se contractă mai slab. Presiunea asupra dinților și articulației maxilarului scade, iar durerile de cap la unele persoane devin mai rare. Metoda reduce încărcarea mușchilor și a dinților. Cauza bruxismului medicul o caută separat, la nevoie împreună cu stomatologul sau cu neurologul.',
+          'Toxina botulinică se introduce în mușchii masticatori, iar aceștia se contractă mai slab. Presiunea asupra dinților și articulației maxilarului scade, iar durerile de cap la unele persoane devin mai rare. Cauza bruxismului medicul o caută separat, la nevoie împreună cu stomatologul sau cu neurologul.',
         ],
       },
       {
@@ -224,7 +224,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Ce puteți face singur',
         paragraphs: [
-          'Ajută somnul regulat, reducerea stresului, limitarea cafeinei seara, renunțarea la guma de mestecat și la obiceiul de a roade pixuri sau unghii. În timpul zilei verificați din când în când dacă fălcile sunt relaxate: când nu mestecați, dinții nu trebuie să se atingă. O compresă caldă pe mușchii masticatori poate reduce puțin tensiunea.',
+          'Ajută somnul regulat, reducerea stresului, limitarea cafeinei seara, renunțarea la guma de mestecat și la obiceiul de a roade pixuri sau unghii. În timpul zilei verificați din când în când dacă fălcile sunt relaxate: când nu mestecați, dinții nu trebuie să se atingă.',
         ],
       },
       {
@@ -458,13 +458,13 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Cum decurge procedura',
         paragraphs: [
-          'Injectarea se face cu un ac subțire, iar procedura durează puțin. Senzațiile sunt de obicei moderate: înțepături sau o ușoară sensibilitate în locurile de administrare. După ea vă puteți întoarce la treburile obișnuite, ținând cont de recomandările medicului. Medicamentele prescrise nu le omiteți nici înainte, nici în ziua procedurii, dacă medicul nu a spus altfel.',
+          'Injectarea se face cu un ac subțire, iar procedura durează puțin. Senzațiile sunt de obicei moderate: înțepături sau o ușoară sensibilitate în locurile de administrare. După ea vă puteți întoarce la treburile obișnuite, ținând cont de recomandările medicului.',
         ],
       },
       {
         h2: 'Când să așteptați rezultatul',
         paragraphs: [
-          'Efectul, dacă apare, nu se vede imediat. Medicul vă cere de obicei să țineți un jurnal al durerilor de cap, ca din însemnări să se vadă cum se schimbă frecvența și gravitatea crizelor. Cura include mai multe proceduri la intervale, iar evaluarea se face după ansamblul observațiilor. Rezultatul diferă de la o persoană la alta.',
+          'Efectul, dacă apare, nu se vede imediat. Medicul vă cere de obicei să țineți un jurnal al durerilor de cap, ca din însemnări să se vadă cum se schimbă frecvența și gravitatea crizelor. Cura include mai multe proceduri la intervale, iar evaluarea se face după ansamblul observațiilor.',
         ],
       },
       {
@@ -596,13 +596,13 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Cât de des se repetă',
         paragraphs: [
-          'Mușchii bărbaților sunt mai puternici, de aceea la unii rezultatul se păstrează altfel decât la femei, iar intervalul se stabilește individual. Nu încercați să prelungiți termenul mărind cantitatea. Veniți la vizita repetată atunci când medicul vede la examinare că mușchii au revenit la lucru.',
+          'Mușchii bărbaților sunt mai puternici, de aceea la unii rezultatul se păstrează altfel decât la femei, iar intervalul se stabilește individual. Veniți la vizita repetată atunci când medicul vede la examinare că mușchii au revenit la lucru.',
         ],
       },
       {
         h2: 'Mituri despre procedură',
         paragraphs: [
-          'Injecțiile sunt considerate o procedură feminină, dar indicațiile depind de față. Nu trebuie să credeți nici că rezultatul este neapărat vizibil pentru cei din jur. La o abordare corectă mimica rămâne vie, iar expresia feței devine mai calmă. Esențial rămâne un dialog sincer despre așteptările dumneavoastră.',
+          'Injecțiile sunt considerate o procedură feminină, dar indicațiile depind de față. Nu trebuie să credeți nici că rezultatul este neapărat vizibil pentru cei din jur. La o abordare corectă mimica rămâne vie, iar expresia feței devine mai calmă.',
         ],
       },
       {

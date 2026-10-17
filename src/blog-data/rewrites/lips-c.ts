@@ -194,7 +194,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Prima zi',
         paragraphs: [
-          'Nu atingeți, nu masați și nu frecați buzele, dacă medicul nu a dat indicații separate. Nu apăsați pe ele, nu aplicați obiecte fierbinți. Dacă medicul permite, puteți aplica scurt o compresă rece prin textil. Gheața nu se pune direct pe piele.',
+          'Nu atingeți, nu masați și nu frecați buzele, dacă medicul nu a dat indicații separate. Nu apăsați pe ele, nu aplicați obiecte fierbinți. Dacă medicul permite, puteți aplica scurt o compresă rece prin textil.',
         ],
       },
       {
@@ -212,7 +212,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Machiajul și îngrijirea',
         paragraphs: [
-          'Ruj, luciu și balsam medicul permite de obicei să le folosiți după un timp, când dispar urmele înțepăturilor. Folosiți doar produse curate și un ruj nou. Spălați-vă blând, fără frecare. Nu folosiți scruburi și peelinguri pentru buze până nu se refac.',
+          'Ruj, luciu și balsam medicul permite de obicei să le folosiți după un timp, când dispar urmele înțepăturilor. Folosiți doar produse curate și un ruj nou. Nu folosiți scruburi și peelinguri pentru buze până nu se refac.',
         ],
       },
       {
@@ -242,7 +242,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Controlul',
         paragraphs: [
-          'După un timp medicul vă invită la control, ca să evalueze rezultatul când umflătura a scăzut. Nu ratați această vizită: atunci se decide dacă e nevoie de o mică corecție. Veniți fără ruj și cu întrebările acumulate.',
+          'După un timp medicul vă invită la control, ca să evalueze rezultatul când umflătura a scăzut. Nu ratați această vizită: atunci se decide dacă e nevoie de o mică corecție.',
         ],
       },
       {
@@ -338,13 +338,13 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Echimozele',
         paragraphs: [
-          'Buzele sunt bogate în vase, de aceea vânătăile apar des. Riscul crește la luarea medicamentelor care influențează coagularea și la consumul de alcool în ajun. Spuneți medicului despre medicamente și suplimente. Vânătaia trece de obicei singură, poate fi mascată, dar nu se încălzește și nu se masează.',
+          'Buzele sunt bogate în vase, de aceea vânătăile apar des. Riscul crește la luarea medicamentelor care influențează coagularea și la consumul de alcool în ajun. Vânătaia trece de obicei singură, poate fi mascată, dar nu se încălzește și nu se masează.',
         ],
       },
       {
         h2: 'Denivelările',
         paragraphs: [
-          'Micile neregularități apar în primele zile și se netezesc. Dacă persistă, provoacă disconfort sau schimbă forma, arătați-vă medicului. Masajul se face doar la indicația specialistului, pentru că mișcările greșite pot deplasa preparatul. Nu apăsați și nu frământați singur buzele.',
+          'Micile neregularități apar în primele zile și se netezesc. Dacă persistă, provoacă disconfort sau schimbă forma, arătați-vă medicului. Masajul se face doar la indicația specialistului, pentru că mișcările greșite pot deplasa preparatul.',
         ],
       },
       {
@@ -362,13 +362,13 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Infecțiile și inflamația',
         paragraphs: [
-          'Inflamația apare la încălcarea sterilității sau la o stare nefavorabilă a pielii. Semne: înroșire în creștere, căldură, durere, secreții purulente, temperatură. Tratamentul îl prescrie medicul. Pe buze este posibilă acutizarea herpesului, de aceea despre erupțiile din trecut e bine să spuneți înainte de procedură.',
+          'Inflamația apare la încălcarea sterilității sau la o stare nefavorabilă a pielii. Semne: înroșire în creștere, căldură, durere, secreții purulente, temperatură. Pe buze este posibilă acutizarea herpesului, de aceea despre erupțiile din trecut e bine să spuneți înainte de procedură.',
         ],
       },
       {
         h2: 'Reacții alergice și noduli',
         paragraphs: [
-          'Alergia la componentele preparatului apare rar. Uneori, după săptămâni sau luni, apar noduli duri sau umflături, iar atunci este nevoie de consultația medicului. Nu încercați să le tratați singur. Medicul va evalua cauza și va propune un plan care poate include dizolvarea preparatului.',
+          'Alergia la componentele preparatului apare rar. Uneori, după săptămâni sau luni, apar noduli duri sau umflături, iar atunci este nevoie de consultația medicului. Medicul va evalua cauza și va propune un plan care poate include dizolvarea preparatului.',
         ],
       },
       {
@@ -500,19 +500,19 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Ce fotografii să aduceți',
         paragraphs: [
-          'Arătați medicului fotografii care vă plac ca formă și volum, precum și fotografii proprii pe care buzele par reușite. Aceasta ajută să se înțeleagă așteptările dumneavoastră. Alegeți exemple de oameni cu trăsături asemănătoare, pentru că același volum arată diferit pe fețe diferite.',
+          'Arătați medicului fotografii care vă plac ca formă și volum, precum și fotografii proprii pe care buzele par reușite. Alegeți exemple de oameni cu trăsături asemănătoare, pentru că același volum arată diferit pe fețe diferite.',
         ],
       },
       {
         h2: 'Când e cazul să vă abțineți',
         paragraphs: [
-          'Dacă vreți să schimbați buzele din cauza părerii altora, vă aflați într-o stare de neliniște sau așteptați ca procedura să rezolve alte probleme, e mai bine să discutați mai întâi cu medicul. Un specialist bun poate propune să așteptați sau să alegeți altă cale. Decizia rămâne a dumneavoastră.',
+          'Dacă vreți să schimbați buzele din cauza părerii altora, vă aflați într-o stare de neliniște sau așteptați ca procedura să rezolve alte probleme, e mai bine să discutați mai întâi cu medicul. Un specialist bun poate propune să așteptați sau să alegeți altă cale.',
         ],
       },
       {
         h2: 'Asimetria și obiceiurile',
         paragraphs: [
-          'Mulți vin cu dorința de a egaliza o parte a buzelor. Medicul ține cont de asimetria naturală și de obiceiuri. Buze perfect simetrice nu există, iar individualitatea mică face fața vie.',
+          'Mulți vin cu dorința de a egaliza o parte a buzelor. Medicul ține cont de asimetria naturală și de obiceiuri.',
         ],
       },
       {

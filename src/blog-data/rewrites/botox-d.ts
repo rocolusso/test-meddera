@@ -86,7 +86,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Cum vă pregătiți pentru vizită',
         paragraphs: [
-          'Nu este nevoie de o pregătire specială. Veniți fără machiaj gros sau fiți pregătit ca pielea să fie curățată. În ziua dinaintea procedurii e mai bine să evitați alcoolul, iar medicamentele care subțiază sângele discutați-le cu medicul: fără ele echimozele apar mai rar.',
+          'Veniți fără machiaj gros sau fiți pregătit ca pielea să fie curățată. În ziua dinaintea procedurii e mai bine să evitați alcoolul, iar medicamentele care subțiază sângele discutați-le cu medicul: fără ele echimozele apar mai rar.',
         ],
       },
       {
@@ -104,7 +104,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Teama de o față nemișcată',
         paragraphs: [
-          'Se spune adesea că după injecții fața devine nemișcată. Cu o schemă atentă mimica se păstrează și doar se atenuează în zonele unde mușchii lucrau foarte activ. Dacă vă sperie un asemenea rezultat, spuneți medicului din timp: cantitatea de preparat și punctele de injectare pot fi alese astfel încât fața să rămână vie. Orice procedură rămâne decizia dumneavoastră și vă puteți opri oricând.',
+          'Se spune adesea că după injecții fața devine nemișcată. Cu o schemă atentă mimica se păstrează și doar se atenuează în zonele unde mușchii lucrau foarte activ. Dacă vă sperie un asemenea rezultat, spuneți medicului din timp: cantitatea de preparat și punctele de injectare pot fi alese astfel încât fața să rămână vie.',
         ],
       },
       {
@@ -218,7 +218,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Dacă vă emoționați',
         paragraphs: [
-          'Neliniștea dinaintea primei proceduri este frecventă. Spuneți medicului despre frica de ace sau despre o experiență neplăcută din trecut, iar el va explica fiecare pas dinainte. Puteți cere să vedeți acul, să discutați ordinea înțepăturilor și să stabiliți pauze. Cu cât vă simțiți mai liniștit, cu atât lucrul merge mai ușor, iar medicul apreciază mai exact mimica. Luați cu dumneavoastră o listă de întrebări, ca să nu uitați nimic.',
+          'Neliniștea dinaintea primei proceduri este frecventă. Spuneți medicului despre frica de ace sau despre o experiență neplăcută din trecut, iar el va explica fiecare pas dinainte. Puteți cere să vedeți acul, să discutați ordinea înțepăturilor și să stabiliți pauze.',
         ],
       },
       {
@@ -338,13 +338,13 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Combinarea zonelor',
         paragraphs: [
-          'Adesea sarcina se rezolvă în mai multe zone deodată, dar nu este obligatoriu să tratați toată fața într-o singură ședință. Medicul poate începe cu o zonă, aștepta rezultatul și apoi decide dacă sunt necesare altele. Astfel se vede cum reacționează fața la preparat, iar planul poate fi modificat. Abordarea reduce și riscul unei mimici rigide, pentru că fiecare mușchi influențează vecinii.',
+          'Adesea sarcina se rezolvă în mai multe zone deodată, dar nu este obligatoriu să tratați toată fața într-o singură ședință. Medicul poate începe cu o zonă, aștepta rezultatul și apoi decide dacă sunt necesare altele. Astfel se vede cum reacționează fața la preparat, iar planul poate fi modificat.',
         ],
       },
       {
         h2: 'De ce depinde schema de mimica dumneavoastră',
         paragraphs: [
-          'Schemele pentru oameni diferiți aproape niciodată nu coincid. Dacă mimica dumneavoastră este foarte expresivă, medicul ține cont de asta la alegerea punctelor. La o asimetrie vizibilă a feței se introduc cantități diferite în stânga și în dreapta. Fotografiile dinainte și de după procedură ajută să evaluați calm rezultatul și să-l discutați la vizita repetată.',
+          'Schemele pentru oameni diferiți aproape niciodată nu coincid. Dacă mimica dumneavoastră este foarte expresivă, medicul ține cont de asta la alegerea punctelor. La o asimetrie vizibilă a feței se introduc cantități diferite în stânga și în dreapta.',
         ],
       },
       {
@@ -422,7 +422,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Ce se consideră reacție obișnuită',
         paragraphs: [
-          'După injecții pe piele rămân adesea o ușoară înroșire, mici umflături și o ușoară tumefiere în locurile înțepăturilor. Aceste manifestări trec singure și nu necesită tratament. Ele țin de înțepătura în sine și de volumul soluției introduse de aceea apar imediat și dispar repede.',
+          'După injecții pe piele rămân adesea o ușoară înroșire, mici umflături și o ușoară tumefiere în locurile înțepăturilor. Aceste manifestări trec singure și nu necesită tratament.',
         ],
       },
       {
@@ -464,7 +464,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'De ce depinde riscul',
         paragraphs: [
-          'Probabilitatea reacțiilor nedorite depinde de tehnica injectării, de structura mușchilor și de starea dumneavoastră de sănătate. Contează și cât de exact respectați recomandările de după procedură. Dacă luați medicamente care influențează coagularea sau ați fost bolnav recent, spuneți medicului: el poate amâna vizita sau modifica schema.',
+          'Probabilitatea reacțiilor nedorite depinde de tehnica injectării, de structura mușchilor și de starea dumneavoastră de sănătate. Dacă luați medicamente care influențează coagularea sau ați fost bolnav recent, spuneți medicului: el poate amâna vizita sau modifica schema.',
         ],
       },
       {
@@ -578,19 +578,19 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Se schimbă rezultatul în timp',
         paragraphs: [
-          'La proceduri regulate, dar nu dese, la mulți oameni pliurile din repaus devin mai puțin pronunțate, pentru că mușchiul se obișnuiește să lucreze mai slab. Cauza este corecția îndelungată a mimicii. Despre asta se poate vorbi doar cu prudență, deoarece pielea este influențată de vârstă, soare și multe alte cauze.',
+          'La proceduri regulate, dar nu dese, la mulți oameni pliurile din repaus devin mai puțin pronunțate, pentru că mușchiul se obișnuiește să lucreze mai slab. Despre asta se poate vorbi doar cu prudență, deoarece pielea este influențată de vârstă, soare și multe alte cauze.',
         ],
       },
       {
         h2: 'Ce ajută la păstrarea rezultatului',
         paragraphs: [
-          'Protecția față de soare, somnul suficient, hidratarea și renunțarea la fumat influențează starea pielii și completează injecțiile. Dacă aveți obiceiul să vă încruntați sau să miorlăiți ochii, medicul poate sugera cum să atenuați aceste obiceiuri. Rezultatul depinde în primul rând de cât de exact a fost aleasă schema.',
+          'Protecția față de soare, somnul suficient, hidratarea și renunțarea la fumat influențează starea pielii și completează injecțiile. Dacă aveți obiceiul să vă încruntați sau să miorlăiți ochii, medicul poate sugera cum să atenuați aceste obiceiuri.',
         ],
       },
       {
         h2: 'Cum stabilește medicul intervalul',
         paragraphs: [
-          'La consultație medicul privește ce mușchi au revenit la lucru și unde efectul încă se menține. Intervalul diferă adesea pentru frunte, spațiul dintre sprâncene și zona din jurul ochilor, de aceea zonele pot fi tratate în momente diferite. Medicul va întreba cum apreciați dumneavoastră starea feței și va compara cu propriile observații. Decizia se ia împreună.',
+          'La consultație medicul privește ce mușchi au revenit la lucru și unde efectul încă se menține. Intervalul diferă adesea pentru frunte, spațiul dintre sprâncene și zona din jurul ochilor, de aceea zonele pot fi tratate în momente diferite. Medicul va întreba cum apreciați dumneavoastră starea feței și va compara cu propriile observații.',
         ],
       },
       {
@@ -680,7 +680,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Când apar primele pliuri',
         paragraphs: [
-          'Ridurile de mimică se văd la început doar în mișcare: când vă încruntați, râdeți sau ridicați sprâncenele. În timp pielea pierde elasticitatea, iar aceste linii încep să rămână și în repaus. Dacă pliul se vede doar în mimică, o corecție timpurie ajută uneori să nu se fixeze. Un asemenea rezultat nu poate fi promis dinainte.',
+          'Ridurile de mimică se văd la început doar în mișcare: când vă încruntați, râdeți sau ridicați sprâncenele. În timp pielea pierde elasticitatea, iar aceste linii încep să rămână și în repaus. Dacă pliul se vede doar în mimică, o corecție timpurie ajută uneori să nu se fixeze.',
         ],
       },
       {
@@ -692,7 +692,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Vârsta matură',
         paragraphs: [
-          'Persoanele în vârstă pot, de asemenea, să ceară injecții. Aici este important să se evalueze lucid ce schimbări țin de mușchi și ce schimbări țin de pierderea volumului și de lăsarea pielii. Injecțiile lucrează doar cu primele, de aceea medicul le asociază adesea cu alte metode sau propune un plan cu totul diferit. Fața nu trebuie să-și piardă expresivitatea.',
+          'Persoanele în vârstă pot, de asemenea, să ceară injecții. Aici este important să se evalueze lucid ce schimbări țin de mușchi și ce schimbări țin de pierderea volumului și de lăsarea pielii. Injecțiile lucrează doar cu primele, de aceea medicul le asociază adesea cu alte metode sau propune un plan cu totul diferit.',
         ],
       },
       {
@@ -704,13 +704,13 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Ce puteți face înainte de injecții',
         paragraphs: [
-          'Protecția zilnică față de soare, hidratarea, somnul și renunțarea la fumat ajută pielea să-și păstreze mai mult elasticitatea. Dacă miorlăiți ochii la ecran sau afară, alegeți ochelari: se reduce astfel încărcarea mușchilor din jurul ochilor. Asemenea măsuri simple pot fi începute la orice vârstă.',
+          'Protecția zilnică față de soare, hidratarea, somnul și renunțarea la fumat ajută pielea să-și păstreze mai mult elasticitatea. Dacă miorlăiți ochii la ecran sau afară, alegeți ochelari: se reduce astfel încărcarea mușchilor din jurul ochilor.',
         ],
       },
       {
         h2: 'Când merită să așteptați',
         paragraphs: [
-          'Injecțiile se amână în sarcină și alăptare, în procese inflamatorii acute ale pielii și în bolile neuromusculare. Dacă ezitați, acordați-vă timp și urmăriți cum se schimbă fața în dinamică. Merită să începeți când decizia e cântărită și știți ce vă doriți.',
+          'Injecțiile se amână în sarcină și alăptare, în procese inflamatorii acute ale pielii și în bolile neuromusculare. Dacă ezitați, acordați-vă timp și urmăriți cum se schimbă fața în dinamică.',
         ],
       },
       {

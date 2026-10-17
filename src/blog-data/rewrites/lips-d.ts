@@ -80,7 +80,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Ce se întâmplă în țesuturi',
         paragraphs: [
-          'Scade cantitatea de colagen și elastină, scade reținerea umidității, se subțiază stratul de grăsime. Se schimbă și osul, și ligamentele, de aceea forma părții de jos a feței se deplasează uneori. Din această cauză pliurile nazolabiale devin mai adânci, iar zona gurii pare obosită. Cauzele se adună din mai mulți factori.',
+          'Scade cantitatea de colagen și elastină, scade reținerea umidității, se subțiază stratul de grăsime. Se schimbă și osul, și ligamentele, de aceea forma părții de jos a feței se deplasează uneori. Din această cauză pliurile nazolabiale devin mai adânci, iar zona gurii pare obosită.',
         ],
       },
       {
@@ -98,7 +98,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Colțurile căzute ale gurii',
         paragraphs: [
-          'Colțurile care coboară dau feței un aspect trist sau obosit. Cauza poate fi în mușchi, în pierderea de volum sau într-o combinație a acestor factori. Alegerea metodei depinde de ce se întâmplă anume la dumneavoastră. Uneori o corecție blândă, chiar cu o cantitate mică de preparat, schimbă expresia feței mai mult decât vă așteptați.',
+          'Colțurile care coboară dau feței un aspect trist sau obosit. Cauza poate fi în mușchi, în pierderea de volum sau într-o combinație a acestor factori. Uneori o corecție blândă, chiar cu o cantitate mică de preparat, schimbă expresia feței mai mult decât vă așteptați.',
         ],
       },
       {
@@ -122,7 +122,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Așteptări realiste',
         paragraphs: [
-          'Corecția face fața mai odihnită și mai armonioasă. Aflați de la medic ce se poate obține realist, pentru cât timp ajunge rezultatul și ce este necesar pentru menținerea lui. O discuție sinceră ajută să evitați dezamăgirea.',
+          'Corecția face fața mai odihnită și mai armonioasă. Aflați de la medic ce se poate obține realist, pentru cât timp ajunge rezultatul și ce este necesar pentru menținerea lui.',
         ],
       },
       {
@@ -224,7 +224,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Ce este important să știți despre preparat',
         paragraphs: [
-          'Pentru buze se folosește de obicei acid hialuronic. Rezultatul este temporar, preparatul se resoarbe în timp, iar la nevoie poate fi dizolvat cu o enzimă specială. Aflați de la medic denumirea preparatului, producătorul și modul în care se consemnează seria. Aceasta vă ajută să luați decizia mai liniștit.',
+          'Pentru buze se folosește de obicei acid hialuronic. Rezultatul este temporar, preparatul se resoarbe în timp, iar la nevoie poate fi dizolvat cu o enzimă specială. Aflați de la medic denumirea preparatului, producătorul și modul în care se consemnează seria.',
         ],
       },
       {
@@ -236,13 +236,13 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'În ajun și în ziua procedurii',
         paragraphs: [
-          'În ajun evitați alcoolul, odihniți-vă și nu planificați antrenamente active. În ziua procedurii veniți fără ruj și mâncați din timp, ca să nu simțiți slăbiciune. Luați lista de întrebări. Dacă aveți herpes, spuneți din timp, iar medicul vă va spune cum să vă pregătiți.',
+          'În ajun evitați alcoolul, odihniți-vă și nu planificați antrenamente active. În ziua procedurii veniți fără ruj și mâncați din timp, ca să nu simțiți slăbiciune. Dacă aveți herpes, spuneți din timp, iar medicul vă va spune cum să vă pregătiți.',
         ],
       },
       {
         h2: 'Cum decurge procedura',
         paragraphs: [
-          'Medicul curăță pielea, anesteziază zona la nevoie, marchează punctele și introduce preparatul cu un ac subțire sau cu o canulă. Din când în când vă cere să priviți rezultatul și evaluează simetria. În orice moment puteți spune că vreți să vă opriți. Procedura durează de obicei un timp moderat.',
+          'Medicul curăță pielea, anesteziază zona la nevoie, marchează punctele și introduce preparatul cu un ac subțire sau cu o canulă. Din când în când vă cere să priviți rezultatul și evaluează simetria. În orice moment puteți spune că vreți să vă opriți.',
         ],
       },
       {
@@ -368,7 +368,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Cât de des se poate repeta',
         paragraphs: [
-          'Intervalul îl stabilește medicul pe baza examinării. El ține cont de starea țesuturilor, de reacția la procedura anterioară și de dorințele dumneavoastră. Unor oameni le ajung vizite mai rare, altora le trebuie mai dese. Nu merită să mențineți buzele permanent la volumul «maxim».',
+          'Intervalul îl stabilește medicul pe baza examinării. El ține cont de starea țesuturilor, de reacția la procedura anterioară și de dorințele dumneavoastră. Unor oameni le ajung vizite mai rare, altora le trebuie mai dese.',
         ],
       },
       {
@@ -380,7 +380,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Pregătirea pentru procedura repetată',
         paragraphs: [
-          'Spuneți medicului cum ați suportat procedura anterioară, ce reacții au fost și ce v-a plăcut sau nu. Anunțați schimbările în sănătate și în medicamente. Aduceți datele despre preparat, dacă procedura s-a făcut în altă parte. Aceste informații ajută la alegerea variantei potrivite.',
+          'Spuneți medicului cum ați suportat procedura anterioară, ce reacții au fost și ce v-a plăcut sau nu. Anunțați schimbările în sănătate și în medicamente. Aduceți datele despre preparat, dacă procedura s-a făcut în altă parte.',
         ],
       },
       {
@@ -392,7 +392,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Dacă rezultatul nu vă place',
         paragraphs: [
-          'Dacă forma sau volumul nu vă mulțumesc, nu amânați discuția cu medicul. Schimbările mici pot fi corectate printr-o injecție repetată, iar excesul poate fi dizolvat cu enzimă. Nu încercați să scoateți preparatul prin masaj sau încălzire. Nu luați decizia imediat, așteptați să scadă umflătura.',
+          'Dacă forma sau volumul nu vă mulțumesc, nu amânați discuția cu medicul. Schimbările mici pot fi corectate printr-o injecție repetată, iar excesul poate fi dizolvat cu enzimă. Nu încercați să scoateți preparatul prin masaj sau încălzire.',
         ],
       },
       {

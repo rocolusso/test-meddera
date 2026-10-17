@@ -230,7 +230,7 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Baia',
         paragraphs: [
-          'Faceți duș sau baie în apă călduță, nu prea mult timp. Folosiți produse de spălare blânde, fără parfum și coloranți, evitați bureții. După baie tamponați pielea cu prosopul, nu o frecați. Apa clorurată și băile fierbinți usucă pielea și pot accentua mâncărimea.',
+          'Faceți duș sau baie în apă călduță, nu prea mult timp. Folosiți produse de spălare blânde, fără parfum și coloranți, evitați bureții. Apa clorurată și băile fierbinți usucă pielea și pot accentua mâncărimea.',
         ],
       },
       {
@@ -242,13 +242,13 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Factori declanșatori ai acutizărilor',
         paragraphs: [
-          'La oameni diferiți acutizarea este provocată de cauze diferite: praf, polen, părul animalelor, transpirație, aer rece, stres, infecții. Unora le ajută un jurnal al stării. Alimentele nu se exclud din dietă fără recomandarea medicului, mai ales la copii, pentru că dietele stricte pot dezechilibra alimentația.',
+          'La oameni diferiți acutizarea este provocată de cauze diferite: praf, polen, părul animalelor, transpirație, aer rece, stres, infecții. Alimentele nu se exclud din dietă fără recomandarea medicului, mai ales la copii, pentru că dietele stricte pot dezechilibra alimentația.',
         ],
       },
       {
         h2: 'Ce prescrie medicul',
         paragraphs: [
-          'La acutizare medicul prescrie remedii externe antiinflamatoare și, la nevoie, preparate împotriva mâncărimii și alte metode. Schema și durata se aleg individual. Cremele hormonale se aplică conform prescripției și sub supraveghere, pentru că folosirea necontrolată duce la efecte adverse.',
+          'La acutizare medicul prescrie remedii externe antiinflamatoare și, la nevoie, preparate împotriva mâncărimii și alte metode. Cremele hormonale se aplică conform prescripției și sub supraveghere, pentru că folosirea necontrolată duce la efecte adverse.',
         ],
       },
       {

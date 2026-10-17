@@ -86,7 +86,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Cum se transmite virusul',
         paragraphs: [
-          'Virusul se transmite prin contactul cu pielea sau cu mucoasa, precum și prin obiecte comune în locuri cu umiditate crescută, de exemplu în piscine și băi. Infectarea nu duce întotdeauna la apariția formațiunilor: mult depinde de imunitate și de starea pielii. Microtraumatismele înlesnesc pătrunderea virusului.',
+          'Virusul se transmite prin contactul cu pielea sau cu mucoasa, precum și prin obiecte comune în locuri cu umiditate crescută, de exemplu în piscine și băi. Infectarea nu duce întotdeauna la apariția formațiunilor: mult depinde de imunitate și de starea pielii.',
         ],
       },
       {
@@ -104,7 +104,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Metodele de îndepărtare',
         paragraphs: [
-          'Se folosesc crioterapia, electrocoagularea, îndepărtarea cu laser sau cu unde radio, precum și excizia chirurgicală. Metoda se alege după tipul formațiunii, mărimea și locul ei, după starea pielii. Unele metode se potrivesc pentru față, altele pentru tălpi. Decizia o ia medicul pe baza examinării.',
+          'Se folosesc crioterapia, electrocoagularea, îndepărtarea cu laser sau cu unde radio, precum și excizia chirurgicală. Metoda se alege după tipul formațiunii, mărimea și locul ei, după starea pielii. Unele metode se potrivesc pentru față, altele pentru tălpi.',
         ],
       },
       {
@@ -122,7 +122,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Este posibilă revenirea',
         paragraphs: [
-          'Virusul poate rămâne în organism, de aceea formațiunile apar uneori din nou, inclusiv lângă locul de dinainte. Aceasta nu înseamnă că procedura a fost făcută greșit. Imunitatea o susțin somnul, alimentația și renunțarea la obiceiurile dăunătoare. La apariția unor formațiuni noi arătați-vă medicului fără să amânați.',
+          'Virusul poate rămâne în organism, de aceea formațiunile apar uneori din nou, inclusiv lângă locul de dinainte. Imunitatea o susțin somnul, alimentația și renunțarea la obiceiurile dăunătoare. La apariția unor formațiuni noi arătați-vă medicului fără să amânați.',
         ],
       },
       {

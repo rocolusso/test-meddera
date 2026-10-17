@@ -112,13 +112,13 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Ce poate provoca puseul',
         paragraphs: [
-          'La multe persoane erupțiile sunt legate de răceală, răcire, stres, lipsa somnului și soare. Dacă vă cunoașteți factorii declanșatori, încercați să evitați astfel de situații înainte de procedură și protejați buzele de soare și vânt. Aceasta nu garantează lipsa puseului, dar ajută să-l evitați.',
+          'La multe persoane erupțiile sunt legate de răceală, răcire, stres, lipsa somnului și soare. Dacă vă cunoașteți factorii declanșatori, încercați să evitați astfel de situații înainte de procedură și protejați buzele de soare și vânt.',
         ],
       },
       {
         h2: 'Cum vă pregătiți pentru vizită',
         paragraphs: [
-          'Dacă sunteți predispusă la erupții, programați-vă la consultație din timp, nu în ultimul moment. Așa medicul are timp să evalueze situația și, la nevoie, să prescrie profilaxia. Cât vă pregătiți, dormiți suficient, nu vă răciți și protejați buzele de soare și vânt.',
+          'Dacă sunteți predispusă la erupții, programați-vă la consultație din timp, nu în ultimul moment. Așa medicul are timp să evalueze situația și, la nevoie, să prescrie profilaxia.',
           'Nu folosiți produse active noi pentru buze cu puțin timp înainte de procedură, ca să nu iritați pielea.',
         ],
       },
@@ -132,7 +132,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Trebuie să spuneți despre herpes dacă a fost demult',
         paragraphs: [
-          'Da, chiar dacă erupțiile au fost demult și rar. Virusul rămâne în organism, iar medicului îi este important să vă cunoască istoricul. Mai bine spuneți în plus decât să tăceți: aceasta ajută la planificarea sigură a procedurii.',
+          'Da, chiar dacă erupțiile au fost demult și rar. Virusul rămâne în organism, iar medicului îi este important să vă cunoască istoricul.',
         ],
       },
       {
@@ -235,7 +235,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Doar buza inferioară',
         paragraphs: [
-          'Corecția buzei inferioare se potrivește celor care sunt mulțumiți de cea superioară, dar nu și de lipsa de volum de jos. Medicul evaluează cum arată buza inferioară din profil și la zâmbet. Un volum mic face uneori fața mai blândă, unul excesiv pare nenatural.',
+          'Corecția buzei inferioare se potrivește celor care sunt mulțumiți de cea superioară, dar nu și de lipsa de volum de jos. Medicul evaluează cum arată buza inferioară din profil și la zâmbet.',
         ],
       },
       {
@@ -247,13 +247,13 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Cum decurge procedura',
         paragraphs: [
-          'Medicul marchează zona, tratează pielea cu antiseptic, la nevoie folosește anestezie și introduce preparatul pe bază de acid hialuronic cu un ac subțire sau cu o canulă. Pe parcurs controlează forma și simetria. Detaliile despre pregătire și îngrijire vi le explică la consultație.',
+          'Medicul marchează zona, tratează pielea cu antiseptic, la nevoie folosește anestezie și introduce preparatul pe bază de acid hialuronic cu un ac subțire sau cu o canulă. Detaliile despre pregătire și îngrijire vi le explică la consultație.',
         ],
       },
       {
         h2: 'La ce să nu vă așteptați',
         paragraphs: [
-          'O singură vizită nu dă întotdeauna forma finală: edemul din primele zile deformează imaginea, iar preparatul se așază treptat. Rezultatul se evaluează după un timp. Uneori medicul propune un control al buzelor și, la nevoie, o corecție atentă.',
+          'O singură vizită nu dă întotdeauna forma finală: edemul din primele zile deformează imaginea, iar preparatul se așază treptat. Uneori medicul propune un control al buzelor și, la nevoie, o corecție atentă.',
         ],
       },
       {
@@ -265,7 +265,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Primele zile după procedură',
         paragraphs: [
-          'Buzele pot fi umflate, sensibile și par mai mari decât vor fi în final. Nu evaluați rezultatul în prima zi. Urmați recomandările medicului de îngrijire, nu apăsați și nu masați buzele, dacă medicul nu a permis. Dacă apar durere puternică sau albirea pielii, contactați imediat clinica.',
+          'Buzele pot fi umflate, sensibile și par mai mari decât vor fi în final. Urmați recomandările medicului de îngrijire, nu apăsați și nu masați buzele, dacă medicul nu a permis. Dacă apar durere puternică sau albirea pielii, contactați imediat clinica.',
         ],
       },
       {
@@ -535,13 +535,13 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Cine are nevoie de prudență specială',
         paragraphs: [
-          'Persoanele care au leșinat la injecții, precum și cele care suportă greu durerea, ar trebui să spună acest lucru medicului din timp. El va gândi anestezia și condițiile în care vă simțiți mai bine. O discuție sinceră ajută ca procedura să fie mai calmă.',
+          'Persoanele care au leșinat la injecții, precum și cele care suportă greu durerea, ar trebui să spună acest lucru medicului din timp. El va gândi anestezia și condițiile în care vă simțiți mai bine.',
         ],
       },
       {
         h2: 'Nu suportați durerea puternică',
         paragraphs: [
-          'Dacă durerea este pronunțată și nu scade, spuneți imediat medicului, nu așteptați sfârșitul procedurii. Durerea insuportabilă nu este normală și poate indica o problemă. Medicul evaluează situația și decide cum se acționează.',
+          'Dacă durerea este pronunțată și nu scade, spuneți imediat medicului, nu așteptați sfârșitul procedurii. Durerea insuportabilă nu este normală și poate indica o problemă.',
         ],
       },
       {
@@ -553,7 +553,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'De ce senzațiile sunt diferite la fiecare',
         paragraphs: [
-          'Sensibilitatea este influențată de pragul individual de durere, dispoziție, oboseală și chiar de momentul ciclului. De aceea nu vă ghidați după poveștile cunoștințelor: la dumneavoastră poate fi altfel. E mai bine să discutați temerile cu medicul și să alegeți metoda de anestezie potrivită.',
+          'Sensibilitatea este influențată de pragul individual de durere, dispoziție, oboseală și chiar de momentul ciclului. E mai bine să discutați temerile cu medicul și să alegeți metoda de anestezie potrivită.',
         ],
       },
       {

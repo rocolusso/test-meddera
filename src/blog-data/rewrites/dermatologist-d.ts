@@ -73,7 +73,7 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
         h2: 'De unde apar petele pigmentare',
         paragraphs: [
           'Petele apar când celulele pielii produc inegal pigmentul melanină. Cauzele sunt mai multe: ultravioletele, schimbările hormonale (sarcina, preparatele hormonale), inflamațiile și traumatismele pielii, schimbările legate de vârstă, unele medicamente și produse cosmetice, ereditatea.',
-          'Se disting pistruii, petele solare, melasma și pigmentarea postinflamatorie, care rămâne după acnee, arsuri și rănile mici. Fiecare tip cere o abordare proprie.',
+          'Se disting pistruii, petele solare, melasma și pigmentarea postinflamatorie, care rămâne după acnee, arsuri și rănile mici.',
         ],
       },
       {
@@ -104,7 +104,7 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
       {
         h2: 'Mituri despre petele pigmentare',
         paragraphs: [
-          'Se crede adesea că petele pot fi eliminate cu un singur produs într-o săptămână, dar cremele cu promisiuni mari rareori dau rezultat rapid. Alt mit: sucul de lămâie și bicarbonatul deschid pielea în siguranță. În realitate pot provoca arsuri și pot accentua pigmentarea. Tratamentul se alege după tipul petei și cere timp.',
+          'Se crede adesea că petele pot fi eliminate cu un singur produs într-o săptămână, dar cremele cu promisiuni mari rareori dau rezultat rapid. Alt mit: sucul de lămâie și bicarbonatul deschid pielea în siguranță. În realitate pot provoca arsuri și pot accentua pigmentarea.',
         ],
       },
       {

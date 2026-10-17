@@ -1003,7 +1003,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Gâtul și decolteul',
         paragraphs: [
-          'Pielea gâtului și a decolteului este subțire și mobilă, își pierde devreme elasticitatea și suferă puternic de soare. Mezoterapia poate îmbunătăți aspectul și hidratarea ei, dar nu întinde țesuturile. Pentru aceste zone contează protecția zilnică împotriva ultravioletelor.',
+          'Pielea gâtului și a decolteului este subțire și mobilă, își pierde devreme elasticitatea și suferă puternic de soare. Mezoterapia poate îmbunătăți aspectul și hidratarea ei, dar nu întinde țesuturile.',
         ],
       },
       {
@@ -1021,7 +1021,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Partea inferioară a feței',
         paragraphs: [
-          'Zona pomeților, a maxilarului și a bărbiei este predispusă la pierderea elasticității. Mezoterapia poate ajuta pielea să arate mai proaspătă, dar nu înlocuiește metodele de lifting și lucrul cu volumul. Dacă vă deranjează contururile, medicul propune alte abordări.',
+          'Zona pomeților, a maxilarului și a bărbiei este predispusă la pierderea elasticității. Mezoterapia poate ajuta pielea să arate mai proaspătă, dar nu înlocuiește metodele de lifting și lucrul cu volumul.',
         ],
       },
       {
@@ -1045,13 +1045,13 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Refacerea',
         paragraphs: [
-          'Roșeața și denivelările durează de obicei puțin, în jurul ochilor urmele se văd mai mult. În primele zile protejați pielea de soare, evitați căldura și eforturile intense, nu frecați zona. Viteza de refacere diferă de la om la om.',
+          'Roșeața și denivelările durează de obicei puțin, în jurul ochilor urmele se văd mai mult. În primele zile protejați pielea de soare, evitați căldura și eforturile intense, nu frecați zona.',
         ],
       },
       {
         h2: 'Pregătirea pentru procedură',
         paragraphs: [
-          'În ajun nu beți mult alcool și nu mergeți la saună. Anunțați medicul despre medicamentele care subțiază sângele. Veniți fără machiaj. La lucrul în jurul ochilor medicul poate cere să scoateți lentilele.',
+          'În ajun nu beți mult alcool și nu mergeți la saună. Anunțați medicul despre medicamentele care subțiază sângele. La lucrul în jurul ochilor medicul poate cere să scoateți lentilele.',
         ],
       },
       {

@@ -483,7 +483,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Prin ce diferă de bazaliom',
         paragraphs: [
-          'Carcinomul scuamocelular, mai des decât bazaliomul, poate pătrunde în profunzime și se poate extinde la ganglionii limfatici, mai ales în unele variante și localizări. De aceea i se acordă o atenție deosebită, iar tratamentul și urmărirea se aleg cu grijă. De aceea examinarea nu trebuie amânată.',
+          'Carcinomul scuamocelular, mai des decât bazaliomul, poate pătrunde în profunzime și se poate extinde la ganglionii limfatici, mai ales în unele variante și localizări. De aceea i se acordă o atenție deosebită, iar tratamentul și urmărirea se aleg cu grijă.',
         ],
       },
       {
@@ -513,7 +513,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Buza și cavitatea bucală',
         paragraphs: [
-          'Buza inferioară este afectată mai des decât cea superioară, pentru că e mai expusă la soare. Fumatul este un factor de risc. O ulcerație, o îngroșare, o pată albă sau o fisură pe buză ori în gură care nu se vindecă trebuie examinate. Pentru buze folosiți un ruj igienic cu protecție solară.',
+          'Buza inferioară este afectată mai des decât cea superioară, pentru că e mai expusă la soare. O ulcerație, o îngroșare, o pată albă sau o fisură pe buză ori în gură care nu se vindecă trebuie examinate.',
         ],
       },
       {
