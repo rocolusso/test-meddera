@@ -1,8 +1,27 @@
+import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import bundleAnalyzer from '@next/bundle-analyzer';
 import type { NextConfig } from 'next';
+
+/**
+ * Redirects for merged or removed blog articles. Source of truth: src/blog-data/blog-redirects.json.
+ * Each entry: { id, ruSlug, roSlug, ruTo, roTo }. RU goes to ruTo, RO goes to roTo.
+ */
+function blogRedirects() {
+  const file = path.join(path.dirname(fileURLToPath(import.meta.url)), 'src/blog-data/blog-redirects.json');
+  const rows = JSON.parse(fs.readFileSync(file, 'utf8')) as Array<{
+    ruSlug: string;
+    roSlug: string;
+    ruTo: string;
+    roTo: string;
+  }>;
+  return rows.flatMap((r) => [
+    { source: `/blog/${r.ruSlug}`, destination: r.ruTo, permanent: true },
+    { source: `/ro/blog/${r.roSlug}`, destination: r.roTo, permanent: true },
+  ]);
+}
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
@@ -80,6 +99,7 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
+      ...blogRedirects(),
       // Blog: page 1 canonical on /blog and /ro/blog; bare /blog/page → /blog (reserved segment; do not use slug "page")
       {
         source: '/blog/page/1',

@@ -67,6 +67,9 @@ export type BlogPost = {
   titleRo: string;
   descriptionRu: string;
   descriptionRo: string;
+  /** Optional H1 shown on the page; when absent the title without the brand suffix is used. */
+  h1Ru?: string;
+  h1Ro?: string;
   excerptRu: string;
   excerptRo: string;
   bodyKey: BlogBodyKey;

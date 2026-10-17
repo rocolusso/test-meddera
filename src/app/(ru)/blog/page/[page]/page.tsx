@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { notFound, permanentRedirect } from 'next/navigation';
+import { permanentRedirect } from 'next/navigation';
 
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import FooterNew from '@/components/new-ui/FooterNew';
@@ -62,7 +62,7 @@ export default async function BlogIndexPaginatedPage({ params }: Props) {
   }
   const max = getMaxIndexPage();
   if (page > max) {
-    notFound();
+    permanentRedirect(max < 2 ? '/blog' : `/blog/page/${max}`);
   }
 
   const canonical = `${ORIGIN}/blog/page/${page}`;

@@ -18,7 +18,7 @@ export function BotoxArticleBody({ post, locale, dateModified, sections }: Props
   const isRu = locale === 'ru';
   const slug = isRu ? post.slugRu : post.slugRo;
   const title = isRu ? post.titleRu : post.titleRo;
-  const h1Text = title.replace(/\s*\|\s*Meddera.*$/i, '');
+  const h1Text = (isRu ? post.h1Ru : post.h1Ro) ?? title.replace(/\s*\|\s*Meddera.*$/i, '');
   const ruUrl = blogPathRu(post.slugRu);
   const roUrl = blogPathRo(post.slugRo);
   

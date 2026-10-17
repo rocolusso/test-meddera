@@ -10,7 +10,7 @@ type Props = { post: BlogPost; locale: BlogLocale; dateModified: string; section
 export function BiorevitalizationArticleBody({ post, locale, dateModified, sections }: Props) {
   const isRu = locale === 'ru';
   const title = isRu ? post.titleRu : post.titleRo;
-  const h1Text = title.replace(/\s*\|\s*Meddera.*$/i, '');
+  const h1Text = (isRu ? post.h1Ru : post.h1Ro) ?? title.replace(/\s*\|\s*Meddera.*$/i, '');
   const ruUrl = blogPathRu(post.slugRu);
   const roUrl = blogPathRo(post.slugRo);
   const relatedPosts = getRelatedArticles(post, 5);

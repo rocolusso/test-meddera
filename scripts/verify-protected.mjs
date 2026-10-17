@@ -3,6 +3,7 @@
  * URL immutability and protected-page checks against a baseline snapshot.
  * Usage: node scripts/verify-protected.mjs <new.json> <baseline.json>
  * Env: ALLOW_LEADER_META=1 permits changing title/description of the leading pages.
+ *      REMOVED_FILE=<blog-redirects.json> permits exactly the listed blog URLs (and trailing blog pagination pages) to disappear.
  */
 import fs from 'node:fs';
 
@@ -15,7 +16,20 @@ const fail = (m) => errors.push(m);
 // T3: every URL is still there and still canonical to itself; nothing new appears
 const before = new Set(Object.keys(base));
 const after = new Set(Object.keys(cur));
-for (const p of before) if (!after.has(p)) fail(`URL removed: ${p}`);
+const removedAllowed = new Set();
+if (process.env.REMOVED_FILE) {
+  for (const r of JSON.parse(fs.readFileSync(process.env.REMOVED_FILE, 'utf8'))) {
+    removedAllowed.add(`/blog/${r.ruSlug}`);
+    removedAllowed.add(`/ro/blog/${r.roSlug}`);
+  }
+}
+const isTrailingPagination = (p) => /^\/(ro\/)?blog\/page\/\d+$/.test(p);
+for (const p of before) {
+  if (after.has(p)) continue;
+  if (removedAllowed.has(p) || (process.env.REMOVED_FILE && isTrailingPagination(p))) continue;
+  fail(`URL removed: ${p}`);
+}
+for (const p of removedAllowed) if (after.has(p)) fail(`URL should be gone but still present: ${p}`);
 for (const p of after) if (!before.has(p)) fail(`URL added: ${p}`);
 for (const p of before) {
   if (cur[p] && cur[p].canonical !== base[p].canonical) {
