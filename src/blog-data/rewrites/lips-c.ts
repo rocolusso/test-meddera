@@ -6,7 +6,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Почему для губ чаще используют гиалуроновую кислоту',
         paragraphs: [
-          'Гиалуроновая кислота встречается в организме естественным образом, удерживает воду и делает ткани мягкими. Препараты на её основе придают губам объём и чёткость контура, а при необходимости их можно растворить специальным ферментом. Эта обратимость во многом объясняет, почему именно такие филлеры считаются наиболее распространёнными в современной эстетической медицине.',
+          '[[uvelichenie-gub-gialuronovaya-kislota|Гиалуроновая кислота]] встречается в организме естественным образом, удерживает воду и делает ткани мягкими. Препараты на её основе придают губам объём и чёткость контура, а при необходимости их можно растворить специальным ферментом. Эта обратимость во многом объясняет, почему именно такие [[svc:konturnaya-plastyka-fylleramy-v-belczah|филлеры]] считаются наиболее распространёнными в современной эстетической медицине.',
         ],
       },
       {
@@ -36,13 +36,13 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Зачем знать название препарата',
         paragraphs: [
-          'Название и серия нужны, если понадобится повторная коррекция, растворение или консультация у другого врача. Они помогают оценить, как вёл себя препарат, и подобрать совместимые средства. Если у вас были реакции на какие-либо филлеры, скажите об этом заранее, чтобы врач учёл это при выборе.',
+          'Название и серия нужны, если понадобится [[uvelichenie-gub-povtornaya-procedura|повторная коррекция]], растворение или консультация у другого врача. Они помогают оценить, как вёл себя препарат, и подобрать совместимые средства. Если у вас были реакции на какие-либо [[fillery-vidy-sostav-proizvoditeli|филлеры]], скажите об этом заранее, чтобы врач учёл это при выборе.',
         ],
       },
       {
         h2: 'Постоянные и сомнительные материалы',
         paragraphs: [
-          'Современные врачи не рекомендуют вводить в губы силикон, масла и постоянные гели, потому что их нельзя убрать, а осложнения могут проявиться через годы. Если вам предлагают «навсегда», спросите, из чего состоит препарат и можно ли его удалить. Отсутствие чёткого ответа означает риск.',
+          'Современные врачи не рекомендуют вводить в губы силикон, масла и постоянные гели, потому что их нельзя убрать, а [[uvelichenie-gub-oslozhneniya-profilaktika|осложнения]] могут проявиться через годы. Если вам предлагают «навсегда», спросите, из чего состоит препарат и можно ли его удалить. Отсутствие чёткого ответа означает риск.',
         ],
       },
       {
@@ -62,7 +62,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'De ce se folosește mai des acidul hialuronic pentru buze',
         paragraphs: [
-          'Acidul hialuronic se găsește în mod natural în organism, reține apa și face țesuturile moi. Preparatele pe baza lui dau buzelor volum și un contur clar, iar la nevoie pot fi dizolvate cu o enzimă specială. Această reversibilitate explică în mare parte de ce astfel de filleri sunt cei mai folosiți în medicina estetică modernă.',
+          '[[uvelichenie-gub-gialuronovaya-kislota|Acidul hialuronic]] se găsește în mod natural în organism, reține apa și face țesuturile moi. Preparatele pe baza lui dau buzelor volum și un contur clar, iar la nevoie pot fi dizolvate cu o enzimă specială. Această reversibilitate explică în mare parte de ce astfel de [[svc:konturnaya-plastyka-fylleramy-v-belczah|filleri]] sunt cei mai folosiți în medicina estetică modernă.',
         ],
       },
       {
@@ -86,19 +86,19 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Ce verificați în cabinet',
         paragraphs: [
-          'Înainte de procedură medicul trebuie să arate ambalajul seringii: denumirea, seria, termenul de valabilitate și integritatea ambalajului. Aceste date se consemnează de obicei în fișa dumneavoastră sau se dau pe o etichetă. Dacă vi se refuză arătarea preparatului sau se vorbește evaziv, este un motiv serios să reconsiderați decizia.',
+          'Înainte de procedură medicul trebuie să arate ambalajul seringii: denumirea, seria, termenul de valabilitate și integritatea ambalajului. Aceste date se consemnează în fișa dumneavoastră sau se dau pe o etichetă. Dacă vi se refuză arătarea preparatului sau se vorbește evaziv, este un motiv serios să reconsiderați decizia.',
         ],
       },
       {
         h2: 'De ce e important să știți denumirea preparatului',
         paragraphs: [
-          'Denumirea și seria sunt necesare dacă va fi nevoie de o corecție repetată, de dizolvare sau de consultația altui medic. Ele ajută să se evalueze cum s-a comportat preparatul și să se aleagă mijloace compatibile. Dacă ați avut reacții la vreun filler, spuneți din timp, ca medicul să țină cont la alegere.',
+          'Denumirea și seria sunt necesare dacă va fi nevoie de o [[uvelichenie-gub-povtornaya-procedura|corecție repetată]], de dizolvare sau de consultația altui medic. Dacă ați avut reacții la vreun [[fillery-vidy-sostav-proizvoditeli|filler]], spuneți din timp, ca medicul să țină cont la alegere.',
         ],
       },
       {
         h2: 'Materiale permanente și dubioase',
         paragraphs: [
-          'Medicii moderni nu recomandă introducerea în buze a siliconului, a uleiurilor și a gelurilor permanente, pentru că ele nu pot fi scoase, iar complicațiile pot apărea peste ani. Dacă vi se propune «pentru totdeauna», întrebați din ce este făcut preparatul și dacă poate fi îndepărtat. Lipsa unui răspuns clar înseamnă risc.',
+          'Medicii moderni nu recomandă introducerea în buze a siliconului, a uleiurilor și a gelurilor permanente, pentru că ele nu pot fi scoase, iar [[uvelichenie-gub-oslozhneniya-profilaktika|complicațiile]] pot apărea peste ani. Dacă vi se propune «pentru totdeauna», întrebați din ce este făcut preparatul și dacă poate fi îndepărtat. Lipsa unui răspuns clar înseamnă risc.',
         ],
       },
       {
@@ -162,13 +162,13 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Герпес',
         paragraphs: [
-          'Если у вас бывают высыпания герпеса на губах, сообщите об этом заранее. Инъекции могут спровоцировать обострение, и врач иногда рекомендует профилактику. Подробности мы разобрали в отдельной статье о герпесе при увеличении губ. Самостоятельно принимать противовирусные препараты без назначения не стоит.',
+          'Если у вас бывают высыпания [[uvelichenie-gub-gerpes-profilaktika|герпеса]] на губах, сообщите об этом заранее. Инъекции могут спровоцировать обострение, и врач иногда рекомендует профилактику. Подробности мы разобрали в отдельной статье о герпесе при [[svc:uvelychenye-gub-v-belczah|увеличении губ]]. Самостоятельно принимать противовирусные препараты без назначения не стоит.',
         ],
       },
       {
         h2: 'Что делать при неприятных ощущениях',
         paragraphs: [
-          'Лёгкая болезненность, стянутость и покалывание в первые дни встречаются часто. Если дискомфорт нарастает, вы замечаете асимметрию или плотный участок, не пытайтесь исправить это самостоятельно: сфотографируйте губы и свяжитесь с врачом. Обезболивающие принимайте только после консультации, потому что некоторые препараты усиливают склонность к синякам.',
+          'Лёгкая [[uvelichenie-gub-bolevye-oshchushcheniya|болезненность]], стянутость и покалывание в первые дни встречаются часто. Если дискомфорт нарастает, вы замечаете [[uvelichenie-gub-asimmetriya-korrekciya|асимметрию]] или плотный участок, не пытайтесь исправить это самостоятельно: сфотографируйте губы и свяжитесь с врачом. Обезболивающие принимайте только после консультации, потому что некоторые препараты усиливают склонность к синякам.',
         ],
       },
       {
@@ -230,13 +230,13 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Herpesul',
         paragraphs: [
-          'Dacă vă apar erupții herpetice pe buze, spuneți din timp. Injecțiile pot provoca o acutizare, iar medicul recomandă uneori profilaxie. Detalii am dat într-un articol separat despre herpesul la mărirea buzelor. Medicamentele antivirale nu se iau pe cont propriu, fără prescripție.',
+          'Dacă vă apar erupții herpetice pe buze, spuneți din timp. Injecțiile pot provoca o acutizare, iar medicul recomandă uneori profilaxie. Detalii am dat într-un articol separat despre herpesul la [[svc:uvelychenye-gub-v-belczah|mărirea buzelor]]. Medicamentele antivirale nu se iau pe cont propriu, fără prescripție.',
         ],
       },
       {
         h2: 'Ce faceți la senzații neplăcute',
         paragraphs: [
-          'Sensibilitatea ușoară, senzația de tensiune și înțepăturile în primele zile sunt frecvente. Dacă disconfortul crește, observați asimetrie sau o zonă dură, nu încercați să corectați singur: fotografiați buzele și contactați medicul. Analgezicele se iau doar după consultație, pentru că unele preparate cresc tendința la vânătăi.',
+          'Sensibilitatea ușoară, senzația de tensiune și înțepăturile în primele zile sunt frecvente. Dacă disconfortul crește, observați [[uvelichenie-gub-asimmetriya-korrekciya|asimetrie]] sau o zonă dură, nu încercați să corectați singur: fotografiați buzele și contactați medicul. Analgezicele se iau doar după consultație, pentru că unele preparate cresc tendința la vânătăi.',
         ],
       },
       {
@@ -248,7 +248,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Când vă adresați urgent medicului',
         paragraphs: [
-          'Contactați medicul dacă durerea crește, pielea s-a albit, a căpătat o nuanță albăstruie sau închisă, umflătura crește repede, au apărut febră sau secreții purulente. Pot fi semne de tulburare a circulației sau de infecție, iar ajutorul este necesar fără întârziere. Consultație puteți primi la clinica Meddera din Bălți.',
+          'Contactați medicul dacă [[uvelichenie-gub-bolevye-oshchushcheniya|durerea]] crește, pielea s-a albit, a căpătat o nuanță albăstruie sau închisă, umflătura crește repede, au apărut febră sau secreții purulente. Pot fi semne de tulburare a circulației sau de infecție, iar ajutorul este necesar fără întârziere. Consultație puteți primi la clinica Meddera din Bălți.',
         ],
       },
     ],
@@ -288,13 +288,13 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Нарушение кровотока',
         paragraphs: [
-          'Это редкое, но серьёзное осложнение, при котором препарат перекрывает сосуд. Признаки: резкая боль, побледнение или синюшность кожи, пятнистый рисунок, необычное онемение. При таких симптомах нужно немедленно связаться с врачом или обратиться за неотложной помощью.',
+          'Это редкое, но серьёзное [[konturnaya-plastika-oslozhneniya|осложнение]], при котором препарат перекрывает сосуд. Признаки: резкая боль, побледнение или синюшность кожи, пятнистый рисунок, необычное онемение. При таких симптомах нужно немедленно связаться с врачом или обратиться за неотложной помощью.',
         ],
       },
       {
         h2: 'Инфекции и воспаление',
         paragraphs: [
-          'Воспаление бывает при нарушении стерильности или при неблагоприятном состоянии кожи. Признаки: нарастающее покраснение, жар, боль, гнойные выделения, повышенная температура. Лечение назначает врач. На губах возможно обострение герпеса, поэтому о высыпаниях в прошлом стоит сообщить до процедуры.',
+          'Воспаление бывает при нарушении стерильности или при неблагоприятном состоянии кожи. Признаки: нарастающее покраснение, жар, [[uvelichenie-gub-bolevye-oshchushcheniya|боль]], гнойные выделения, повышенная температура. Лечение назначает врач. На губах возможно обострение [[uvelichenie-gub-gerpes-profilaktika|герпеса]], поэтому о высыпаниях в прошлом стоит сообщить до процедуры.',
         ],
       },
       {
@@ -306,7 +306,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Гиалуронидаза',
         paragraphs: [
-          'Гиалуронидаза это фермент, который расщепляет гиалуроновую кислоту. Его применяют при осложнениях, неровностях или когда результат не устраивает. Действие развивается постепенно, а после введения возможны отёк и чувствительность. Решение принимает врач после осмотра, и его нельзя заменить самостоятельными методами.',
+          'Гиалуронидаза это фермент, который расщепляет [[uvelichenie-gub-gialuronovaya-kislota|гиалуроновую кислоту]]. Его применяют при осложнениях, неровностях или когда результат не устраивает. Действие развивается постепенно, а после введения возможны отёк и чувствительность. Решение принимает врач после осмотра, и его нельзя заменить самостоятельными методами.',
         ],
       },
       {
@@ -356,13 +356,13 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Tulburarea circulației',
         paragraphs: [
-          'Este o complicație rară, dar gravă, în care preparatul blochează un vas. Semne: durere bruscă, paloare sau nuanță vineție a pielii, aspect pătat, amorțeală neobișnuită. La asemenea simptome trebuie să contactați imediat medicul sau să cereți ajutor de urgență.',
+          'Este o [[konturnaya-plastika-oslozhneniya|complicație]] rară, dar gravă, în care preparatul blochează un vas. Semne: [[uvelichenie-gub-bolevye-oshchushcheniya|durere]] bruscă, paloare sau nuanță vineție a pielii, aspect pătat, amorțeală neobișnuită. La asemenea simptome trebuie să contactați imediat medicul sau să cereți ajutor de urgență.',
         ],
       },
       {
         h2: 'Infecțiile și inflamația',
         paragraphs: [
-          'Inflamația apare la încălcarea sterilității sau la o stare nefavorabilă a pielii. Semne: înroșire în creștere, căldură, durere, secreții purulente, temperatură. Pe buze este posibilă acutizarea herpesului, de aceea despre erupțiile din trecut e bine să spuneți înainte de procedură.',
+          'Inflamația apare la încălcarea sterilității sau la o stare nefavorabilă a pielii. Semne: înroșire în creștere, căldură, durere, secreții purulente, temperatură. Pe buze este posibilă acutizarea [[uvelichenie-gub-gerpes-profilaktika|herpesului]], de aceea despre erupțiile din trecut e bine să spuneți înainte de procedură.',
         ],
       },
       {
@@ -374,7 +374,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Hialuronidaza',
         paragraphs: [
-          'Hialuronidaza este o enzimă care descompune acidul hialuronic. Se folosește la complicații, la neregularități sau când rezultatul nu mulțumește. Acțiunea se dezvoltă treptat, iar după administrare sunt posibile umflătură și sensibilitate. Decizia o ia medicul după examinare și nu poate fi înlocuită cu metode proprii.',
+          'Hialuronidaza este o enzimă care descompune [[uvelichenie-gub-gialuronovaya-kislota|acidul hialuronic]]. Se folosește la complicații, la neregularități sau când rezultatul nu mulțumește. Acțiunea se dezvoltă treptat, iar după administrare sunt posibile umflătură și sensibilitate. Decizia o ia medicul după examinare și nu poate fi înlocuită cu metode proprii.',
         ],
       },
       {
@@ -402,7 +402,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Пропорции губ',
         paragraphs: [
-          'Врач учитывает соотношение верхней и нижней губы, расстояние от носа до границы губ, ширину рта и общий овал лица. Нижняя губа обычно немного крупнее верхней, и такое соотношение выглядит естественно. Нарушение пропорций заметно сразу, поэтому врач работает с небольшим шагом и оценивает результат на каждом этапе.',
+          'Врач учитывает соотношение верхней и [[uvelichenie-gub-verkhnyaya-nizhnyaya|нижней губы]], расстояние от носа до границы губ, ширину рта и общий овал лица. Нижняя губа обычно немного крупнее верхней, и такое соотношение выглядит естественно. Нарушение пропорций заметно сразу, поэтому врач работает с небольшим шагом и оценивает результат на каждом этапе.',
         ],
       },
       {
@@ -414,7 +414,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Контур и граница',
         paragraphs: [
-          'Чёткий контур придаёт губам выразительность, а размытая граница делает их менее заметными. Филлер можно использовать для уточнения линии губ, в том числе на сглаженной арке над верхней губой. Важно, чтобы линия оставалась мягкой, без жёсткого обводящего эффекта, который сразу выдаёт вмешательство.',
+          'Чёткий контур придаёт губам выразительность, а размытая граница делает их менее заметными. [[uvelichenie-gub-beltsy-vidy-fillerov|Филлер]] можно использовать для уточнения линии губ, в том числе на сглаженной арке над верхней губой. Важно, чтобы линия оставалась мягкой, без жёсткого обводящего эффекта, который сразу выдаёт вмешательство.',
         ],
       },
       {
@@ -426,7 +426,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Лицо в целом',
         paragraphs: [
-          'Форма губ связана с подбородком, носом, улыбкой и профилем. Иногда небольшая коррекция другой зоны делает лицо более гармоничным и позволяет обойтись меньшим объёмом на губах. Врач оценит это при осмотре и расскажет, что даст каждое вмешательство, а чего не изменит.',
+          '[[uvelichenie-gub-forma-simmetriya|Форма губ]] связана с подбородком, носом, улыбкой и профилем. Иногда небольшая коррекция другой зоны делает лицо более гармоничным и позволяет обойтись меньшим объёмом на губах. Врач оценит это при осмотре и расскажет, что даст каждое вмешательство, а чего не изменит.',
         ],
       },
       {
@@ -444,7 +444,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Асимметрия и привычки',
         paragraphs: [
-          'Многие приходят с желанием выровнять одну сторону губ. Врач учитывает природную асимметрию и привычки: как вы улыбаетесь и говорите. Полностью симметричных губ не бывает, и стремиться к этому не нужно: небольшая индивидуальность делает лицо живым.',
+          'Многие приходят с желанием выровнять одну сторону губ. Врач учитывает природную [[uvelichenie-gub-asimmetriya-korrekciya|асимметрию]] и привычки: как вы улыбаетесь и говорите. Полностью симметричных губ не бывает, и стремиться к этому не нужно: небольшая индивидуальность делает лицо живым.',
         ],
       },
       {
@@ -470,7 +470,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Proporțiile buzelor',
         paragraphs: [
-          'Medicul ia în calcul raportul dintre buza superioară și cea inferioară, distanța de la nas la marginea buzelor, lățimea gurii și conturul general al feței. Buza de jos este de obicei puțin mai mare decât cea de sus, iar un asemenea raport arată natural. Încălcarea proporțiilor se vede imediat, de aceea medicul lucrează în pași mici și evaluează rezultatul la fiecare etapă.',
+          'Medicul ia în calcul raportul dintre [[uvelichenie-gub-verkhnyaya-nizhnyaya|buza superioară]] și cea inferioară, distanța de la nas la marginea buzelor, lățimea gurii și conturul general al feței. Buza de jos este de obicei puțin mai mare decât cea de sus, iar un asemenea raport arată natural. Încălcarea proporțiilor se vede imediat, de aceea medicul lucrează în pași mici și evaluează rezultatul la fiecare etapă.',
         ],
       },
       {
@@ -482,19 +482,19 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Conturul și marginea',
         paragraphs: [
-          'Un contur clar dă buzelor expresivitate, iar o margine ștearsă le face mai puțin vizibile. Fillerul poate fi folosit pentru precizarea liniei buzelor, inclusiv pe arcul șters de deasupra buzei de sus. Este important ca linia să rămână delicată, fără efectul dur de conturare, care dă imediat de gol intervenția.',
+          'Un contur clar dă buzelor expresivitate, iar o margine ștearsă le face mai puțin vizibile. [[uvelichenie-gub-beltsy-vidy-fillerov|Fillerul]] poate fi folosit pentru precizarea liniei buzelor, inclusiv pe arcul șters de deasupra buzei de sus. Este important ca linia să rămână delicată, fără efectul dur de conturare, care dă imediat de gol intervenția.',
         ],
       },
       {
         h2: 'Gradualitatea',
         paragraphs: [
-          'Este mai prudent să introduceți un volum mic și, la nevoie, să adăugați mai târziu. Țesuturile se obișnuiesc, umflătura dispare, iar rezultatul devine mai clar. O asemenea abordare evită o mărire prea vizibilă și păstrează moliciunea buzelor. Excesul de preparat se elimină mai greu decât se adaugă ce lipsește.',
+          'Este mai prudent să introduceți un volum mic și, la nevoie, să adăugați mai târziu. Țesuturile se obișnuiesc, umflătura dispare, iar rezultatul devine mai clar. O asemenea abordare evită o mărire prea vizibilă și păstrează moliciunea buzelor.',
         ],
       },
       {
         h2: 'Fața în ansamblu',
         paragraphs: [
-          'Forma buzelor este legată de bărbie, nas, zâmbet și profil. Uneori o mică corecție a altei zone face fața mai armonioasă și permite un volum mai mic în buze. Medicul va evalua aceasta la examinare și va explica ce aduce fiecare intervenție și ce nu schimbă.',
+          '[[uvelichenie-gub-forma-simmetriya|Forma buzelor]] este legată de bărbie, nas, zâmbet și profil. Uneori o mică corecție a altei zone face fața mai armonioasă și permite un volum mai mic în buze. Medicul va evalua aceasta la examinare și va explica ce aduce fiecare intervenție și ce nu schimbă.',
         ],
       },
       {
@@ -512,7 +512,7 @@ export const LIPS_C: ArticleRewrites = {
       {
         h2: 'Asimetria și obiceiurile',
         paragraphs: [
-          'Mulți vin cu dorința de a egaliza o parte a buzelor. Medicul ține cont de asimetria naturală și de obiceiuri.',
+          'Mulți vin cu dorința de a egaliza o parte a buzelor. Medicul ține cont de [[uvelichenie-gub-asimmetriya-korrekciya|asimetria]] naturală și de obiceiuri.',
         ],
       },
       {

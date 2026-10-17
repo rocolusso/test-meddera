@@ -6,7 +6,7 @@ export const BOTOX_B: ArticleRewrites = {
       {
         h2: 'Что такое ботулинический токсин',
         paragraphs: [
-          'Ботулинический токсин типа А это белок, который временно блокирует передачу сигнала от нерва к мышце. В косметологии и медицине его применяют для расслабления мимических мышц, при повышенной потливости и в других показаниях. Слово «ботокс» стало общим названием, но это торговая марка одного из препаратов.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Ботулинический токсин]] типа А это белок, который временно блокирует передачу сигнала от нерва к мышце. В косметологии и медицине его применяют для расслабления мимических мышц, при повышенной потливости и в других показаниях. Слово «[[botoks-beltsy-chto-nuzhno-znat|ботокс]]» стало общим названием, но это торговая марка одного из препаратов.',
         ],
       },
       {
@@ -62,7 +62,7 @@ export const BOTOX_B: ArticleRewrites = {
       {
         h2: 'Кому нельзя делать инъекции',
         paragraphs: [
-          'Процедуру не проводят при беременности и кормлении грудью, нервно-мышечных заболеваниях, воспалении в зоне введения, аллергии на компоненты препарата. Расскажите врачу о всех заболеваниях и лекарствах.',
+          'Процедуру не проводят при [[botoks-beremennost-grudnoe-vskarmlivanie|беременности]] и кормлении грудью, нервно-мышечных заболеваниях, воспалении в [[botoks-zony-injekcij|зоне введения]], аллергии на компоненты препарата. Расскажите врачу о всех заболеваниях и лекарствах.',
           'Для консультации в Бельцах запишитесь в клинику Meddera по телефону или через форму на сайте.',
         ],
       },
@@ -71,7 +71,7 @@ export const BOTOX_B: ArticleRewrites = {
       {
         h2: 'Ce este toxina botulinică',
         paragraphs: [
-          'Toxina botulinică de tip A este o proteină care blochează temporar transmiterea semnalului de la nerv la mușchi. În cosmetologie și medicină se folosește pentru relaxarea mușchilor mimici, în transpirația excesivă și în alte indicații. Cuvântul „botox” a devenit denumirea generală, dar este marca comercială a unuia dintre preparate.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Toxina botulinică]] de tip A este o proteină care blochează temporar transmiterea semnalului de la nerv la mușchi. În cosmetologie și medicină se folosește pentru relaxarea mușchilor mimici, în transpirația excesivă și în alte indicații. Cuvântul „[[botoks-beltsy-chto-nuzhno-znat|botox]]” a devenit denumirea generală, dar este marca comercială a unuia dintre preparate.',
         ],
       },
       {
@@ -115,13 +115,13 @@ export const BOTOX_B: ArticleRewrites = {
       {
         h2: 'Întrebări de pus medicului',
         paragraphs: [
-          'Întrebați cu ce preparat se va lucra și de ce a fost ales anume acesta. Clarificați ce zone sunt planificate și ce rezultat puteți aștepta. Spuneți ce medicamente luați și ce boli ați avut, deoarece de acestea depinde siguranța. Un medic bun răspunde la astfel de întrebări calm și fără presiune, iar decizia rămâne a dumneavoastră.',
+          'Întrebați cu ce preparat se va lucra și de ce a fost ales anume acesta. Clarificați ce zone sunt planificate și ce rezultat puteți aștepta. Spuneți ce medicamente luați și ce boli ați avut, deoarece de acestea depinde siguranța.',
         ],
       },
       {
         h2: 'Cui nu i se fac injecții',
         paragraphs: [
-          'Procedura nu se face în sarcină și alăptare, boli neuromusculare, inflamație în zona de administrare, alergie la componentele preparatului. Spuneți medicului despre toate bolile și medicamentele.',
+          'Procedura nu se face în [[botoks-beremennost-grudnoe-vskarmlivanie|sarcină]] și alăptare, boli neuromusculare, inflamație în zona de administrare, alergie la componentele preparatului. Spuneți medicului despre toate bolile și medicamentele.',
           'Pentru consultație în Bălți programați-vă la clinica Meddera, la telefon sau prin formularul de pe site.',
         ],
       },
@@ -132,7 +132,7 @@ export const BOTOX_B: ArticleRewrites = {
       {
         h2: 'Можно ли делать ботокс при беременности',
         paragraphs: [
-          'Во время беременности ботулинический токсин не применяют. Исследований, которые бы подтвердили безопасность препарата для будущего ребёнка, недостаточно, а ставить эксперимент на беременной этично нельзя. Поэтому врачи рекомендуют отложить процедуру до окончания беременности. Это касается и инъекций от потливости, и косметических зон.',
+          'Во время беременности [[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|ботулинический токсин]] не применяют. Исследований, которые бы подтвердили безопасность препарата для будущего ребёнка, недостаточно, а ставить эксперимент на беременной этично нельзя. Поэтому врачи рекомендуют отложить процедуру до окончания беременности. Это касается и инъекций от потливости, и косметических зон.',
         ],
       },
       {
@@ -201,7 +201,7 @@ export const BOTOX_B: ArticleRewrites = {
       {
         h2: 'Se poate face botox în sarcină',
         paragraphs: [
-          'În timpul sarcinii toxina botulinică nu se folosește. Nu există suficiente studii care să confirme siguranța preparatului pentru copilul care urmează să se nască, iar un experiment pe o femeie însărcinată nu este etic. De aceea medicii recomandă să amânați procedura până după sarcină. Aceasta se referă și la injecțiile pentru transpirație, și la zonele cosmetice.',
+          'În timpul sarcinii [[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|toxina botulinică]] nu se folosește. Nu există suficiente studii care să confirme siguranța preparatului pentru copilul care urmează să se nască, iar un experiment pe o femeie însărcinată nu este etic. De aceea medicii recomandă să amânați procedura până după sarcină. Aceasta se referă și la injecțiile pentru transpirație, și la zonele cosmetice.',
         ],
       },
       {

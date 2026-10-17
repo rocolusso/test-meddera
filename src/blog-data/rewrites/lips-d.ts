@@ -6,7 +6,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Как стареют губы и область вокруг рта',
         paragraphs: [
-          'С возрастом губы теряют объём, становятся тоньше и менее чёткими по контуру. Кожа вокруг рта истончается, на ней появляются вертикальные морщинки, а уголки рта могут опускаться. Эти изменения зависят от наследственности, образа жизни, курения, солнца и мимики, поэтому у разных людей они проявляются по-разному.',
+          'С [[botoks-vozrast-kogda-nachinat|возрастом]] губы теряют объём, становятся тоньше и менее чёткими по контуру. Кожа вокруг рта истончается, на ней появляются вертикальные морщинки, а уголки рта могут опускаться. Эти изменения зависят от наследственности, образа жизни, курения, солнца и мимики, поэтому у разных людей они проявляются по-разному.',
         ],
       },
       {
@@ -36,13 +36,13 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Что может дать филлер',
         paragraphs: [
-          'Гиалуроновая кислота помогает восстановить объём, уточнить контур губ и смягчить складки. Результат остаётся временным и зависит от препарата и ваших особенностей. Ожидать, что она вернёт лицу молодость, нельзя: препарат работает только с теми изменениями, которые связаны с объёмом и текстурой тканей.',
+          '[[uvelichenie-gub-gialuronovaya-kislota|Гиалуроновая кислота]] помогает восстановить объём, уточнить контур губ и смягчить складки. Результат остаётся временным и зависит от препарата и ваших особенностей. Ожидать, что она вернёт лицу молодость, нельзя: препарат работает только с теми изменениями, которые связаны с объёмом и текстурой тканей.',
         ],
       },
       {
         h2: 'Сочетание с другими методами',
         paragraphs: [
-          'При возрастных изменениях часто объединяют несколько подходов: увлажнение и биоревитализацию, мезотерапию, коррекцию мимических мышц, уход за кожей, а при выраженном провисании иногда хирургические методы. Врач составляет план поэтапно, чтобы лицо менялось постепенно и сохраняло естественный вид.',
+          'При возрастных изменениях часто объединяют несколько подходов: увлажнение и биоревитализацию, мезотерапию, коррекцию мимических мышц, уход за кожей, а при выраженном провисании иногда хирургические методы. Врач составляет план поэтапно, чтобы лицо менялось постепенно и сохраняло [[uvelichenie-gub-estestvenny-rezultat|естественный вид]].',
         ],
       },
       {
@@ -60,7 +60,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Когда процедуру стоит отложить',
         paragraphs: [
-          'Процедуру откладывают при воспалении кожи, обострении герпеса, простуде, беременности и кормлении. Если вы недавно делали другие косметологические процедуры на этой области, расскажите об этом: врач подскажет, когда можно продолжать.',
+          'Процедуру откладывают при воспалении кожи, обострении [[uvelichenie-gub-gerpes-profilaktika|герпеса]], простуде, беременности и кормлении. Если вы недавно делали другие косметологические процедуры на этой области, расскажите об этом: врач подскажет, когда можно продолжать.',
         ],
       },
       {
@@ -74,7 +74,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Cum îmbătrânesc buzele și zona din jurul gurii',
         paragraphs: [
-          'Odată cu vârsta buzele pierd volum, devin mai subțiri și mai puțin clare ca contur. Pielea din jurul gurii se subțiază, pe ea apar riduri verticale, iar colțurile gurii pot coborî. Aceste schimbări depind de ereditate, stil de viață, fumat, soare și mimică, de aceea la oameni diferiți se manifestă diferit.',
+          'Odată cu [[botoks-vozrast-kogda-nachinat|vârsta]] buzele pierd volum, devin mai subțiri și mai puțin clare ca contur. Pielea din jurul gurii se subțiază, pe ea apar riduri verticale, iar colțurile gurii pot coborî. Aceste schimbări depind de ereditate, stil de viață, fumat, soare și mimică, de aceea la oameni diferiți se manifestă diferit.',
         ],
       },
       {
@@ -104,13 +104,13 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Ce poate da fillerul',
         paragraphs: [
-          'Acidul hialuronic ajută la refacerea volumului, la precizarea conturului buzelor și la atenuarea pliurilor. Rezultatul rămâne temporar și depinde de preparat și de particularitățile dumneavoastră. Nu vă puteți aștepta ca el să întoarcă tinerețea feței: preparatul lucrează doar cu schimbările legate de volum și de textura țesuturilor.',
+          '[[uvelichenie-gub-gialuronovaya-kislota|Acidul hialuronic]] ajută la refacerea volumului, la precizarea conturului buzelor și la atenuarea pliurilor. Rezultatul rămâne temporar și depinde de preparat și de particularitățile dumneavoastră. Nu vă puteți aștepta ca el să întoarcă tinerețea feței: preparatul lucrează doar cu schimbările legate de volum și de textura țesuturilor.',
         ],
       },
       {
         h2: 'Combinarea cu alte metode',
         paragraphs: [
-          'La schimbările de vârstă se combină adesea mai multe abordări: hidratarea și biorevitalizarea, mezoterapia, corecția mușchilor mimicii, îngrijirea pielii, iar în lăsarea pronunțată uneori metode chirurgicale. Medicul întocmește planul pe etape, ca fața să se schimbe treptat și să-și păstreze aspectul natural.',
+          'La schimbările de vârstă se combină adesea mai multe abordări: hidratarea și biorevitalizarea, mezoterapia, corecția mușchilor mimicii, îngrijirea pielii, iar în lăsarea pronunțată uneori metode chirurgicale. Medicul întocmește planul pe etape, ca fața să se schimbe treptat și să-și păstreze [[uvelichenie-gub-estestvenny-rezultat|aspectul natural]].',
         ],
       },
       {
@@ -128,7 +128,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Când procedura se amână',
         paragraphs: [
-          'Procedura se amână la inflamația pielii, la acutizarea herpesului, la răceală, în sarcină și în alăptare. Dacă ați făcut recent alte proceduri cosmetice în această zonă, spuneți: medicul vă va spune când puteți continua.',
+          'Procedura se amână la inflamația pielii, la acutizarea [[uvelichenie-gub-gerpes-profilaktika|herpesului]], la răceală, în sarcină și în alăptare. Dacă ați făcut recent alte proceduri cosmetice în această zonă, spuneți: medicul vă va spune când puteți continua.',
         ],
       },
       {
@@ -144,7 +144,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Как принять решение',
         paragraphs: [
-          'Решение об увеличении губ стоит принимать спокойно. Спросите себя, чего именно вы хотите: чуть большего объёма, чёткого контура, симметрии или более ухоженного вида. Не торопитесь и не соглашайтесь на процедуру под давлением. Если вы сомневаетесь, стоит прийти на консультацию без записи на сами инъекции.',
+          'Решение об [[svc:uvelychenye-gub-v-belczah|увеличении губ]] стоит принимать спокойно. Спросите себя, чего именно вы хотите: чуть большего объёма, чёткого контура, [[uvelichenie-gub-forma-simmetriya|симметрии]] или более ухоженного вида. Не торопитесь и не соглашайтесь на процедуру под давлением. Если вы сомневаетесь, стоит прийти на консультацию без записи на сами инъекции.',
         ],
       },
       {
@@ -156,13 +156,13 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Что важно знать о препарате',
         paragraphs: [
-          'Для губ обычно используют гиалуроновую кислоту. Результат временный, препарат со временем рассасывается, а при необходимости его можно растворить специальным ферментом. Узнайте у врача название препарата, производителя и то, как фиксируют серию. Это поможет вам спокойнее принять решение.',
+          'Для губ обычно используют [[uvelichenie-gub-gialuronovaya-kislota|гиалуроновую кислоту]]. Результат временный, препарат со временем рассасывается, а при необходимости его можно растворить специальным ферментом. Узнайте у врача название препарата, производителя и то, как фиксируют серию. Это поможет вам спокойнее принять решение.',
         ],
       },
       {
         h2: 'Что обсудить перед процедурой',
         paragraphs: [
-          'Расскажите о хронических заболеваниях, аллергиях, склонности к синякам и герпесу, а также о лекарствах и добавках. Сообщите о беременности и кормлении. Эти сведения влияют на возможность процедуры и на подготовку. Скрывать их не стоит: врач использует информацию, чтобы вам помочь.',
+          'Расскажите о хронических заболеваниях, аллергиях, склонности к синякам и [[uvelichenie-gub-gerpes-profilaktika|герпесу]], а также о лекарствах и добавках. Сообщите о беременности и кормлении. Эти сведения влияют на возможность процедуры и на подготовку. Скрывать их не стоит: врач использует информацию, чтобы вам помочь.',
         ],
       },
       {
@@ -180,7 +180,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Какие ощущения возможны',
         paragraphs: [
-          'Уколы губ чувствительны, но обезболивание помогает их переносить. После процедуры губы кажутся плотными, возможны ощущение стянутости, лёгкая болезненность и отёк. Это ожидаемая реакция, которая проходит постепенно. Врач расскажет, как себя вести, и даст рекомендации по уходу.',
+          'Уколы губ чувствительны, но [[uvelichenie-gub-bolevye-oshchushcheniya|обезболивание]] помогает их переносить. После процедуры губы кажутся плотными, возможны ощущение стянутости, лёгкая болезненность и отёк. Это ожидаемая реакция, которая проходит постепенно. Врач расскажет, как себя вести, и даст рекомендации по уходу.',
         ],
       },
       {
@@ -212,7 +212,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Cum luați decizia',
         paragraphs: [
-          'Decizia de mărire a buzelor merită luată liniștit. Întrebați-vă ce anume doriți: puțin mai mult volum, un contur clar, simetrie sau un aspect mai îngrijit. Nu vă grăbiți și nu acceptați procedura sub presiune. Dacă ezitați, mai bine veniți la consultație fără programare la injecțiile propriu-zise.',
+          'Decizia de mărire a buzelor merită luată liniștit. Întrebați-vă ce anume doriți: puțin mai mult volum, un contur clar, [[uvelichenie-gub-forma-simmetriya|simetrie]] sau un aspect mai îngrijit. Nu vă grăbiți și nu acceptați procedura sub presiune. Dacă ezitați, mai bine veniți la consultație fără programare la injecțiile propriu-zise.',
         ],
       },
       {
@@ -224,13 +224,13 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Ce este important să știți despre preparat',
         paragraphs: [
-          'Pentru buze se folosește de obicei acid hialuronic. Rezultatul este temporar, preparatul se resoarbe în timp, iar la nevoie poate fi dizolvat cu o enzimă specială. Aflați de la medic denumirea preparatului, producătorul și modul în care se consemnează seria.',
+          'Pentru buze se folosește de obicei [[uvelichenie-gub-gialuronovaya-kislota|acid hialuronic]]. Rezultatul este temporar, preparatul se resoarbe în timp, iar la nevoie poate fi dizolvat cu o enzimă specială. Aflați de la medic denumirea preparatului, producătorul și modul în care se consemnează seria.',
         ],
       },
       {
         h2: 'Ce discutați înainte de procedură',
         paragraphs: [
-          'Spuneți despre bolile cronice, alergii, tendința la vânătăi și herpes, despre medicamente și suplimente. Anunțați dacă sunteți gravidă sau alăptați. Aceste date influențează posibilitatea procedurii și pregătirea. Nu merită să le ascundeți: medicul folosește informațiile ca să vă ajute.',
+          'Spuneți despre bolile cronice, alergii, tendința la vânătăi și [[uvelichenie-gub-gerpes-profilaktika|herpes]], despre medicamente și suplimente. Anunțați dacă sunteți gravidă sau alăptați. Aceste date influențează posibilitatea procedurii și pregătirea. Nu merită să le ascundeți: medicul folosește informațiile ca să vă ajute.',
         ],
       },
       {
@@ -282,7 +282,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'От чего зависит длительность эффекта',
         paragraphs: [
-          'Гиалуроновая кислота постепенно расщепляется организмом, поэтому эффект временный. Срок зависит от препарата, места введения, подвижности губ, обмена веществ, образа жизни и количества введённого геля. Точных сроков назвать нельзя, и сравнивать свой результат с чужим не всегда уместно.',
+          '[[uvelichenie-gub-gialuronovaya-kislota|Гиалуроновая кислота]] постепенно расщепляется организмом, поэтому эффект временный. Срок зависит от препарата, места введения, подвижности губ, обмена веществ, образа жизни и количества введённого геля. Точных сроков назвать нельзя, и сравнивать свой результат с чужим не всегда уместно.',
         ],
       },
       {
@@ -306,7 +306,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Есть ли подходящее время года',
         paragraphs: [
-          'Процедуру можно делать в любое время, но у каждого сезона свои нюансы. Летом нужно беречь губы от солнца, жары и бассейна в первые дни. Зимой возрастает риск обострения герпеса, сухости и обветривания. Выбирайте момент, когда вы сможете соблюдать рекомендации и не планируете важных выходов.',
+          'Процедуру можно делать в любое время, но у каждого сезона свои нюансы. Летом нужно беречь губы от солнца, жары и бассейна в первые дни. Зимой возрастает риск обострения [[uvelichenie-gub-gerpes-profilaktika|герпеса]], сухости и обветривания. Выбирайте момент, когда вы сможете соблюдать рекомендации и не планируете важных выходов.',
         ],
       },
       {
@@ -350,7 +350,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'De ce depinde durata efectului',
         paragraphs: [
-          'Acidul hialuronic este descompus treptat de organism, de aceea efectul este temporar. Termenul depinde de preparat, de locul administrării, de mobilitatea buzelor, de metabolism, de stilul de viață și de cantitatea de gel introdusă.',
+          '[[uvelichenie-gub-gialuronovaya-kislota|Acidul hialuronic]] este descompus treptat de organism, de aceea efectul este temporar. Termenul depinde de preparat, de locul administrării, de mobilitatea buzelor, de metabolism, de stilul de viață și de cantitatea de gel introdusă.',
         ],
       },
       {
@@ -374,7 +374,7 @@ export const LIPS_D: ArticleRewrites = {
       {
         h2: 'Există un anotimp potrivit',
         paragraphs: [
-          'Procedura se poate face în orice perioadă, dar fiecare sezon are nuanțele lui. Vara trebuie să protejați buzele de soare, de căldură și de piscină în primele zile. Iarna crește riscul de acutizare a herpesului, de uscăciune și de buze crăpate. Alegeți un moment în care puteți respecta recomandările și nu aveți ieșiri importante.',
+          'Procedura se poate face în orice perioadă, dar fiecare sezon are nuanțele lui. Vara trebuie să protejați buzele de soare, de căldură și de piscină în primele zile. Iarna crește riscul de acutizare a [[uvelichenie-gub-gerpes-profilaktika|herpesului]], de uscăciune și de buze crăpate. Alegeți un moment în care puteți respecta recomandările și nu aveți ieșiri importante.',
         ],
       },
       {

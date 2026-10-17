@@ -13,7 +13,7 @@ export const DERMATOLOGIST_A: ArticleRewrites = {
       {
         h2: 'Когда нужно показаться дерматологу',
         paragraphs: [
-          'Светлые пятна бывают не только при витилиго. Похожий вид имеют некоторые грибковые поражения, следы после воспалений и ожогов, участки с врождённым недостатком пигмента. По фотографии или описанию отличить их нельзя, поэтому диагноз ставит врач после осмотра.',
+          'Светлые пятна бывают не только при витилиго. Похожий вид имеют некоторые [[gribkovye-infekcii-kozhi-diagnostika-lechenie|грибковые поражения]], следы после воспалений и ожогов, участки с врождённым недостатком пигмента. По фотографии или описанию отличить их нельзя, поэтому диагноз ставит врач после осмотра.',
           'Запишитесь на консультацию, если пятно не проходит, растёт, появляются новые или в области пятна побелели волосы. Врач расспросит, как начиналось заболевание, были ли подобные случаи в семье, и при необходимости предложит обследование, например проверку щитовидной железы, потому что витилиго нередко сочетается с другими аутоиммунными состояниями.',
         ],
       },
@@ -41,7 +41,7 @@ export const DERMATOLOGIST_A: ArticleRewrites = {
       {
         h2: 'Приём в клинике Meddera',
         paragraphs: [
-          'Если вы заметили на коже светлые пятна, запишитесь на консультацию дерматолога в Бельцах. Врач осмотрит кожу, при необходимости назначит обследование и обсудит с вами реальные цели лечения. Записаться можно по телефону или через форму на сайте. Клиника Meddera находится по адресу: Бельцы, улица Штефан чел Маре, 13.',
+          'Если вы заметили на коже светлые пятна, запишитесь на консультацию [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Бельцах. Врач осмотрит кожу, при необходимости назначит обследование и обсудит с вами реальные цели лечения. Записаться можно по телефону или через форму на сайте. Клиника Meddera находится по адресу: Бельцы, улица Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -70,7 +70,7 @@ export const DERMATOLOGIST_A: ArticleRewrites = {
       {
         h2: 'Ce metode se folosesc',
         paragraphs: [
-          'Medicul alege tactica în funcție de suprafața afectată, localizare, activitatea procesului și vârstă. Se folosesc preparate locale care reduc reacția autoimună și fototerapia cu lumină de un anumit spectru. În unele cazuri se aplică metode laser, iar la o evoluție stabilă îndelungată se iau în calcul metode chirurgicale de transfer al celulelor pigmentare.',
+          'Medicul alege tactica în funcție de suprafața afectată, localizare, activitatea procesului și vârstă. Se folosesc preparate locale care reduc reacția autoimună și fototerapia cu lumină de un anumit spectru. În unele cazuri se aplică metode laser, iar la o evoluție stabilă îndelungată se iau în calcul metode chirurgicale de transfer al celulelor [[svc:terapyya-protyv-pygmentaczyy-v-belczah|pigmentare]].',
           'O parte din aceste metode se efectuează în centre specializate, iar medicul vă va spune unde să mergeți, dacă este nevoie de o astfel de procedură. Nu folosiți unguente hormonale fără prescripție: aplicate greșit, subțiază pielea și pot agrava starea.',
         ],
       },
@@ -84,7 +84,7 @@ export const DERMATOLOGIST_A: ArticleRewrites = {
       {
         h2: 'Consultația la clinica Meddera',
         paragraphs: [
-          'Dacă ați observat pe piele pete deschise, programați-vă la consultația dermatologului în Bălți. Medicul va examina pielea, la nevoie va recomanda investigații și va discuta cu dumneavoastră obiectivele realiste ale tratamentului. Vă puteți programa la telefon sau prin formularul de pe site. Clinica Meddera se află la adresa: Bălți, strada Ștefan cel Mare, 13.',
+          'Dacă ați observat pe piele pete deschise, programați-vă la consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți. Medicul va examina pielea, la nevoie va recomanda investigații și va discuta cu dumneavoastră obiectivele realiste ale tratamentului. Vă puteți programa la telefon sau prin formularul de pe site. Clinica Meddera se află la adresa: Bălți, strada Ștefan cel Mare, 13.',
         ],
       },
     ],

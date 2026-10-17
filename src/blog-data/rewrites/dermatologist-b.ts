@@ -26,7 +26,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Как проходит осмотр',
         paragraphs: [
-          'Врач осматривает образование и окружающую кожу, расспрашивает, давно ли оно появилось и как менялось. Для уточнения диагноза используют дерматоскопию, а при сомнениях удалённую ткань направляют на гистологическое исследование, чтобы подтвердить доброкачественный характер образования.',
+          'Врач осматривает образование и окружающую кожу, расспрашивает, давно ли оно появилось и как менялось. Для уточнения диагноза используют [[dermatoskopiya-chto-eto-zachem-nuzhna|дерматоскопию]], а при сомнениях удалённую ткань направляют на гистологическое исследование, чтобы подтвердить доброкачественный характер образования.',
           'Удалять кератомы самостоятельно не стоит: можно повредить кожу, получить инфекцию и пропустить опасный диагноз.',
         ],
       },
@@ -40,7 +40,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Как отличить кератому от родинки',
         paragraphs: [
-          'Родинки возникают из пигментных клеток и чаще бывают гладкими, а себорейная кератома имеет шероховатую или бархатистую поверхность и выглядит как будто наложенной на кожу. Но внешнее сходство обманчиво: некоторые опасные образования маскируются под безобидные. Поэтому новый тёмный элемент у взрослого человека, который быстро меняется, лучше показать дерматологу, а не ждать, что он исчезнет.',
+          '[[rodinki-kogda-obratitsya-k-dermatologu|Родинки]] возникают из пигментных клеток и чаще бывают гладкими, а себорейная кератома имеет шероховатую или бархатистую поверхность и выглядит как будто наложенной на кожу. Но внешнее сходство обманчиво: некоторые опасные образования маскируются под безобидные. Поэтому новый тёмный элемент у взрослого человека, который быстро меняется, лучше показать [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматологу]], а не ждать, что он исчезнет.',
         ],
       },
       {
@@ -59,7 +59,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
         h2: 'Наблюдение и профилактика',
         paragraphs: [
           'Защита от солнца помогает замедлить появление актинических кератом и новых образований. Если у вас много родинок и кератом, показывайте кожу врачу регулярно, примерно по одному и тому же графику. Так проще заметить изменения вовремя.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте, адрес: улица Штефан чел Маре, 13.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте, адрес: улица Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -87,7 +87,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Cum decurge examinarea',
         paragraphs: [
-          'Medicul examinează formațiunea și pielea din jur, întreabă de când există și cum s-a schimbat. Pentru precizare se folosește dermatoscopia, iar în caz de dubii țesutul îndepărtat se trimite la examen histologic, ca să se confirme caracterul benign.',
+          'Medicul examinează formațiunea și pielea din jur, întreabă de când există și cum s-a schimbat. Pentru precizare se folosește [[dermatoskopiya-chto-eto-zachem-nuzhna|dermatoscopia]], iar în caz de dubii țesutul îndepărtat se trimite la examen histologic, ca să se confirme caracterul benign.',
           'Nu îndepărtați singuri keratoamele: puteți răni pielea, provoca o infecție și rata un diagnostic periculos.',
         ],
       },
@@ -101,7 +101,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Cum deosebiți keratoza de aluniță',
         paragraphs: [
-          'Alunițele provin din celule pigmentare și sunt mai des netede, iar keratoza seboreică are suprafață aspră sau catifelată și pare așezată peste piele. Asemănarea exterioară însă înșală: unele formațiuni periculoase se deghizează în cele inofensive. De aceea un element închis nou la un adult, care se schimbă repede, e mai bine arătat dermatologului, fără a aștepta să dispară.',
+          '[[rodinki-kogda-obratitsya-k-dermatologu|Alunițele]] provin din celule pigmentare și sunt mai des netede, iar keratoza seboreică are suprafață aspră sau catifelată și pare așezată peste piele. Asemănarea exterioară însă înșală: unele formațiuni periculoase se deghizează în cele inofensive. De aceea un element închis nou la un adult, care se schimbă repede, e mai bine arătat [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]], fără a aștepta să dispară.',
         ],
       },
       {
@@ -114,7 +114,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
         h2: 'Supraveghere și prevenire',
         paragraphs: [
           'Protecția solară ajută la încetinirea apariției keratoamelor actinice și a formațiunilor noi. Dacă aveți multe alunițe și keratoame, arătați pielea medicului regulat, după un program asemănător. Astfel schimbările se observă la timp.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site, adresa: strada Ștefan cel Mare, 13.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Consultația dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site, adresa: strada Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -157,14 +157,14 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Как отличить крапивницу от других высыпаний',
         paragraphs: [
-          'Отдельный волдырь при крапивнице обычно держится недолго, исчезает без следа и не оставляет шелушения, а рядом могут появиться новые. Другие высыпания, например при экземе или контактном дерматите, держатся на одном месте дольше и часто сопровождаются сухостью и шелушением.',
+          'Отдельный волдырь при крапивнице обычно держится недолго, исчезает без следа и не оставляет шелушения, а рядом могут появиться новые. Другие высыпания, например при экземе или [[kontaktnyj-dermatit-allergiya-razdrazhenie|контактном дерматите]], держатся на одном месте дольше и часто сопровождаются сухостью и шелушением.',
           'Если волдырь остаётся на месте долго, оставляет синяк или болит, а не зудит, это повод для отдельного обследования.',
         ],
       },
       {
         h2: 'Роль стресса и сопутствующих болезней',
         paragraphs: [
-          'Стресс не создаёт крапивницу с нуля, но может усилить обострения. У части людей хроническая крапивница сочетается с заболеваниями щитовидной железы или хроническими инфекциями, поэтому врач может предложить анализы, даже если вы связываете высыпания только с питанием. Строгую диету без назначения лучше не соблюдать: она редко помогает и может навредить.',
+          'Стресс не создаёт крапивницу с нуля, но может усилить обострения. У части людей [[kronicheskaya-krapivnica|хроническая крапивница]] сочетается с заболеваниями щитовидной железы или хроническими инфекциями, поэтому врач может предложить анализы, даже если вы связываете высыпания только с питанием. Строгую диету без назначения лучше не соблюдать: она редко помогает и может навредить.',
         ],
       },
       {
@@ -183,7 +183,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
         h2: 'Что можно делать дома',
         paragraphs: [
           'Избегайте горячих ванн и тугой одежды, носите мягкие ткани, не расчёсывайте высыпания. Прохладный компресс на короткое время облегчает зуд. Подозрительные продукты и лекарства исключайте по согласованию с врачом, чтобы не отказаться от нужного лечения.',
-          'Если крапивница повторяется, запишитесь на консультацию дерматолога в Meddera, Бельцы. Записаться можно по телефону или через форму на сайте.',
+          'Если крапивница повторяется, запишитесь на консультацию [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Meddera, Бельцы. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -224,14 +224,14 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Cum deosebiți urticaria de alte erupții',
         paragraphs: [
-          'O bășică de urticarie ține de obicei puțin, dispare fără urmă și nu lasă descuamare, iar alături pot apărea altele noi. Alte erupții, de exemplu în eczemă sau dermatita de contact, rămân mai mult în același loc și sunt însoțite adesea de uscăciune și descuamare.',
+          'O bășică de urticarie ține de obicei puțin, dispare fără urmă și nu lasă descuamare, iar alături pot apărea altele noi. Alte erupții, de exemplu în eczemă sau [[kontaktnyj-dermatit-allergiya-razdrazhenie|dermatita de contact]], rămân mai mult în același loc și sunt însoțite adesea de uscăciune și descuamare.',
           'Dacă bășica rămâne mult timp, lasă vânătaie sau doare în loc să provoace mâncărime, este un motiv de investigație separată.',
         ],
       },
       {
         h2: 'Rolul stresului și al bolilor asociate',
         paragraphs: [
-          'Stresul nu creează urticaria de la zero, dar poate accentua acutizările. La unii oameni urticaria cronică se asociază cu boli ale tiroidei sau cu infecții cronice, de aceea medicul poate propune analize chiar dacă legați erupțiile doar de alimentație. O dietă strictă fără recomandare e mai bine să nu o țineți: rareori ajută și poate dăuna.',
+          'Stresul nu creează urticaria de la zero, dar poate accentua acutizările. La unii oameni [[kronicheskaya-krapivnica|urticaria cronică]] se asociază cu boli ale tiroidei sau cu infecții cronice, de aceea medicul poate propune analize chiar dacă legați erupțiile doar de alimentație. O dietă strictă fără recomandare e mai bine să nu o țineți: rareori ajută și poate dăuna.',
         ],
       },
       {
@@ -244,7 +244,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
         h2: 'Ce puteți face acasă',
         paragraphs: [
           'Evitați băile fierbinți și hainele strâmte, purtați țesături moi, nu scărpinați erupțiile. O compresă rece, pentru scurt timp, ușurează mâncărimea. Alimentele și medicamentele suspecte le excludeți cu acordul medicului, ca să nu renunțați la un tratament necesar.',
-          'Dacă urticaria revine, programați-vă la dermatologul de la Meddera, Bălți. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Dacă urticaria revine, programați-vă la [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologul]] de la Meddera, Bălți. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -254,20 +254,20 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Что такое дерматоскопия',
         paragraphs: [
-          'Дерматоскопией называют осмотр кожи с помощью прибора, который увеличивает изображение и показывает структуры, невидимые глазом. Процедура не вызывает боли и не требует разрезов. Врач рассматривает родинку или образование вблизи, оценивая рисунок, границы, цвет и сосуды.',
+          'Дерматоскопией называют осмотр кожи с помощью прибора, который увеличивает изображение и показывает структуры, невидимые глазом. Процедура не вызывает боли и не требует разрезов. Врач рассматривает [[rodinki-kogda-obratitsya-k-dermatologu|родинку]] или образование вблизи, оценивая рисунок, границы, цвет и сосуды.',
         ],
       },
       {
         h2: 'Когда её назначают',
         paragraphs: [
-          'Дерматоскопию проводят, если родинка изменила цвет, форму или размер, начала кровоточить, зудеть или шелушиться, если во взрослом возрасте появилось новое пятно. Её советуют людям с большим числом родинок, светлой кожей, частыми солнечными ожогами в прошлом и случаями меланомы у близких родственников.',
+          'Дерматоскопию проводят, если родинка изменила цвет, форму или размер, начала кровоточить, зудеть или шелушиться, если во взрослом возрасте появилось новое пятно. Её советуют людям с большим числом родинок, светлой кожей, частыми солнечными ожогами в прошлом и случаями [[melanoma-rannyaya-diagnostika|меланомы]] у близких родственников.',
           'Кроме того, дерматоскопия нужна для наблюдения в динамике: врач сравнивает образование с прошлым осмотром.',
         ],
       },
       {
         h2: 'Что видит врач',
         paragraphs: [
-          'Рисунок пигментной сети, края и цвет образования помогают отличить обычные доброкачественные родинки, кератомы и сосудистые образования от тех, что требуют дальнейшего обследования. Дерматоскопия повышает точность осмотра, но не заменяет гистологию: при сомнениях окончательный диагноз ставят по исследованию удалённой ткани.',
+          'Рисунок пигментной сети, края и цвет образования помогают отличить обычные доброкачественные родинки, [[keratomy-chto-eto-nuzhno-li-udalyat|кератомы]] и сосудистые образования от тех, что требуют дальнейшего обследования. Дерматоскопия повышает точность осмотра, но не заменяет гистологию: при сомнениях окончательный диагноз ставят по исследованию удалённой ткани.',
         ],
       },
       {
@@ -312,7 +312,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Дерматоскопия в клинике Meddera',
         paragraphs: [
-          'Осмотр родинок и других образований проводит врач-дерматолог на консультации. Записаться можно по телефону или через форму на сайте. Клиника находится в Бельцах, на улице Штефан чел Маре, 13.',
+          'Осмотр родинок и других образований проводит врач-[[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолог]] на консультации. Записаться можно по телефону или через форму на сайте. Клиника находится в Бельцах, на улице Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -320,13 +320,13 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Ce este dermatoscopia',
         paragraphs: [
-          'Dermatoscopia este examinarea pielii cu un aparat care mărește imaginea și arată structuri invizibile cu ochiul liber. Procedura nu doare și nu necesită incizii. Medicul privește aluniță sau formațiunea de aproape și evaluează modelul, marginile, culoarea și vasele.',
+          'Dermatoscopia este examinarea pielii cu un aparat care mărește imaginea și arată structuri invizibile cu ochiul liber. Procedura nu doare și nu necesită incizii. Medicul privește [[rodinki-kogda-obratitsya-k-dermatologu|aluniță]] sau formațiunea de aproape și evaluează modelul, marginile, culoarea și vasele.',
         ],
       },
       {
         h2: 'Când se recomandă',
         paragraphs: [
-          'Dermatoscopia se face dacă o aluniță și-a schimbat culoarea, forma sau mărimea, a început să sângereze, să provoace mâncărime sau să se descuameze, ori dacă la vârsta adultă a apărut o pată nouă. Se recomandă persoanelor cu multe alunițe, piele deschisă, arsuri solare frecvente în trecut și cazuri de melanom la rudele apropiate.',
+          'Dermatoscopia se face dacă o aluniță și-a schimbat culoarea, forma sau mărimea, a început să sângereze, să provoace mâncărime sau să se descuameze, ori dacă la vârsta adultă a apărut o pată nouă. Se recomandă persoanelor cu multe alunițe, piele deschisă, arsuri solare frecvente în trecut și cazuri de [[melanoma-rannyaya-diagnostika|melanom]] la rudele apropiate.',
           'Ea ajută și la urmărirea în timp: medicul compară formațiunea cu examinarea anterioară.',
         ],
       },
@@ -377,7 +377,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Dermatoscopia la clinica Meddera',
         paragraphs: [
-          'Examinarea alunițelor și a altor formațiuni se face de medicul dermatolog la consultație. Vă puteți programa la telefon sau prin formularul de pe site. Clinica se află în Bălți, pe strada Ștefan cel Mare, 13.',
+          'Examinarea alunițelor și a altor formațiuni se face de medicul [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatolog]] la consultație. Vă puteți programa la telefon sau prin formularul de pe site. Clinica se află în Bălți, pe strada Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -399,7 +399,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Как лечат гипергидроз',
         paragraphs: [
-          'Лечение идёт по ступеням. Сначала назначают антиперспиранты с солями алюминия, которые наносят на сухую кожу на ночь. Если их недостаточно, рассматривают другие подходы: препараты внутрь, ионофорез для ладоней и стоп, инъекции ботулинического токсина в проблемную зону. Хирургические методы применяют редко и только после обсуждения рисков.',
+          'Лечение идёт по ступеням. Сначала назначают антиперспиранты с солями алюминия, которые наносят на сухую кожу на ночь. Если их недостаточно, рассматривают другие подходы: препараты внутрь, ионофорез для ладоней и стоп, инъекции [[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|ботулинического токсина]] в проблемную зону. Хирургические методы применяют редко и только после обсуждения рисков.',
           'Выбор зависит от того, где именно вы потеете, насколько это мешает и какие методы вам подходят. Врач объясняет плюсы и ограничения каждого варианта.',
         ],
       },
@@ -433,14 +433,14 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Когда нужна срочная помощь',
         paragraphs: [
-          'Срочно обратитесь за медицинской помощью, если сильное потоотделение сопровождается болью в груди, одышкой, потерей сознания, высокой температурой или резким ухудшением самочувствия. Не откладывайте визит и из-за кожных осложнений: если пот вызывает мацерацию кожи, стойкий неприятный запах или грибковое поражение стоп, это тоже повод показаться дерматологу.',
+          'Срочно обратитесь за медицинской помощью, если сильное потоотделение сопровождается болью в груди, одышкой, потерей сознания, высокой температурой или резким ухудшением самочувствия. Не откладывайте визит и из-за кожных осложнений: если пот вызывает мацерацию кожи, стойкий неприятный запах или грибковое поражение стоп, это тоже повод показаться [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматологу]].',
         ],
       },
       {
         h2: 'Что помогает в повседневной жизни',
         paragraphs: [
           'Выбирайте одежду из натуральных тканей, меняйте её чаще, соблюдайте гигиену. Если острая пища, кофеин или алкоголь усиливают потоотделение, ограничьте их. Стресс тоже провоцирует потливость, поэтому в плане лечения учитывают и его.',
-          'Для консультации дерматолога в Бельцах запишитесь в клинику Meddera по телефону или через форму на сайте.',
+          'Для [[dermatolog-beltsy-kogda-nuzhna-konsultaciya|консультации дерматолога]] в Бельцах запишитесь в клинику Meddera по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -460,7 +460,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Cum se tratează hiperhidroza',
         paragraphs: [
-          'Tratamentul se face în trepte. Mai întâi se recomandă antiperspirante cu săruri de aluminiu, aplicate pe pielea uscată, seara. Dacă nu sunt suficiente, se iau în calcul alte abordări: preparate pe cale orală, iontoforeza pentru palme și tălpi, injecții cu toxină botulinică în zona problemă. Metodele chirurgicale se folosesc rar și doar după discutarea riscurilor.',
+          'Tratamentul se face în trepte. Mai întâi se recomandă antiperspirante cu săruri de aluminiu, aplicate pe pielea uscată, seara. Dacă nu sunt suficiente, se iau în calcul alte abordări: preparate pe cale orală, iontoforeza pentru palme și tălpi, injecții cu [[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|toxină botulinică]] în zona problemă. Metodele chirurgicale se folosesc rar și doar după discutarea riscurilor.',
           'Alegerea depinde de locul în care transpirați, cât de mult deranjează și ce metode vi se potrivesc. Medicul explică avantajele și limitele fiecărei variante.',
         ],
       },
@@ -495,7 +495,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
         h2: 'Ce ajută în viața de zi cu zi',
         paragraphs: [
           'Alegeți haine din țesături naturale, schimbați-le mai des, respectați igiena. Dacă mâncarea picantă, cafeaua sau alcoolul accentuează transpirația, limitați-le. Stresul provoacă și el transpirație, de aceea este luat în calcul în planul de tratament.',
-          'Pentru consultația dermatologului în Bălți programați-vă la clinica Meddera, la telefon sau prin formularul de pe site.',
+          'Pentru consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți programați-vă la clinica Meddera, la telefon sau prin formularul de pe site.',
         ],
       },
     ],

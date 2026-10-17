@@ -6,19 +6,19 @@ export const LIPS_B: ArticleRewrites = {
       {
         h2: 'Почему нужно знать противопоказания',
         paragraphs: [
-          'Инъекции в область губ это медицинская процедура, и в некоторых ситуациях она может навредить. Противопоказания помогают понять, когда процедуру нельзя проводить вовсе, а когда её лучше отложить. Окончательное решение всегда принимает врач после осмотра и беседы.',
+          'Инъекции в область губ это медицинская процедура, и в некоторых ситуациях она может навредить. [[botoks-pokazaniya-protivopokazaniya|Противопоказания]] помогают понять, когда процедуру нельзя проводить вовсе, а когда её лучше отложить. Окончательное решение всегда принимает врач после осмотра и беседы.',
         ],
       },
       {
         h2: 'Когда процедуру не проводят',
         paragraphs: [
-          'Филлеры не вводят при беременности и кормлении грудью, поскольку данных о безопасности недостаточно. Не проводят её при воспалении, инфекции или высыпаниях в области губ, при аллергии на компоненты препарата или анестетика, при тяжёлых заболеваниях в стадии обострения.',
+          '[[uvelichenie-gub-beltsy-vidy-fillerov|Филлеры]] не вводят при беременности и кормлении грудью, поскольку данных о безопасности недостаточно. Не проводят её при воспалении, инфекции или высыпаниях в области губ, при аллергии на компоненты препарата или анестетика, при тяжёлых заболеваниях в стадии обострения.',
         ],
       },
       {
         h2: 'Когда процедуру откладывают',
         paragraphs: [
-          'Временной причиной могут быть простуда, повышенная температура, обострение герпеса, недавние стоматологические вмешательства и свежие повреждения кожи. В таких случаях сначала дожидаются выздоровления и заживления, а затем врач назначает новую дату. Торопиться не стоит, потому что это вопрос безопасности.',
+          'Временной причиной могут быть простуда, повышенная температура, обострение [[uvelichenie-gub-gerpes-profilaktika|герпеса]], недавние стоматологические вмешательства и свежие повреждения кожи. В таких случаях сначала дожидаются выздоровления и заживления, а затем врач назначает новую дату. Торопиться не стоит, потому что это вопрос безопасности.',
         ],
       },
       {
@@ -66,7 +66,7 @@ export const LIPS_B: ArticleRewrites = {
       {
         h2: 'Почему честность важна',
         paragraphs: [
-          'Полные сведения о здоровье помогают избежать осложнений. Умолчание о заболевании или лекарстве может привести к нежелательной реакции. Врач сохраняет конфиденциальность, и вопросов о здоровье стесняться не нужно.',
+          'Полные сведения о здоровье помогают избежать [[uvelichenie-gub-oslozhneniya-profilaktika|осложнений]]. Умолчание о заболевании или лекарстве может привести к нежелательной реакции. Врач сохраняет конфиденциальность, и вопросов о здоровье стесняться не нужно.',
         ],
       },
       {
@@ -86,25 +86,25 @@ export const LIPS_B: ArticleRewrites = {
       {
         h2: 'De ce trebuie să cunoașteți contraindicațiile',
         paragraphs: [
-          'Injecțiile în zona buzelor sunt o procedură medicală și în unele situații pot face rău. Contraindicațiile ajută să înțelegeți când procedura nu se poate face deloc și când e mai bine să fie amânată. Decizia finală o ia întotdeauna medicul, după examinare și discuție.',
+          'Injecțiile în zona buzelor sunt o procedură medicală și în unele situații pot face rău. [[botoks-pokazaniya-protivopokazaniya|Contraindicațiile]] ajută să înțelegeți când procedura nu se poate face deloc și când e mai bine să fie amânată. Decizia finală o ia întotdeauna medicul, după examinare și discuție.',
         ],
       },
       {
         h2: 'Când procedura nu se face',
         paragraphs: [
-          'Fillerele nu se introduc în sarcină și alăptare, deoarece datele despre siguranță sunt insuficiente. Procedura nu se face în inflamație, infecție sau erupții în zona buzelor, în alergie la componentele preparatului sau ale anestezicului și în boli grave în puseu.',
+          '[[uvelichenie-gub-beltsy-vidy-fillerov|Fillerele]] nu se introduc în sarcină și alăptare, deoarece datele despre siguranță sunt insuficiente. Procedura nu se face în inflamație, infecție sau erupții în zona buzelor, în alergie la componentele preparatului sau ale anestezicului și în boli grave în puseu.',
         ],
       },
       {
         h2: 'Când procedura se amână',
         paragraphs: [
-          'O cauză temporară pot fi răceala, febra, puseul de herpes, intervențiile stomatologice recente și leziunile proaspete ale pielii. În astfel de cazuri se așteaptă mai întâi însănătoșirea și vindecarea, iar apoi medicul stabilește o dată nouă. Nu vă grăbiți, pentru că este o chestiune de siguranță.',
+          'O cauză temporară pot fi răceala, febra, puseul de [[uvelichenie-gub-gerpes-profilaktika|herpes]], intervențiile stomatologice recente și leziunile proaspete ale pielii. În astfel de cazuri se așteaptă mai întâi însănătoșirea și vindecarea, iar apoi medicul stabilește o dată nouă. Nu vă grăbiți, pentru că este o chestiune de siguranță.',
         ],
       },
       {
         h2: 'Bolile despre care spuneți medicului',
         paragraphs: [
-          'Povestiți despre tulburările de coagulare a sângelui, bolile autoimune, tendința la cicatrici groase, bolile cronice și operațiile suferite. Unele stări nu înseamnă refuz, dar cer prudență și o decizie individuală. Mai bine spuneți în plus decât să tăceți.',
+          'Povestiți despre tulburările de coagulare a sângelui, bolile autoimune, tendința la cicatrici groase, bolile cronice și operațiile suferite. Unele stări nu înseamnă refuz, dar cer prudență și o decizie individuală.',
         ],
       },
       {
@@ -140,13 +140,13 @@ export const LIPS_B: ArticleRewrites = {
       {
         h2: 'Prudență specială după alte proceduri',
         paragraphs: [
-          'Dacă ați făcut recent injecții, proceduri cu laser sau altele pe față, spuneți aceasta. Între intervenții sunt necesare pauze, ca țesuturile să se refacă. Medicul vă spune ce interval vi se potrivește.',
+          'Dacă ați făcut recent injecții, proceduri cu laser sau altele pe față, spuneți aceasta. Între intervenții sunt necesare pauze, ca țesuturile să se refacă.',
         ],
       },
       {
         h2: 'De ce contează sinceritatea',
         paragraphs: [
-          'Informațiile complete despre sănătate ajută la evitarea complicațiilor. Tăcerea despre o boală sau un medicament poate duce la o reacție nedorită. Medicul păstrează confidențialitatea și nu trebuie să vă fie rușine de întrebările despre sănătate.',
+          'Informațiile complete despre sănătate ajută la evitarea [[uvelichenie-gub-oslozhneniya-profilaktika|complicațiilor]]. Tăcerea despre o boală sau un medicament poate duce la o reacție nedorită. Medicul păstrează confidențialitatea și nu trebuie să vă fie rușine de întrebările despre sănătate.',
         ],
       },
       {
@@ -162,19 +162,19 @@ export const LIPS_B: ArticleRewrites = {
       {
         h2: 'Из чего складывается форма губ',
         paragraphs: [
-          'Форму губ определяют контур, изгиб верхней губы, уголки рта, объём и соотношение верхней и нижней губы. Эти элементы работают вместе, и изменение одного влияет на остальные. Поэтому врач оценивает губы не отдельно, а в составе всего лица.',
+          'Форму губ определяют контур, изгиб [[uvelichenie-gub-verkhnyaya-nizhnyaya|верхней губы]], уголки рта, объём и соотношение верхней и нижней губы. Эти элементы работают вместе, и изменение одного влияет на остальные. Поэтому врач оценивает губы не отдельно, а в составе всего лица.',
         ],
       },
       {
         h2: 'Контур и граница',
         paragraphs: [
-          'Чёткая граница губ делает их выразительнее. С возрастом или от природы она может быть размытой. Врач может аккуратно подчеркнуть контур, не придавая губам неестественной «нарисованности». Здесь важна мера: слишком резкая линия выглядит искусственно.',
+          'Чёткая граница губ делает их выразительнее. С [[uvelichenie-gub-vozrastnye-izmeneniya|возрастом]] или от природы она может быть размытой. Врач может аккуратно подчеркнуть контур, не придавая губам неестественной «нарисованности». Здесь важна мера: слишком резкая линия выглядит искусственно.',
         ],
       },
       {
         h2: 'Уголки рта',
         paragraphs: [
-          'Опущенные уголки рта придают лицу уставший или печальный вид. Иногда причина в мимике и возрастных изменениях тканей. Врач объяснит, можно ли улучшить эту зону инъекциями, или стоит выбрать другой подход. Не всякий вопрос решается филлером.',
+          'Опущенные уголки рта придают лицу уставший или печальный вид. Иногда причина в мимике и возрастных изменениях тканей. Врач объяснит, можно ли улучшить эту зону инъекциями, или стоит выбрать другой подход. Не всякий вопрос решается [[uvelichenie-gub-beltsy-vidy-fillerov|филлером]].',
         ],
       },
       {
@@ -236,19 +236,19 @@ export const LIPS_B: ArticleRewrites = {
       {
         h2: 'Din ce se compune forma buzelor',
         paragraphs: [
-          'Forma buzelor este determinată de contur, curbura buzei superioare, colțurile gurii, volum și raportul dintre buza superioară și cea inferioară. Aceste elemente lucrează împreună, iar schimbarea unuia influențează restul. De aceea medicul evaluează buzele nu separat, ci ca parte a întregii fețe.',
+          'Forma buzelor este determinată de contur, curbura buzei superioare, colțurile gurii, volum și raportul dintre [[uvelichenie-gub-verkhnyaya-nizhnyaya|buza superioară]] și cea inferioară. Aceste elemente lucrează împreună, iar schimbarea unuia influențează restul. De aceea medicul evaluează buzele nu separat, ci ca parte a întregii fețe.',
         ],
       },
       {
         h2: 'Conturul și limita',
         paragraphs: [
-          'O limită clară a buzelor le face mai expresive. Odată cu vârsta sau din fire ea poate fi estompată. Medicul poate sublinia atent conturul, fără să dea buzelor un aspect nenatural de „desenat”. Aici contează măsura: o linie prea dură arată artificial.',
+          'O limită clară a buzelor le face mai expresive. Odată cu [[uvelichenie-gub-vozrastnye-izmeneniya|vârsta]] sau din fire ea poate fi estompată. Medicul poate sublinia atent conturul, fără să dea buzelor un aspect nenatural de „desenat”.',
         ],
       },
       {
         h2: 'Colțurile gurii',
         paragraphs: [
-          'Colțurile căzute ale gurii dau feței un aer obosit sau trist. Uneori cauza ține de mimică și de schimbările de vârstă ale țesuturilor. Medicul explică dacă zona poate fi îmbunătățită prin injecții sau dacă merită aleasă altă abordare. Nu orice problemă se rezolvă cu filler.',
+          'Colțurile căzute ale gurii dau feței un aer obosit sau trist. Uneori cauza ține de mimică și de schimbările de vârstă ale țesuturilor. Medicul explică dacă zona poate fi îmbunătățită prin injecții sau dacă merită aleasă altă abordare. Nu orice problemă se rezolvă cu [[uvelichenie-gub-beltsy-vidy-fillerov|filler]].',
         ],
       },
       {
@@ -290,7 +290,7 @@ export const LIPS_B: ArticleRewrites = {
       {
         h2: 'Fotografiile ca reper',
         paragraphs: [
-          'Aduceți la consultație imagini în care vă place forma buzelor și arătați ce vă atrage. Aceasta ajută să vorbiți pe aceeași limbă. Medicul explică cât de realizabile sunt dorințele dumneavoastră, pentru că buzele altcuiva nu pot fi copiate.',
+          'Aduceți la consultație imagini în care vă place forma buzelor și arătați ce vă atrage. Medicul explică cât de realizabile sunt dorințele dumneavoastră, pentru că buzele altcuiva nu pot fi copiate.',
         ],
       },
       {
@@ -324,7 +324,7 @@ export const LIPS_B: ArticleRewrites = {
       {
         h2: 'Как выравнивают',
         paragraphs: [
-          'Чаще всего препарат добавляют в ту часть, где объёма меньше, чтобы приблизить пропорции. Если асимметрия возникла из-за избытка прежнего филлера, его можно частично растворить специальным ферментом. Иногда применяют сочетание обоих подходов. Какой вариант подходит, определяет врач.',
+          'Чаще всего препарат добавляют в ту часть, где объёма меньше, чтобы приблизить пропорции. Если асимметрия возникла из-за избытка прежнего [[uvelichenie-gub-beltsy-vidy-fillerov|филлера]], его можно частично растворить специальным ферментом. Иногда применяют сочетание обоих подходов. Какой вариант подходит, определяет врач.',
         ],
       },
       {
@@ -336,13 +336,13 @@ export const LIPS_B: ArticleRewrites = {
       {
         h2: 'Какой результат реалистичен',
         paragraphs: [
-          'Полной симметрии не бывает ни у кого, и стремиться к ней не нужно. Реалистичная цель это уменьшить заметные различия и сделать губы гармоничными на вашем лице. Результат остаётся временным, потому что гиалуроновая кислота постепенно рассасывается.',
+          'Полной [[uvelichenie-gub-forma-simmetriya|симметрии]] не бывает ни у кого, и стремиться к ней не нужно. Реалистичная цель это уменьшить заметные различия и сделать губы гармоничными на вашем лице. Результат остаётся временным, потому что [[uvelichenie-gub-gialuronovaya-kislota|гиалуроновая кислота]] постепенно рассасывается.',
         ],
       },
       {
         h2: 'Когда нужна консультация врача',
         paragraphs: [
-          'Обратитесь к врачу, если асимметрия появилась внезапно, сопровождается болью, отёком или онемением, или если она возникла после процедуры. Не пытайтесь исправить её самостоятельно и не обращайтесь к случайным специалистам. Чем раньше врач осмотрит губы, тем проще подобрать решение.',
+          'Обратитесь к врачу, если асимметрия появилась внезапно, сопровождается [[uvelichenie-gub-bolevye-oshchushcheniya|болью]], отёком или онемением, или если она возникла после процедуры. Не пытайтесь исправить её самостоятельно и не обращайтесь к случайным специалистам. Чем раньше врач осмотрит губы, тем проще подобрать решение.',
         ],
       },
       {
@@ -398,25 +398,25 @@ export const LIPS_B: ArticleRewrites = {
       {
         h2: 'Cum se egalizează',
         paragraphs: [
-          'Cel mai des preparatul se adaugă în partea în care volumul este mai mic, ca să se apropie proporțiile. Dacă asimetria a apărut din cauza excesului unui filler anterior, el poate fi dizolvat parțial cu o enzimă specială. Uneori se aplică o combinație a ambelor abordări. Care variantă se potrivește stabilește medicul.',
+          'Cel mai des preparatul se adaugă în partea în care volumul este mai mic, ca să se apropie proporțiile. Dacă asimetria a apărut din cauza excesului unui [[uvelichenie-gub-beltsy-vidy-fillerov|filler]] anterior, el poate fi dizolvat parțial cu o enzimă specială. Uneori se aplică o combinație a ambelor abordări.',
         ],
       },
       {
         h2: 'De ce nu e bine să vă grăbiți',
         paragraphs: [
-          'În primele zile după injecții edemul deformează imaginea și e prea devreme să evaluați rezultatul. Medicul vă poate invita la un control repetat, când țesuturile s-au liniștit, și atunci decide dacă sunt necesare ajustări. Graba într-o astfel de chestiune strică mai des decât ajută.',
+          'În primele zile după injecții edemul deformează imaginea și e prea devreme să evaluați rezultatul. Medicul vă poate invita la un control repetat, când țesuturile s-au liniștit, și atunci decide dacă sunt necesare ajustări.',
         ],
       },
       {
         h2: 'Ce rezultat este realist',
         paragraphs: [
-          'Simetria completă nu există la nimeni și nu trebuie urmărită. Un scop realist este să reduceți diferențele vizibile și să faceți buzele armonioase pe fața dumneavoastră. Rezultatul rămâne temporar, deoarece acidul hialuronic se resoarbe treptat.',
+          '[[uvelichenie-gub-forma-simmetriya|Simetria]] completă nu există la nimeni și nu trebuie urmărită. Un scop realist este să reduceți diferențele vizibile și să faceți buzele armonioase pe fața dumneavoastră. Rezultatul rămâne temporar, deoarece [[uvelichenie-gub-gialuronovaya-kislota|acidul hialuronic]] se resoarbe treptat.',
         ],
       },
       {
         h2: 'Când e nevoie de consultația medicului',
         paragraphs: [
-          'Adresați-vă medicului dacă asimetria a apărut brusc, este însoțită de durere, edem sau amorțeală ori dacă a apărut după o procedură. Nu încercați să o corectați singură și nu mergeți la specialiști întâmplători. Cu cât medicul examinează mai repede buzele, cu atât e mai simplu să aleagă soluția.',
+          'Adresați-vă medicului dacă asimetria a apărut brusc, este însoțită de [[uvelichenie-gub-bolevye-oshchushcheniya|durere]], edem sau amorțeală ori dacă a apărut după o procedură. Nu încercați să o corectați singură și nu mergeți la specialiști întâmplători. Cu cât medicul examinează mai repede buzele, cu atât e mai simplu să aleagă soluția.',
         ],
       },
       {

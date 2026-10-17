@@ -6,7 +6,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Чем занимается дерматолог',
         paragraphs: [
-          'Дерматолог занимается заболеваниями кожи, волос и ногтей. К нему обращаются с акне, дерматитами, экземой, псориазом, грибковыми поражениями, родинками, папилломами, выпадением волос. Часть этих состояний связана с общим здоровьем, поэтому врач может направить вас к эндокринологу, гастроэнтерологу, аллергологу или другому специалисту.',
+          '[[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|Дерматолог]] занимается заболеваниями кожи, волос и ногтей. К нему обращаются с [[akne-prichiny-stadii-lechenie|акне]], дерматитами, экземой, псориазом, грибковыми поражениями, родинками, папилломами, выпадением волос. Часть этих состояний связана с общим здоровьем, поэтому врач может направить вас к эндокринологу, гастроэнтерологу, аллергологу или другому специалисту.',
         ],
       },
       {
@@ -18,7 +18,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Признаки, при которых визит нельзя откладывать',
         paragraphs: [
-          'Не откладывайте приём, если родинка меняет форму, цвет или размер, начинает кровоточить или зудеть, если появилась язвочка, которая не заживает, или быстро растущее образование. Срочная помощь нужна при высокой температуре с сыпью, отёке лица и губ, затруднённом дыхании, обширных волдырях и болезненных пузырях.',
+          'Не откладывайте приём, если [[rodinki-kogda-obratitsya-k-dermatologu|родинка]] меняет форму, цвет или размер, начинает кровоточить или зудеть, если появилась язвочка, которая не заживает, или быстро растущее образование. Срочная помощь нужна при высокой температуре с сыпью, отёке лица и губ, затруднённом дыхании, обширных волдырях и болезненных пузырях.',
         ],
       },
       {
@@ -36,7 +36,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Дерматоскопия',
         paragraphs: [
-          'Если врача беспокоит образование на коже, он проводит дерматоскопию: осмотр с увеличением, который помогает оценить структуру родинки. Исследование безболезненное и не требует подготовки. Подробнее об этом методе мы рассказали в отдельной статье о дерматоскопии.',
+          'Если врача беспокоит образование на коже, он проводит [[dermatoskopiya-chto-eto-zachem-nuzhna|дерматоскопию]]: осмотр с увеличением, который помогает оценить структуру родинки. Исследование безболезненное и не требует подготовки. Подробнее об этом методе мы рассказали в отдельной статье о дерматоскопии.',
         ],
       },
       {
@@ -48,7 +48,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Почему самолечение мешает',
         paragraphs: [
-          'Самолечение отнимает время. Гормональная мазь, которая помогла знакомому, может усилить грибковое поражение или истончить кожу. Народные средства иногда вызывают ожоги и аллергию. Если вы уже что-то применяли, расскажите об этом врачу: так он точнее оценит картину и подберёт лечение.',
+          'Самолечение отнимает время. Гормональная мазь, которая помогла знакомому, может усилить [[gribkovye-infekcii-kozhi-diagnostika-lechenie|грибковое поражение]] или истончить кожу. Народные средства иногда вызывают ожоги и аллергию. Если вы уже что-то применяли, расскажите об этом врачу: так он точнее оценит картину и подберёт лечение.',
         ],
       },
       {
@@ -68,13 +68,13 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Cu ce se ocupă dermatologul',
         paragraphs: [
-          'Dermatologul se ocupă de bolile pielii, ale părului și ale unghiilor. I se adresează oamenii cu acnee, dermatite, eczemă, psoriazis, micoze, alunițe, negi, căderea părului. O parte din aceste afecțiuni se leagă de sănătatea generală, de aceea medicul vă poate trimite la endocrinolog, gastroenterolog, alergolog sau la alt specialist.',
+          '[[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|Dermatologul]] se ocupă de bolile pielii, ale părului și ale unghiilor. I se adresează oamenii cu [[akne-prichiny-stadii-lechenie|acnee]], dermatite, eczemă, psoriazis, micoze, alunițe, negi, căderea părului. O parte din aceste afecțiuni se leagă de sănătatea generală, de aceea medicul vă poate trimite la endocrinolog, gastroenterolog, alergolog sau la alt specialist.',
         ],
       },
       {
         h2: 'Când merită să vă programați',
         paragraphs: [
-          'Merită să vă programați dacă erupția sau mâncărimea durează mai multe săptămâni, dacă remediile din farmacie nu ajută sau starea se înrăutățește. Motive sunt și înroșirile persistente, descuamarea, coșurile după care rămân cicatrici, schimbările unghiilor și ale părului. Un control profilactic al pielii este util celor cu multe alunițe sau cu pielea deschisă.',
+          'Merită să vă programați dacă erupția sau mâncărimea durează mai multe săptămâni, dacă remediile din farmacie nu ajută sau starea se înrăutățește. Motive sunt și înroșirile persistente, descuamarea, coșurile după care rămân cicatrici, schimbările unghiilor și ale părului. Un control profilactic al pielii este util celor cu multe [[rodinki-kogda-obratitsya-k-dermatologu|alunițe]] sau cu pielea deschisă.',
         ],
       },
       {
@@ -98,7 +98,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Dermatoscopia',
         paragraphs: [
-          'Dacă medicul este îngrijorat de o formațiune pe piele, face dermatoscopie: o examinare cu mărire care ajută la evaluarea structurii alunițelor. Investigația este nedureroasă și nu cere pregătire. Despre această metodă am scris mai detaliat într-un articol separat despre dermatoscopie.',
+          'Dacă medicul este îngrijorat de o formațiune pe piele, face [[dermatoskopiya-chto-eto-zachem-nuzhna|dermatoscopie]]: o examinare cu mărire care ajută la evaluarea structurii alunițelor. Investigația este nedureroasă și nu cere pregătire. Despre această metodă am scris mai detaliat într-un articol separat despre dermatoscopie.',
         ],
       },
       {
@@ -110,7 +110,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'De ce încurcă automedicația',
         paragraphs: [
-          'Automedicația ia timp. Un unguent hormonal care a ajutat un cunoscut poate agrava o micoză sau subția pielea. Remediile populare provoacă uneori arsuri și alergii. Dacă ați folosit deja ceva, spuneți medicului: astfel el apreciază mai exact tabloul și alege tratamentul.',
+          'Automedicația ia timp. Un unguent hormonal care a ajutat un cunoscut poate agrava o [[gribkovye-infekcii-kozhi-diagnostika-lechenie|micoză]] sau subția pielea. Remediile populare provoacă uneori arsuri și alergii. Dacă ați folosit deja ceva, spuneți medicului: astfel el apreciază mai exact tabloul și alege tratamentul.',
         ],
       },
       {
@@ -132,7 +132,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Что такое акне',
         paragraphs: [
-          'Акне это хроническое воспаление сальных желёз и волосяных фолликулов. Оно проявляется комедонами, воспалёнными прыщами, болезненными узлами и встречается в любом возрасте. Чаще всего высыпания появляются на лице, но могут возникать на груди и спине. Заболевание зависит от гормонов и состояния кожи.',
+          '[[svc:terapyya-anty-akne-v-belczah|Акне]] это хроническое воспаление сальных желёз и волосяных фолликулов. Оно проявляется комедонами, воспалёнными прыщами, болезненными узлами и встречается в любом возрасте. Чаще всего высыпания появляются на лице, но могут возникать на груди и спине. Заболевание зависит от гормонов и состояния кожи.',
         ],
       },
       {
@@ -168,7 +168,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Рубцы и пятна после акне',
         paragraphs: [
-          'Воспаление может оставить красные и коричневые пятна, а также рубцы. Чем сильнее и дольше было воспаление, тем выше риск. Заниматься постакне обычно начинают, когда высыпания стихли. Методы подбирает врач: химические пилинги, мезотерапия, аппаратные процедуры. Мы пишем об этом в отдельной статье о мезотерапии при акне и постакне.',
+          'Воспаление может оставить красные и коричневые пятна, а также рубцы. Чем сильнее и дольше было воспаление, тем выше риск. Заниматься [[mezoterapiya-lica-akne-postakne|постакне]] обычно начинают, когда высыпания стихли. Методы подбирает врач: химические пилинги, мезотерапия, аппаратные процедуры. Мы пишем об этом в отдельной статье о мезотерапии при акне и постакне.',
         ],
       },
       {
@@ -200,7 +200,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Ce este acneea',
         paragraphs: [
-          'Acneea este o inflamație cronică a glandelor sebacee și a foliculilor piloși. Se manifestă prin comedoane, coșuri inflamate, noduli dureroși și apare la orice vârstă. De obicei erupțiile apar pe față, dar pot fi pe piept și pe spate. Boala depinde de hormoni și de starea pielii.',
+          '[[svc:terapyya-anty-akne-v-belczah|Acneea]] este o inflamație cronică a glandelor sebacee și a foliculilor piloși. Se manifestă prin comedoane, coșuri inflamate, noduli dureroși și apare la orice vârstă. De obicei erupțiile apar pe față, dar pot fi pe piept și pe spate. Boala depinde de hormoni și de starea pielii.',
         ],
       },
       {
@@ -236,7 +236,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Cicatrici și pete după acnee',
         paragraphs: [
-          'Inflamația poate lăsa pete roșii și maronii, precum și cicatrici. Cu cât inflamația a fost mai puternică și mai lungă, cu atât riscul este mai mare. De postacnee se ocupă de obicei când erupțiile s-au liniștit. Metodele le alege medicul: peeling chimic, mezoterapie, proceduri cu aparate. Scriem despre aceasta într-un articol separat despre mezoterapia în acnee și postacnee.',
+          'Inflamația poate lăsa pete roșii și maronii, precum și cicatrici. Cu cât inflamația a fost mai puternică și mai lungă, cu atât riscul este mai mare. De [[mezoterapiya-lica-akne-postakne|postacnee]] se ocupă de obicei când erupțiile s-au liniștit. Metodele le alege medicul: peeling chimic, mezoterapie, proceduri cu aparate. Scriem despre aceasta într-un articol separat despre mezoterapia în acnee și postacnee.',
         ],
       },
       {
@@ -282,7 +282,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Формы заболевания',
         paragraphs: [
-          'Чаще всего встречается бляшечная форма. Бывает каплевидная с мелкими высыпаниями после инфекций, псориаз волосистой части головы и ногтей, а также форма, при которой поражаются суставы. Врач определяет форму осмотром, иногда нужна биопсия, потому что похожие проявления бывают при экземе, грибковых и других заболеваниях.',
+          'Чаще всего встречается бляшечная форма. Бывает каплевидная с мелкими высыпаниями после инфекций, псориаз волосистой части головы и ногтей, а также форма, при которой поражаются суставы. Врач определяет форму осмотром, иногда нужна биопсия, потому что похожие проявления бывают при [[ekzema-kak-oblegchit-simptomy|экземе]], грибковых и других заболеваниях.',
         ],
       },
       {
@@ -306,7 +306,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Псориаз и суставы',
         paragraphs: [
-          'У части людей псориаз сопровождается болью и скованностью в суставах, особенно по утрам, припухлостью пальцев, болью в пятках. Эти симптомы нельзя игнорировать, потому что поражение суставов лечат отдельно, и ранняя помощь снижает риск необратимых изменений. Расскажите о таких жалобах дерматологу.',
+          'У части людей псориаз сопровождается болью и скованностью в суставах, особенно по утрам, припухлостью пальцев, болью в пятках. Эти симптомы нельзя игнорировать, потому что поражение суставов лечат отдельно, и ранняя помощь снижает риск необратимых изменений. Расскажите о таких жалобах [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматологу]].',
         ],
       },
       {
@@ -318,7 +318,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Ногти и волосистая часть головы',
         paragraphs: [
-          'Псориаз может поражать ногти: появляются точечные углубления, утолщение, отслойка пластины. На волосистой части головы чешуйки напоминают сильную перхоть и сопровождаются зудом. Эти формы поддаются лечению дольше, чем поражение гладкой кожи, и терапию иногда подбирают не сразу. Корки не отдирайте, чтобы не усилить воспаление.',
+          'Псориаз может поражать ногти: появляются точечные углубления, утолщение, отслойка пластины. На волосистой части головы чешуйки напоминают сильную [[seboreya-kozhi-golovy-lechenie|перхоть]] и сопровождаются зудом. Эти формы поддаются лечению дольше, чем поражение гладкой кожи, и терапию иногда подбирают не сразу. Корки не отдирайте, чтобы не усилить воспаление.',
         ],
       },
       {
@@ -350,7 +350,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Formele bolii',
         paragraphs: [
-          'Cea mai frecventă formă este cea în plăci. Există forma ca picătura, cu erupții mici după infecții, psoriazisul scalpului și al unghiilor, precum și forma în care sunt afectate articulațiile. Medicul stabilește forma prin examinare, uneori este nevoie de biopsie, pentru că manifestări asemănătoare apar în eczemă, în micoze și în alte boli.',
+          'Cea mai frecventă formă este cea în plăci. Există forma ca picătura, cu erupții mici după infecții, psoriazisul scalpului și al unghiilor, precum și forma în care sunt afectate articulațiile. Medicul stabilește forma prin examinare, uneori este nevoie de biopsie, pentru că manifestări asemănătoare apar în [[ekzema-kak-oblegchit-simptomy|eczemă]], în micoze și în alte boli.',
         ],
       },
       {
@@ -386,7 +386,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Unghiile și scalpul',
         paragraphs: [
-          'Psoriazisul poate afecta unghiile: apar adâncituri punctiforme, îngroșare, desprinderea plăcii. Pe scalp scuamele seamănă cu mătreața abundentă și sunt însoțite de mâncărime. Aceste forme se tratează mai îndelungat decât afectarea pielii netede, iar terapia se alege uneori nu din prima.',
+          'Psoriazisul poate afecta unghiile: apar adâncituri punctiforme, îngroșare, desprinderea plăcii. Pe scalp scuamele seamănă cu [[seboreya-kozhi-golovy-lechenie|mătreața]] abundentă și sunt însoțite de mâncărime. Aceste forme se tratează mai îndelungat decât afectarea pielii netede, iar terapia se alege uneori nu din prima.',
         ],
       },
       {
@@ -450,7 +450,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Экзема у детей и взрослых',
         paragraphs: [
-          'У детей экзема часто проявляется на щеках и сгибах конечностей, у взрослых чаще на кистях и стопах. Подход к лечению отличается, поэтому выбирать препараты для ребёнка самостоятельно нельзя. Об особенностях у детей мы рассказали в статье об атопическом дерматите у детей.',
+          'У детей экзема часто проявляется на щеках и сгибах конечностей, у взрослых чаще на кистях и стопах. Подход к лечению отличается, поэтому выбирать препараты для ребёнка самостоятельно нельзя. Об особенностях у детей мы рассказали в статье об [[atopicheskij-dermatit-uhod-profilaktika|атопическом дерматите]] у детей.',
         ],
       },
       {
@@ -518,7 +518,7 @@ export const DERM_I: ArticleRewrites = {
       {
         h2: 'Eczema la copii și la adulți',
         paragraphs: [
-          'La copii eczema apare adesea pe obraji și pe fața de flexie a membrelor, la adulți mai des pe mâini și pe tălpi. Abordarea tratamentului diferă, de aceea preparatele pentru copil nu se aleg singur. Despre particularitățile de la copii am scris în articolul despre dermatita atopică la copii.',
+          'La copii eczema apare adesea pe obraji și pe fața de flexie a membrelor, la adulți mai des pe mâini și pe tălpi. Abordarea tratamentului diferă, de aceea preparatele pentru copil nu se aleg singur. Despre particularitățile de la copii am scris în articolul despre [[atopicheskij-dermatit-uhod-profilaktika|dermatita atopică]] la copii.',
         ],
       },
       {

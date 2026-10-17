@@ -6,7 +6,7 @@ export const DERMATOLOGIST_E: ArticleRewrites = {
       {
         h2: 'Что такое розацеа',
         paragraphs: [
-          'Розацеа это хроническое заболевание кожи лица. Оно проявляется стойким покраснением центральной части лица: щёк, носа, лба, подбородка. Со временем появляются сосудистые звёздочки, прыщеподобные высыпания без чёрных точек, ощущение жара и жжения. Иногда в процесс вовлекаются глаза. Розацеа не заразна и не связана с плохой гигиеной.',
+          'Розацеа это хроническое заболевание кожи лица. Оно проявляется стойким покраснением центральной части лица: щёк, носа, лба, подбородка. Со временем появляются сосудистые звёздочки, [[akne-prichiny-stadii-lechenie|прыщеподобные]] высыпания без чёрных точек, ощущение жара и жжения. Иногда в процесс вовлекаются глаза. Розацеа не заразна и не связана с плохой гигиеной.',
           'Точная причина неизвестна. Предполагают роль сосудистых реакций, особенностей иммунитета, клещей-демодекс на коже и наследственности.',
         ],
       },
@@ -19,7 +19,7 @@ export const DERMATOLOGIST_E: ArticleRewrites = {
       {
         h2: 'Чем розацеа отличается от акне',
         paragraphs: [
-          'При акне на коже есть комедоны, то есть чёрные точки и белые угри, а при розацеа их обычно нет, зато преобладают покраснение и приливы жара. Распознать заболевание самостоятельно трудно, а лечение акне нередко ухудшает розацеа, поэтому правильный диагноз ставит врач после осмотра.',
+          'При [[svc:terapyya-anty-akne-v-belczah|акне]] на коже есть комедоны, то есть чёрные точки и белые угри, а при розацеа их обычно нет, зато преобладают покраснение и приливы жара. Распознать заболевание самостоятельно трудно, а лечение акне нередко ухудшает розацеа, поэтому правильный диагноз ставит врач после осмотра.',
         ],
       },
       {
@@ -39,7 +39,7 @@ export const DERMATOLOGIST_E: ArticleRewrites = {
         h2: 'Когда нужно обратиться к врачу',
         paragraphs: [
           'Запишитесь на консультацию, если покраснение держится долго, появились высыпания, жжение, утолщение кожи носа или изменения со стороны глаз. Чем раньше начато лечение, тем проще удержать болезнь под контролем.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Консультацию [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
       {
@@ -77,7 +77,7 @@ export const DERMATOLOGIST_E: ArticleRewrites = {
       {
         h2: 'Ce este rozaceea',
         paragraphs: [
-          'Rozaceea este o boală cronică a pielii feței. Se manifestă prin roșeață persistentă a părții centrale a feței: obraji, nas, frunte, bărbie. Cu timpul apar vase dilatate, erupții asemănătoare acneei fără puncte negre, senzație de căldură și arsură. Uneori sunt implicați ochii. Rozaceea nu este contagioasă și nu ține de igiena slabă.',
+          'Rozaceea este o boală cronică a pielii feței. Se manifestă prin roșeață persistentă a părții centrale a feței: obraji, nas, frunte, bărbie. Cu timpul apar vase dilatate, erupții asemănătoare [[akne-prichiny-stadii-lechenie|acneei]] fără puncte negre, senzație de căldură și arsură. Uneori sunt implicați ochii. Rozaceea nu este contagioasă și nu ține de igiena slabă.',
           'Cauza exactă nu se cunoaște. Se presupune rolul reacțiilor vasculare, al particularităților imunității, al acarienilor Demodex de pe piele și al eredității.',
         ],
       },
@@ -90,7 +90,7 @@ export const DERMATOLOGIST_E: ArticleRewrites = {
       {
         h2: 'Cu ce diferă rozaceea de acnee',
         paragraphs: [
-          'În acnee pe piele apar comedoane, adică puncte negre și albe, iar în rozacee ele lipsesc de obicei, în schimb predomină roșeața și valurile de căldură. Boala e greu de recunoscut singur, iar tratamentul acneei agravează adesea rozaceea, de aceea diagnosticul corect îl pune medicul după examinare.',
+          'În [[svc:terapyya-anty-akne-v-belczah|acnee]] pe piele apar comedoane, adică puncte negre și albe, iar în rozacee ele lipsesc de obicei, în schimb predomină roșeața și valurile de căldură. Boala e greu de recunoscut singur, iar tratamentul acneei agravează adesea rozaceea, de aceea diagnosticul corect îl pune medicul după examinare.',
         ],
       },
       {
@@ -128,7 +128,7 @@ export const DERMATOLOGIST_E: ArticleRewrites = {
         h2: 'Când mergeți la medic',
         paragraphs: [
           'Programați-vă la consultație dacă roșeața persistă mult timp, au apărut erupții, arsură, îngroșarea pielii nasului sau schimbări la ochi. Cu cât tratamentul începe mai devreme, cu atât boala se ține mai ușor sub control.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -198,8 +198,8 @@ export const DERMATOLOGIST_E: ArticleRewrites = {
       {
         h2: 'Что бывает после ожога',
         paragraphs: [
-          'Через несколько дней кожа обычно шелушится. Иногда на месте ожога остаются пигментные пятна. Если у вас часто бывают ожоги, много родинок или светлая кожа, показывайте кожу дерматологу регулярно, чтобы вовремя заметить изменения.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Через несколько дней кожа обычно шелушится. Иногда на месте ожога остаются [[pigmentnye-pyatna-prichiny-lechenie|пигментные пятна]]. Если у вас часто бывают ожоги, много родинок или светлая кожа, показывайте кожу [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматологу]] регулярно, чтобы вовремя заметить изменения.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -261,8 +261,8 @@ export const DERMATOLOGIST_E: ArticleRewrites = {
       {
         h2: 'Ce urmează după arsură',
         paragraphs: [
-          'După câteva zile pielea se cojește de obicei. Uneori pe locul arsurii rămân pete pigmentare. Dacă aveți des arsuri, multe alunițe sau piele deschisă, arătați pielea dermatologului regulat, ca să observați la timp schimbările.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'După câteva zile pielea se cojește de obicei. Uneori pe locul arsurii rămân [[pigmentnye-pyatna-prichiny-lechenie|pete pigmentare]]. Dacă aveți des arsuri, multe alunițe sau piele deschisă, arătați pielea [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] regulat, ca să observați la timp schimbările.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Consultația dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -278,7 +278,7 @@ export const DERMATOLOGIST_E: ArticleRewrites = {
       {
         h2: 'Почему ноготь врастает',
         paragraphs: [
-          'Причины бывают разные: неправильная стрижка с закруглёнными уголками или слишком коротко, тесная обувь, травмы, потливость, особенности формы ногтя, грибковое поражение, наследственность, избыточный вес. Нагрузка во время ходьбы и спорта тоже играет роль.',
+          'Причины бывают разные: неправильная стрижка с закруглёнными уголками или слишком коротко, тесная обувь, травмы, потливость, особенности формы ногтя, [[gribkovye-infekcii-kozhi-diagnostika-lechenie|грибковое поражение]], наследственность, избыточный вес. Нагрузка во время ходьбы и спорта тоже играет роль.',
         ],
       },
       {
@@ -334,7 +334,7 @@ export const DERMATOLOGIST_E: ArticleRewrites = {
         h2: 'Как предотвратить повторение',
         paragraphs: [
           'Стригите ногти прямо, не обрезая уголки и не делая слишком коротко. Выбирайте обувь по размеру, чтобы пальцы не сдавливались. Следите за гигиеной стоп и меняйте носки, лечите грибок. Люди с диабетом должны осматривать стопы ежедневно.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Консультацию [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -398,7 +398,7 @@ export const DERMATOLOGIST_E: ArticleRewrites = {
         h2: 'Cum preveniți recidiva',
         paragraphs: [
           'Tăiați unghiile drept, fără a rotunji colțurile și fără a le scurta prea mult. Alegeți încălțăminte potrivită, ca degetele să nu fie strânse. Urmăriți igiena picioarelor și schimbați șosetele, tratați ciuperca. Persoanele cu diabet trebuie să-și examineze zilnic picioarele.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],

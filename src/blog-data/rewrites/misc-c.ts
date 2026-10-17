@@ -6,7 +6,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Что такое мезотерапия лица',
         paragraphs: [
-          'Мезотерапия это введение небольших количеств лекарственных или косметологических препаратов в поверхностные слои кожи тонкой иглой. Препараты действуют там, где это нужно, и не распределяются по всему организму так, как при приёме таблеток. Состав подбирает врач в зависимости от задачи и состояния кожи.',
+          '[[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|Мезотерапия]] это введение небольших количеств лекарственных или косметологических препаратов в поверхностные слои кожи тонкой иглой. Препараты действуют там, где это нужно, и не распределяются по всему организму так, как при приёме таблеток. Состав подбирает врач в зависимости от задачи и состояния кожи.',
         ],
       },
       {
@@ -24,7 +24,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Мезотерапия и биоревитализация',
         paragraphs: [
-          'Обе процедуры относятся к инъекционному уходу, но различаются составом. В биоревитализации основной компонент гиалуроновая кислота, а в мезотерапии используют разные коктейли: витамины, аминокислоты, пептиды и другие вещества. Что подойдёт вам, зависит от задач, и на консультации врач объяснит различия.',
+          'Обе процедуры относятся к инъекционному уходу, но различаются составом. В [[biorevitalizaciya-beltsy-chto-eto|биоревитализации]] основной компонент гиалуроновая кислота, а в мезотерапии используют разные [[mezoterapiya-lica-preparaty-sostav|коктейли]]: витамины, аминокислоты, пептиды и другие вещества. Что подойдёт вам, зависит от задач, и на консультации врач объяснит различия.',
         ],
       },
       {
@@ -99,7 +99,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Ce este mezoterapia feței',
         paragraphs: [
-          'Mezoterapia este introducerea unor cantități mici de preparate medicamentoase sau cosmetologice în straturile superficiale ale pielii cu un ac subțire. Preparatele acționează acolo unde este nevoie și nu se distribuie în tot organismul așa cum se întâmplă la administrarea de comprimate. Compoziția o alege medicul în funcție de sarcină și de starea pielii.',
+          '[[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|Mezoterapia]] este introducerea unor cantități mici de preparate medicamentoase sau cosmetologice în straturile superficiale ale pielii cu un ac subțire. Preparatele acționează acolo unde este nevoie și nu se distribuie în tot organismul așa cum se întâmplă la administrarea de comprimate. Compoziția o alege medicul în funcție de sarcină și de starea pielii.',
         ],
       },
       {
@@ -117,7 +117,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Mezoterapia și biorevitalizarea',
         paragraphs: [
-          'Ambele proceduri țin de îngrijirea injectabilă, dar diferă prin compoziție. În biorevitalizare componentul principal este acidul hialuronic, iar în mezoterapie se folosesc cocktailuri diferite: vitamine, aminoacizi, peptide și alte substanțe. Ce vi se potrivește depinde de sarcini, iar la consultație medicul explică deosebirile.',
+          'Ambele proceduri țin de îngrijirea injectabilă, dar diferă prin compoziție. În [[biorevitalizaciya-beltsy-chto-eto|biorevitalizare]] componentul principal este acidul hialuronic, iar în mezoterapie se folosesc [[mezoterapiya-lica-preparaty-sostav|cocktailuri]] diferite: vitamine, aminoacizi, peptide și alte substanțe. Ce vi se potrivește depinde de sarcini, iar la consultație medicul explică deosebirile.',
         ],
       },
       {
@@ -170,7 +170,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Из чего состоят препараты для мезотерапии',
         paragraphs: [
-          'В мезотерапии используют готовые препараты и коктейли, составленные врачом. В их основе могут быть витамины, аминокислоты, минералы, антиоксиданты, пептиды, гиалуроновая кислота. Состав подбирают под задачу: увлажнение, выравнивание тона, поддержку кожи при стрессе или после солнца.',
+          'В [[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|мезотерапии]] используют готовые препараты и коктейли, составленные врачом. В их основе могут быть витамины, аминокислоты, минералы, антиоксиданты, пептиды, [[biorevitalizaciya-preparaty-gialoronovaya-kislota|гиалуроновая кислота]]. Состав подбирают под задачу: увлажнение, выравнивание тона, поддержку кожи при стрессе или после солнца.',
         ],
       },
       {
@@ -200,7 +200,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Выравнивание тона',
         paragraphs: [
-          'Неровный тон может быть связан с обезвоженностью, пигментацией, воспалением, сосудами. Мезотерапия может улучшить общий вид кожи, но пигментные пятна лечат по-другому, и сначала нужно понять их причину. Новые или меняющиеся пятна нужно показать дерматологу.',
+          'Неровный тон может быть связан с обезвоженностью, пигментацией, воспалением, сосудами. [[mezoterapiya-lica-beltsy-chto-eto|Мезотерапия]] может улучшить общий вид кожи, но пигментные пятна лечат по-другому, и сначала нужно понять их причину. Новые или меняющиеся пятна нужно показать дерматологу.',
         ],
       },
       {
@@ -254,7 +254,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Нежелательные реакции',
         paragraphs: [
-          'Возможны покраснение, зуд, отёчность, синяки, уплотнения. Они чаще временные. Если реакция выраженная, держится долго или сопровождается болью, высыпаниями, повышением температуры, свяжитесь с врачом.',
+          'Возможны покраснение, зуд, отёчность, [[mezoterapiya-lica-otek-sinyaki|синяки]], уплотнения. Они чаще временные. Если реакция выраженная, держится долго или сопровождается болью, высыпаниями, повышением температуры, свяжитесь с врачом.',
           'Консультацию можно получить в клинике Meddera в Бельцах. Записаться можно по телефону или через форму на сайте.',
         ],
       },
@@ -263,7 +263,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Din ce sunt alcătuite preparatele pentru mezoterapie',
         paragraphs: [
-          'În mezoterapie se folosesc preparate gata făcute și cocktailuri compuse de medic. La baza lor pot fi vitamine, aminoacizi, minerale, antioxidanți, peptide, acid hialuronic. Compoziția se alege după sarcină: hidratare, uniformizarea tenului, susținerea pielii în stres sau după soare.',
+          'În [[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|mezoterapie]] se folosesc preparate gata făcute și cocktailuri compuse de medic. La baza lor pot fi vitamine, aminoacizi, minerale, antioxidanți, peptide, [[biorevitalizaciya-preparaty-gialoronovaya-kislota|acid hialuronic]]. Compoziția se alege după sarcină: hidratare, uniformizarea tenului, susținerea pielii în stres sau după soare.',
         ],
       },
       {
@@ -293,7 +293,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Uniformizarea tenului',
         paragraphs: [
-          'Un ten neuniform poate fi legat de deshidratare, pigmentare, inflamație, vase. Mezoterapia poate îmbunătăți aspectul general al pielii, dar petele pigmentare se tratează altfel, și mai întâi trebuie înțeleasă cauza lor. Petele noi sau cele care se schimbă trebuie arătate dermatologului.',
+          'Un ten neuniform poate fi legat de deshidratare, pigmentare, inflamație, vase. [[mezoterapiya-lica-beltsy-chto-eto|Mezoterapia]] poate îmbunătăți aspectul general al pielii, dar petele pigmentare se tratează altfel, și mai întâi trebuie înțeleasă cauza lor. Petele noi sau cele care se schimbă trebuie arătate dermatologului.',
         ],
       },
       {
@@ -335,7 +335,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Reacțiile nedorite',
         paragraphs: [
-          'Sunt posibile roșeață, mâncărime, umflătură, vânătăi, îngroșări. Ele sunt mai des temporare. Dacă reacția este pronunțată, durează mult sau este însoțită de durere, erupții, creștere a temperaturii, contactați medicul.',
+          'Sunt posibile roșeață, mâncărime, umflătură, [[mezoterapiya-lica-otek-sinyaki|vânătăi]], îngroșări. Ele sunt mai des temporare. Dacă reacția este pronunțată, durează mult sau este însoțită de durere, erupții, creștere a temperaturii, contactați medicul.',
           'Consultația se poate obține la clinica Meddera din Bălți. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
@@ -346,7 +346,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Консультация перед процедурой',
         paragraphs: [
-          'Приём начинается с разговора. Врач выясняет, чем вы болели, какие лекарства принимаете, были ли аллергии, как кожа реагировала на косметику и процедуры. Он осматривает кожу и объясняет, подходит ли вам мезотерапия, какой состав использовать и сколько процедур может понадобиться.',
+          'Приём начинается с разговора. Врач выясняет, чем вы болели, какие лекарства принимаете, были ли аллергии, как кожа реагировала на косметику и процедуры. Он осматривает кожу и объясняет, подходит ли вам [[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|мезотерапия]], какой состав использовать и сколько процедур может понадобиться.',
         ],
       },
       {
@@ -364,7 +364,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Больно ли это',
         paragraphs: [
-          'Ощущения индивидуальны: многие описывают их как покалывание и неприятное жжение. Чувствительнее зоны вокруг глаз, губ, подбородка. Если вы боитесь боли, скажите об этом заранее, и врач предложит возможные варианты облегчения.',
+          'Ощущения индивидуальны: многие описывают их как покалывание и неприятное жжение. Чувствительнее зоны [[mezoterapiya-lica-vokrug-glaz|вокруг глаз]], губ, подбородка. Если вы боитесь боли, скажите об этом заранее, и врач предложит возможные варианты облегчения.',
         ],
       },
       {
@@ -376,7 +376,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Отёк и синяки',
         paragraphs: [
-          'Отёчность и синяки возникают, если игла задела мелкий сосуд, и это не означает, что процедура сделана неправильно. Проходят они постепенно, у всех в своём темпе. Прохладный компресс через чистую ткань и отказ от горячих процедур помогают коже успокоиться.',
+          'Отёчность и [[mezoterapiya-lica-otek-sinyaki|синяки]] возникают, если игла задела мелкий сосуд, и это не означает, что процедура сделана неправильно. Проходят они постепенно, у всех в своём темпе. Прохладный компресс через чистую ткань и отказ от горячих процедур помогают коже успокоиться.',
         ],
       },
       {
@@ -445,7 +445,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Consultația înainte de procedură',
         paragraphs: [
-          'Consultația începe cu o discuție. Medicul află de ce boli ați suferit, ce medicamente luați, dacă ați avut alergii, cum a reacționat pielea la cosmetice și la proceduri. Examinează pielea și explică dacă vi se potrivește mezoterapia, ce compoziție se folosește și câte proceduri pot fi necesare.',
+          'Consultația începe cu o discuție. Medicul află de ce boli ați suferit, ce medicamente luați, dacă ați avut alergii, cum a reacționat pielea la cosmetice și la proceduri. Examinează pielea și explică dacă vi se potrivește [[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|mezoterapia]], ce compoziție se folosește și câte proceduri pot fi necesare.',
         ],
       },
       {
@@ -463,7 +463,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Doare sau nu',
         paragraphs: [
-          'Senzațiile sunt individuale: mulți le descriu ca o înțepătură și o arsură neplăcută. Sunt mai sensibile zonele din jurul ochilor, al buzelor, bărbia. Dacă vă temeți de durere, spuneți din timp, iar medicul va propune variantele posibile de ușurare.',
+          'Senzațiile sunt individuale: mulți le descriu ca o înțepătură și o arsură neplăcută. Sunt mai sensibile zonele [[mezoterapiya-lica-vokrug-glaz|din jurul ochilor]], al buzelor, bărbia. Dacă vă temeți de durere, spuneți din timp, iar medicul va propune variantele posibile de ușurare.',
         ],
       },
       {
@@ -475,7 +475,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Umflătura și vânătăile',
         paragraphs: [
-          'Umflătura și vânătăile apar dacă acul a atins un vas mic, și asta nu înseamnă că procedura a fost făcută greșit. Ele trec treptat, fiecare în ritmul lui. Un compres rece printr-o țesătură curată și renunțarea la procedurile fierbinți ajută pielea să se liniștească.',
+          'Umflătura și [[mezoterapiya-lica-otek-sinyaki|vânătăile]] apar dacă acul a atins un vas mic, și asta nu înseamnă că procedura a fost făcută greșit. Un compres rece printr-o țesătură curată și renunțarea la procedurile fierbinți ajută pielea să se liniștească.',
         ],
       },
       {
@@ -552,7 +552,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Выбор сезона',
         paragraphs: [
-          'Мезотерапию можно проводить в любое время года, но у сезонов есть нюансы. Зимой кожа страдает от сухого воздуха и мороза, весной от перепадов погоды, летом от солнца, осенью от возвращения к привычному режиму после отпуска. Врач подскажет, как защитить кожу в нужный период.',
+          '[[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|Мезотерапию]] можно проводить в любое время года, но у сезонов есть нюансы. Зимой кожа страдает от сухого воздуха и мороза, весной от перепадов погоды, летом от солнца, осенью от возвращения к привычному режиму после отпуска. Врач подскажет, как защитить кожу в нужный период.',
         ],
       },
       {
@@ -582,7 +582,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Перед важным событием',
         paragraphs: [
-          'Планируйте процедуру с запасом времени: после неё возможны покраснение, бугорки и синяки. Не назначайте её на последний день и не пробуйте ничего нового накануне события.',
+          'Планируйте процедуру с запасом времени: после неё возможны покраснение, бугорки и [[mezoterapiya-lica-otek-sinyaki|синяки]]. Не назначайте её на последний день и не пробуйте ничего нового накануне события.',
         ],
       },
       {
@@ -651,7 +651,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Alegerea sezonului',
         paragraphs: [
-          'Mezoterapia se poate face în orice anotimp, dar sezoanele au nuanțele lor. Iarna pielea suferă de aerul uscat și de ger, primăvara de schimbările de vreme, vara de soare, toamna de revenirea la regimul obișnuit după concediu. Medicul vă spune cum protejați pielea în perioada necesară.',
+          '[[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|Mezoterapia]] se poate face în orice anotimp, dar sezoanele au nuanțele lor. Iarna pielea suferă de aerul uscat și de ger, primăvara de schimbările de vreme, vara de soare, toamna de revenirea la regimul obișnuit după concediu. Medicul vă spune cum protejați pielea în perioada necesară.',
         ],
       },
       {
@@ -681,7 +681,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Înaintea unui eveniment important',
         paragraphs: [
-          'Planificați procedura cu o rezervă de timp: după ea sunt posibile roșeață, denivelări și vânătăi. Nu o programați în ultima zi și nu încercați nimic nou în ajunul evenimentului.',
+          'Planificați procedura cu o rezervă de timp: după ea sunt posibile roșeață, denivelări și [[mezoterapiya-lica-otek-sinyaki|vânătăi]]. Nu o programați în ultima zi și nu încercați nimic nou în ajunul evenimentului.',
         ],
       },
       {
@@ -704,19 +704,19 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'С какими проблемами кожи работает мезотерапия',
         paragraphs: [
-          'Мезотерапию обсуждают при акне и следах после него, пигментации, мелких морщинках, сухости и жирности, расширенных порах, куперозе, усталой коже после стресса. Процедура входит в программу ухода и не лечит заболевания. Причину проблемы определяет врач, и от неё зависит, подходит ли вам инъекционный метод.',
+          '[[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|Мезотерапию]] обсуждают при акне и следах после него, пигментации, мелких морщинках, сухости и жирности, расширенных порах, [[rozacea-prichiny-metody-korrekcii|куперозе]], усталой коже после стресса. Процедура входит в программу ухода и не лечит заболевания. Причину проблемы определяет врач, и от неё зависит, подходит ли вам инъекционный метод.',
         ],
       },
       {
         h2: 'Акне и постакне',
         paragraphs: [
-          'Пока воспаления активны, инъекции в этих зонах не проводят, сначала лечат акне. В период ремиссии мезотерапию иногда используют, чтобы улучшить состояние кожи после воспалений. Рубцы постакне требуют отдельного подхода, и не всегда уместна именно мезотерапия.',
+          'Пока воспаления активны, инъекции в этих зонах не проводят, сначала лечат [[akne-prichiny-stadii-lechenie|акне]]. В период ремиссии мезотерапию иногда используют, чтобы улучшить состояние кожи после воспалений. Рубцы постакне требуют отдельного подхода, и не всегда уместна именно [[mezoterapiya-lica-beltsy-chto-eto|мезотерапия]].',
         ],
       },
       {
         h2: 'Пигментация',
         paragraphs: [
-          'Пигментные пятна возникают по многим причинам: солнце, гормоны, воспаление, лекарства. Мезотерапия может быть частью программы, но не лечит пятна сама по себе. Любое новое или меняющееся пятно сначала покажите дерматологу.',
+          '[[pigmentnye-pyatna-prichiny-lechenie|Пигментные пятна]] возникают по многим причинам: солнце, гормоны, воспаление, лекарства. Мезотерапия может быть частью программы, но не лечит пятна сама по себе. Любое новое или меняющееся пятно сначала покажите дерматологу.',
         ],
       },
       {
@@ -758,7 +758,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Мезотерапия и ретиноиды дома',
         paragraphs: [
-          'Ретиноиды и кислоты, которые вы используете для лечения акне или пигментации, повышают чувствительность кожи. Об их приёме скажите врачу заранее и не меняйте схему без согласования.',
+          'Ретиноиды и кислоты, которые вы используете для лечения [[svc:terapyya-anty-akne-v-belczah|акне]] или пигментации, повышают чувствительность кожи. Об их приёме скажите врачу заранее и не меняйте схему без согласования.',
         ],
       },
       {
@@ -803,13 +803,13 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Cu ce probleme ale pielii lucrează mezoterapia',
         paragraphs: [
-          'Mezoterapia se discută în acnee și în urmele ei, în pigmentare, riduri fine, uscăciune și piele grasă, pori dilatați, cuperoză, piele obosită după stres. Procedura face parte din programul de îngrijire și nu tratează boli. Cauza problemei o stabilește medicul, iar de ea depinde dacă vi se potrivește metoda injectabilă.',
+          '[[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|Mezoterapia]] se discută în acnee și în urmele ei, în pigmentare, riduri fine, uscăciune și piele grasă, pori dilatați, [[rozacea-prichiny-metody-korrekcii|cuperoză]], piele obosită după stres. Procedura face parte din programul de îngrijire și nu tratează boli. Cauza problemei o stabilește medicul, iar de ea depinde dacă vi se potrivește metoda injectabilă.',
         ],
       },
       {
         h2: 'Acneea și postacneea',
         paragraphs: [
-          'Cât timp inflamațiile sunt active, injecțiile în aceste zone nu se fac, mai întâi se tratează acneea. În perioada de remisie mezoterapia se folosește uneori pentru a îmbunătăți starea pielii după inflamații. Cicatricile postacnee cer o abordare separată, și nu întotdeauna mezoterapia este potrivită.',
+          'Cât timp inflamațiile sunt active, injecțiile în aceste zone nu se fac, mai întâi se tratează [[akne-prichiny-stadii-lechenie|acneea]]. În perioada de remisie mezoterapia se folosește uneori pentru a îmbunătăți starea pielii după inflamații. Cicatricile postacnee cer o abordare separată, și nu întotdeauna [[mezoterapiya-lica-beltsy-chto-eto|mezoterapia]] este potrivită.',
         ],
       },
       {
@@ -857,7 +857,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Mezoterapia și retinoizii de acasă',
         paragraphs: [
-          'Retinoizii și acizii pe care îi folosiți pentru tratarea acneei sau a pigmentării cresc sensibilitatea pielii. Spuneți medicului despre ele din timp și nu schimbați schema fără acord.',
+          'Retinoizii și acizii pe care îi folosiți pentru tratarea [[svc:terapyya-anty-akne-v-belczah|acneei]] sau a pigmentării cresc sensibilitatea pielii. Spuneți medicului despre ele din timp și nu schimbați schema fără acord.',
         ],
       },
       {
@@ -892,13 +892,13 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Зоны лица и тела, где применяют мезотерапию',
         paragraphs: [
-          'Кроме лица в целом, мезотерапию обсуждают для области вокруг глаз, шеи и декольте, рук, Т-зоны, нижней части лица, надбровной зоны и подбородочного треугольника. Кожа в разных зонах устроена по-разному, поэтому врач подбирает состав и технику под каждую.',
+          'Кроме лица в целом, [[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|мезотерапию]] обсуждают для области вокруг глаз, шеи и декольте, рук, Т-зоны, нижней части лица, надбровной зоны и подбородочного треугольника. Кожа в разных зонах устроена по-разному, поэтому врач подбирает состав и технику под каждую.',
         ],
       },
       {
         h2: 'Область вокруг глаз',
         paragraphs: [
-          'Кожа здесь тонкая, с небольшим количеством сальных желёз, поэтому быстро пересыхает, и мелкие морщинки появляются раньше. Для этой зоны используют мягкие составы и деликатную технику. Отёки и синяки возникают здесь чаще. Тёмные круги и мешки имеют разные причины, и мезотерапия не всегда подходит.',
+          'Кожа здесь тонкая, с небольшим количеством сальных желёз, поэтому быстро пересыхает, и мелкие морщинки появляются раньше. Для этой зоны используют мягкие составы и деликатную технику. [[mezoterapiya-lica-otek-sinyaki|Отёки]] и синяки возникают здесь чаще. Тёмные круги и мешки имеют разные причины, и [[mezoterapiya-lica-beltsy-chto-eto|мезотерапия]] не всегда подходит.',
         ],
       },
       {
@@ -928,7 +928,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Надбровная зона',
         paragraphs: [
-          'Кожа здесь плотнее, чем вокруг глаз, но рядом проходят сосуды и нервы, поэтому техника должна быть аккуратной. Врач предупредит об ощущениях и возможных следах после процедуры.',
+          'Кожа здесь плотнее, чем [[biorevitalizaciya-vokrug-glaz|вокруг глаз]], но рядом проходят сосуды и нервы, поэтому техника должна быть аккуратной. Врач предупредит об ощущениях и возможных следах после процедуры.',
         ],
       },
       {
@@ -970,7 +970,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Какие участки не обрабатывают',
         paragraphs: [
-          'Процедуру не проводят на воспалённой коже, ранках, а также на родинках и пигментных образованиях без осмотра дерматолога. Подозрительные пятна сначала показывают врачу.',
+          'Процедуру не проводят на воспалённой коже, ранках, а также на [[rodinki-kogda-obratitsya-k-dermatologu|родинках]] и пигментных образованиях без осмотра дерматолога. Подозрительные пятна сначала показывают врачу.',
         ],
       },
       {
@@ -991,13 +991,13 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Zonele feței și ale corpului în care se aplică mezoterapia',
         paragraphs: [
-          'În afară de fața în ansamblu, mezoterapia se discută pentru zona din jurul ochilor, gât și decolteu, mâini, zona T, partea inferioară a feței, zona supraciliară și triunghiul bărbiei. Pielea din zone diferite este alcătuită diferit, de aceea medicul alege compoziția și tehnica pentru fiecare.',
+          'În afară de fața în ansamblu, [[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|mezoterapia]] se discută pentru zona din jurul ochilor, gât și decolteu, mâini, zona T, partea inferioară a feței, zona supraciliară și triunghiul bărbiei. Pielea din zone diferite este alcătuită diferit, de aceea medicul alege compoziția și tehnica pentru fiecare.',
         ],
       },
       {
         h2: 'Zona din jurul ochilor',
         paragraphs: [
-          'Pielea de aici este subțire, cu puține glande sebacee, de aceea se usucă repede, iar ridurile fine apar mai devreme. Pentru această zonă se folosesc compoziții blânde și o tehnică delicată. Umflăturile și vânătăile apar aici mai des. Cearcănele și pungile au cauze diferite, iar mezoterapia nu se potrivește întotdeauna.',
+          'Pielea de aici este subțire, cu puține glande sebacee, de aceea se usucă repede, iar ridurile fine apar mai devreme. Pentru această zonă se folosesc compoziții blânde și o tehnică delicată. Umflăturile și [[mezoterapiya-lica-otek-sinyaki|vânătăile]] apar aici mai des. Cearcănele și pungile au cauze diferite, iar [[mezoterapiya-lica-beltsy-chto-eto|mezoterapia]] nu se potrivește întotdeauna.',
         ],
       },
       {
@@ -1063,7 +1063,7 @@ export const MISC_C: ArticleRewrites = {
       {
         h2: 'Zone care nu se tratează',
         paragraphs: [
-          'Procedura nu se face pe piele inflamată, pe răni, precum și pe alunițe și formațiuni pigmentare fără examinarea dermatologului. Petele suspecte se arată mai întâi medicului.',
+          'Procedura nu se face pe piele inflamată, pe răni, precum și pe [[rodinki-kogda-obratitsya-k-dermatologu|alunițe]] și formațiuni pigmentare fără examinarea dermatologului. Petele suspecte se arată mai întâi medicului.',
         ],
       },
       {

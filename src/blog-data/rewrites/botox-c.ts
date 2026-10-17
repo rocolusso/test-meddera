@@ -6,13 +6,13 @@ export const BOTOX_C: ArticleRewrites = {
       {
         h2: 'Что такое платизма',
         paragraphs: [
-          'Платизма это тонкая широкая мышца, которая идёт от нижней челюсти по передней поверхности шеи к верхней части груди. Когда она напрягается, на шее появляются вертикальные тяжи. С возрастом они становятся заметнее даже в спокойном состоянии, и многие замечают их, когда смотрятся в зеркало и напрягают шею.',
+          'Платизма это тонкая широкая мышца, которая идёт от нижней челюсти по передней поверхности шеи к верхней части груди. Когда она напрягается, на шее появляются вертикальные тяжи. С [[botoks-vozrast-kogda-nachinat|возрастом]] они становятся заметнее даже в спокойном состоянии, и многие замечают их, когда смотрятся в зеркало и напрягают шею.',
         ],
       },
       {
         h2: 'Что может сделать ботулинический токсин',
         paragraphs: [
-          'Препарат расслабляет отдельные участки платизмы, и вертикальные тяжи становятся менее выраженными. Кроме того, платизма участвует в движении нижней части лица, поэтому врач иногда оценивает и её влияние на овал. Результат зависит от строения мышцы и зоны введения.',
+          'Препарат расслабляет отдельные участки платизмы, и вертикальные тяжи становятся менее выраженными. Кроме того, платизма участвует в движении нижней части лица, поэтому врач иногда оценивает и её влияние на овал. Результат зависит от строения мышцы и [[botoks-zony-injekcij|зоны введения]].',
           'Токсин не убирает лишнюю кожу и не уменьшает жировую прослойку под подбородком. Если именно они составляют основную проблему, инъекции только дополнят другие методы или вовсе не подойдут.',
         ],
       },
@@ -37,7 +37,7 @@ export const BOTOX_C: ArticleRewrites = {
       {
         h2: 'Когда процедуру не проводят',
         paragraphs: [
-          'Инъекции не делают при беременности и кормлении грудью, нервно-мышечных заболеваниях, воспалении или инфекции в зоне введения и аллергии на компоненты препарата. Расскажите о лекарствах, которые принимаете, потому что некоторые из них могут усилить действие токсина.',
+          'Инъекции не делают при [[botoks-beremennost-grudnoe-vskarmlivanie|беременности]] и кормлении грудью, нервно-мышечных заболеваниях, воспалении или инфекции в зоне введения и аллергии на компоненты препарата. Расскажите о лекарствах, которые принимаете, потому что некоторые из них могут усилить действие токсина.',
         ],
       },
       {
@@ -69,7 +69,7 @@ export const BOTOX_C: ArticleRewrites = {
       {
         h2: 'Ce este platisma',
         paragraphs: [
-          'Platisma este un mușchi subțire și lat care merge de la maxilarul inferior pe partea din față a gâtului spre partea de sus a pieptului. Când se contractă, pe gât apar benzi verticale. Cu vârsta ele devin mai vizibile chiar și în repaus, iar multe persoane le observă când se privesc în oglindă și încordează gâtul.',
+          'Platisma este un mușchi subțire și lat care merge de la maxilarul inferior pe partea din față a gâtului spre partea de sus a pieptului. Când se contractă, pe gât apar benzi verticale. Cu [[botoks-vozrast-kogda-nachinat|vârsta]] ele devin mai vizibile chiar și în repaus, iar multe persoane le observă când se privesc în oglindă și încordează gâtul.',
         ],
       },
       {
@@ -100,7 +100,7 @@ export const BOTOX_C: ArticleRewrites = {
       {
         h2: 'Când procedura nu se face',
         paragraphs: [
-          'Injecțiile nu se fac în sarcină și alăptare, boli neuromusculare, inflamație sau infecție în zona de administrare și alergie la componentele preparatului. Spuneți ce medicamente luați, pentru că unele pot intensifica acțiunea toxinei.',
+          'Injecțiile nu se fac în [[botoks-beremennost-grudnoe-vskarmlivanie|sarcină]] și alăptare, boli neuromusculare, inflamație sau infecție în zona de administrare și alergie la componentele preparatului. Spuneți ce medicamente luați, pentru că unele pot intensifica acțiunea toxinei.',
         ],
       },
       {
@@ -128,19 +128,19 @@ export const BOTOX_C: ArticleRewrites = {
       {
         h2: 'Для чего применяют ботулинический токсин',
         paragraphs: [
-          'В косметологии препарат расслабляет мимические мышцы и сглаживает морщины, которые появляются при мимике, например между бровями, на лбу и вокруг глаз. В медицине его используют при повышенной потливости, при некоторых неврологических состояниях и в других ситуациях, решение принимает врач соответствующей специальности.',
+          'В косметологии препарат расслабляет мимические мышцы и сглаживает морщины, которые появляются при мимике, например между бровями, на лбу и вокруг глаз. В медицине его используют при [[gipergidroz-lechenie-beltsy|повышенной потливости]], при некоторых неврологических состояниях и в других ситуациях, решение принимает врач соответствующей специальности.',
         ],
       },
       {
         h2: 'Кому процедура может подойти',
         paragraphs: [
-          'Подходящий кандидат это человек, которого беспокоят морщины, связанные с работой мышц, и который понимает, чего ждать от инъекций. Важен не возраст, а состояние кожи и мышц, а также ваши цели. Если морщины глубокие и сохраняются в покое, могут понадобиться дополнительные методы.',
+          'Подходящий кандидат это человек, которого беспокоят морщины, связанные с работой мышц, и который понимает, чего ждать от инъекций. Важен не [[botoks-vozrast-kogda-nachinat|возраст]], а состояние кожи и мышц, а также ваши цели. Если морщины глубокие и сохраняются в покое, могут понадобиться дополнительные методы.',
         ],
       },
       {
         h2: 'Противопоказания',
         paragraphs: [
-          'Процедуру не проводят при беременности и кормлении грудью, нервно-мышечных заболеваниях, аллергии на препарат или его компоненты, воспалении и инфекции кожи в зоне введения. При острых заболеваниях с повышенной температурой процедуру откладывают до выздоровления.',
+          'Процедуру не проводят при [[botoks-beremennost-grudnoe-vskarmlivanie|беременности]] и кормлении грудью, нервно-мышечных заболеваниях, аллергии на препарат или его компоненты, воспалении и инфекции кожи в [[botoks-zony-injekcij|зоне введения]]. При острых заболеваниях с повышенной температурой процедуру откладывают до выздоровления.',
           'Косметические инъекции не проводят несовершеннолетним.',
         ],
       },
@@ -203,13 +203,13 @@ export const BOTOX_C: ArticleRewrites = {
       {
         h2: 'Cui i se poate potrivi procedura',
         paragraphs: [
-          'Un candidat potrivit este o persoană deranjată de riduri legate de lucrul mușchilor, care înțelege ce poate aștepta de la injecții. Contează nu vârsta, ci starea pielii și a mușchilor și scopurile dumneavoastră. Dacă ridurile sunt adânci și se păstrează în repaus, pot fi necesare metode suplimentare.',
+          'Un candidat potrivit este o persoană deranjată de riduri legate de lucrul mușchilor, care înțelege ce poate aștepta de la injecții. Contează nu [[botoks-vozrast-kogda-nachinat|vârsta]], ci starea pielii și a mușchilor și scopurile dumneavoastră. Dacă ridurile sunt adânci și se păstrează în repaus, pot fi necesare metode suplimentare.',
         ],
       },
       {
         h2: 'Contraindicații',
         paragraphs: [
-          'Procedura nu se face în sarcină și alăptare, boli neuromusculare, alergie la preparat sau la componentele lui, inflamație și infecție a pielii în zona de administrare. În bolile acute cu febră procedura se amână până la însănătoșire.',
+          'Procedura nu se face în [[botoks-beremennost-grudnoe-vskarmlivanie|sarcină]] și alăptare, boli neuromusculare, alergie la preparat sau la componentele lui, inflamație și infecție a pielii în zona de administrare. În bolile acute cu febră procedura se amână până la însănătoșire.',
           'Injecțiile cosmetice nu se fac minorilor.',
         ],
       },
@@ -262,7 +262,7 @@ export const BOTOX_C: ArticleRewrites = {
       {
         h2: 'Откуда берутся морщины на лбу',
         paragraphs: [
-          'Горизонтальные морщины на лбу появляются из-за работы лобной мышцы. Она поднимает брови, когда мы удивляемся, прищуриваемся или напрягаем лицо. Если мимика активная, кожа складывается всё чаще, и со временем линии остаются заметными и в покое. На это влияют строение лица, возраст и привычки.',
+          'Горизонтальные морщины на лбу появляются из-за работы лобной мышцы. Она поднимает брови, когда мы удивляемся, прищуриваемся или напрягаем лицо. Если мимика активная, кожа складывается всё чаще, и со временем линии остаются заметными и в покое. На это влияют строение лица, [[botoks-vozrast-kogda-nachinat|возраст]] и привычки.',
         ],
       },
       {
@@ -322,7 +322,7 @@ export const BOTOX_C: ArticleRewrites = {
       {
         h2: 'Консультация в Бельцах',
         paragraphs: [
-          'Инъекции не проводят при беременности, кормлении грудью, нервно-мышечных заболеваниях и воспалении в зоне введения. Врач клиники Meddera осмотрит лоб и брови, объяснит, чего ждать, и ответит на вопросы. Записаться можно по телефону или через форму на сайте.',
+          'Инъекции не проводят при [[botoks-beremennost-grudnoe-vskarmlivanie|беременности]], кормлении грудью, нервно-мышечных заболеваниях и воспалении в [[botoks-zony-injekcij|зоне введения]]. Врач клиники Meddera осмотрит лоб и брови, объяснит, чего ждать, и ответит на вопросы. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -330,7 +330,7 @@ export const BOTOX_C: ArticleRewrites = {
       {
         h2: 'De unde vin ridurile de pe frunte',
         paragraphs: [
-          'Ridurile orizontale de pe frunte apar din cauza lucrului mușchiului frontal. El ridică sprâncenele când ne mirăm, miji ochii sau încordăm fața. Dacă mimica este activă, pielea se pliază tot mai des și în timp liniile rămân vizibile și în repaus. Influențează structura feței, vârsta și obiceiurile.',
+          'Ridurile orizontale de pe frunte apar din cauza lucrului mușchiului frontal. El ridică sprâncenele când ne mirăm, miji ochii sau încordăm fața. Dacă mimica este activă, pielea se pliază tot mai des și în timp liniile rămân vizibile și în repaus. Influențează structura feței, [[botoks-vozrast-kogda-nachinat|vârsta]] și obiceiurile.',
         ],
       },
       {
@@ -384,7 +384,7 @@ export const BOTOX_C: ArticleRewrites = {
       {
         h2: 'Consultația în Bălți',
         paragraphs: [
-          'Injecțiile nu se fac în sarcină, în alăptare, în boli neuromusculare și în inflamație în zona de administrare. Medicul clinicii Meddera examinează fruntea și sprâncenele, explică ce puteți aștepta și răspunde la întrebări. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Injecțiile nu se fac în [[botoks-beremennost-grudnoe-vskarmlivanie|sarcină]], în alăptare, în boli neuromusculare și în inflamație în zona de administrare. Medicul clinicii Meddera examinează fruntea și sprâncenele, explică ce puteți aștepta și răspunde la întrebări. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],

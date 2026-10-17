@@ -6,14 +6,14 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Как ботокс помогает при потливости подмышек',
         paragraphs: [
-          'Ботулинический токсин блокирует передачу сигнала от нервов к потовым железам в обработанной зоне. Потоотделение там заметно снижается, а в других частях тела продолжается как обычно. Процедуру рассматривают, когда антиперспиранты не справляются, а потливость мешает жить: оставляет пятна на одежде, вызывает неловкость, влияет на работу и общение.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Ботулинический токсин]] блокирует передачу сигнала от нервов к потовым железам в обработанной зоне. Потоотделение там заметно снижается, а в других частях тела продолжается как обычно. Процедуру рассматривают, когда антиперспиранты не справляются, а потливость мешает жить: оставляет пятна на одежде, вызывает неловкость, влияет на работу и общение.',
         ],
       },
       {
         h2: 'Когда сначала нужно обследование',
         paragraphs: [
           'Если потливость возникла внезапно, сопровождается жаром, потерей веса, сердцебиением или ночным потом, её причиной может быть заболевание, например нарушение работы щитовидной железы. Тогда в первую очередь лечат причину. Врач расспросит вас, осмотрит и при необходимости назначит анализы, а уже потом обсудит инъекции.',
-          'Общий разбор гипергидроза и других способов лечения есть в нашей статье о повышенной потливости.',
+          'Общий разбор [[gipergidroz-lechenie-beltsy|гипергидроза]] и других способов лечения есть в нашей статье о повышенной потливости.',
         ],
       },
       {
@@ -32,19 +32,19 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Возможные реакции',
         paragraphs: [
-          'Чаще всего встречаются болезненность в местах уколов, небольшие синяки и покраснение. Редко возникают временная слабость мышц рядом с зоной введения или аллергическая реакция. Если после процедуры вы заметили необычные симптомы, сообщите врачу.',
+          'Чаще всего встречаются болезненность в местах уколов, небольшие синяки и покраснение. Редко возникают временная слабость мышц рядом с [[botoks-zony-injekcij|зоной введения]] или аллергическая реакция. Если после процедуры вы заметили необычные симптомы, сообщите врачу.',
         ],
       },
       {
         h2: 'Когда процедуру не проводят',
         paragraphs: [
-          'Инъекции не делают при беременности и кормлении грудью, нервно-мышечных заболеваниях, воспалении или инфекции кожи в зоне введения, аллергии на компоненты препарата. Расскажите врачу о принимаемых лекарствах: некоторые могут усилить действие токсина.',
+          'Инъекции не делают при [[botoks-beremennost-grudnoe-vskarmlivanie|беременности]] и кормлении грудью, нервно-мышечных заболеваниях, воспалении или инфекции кожи в зоне введения, аллергии на компоненты препарата. Расскажите врачу о принимаемых лекарствах: некоторые могут усилить действие токсина.',
         ],
       },
       {
         h2: 'Чем ботокс отличается от антиперспирантов',
         paragraphs: [
-          'Антиперспиранты закупоривают протоки потовых желёз на поверхности кожи и действуют, пока вы ими пользуетесь. Ботулинический токсин влияет на передачу сигнала к железе, поэтому эффект сохраняется дольше. Зато он требует визита к врачу и повторения процедуры со временем.',
+          'Антиперспиранты закупоривают протоки потовых желёз на поверхности кожи и действуют, пока вы ими пользуетесь. [[botoks-beltsy-chto-nuzhno-znat|Ботулинический токсин]] влияет на передачу сигнала к железе, поэтому эффект сохраняется дольше. Зато он требует визита к врачу и повторения процедуры со временем.',
         ],
       },
       {
@@ -68,7 +68,7 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Что делать после процедуры',
         paragraphs: [
-          'В день инъекций не трите и не массируйте подмышки, избегайте бани, сауны и интенсивных тренировок. Использовать ли антиперспирант и когда возвращаться к привычному режиму, скажет врач. Для консультации дерматолога в Бельцах запишитесь в клинику Meddera по телефону или через форму на сайте.',
+          'В день инъекций не трите и не массируйте подмышки, избегайте бани, сауны и интенсивных тренировок. Использовать ли антиперспирант и когда возвращаться к привычному режиму, скажет врач. Для консультации [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Бельцах запишитесь в клинику Meddera по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -76,14 +76,14 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Cum ajută botoxul în transpirația axilară',
         paragraphs: [
-          'Toxina botulinică blochează transmiterea semnalului de la nervi către glandele sudoripare din zona tratată. Transpirația scade vizibil acolo, iar în restul corpului continuă ca de obicei. Procedura se ia în calcul când antiperspirantele nu fac față, iar transpirația deranjează: lasă pete pe haine, provoacă jenă, influențează munca și relațiile.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Toxina botulinică]] blochează transmiterea semnalului de la nervi către glandele sudoripare din zona tratată. Transpirația scade vizibil acolo, iar în restul corpului continuă ca de obicei. Procedura se ia în calcul când antiperspirantele nu fac față, iar transpirația deranjează: lasă pete pe haine, provoacă jenă, influențează munca și relațiile.',
         ],
       },
       {
         h2: 'Când este nevoie întâi de investigații',
         paragraphs: [
           'Dacă transpirația a apărut brusc, este însoțită de febră, scădere în greutate, bătăi rapide ale inimii sau transpirații nocturne, cauza poate fi o boală, de exemplu tulburări ale tiroidei. Atunci se tratează mai întâi cauza. Medicul vă întreabă, vă examinează, la nevoie recomandă analize și abia apoi discută despre injecții.',
-          'O prezentare generală a hiperhidrozei și a altor metode de tratament găsiți în articolul nostru despre transpirația excesivă.',
+          'O prezentare generală a [[gipergidroz-lechenie-beltsy|hiperhidrozei]] și a altor metode de tratament găsiți în articolul nostru despre transpirația excesivă.',
         ],
       },
       {
@@ -108,13 +108,13 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Când procedura nu se face',
         paragraphs: [
-          'Injecțiile nu se fac în sarcină și alăptare, în boli neuromusculare, în inflamație sau infecție a pielii în zona de administrare, în alergie la componentele preparatului. Spuneți medicului ce medicamente luați: unele pot amplifica acțiunea toxinei.',
+          'Injecțiile nu se fac în [[botoks-beremennost-grudnoe-vskarmlivanie|sarcină]] și alăptare, în boli neuromusculare, în inflamație sau infecție a pielii în zona de administrare, în alergie la componentele preparatului. Spuneți medicului ce medicamente luați: unele pot amplifica acțiunea toxinei.',
         ],
       },
       {
         h2: 'Cu ce diferă botoxul de antiperspirante',
         paragraphs: [
-          'Antiperspirantele astupă canalele glandelor sudoripare la suprafața pielii și acționează cât timp le folosiți. Toxina botulinică influențează transmiterea semnalului către glandă, de aceea efectul ține mai mult. În schimb cere o vizită la medic și repetarea procedurii în timp.',
+          'Antiperspirantele astupă canalele glandelor sudoripare la suprafața pielii și acționează cât timp le folosiți. [[botoks-beltsy-chto-nuzhno-znat|Toxina botulinică]] influențează transmiterea semnalului către glandă, de aceea efectul ține mai mult. În schimb cere o vizită la medic și repetarea procedurii în timp.',
         ],
       },
       {
@@ -132,7 +132,7 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Ce faceți după procedură',
         paragraphs: [
-          'În ziua injecțiilor nu frecați și nu masați axilele, evitați baia, sauna și antrenamentele intense. Dacă folosiți antiperspirant și când reveniți la regimul obișnuit, vă spune medicul. Pentru consultația dermatologului în Bălți programați-vă la clinica Meddera, la telefon sau prin formularul de pe site.',
+          'În ziua injecțiilor nu frecați și nu masați axilele, evitați baia, sauna și antrenamentele intense. Dacă folosiți antiperspirant și când reveniți la regimul obișnuit, vă spune medicul. Pentru consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți programați-vă la clinica Meddera, la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -142,7 +142,7 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Что можно сделать ботоксом в области носа',
         paragraphs: [
-          'Ботулинический токсин не меняет форму костей и хрящей носа, поэтому его нельзя сравнивать с ринопластикой. Он расслабляет отдельные мышцы, и эффект получается мягким и временным. Чаще всего инъекции обсуждают в двух ситуациях: для сглаживания поперечных морщин на спинке носа, которые появляются при морщении, и для едва заметного приподнятия кончика носа.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Ботулинический токсин]] не меняет форму костей и хрящей носа, поэтому его нельзя сравнивать с ринопластикой. Он расслабляет отдельные мышцы, и эффект получается мягким и временным. Чаще всего инъекции обсуждают в двух ситуациях: для сглаживания поперечных морщин на спинке носа, которые появляются при морщении, и для едва заметного приподнятия кончика носа.',
         ],
       },
       {
@@ -186,7 +186,7 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Ботокс или хирургия',
         paragraphs: [
-          'Если вас беспокоит форма носа, ботулинический токсин не заменит операцию. Он подходит для небольших мимических изменений. Для серьёзной коррекции нужна консультация специалиста, который выполняет такие операции, и врач подскажет, куда обратиться.',
+          'Если вас беспокоит форма носа, [[botoks-beltsy-chto-nuzhno-znat|ботулинический токсин]] не заменит операцию. Он подходит для небольших мимических изменений. Для серьёзной коррекции нужна консультация специалиста, который выполняет такие операции, и врач подскажет, куда обратиться.',
         ],
       },
       {
@@ -204,7 +204,7 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Когда процедуру не проводят',
         paragraphs: [
-          'Инъекции не делают при беременности, кормлении грудью, нервно-мышечных заболеваниях, воспалении кожи в зоне введения и аллергии на компоненты препарата. Расскажите врачу обо всех лекарствах.',
+          'Инъекции не делают при [[botoks-beremennost-grudnoe-vskarmlivanie|беременности]], кормлении грудью, нервно-мышечных заболеваниях, воспалении кожи в [[botoks-zony-injekcij|зоне введения]] и аллергии на компоненты препарата. Расскажите врачу обо всех лекарствах.',
           'Для консультации в Бельцах запишитесь в клинику Meddera по телефону или через форму на сайте.',
         ],
       },
@@ -213,7 +213,7 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Ce se poate face cu botox în zona nasului',
         paragraphs: [
-          'Toxina botulinică nu schimbă forma oaselor și cartilajelor nasului, de aceea nu poate fi comparată cu rinoplastia. Ea relaxează anumiți mușchi, iar efectul este blând și temporar. Cel mai des injecțiile se discută în două situații: pentru netezirea ridurilor transversale de pe dosul nasului, care apar la încrețire, și pentru ridicarea foarte discretă a vârfului nasului.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Toxina botulinică]] nu schimbă forma oaselor și cartilajelor nasului, de aceea nu poate fi comparată cu rinoplastia. Ea relaxează anumiți mușchi, iar efectul este blând și temporar. Cel mai des injecțiile se discută în două situații: pentru netezirea ridurilor transversale de pe dosul nasului, care apar la încrețire, și pentru ridicarea foarte discretă a vârfului nasului.',
         ],
       },
       {
@@ -257,7 +257,7 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Botox sau chirurgie',
         paragraphs: [
-          'Dacă vă deranjează forma nasului, toxina botulinică nu înlocuiește operația. Ea se potrivește pentru schimbări mici ale mimicii. Pentru o corecție serioasă este nevoie de consultația unui specialist care face astfel de operații, iar medicul vă spune unde să mergeți.',
+          'Dacă vă deranjează forma nasului, [[botoks-beltsy-chto-nuzhno-znat|toxina botulinică]] nu înlocuiește operația. Ea se potrivește pentru schimbări mici ale mimicii. Pentru o corecție serioasă este nevoie de consultația unui specialist care face astfel de operații, iar medicul vă spune unde să mergeți.',
         ],
       },
       {
@@ -269,7 +269,7 @@ export const BOTOX_A: ArticleRewrites = {
       {
         h2: 'Când procedura nu se face',
         paragraphs: [
-          'Injecțiile nu se fac în sarcină, alăptare, boli neuromusculare, inflamație a pielii în zona de administrare și alergie la componentele preparatului. Spuneți medicului despre toate medicamentele.',
+          'Injecțiile nu se fac în [[botoks-beremennost-grudnoe-vskarmlivanie|sarcină]], alăptare, boli neuromusculare, inflamație a pielii în zona de administrare și alergie la componentele preparatului. Spuneți medicului despre toate medicamentele.',
           'Pentru consultație în Bălți programați-vă la clinica Meddera, la telefon sau prin formularul de pe site.',
         ],
       },

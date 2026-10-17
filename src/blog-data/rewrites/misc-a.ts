@@ -6,7 +6,7 @@ export const MISC_A: ArticleRewrites = {
       {
         h2: 'Что такое контурная пластика скул и подбородка',
         paragraphs: [
-          'Контурная пластика это введение филлера, чаще всего на основе гиалуроновой кислоты, чтобы скорректировать форму лица. В области скул препарат помогает добавить выразительности и подчеркнуть линию, в области подбородка скорректировать пропорции и профиль. Метод не меняет лицо кардинально и работает с тем, что дала природа.',
+          '[[svc:konturnaya-plastyka-fylleramy-v-belczah|Контурная пластика]] это введение филлера, чаще всего на основе гиалуроновой кислоты, чтобы скорректировать форму лица. В области скул препарат помогает добавить выразительности и подчеркнуть линию, в области подбородка скорректировать пропорции и профиль. Метод не меняет лицо кардинально и работает с тем, что дала природа.',
         ],
       },
       {
@@ -18,7 +18,7 @@ export const MISC_A: ArticleRewrites = {
       {
         h2: 'Какие препараты используют',
         paragraphs: [
-          'Для этих зон подбирают филлеры с плотной текстурой, которые хорошо держат форму. Конкретный продукт врач выбирает с учётом вашей анатомии и задачи. Вы вправе узнать название препарата, посмотреть упаковку и спросить, чем он отличается от других.',
+          'Для этих зон подбирают [[fillery-vidy-sostav-proizvoditeli|филлеры]] с плотной текстурой, которые хорошо держат форму. Конкретный продукт врач выбирает с учётом вашей анатомии и задачи. Вы вправе узнать название препарата, посмотреть упаковку и спросить, чем он отличается от других.',
         ],
       },
       {
@@ -86,7 +86,7 @@ export const MISC_A: ArticleRewrites = {
       {
         h2: 'Ce este conturarea pometților și a bărbiei',
         paragraphs: [
-          'Conturarea este introducerea unui filler, cel mai des pe bază de acid hialuronic, pentru corecția formei feței. În zona pometților preparatul ajută să adăugați expresivitate și să subliniați linia, în zona bărbiei corectează proporțiile și profilul. Metoda nu schimbă radical fața și lucrează cu ceea ce a dat natura.',
+          '[[svc:konturnaya-plastyka-fylleramy-v-belczah|Conturarea]] este introducerea unui filler, cel mai des pe bază de acid hialuronic, pentru corecția formei feței. În zona pometților preparatul ajută să adăugați expresivitate și să subliniați linia, în zona bărbiei corectează proporțiile și profilul. Metoda nu schimbă radical fața și lucrează cu ceea ce a dat natura.',
         ],
       },
       {
@@ -98,7 +98,7 @@ export const MISC_A: ArticleRewrites = {
       {
         h2: 'Ce preparate se folosesc',
         paragraphs: [
-          'Pentru aceste zone se aleg filleri cu textură densă, care își păstrează bine forma. Produsul concret îl alege medicul, ținând cont de anatomia și scopul dumneavoastră. Aveți dreptul să aflați denumirea preparatului, să vedeți ambalajul și să întrebați prin ce diferă de altele.',
+          'Pentru aceste zone se aleg [[fillery-vidy-sostav-proizvoditeli|filleri]] cu textură densă, care își păstrează bine forma. Produsul concret îl alege medicul, ținând cont de anatomia și scopul dumneavoastră. Aveți dreptul să aflați denumirea preparatului, să vedeți ambalajul și să întrebați prin ce diferă de altele.',
         ],
       },
       {
@@ -156,7 +156,7 @@ export const MISC_A: ArticleRewrites = {
       {
         h2: 'Почему после мезотерапии бывают отёк и синяки',
         paragraphs: [
-          'Мезотерапия это микроинъекции в кожу, и каждый укол повреждает мелкие сосуды. Отсюда небольшая отёчность, покраснение и иногда синяки. Это ожидаемая реакция кожи на вмешательство, а не признак ошибки. Выраженность зависит от зоны, техники и индивидуальных особенностей.',
+          '[[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|Мезотерапия]] это микроинъекции в кожу, и каждый укол повреждает мелкие сосуды. Отсюда небольшая отёчность, покраснение и иногда синяки. Это ожидаемая реакция кожи на вмешательство, а не признак ошибки. Выраженность зависит от зоны, техники и индивидуальных особенностей.',
         ],
       },
       {
@@ -186,7 +186,7 @@ export const MISC_A: ArticleRewrites = {
       {
         h2: 'Как спланировать процедуру',
         paragraphs: [
-          'Если впереди важное событие, делайте мезотерапию заранее, с запасом времени на восстановление. Не назначайте её на последний день, чтобы не нервничать из-за следов. Врач подскажет, как выбрать подходящий срок.',
+          'Если впереди важное событие, делайте [[mezoterapiya-lica-beltsy-chto-eto|мезотерапию]] заранее, с запасом времени на восстановление. Не назначайте её на последний день, чтобы не нервничать из-за следов. Врач подскажет, как выбрать подходящий срок.',
         ],
       },
       {
@@ -198,7 +198,7 @@ export const MISC_A: ArticleRewrites = {
       {
         h2: 'Как проходит процедура',
         paragraphs: [
-          'Врач очищает кожу, обрабатывает её антисептиком и вводит препарат очень тонкой иглой в поверхностные слои кожи. Ощущения обычно терпимые, при необходимости используют обезболивающий крем. Подробности о составе коктейля и числе зон врач обсуждает с вами заранее.',
+          'Врач очищает кожу, обрабатывает её антисептиком и вводит препарат очень тонкой иглой в поверхностные слои кожи. Ощущения обычно терпимые, при необходимости используют обезболивающий крем. Подробности о составе [[mezoterapiya-lica-preparaty-sostav|коктейля]] и числе зон врач обсуждает с вами заранее.',
         ],
       },
       {
@@ -236,7 +236,7 @@ export const MISC_A: ArticleRewrites = {
       {
         h2: 'De ce apar edem și vânătăi după mezoterapie',
         paragraphs: [
-          'Mezoterapia înseamnă microinjecții în piele, iar fiecare înțepătură rănește vase mici de sânge. De aici un edem ușor, roșeață și uneori vânătăi. Aceasta e o reacție așteptată a pielii la intervenție, nu un semn de greșeală. Intensitatea depinde de zonă, tehnică și particularități individuale.',
+          '[[svc:mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe|Mezoterapia]] înseamnă microinjecții în piele, iar fiecare înțepătură rănește vase mici de sânge. De aici un edem ușor, roșeață și uneori vânătăi. Aceasta e o reacție așteptată a pielii la intervenție, nu un semn de greșeală. Intensitatea depinde de zonă, tehnică și particularități individuale.',
         ],
       },
       {
@@ -266,7 +266,7 @@ export const MISC_A: ArticleRewrites = {
       {
         h2: 'Cum planificați procedura',
         paragraphs: [
-          'Dacă urmează un eveniment important, faceți mezoterapia din timp, cu rezervă pentru recuperare. Nu o programați în ultima zi, ca să nu vă neliniștiți din cauza urmelor. Medicul vă spune cum alegeți termenul potrivit.',
+          'Dacă urmează un eveniment important, faceți [[mezoterapiya-lica-beltsy-chto-eto|mezoterapia]] din timp, cu rezervă pentru recuperare. Nu o programați în ultima zi, ca să nu vă neliniștiți din cauza urmelor. Medicul vă spune cum alegeți termenul potrivit.',
         ],
       },
       {
@@ -278,7 +278,7 @@ export const MISC_A: ArticleRewrites = {
       {
         h2: 'Cum decurge procedura',
         paragraphs: [
-          'Medicul curăță pielea, o tratează cu antiseptic și introduce preparatul cu un ac foarte subțire în straturile superficiale ale pielii. Senzațiile sunt de obicei suportabile, la nevoie se folosește o cremă anestezică. Detaliile despre compoziția cocktailului și numărul de zone medicul le discută cu dumneavoastră în prealabil.',
+          'Medicul curăță pielea, o tratează cu antiseptic și introduce preparatul cu un ac foarte subțire în straturile superficiale ale pielii. Senzațiile sunt de obicei suportabile, la nevoie se folosește o cremă anestezică. Detaliile despre compoziția [[mezoterapiya-lica-preparaty-sostav|cocktailului]] și numărul de zone medicul le discută cu dumneavoastră în prealabil.',
         ],
       },
       {

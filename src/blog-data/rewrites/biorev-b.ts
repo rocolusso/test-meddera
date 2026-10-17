@@ -18,7 +18,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Накопительный эффект',
         paragraphs: [
-          'Гиалуроновая кислота удерживает воду, и от процедуры к процедуре кожа обычно выглядит увлажнённее и ровнее. Поэтому курс оценивают по общему впечатлению. Если вы не заметили изменений, скажите об этом врачу: он пересмотрит препарат или интервалы.',
+          '[[biorevitalizaciya-preparaty-gialoronovaya-kislota|Гиалуроновая кислота]] удерживает воду, и от процедуры к процедуре кожа обычно выглядит увлажнённее и ровнее. Поэтому курс оценивают по общему впечатлению. Если вы не заметили изменений, скажите об этом врачу: он пересмотрит препарат или интервалы.',
         ],
       },
       {
@@ -36,13 +36,13 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Если был долгий перерыв',
         paragraphs: [
-          'Вернуться к процедурам можно в любой момент. Перед этим стоит прийти на консультацию: за время паузы изменились кожа, привычки, а возможно, и лекарства, которые вы принимаете. Врач заново оценит показания и противопоказания.',
+          'Вернуться к процедурам можно в любой момент. Перед этим стоит прийти на консультацию: за время паузы изменились кожа, привычки, а возможно, и лекарства, которые вы принимаете. Врач заново оценит показания и [[biorevitalizaciya-protivopokazaniya|противопоказания]].',
         ],
       },
       {
         h2: 'Выбор сезона',
         paragraphs: [
-          'Биоревитализацию можно планировать в любое время года, но у сезонов есть особенности. В тёплое время кожа больше страдает от солнца, а зимой от сухого воздуха и ветра. Следы от уколов в первые дни заметны, поэтому многие выбирают период, когда меньше публичных событий и яркого солнца.',
+          '[[svc:byorevytalyzaczyya-v-belczah|Биоревитализацию]] можно планировать в любое время года, но у сезонов есть особенности. В тёплое время кожа больше страдает от солнца, а зимой от сухого воздуха и ветра. Следы от уколов в первые дни заметны, поэтому многие выбирают период, когда меньше публичных событий и яркого солнца.',
         ],
       },
       {
@@ -79,7 +79,7 @@ export const BIOREV_B: ArticleRewrites = {
         h2: 'Как спланировать курс',
         paragraphs: [
           'Если у вас есть важное событие, начните заранее и оставьте запас времени. Тогда следы от уколов успеют пройти, а вы спокойно оцените результат. Обсудите с врачом сроки при записи, чтобы календарь не диктовал решений.',
-          'Консультацию по курсу биоревитализации можно получить в клинике Meddera в Бельцах. Записаться можно по телефону или через форму на сайте.',
+          'Консультацию по курсу [[biorevitalizaciya-beltsy-chto-eto|биоревитализации]] можно получить в клинике Meddera в Бельцах. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -99,7 +99,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Efectul cumulativ',
         paragraphs: [
-          'Acidul hialuronic reține apa, iar de la o procedură la alta pielea arată de obicei mai hidratată și mai uniformă. De aceea cursul se apreciază după impresia generală. Dacă nu ați observat schimbări, spuneți medicului: el va revedea preparatul sau intervalele.',
+          '[[biorevitalizaciya-preparaty-gialoronovaya-kislota|Acidul hialuronic]] reține apa, iar de la o procedură la alta pielea arată de obicei mai hidratată și mai uniformă. De aceea cursul se apreciază după impresia generală. Dacă nu ați observat schimbări, spuneți medicului: el va revedea preparatul sau intervalele.',
         ],
       },
       {
@@ -117,13 +117,13 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Dacă a fost o pauză lungă',
         paragraphs: [
-          'La proceduri puteți reveni oricând. Înainte e bine să veniți la consultație: în timpul pauzei s-au schimbat pielea, obiceiurile și poate chiar medicamentele pe care le luați. Medicul va evalua din nou indicațiile și contraindicațiile.',
+          'La proceduri puteți reveni oricând. Înainte e bine să veniți la consultație: în timpul pauzei s-au schimbat pielea, obiceiurile și poate chiar medicamentele pe care le luați. Medicul va evalua din nou indicațiile și [[biorevitalizaciya-protivopokazaniya|contraindicațiile]].',
         ],
       },
       {
         h2: 'Alegerea sezonului',
         paragraphs: [
-          'Biorevitalizarea se poate programa în orice anotimp, dar fiecare are particularitățile lui. Vara pielea suferă mai mult de soare, iar iarna de aerul uscat și de vânt. Urmele injecțiilor se văd în primele zile, de aceea mulți aleg o perioadă cu mai puține evenimente publice și cu soare mai puțin puternic.',
+          '[[svc:byorevytalyzaczyya-v-belczah|Biorevitalizarea]] se poate programa în orice anotimp, dar fiecare are particularitățile lui. Vara pielea suferă mai mult de soare, iar iarna de aerul uscat și de vânt. Urmele injecțiilor se văd în primele zile, de aceea mulți aleg o perioadă cu mai puține evenimente publice și cu soare mai puțin puternic.',
         ],
       },
       {
@@ -148,7 +148,7 @@ export const BIOREV_B: ArticleRewrites = {
         h2: 'Cum planificați cursul',
         paragraphs: [
           'Dacă aveți un eveniment important, începeți din timp și lăsați o rezervă de zile. Atunci urmele injecțiilor au timp să dispară, iar rezultatul îl evaluați liniștit. Discutați cu medicul termenele la programare, ca să nu vă dicteze calendarul deciziile.',
-          'Consultația pentru cursul de biorevitalizare se poate obține la clinica Meddera din Bălți. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Consultația pentru cursul de [[biorevitalizaciya-beltsy-chto-eto|biorevitalizare]] se poate obține la clinica Meddera din Bălți. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -158,7 +158,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Что происходит с кожей после процедуры',
         paragraphs: [
-          'После биоревитализации на местах уколов могут быть покраснение, небольшие бугорки, отёчность, иногда синяки. Кожа может быть чувствительной и слегка стянутой. Эти проявления обычно временные и проходят самостоятельно, но скорость восстановления у всех разная.',
+          'После [[svc:byorevytalyzaczyya-v-belczah|биоревитализации]] на местах уколов могут быть покраснение, небольшие бугорки, отёчность, иногда синяки. Кожа может быть чувствительной и слегка стянутой. Эти проявления обычно временные и проходят самостоятельно, но скорость восстановления у всех разная.',
         ],
       },
       {
@@ -176,7 +176,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Отёк и синяки',
         paragraphs: [
-          'Отёчность чаще бывает на тонкой коже, например вокруг глаз. Синяк может появиться, если игла задела мелкий сосуд, и это не говорит об ошибке врача. Прохладный компресс через чистую ткань, отказ от алкоголя и горячей ванны в первые дни помогают сосудам успокоиться. Пользоваться ли аптечными средствами, уточните у врача.',
+          'Отёчность чаще бывает на тонкой коже, например [[biorevitalizaciya-vokrug-glaz|вокруг глаз]]. Синяк может появиться, если игла задела мелкий сосуд, и это не говорит об ошибке врача. Прохладный компресс через чистую ткань, отказ от алкоголя и горячей ванны в первые дни помогают сосудам успокоиться. Пользоваться ли аптечными средствами, уточните у врача.',
         ],
       },
       {
@@ -206,7 +206,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'После загара и солнечных ожогов',
         paragraphs: [
-          'Если кожа обгорела, шелушится или покраснела, сначала лечат ожог, а процедуру переносят. Увлажняйте кожу, защищайте от солнца и не срывайте шелушащиеся участки. Когда кожа успокоится, врач оценит состояние и решит, пора ли возвращаться к биоревитализации.',
+          'Если кожа обгорела, шелушится или покраснела, сначала лечат ожог, а процедуру переносят. Увлажняйте кожу, защищайте от солнца и не срывайте шелушащиеся участки. Когда кожа успокоится, врач оценит состояние и решит, пора ли возвращаться к [[biorevitalizaciya-beltsy-chto-eto|биоревитализации]].',
         ],
       },
       {
@@ -245,7 +245,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Ce se întâmplă cu pielea după procedură',
         paragraphs: [
-          'După biorevitalizare în locurile injecțiilor pot apărea roșeață, mici denivelări, umflături, uneori vânătăi. Pielea poate fi sensibilă și ușor întinsă. Aceste manifestări sunt de obicei temporare și trec singure, dar viteza de refacere diferă de la om la om.',
+          'După [[svc:byorevytalyzaczyya-v-belczah|biorevitalizare]] în locurile injecțiilor pot apărea roșeață, mici denivelări, umflături, uneori vânătăi. Pielea poate fi sensibilă și ușor întinsă. Aceste manifestări sunt de obicei temporare și trec singure, dar viteza de refacere diferă de la om la om.',
         ],
       },
       {
@@ -293,7 +293,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'După bronzare și arsuri solare',
         paragraphs: [
-          'Dacă pielea s-a ars, se descuamează sau s-a înroșit, mai întâi se tratează arsura, iar procedura se amână. Hidratați pielea, protejați-o de soare și nu dezlipiți zonele care se descuamează. Când pielea se liniștește, medicul evaluează starea și hotărăște dacă este momentul să reveniți la biorevitalizare.',
+          'Dacă pielea s-a ars, se descuamează sau s-a înroșit, mai întâi se tratează arsura, iar procedura se amână. Hidratați pielea, protejați-o de soare și nu dezlipiți zonele care se descuamează. Când pielea se liniștește, medicul evaluează starea și hotărăște dacă este momentul să reveniți la [[biorevitalizaciya-beltsy-chto-eto|biorevitalizare]].',
         ],
       },
       {
@@ -316,19 +316,19 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Зачем врач выясняет противопоказания',
         paragraphs: [
-          'Биоревитализация это инъекционная процедура, поэтому перед ней врач выясняет, нет ли ограничений. Часть ограничений постоянные, часть временные. Цель состоит в том, чтобы процедура не навредила. Окончательное решение принимается только после осмотра и разговора.',
+          '[[svc:byorevytalyzaczyya-v-belczah|Биоревитализация]] это инъекционная процедура, поэтому перед ней врач выясняет, нет ли ограничений. Часть ограничений постоянные, часть временные. Цель состоит в том, чтобы процедура не навредила. Окончательное решение принимается только после осмотра и разговора.',
         ],
       },
       {
         h2: 'Когда процедуру откладывают',
         paragraphs: [
-          'К временным ограничениям относятся воспаление, раны, акне в стадии обострения и другие высыпания на коже в зоне введения, герпес в активной фазе, простудные и другие острые инфекции, обострение хронических болезней. После лечения и выздоровления вопрос рассматривают заново.',
+          'К временным ограничениям относятся воспаление, раны, [[akne-prichiny-stadii-lechenie|акне]] в стадии обострения и другие высыпания на коже в зоне введения, герпес в активной фазе, простудные и другие острые инфекции, обострение хронических болезней. После лечения и выздоровления вопрос рассматривают заново.',
         ],
       },
       {
         h2: 'Когда процедура не рекомендована',
         paragraphs: [
-          'Врач может не рекомендовать биоревитализацию при беременности и кормлении грудью, аллергии на компоненты препарата, нарушениях свёртываемости крови, некоторых аутоиммунных и онкологических заболеваниях, склонности к образованию грубых рубцов. Полный перечень зависит от препарата, поэтому ориентируйтесь на слова врача.',
+          'Врач может не рекомендовать [[biorevitalizaciya-beltsy-chto-eto|биоревитализацию]] при беременности и кормлении грудью, аллергии на компоненты препарата, нарушениях свёртываемости крови, некоторых аутоиммунных и онкологических заболеваниях, склонности к образованию грубых рубцов. Полный перечень зависит от препарата, поэтому ориентируйтесь на слова врача.',
         ],
       },
       {
@@ -403,19 +403,19 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'De ce clarifică medicul contraindicațiile',
         paragraphs: [
-          'Biorevitalizarea este o procedură injectabilă, de aceea înainte de ea medicul clarifică dacă există restricții. O parte dintre restricții sunt permanente, altele temporare. Scopul este ca procedura să nu dăuneze. Decizia finală se ia doar după examinare și discuție.',
+          '[[svc:byorevytalyzaczyya-v-belczah|Biorevitalizarea]] este o procedură injectabilă, de aceea înainte de ea medicul clarifică dacă există restricții. O parte dintre restricții sunt permanente, altele temporare. Scopul este ca procedura să nu dăuneze. Decizia finală se ia doar după examinare și discuție.',
         ],
       },
       {
         h2: 'Când procedura se amână',
         paragraphs: [
-          'Printre restricțiile temporare sunt inflamația, rănile, acneea în acutizare și alte erupții pe piele în zona de administrare, herpesul în faza activă, răcelile și alte infecții acute, acutizarea bolilor cronice. După tratament și însănătoșire întrebarea se reia.',
+          'Printre restricțiile temporare sunt inflamația, rănile, [[akne-prichiny-stadii-lechenie|acneea]] în acutizare și alte erupții pe piele în zona de administrare, herpesul în faza activă, răcelile și alte infecții acute, acutizarea bolilor cronice. După tratament și însănătoșire întrebarea se reia.',
         ],
       },
       {
         h2: 'Când procedura nu este recomandată',
         paragraphs: [
-          'Medicul poate să nu recomande biorevitalizarea în sarcină și alăptare, în alergie la componentele preparatului, în tulburări de coagulare, în unele boli autoimune și oncologice, în tendința de a forma cicatrici groase. Lista completă depinde de preparat, de aceea orientați-vă după cuvintele medicului.',
+          'Medicul poate să nu recomande [[biorevitalizaciya-beltsy-chto-eto|biorevitalizarea]] în sarcină și alăptare, în alergie la componentele preparatului, în tulburări de coagulare, în unele boli autoimune și oncologice, în tendința de a forma cicatrici groase. Lista completă depinde de preparat, de aceea orientați-vă după cuvintele medicului.',
         ],
       },
       {
@@ -445,7 +445,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Vârsta și așteptările',
         paragraphs: [
-          'Pielii mature biorevitalizarea îi ajută să îmbunătățească hidratarea și aspectul, dar nu elimină ridurile adânci și nu înlocuiește alte metode. Medicul vă explică ce să așteptați în cazul dumneavoastră și propune o combinație de metode, dacă este potrivit.',
+          'Pielii mature biorevitalizarea îi ajută să îmbunătățească hidratarea și aspectul, dar nu elimină ridurile adânci și nu înlocuiește alte metode. Medicul vă explică ce să așteptați în cazul dumneavoastră și propune o [[biorevitalizaciya-kombinaciya-procedur|combinație]] de metode, dacă este potrivit.',
         ],
       },
       {
@@ -486,25 +486,25 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Тип кожи и цель процедуры',
         paragraphs: [
-          'Биоревитализацию подбирают под состояние кожи. Одна и та же процедура решает разные задачи: у сухой кожи это нехватка влаги, у жирной тусклость и неровный тон, у возрастной сухость и потеря упругости. Поэтому врач сначала осматривает кожу, а потом выбирает препарат и схему.',
+          '[[svc:byorevytalyzaczyya-v-belczah|Биоревитализацию]] подбирают под состояние кожи. Одна и та же процедура решает разные задачи: у сухой кожи это нехватка влаги, у жирной тусклость и неровный тон, у возрастной сухость и потеря упругости. Поэтому врач сначала осматривает кожу, а потом выбирает препарат и схему.',
         ],
       },
       {
         h2: 'Сухая кожа',
         paragraphs: [
-          'Сухая кожа плохо удерживает воду, шелушится, стягивается после умывания. Гиалуроновая кислота связывает влагу, и после процедур кожа обычно становится мягче и комфортнее. Домашний уход при этом остаётся обязательным: он поддерживает результат и не даёт коже снова пересыхать.',
+          'Сухая кожа плохо удерживает воду, шелушится, стягивается после умывания. [[biorevitalizaciya-preparaty-gialoronovaya-kislota|Гиалуроновая кислота]] связывает влагу, и после процедур кожа обычно становится мягче и комфортнее. Домашний уход при этом остаётся обязательным: он поддерживает результат и не даёт коже снова пересыхать.',
         ],
       },
       {
         h2: 'Жирная кожа',
         paragraphs: [
-          'Жирная кожа тоже может быть обезвоженной: себум есть, а влаги не хватает, поэтому она выглядит тусклой и блестит. Подбирают лёгкие препараты и аккуратно относятся к воспалённым участкам. При активных высыпаниях сначала лечат акне, а потом решают вопрос о процедуре.',
+          'Жирная кожа тоже может быть обезвоженной: себум есть, а влаги не хватает, поэтому она выглядит тусклой и блестит. Подбирают лёгкие препараты и аккуратно относятся к воспалённым участкам. При активных высыпаниях сначала лечат [[akne-prichiny-stadii-lechenie|акне]], а потом решают вопрос о процедуре.',
         ],
       },
       {
         h2: 'Кожа, склонная к акне, и постакне',
         paragraphs: [
-          'Если кожа склонна к воспалениям, процедуру планируют в период ремиссии. Врач обсудит, когда можно вводить препарат и как сочетать его с лечением акне. Следы после воспалений уменьшить можно по-разному, и биоревитализация только одно из направлений.',
+          'Если кожа склонна к воспалениям, процедуру планируют в период ремиссии. Врач обсудит, когда можно вводить препарат и как сочетать его с лечением акне. Следы после воспалений уменьшить можно по-разному, и [[biorevitalizaciya-beltsy-chto-eto|биоревитализация]] только одно из направлений.',
         ],
       },
       {
@@ -528,7 +528,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Пигментация',
         paragraphs: [
-          'Биоревитализация не лечит пигментные пятна. Она может улучшить общее состояние кожи, но причины пигментации разные, и перед любым вмешательством врач выясняет, с чем связано пятно. Некоторые пигментные образования нужно показать дерматологу и обследовать.',
+          'Биоревитализация не лечит [[pigmentnye-pyatna-prichiny-lechenie|пигментные пятна]]. Она может улучшить общее состояние кожи, но причины пигментации разные, и перед любым вмешательством врач выясняет, с чем связано пятно. Некоторые пигментные образования нужно показать дерматологу и обследовать.',
         ],
       },
       {
@@ -573,25 +573,25 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Tipul pielii și scopul procedurii',
         paragraphs: [
-          'Biorevitalizarea se alege după starea pielii. Aceeași procedură rezolvă sarcini diferite: la pielea uscată lipsa apei, la cea grasă tenul tern și neuniform, la cea matură uscăciunea și pierderea elasticității. De aceea medicul examinează mai întâi pielea, apoi alege preparatul și schema.',
+          '[[svc:byorevytalyzaczyya-v-belczah|Biorevitalizarea]] se alege după starea pielii. Aceeași procedură rezolvă sarcini diferite: la pielea uscată lipsa apei, la cea grasă tenul tern și neuniform, la cea matură uscăciunea și pierderea elasticității. De aceea medicul examinează mai întâi pielea, apoi alege preparatul și schema.',
         ],
       },
       {
         h2: 'Pielea uscată',
         paragraphs: [
-          'Pielea uscată reține greu apa, se descuamează, se întinde după spălare. Acidul hialuronic leagă apa, iar după proceduri pielea devine de obicei mai moale și mai confortabilă. Îngrijirea de acasă rămâne obligatorie: ea susține rezultatul și nu lasă pielea să se usuce din nou.',
+          'Pielea uscată reține greu apa, se descuamează, se întinde după spălare. [[biorevitalizaciya-preparaty-gialoronovaya-kislota|Acidul hialuronic]] leagă apa, iar după proceduri pielea devine de obicei mai moale și mai confortabilă. Îngrijirea de acasă rămâne obligatorie: ea susține rezultatul și nu lasă pielea să se usuce din nou.',
         ],
       },
       {
         h2: 'Pielea grasă',
         paragraphs: [
-          'Pielea grasă poate fi și deshidratată: sebum există, dar apa lipsește, de aceea arată tern și lucește. Se aleg preparate ușoare și se tratează atent zonele inflamate. Când erupțiile sunt active, se tratează mai întâi acneea, apoi se decide asupra procedurii.',
+          'Pielea grasă poate fi și deshidratată: sebum există, dar apa lipsește, de aceea arată tern și lucește. Se aleg preparate ușoare și se tratează atent zonele inflamate. Când erupțiile sunt active, se tratează mai întâi [[akne-prichiny-stadii-lechenie|acneea]], apoi se decide asupra procedurii.',
         ],
       },
       {
         h2: 'Pielea predispusă la acnee și postacneea',
         paragraphs: [
-          'Dacă pielea este predispusă la inflamații, procedura se planifică în perioada de remisie. Medicul discută când se poate administra preparatul și cum se asociază cu tratamentul acneei. Urmele după inflamații se pot reduce în mai multe feluri, iar biorevitalizarea este doar una dintre direcții.',
+          'Dacă pielea este predispusă la inflamații, procedura se planifică în perioada de remisie. Medicul discută când se poate administra preparatul și cum se asociază cu tratamentul acneei. Urmele după inflamații se pot reduce în mai multe feluri, iar [[biorevitalizaciya-beltsy-chto-eto|biorevitalizarea]] este doar una dintre direcții.',
         ],
       },
       {
@@ -603,7 +603,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Pielea matură',
         paragraphs: [
-          'Odată cu vârsta pielea reține mai greu apa, pierde elasticitatea, devine mai uscată. Biorevitalizarea îmbunătățește hidratarea și aspectul, dar nu elimină pliurile adânci și nu întinde țesuturile. Dacă vă preocupă anume asta, medicul propune alte metode sau o combinație a lor.',
+          'Odată cu vârsta pielea reține mai greu apa, pierde elasticitatea, devine mai uscată. Biorevitalizarea îmbunătățește hidratarea și aspectul, dar nu elimină pliurile adânci și nu întinde țesuturile. Dacă vă preocupă anume asta, medicul propune alte metode sau o [[biorevitalizaciya-kombinaciya-procedur|combinație]] a lor.',
         ],
       },
       {
@@ -662,13 +662,13 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Область вокруг глаз',
         paragraphs: [
-          'Кожа вокруг глаз очень тонкая, в ней мало сальных желёз, поэтому она быстро сохнет, и мелкие морщинки заметны раньше. Для этой зоны используют мягкие препараты и деликатную технику. Отёчность и синяки здесь возникают чаще, и об этом заранее предупреждают.',
+          '[[mezoterapiya-lica-vokrug-glaz|Кожа вокруг глаз]] очень тонкая, в ней мало сальных желёз, поэтому она быстро сохнет, и мелкие морщинки заметны раньше. Для этой зоны используют мягкие препараты и деликатную технику. Отёчность и синяки здесь возникают чаще, и об этом заранее предупреждают.',
         ],
       },
       {
         h2: 'Чего ждать от процедуры вокруг глаз',
         paragraphs: [
-          'Биоревитализация может улучшить увлажнённость и внешний вид кожи. Но она не убирает мешки под глазами, тёмные круги, связанные со строением лица или сосудами, и не заменяет другие методы. Причину таких изменений нужно определять на осмотре.',
+          '[[svc:byorevytalyzaczyya-v-belczah|Биоревитализация]] может улучшить увлажнённость и внешний вид кожи. Но она не убирает мешки под глазами, тёмные круги, связанные со строением лица или сосудами, и не заменяет другие методы. Причину таких изменений нужно определять на осмотре.',
         ],
       },
       {
@@ -680,7 +680,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Декольте',
         paragraphs: [
-          'Декольте часто страдает от солнца, на нём появляются сухость, мелкая сетка морщинок и пигментные пятна. Для этой зоны важна ежедневная защита от ультрафиолета и мягкий уход. Врач оценит состояние и подскажет, нужна ли биоревитализация, и осмотрит пигментные образования.',
+          'Декольте часто страдает от солнца, на нём появляются сухость, мелкая сетка морщинок и [[pigmentnye-pyatna-prichiny-lechenie|пигментные пятна]]. Для этой зоны важна ежедневная защита от ультрафиолета и мягкий уход. Врач оценит состояние и подскажет, нужна ли [[biorevitalizaciya-beltsy-chto-eto|биоревитализация]], и осмотрит пигментные образования.',
         ],
       },
       {
@@ -749,13 +749,13 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Zona din jurul ochilor',
         paragraphs: [
-          'Pielea din jurul ochilor este foarte subțire și are puține glande sebacee, de aceea se usucă repede, iar ridurile fine se văd mai devreme. Pentru această zonă se folosesc preparate blânde și o tehnică delicată. Umflătura și vânătăile apar aici mai des, și despre asta se avertizează dinainte.',
+          '[[mezoterapiya-lica-vokrug-glaz|Pielea din jurul ochilor]] este foarte subțire și are puține glande sebacee, de aceea se usucă repede, iar ridurile fine se văd mai devreme. Pentru această zonă se folosesc preparate blânde și o tehnică delicată. Umflătura și vânătăile apar aici mai des, și despre asta se avertizează dinainte.',
         ],
       },
       {
         h2: 'Ce să așteptați de la procedura din jurul ochilor',
         paragraphs: [
-          'Biorevitalizarea poate îmbunătăți hidratarea și aspectul pielii. Dar nu elimină pungile de sub ochi, cearcănele legate de structura feței sau de vase și nu înlocuiește alte metode. Cauza unor asemenea schimbări trebuie stabilită la examinare.',
+          '[[svc:byorevytalyzaczyya-v-belczah|Biorevitalizarea]] poate îmbunătăți hidratarea și aspectul pielii. Dar nu elimină pungile de sub ochi, cearcănele legate de structura feței sau de vase și nu înlocuiește alte metode. Cauza unor asemenea schimbări trebuie stabilită la examinare.',
         ],
       },
       {
@@ -767,7 +767,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Decolteul',
         paragraphs: [
-          'Decolteul suferă adesea de soare, pe el apar uscăciune, o rețea fină de riduri și pete pigmentare. Pentru această zonă contează protecția zilnică împotriva ultravioletelor și o îngrijire blândă. Medicul evaluează starea, spune dacă este nevoie de biorevitalizare și examinează formațiunile pigmentare.',
+          'Decolteul suferă adesea de soare, pe el apar [[biorevitalizaciya-suhaya-kozha|uscăciune]], o rețea fină de riduri și pete pigmentare. Pentru această zonă contează protecția zilnică împotriva ultravioletelor și o îngrijire blândă. Medicul evaluează starea, spune dacă este nevoie de [[biorevitalizaciya-beltsy-chto-eto|biorevitalizare]] și examinează formațiunile pigmentare.',
         ],
       },
       {
@@ -826,19 +826,19 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Зачем сочетать процедуры',
         paragraphs: [
-          'Разные методы решают разные задачи. Биоревитализация увлажняет кожу, ботулотоксин расслабляет мышцы и сглаживает мимические морщины, филлеры восполняют объём, лазер и пилинги работают с поверхностью. Сочетание уместно, когда задач несколько, но сначала врач определяет, что нужно именно вам.',
+          'Разные методы решают разные задачи. [[svc:byorevytalyzaczyya-v-belczah|Биоревитализация]] увлажняет кожу, ботулотоксин расслабляет мышцы и сглаживает мимические морщины, [[botoks-vs-fillery-raznica|филлеры]] восполняют объём, лазер и пилинги работают с поверхностью. Сочетание уместно, когда задач несколько, но сначала врач определяет, что нужно именно вам.',
         ],
       },
       {
         h2: 'Биоревитализация и мезотерапия',
         paragraphs: [
-          'Обе процедуры относятся к инъекционному уходу за кожей, но препараты у них разные. В биоревитализации используют гиалуроновую кислоту, а мезотерапия подразумевает коктейли из витаминов, аминокислот и других компонентов. Выбор зависит от того, чего не хватает коже, и врач объяснит разницу.',
+          'Обе процедуры относятся к инъекционному уходу за кожей, но препараты у них разные. В биоревитализации используют гиалуроновую кислоту, а [[mezoterapiya-lica-beltsy-chto-eto|мезотерапия]] подразумевает коктейли из витаминов, аминокислот и других компонентов. Выбор зависит от того, чего не хватает коже, и врач объяснит разницу.',
         ],
       },
       {
         h2: 'Биоревитализация и ботулотоксин',
         paragraphs: [
-          'Ботулотоксин убирает мимические морщины, расслабляя мышцы, а биоревитализация увлажняет кожу. Они не заменяют друг друга и не конкурируют. Если вы решили сочетать их, врач определит порядок и интервал между процедурами.',
+          'Ботулотоксин убирает мимические морщины, расслабляя мышцы, а [[biorevitalizaciya-beltsy-chto-eto|биоревитализация]] увлажняет кожу. Они не заменяют друг друга и не конкурируют. Если вы решили сочетать их, врач определит порядок и интервал между процедурами.',
         ],
       },
       {
@@ -892,7 +892,7 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'Кому сочетание не требуется',
         paragraphs: [
-          'Если вас беспокоит только сухость кожи, обычно достаточно одной процедуры и ухода. Дополнительные методы нужны, когда есть другие задачи, например мимические морщины или недостаток объёма.',
+          'Если вас беспокоит только [[biorevitalizaciya-suhaya-kozha|сухость кожи]], обычно достаточно одной процедуры и ухода. Дополнительные методы нужны, когда есть другие задачи, например мимические морщины или недостаток объёма.',
         ],
       },
       {
@@ -913,25 +913,25 @@ export const BIOREV_B: ArticleRewrites = {
       {
         h2: 'De ce se combină procedurile',
         paragraphs: [
-          'Metodele diferite rezolvă sarcini diferite. Biorevitalizarea hidratează pielea, toxina botulinică relaxează mușchii și netezește ridurile mimice, fillerele restabilesc volumul, laserul și peeling-urile lucrează cu suprafața. Combinația este potrivită când sarcinile sunt mai multe, dar mai întâi medicul stabilește ce vă trebuie anume dumneavoastră.',
+          'Metodele diferite rezolvă sarcini diferite. [[svc:byorevytalyzaczyya-v-belczah|Biorevitalizarea]] hidratează pielea, toxina botulinică relaxează mușchii și netezește ridurile mimice, fillerele restabilesc volumul, laserul și peeling-urile lucrează cu suprafața. [[konturnaya-plastika-kombinaciya-procedur|Combinația]] este potrivită când sarcinile sunt mai multe, dar mai întâi medicul stabilește ce vă trebuie anume dumneavoastră.',
         ],
       },
       {
         h2: 'Biorevitalizarea și mezoterapia',
         paragraphs: [
-          'Ambele proceduri țin de îngrijirea injectabilă a pielii, dar preparatele sunt diferite. În biorevitalizare se folosește acid hialuronic, iar mezoterapia presupune cocktailuri din vitamine, aminoacizi și alte componente. Alegerea depinde de ce îi lipsește pielii, iar medicul explică deosebirea.',
+          'Ambele proceduri țin de îngrijirea injectabilă a pielii, dar preparatele sunt diferite. În biorevitalizare se folosește acid hialuronic, iar [[mezoterapiya-lica-beltsy-chto-eto|mezoterapia]] presupune cocktailuri din vitamine, aminoacizi și alte componente. Alegerea depinde de ce îi lipsește pielii, iar medicul explică deosebirea.',
         ],
       },
       {
         h2: 'Biorevitalizarea și toxina botulinică',
         paragraphs: [
-          'Toxina botulinică elimină ridurile mimice relaxând mușchii, iar biorevitalizarea hidratează pielea. Ele nu se înlocuiesc și nu concurează. Dacă ați hotărât să le combinați, medicul stabilește ordinea și intervalul dintre proceduri.',
+          'Toxina botulinică elimină ridurile mimice relaxând mușchii, iar [[biorevitalizaciya-beltsy-chto-eto|biorevitalizarea]] hidratează pielea. Ele nu se înlocuiesc și nu concurează. Dacă ați hotărât să le combinați, medicul stabilește ordinea și intervalul dintre proceduri.',
         ],
       },
       {
         h2: 'Biorevitalizarea și fillerele',
         paragraphs: [
-          'Fillerele restabilesc volumul și schimbă contururile, biorevitalizarea îmbunătățește calitatea suprafeței pielii. Una nu o înlocuiește pe cealaltă. Medicul poate propune mai întâi o metodă, apoi pe a doua, ca să poată evalua rezultatul separat.',
+          '[[botoks-vs-fillery-raznica|Fillerele]] restabilesc volumul și schimbă contururile, biorevitalizarea îmbunătățește calitatea suprafeței pielii. Una nu o înlocuiește pe cealaltă. Medicul poate propune mai întâi o metodă, apoi pe a doua, ca să poată evalua rezultatul separat.',
         ],
       },
       {

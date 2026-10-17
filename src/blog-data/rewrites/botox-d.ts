@@ -6,13 +6,13 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Что делает ботулинический токсин',
         paragraphs: [
-          'Препарат на основе ботулинического токсина временно ослабляет сокращение мышцы, в которую его ввели. Морщины на лбу, между бровей и вокруг глаз во многом связаны с работой мимических мышц, поэтому в движении они становятся менее заметными. Кожа при этом остаётся прежней: токсин не разглаживает глубокие складки, которые видны и в покое.',
+          'Препарат на основе [[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|ботулинического токсина]] временно ослабляет сокращение мышцы, в которую его ввели. Морщины на лбу, между бровей и вокруг глаз во многом связаны с работой мимических мышц, поэтому в движении они становятся менее заметными. Кожа при этом остаётся прежней: токсин не разглаживает глубокие складки, которые видны и в покое.',
         ],
       },
       {
         h2: 'Какие зоны чаще обсуждают на приёме',
         paragraphs: [
-          'Чаще всего речь идёт о лбе, межбровье и наружных уголках глаз. Реже обращаются по поводу носа, области вокруг рта, жевательных мышц и шеи. Есть и задачи, не связанные с внешностью: повышенная потливость, головные боли напряжения, скрежет зубами. Для каждой зоны врач подбирает схему отдельно, потому что строение мышц у людей разное.',
+          'Чаще всего речь идёт о лбе, межбровье и наружных уголках глаз. Реже обращаются по поводу носа, области вокруг рта, жевательных мышц и шеи. Есть и задачи, не связанные с внешностью: повышенная потливость, [[botoks-migreni-golovnye-boli|головные боли]] напряжения, скрежет зубами. Для каждой зоны врач подбирает схему отдельно, потому что строение мышц у людей разное.',
         ],
       },
       {
@@ -24,7 +24,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Когда процедуру откладывают или не проводят',
         paragraphs: [
-          'Инъекции не делают при беременности и грудном вскармливании, нервно-мышечных заболеваниях, воспалении или инфекции в зоне уколов, а также при повышенной чувствительности к компонентам препарата. Некоторые лекарства влияют на передачу сигнала к мышцам, поэтому на консультации важно честно рассказать о хронических болезнях, аллергиях и всём, что вы принимаете.',
+          'Инъекции не делают при [[botoks-beremennost-grudnoe-vskarmlivanie|беременности]] и грудном вскармливании, нервно-мышечных заболеваниях, воспалении или инфекции в зоне уколов, а также при повышенной чувствительности к компонентам препарата. Некоторые лекарства влияют на передачу сигнала к мышцам, поэтому на консультации важно честно рассказать о хронических болезнях, аллергиях и всём, что вы принимаете.',
         ],
       },
       {
@@ -36,7 +36,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'О чём спросить врача',
         paragraphs: [
-          'Спросите, какие мышцы будут корректироваться, какой препарат используется, как часто потребуется повторять процедуру и что делать, если результат окажется неровным. Когда врач называет препарат, показывает упаковку и объясняет, чего ожидать именно в вашем случае, решение принять проще и спокойнее.',
+          'Спросите, какие мышцы будут корректироваться, какой препарат используется, [[botoks-chastota-povtornyh-procedur|как часто]] потребуется повторять процедуру и что делать, если результат окажется неровным. Когда врач называет препарат, показывает упаковку и объясняет, чего ожидать именно в вашем случае, решение принять проще и спокойнее.',
         ],
       },
       {
@@ -62,13 +62,13 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Ce face toxina botulinică',
         paragraphs: [
-          'Preparatul pe bază de toxină botulinică slăbește temporar contracția mușchiului în care este injectat. Ridurile de pe frunte, dintre sprâncene și din jurul ochilor se leagă în mare parte de mimică, de aceea în mișcare ele se văd mai puțin. Pielea rămâne aceeași: toxina nu netezește pliurile adânci, care se văd și în repaus.',
+          'Preparatul pe bază de [[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|toxină botulinică]] slăbește temporar contracția mușchiului în care este injectat. [[botoks-lob-gorizontalnye-morshchiny|Ridurile de pe frunte]], dintre sprâncene și din jurul ochilor se leagă în mare parte de mimică, de aceea în mișcare ele se văd mai puțin. Pielea rămâne aceeași: toxina nu netezește pliurile adânci, care se văd și în repaus.',
         ],
       },
       {
         h2: 'Ce zone se discută frecvent la consultație',
         paragraphs: [
-          'De cele mai multe ori este vorba despre frunte, spațiul dintre sprâncene și colțurile externe ale ochilor. Mai rar se cere corecția nasului, a zonei din jurul gurii, a mușchilor maseteri și a gâtului. Pentru fiecare zonă medicul alege schema separat, pentru că structura mușchilor diferă de la om la om.',
+          'De cele mai multe ori este vorba despre frunte, spațiul dintre sprâncene și colțurile externe ale ochilor. Mai rar se cere [[botoks-nos-korrekciya|corecția nasului]], a zonei din jurul gurii, a mușchilor maseteri și a gâtului. Pentru fiecare zonă medicul alege schema separat, pentru că structura mușchilor diferă de la om la om.',
         ],
       },
       {
@@ -80,7 +80,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Când procedura se amână sau nu se face',
         paragraphs: [
-          'Injecțiile nu se fac în sarcină și în perioada alăptării, în bolile neuromusculare, în caz de inflamație sau infecție în zona injectării și la sensibilitate crescută la componentele preparatului. Unele medicamente influențează transmiterea semnalului către mușchi, de aceea la consultație este important să spuneți sincer despre bolile cronice, alergii și tot ce luați.',
+          'Injecțiile nu se fac în [[botoks-beremennost-grudnoe-vskarmlivanie|sarcină]] și în perioada alăptării, în bolile neuromusculare, în caz de inflamație sau infecție în zona injectării și la sensibilitate crescută la componentele preparatului. Unele medicamente influențează transmiterea semnalului către mușchi, de aceea la consultație este important să spuneți sincer despre bolile cronice, alergii și tot ce luați.',
         ],
       },
       {
@@ -92,13 +92,13 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Ce să întrebați medicul',
         paragraphs: [
-          'Întrebați ce mușchi vor fi corectați, ce preparat se folosește, cât de des va trebui repetată procedura și ce se face dacă rezultatul iese inegal. Când medicul numește preparatul, arată ambalajul și explică la ce să vă așteptați în cazul dumneavoastră, decizia se ia mai ușor și mai liniștit.',
+          'Întrebați ce mușchi vor fi corectați, ce preparat se folosește, [[botoks-chastota-povtornyh-procedur|cât de des]] va trebui repetată procedura și ce se face dacă rezultatul iese inegal. Când medicul numește preparatul, arată ambalajul și explică la ce să vă așteptați în cazul dumneavoastră, decizia se ia mai ușor și mai liniștit.',
         ],
       },
       {
         h2: 'Ce se întâmplă după procedură',
         paragraphs: [
-          'Efectul apare treptat: după câteva zile începe să se vadă, apoi devine mai clar. În prima zi se recomandă de obicei să nu frecați locurile înțepăturilor, să evitați sauna și sportul intens. O ușoară înroșire și mici umflături dispar repede. Rezultatul este temporar, de aceea mai târziu procedura se repetă la recomandarea medicului.',
+          'Efectul apare treptat: după câteva zile începe să se vadă, apoi devine mai clar. În prima zi se recomandă să nu frecați locurile înțepăturilor, să evitați sauna și sportul intens. Rezultatul este temporar, de aceea mai târziu procedura se repetă la recomandarea medicului.',
         ],
       },
       {
@@ -120,7 +120,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Консультация и осмотр',
         paragraphs: [
-          'Процедура начинается с разговора. Врач спрашивает, что вас беспокоит, какие препараты вы принимаете, были ли аллергические реакции и делали ли вы такие инъекции раньше. Затем он смотрит на лицо в покое и в движении: просит нахмуриться, поднять брови, улыбнуться, чтобы увидеть, как работают мышцы именно у вас.',
+          'Процедура начинается с разговора. Врач спрашивает, что вас беспокоит, какие препараты вы принимаете, были ли [[botoks-pokazaniya-protivopokazaniya|аллергические реакции]] и делали ли вы такие инъекции раньше. Затем он смотрит на лицо в покое и в движении: просит нахмуриться, поднять брови, улыбнуться, чтобы увидеть, как работают мышцы именно у вас.',
         ],
       },
       {
@@ -144,7 +144,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Какие бывают ощущения',
         paragraphs: [
-          'Большинство людей описывают лёгкое покалывание, как от комариного укуса. В некоторых зонах, например вокруг глаз и носа, ощущения могут быть чуть острее. Сразу после уколов на коже появляются небольшие бугорки и покраснение, которые обычно проходят в течение нескольких десятков минут. Синяки возможны, но бывают не у всех.',
+          'Большинство людей описывают лёгкое покалывание, как от комариного укуса. В некоторых зонах, например вокруг глаз и носа, ощущения могут быть чуть острее. Сразу после уколов на коже появляются небольшие бугорки и покраснение, которые обычно проходят в течение нескольких десятков минут. [[botoks-oslozhneniya-pobelochnye-effekty|Синяки возможны]], но бывают не у всех.',
         ],
       },
       {
@@ -168,7 +168,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Контрольный визит в Бельцах',
         paragraphs: [
-          'Эффект проявляется постепенно, поэтому оценивать результат стоит спустя время. Если вы заметили асимметрию или что-то беспокоит, обратитесь к врачу клиники Meddera, и он осмотрит лицо и подскажет, что делать дальше. Записаться можно по телефону или через форму на сайте.',
+          'Эффект проявляется постепенно, поэтому оценивать результат стоит спустя время. Если вы заметили асимметрию или что-то беспокоит, обратитесь к [[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|врачу клиники Meddera]], и он осмотрит лицо и подскажет, что делать дальше. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -176,7 +176,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Consultația și examinarea',
         paragraphs: [
-          'Procedura începe cu o discuție. Medicul întreabă ce vă deranjează, ce medicamente luați, dacă ați avut reacții alergice și dacă ați mai făcut astfel de injecții. Apoi privește fața în repaus și în mișcare: vă cere să vă încruntați, să ridicați sprâncenele, să zâmbiți, ca să vadă cum lucrează mușchii în cazul dumneavoastră.',
+          'Procedura începe cu o discuție. Medicul întreabă ce vă deranjează, ce medicamente luați, dacă ați avut [[botoks-pokazaniya-protivopokazaniya|reacții alergice]] și dacă ați mai făcut astfel de injecții. Apoi privește fața în repaus și în mișcare: vă cere să vă încruntați, să ridicați sprâncenele, să zâmbiți, ca să vadă cum lucrează mușchii în cazul dumneavoastră.',
         ],
       },
       {
@@ -200,7 +200,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Ce senzații pot apărea',
         paragraphs: [
-          'Majoritatea oamenilor descriu o ușoară înțepătură, ca de la un țânțar. În unele zone, de exemplu în jurul ochilor și al nasului, senzațiile pot fi puțin mai ascuțite. Imediat după injecții apar pe piele mici umflături și înroșire, care dispar de regulă în decurs de câteva zeci de minute. Echimozele sunt posibile, dar nu apar la toți.',
+          'Majoritatea oamenilor descriu o ușoară înțepătură, ca de la un țânțar. În unele zone, de exemplu în jurul ochilor și al nasului, senzațiile pot fi puțin mai ascuțite. Imediat după injecții apar pe piele mici umflături și înroșire, care dispar de regulă în decurs de câteva zeci de minute. [[botoks-oslozhneniya-pobelochnye-effekty|Echimozele]] sunt posibile, dar nu apar la toți.',
         ],
       },
       {
@@ -224,7 +224,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Control la Bălți',
         paragraphs: [
-          'Efectul apare treptat, de aceea rezultatul se evaluează după un timp. Dacă observați asimetrie sau ceva vă îngrijorează, adresați-vă medicului clinicii Meddera, care vă examinează fața și spune ce urmează. Vă puteți programa telefonic sau prin formularul de pe site.',
+          'Efectul apare treptat, de aceea rezultatul se evaluează după un timp. Dacă observați asimetrie sau ceva vă îngrijorează, adresați-vă [[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|medicului clinicii Meddera]], care vă examinează fața și spune ce urmează. Vă puteți programa telefonic sau prin formularul de pe site.',
         ],
       },
     ],
@@ -240,7 +240,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Лоб',
         paragraphs: [
-          'Горизонтальные морщины на лбу появляются, когда мышца поднимает брови. Если расслабить её слишком сильно, брови могут опуститься, а веки стать тяжелее. Поэтому лоб обычно корректируют аккуратно и часто вместе с межбровьем, чтобы мышцы-антагонисты работали согласованно и лицо выглядело естественно.',
+          '[[botoks-lob-gorizontalnye-morshchiny|Горизонтальные морщины]] на лбу появляются, когда мышца поднимает брови. Если расслабить её слишком сильно, брови могут опуститься, а веки стать тяжелее. Поэтому лоб обычно корректируют аккуратно и часто вместе с межбровьем, чтобы мышцы-антагонисты работали согласованно и лицо выглядело естественно.',
         ],
       },
       {
@@ -258,7 +258,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Область вокруг глаз',
         paragraphs: [
-          'Мелкие лучики у наружных уголков глаз появляются от улыбки и прищуривания. Их смягчают инъекциями в круговую мышцу глаза. Здесь особенно важна точность, потому что рядом проходят другие мышцы, влияющие на веко. Подробнее об этой зоне мы рассказали в отдельной статье о гусиных лапках.',
+          'Мелкие лучики у наружных уголков глаз появляются от улыбки и прищуривания. Их смягчают инъекциями в круговую мышцу глаза. Здесь особенно важна точность, потому что рядом проходят другие мышцы, влияющие на веко. Подробнее об этой зоне мы рассказали в отдельной статье о [[botoks-gusiyne-lapki|гусиных лапках]].',
         ],
       },
       {
@@ -338,7 +338,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Combinarea zonelor',
         paragraphs: [
-          'Adesea sarcina se rezolvă în mai multe zone deodată, dar nu este obligatoriu să tratați toată fața într-o singură ședință. Medicul poate începe cu o zonă, aștepta rezultatul și apoi decide dacă sunt necesare altele. Astfel se vede cum reacționează fața la preparat, iar planul poate fi modificat.',
+          'Adesea [[botoks-beremennost-grudnoe-vskarmlivanie|sarcina]] se rezolvă în mai multe zone deodată, dar nu este obligatoriu să tratați toată fața într-o singură ședință. Medicul poate începe cu o zonă, aștepta rezultatul și apoi decide dacă sunt necesare altele. Astfel se vede cum reacționează fața la preparat, iar planul poate fi modificat.',
         ],
       },
       {
@@ -372,7 +372,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Головная боль и слабость',
         paragraphs: [
-          'В первые дни у некоторых людей появляется лёгкая головная боль или чувство тяжести. Как правило, это проходит быстро. Если боль выраженная, не снимается привычными средствами или сопровождается другими симптомами, не откладывайте звонок врачу. Принимать обезболивающие самостоятельно стоит только после уточнения у специалиста.',
+          'В первые дни у некоторых людей появляется лёгкая [[botoks-migreni-golovnye-boli|головная боль]] или чувство тяжести. Как правило, это проходит быстро. Если боль выраженная, не снимается привычными средствами или сопровождается другими симптомами, не откладывайте звонок врачу. Принимать обезболивающие самостоятельно стоит только после уточнения у специалиста.',
         ],
       },
       {
@@ -476,7 +476,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Cum se reduce probabilitatea problemelor',
         paragraphs: [
-          'Alegeți un medic cu studii medicale și experiență cu astfel de preparate, întrebați numele preparatului și termenul de valabilitate, respectați recomandările de după procedură. Consultație despre injecții puteți primi la clinica Meddera din Bălți; vă puteți programa telefonic sau prin formularul de pe site.',
+          'Alegeți un medic cu studii medicale și experiență cu astfel de preparate, întrebați numele preparatului și termenul de valabilitate, respectați recomandările de după procedură. Consultație despre injecții puteți primi la [[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|clinica Meddera]] din Bălți; vă puteți programa telefonic sau prin formularul de pe site.',
         ],
       },
     ],
@@ -492,7 +492,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Почему сроки отличаются',
         paragraphs: [
-          'На длительность влияют сила мышц, зона введения, схема, особенности обмена веществ и образ жизни. В зонах с активной мимикой эффект ослабевает раньше. Заметно быстрее он может проходить у людей, которые много занимаются спортом. Поэтому сравнивать свой результат с чужим не всегда уместно.',
+          'На длительность влияют сила мышц, [[botoks-zony-injekcij|зона введения]], схема, особенности обмена веществ и образ жизни. В зонах с активной мимикой эффект ослабевает раньше. Заметно быстрее он может проходить у людей, которые много занимаются спортом. Поэтому сравнивать свой результат с чужим не всегда уместно.',
         ],
       },
       {
@@ -516,7 +516,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Меняется ли результат со временем',
         paragraphs: [
-          'При регулярных, но не частых процедурах у многих людей складки в покое становятся менее выраженными, потому что мышца привыкает работать слабее. Причина в длительной коррекции мимики. Говорить об этом можно лишь осторожно, ведь на кожу влияют возраст, солнце и многие другие причины.',
+          'При регулярных, но не частых процедурах у многих людей складки в покое становятся менее выраженными, потому что мышца привыкает работать слабее. Причина в длительной коррекции мимики. Говорить об этом можно лишь осторожно, ведь на кожу влияют [[botoks-vozrast-kogda-nachinat|возраст]], солнце и многие другие причины.',
         ],
       },
       {
@@ -534,7 +534,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Если срок пропущен',
         paragraphs: [
-          'Если вы не успели прийти вовремя, ничего страшного не произойдёт: мимика просто вернётся к прежней. Повторную процедуру можно сделать тогда, когда вам удобно и врач не видит противопоказаний. Не стоит компенсировать задержку увеличенным объёмом препарата без согласования со специалистом.',
+          'Если вы не успели прийти вовремя, ничего страшного не произойдёт: мимика просто вернётся к прежней. Повторную процедуру можно сделать тогда, когда вам удобно и врач не видит [[botoks-pokazaniya-protivopokazaniya|противопоказаний]]. Не стоит компенсировать задержку увеличенным объёмом препарата без согласования со специалистом.',
         ],
       },
       {
@@ -578,7 +578,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Se schimbă rezultatul în timp',
         paragraphs: [
-          'La proceduri regulate, dar nu dese, la mulți oameni pliurile din repaus devin mai puțin pronunțate, pentru că mușchiul se obișnuiește să lucreze mai slab. Despre asta se poate vorbi doar cu prudență, deoarece pielea este influențată de vârstă, soare și multe alte cauze.',
+          'La proceduri regulate, dar nu dese, la mulți oameni pliurile din repaus devin mai puțin pronunțate, pentru că mușchiul se obișnuiește să lucreze mai slab. Despre asta se poate vorbi doar cu prudență, deoarece pielea este influențată de [[botoks-vozrast-kogda-nachinat|vârstă]], soare și multe alte cauze.',
         ],
       },
       {
@@ -596,7 +596,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Dacă termenul a fost depășit',
         paragraphs: [
-          'Dacă nu ați reușit să veniți la timp, nu se întâmplă nimic grav: mimica doar revine la cea de dinainte. Procedura repetată se poate face când vă este comod și medicul nu vede contraindicații. Nu compensați întârzierea printr-o cantitate mărită de preparat fără acordul specialistului.',
+          'Dacă nu ați reușit să veniți la timp, nu se întâmplă nimic grav: mimica doar revine la cea de dinainte. Procedura repetată se poate face când vă este comod și medicul nu vede [[botoks-pokazaniya-protivopokazaniya|contraindicații]]. Nu compensați întârzierea printr-o cantitate mărită de preparat fără acordul specialistului.',
         ],
       },
       {
@@ -648,7 +648,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Когда стоит подождать',
         paragraphs: [
-          'Инъекции откладывают при беременности и кормлении, при острых воспалительных процессах на коже и нервно-мышечных заболеваниях. Если вы не уверены в необходимости, дайте себе время и посмотрите, как лицо меняется в динамике. Начинать стоит тогда, когда решение взвешено и вы понимаете, чего хотите.',
+          'Инъекции откладывают при [[botoks-beremennost-grudnoe-vskarmlivanie|беременности]] и кормлении, при острых воспалительных процессах на коже и нервно-мышечных заболеваниях. Если вы не уверены в необходимости, дайте себе время и посмотрите, как лицо меняется в динамике. Начинать стоит тогда, когда решение взвешено и вы понимаете, чего хотите.',
         ],
       },
       {
@@ -710,7 +710,7 @@ export const BOTOX_D: ArticleRewrites = {
       {
         h2: 'Când merită să așteptați',
         paragraphs: [
-          'Injecțiile se amână în sarcină și alăptare, în procese inflamatorii acute ale pielii și în bolile neuromusculare. Dacă ezitați, acordați-vă timp și urmăriți cum se schimbă fața în dinamică.',
+          'Injecțiile se amână în [[botoks-beremennost-grudnoe-vskarmlivanie|sarcină]] și alăptare, în procese inflamatorii acute ale pielii și în bolile neuromusculare. Dacă ezitați, acordați-vă timp și urmăriți cum se schimbă fața în dinamică.',
         ],
       },
       {

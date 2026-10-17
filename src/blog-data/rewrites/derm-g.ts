@@ -13,13 +13,13 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'Как он проявляется',
         paragraphs: [
-          'Сначала появляются плотные болезненные узлы под кожей, похожие на крупные прыщи или фурункулы. Они могут вскрываться с выделением гноя, заживать и снова возникать на том же месте. Со временем под кожей образуются ходы, которые соединяют очаги, а на месте воспаления остаются рубцы. Беспокоят жжение, зуд и неприятный запах из-за гнойных выделений.',
+          'Сначала появляются плотные болезненные узлы под кожей, похожие на крупные [[akne-prichiny-stadii-lechenie|прыщи]] или фурункулы. Они могут вскрываться с выделением гноя, заживать и снова возникать на том же месте. Со временем под кожей образуются ходы, которые соединяют очаги, а на месте воспаления остаются рубцы. Беспокоят жжение, зуд и неприятный запах из-за гнойных выделений.',
         ],
       },
       {
         h2: 'Чем он отличается от фурункула',
         paragraphs: [
-          'Фурункул возникает однократно и проходит. Хронический гидраденит возвращается в тех же складках, затрагивает несколько участков и склонен к образованию ходов и рубцов. Из-за внешнего сходства люди годами лечатся от фурункулов, и диагноз ставят поздно. Если нарывы повторяются в одних и тех же местах, это повод показаться дерматологу.',
+          'Фурункул возникает однократно и проходит. Хронический гидраденит возвращается в тех же складках, затрагивает несколько участков и склонен к образованию ходов и рубцов. Из-за внешнего сходства люди годами лечатся от фурункулов, и диагноз ставят поздно. Если нарывы повторяются в одних и тех же местах, это повод показаться [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматологу]].',
         ],
       },
       {
@@ -63,7 +63,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
         h2: 'Когда нужна срочная помощь',
         paragraphs: [
           'Обратитесь за очной помощью без промедления, если покраснение быстро распространяется, поднялась температура, боль стала сильной или ухудшилось общее состояние.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -71,7 +71,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'Ce este hidradenita cronică',
         paragraphs: [
-          'Hidradenita cronică, numită de medici hidradenită supurativă sau acnee inversă, este o boală inflamatorie îndelungată a pielii în zonele în care pielea vine în contact cu ea însăși: axile, zona inghinală, sub sâni, pliul fesier. Se inflamează foliculii piloși, se formează noduli dureroși și abcese.',
+          'Hidradenita cronică, numită de medici hidradenită supurativă sau [[akne-prichiny-stadii-lechenie|acnee]] inversă, este o boală inflamatorie îndelungată a pielii în zonele în care pielea vine în contact cu ea însăși: axile, zona inghinală, sub sâni, pliul fesier. Se inflamează foliculii piloși, se formează noduli dureroși și abcese.',
           'Boala nu este contagioasă și nu ține de igiena slabă. Nu e nevoie să vă rușinați sau să amânați vizita la medic.',
         ],
       },
@@ -84,7 +84,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'Prin ce diferă de furuncul',
         paragraphs: [
-          'Furunculul apare o singură dată și trece. Hidradenita cronică revine în aceleași pliuri, afectează mai multe zone și tinde să formeze canale și cicatrici. Din cauza asemănării exterioare oamenii se tratează ani la rând de furuncule, iar diagnosticul se pune târziu. Dacă abcesele reapar în aceleași locuri, este un motiv să mergeți la dermatolog.',
+          'Furunculul apare o singură dată și trece. Hidradenita cronică revine în aceleași pliuri, afectează mai multe zone și tinde să formeze canale și cicatrici. Din cauza asemănării exterioare oamenii se tratează ani la rând de furuncule, iar diagnosticul se pune târziu. Dacă abcesele reapar în aceleași locuri, este un motiv să mergeți la [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatolog]].',
         ],
       },
       {
@@ -116,7 +116,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
         h2: 'Când este nevoie de ajutor urgent',
         paragraphs: [
           'Cereți ajutor medical fără întârziere dacă roșeața se extinde repede, a crescut temperatura, durerea a devenit puternică sau starea generală s-a înrăutățit.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Consultația dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -138,7 +138,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'Почему образование нужно показать врачу',
         paragraphs: [
-          'Хотя гранулёма не относится к злокачественным опухолям, внешне она похожа на другие образования, в том числе на беспигментную меланому и некоторые сосудистые опухоли. Отличить их по виду нельзя. Поэтому врач осматривает образование, при необходимости использует дерматоскоп, а после удаления отправляет ткань на гистологическое исследование.',
+          'Хотя гранулёма не относится к злокачественным опухолям, внешне она похожа на другие образования, в том числе на беспигментную [[melanoma-rannyaya-diagnostika|меланому]] и некоторые сосудистые опухоли. Отличить их по виду нельзя. Поэтому врач осматривает образование, при необходимости использует дерматоскоп, а после удаления отправляет ткань на гистологическое исследование.',
         ],
       },
       {
@@ -168,7 +168,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'С чем её можно перепутать',
         paragraphs: [
-          'Узелок можно принять за бородавку, кровоточащую папиллому, сосудистую опухоль, а в редких случаях за опасное пигментное или беспигментное образование. Яркий цвет, быстрый рост и склонность к кровотечению типичны, но не доказывают диагноз. Поэтому врач не ограничивается осмотром и оценивает ткань под микроскопом.',
+          'Узелок можно принять за [[papillomy-borodavki-udalenie-beltsy|бородавку]], кровоточащую папиллому, сосудистую опухоль, а в редких случаях за опасное пигментное или беспигментное образование. Яркий цвет, быстрый рост и склонность к кровотечению типичны, но не доказывают диагноз. Поэтому врач не ограничивается осмотром и оценивает ткань под микроскопом.',
         ],
       },
       {
@@ -187,7 +187,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
         h2: 'Когда обращаться',
         paragraphs: [
           'Запишитесь на приём, если на коже или во рту появился яркий кровоточащий узелок, особенно если он быстро растёт. Любое новое быстро увеличивающееся образование на коже требует осмотра специалиста.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Консультацию [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -207,7 +207,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'De ce formațiunea trebuie arătată medicului',
         paragraphs: [
-          'Deși granulomul nu face parte din tumorile maligne, ca aspect seamănă cu alte formațiuni, inclusiv cu melanomul fără pigment și cu unele tumori vasculare. Nu se pot deosebi după aspect. De aceea medicul examinează formațiunea, la nevoie folosește dermatoscopul, iar după îndepărtare trimite țesutul la examen histologic.',
+          'Deși granulomul nu face parte din tumorile maligne, ca aspect seamănă cu alte formațiuni, inclusiv cu [[melanoma-rannyaya-diagnostika|melanomul]] fără pigment și cu unele tumori vasculare. Nu se pot deosebi după aspect. De aceea medicul examinează formațiunea, la nevoie folosește dermatoscopul, iar după îndepărtare trimite țesutul la examen histologic.',
         ],
       },
       {
@@ -250,7 +250,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
         h2: 'Când vă adresați medicului',
         paragraphs: [
           'Programați-vă la consultație dacă pe piele sau în gură a apărut un nodul roșu aprins care sângerează, mai ales dacă crește repede. Orice formațiune nouă care se mărește repede pe piele cere examinarea de către specialist.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -260,7 +260,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'Что такое хроническая крапивница',
         paragraphs: [
-          'О хронической крапивнице говорят, когда зудящие волдыри повторяются дольше шести недель. Волдыри выглядят как следы от ожога крапивой: приподнятые бледно-розовые или красные пятна разного размера, которые сильно чешутся. Каждый отдельный волдырь обычно исчезает в течение суток, но рядом может появиться новый, поэтому высыпания будто перемещаются по телу.',
+          'О хронической [[krapivnica-prichiny-lechenie|крапивнице]] говорят, когда зудящие волдыри повторяются дольше шести недель. Волдыри выглядят как следы от ожога крапивой: приподнятые бледно-розовые или красные пятна разного размера, которые сильно чешутся. Каждый отдельный волдырь обычно исчезает в течение суток, но рядом может появиться новый, поэтому высыпания будто перемещаются по телу.',
           'Иногда вместе с волдырями возникает отёк глубоких слоёв кожи, чаще губ, век, щёк и кистей. Он ощущается как напряжение и распирание и проходит медленнее волдырей.',
         ],
       },
@@ -310,7 +310,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
         h2: 'Когда вызывать скорую помощь',
         paragraphs: [
           'Немедленная помощь нужна, если отёк захватил язык или горло, затруднилось дыхание, появились головокружение, слабость или сильная боль в животе. Это опасные состояния, при которых нельзя ждать приёма.',
-          'Если же высыпания повторяются неделями, запишитесь на консультацию дерматолога в Бельцах в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Если же высыпания повторяются неделями, запишитесь на консультацию [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Бельцах в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -318,7 +318,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'Ce este urticaria cronică',
         paragraphs: [
-          'Despre urticarie cronică se vorbește atunci când bășicile care mâncărime se repetă mai mult de șase săptămâni. Bășicile arată ca urmele unei arsuri de urzică: pete reliefate, roz-pal sau roșii, de mărimi diferite, care mâncărime puternic. Fiecare bășică în parte dispare de obicei într-o zi, dar alături poate apărea alta nouă, de aceea erupțiile par să se mute pe corp.',
+          'Despre [[krapivnica-prichiny-lechenie|urticarie]] cronică se vorbește atunci când bășicile care mâncărime se repetă mai mult de șase săptămâni. Bășicile arată ca urmele unei arsuri de urzică: pete reliefate, roz-pal sau roșii, de mărimi diferite, care mâncărime puternic. Fiecare bășică în parte dispare de obicei într-o zi, dar alături poate apărea alta nouă, de aceea erupțiile par să se mute pe corp.',
           'Uneori împreună cu bășicile apare umflarea straturilor profunde ale pielii, mai des la buze, pleoape, obraji și mâini. Se simte ca tensiune și presiune și trece mai încet decât bășicile.',
         ],
       },
@@ -362,7 +362,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
         h2: 'Când chemați ambulanța',
         paragraphs: [
           'Ajutorul imediat este necesar dacă umflarea a cuprins limba sau gâtul, respirația s-a îngreunat, au apărut amețeală, slăbiciune sau durere puternică în abdomen. Sunt stări periculoase, în care nu se poate aștepta consultația.',
-          'Dacă erupțiile se repetă săptămâni la rând, programați-vă la consultația dermatologului în Bălți la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Dacă erupțiile se repetă săptămâni la rând, programați-vă la consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -372,7 +372,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'Что такое атопический дерматит у детей',
         paragraphs: [
-          'Атопический дерматит это хроническое воспаление кожи, которое проявляется сухостью, зудом и красными шелушащимися участками. Оно связано с нарушенным барьером кожи и склонностью иммунной системы к аллергическим реакциям. Болезнь не заразна. Нередко она начинается в раннем детстве и идёт волнами: обострения сменяются периодами, когда кожа почти чистая.',
+          '[[atopicheskij-dermatit-uhod-profilaktika|Атопический дерматит]] это хроническое воспаление кожи, которое проявляется сухостью, зудом и красными шелушащимися участками. Оно связано с нарушенным барьером кожи и склонностью иммунной системы к аллергическим реакциям. Болезнь не заразна. Нередко она начинается в раннем детстве и идёт волнами: обострения сменяются периодами, когда кожа почти чистая.',
         ],
       },
       {
@@ -432,8 +432,8 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'Когда записаться к врачу',
         paragraphs: [
-          'Покажите ребёнка дерматологу, если зуд нарушает сон, кожа мокнет или обострения повторяются. Врач подберёт уход, при необходимости направит к аллергологу и объяснит, как действовать при следующем обострении.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Покажите ребёнка [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматологу]], если зуд нарушает сон, кожа мокнет или обострения повторяются. Врач подберёт уход, при необходимости направит к аллергологу и объяснит, как действовать при следующем обострении.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -441,7 +441,7 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'Ce este dermatita atopică la copii',
         paragraphs: [
-          'Dermatita atopică este o inflamație cronică a pielii, care se manifestă prin uscăciune, mâncărime și zone roșii, descuamate. Este legată de bariera deteriorată a pielii și de tendința sistemului imunitar spre reacții alergice. Boala nu este contagioasă. Adesea începe în copilăria mică și evoluează în valuri: acutizările alternează cu perioade în care pielea este aproape curată.',
+          '[[atopicheskij-dermatit-uhod-profilaktika|Dermatita atopică]] este o inflamație cronică a pielii, care se manifestă prin uscăciune, mâncărime și zone roșii, descuamate. Este legată de bariera deteriorată a pielii și de tendința sistemului imunitar spre reacții alergice. Boala nu este contagioasă. Adesea începe în copilăria mică și evoluează în valuri: acutizările alternează cu perioade în care pielea este aproape curată.',
         ],
       },
       {
@@ -495,8 +495,8 @@ export const DERMATOLOGIST_G: ArticleRewrites = {
       {
         h2: 'Când vă programați la medic',
         paragraphs: [
-          'Arătați copilul dermatologului dacă mâncărimea îi tulbură somnul, pielea secretă lichid sau acutizările se repetă. Medicul va alege îngrijirea, la nevoie va trimite la alergolog și va explica cum să acționați la următoarea acutizare.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Arătați copilul [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] dacă mâncărimea îi tulbură somnul, pielea secretă lichid sau acutizările se repetă. Medicul va alege îngrijirea, la nevoie va trimite la alergolog și va explica cum să acționați la următoarea acutizare.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Consultația dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],

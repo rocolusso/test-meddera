@@ -24,7 +24,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Если герпес в активной фазе',
         paragraphs: [
-          'При активных высыпаниях процедуру не проводят. Сначала дожидаются полного заживления, а затем врач определяет, когда можно вернуться к записи. Торопиться не стоит: инъекции на фоне воспаления повышают риск осложнений и затрудняют заживление.',
+          'При активных высыпаниях процедуру не проводят. Сначала дожидаются полного заживления, а затем врач определяет, когда можно вернуться к записи. Торопиться не стоит: инъекции на фоне воспаления повышают риск [[uvelichenie-gub-oslozhneniya-profilaktika|осложнений]] и затрудняют заживление.',
         ],
       },
       {
@@ -94,7 +94,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Dacă herpesul este în fază activă',
         paragraphs: [
-          'La erupții active procedura nu se face. Mai întâi se așteaptă vindecarea completă, apoi medicul stabilește când vă puteți reprograma. Nu vă grăbiți: injecțiile pe fondul inflamației cresc riscul de complicații și îngreunează vindecarea.',
+          'La erupții active procedura nu se face. Mai întâi se așteaptă vindecarea completă, apoi medicul stabilește când vă puteți reprograma. Nu vă grăbiți: injecțiile pe fondul inflamației cresc riscul de [[uvelichenie-gub-oslozhneniya-profilaktika|complicații]] și îngreunează vindecarea.',
         ],
       },
       {
@@ -172,13 +172,13 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Как врач принимает решение',
         paragraphs: [
-          'Врач осматривает лицо в покое, при улыбке и разговоре, оценивает симметрию, контур и положение губ относительно носа и подбородка. Затем он объясняет, что реально можно изменить, а что нет. Окончательный план составляют вместе с вами, и вы можете задать любые вопросы.',
+          'Врач осматривает лицо в покое, при улыбке и разговоре, оценивает [[uvelichenie-gub-forma-simmetriya|симметрию]], контур и положение губ относительно носа и подбородка. Затем он объясняет, что реально можно изменить, а что нет. Окончательный план составляют вместе с вами, и вы можете задать любые вопросы.',
         ],
       },
       {
         h2: 'Как проходит процедура',
         paragraphs: [
-          'Врач размечает зону, обрабатывает кожу антисептиком, при необходимости использует обезболивание и вводит препарат на основе гиалуроновой кислоты тонкой иглой или канюлей. По ходу он контролирует форму и симметрию. Подробности о подготовке и уходе вам объяснят на консультации.',
+          'Врач размечает зону, обрабатывает кожу антисептиком, при необходимости использует обезболивание и вводит препарат на основе [[uvelichenie-gub-gialuronovaya-kislota|гиалуроновой кислоты]] тонкой иглой или канюлей. По ходу он контролирует форму и симметрию. Подробности о подготовке и уходе вам объяснят на консультации.',
         ],
       },
       {
@@ -197,7 +197,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Первые дни после процедуры',
         paragraphs: [
-          'Губы могут быть отёчными, чувствительными и казаться больше, чем будет в итоге. Не оценивайте результат в первые сутки. Следуйте рекомендациям врача по уходу, не давите на губы и не массируйте их, если врач не разрешил. Если появились сильная боль или побеление кожи, свяжитесь с клиникой сразу.',
+          'Губы могут быть отёчными, чувствительными и казаться больше, чем будет в итоге. Не оценивайте результат в первые сутки. Следуйте рекомендациям врача по уходу, не давите на губы и не массируйте их, если врач не разрешил. Если появились сильная [[uvelichenie-gub-bolevye-oshchushcheniya|боль]] или побеление кожи, свяжитесь с клиникой сразу.',
         ],
       },
       {
@@ -241,13 +241,13 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Cum ia medicul decizia',
         paragraphs: [
-          'Medicul examinează fața în repaus, la zâmbet și la vorbire, evaluează simetria, conturul și poziția buzelor față de nas și bărbie. Apoi explică ce se poate schimba în mod real și ce nu. Planul final se face împreună cu dumneavoastră și puteți pune orice întrebări.',
+          'Medicul examinează fața în repaus, la zâmbet și la vorbire, evaluează [[uvelichenie-gub-forma-simmetriya|simetria]], conturul și poziția buzelor față de nas și bărbie. Apoi explică ce se poate schimba în mod real și ce nu. Planul final se face împreună cu dumneavoastră și puteți pune orice întrebări.',
         ],
       },
       {
         h2: 'Cum decurge procedura',
         paragraphs: [
-          'Medicul marchează zona, tratează pielea cu antiseptic, la nevoie folosește anestezie și introduce preparatul pe bază de acid hialuronic cu un ac subțire sau cu o canulă. Detaliile despre pregătire și îngrijire vi le explică la consultație.',
+          'Medicul marchează zona, tratează pielea cu antiseptic, la nevoie folosește anestezie și introduce preparatul pe bază de [[uvelichenie-gub-gialuronovaya-kislota|acid hialuronic]] cu un ac subțire sau cu o canulă. Detaliile despre pregătire și îngrijire vi le explică la consultație.',
         ],
       },
       {
@@ -265,7 +265,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Primele zile după procedură',
         paragraphs: [
-          'Buzele pot fi umflate, sensibile și par mai mari decât vor fi în final. Urmați recomandările medicului de îngrijire, nu apăsați și nu masați buzele, dacă medicul nu a permis. Dacă apar durere puternică sau albirea pielii, contactați imediat clinica.',
+          'Buzele pot fi umflate, sensibile și par mai mari decât vor fi în final. Urmați recomandările medicului de îngrijire, nu apăsați și nu masați buzele, dacă medicul nu a permis. Dacă apar [[uvelichenie-gub-bolevye-oshchushcheniya|durere]] puternică sau albirea pielii, contactați imediat clinica.',
         ],
       },
       {
@@ -287,7 +287,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Что такое гиалуроновая кислота',
         paragraphs: [
-          'Гиалуроновая кислота это вещество, которое есть в тканях организма и связывает воду. Для инъекций её очищают и превращают в гель, который врач вводит в ткани губ. Гель придаёт объём и помогает коже губ выглядеть более гладкой и увлажнённой.',
+          '[[biorevitalizaciya-preparaty-gialoronovaya-kislota|Гиалуроновая кислота]] это вещество, которое есть в тканях организма и связывает воду. Для инъекций её очищают и превращают в гель, который врач вводит в ткани губ. Гель придаёт объём и помогает коже губ выглядеть более гладкой и увлажнённой.',
         ],
       },
       {
@@ -299,7 +299,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Почему используют именно её',
         paragraphs: [
-          'Гиалуроновая кислота хорошо переносится большинством людей, потому что похожа на вещество, которое уже есть в организме. Её можно растворить специальным препаратом, если результат вас не устроил. Эта обратимость одна из причин, по которым врачи часто предпочитают такие филлеры.',
+          'Гиалуроновая кислота хорошо переносится большинством людей, потому что похожа на вещество, которое уже есть в организме. Её можно растворить специальным препаратом, если результат вас не устроил. Эта обратимость одна из причин, по которым врачи часто предпочитают такие [[svc:konturnaya-plastyka-fylleramy-v-belczah|филлеры]].',
         ],
       },
       {
@@ -317,13 +317,13 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Возможные нежелательные явления',
         paragraphs: [
-          'После процедуры бывают отёк, покраснение, синяки и чувствительность. Обычно они проходят самостоятельно. Редко развиваются аллергические реакции, воспаление или сосудистые осложнения, поэтому при сильной боли, побелении кожи или необычных ощущениях нужно сразу связаться с врачом.',
+          'После процедуры бывают отёк, покраснение, синяки и чувствительность. Обычно они проходят самостоятельно. Редко развиваются аллергические реакции, воспаление или сосудистые [[uvelichenie-gub-oslozhneniya-profilaktika|осложнения]], поэтому при сильной боли, побелении кожи или необычных ощущениях нужно сразу связаться с врачом.',
         ],
       },
       {
         h2: 'Что обсудить с врачом',
         paragraphs: [
-          'Спросите о названии препарата, подготовке к процедуре, уходе после неё и возможных реакциях. Расскажите о лекарствах, аллергиях, герпесе и перенесённых инъекциях. Вы вправе увидеть упаковку препарата перед процедурой.',
+          'Спросите о названии препарата, подготовке к процедуре, уходе после неё и возможных реакциях. Расскажите о лекарствах, аллергиях, [[uvelichenie-gub-gerpes-profilaktika|герпесе]] и перенесённых инъекциях. Вы вправе увидеть упаковку препарата перед процедурой.',
         ],
       },
       {
@@ -341,7 +341,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Кому процедуру не проводят',
         paragraphs: [
-          'Филлеры не вводят при беременности и кормлении грудью, воспалении и инфекции в области губ, активном герпесе, аллергии на компоненты препарата и в ряде других ситуаций. Подробности врач объясняет на консультации после осмотра и расспроса.',
+          '[[uvelichenie-gub-beltsy-vidy-fillerov|Филлеры]] не вводят при беременности и кормлении грудью, воспалении и инфекции в области губ, активном герпесе, аллергии на компоненты препарата и в ряде других ситуаций. Подробности врач объясняет на консультации после осмотра и расспроса.',
         ],
       },
       {
@@ -361,7 +361,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Ce este acidul hialuronic',
         paragraphs: [
-          'Acidul hialuronic este o substanță care se află în țesuturile organismului și leagă apa. Pentru injecții el este purificat și transformat într-un gel pe care medicul îl introduce în țesuturile buzelor. Gelul dă volum și ajută pielea buzelor să arate mai netedă și mai hidratată.',
+          '[[biorevitalizaciya-preparaty-gialoronovaya-kislota|Acidul hialuronic]] este o substanță care se află în țesuturile organismului și leagă apa. Pentru injecții el este purificat și transformat într-un gel pe care medicul îl introduce în țesuturile buzelor. Gelul dă volum și ajută pielea buzelor să arate mai netedă și mai hidratată.',
         ],
       },
       {
@@ -373,7 +373,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'De ce se folosește anume el',
         paragraphs: [
-          'Acidul hialuronic este bine tolerat de majoritatea persoanelor, deoarece seamănă cu substanța care există deja în organism. Poate fi dizolvat cu un preparat special, dacă rezultatul nu vă mulțumește. Această reversibilitate este unul dintre motivele pentru care medicii preferă adesea astfel de filleri.',
+          'Acidul hialuronic este bine tolerat de majoritatea persoanelor, deoarece seamănă cu substanța care există deja în organism. Poate fi dizolvat cu un preparat special, dacă rezultatul nu vă mulțumește. Această reversibilitate este unul dintre motivele pentru care medicii preferă adesea astfel de [[svc:konturnaya-plastyka-fylleramy-v-belczah|filleri]].',
         ],
       },
       {
@@ -391,7 +391,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Posibile reacții nedorite',
         paragraphs: [
-          'După procedură apar edem, roșeață, vânătăi și sensibilitate. De obicei ele trec singure. Rar apar reacții alergice, inflamație sau complicații vasculare, de aceea în caz de durere puternică, albire a pielii sau senzații neobișnuite trebuie să contactați imediat medicul.',
+          'După procedură apar edem, roșeață, vânătăi și sensibilitate. De obicei ele trec singure. Rar apar reacții alergice, inflamație sau complicații vasculare, de aceea în caz de [[uvelichenie-gub-bolevye-oshchushcheniya|durere]] puternică, albire a pielii sau senzații neobișnuite trebuie să contactați imediat medicul.',
         ],
       },
       {
@@ -403,7 +403,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Se poate dizolva fillerul',
         paragraphs: [
-          'Da, acidul hialuronic poate fi dizolvat cu o enzimă specială, dacă rezultatul nu vă mulțumește sau a apărut o complicație. Decizia despre dizolvare o ia medicul după examinare. Nu încercați să grăbiți procesul singură prin masaj sau remedii populare.',
+          'Da, acidul hialuronic poate fi dizolvat cu o enzimă specială, dacă rezultatul nu vă mulțumește sau a apărut o [[uvelichenie-gub-oslozhneniya-profilaktika|complicație]]. Decizia despre dizolvare o ia medicul după examinare. Nu încercați să grăbiți procesul singură prin masaj sau remedii populare.',
         ],
       },
       {
@@ -415,7 +415,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Cui nu i se face procedura',
         paragraphs: [
-          'Fillerele nu se introduc în sarcină și alăptare, în inflamație și infecție în zona buzelor, în herpes activ, în alergie la componentele preparatului și în alte situații. Detaliile le explică medicul la consultație, după examinare și discuție.',
+          '[[uvelichenie-gub-beltsy-vidy-fillerov|Fillerele]] nu se introduc în sarcină și alăptare, în inflamație și infecție în zona buzelor, în herpes activ, în alergie la componentele preparatului și în alte situații. Detaliile le explică medicul la consultație, după examinare și discuție.',
         ],
       },
       {
@@ -497,7 +497,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Консультация в Бельцах',
         paragraphs: [
-          'Все вопросы об обезболивании можно обсудить заранее. Записаться на консультацию в клинику Meddera можно по телефону или через форму на сайте, адрес: улица Штефан чел Маре, 13.',
+          'Все вопросы об обезболивании можно обсудить заранее. Записаться на консультацию в [[svc:uvelychenye-gub-v-belczah|клинику Meddera]] можно по телефону или через форму на сайте, адрес: улица Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -505,7 +505,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Doare',
         paragraphs: [
-          'Sensibilitatea la durere diferă de la om la om, iar răspunsul depinde de pragul dumneavoastră de durere și de tehnica medicului. Buzele sunt o zonă destul de sensibilă, de aceea înțepăturile se pot simți. De obicei medicul propune anestezie, ca procedura să fie suportabilă.',
+          'Sensibilitatea la durere diferă de la om la om, iar răspunsul depinde de pragul dumneavoastră de durere și de tehnica medicului. Buzele sunt o zonă sensibilă, de aceea înțepăturile se pot simți. De obicei medicul propune anestezie, ca procedura să fie suportabilă.',
         ],
       },
       {
@@ -517,7 +517,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Ce senzații pot apărea',
         paragraphs: [
-          'În timpul procedurii sunt posibile furnicături, presiune și o ușoară arsură la introducerea preparatului. Ele sunt de scurtă durată. Dacă nu vă simțiți confortabil, spuneți medicului: el se oprește, așteaptă sau schimbă tactica.',
+          'În timpul procedurii sunt posibile furnicături, presiune și o ușoară arsură la introducerea preparatului. Dacă nu vă simțiți confortabil, spuneți medicului: el se oprește, așteaptă sau schimbă tactica.',
         ],
       },
       {
@@ -571,7 +571,7 @@ export const LIPS_A: ArticleRewrites = {
       {
         h2: 'Consultația în Bălți',
         paragraphs: [
-          'Toate întrebările despre anestezie le puteți discuta din timp. Vă puteți programa la consultație la clinica Meddera la telefon sau prin formularul de pe site, adresa: strada Ștefan cel Mare, 13.',
+          'Toate întrebările despre anestezie le puteți discuta din timp. Vă puteți programa la consultație la [[svc:uvelychenye-gub-v-belczah|clinica Meddera]] la telefon sau prin formularul de pe site, adresa: strada Ștefan cel Mare, 13.',
         ],
       },
     ],

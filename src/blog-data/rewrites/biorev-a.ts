@@ -6,13 +6,13 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Что такое биоревитализация',
         paragraphs: [
-          'Биоревитализация это введение препарата на основе гиалуроновой кислоты в кожу микроинъекциями. Цель состоит в том, чтобы улучшить увлажнённость кожи и её качество: сделать её более гладкой, мягкой и свежей на вид. Метод относится к инъекционной косметологии и выполняется врачом в клинике.',
+          '[[svc:byorevytalyzaczyya-v-belczah|Биоревитализация]] это введение препарата на основе гиалуроновой кислоты в кожу микроинъекциями. Цель состоит в том, чтобы улучшить увлажнённость кожи и её качество: сделать её более гладкой, мягкой и свежей на вид. Метод относится к инъекционной косметологии и выполняется врачом в клинике.',
         ],
       },
       {
         h2: 'Зачем коже гиалуроновая кислота',
         paragraphs: [
-          'Гиалуроновая кислота есть в коже от природы, она связывает воду и помогает коже оставаться увлажнённой. С возрастом, под влиянием солнца и других факторов её становится меньше, и кожа выглядит суше и тусклее. Препарат вводят в кожу, чтобы пополнить этот ресурс там, где крем до глубоких слоёв не доходит.',
+          '[[biorevitalizaciya-preparaty-gialoronovaya-kislota|Гиалуроновая кислота]] есть в коже от природы, она связывает воду и помогает коже оставаться увлажнённой. С возрастом, под влиянием солнца и других факторов её становится меньше, и кожа выглядит суше и тусклее. Препарат вводят в кожу, чтобы пополнить этот ресурс там, где крем до глубоких слоёв не доходит.',
         ],
       },
       {
@@ -88,7 +88,7 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Ce este biorevitalizarea',
         paragraphs: [
-          'Biorevitalizarea este introducerea în piele, prin microinjecții, a unui preparat pe bază de acid hialuronic. Scopul este să îmbunătățească hidratarea și calitatea pielii: să o facă mai netedă, mai moale și mai proaspătă la aspect. Metoda ține de cosmetologia injectabilă și o efectuează medicul în clinică.',
+          '[[svc:byorevytalyzaczyya-v-belczah|Biorevitalizarea]] este introducerea în piele, prin microinjecții, a unui preparat pe bază de [[biorevitalizaciya-preparaty-gialoronovaya-kislota|acid hialuronic]]. Scopul este să îmbunătățească hidratarea și calitatea pielii: să o facă mai netedă, mai moale și mai proaspătă la aspect. Metoda ține de cosmetologia injectabilă și o efectuează medicul în clinică.',
         ],
       },
       {
@@ -159,7 +159,7 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Когда виден результат',
         paragraphs: [
-          'После биоревитализации кожа не меняется мгновенно. В первые дни могут быть следы от уколов и небольшая отёчность, и только потом проявляется эффект увлажнения. Многие замечают, что кожа становится мягче и ровнее, но сроки у всех разные.',
+          'После [[svc:byorevytalyzaczyya-v-belczah|биоревитализации]] кожа не меняется мгновенно. В первые дни могут быть следы от уколов и небольшая отёчность, и только потом проявляется эффект увлажнения. Многие замечают, что кожа становится мягче и ровнее, но сроки у всех разные.',
         ],
       },
       {
@@ -195,7 +195,7 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Ожидания и реальность',
         paragraphs: [
-          'Биоревитализация работает с качеством кожи, но не заменяет другие методы. Если вас беспокоят глубокие морщины, опущение или потеря объёма, врач предложит иной подход или сочетание методов. Честный разговор об ожиданиях помогает выбрать то, что принесёт реальную пользу.',
+          '[[biorevitalizaciya-beltsy-chto-eto|Биоревитализация]] работает с качеством кожи, но не заменяет другие методы. Если вас беспокоят глубокие морщины, опущение или потеря объёма, врач предложит иной подход или сочетание методов. Честный разговор об ожиданиях помогает выбрать то, что принесёт реальную пользу.',
         ],
       },
       {
@@ -246,7 +246,7 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Când se vede rezultatul',
         paragraphs: [
-          'După biorevitalizare pielea nu se schimbă instantaneu. În primele zile pot apărea urme de injecții și un ușor edem și abia apoi se vede efectul de hidratare. Multe persoane observă că pielea devine mai moale și mai uniformă, dar termenele diferă de la om la om.',
+          'După [[svc:byorevytalyzaczyya-v-belczah|biorevitalizare]] pielea nu se schimbă instantaneu. În primele zile pot apărea urme de injecții și un ușor edem și abia apoi se vede efectul de hidratare. Multe persoane observă că pielea devine mai moale și mai uniformă, dar termenele diferă de la om la om.',
         ],
       },
       {
@@ -282,7 +282,7 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Așteptări și realitate',
         paragraphs: [
-          'Biorevitalizarea lucrează cu calitatea pielii, dar nu înlocuiește alte metode. Dacă vă deranjează ridurile adânci, lăsarea țesuturilor sau pierderea de volum, medicul va propune altă abordare sau o combinație de metode. O discuție sinceră despre așteptări ajută să alegeți ce aduce un beneficiu real.',
+          '[[biorevitalizaciya-beltsy-chto-eto|Biorevitalizarea]] lucrează cu calitatea pielii, dar nu înlocuiește alte metode. Dacă vă deranjează ridurile adânci, lăsarea țesuturilor sau pierderea de volum, medicul va propune altă abordare sau o [[biorevitalizaciya-kombinaciya-procedur|combinație]] de metode. O discuție sinceră despre așteptări ajută să alegeți ce aduce un beneficiu real.',
         ],
       },
       {
@@ -323,7 +323,7 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Какие препараты используют',
         paragraphs: [
-          'Для биоревитализации применяют инъекционные препараты на основе гиалуроновой кислоты, которая в них находится в виде стерильного геля или раствора. Они предназначены для введения в кожу и отличаются от препаратов для коррекции объёма: их задача увлажнять, а не придавать форму.',
+          'Для [[svc:byorevytalyzaczyya-v-belczah|биоревитализации]] применяют инъекционные препараты на основе гиалуроновой кислоты, которая в них находится в виде стерильного геля или раствора. Они предназначены для введения в кожу и отличаются от препаратов для коррекции объёма: их задача увлажнять, а не придавать форму.',
         ],
       },
       {
@@ -359,7 +359,7 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Сочетание с другими процедурами',
         paragraphs: [
-          'Биоревитализацию иногда сочетают с другими методами ухода и коррекции. Порядок и интервалы между процедурами определяет врач, исходя из состояния вашей кожи. Не планируйте несколько процедур подряд без консультации.',
+          '[[biorevitalizaciya-beltsy-chto-eto|Биоревитализацию]] иногда сочетают с другими методами ухода и коррекции. Порядок и интервалы между процедурами определяет врач, исходя из состояния вашей кожи. Не планируйте несколько процедур подряд без консультации.',
         ],
       },
       {
@@ -389,7 +389,7 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Предыдущие инъекции и аллергии',
         paragraphs: [
-          'Скажите врачу, делали ли вам раньше филлеры или другие инъекции, и если да, то когда и в какой области. Расскажите об аллергических реакциях на лекарства, косметику или продукты. Эти сведения помогают врачу выбрать безопасный вариант и подготовиться к возможной реакции.',
+          'Скажите врачу, делали ли вам раньше [[fillery-vidy-sostav-proizvoditeli|филлеры]] или другие инъекции, и если да, то когда и в какой области. Расскажите об аллергических реакциях на лекарства, косметику или продукты. Эти сведения помогают врачу выбрать безопасный вариант и подготовиться к возможной реакции.',
           'Если реакция возникла после прошлой процедуры, обязательно скажите, что именно вы почувствовали.',
         ],
       },
@@ -410,7 +410,7 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Ce preparate se folosesc',
         paragraphs: [
-          'Pentru biorevitalizare se folosesc preparate injectabile pe bază de acid hialuronic, care se află în ele sub formă de gel steril sau soluție. Ele sunt destinate introducerii în piele și diferă de preparatele pentru corecția volumului: sarcina lor este să hidrateze, nu să modeleze.',
+          'Pentru [[svc:byorevytalyzaczyya-v-belczah|biorevitalizare]] se folosesc preparate injectabile pe bază de acid hialuronic, care se află în ele sub formă de gel steril sau soluție. Ele sunt destinate introducerii în piele și diferă de preparatele pentru corecția volumului: sarcina lor este să hidrateze, nu să modeleze.',
         ],
       },
       {
@@ -446,7 +446,7 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Combinarea cu alte proceduri',
         paragraphs: [
-          'Biorevitalizarea se combină uneori cu alte metode de îngrijire și corecție. Ordinea și pauzele dintre proceduri le stabilește medicul, după starea pielii dumneavoastră. Nu planificați mai multe proceduri consecutive fără consultație.',
+          '[[biorevitalizaciya-beltsy-chto-eto|Biorevitalizarea]] se combină uneori cu alte metode de îngrijire și corecție. Ordinea și pauzele dintre proceduri le stabilește medicul, după starea pielii dumneavoastră. Nu planificați mai multe proceduri consecutive fără consultație.',
         ],
       },
       {
@@ -464,7 +464,7 @@ export const BIOREV_A: ArticleRewrites = {
       {
         h2: 'Injecții anterioare și alergii',
         paragraphs: [
-          'Spuneți medicului dacă ați mai făcut filleri sau alte injecții și, dacă da, când și în ce zonă. Povestiți despre reacțiile alergice la medicamente, cosmetice sau alimente. Aceste informații ajută medicul să aleagă o variantă sigură și să fie pregătit pentru o eventuală reacție.',
+          'Spuneți medicului dacă ați mai făcut [[fillery-vidy-sostav-proizvoditeli|filleri]] sau alte injecții și, dacă da, când și în ce zonă. Povestiți despre reacțiile alergice la medicamente, cosmetice sau alimente. Aceste informații ajută medicul să aleagă o variantă sigură și să fie pregătit pentru o eventuală reacție.',
           'Dacă ați avut o reacție după o procedură anterioară, spuneți neapărat ce ați simțit.',
         ],
       },

@@ -13,7 +13,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Что провоцирует воспаление',
         paragraphs: [
-          'Риск повышают бритьё против роста волос, влажная и тесная одежда, синтетические ткани, повышенная потливость, плотные жирные кремы, посещение бассейнов и бань с плохой гигиеной, сахарный диабет и ослабление иммунитета.',
+          'Риск повышают бритьё против роста волос, влажная и тесная одежда, синтетические ткани, [[gipergidroz-lechenie-beltsy|повышенная потливость]], плотные жирные кремы, посещение бассейнов и бань с плохой гигиеной, сахарный диабет и ослабление иммунитета.',
           'Если фолликулит возвращается снова и снова, врач ищет причину: от особенностей ухода до сопутствующих заболеваний.',
         ],
       },
@@ -59,14 +59,14 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Чего делать не стоит',
         paragraphs: [
-          'Не расчёсывайте высыпания, не используйте спиртовые лосьоны на воспалённой коже и не наносите гормональные мази без назначения: они могут усилить бактериальную или грибковую инфекцию.',
+          'Не расчёсывайте высыпания, не используйте спиртовые лосьоны на воспалённой коже и не наносите гормональные мази без назначения: они могут усилить бактериальную или [[gribkovye-infekcii-kozhi-diagnostika-lechenie|грибковую инфекцию]].',
         ],
       },
       {
         h2: 'Фолликулит и удаление волос',
         paragraphs: [
           'Если воспаления появляются после эпиляции или бритья, обсудите с врачом способ удаления волос и подготовку кожи. Иногда рекомендуют сменить метод. Врач также скажет, когда после лечения можно возвращаться к эпиляции.',
-          'Для консультации дерматолога в Бельцах запишитесь в клинику Meddera по телефону или через форму на сайте, адрес: улица Штефан чел Маре, 13.',
+          'Для консультации [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Бельцах запишитесь в клинику Meddera по телефону или через форму на сайте, адрес: улица Штефан чел Маре, 13.',
         ],
       },
     ],
@@ -107,7 +107,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Cu ce diferă foliculita de acnee și de firele încarnate',
         paragraphs: [
-          'Acneea ține de înfundarea porilor cu sebum și are de obicei comedoane. În foliculită inflamația începe în jurul firului, iar în centrul punctului purulent se vede adesea părul. De firele încarnate foliculita se deosebește prin cauză: aici rolul principal îl au infecția și iritația.',
+          '[[akne-prichiny-stadii-lechenie|Acneea]] ține de înfundarea porilor cu sebum și are de obicei comedoane. În foliculită inflamația începe în jurul firului, iar în centrul punctului purulent se vede adesea părul. De firele încarnate foliculita se deosebește prin cauză: aici rolul principal îl au infecția și iritația.',
           'Diferențele contează, pentru că tactica este alta. Ce ajută în acnee poate irita foliculii inflamați.',
         ],
       },
@@ -127,7 +127,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
         h2: 'Foliculita și îndepărtarea părului',
         paragraphs: [
           'Dacă inflamațiile apar după epilare sau ras, discutați cu medicul metoda de îndepărtare a părului și pregătirea pielii. Uneori se recomandă schimbarea metodei. Medicul vă spune și când puteți reveni la epilare după tratament.',
-          'Pentru consultația dermatologului în Bălți programați-vă la clinica Meddera, la telefon sau prin formularul de pe site, adresa: strada Ștefan cel Mare, 13.',
+          'Pentru consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți programați-vă la clinica Meddera, la telefon sau prin formularul de pe site, adresa: strada Ștefan cel Mare, 13.',
         ],
       },
     ],
@@ -137,7 +137,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Что такое себорея кожи головы',
         paragraphs: [
-          'Себорейным дерматитом кожи головы называют хроническое воспалительное состояние, при котором кожа зудит и шелушится жирными желтоватыми чешуйками, иногда краснеет. Лёгкая форма хорошо известна как перхоть. Заболевание не заразно и не связано с плохой гигиеной.',
+          '[[seboreynyj-dermatit-prichiny-lechenie|Себорейным дерматитом]] кожи головы называют хроническое воспалительное состояние, при котором кожа зудит и шелушится жирными желтоватыми чешуйками, иногда краснеет. Лёгкая форма хорошо известна как перхоть. Заболевание не заразно и не связано с плохой гигиеной.',
         ],
       },
       {
@@ -149,7 +149,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'С чем её можно спутать',
         paragraphs: [
-          'Похожие проявления дают псориаз, атопический дерматит, грибковое поражение и контактный дерматит. Если чешуйки плотные и серебристые, бляшки выходят за линию роста волос, появилось выпадение или болезненные очаги, нужен осмотр дерматолога: лечение этих состояний различается.',
+          'Похожие проявления дают [[psoriaz-sovremennye-podhody-terapii|псориаз]], атопический дерматит, грибковое поражение и контактный дерматит. Если чешуйки плотные и серебристые, бляшки выходят за линию роста волос, появилось выпадение или болезненные очаги, нужен осмотр [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]]: лечение этих состояний различается.',
         ],
       },
       {
@@ -200,8 +200,8 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Когда обратиться к врачу',
         paragraphs: [
-          'Запишитесь на консультацию, если зуд мешает спать, есть воспаление или гнойные корочки, усилилось выпадение волос, высыпания распространились на лицо, уши или брови либо домашние средства не помогают несколько недель.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Запишитесь на консультацию, если зуд мешает спать, есть воспаление или гнойные корочки, усилилось [[alopeciya-vypadenie-volos-prichiny|выпадение волос]], высыпания распространились на лицо, уши или брови либо домашние средства не помогают несколько недель.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -209,7 +209,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Ce este seboreea scalpului',
         paragraphs: [
-          'Dermatita seboreică a scalpului este o stare inflamatorie cronică, în care pielea provoacă mâncărime și se descuamează în solzi grași, gălbui, uneori se înroșește. Forma ușoară este bine cunoscută drept mătreață. Afecțiunea nu este contagioasă și nu ține de igiena slabă.',
+          '[[seboreynyj-dermatit-prichiny-lechenie|Dermatita seboreică]] a scalpului este o stare inflamatorie cronică, în care pielea provoacă mâncărime și se descuamează în solzi grași, gălbui, uneori se înroșește. Forma ușoară este bine cunoscută drept mătreață. Afecțiunea nu este contagioasă și nu ține de igiena slabă.',
         ],
       },
       {
@@ -221,7 +221,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Cu ce poate fi confundată',
         paragraphs: [
-          'Manifestări asemănătoare dau psoriazisul, dermatita atopică, leziunile fungice și dermatita de contact. Dacă solzii sunt denși și argintii, plăcile depășesc linia de creștere a părului, a apărut căderea părului sau focare dureroase, este nevoie de examinarea dermatologului: tratamentul acestor stări diferă.',
+          'Manifestări asemănătoare dau [[psoriaz-sovremennye-podhody-terapii|psoriazisul]], dermatita atopică, leziunile fungice și dermatita de contact. Dacă solzii sunt denși și argintii, plăcile depășesc linia de creștere a părului, a apărut căderea părului sau focare dureroase, este nevoie de examinarea [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]]: tratamentul acestor stări diferă.',
         ],
       },
       {
@@ -266,8 +266,8 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Când mergeți la medic',
         paragraphs: [
-          'Programați-vă la consultație dacă mâncărimea vă deranjează somnul, există inflamație sau cruste purulente, căderea părului s-a accentuat, erupțiile s-au extins pe față, urechi sau sprâncene ori remediile de acasă nu ajută de câteva săptămâni.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Programați-vă la consultație dacă mâncărimea vă deranjează somnul, există inflamație sau cruste purulente, [[alopeciya-vypadenie-volos-prichiny|căderea părului]] s-a accentuat, erupțiile s-au extins pe față, urechi sau sprâncene ori remediile de acasă nu ajută de câteva săptămâni.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Consultația dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -308,7 +308,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Как выглядят разные формы',
         paragraphs: [
-          'Выделяют буллёзную форму, при которой образуются крупные тонкостенные пузыри, и небуллёзную с мелкими пузырьками и желтоватыми корками. Иногда импетиго развивается на фоне других заболеваний кожи, например атопического дерматита или чесотки, и это нужно учитывать при лечении.',
+          'Выделяют буллёзную форму, при которой образуются крупные тонкостенные пузыри, и небуллёзную с мелкими пузырьками и желтоватыми корками. Иногда импетиго развивается на фоне других заболеваний кожи, например [[atopicheskij-dermatit-uhod-profilaktika|атопического дерматита]] или чесотки, и это нужно учитывать при лечении.',
         ],
       },
       {
@@ -320,7 +320,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Импетиго у детей',
         paragraphs: [
-          'У детей импетиго встречается особенно часто, потому что они чаще получают ссадины и играют в тесном контакте. Не откладывайте визит к педиатру или дерматологу, следите за температурой и самочувствием ребёнка и не давайте ему расчёсывать очаги.',
+          'У детей импетиго встречается особенно часто, потому что они чаще получают ссадины и играют в тесном контакте. Не откладывайте визит к педиатру или [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматологу]], следите за температурой и самочувствием ребёнка и не давайте ему расчёсывать очаги.',
         ],
       },
       {
@@ -339,7 +339,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
         h2: 'Возможные осложнения',
         paragraphs: [
           'Чаще всего импетиго проходит без последствий, но в редких случаях инфекция распространяется глубже или вызывает осложнения со стороны других органов. Именно поэтому лечить её лучше под наблюдением врача.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -378,7 +378,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Cum arată diferitele forme',
         paragraphs: [
-          'Se disting forma buloasă, cu bășici mari cu perete subțire, și cea nebuloasă, cu vezicule mici și cruste gălbui. Uneori impetigo se dezvoltă pe fondul altor boli ale pielii, de exemplu dermatita atopică sau scabia, iar asta trebuie luat în calcul la tratament.',
+          'Se disting forma buloasă, cu bășici mari cu perete subțire, și cea nebuloasă, cu vezicule mici și cruste gălbui. Uneori impetigo se dezvoltă pe fondul altor boli ale pielii, de exemplu [[atopicheskij-dermatit-uhod-profilaktika|dermatita atopică]] sau scabia, iar asta trebuie luat în calcul la tratament.',
         ],
       },
       {
@@ -390,7 +390,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
       {
         h2: 'Impetigo la copii',
         paragraphs: [
-          'La copii impetigo apare deosebit de des, pentru că ei se zgârie mai mult și se joacă în contact strâns. Nu amânați vizita la pediatru sau dermatolog, urmăriți temperatura și starea copilului și nu îl lăsați să scarpine focarele.',
+          'La copii impetigo apare deosebit de des, pentru că ei se zgârie mai mult și se joacă în contact strâns. Nu amânați vizita la pediatru sau [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatolog]], urmăriți temperatura și starea copilului și nu îl lăsați să scarpine focarele.',
         ],
       },
       {
@@ -403,7 +403,7 @@ export const DERMATOLOGIST_C: ArticleRewrites = {
         h2: 'Complicații posibile',
         paragraphs: [
           'De cele mai multe ori impetigo trece fără urmări, dar rar infecția se extinde în profunzime sau dă complicații la alte organe. Tocmai de aceea este mai bine tratată sub supravegherea medicului.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Consultația dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],

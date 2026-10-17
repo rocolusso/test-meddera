@@ -6,7 +6,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Что такое контактный дерматит у ребёнка',
         paragraphs: [
-          'Контактный дерматит это воспаление кожи, которое возникает в месте соприкосновения с раздражающим или аллергенным веществом. Оно не заразно. У детей кожа тоньше и легче теряет влагу, поэтому реакция появляется быстрее, чем у взрослых. Покраснение, отёк, зуд, пузырьки и мокнутие повторяют границы области контакта.',
+          '[[kontaktnyj-dermatit-allergiya-razdrazhenie|Контактный дерматит]] это воспаление кожи, которое возникает в месте соприкосновения с раздражающим или аллергенным веществом. Оно не заразно. У детей кожа тоньше и легче теряет влагу, поэтому реакция появляется быстрее, чем у взрослых. Покраснение, отёк, зуд, пузырьки и мокнутие повторяют границы области контакта.',
         ],
       },
       {
@@ -24,7 +24,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Чем он отличается от атопического дерматита',
         paragraphs: [
-          'Атопический дерматит поражает типичные места, держится длительно и сопровождается сухостью всей кожи. Контактный повторяет форму предмета или участок соприкосновения и проходит, когда контакт исключён. Иногда оба состояния встречаются вместе, и тогда нужна помощь врача.',
+          '[[atopicheskij-dermatit-uhod-profilaktika|Атопический дерматит]] поражает типичные места, держится длительно и сопровождается сухостью всей кожи. Контактный повторяет форму предмета или участок соприкосновения и проходит, когда контакт исключён. Иногда оба состояния встречаются вместе, и тогда нужна помощь врача.',
         ],
       },
       {
@@ -36,13 +36,13 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Опрелости под подгузником',
         paragraphs: [
-          'Меняйте подгузник чаще, давайте коже подсохнуть, мойте тёплой водой без ароматизированных салфеток, используйте защитный барьерный крем. Если покраснение яркое и вокруг видны отдельные красные точки, возможна грибковая инфекция, и ребёнка нужно показать врачу.',
+          'Меняйте подгузник чаще, давайте коже подсохнуть, мойте тёплой водой без ароматизированных салфеток, используйте защитный барьерный крем. Если покраснение яркое и вокруг видны отдельные красные точки, возможна [[gribkovye-infekcii-kozhi-diagnostika-lechenie|грибковая инфекция]], и ребёнка нужно показать врачу.',
         ],
       },
       {
         h2: 'Как найти причину',
         paragraphs: [
-          'Врач расспрашивает, что менялось в последние дни: косметика, одежда, стиральный порошок, новые игрушки, украшения. При повторяющихся реакциях может понадобиться аппликационное тестирование у дерматолога или аллерголога, которое позволяет выявить конкретный аллерген.',
+          'Врач расспрашивает, что менялось в последние дни: косметика, одежда, стиральный порошок, новые игрушки, украшения. При повторяющихся реакциях может понадобиться аппликационное тестирование у [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] или аллерголога, которое позволяет выявить конкретный аллерген.',
         ],
       },
       {
@@ -67,7 +67,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
         h2: 'Когда обратиться к врачу',
         paragraphs: [
           'Запишитесь на приём, если высыпания не проходят после устранения причины, ребёнок беспокоится, появились гнойные корочки, трещины или поднялась температура. Срочный осмотр нужен при отёке лица и затруднённом дыхании.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -75,7 +75,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Ce este dermatita de contact la copil',
         paragraphs: [
-          'Dermatita de contact este o inflamație a pielii care apare în locul de atingere cu o substanță iritantă sau alergenă. Nu este contagioasă. La copii pielea este mai subțire și pierde mai ușor apa, de aceea reacția apare mai repede decât la adulți. Roșeața, umflarea, mâncărimea, veziculele și secreția repetă limitele zonei de contact.',
+          '[[kontaktnyj-dermatit-allergiya-razdrazhenie|Dermatita de contact]] este o inflamație a pielii care apare în locul de atingere cu o substanță iritantă sau alergenă. Nu este contagioasă. La copii pielea este mai subțire și pierde mai ușor apa, de aceea reacția apare mai repede decât la adulți. Roșeața, umflarea, mâncărimea, veziculele și secreția repetă limitele zonei de contact.',
         ],
       },
       {
@@ -93,7 +93,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Prin ce diferă de dermatita atopică',
         paragraphs: [
-          'Dermatita atopică afectează locuri tipice, durează mult și este însoțită de uscăciunea întregii piei. Cea de contact repetă forma obiectului sau zona de atingere și trece când contactul este exclus. Uneori ambele stări apar împreună, iar atunci este nevoie de ajutorul medicului.',
+          '[[atopicheskij-dermatit-uhod-profilaktika|Dermatita atopică]] afectează locuri tipice, durează mult și este însoțită de uscăciunea întregii piei. Cea de contact repetă forma obiectului sau zona de atingere și trece când contactul este exclus. Uneori ambele stări apar împreună, iar atunci este nevoie de ajutorul medicului.',
         ],
       },
       {
@@ -111,7 +111,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Cum se găsește cauza',
         paragraphs: [
-          'Medicul întreabă ce s-a schimbat în ultimele zile: cosmeticele, hainele, detergentul de rufe, jucăriile noi, bijuteriile. În reacțiile repetate poate fi necesară testarea prin aplicare la dermatolog sau alergolog, care permite depistarea alergenului concret.',
+          'Medicul întreabă ce s-a schimbat în ultimele zile: cosmeticele, hainele, detergentul de rufe, jucăriile noi, bijuteriile. În reacțiile repetate poate fi necesară testarea prin aplicare la [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatolog]] sau alergolog, care permite depistarea alergenului concret.',
         ],
       },
       {
@@ -130,7 +130,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
         h2: 'Când vă adresați medicului',
         paragraphs: [
           'Programați-vă la consultație dacă erupțiile nu trec după înlăturarea cauzei, copilul este neliniștit, au apărut cruste purulente, crăpături sau a crescut temperatura. Examinarea urgentă este necesară în caz de umflare a feței și respirație îngreunată.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Consultația dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -140,13 +140,13 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Что такое меланома',
         paragraphs: [
-          'Меланома это злокачественная опухоль, которая развивается из пигментных клеток, меланоцитов. Она может появиться на неизменённой коже или возникнуть на месте родинки. Чаще всего её находят на коже, но иногда она бывает на слизистых, под ногтем и в глазу. Это серьёзное заболевание, поэтому любые изменения родинок заслуживают внимания.',
+          'Меланома это злокачественная опухоль, которая развивается из пигментных клеток, меланоцитов. Она может появиться на неизменённой коже или возникнуть на месте [[rodinki-kogda-obratitsya-k-dermatologu|родинки]]. Чаще всего её находят на коже, но иногда она бывает на слизистых, под ногтем и в глазу. Это серьёзное заболевание, поэтому любые изменения родинок заслуживают внимания.',
         ],
       },
       {
         h2: 'Кому нужно особенно внимательно следить за кожей',
         paragraphs: [
-          'Риск выше у людей со светлой кожей, светлыми или рыжими волосами, большим числом родинок, атипичными родинками, солнечными ожогами в прошлом, особенно в детстве. Имеют значение меланома у близких родственников, ранее перенесённая меланома, сниженный иммунитет и посещение солярия. При этом болезнь встречается и у людей без этих признаков.',
+          'Риск выше у людей со светлой кожей, светлыми или рыжими волосами, большим числом родинок, атипичными родинками, [[solnechnye-ozhogi-pervaya-pomoshch|солнечными ожогами]] в прошлом, особенно в детстве. Имеют значение меланома у близких родственников, ранее перенесённая меланома, сниженный иммунитет и посещение солярия. При этом болезнь встречается и у людей без этих признаков.',
         ],
       },
       {
@@ -158,13 +158,13 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Что ещё должно насторожить',
         paragraphs: [
-          'Родинка, которая отличается от остальных, новое пигментное пятно у взрослого, образование, которое растёт, кровоточит или не заживает, тёмная полоса под ногтем. Не все меланомы тёмные: встречаются розовые и красноватые узелки, которые легко принять за безобидные.',
+          'Родинка, которая отличается от остальных, новое [[pigmentnye-pyatna-prichiny-lechenie|пигментное пятно]] у взрослого, образование, которое растёт, кровоточит или не заживает, тёмная полоса под ногтем. Не все меланомы тёмные: встречаются розовые и красноватые узелки, которые легко принять за безобидные.',
         ],
       },
       {
         h2: 'Как проходит осмотр',
         paragraphs: [
-          'Дерматолог осматривает всю кожу, включая труднодоступные места, и изучает подозрительные родинки с помощью дерматоскопа: он увеличивает образование и показывает его структуру. Иногда делают фотографии, чтобы сравнивать родинки со временем. Окончательный ответ даёт только гистологическое исследование удалённого образования.',
+          '[[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|Дерматолог]] осматривает всю кожу, включая труднодоступные места, и изучает подозрительные родинки с помощью дерматоскопа: он увеличивает образование и показывает его структуру. Иногда делают фотографии, чтобы сравнивать родинки со временем. Окончательный ответ даёт только гистологическое исследование удалённого образования.',
         ],
       },
       {
@@ -195,7 +195,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
         h2: 'Когда записаться на осмотр',
         paragraphs: [
           'Не откладывайте визит, если родинка изменилась или вызывает сомнение. Осмотр не означает диагноз, а своевременная консультация даёт больше возможностей для лечения.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -209,7 +209,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Cine trebuie să-și urmărească pielea mai atent',
         paragraphs: [
-          'Riscul este mai mare la persoanele cu piele deschisă, păr blond sau roșcat, număr mare de alunițe, alunițe atipice, arsuri solare în trecut, mai ales în copilărie. Contează melanomul la rude apropiate, melanomul suferit anterior, imunitatea scăzută și vizitele la solar. Totuși boala apare și la oameni fără aceste semne.',
+          'Riscul este mai mare la persoanele cu piele deschisă, păr blond sau roșcat, număr mare de [[rodinki-kogda-obratitsya-k-dermatologu|alunițe]], alunițe atipice, arsuri solare în trecut, mai ales în copilărie. Contează melanomul la rude apropiate, melanomul suferit anterior, imunitatea scăzută și vizitele la solar. Totuși boala apare și la oameni fără aceste semne.',
         ],
       },
       {
@@ -227,7 +227,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Cum decurge examinarea',
         paragraphs: [
-          'Dermatologul examinează toată pielea, inclusiv zonele greu accesibile, și studiază alunițele suspecte cu dermatoscopul: acesta mărește formațiunea și arată structura ei. Uneori se fac fotografii pentru a compara alunițele în timp. Răspunsul final îl dă doar examenul histologic al formațiunii îndepărtate.',
+          '[[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|Dermatologul]] examinează toată pielea, inclusiv zonele greu accesibile, și studiază alunițele suspecte cu dermatoscopul: acesta mărește formațiunea și arată structura ei. Uneori se fac fotografii pentru a compara alunițele în timp. Răspunsul final îl dă doar examenul histologic al formațiunii îndepărtate.',
         ],
       },
       {
@@ -239,7 +239,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Cum reduceți riscul',
         paragraphs: [
-          'Protejați pielea de soare: umbră la mijlocul zilei, haine acoperitoare, pălărie și cremă cu protecție solară. Nu mergeți la solar. Examinați periodic toată pielea, la nevoie cu ajutorul oglinzii sau al unei persoane apropiate, și fotografiați alunițele pentru a observa schimbările. Un control profilactic la dermatolog ajută să vedeți ce e greu de observat singur.',
+          'Protejați pielea de soare: umbră la mijlocul zilei, haine acoperitoare, pălărie și cremă cu protecție solară. Nu mergeți la solar. Examinați periodic toată pielea, la nevoie cu ajutorul oglinzii sau al unei persoane apropiate, și fotografiați alunițele pentru a observa schimbările. Un control profilactic [[dermatolog-beltsy-kogda-nuzhna-konsultaciya|la dermatolog]] ajută să vedeți ce e greu de observat singur.',
         ],
       },
       {
@@ -268,13 +268,13 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Как она выглядит',
         paragraphs: [
-          'Типичная базалиома выглядит как жемчужный или восковой узелок с блестящей поверхностью, через которую видны мелкие сосуды. В центре со временем появляется язвочка с корочкой, которая то заживает, то открывается снова. Бывают плоские формы, похожие на рубец или шелушащееся пятно, и пигментные, которые принимают за родинку. Боль слабая или отсутствует, поэтому образование долго остаётся без внимания.',
+          'Типичная базалиома выглядит как жемчужный или восковой узелок с блестящей поверхностью, через которую видны мелкие сосуды. В центре со временем появляется язвочка с корочкой, которая то заживает, то открывается снова. Бывают плоские формы, похожие на рубец или шелушащееся пятно, и пигментные, которые принимают за [[rodinki-kogda-obratitsya-k-dermatologu|родинку]]. Боль слабая или отсутствует, поэтому образование долго остаётся без внимания.',
         ],
       },
       {
         h2: 'Где появляется и почему',
         paragraphs: [
-          'Чаще всего на открытых участках: на лице, носу, висках, ушах, шее, коже головы. Главный фактор это накопленное воздействие ультрафиолета. Риск повышают светлая кожа, солнечные ожоги в прошлом, возраст, солярий, сниженный иммунитет, прежнее облучение и некоторые наследственные состояния.',
+          'Чаще всего на открытых участках: на лице, носу, висках, ушах, шее, коже головы. Главный фактор это накопленное воздействие ультрафиолета. Риск повышают светлая кожа, [[solnechnye-ozhogi-pervaya-pomoshch|солнечные ожоги]] в прошлом, возраст, солярий, сниженный иммунитет, прежнее облучение и некоторые наследственные состояния.',
         ],
       },
       {
@@ -286,7 +286,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Какие бывают способы лечения',
         paragraphs: [
-          'Способ выбирает специалист с учётом размера, подтипа, расположения и общего состояния человека. Применяют хирургическое иссечение, выскабливание с электрокоагуляцией, криодеструкцию, лучевую терапию, а в отдельных случаях местные препараты или таргетные средства. На лице и там, где важно сохранить ткани, иногда используют послойное удаление с контролем краёв. Решение принимают онкологи, хирурги и дерматологи вместе.',
+          'Способ выбирает специалист с учётом размера, подтипа, расположения и общего состояния человека. Применяют хирургическое иссечение, выскабливание с электрокоагуляцией, криодеструкцию, лучевую терапию, а в отдельных случаях местные препараты или таргетные средства. На лице и там, где важно сохранить ткани, иногда используют послойное удаление с контролем краёв. Решение принимают онкологи, хирурги и [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматологи]] вместе.',
         ],
       },
       {
@@ -304,7 +304,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Какие бывают формы',
         paragraphs: [
-          'Различают узловую, поверхностную, склеродермоподобную и пигментную формы, а также более агрессивные варианты. Поверхностная форма обычно выглядит как розовое шелушащееся пятно, которое годами принимают за экзему. Склеродермоподобная похожа на плотный рубец с нечёткими границами, и такая форма требует особенно тщательного удаления.',
+          'Различают узловую, поверхностную, склеродермоподобную и пигментную формы, а также более агрессивные варианты. Поверхностная форма обычно выглядит как розовое шелушащееся пятно, которое годами принимают за [[ekzema-kak-oblegchit-simptomy|экзему]]. Склеродермоподобная похожа на плотный рубец с нечёткими границами, и такая форма требует особенно тщательного удаления.',
         ],
       },
       {
@@ -323,7 +323,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
         h2: 'Когда записаться к врачу',
         paragraphs: [
           'Покажите врачу ранку, которая не заживает, блестящий узелок, пятно, которое растёт или кровоточит. Чем раньше образование осмотрено, тем больше вариантов лечения.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -337,7 +337,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Cum arată',
         paragraphs: [
-          'Bazaliomul tipic arată ca un nodul sidefat sau ceros, cu suprafața lucioasă, prin care se văd vase mici. În centru apare cu timpul o ulcerație cu crustă, care când se vindecă, când se deschide din nou. Există forme plate, asemănătoare unei cicatrici sau unei pete descuamate, și forme pigmentate, care se confundă cu o aluniță. Durerea este slabă sau lipsește, de aceea formațiunea rămâne mult timp fără atenție.',
+          'Bazaliomul tipic arată ca un nodul sidefat sau ceros, cu suprafața lucioasă, prin care se văd vase mici. În centru apare cu timpul o ulcerație cu crustă, care când se vindecă, când se deschide din nou. Există forme plate, asemănătoare unei cicatrici sau unei pete descuamate, și forme pigmentate, care se confundă cu o [[rodinki-kogda-obratitsya-k-dermatologu|aluniță]]. Durerea este slabă sau lipsește, de aceea formațiunea rămâne mult timp fără atenție.',
         ],
       },
       {
@@ -355,7 +355,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Ce metode de tratament există',
         paragraphs: [
-          'Metoda o alege specialistul, ținând cont de dimensiune, subtip, localizare și starea generală a omului. Se folosesc excizia chirurgicală, chiuretajul cu electrocoagulare, criodistrucția, radioterapia, iar în unele cazuri preparate locale sau terapii țintite. Pe față și acolo unde trebuie păstrate țesuturile se folosește uneori îndepărtarea strat cu strat, cu controlul marginilor. Decizia o iau împreună oncologii, chirurgii și dermatologii.',
+          'Metoda o alege specialistul, ținând cont de dimensiune, subtip, localizare și starea generală a omului. Se folosesc excizia chirurgicală, chiuretajul cu electrocoagulare, criodistrucția, radioterapia, iar în unele cazuri preparate locale sau terapii țintite. Pe față și acolo unde trebuie păstrate țesuturile se folosește uneori îndepărtarea strat cu strat, cu controlul marginilor. Decizia o iau împreună oncologii, chirurgii și [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologii]].',
         ],
       },
       {
@@ -373,20 +373,20 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Ce forme există',
         paragraphs: [
-          'Se deosebesc forma nodulară, superficială, sclerodermiformă și pigmentată, precum și variante mai agresive. Forma superficială arată de obicei ca o pată roz, descuamată, care ani la rând este luată drept eczemă. Cea sclerodermiformă seamănă cu o cicatrice densă, cu margini neclare, și această formă cere o îndepărtare deosebit de atentă.',
+          'Se deosebesc forma nodulară, superficială, sclerodermiformă și pigmentată, precum și variante mai agresive. Forma superficială arată de obicei ca o pată roz, descuamată, care ani la rând este luată drept [[ekzema-kak-oblegchit-simptomy|eczemă]]. Cea sclerodermiformă seamănă cu o cicatrice densă, cu margini neclare, și această formă cere o îndepărtare deosebit de atentă.',
         ],
       },
       {
         h2: 'Cu ce formațiuni inofensive se confundă',
         paragraphs: [
-          'Bazaliomul se confundă cu un coș care nu trece, cu o placă de psoriazis, cu o cicatrice sau cu o aluniță. Trăsătura comună este lipsa vindecării: formațiunea se acoperă cu crustă, apoi sângerează din nou, și așa săptămâni la rând. Orice rană care nu se vindecă merită examinată.',
+          'Bazaliomul se confundă cu un coș care nu trece, cu o placă de [[psoriaz-sovremennye-podhody-terapii|psoriazis]], cu o cicatrice sau cu o aluniță. Trăsătura comună este lipsa vindecării: formațiunea se acoperă cu crustă, apoi sângerează din nou, și așa săptămâni la rând. Orice rană care nu se vindecă merită examinată.',
         ],
       },
       {
         h2: 'Când vă programați la medic',
         paragraphs: [
           'Arătați medicului rana care nu se vindecă, nodulul lucios, pata care crește sau sângerează. Cu cât formațiunea este examinată mai devreme, cu atât sunt mai multe variante de tratament.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Consultația dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -408,19 +408,19 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'С чего он начинается',
         paragraphs: [
-          'Нередко предшественником служит актинический кератоз, шероховатое пятно на коже, повреждённой солнцем. Риск повышают также долго не заживающие раны и рубцы, ожоги, облучение, вирус папилломы человека, курение, сниженный иммунитет, в том числе после пересадки органов, светлая кожа и солярий. Не каждое пятно превращается в рак, но за ними нужно наблюдать.',
+          'Нередко предшественником служит актинический кератоз, шероховатое пятно на коже, повреждённой солнцем. Риск повышают также долго не заживающие раны и рубцы, ожоги, облучение, вирус [[papillomy-borodavki-udalenie-beltsy|папилломы]] человека, курение, сниженный иммунитет, в том числе после пересадки органов, светлая кожа и солярий. Не каждое пятно превращается в рак, но за ними нужно наблюдать.',
         ],
       },
       {
         h2: 'Чем он отличается от базалиомы',
         paragraphs: [
-          'Плоскоклеточный рак чаще, чем базалиома, способен прорастать вглубь и распространяться на лимфатические узлы, особенно при некоторых вариантах и расположениях. Поэтому ему уделяют особое внимание, а лечение и наблюдение подбирают тщательно. Поэтому осмотр лучше не откладывать.',
+          'Плоскоклеточный рак чаще, чем [[bazalioma-lechenie-udalenie|базалиома]], способен прорастать вглубь и распространяться на лимфатические узлы, особенно при некоторых вариантах и расположениях. Поэтому ему уделяют особое внимание, а лечение и наблюдение подбирают тщательно. Поэтому осмотр лучше не откладывать.',
         ],
       },
       {
         h2: 'Как ставят диагноз',
         paragraphs: [
-          'Врач осматривает образование, проверяет ближайшие лимфатические узлы, проводит дерматоскопию и берёт образец ткани для гистологического исследования. При необходимости назначают УЗИ или другие обследования, чтобы оценить распространённость процесса.',
+          'Врач осматривает образование, проверяет ближайшие лимфатические узлы, проводит [[dermatoskopiya-chto-eto-zachem-nuzhna|дерматоскопию]] и берёт образец ткани для гистологического исследования. При необходимости назначают УЗИ или другие обследования, чтобы оценить распространённость процесса.',
         ],
       },
       {
@@ -457,7 +457,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
         h2: 'Когда обращаться к врачу',
         paragraphs: [
           'Запишитесь на осмотр, если на коже появилось шелушащееся или бородавчатое образование, язвочка не заживает или участок кожи, повреждённый солнцем, меняется. Осмотр помогает вовремя отличить доброкачественные изменения от опасных.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Консультацию [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -477,19 +477,19 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
       {
         h2: 'Cum începe',
         paragraphs: [
-          'Adesea precursor este keratoza actinică, o pată aspră pe pielea afectată de soare. Riscul îl cresc și rănile și cicatricile care nu se vindecă mult timp, arsurile, iradierea, virusul papiloma uman, fumatul, imunitatea scăzută, inclusiv după transplant de organe, pielea deschisă și solarul. Nu orice pată devine cancer, dar ele trebuie urmărite.',
+          'Adesea precursor este [[keratomy-chto-eto-nuzhno-li-udalyat|keratoza]] actinică, o pată aspră pe pielea afectată de soare. Riscul îl cresc și rănile și cicatricile care nu se vindecă mult timp, arsurile, iradierea, virusul [[papillomy-borodavki-udalenie-beltsy|papiloma]] uman, fumatul, imunitatea scăzută, inclusiv după transplant de organe, pielea deschisă și solarul. Nu orice pată devine cancer, dar ele trebuie urmărite.',
         ],
       },
       {
         h2: 'Prin ce diferă de bazaliom',
         paragraphs: [
-          'Carcinomul scuamocelular, mai des decât bazaliomul, poate pătrunde în profunzime și se poate extinde la ganglionii limfatici, mai ales în unele variante și localizări. De aceea i se acordă o atenție deosebită, iar tratamentul și urmărirea se aleg cu grijă.',
+          'Carcinomul scuamocelular, mai des decât [[bazalioma-lechenie-udalenie|bazaliomul]], poate pătrunde în profunzime și se poate extinde la ganglionii limfatici, mai ales în unele variante și localizări. De aceea i se acordă o atenție deosebită, iar tratamentul și urmărirea se aleg cu grijă.',
         ],
       },
       {
         h2: 'Cum se stabilește diagnosticul',
         paragraphs: [
-          'Medicul examinează formațiunea, verifică ganglionii limfatici apropiați, face dermatoscopie și ia o probă de țesut pentru examen histologic. La nevoie se prescriu ecografie sau alte investigații pentru a evalua extinderea procesului.',
+          'Medicul examinează formațiunea, verifică ganglionii limfatici apropiați, face [[dermatoskopiya-chto-eto-zachem-nuzhna|dermatoscopie]] și ia o probă de țesut pentru examen histologic. La nevoie se prescriu ecografie sau alte investigații pentru a evalua extinderea procesului.',
         ],
       },
       {
@@ -520,7 +520,7 @@ export const DERMATOLOGIST_H: ArticleRewrites = {
         h2: 'Când vă adresați medicului',
         paragraphs: [
           'Programați-vă la control dacă pe piele a apărut o formațiune descuamată sau veruciformă, o ulcerație nu se vindecă ori o zonă de piele afectată de soare se schimbă. Controlul ajută să deosebiți la timp modificările benigne de cele periculoase.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],

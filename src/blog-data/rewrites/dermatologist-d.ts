@@ -7,13 +7,13 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
         h2: 'Откуда берутся пигментные пятна',
         paragraphs: [
           'Пятна появляются, когда клетки кожи производят пигмент меланин неравномерно. Причин несколько: ультрафиолет, гормональные изменения (беременность, гормональные препараты), воспаления и травмы кожи, возрастные изменения, некоторые лекарства и косметические средства, наследственность.',
-          'Различают веснушки, солнечные пятна, мелазму и поствоспалительную пигментацию, которая остаётся после акне, ожогов и ранок. Каждый вид требует своего подхода.',
+          'Различают веснушки, солнечные пятна, мелазму и поствоспалительную [[svc:terapyya-protyv-pygmentaczyy-v-belczah|пигментацию]], которая остаётся после акне, ожогов и ранок. Каждый вид требует своего подхода.',
         ],
       },
       {
         h2: 'Какие пятна нужно показать врачу в первую очередь',
         paragraphs: [
-          'Если пятно быстро растёт, меняет цвет или форму, имеет неровный край, зудит, кровоточит или не заживает, откладывать визит нельзя. Прежде чем говорить об осветлении, врач должен исключить новообразование. Для этого используют осмотр и дерматоскопию, а при сомнениях исследуют ткань.',
+          'Если пятно быстро растёт, меняет цвет или форму, имеет неровный край, зудит, кровоточит или не заживает, откладывать визит нельзя. Прежде чем говорить об осветлении, врач должен исключить новообразование. Для этого используют осмотр и [[dermatoskopiya-chto-eto-zachem-nuzhna|дерматоскопию]], а при сомнениях исследуют ткань.',
         ],
       },
       {
@@ -73,13 +73,13 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
         h2: 'De unde apar petele pigmentare',
         paragraphs: [
           'Petele apar când celulele pielii produc inegal pigmentul melanină. Cauzele sunt mai multe: ultravioletele, schimbările hormonale (sarcina, preparatele hormonale), inflamațiile și traumatismele pielii, schimbările legate de vârstă, unele medicamente și produse cosmetice, ereditatea.',
-          'Se disting pistruii, petele solare, melasma și pigmentarea postinflamatorie, care rămâne după acnee, arsuri și rănile mici.',
+          'Se disting pistruii, petele solare, melasma și [[svc:terapyya-protyv-pygmentaczyy-v-belczah|pigmentarea]] postinflamatorie, care rămâne după acnee, arsuri și rănile mici.',
         ],
       },
       {
         h2: 'Ce pete trebuie arătate medicului în primul rând',
         paragraphs: [
-          'Dacă pata crește repede, își schimbă culoarea sau forma, are marginea neregulată, provoacă mâncărime, sângerează sau nu se vindecă, vizita nu se amână. Înainte să se vorbească despre estompare, medicul trebuie să excludă o formațiune. Se folosesc examinarea și dermatoscopia, iar în caz de dubii se analizează țesutul.',
+          'Dacă pata crește repede, își schimbă culoarea sau forma, are marginea neregulată, provoacă mâncărime, sângerează sau nu se vindecă, vizita nu se amână. Înainte să se vorbească despre estompare, medicul trebuie să excludă o formațiune. Se folosesc examinarea și [[dermatoskopiya-chto-eto-zachem-nuzhna|dermatoscopia]], iar în caz de dubii se analizează țesutul.',
         ],
       },
       {
@@ -139,19 +139,19 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
       {
         h2: 'Что такое онихомикоз',
         paragraphs: [
-          'Онихомикозом называют грибковое поражение ногтей. Ноготь утолщается, мутнеет, становится жёлтым или белым, крошится, иногда отходит от ногтевого ложа. Чаще поражаются ногти на стопах. Это не только косметическая проблема: грибок остаётся источником заражения и у людей с диабетом или нарушением кровообращения может привести к осложнениям.',
+          'Онихомикозом называют [[gribkovye-infekcii-kozhi-diagnostika-lechenie|грибковое поражение]] ногтей. Ноготь утолщается, мутнеет, становится жёлтым или белым, крошится, иногда отходит от ногтевого ложа. Чаще поражаются ногти на стопах. Это не только косметическая проблема: грибок остаётся источником заражения и у людей с диабетом или нарушением кровообращения может привести к осложнениям.',
         ],
       },
       {
         h2: 'Как происходит заражение',
         paragraphs: [
-          'Грибок передаётся в бассейнах, банях и раздевалках, через общую обувь и полотенца, при педикюре нестерильными инструментами. Риск повышают потливость, тесная обувь, микротравмы ногтей, грибок стоп, сахарный диабет и снижение иммунитета.',
+          'Грибок передаётся в бассейнах, банях и раздевалках, через общую обувь и полотенца, при педикюре нестерильными инструментами. Риск повышают потливость, тесная обувь, микротравмы ногтей, [[mikoz-stop-konsultaciya|грибок стоп]], сахарный диабет и снижение иммунитета.',
         ],
       },
       {
         h2: 'Почему важно подтвердить диагноз',
         paragraphs: [
-          'Похожие изменения ногтей вызывают псориаз, травмы, лишай и другие заболевания. Лечить ноготь по внешнему виду нельзя. Врач может взять соскоб или кусочек ногтя для лабораторного исследования, чтобы подтвердить грибок и выбрать препарат.',
+          'Похожие изменения ногтей вызывают [[psoriaz-sovremennye-podhody-terapii|псориаз]], травмы, лишай и другие заболевания. Лечить ноготь по внешнему виду нельзя. Врач может взять соскоб или кусочек ногтя для лабораторного исследования, чтобы подтвердить грибок и выбрать препарат.',
           'Начинать лечение без подтверждения не стоит: препарат может оказаться неподходящим, а время будет потеряно.',
         ],
       },
@@ -202,7 +202,7 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
         h2: 'Когда не стоит откладывать визит',
         paragraphs: [
           'Обратитесь к врачу без промедления, если вокруг ногтя появились боль, покраснение или гной, если у вас диабет либо нарушено кровообращение в ногах, а также если ногти меняются быстро. Таким пациентам грибок опаснее.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Консультацию [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -216,13 +216,13 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
       {
         h2: 'Cum se produce infectarea',
         paragraphs: [
-          'Ciuperca se transmite în piscine, băi și vestiare, prin încălțăminte și prosoape comune, la pedichiură cu instrumente nesterile. Riscul crește la transpirație, pantofi strâmți, microtraumatisme ale unghiilor, micoză a tălpilor, diabet zaharat și imunitate scăzută.',
+          'Ciuperca se transmite în piscine, băi și vestiare, prin încălțăminte și prosoape comune, la pedichiură cu instrumente nesterile. Riscul crește la transpirație, pantofi strâmți, microtraumatisme ale unghiilor, [[gribkovye-infekcii-kozhi-diagnostika-lechenie|micoză]] a tălpilor, diabet zaharat și imunitate scăzută.',
         ],
       },
       {
         h2: 'De ce este important să confirmați diagnosticul',
         paragraphs: [
-          'Modificări asemănătoare ale unghiilor dau psoriazisul, traumatismele, lichenul și alte boli. Unghia nu se tratează după aspect. Medicul poate recolta un raclat sau un fragment de unghie pentru examen de laborator, ca să confirme ciuperca și să aleagă preparatul.',
+          'Modificări asemănătoare ale unghiilor dau [[psoriaz-sovremennye-podhody-terapii|psoriazisul]], traumatismele, lichenul și alte boli. Unghia nu se tratează după aspect. Medicul poate recolta un raclat sau un fragment de unghie pentru examen de laborator, ca să confirme ciuperca și să aleagă preparatul.',
           'Nu începeți tratamentul fără confirmare: preparatul poate fi nepotrivit, iar timpul se pierde.',
         ],
       },
@@ -267,7 +267,7 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
         h2: 'Când nu amânați vizita',
         paragraphs: [
           'Mergeți la medic fără întârziere dacă în jurul unghiei apar durere, roșeață sau puroi, dacă aveți diabet ori circulația picioarelor este afectată, precum și dacă unghiile se modifică repede. Pentru acești pacienți ciuperca este mai periculoasă.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -277,7 +277,7 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
       {
         h2: 'Что такое грибковые инфекции кожи',
         paragraphs: [
-          'Это поражения кожи дерматофитами или дрожжеподобными грибками. К ним относятся микоз гладкой кожи, микоз стоп, поражение паховых складок, кандидоз кожных складок и разноцветный лишай. Проявления зависят от вида: круглые шелушащиеся пятна с более красным краем, зуд, трещины между пальцами, мокнутие в складках.',
+          'Это поражения кожи дерматофитами или дрожжеподобными грибками. К ним относятся микоз гладкой кожи, [[mikoz-stop-konsultaciya|микоз стоп]], поражение паховых складок, кандидоз кожных складок и разноцветный лишай. Проявления зависят от вида: круглые шелушащиеся пятна с более красным краем, зуд, трещины между пальцами, мокнутие в складках.',
         ],
       },
       {
@@ -289,7 +289,7 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
       {
         h2: 'Как ставят диагноз',
         paragraphs: [
-          'Врач осматривает кожу и берёт соскоб для микроскопии или посева. Это позволяет подтвердить грибок и выбрать препарат. Диагноз нельзя ставить только по внешнему виду, потому что похожие высыпания бывают при экземе, псориазе и других заболеваниях.',
+          'Врач осматривает кожу и берёт соскоб для микроскопии или посева. Это позволяет подтвердить грибок и выбрать препарат. Диагноз нельзя ставить только по внешнему виду, потому что похожие высыпания бывают при экземе, [[psoriaz-sovremennye-podhody-terapii|псориазе]] и других заболеваниях.',
           'Гормональные кремы без назначения применять нельзя: они могут временно сгладить признаки и усилить грибковую инфекцию.',
         ],
       },
@@ -340,7 +340,7 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
         h2: 'Когда обратиться к врачу',
         paragraphs: [
           'Запишитесь на консультацию, если пятна не проходят или распространяются, зуд мешает спать, образовались трещины и мокнутие, поражены волосы или ногти, а домашнее лечение не помогает. Не откладывайте визит при сахарном диабете и ослабленном иммунитете.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Консультацию [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -360,7 +360,7 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
       {
         h2: 'Cum se pune diagnosticul',
         paragraphs: [
-          'Medicul examinează pielea și recoltează un raclat pentru microscopie sau cultură. Astfel se confirmă ciuperca și se alege preparatul. Diagnosticul nu se pune doar după aspect, deoarece erupții asemănătoare apar în eczemă, psoriazis și alte boli.',
+          'Medicul examinează pielea și recoltează un raclat pentru microscopie sau cultură. Astfel se confirmă ciuperca și se alege preparatul. Diagnosticul nu se pune doar după aspect, deoarece erupții asemănătoare apar în eczemă, [[psoriaz-sovremennye-podhody-terapii|psoriazis]] și alte boli.',
           'Cremele hormonale nu se folosesc fără prescripție: pot ascunde temporar semnele și pot agrava infecția fungică.',
         ],
       },
@@ -405,7 +405,7 @@ export const DERMATOLOGIST_D: ArticleRewrites = {
         h2: 'Când mergeți la medic',
         paragraphs: [
           'Programați-vă la consultație dacă petele nu trec sau se extind, mâncărimea deranjează somnul, au apărut fisuri și umezeală, sunt afectate părul sau unghiile, iar tratamentul de acasă nu ajută. Nu amânați vizita în cazul diabetului zaharat și al imunității scăzute.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],

@@ -6,13 +6,13 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Откуда берутся лучики у глаз',
         paragraphs: [
-          'Лучики у наружных уголков глаз образуются, когда вы улыбаетесь, смеётесь или щуритесь. Круговая мышца глаза сокращается, и кожа собирается в мелкие складки. С возрастом кожа становится тоньше и хуже разглаживается, поэтому линии остаются видны и на спокойном лице. Свою роль играют солнце, привычка щуриться и особенности мимики.',
+          'Лучики у наружных уголков глаз образуются, когда вы улыбаетесь, смеётесь или щуритесь. Круговая мышца глаза сокращается, и кожа собирается в мелкие складки. С [[botoks-vozrast-kogda-nachinat|возрастом]] кожа становится тоньше и хуже разглаживается, поэтому линии остаются видны и на спокойном лице. Свою роль играют солнце, привычка щуриться и особенности мимики.',
         ],
       },
       {
         h2: 'Что делает инъекция',
         paragraphs: [
-          'Препарат вводят в наружную часть круговой мышцы, и она сокращается слабее. Складки при улыбке становятся менее выраженными. Кожа вокруг глаз тонкая, а токсин её не уплотняет, поэтому линии, которые видны в покое, смягчаются лишь отчасти. В таких случаях к инъекциям нередко добавляют домашний уход или другие методы.',
+          'Препарат вводят в наружную часть круговой мышцы, и она сокращается слабее. Складки при улыбке становятся менее выраженными. [[biorevitalizaciya-vokrug-glaz|Кожа вокруг глаз]] тонкая, а токсин её не уплотняет, поэтому линии, которые видны в покое, смягчаются лишь отчасти. В таких случаях к инъекциям нередко добавляют домашний уход или другие методы.',
         ],
       },
       {
@@ -30,7 +30,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Чего можно ожидать',
         paragraphs: [
-          'Эффект проявляется постепенно, обычно через несколько дней. Цель в том, чтобы лучики смягчились, а лицо сохранило выразительность и улыбка осталась живой. Результат временный, и через какое-то время мимика возвращается. Тогда процедуру можно повторить по совету врача. Сроки у всех свои, и сравнивать их с чужими не нужно. Если вы пользуетесь солнцезащитными очками и кремом с защитой от ультрафиолета, кожа вокруг глаз дольше сохраняет ровный вид. Инъекции работают с мимикой, а уход помогает самой коже.',
+          'Эффект проявляется постепенно, обычно через несколько дней. Цель в том, чтобы лучики смягчились, а лицо сохранило выразительность и улыбка осталась живой. Результат временный, и через какое-то время мимика возвращается. Тогда процедуру можно повторить по совету врача. Сроки у всех свои, и сравнивать их с чужими не нужно. Если вы пользуетесь солнцезащитными очками и кремом с защитой от ультрафиолета, [[mezoterapiya-lica-vokrug-glaz|кожа вокруг глаз]] дольше сохраняет ровный вид. Инъекции работают с мимикой, а уход помогает самой коже.',
         ],
       },
       {
@@ -62,13 +62,13 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'De unde apar liniile de lângă ochi',
         paragraphs: [
-          'Liniile de la colțurile externe ale ochilor se formează când zâmbiți, râdeți sau miorlăiți ochii. Mușchiul orbicular al ochiului se contractă, iar pielea se strânge în pliuri fine. Cu vârsta pielea se subțiază și se netezește mai greu, de aceea liniile rămân vizibile și pe fața relaxată. Un rol au soarele, obiceiul de a miorlăi ochii și particularitățile mimicii.',
+          'Liniile de la colțurile externe ale ochilor se formează când zâmbiți, râdeți sau miorlăiți ochii. Mușchiul orbicular al ochiului se contractă, iar pielea se strânge în pliuri fine. Cu [[botoks-vozrast-kogda-nachinat|vârsta]] pielea se subțiază și se netezește mai greu, de aceea liniile rămân vizibile și pe fața relaxată. Un rol au soarele, obiceiul de a miorlăi ochii și particularitățile mimicii.',
         ],
       },
       {
         h2: 'Ce face injecția',
         paragraphs: [
-          'Preparatul se introduce în partea externă a mușchiului orbicular, iar acesta se contractă mai slab. Pliurile din timpul zâmbetului devin mai puțin pronunțate. Pielea din jurul ochilor este subțire, iar toxina nu o îngroașă, de aceea liniile care se văd în repaus se atenuează doar parțial. În asemenea cazuri injecțiilor li se adaugă adesea îngrijirea de acasă sau alte metode.',
+          'Preparatul se introduce în partea externă a mușchiului orbicular, iar acesta se contractă mai slab. Pliurile din timpul zâmbetului devin mai puțin pronunțate. [[biorevitalizaciya-vokrug-glaz|Pielea din jurul ochilor]] este subțire, iar toxina nu o îngroașă, de aceea liniile care se văd în repaus se atenuează doar parțial. În asemenea cazuri injecțiilor li se adaugă adesea îngrijirea de acasă sau alte metode.',
         ],
       },
       {
@@ -110,7 +110,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Consultație la Bălți',
         paragraphs: [
-          'La clinica Meddera medicul examinează zona din jurul ochilor, explică la ce vă puteți aștepta de la injecții în cazul dumneavoastră și propune variante suplimentare de îngrijire. Vă puteți programa telefonic sau prin formularul de pe site.',
+          'La clinica Meddera medicul examinează zona [[mezoterapiya-lica-vokrug-glaz|din jurul ochilor]], explică la ce vă puteți aștepta de la injecții în cazul dumneavoastră și propune variante suplimentare de îngrijire. Vă puteți programa telefonic sau prin formularul de pe site.',
         ],
       },
     ],
@@ -120,7 +120,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Что такое бруксизм',
         paragraphs: [
-          'Бруксизм это непроизвольное сжатие челюстей и скрежет зубами, чаще во сне, иногда днём. Человек может не замечать его, пока не появятся симптомы: утренняя усталость жевательных мышц, головная боль в висках, стёртые края зубов, повышенная чувствительность эмали, щелчки в челюстном суставе.',
+          'Бруксизм это непроизвольное сжатие челюстей и скрежет зубами, чаще во сне, иногда днём. Человек может не замечать его, пока не появятся симптомы: утренняя усталость жевательных мышц, [[botoks-migreni-golovnye-boli|головная боль]] в висках, стёртые края зубов, повышенная чувствительность эмали, щелчки в челюстном суставе.',
         ],
       },
       {
@@ -132,7 +132,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Какую роль играют инъекции',
         paragraphs: [
-          'Ботулинический токсин вводят в жевательные мышцы, и они сокращаются слабее. Давление на зубы и челюстной сустав снижается, а головные боли у некоторых людей становятся реже. Метод уменьшает нагрузку на мышцы и зубы. Причину бруксизма врач ищет отдельно, при необходимости вместе со стоматологом или неврологом.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Ботулинический токсин]] вводят в жевательные мышцы, и они сокращаются слабее. Давление на зубы и челюстной сустав снижается, а головные боли у некоторых людей становятся реже. Метод уменьшает нагрузку на мышцы и зубы. Причину бруксизма врач ищет отдельно, при необходимости вместе со стоматологом или неврологом.',
         ],
       },
       {
@@ -194,7 +194,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Ce rol au injecțiile',
         paragraphs: [
-          'Toxina botulinică se introduce în mușchii masticatori, iar aceștia se contractă mai slab. Presiunea asupra dinților și articulației maxilarului scade, iar durerile de cap la unele persoane devin mai rare. Cauza bruxismului medicul o caută separat, la nevoie împreună cu stomatologul sau cu neurologul.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Toxina botulinică]] se introduce în mușchii masticatori, iar aceștia se contractă mai slab. Presiunea asupra dinților și articulației maxilarului scade, iar durerile de cap la unele persoane devin mai rare. Cauza bruxismului medicul o caută separat, la nevoie împreună cu stomatologul sau cu neurologul.',
         ],
       },
       {
@@ -246,7 +246,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Что называют десневой улыбкой',
         paragraphs: [
-          'Десневой называют улыбку, при которой верхняя губа поднимается слишком высоко и обнажает заметную полосу дёсен. Одни воспринимают это как особенность внешности, другие стесняются улыбаться широко. Само по себе явление не является болезнью, и решать, нужна ли коррекция, можете только вы.',
+          'Десневой называют улыбку, при которой [[uvelichenie-gub-verkhnyaya-nizhnyaya|верхняя губа]] поднимается слишком высоко и обнажает заметную полосу дёсен. Одни воспринимают это как особенность внешности, другие стесняются улыбаться широко. Само по себе явление не является болезнью, и решать, нужна ли коррекция, можете только вы.',
         ],
       },
       {
@@ -288,7 +288,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Когда процедуру не проводят',
         paragraphs: [
-          'Инъекции откладывают при беременности и кормлении, воспалении в зоне уколов, нервно-мышечных заболеваниях и аллергии на компоненты препарата. Если вы часто выступаете или вам важна подвижность верхней губы, обязательно скажите об этом врачу до процедуры.',
+          'Инъекции откладывают при [[botoks-beremennost-grudnoe-vskarmlivanie|беременности]] и кормлении, воспалении в зоне уколов, нервно-мышечных заболеваниях и аллергии на компоненты препарата. Если вы часто выступаете или вам важна подвижность верхней губы, обязательно скажите об этом врачу до процедуры.',
         ],
       },
       {
@@ -308,7 +308,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Ce se numește zâmbet gingival',
         paragraphs: [
-          'Zâmbet gingival se numește zâmbetul la care buza superioară se ridică foarte sus și lasă la vedere o fâșie vizibilă de gingie. Unii percep aceasta ca pe o particularitate a aspectului, alții se feresc să zâmbească larg. Fenomenul în sine nu este o boală, iar dacă este nevoie de corecție decideți doar dumneavoastră.',
+          'Zâmbet gingival se numește zâmbetul la care [[uvelichenie-gub-verkhnyaya-nizhnyaya|buza superioară]] se ridică foarte sus și lasă la vedere o fâșie vizibilă de gingie. Unii percep aceasta ca pe o particularitate a aspectului, alții se feresc să zâmbească larg. Fenomenul în sine nu este o boală, iar dacă este nevoie de corecție decideți doar dumneavoastră.',
         ],
       },
       {
@@ -326,7 +326,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Cui i se potrivește metoda',
         paragraphs: [
-          'Injecțiile pot ajuta atunci când expunerea gingiei ține mai ales de munca activă a mușchilor. Dacă cauza este structura maxilarului sau a dinților, efectul va fi mai slab, iar medicul va recomanda consultația unui stomatolog sau ortodont, uneori tratament chirurgical. O examinare sinceră ajută să nu pierdeți timp cu o metodă care nu va da rezultatul dorit.',
+          'Injecțiile pot ajuta atunci când expunerea gingiei ține mai ales de munca activă a mușchilor. Dacă cauza este structura maxilarului sau a dinților, efectul va fi mai slab, iar medicul va recomanda consultația unui stomatolog sau ortodont, uneori tratament chirurgical.',
         ],
       },
       {
@@ -350,7 +350,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Când procedura nu se face',
         paragraphs: [
-          'Injecțiile se amână în sarcină și alăptare, în inflamații în zona înțepăturilor, în boli neuromusculare și în alergie la componentele preparatului. Dacă vorbiți des în public sau vă este importantă mobilitatea buzei superioare, spuneți neapărat medicului înainte de procedură.',
+          'Injecțiile se amână în [[botoks-beremennost-grudnoe-vskarmlivanie|sarcină]] și alăptare, în inflamații în zona înțepăturilor, în boli neuromusculare și în alergie la componentele preparatului. Dacă vorbiți des în public sau vă este importantă mobilitatea buzei superioare, spuneți neapărat medicului înainte de procedură.',
         ],
       },
       {
@@ -378,7 +378,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Роль ботулинического токсина',
         paragraphs: [
-          'При хронической мигрени ботулинический токсин применяют по особой схеме как один из вариантов терапии. Решение о таком лечении принимает врач, который занимается головными болями, обычно невролог. Метод не подходит при любых головных болях и не рассматривается как первый шаг.',
+          'При хронической мигрени [[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|ботулинический токсин]] применяют по особой схеме как один из вариантов терапии. Решение о таком лечении принимает врач, который занимается головными болями, обычно невролог. Метод не подходит при любых головных болях и не рассматривается как первый шаг.',
         ],
       },
       {
@@ -440,7 +440,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Rolul toxinei botulinice',
         paragraphs: [
-          'În migrena cronică toxina botulinică se folosește după o schemă specială, ca una dintre variantele de terapie. Decizia privind un asemenea tratament o ia medicul care se ocupă de durerile de cap, de obicei neurologul. Metoda nu se potrivește la orice durere de cap și nu este considerată primul pas.',
+          'În migrena cronică [[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|toxina botulinică]] se folosește după o schemă specială, ca una dintre variantele de terapie. Decizia privind un asemenea tratament o ia medicul care se ocupă de durerile de cap, de obicei neurologul. Metoda nu se potrivește la orice durere de cap și nu este considerată primul pas.',
         ],
       },
       {
@@ -504,7 +504,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Какие зоны выбирают чаще',
         paragraphs: [
-          'Чаще всего мужчины обращаются по поводу лба, межбровья и области вокруг глаз. Нередко речь идёт и о других задачах: повышенная потливость ладоней и подмышек, скрежет зубами, напряжение жевательных мышц. Каждую зону обсуждают отдельно, потому что её обработка влияет на общий вид лица.',
+          'Чаще всего мужчины обращаются по поводу лба, межбровья и области вокруг глаз. Нередко речь идёт и о других задачах: [[gipergidroz-lechenie-beltsy|повышенная потливость]] ладоней и подмышек, скрежет зубами, напряжение жевательных мышц. Каждую зону обсуждают отдельно, потому что её обработка влияет на общий вид лица.',
         ],
       },
       {
@@ -528,7 +528,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Первые дни после инъекций',
         paragraphs: [
-          'В первые сутки не стоит ходить в сауну, заниматься интенсивным спортом и тереть места уколов. Если вы носите кепку, очки или шлем, которые давят на лоб, обсудите это с врачом, потому что в первые часы давление на зону введения нежелательно. Эффект проявляется постепенно, в течение нескольких дней.',
+          'В первые сутки не стоит ходить в сауну, заниматься интенсивным спортом и тереть места уколов. Если вы носите кепку, очки или шлем, которые давят на лоб, обсудите это с врачом, потому что в первые часы давление на [[botoks-zony-injekcij|зону введения]] нежелательно. Эффект проявляется постепенно, в течение нескольких дней.',
         ],
       },
       {
@@ -578,7 +578,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Aspectul natural',
         paragraphs: [
-          'Mulți bărbați se tem că fața va deveni nemișcată sau «de plastic». Ca să nu se întâmple asta, medicul nu urmărește o frunte perfect netedă. Liniile ușoare din timpul mimicii rămân, iar pliurile adânci se atenuează. Cei din jur observă de obicei că omul arată odihnit, fără să înțeleagă ce anume s-a schimbat.',
+          'Mulți bărbați se tem că fața va deveni nemișcată sau «de plastic». Ca să nu se întâmple asta, medicul nu urmărește o frunte perfect netedă. Liniile ușoare din timpul mimicii rămân, iar pliurile adânci se atenuează. Cei din jur observă că omul arată odihnit, fără să înțeleagă ce anume s-a schimbat.',
         ],
       },
       {
@@ -602,13 +602,13 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Mituri despre procedură',
         paragraphs: [
-          'Injecțiile sunt considerate o procedură feminină, dar indicațiile depind de față. Nu trebuie să credeți nici că rezultatul este neapărat vizibil pentru cei din jur. La o abordare corectă mimica rămâne vie, iar expresia feței devine mai calmă.',
+          'Injecțiile sunt considerate o procedură feminină, dar indicațiile depind de față. La o abordare corectă mimica rămâne vie, iar expresia feței devine mai calmă.',
         ],
       },
       {
         h2: 'Pielea și îngrijirea',
         paragraphs: [
-          'Pielea groasă și grasă a bărbaților este mai înclinată spre pori dilatați și inflamații, iar bărbieritul o irită. Injecțiile nu rezolvă această sarcină, de aceea medicul poate propune o îngrijire însoțitoare. Protecția solară, hidratarea și curățarea blândă ajută la păstrarea rezultatului.',
+          'Pielea groasă și grasă a bărbaților este mai înclinată spre pori dilatați și inflamații, iar bărbieritul o irită. Injecțiile nu rezolvă această [[botoks-beremennost-grudnoe-vskarmlivanie|sarcină]], de aceea medicul poate propune o îngrijire însoțitoare. Protecția solară, hidratarea și curățarea blândă ajută la păstrarea rezultatului.',
         ],
       },
       {
@@ -624,7 +624,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'В чём главное различие',
         paragraphs: [
-          'Ботулинический токсин ослабляет работу мышц, а филлеры на основе гиалуроновой кислоты восполняют объём и меняют контуры. Эти препараты решают разные задачи, поэтому выбирать между ними как между вариантами одного ряда нельзя. Вопрос в том, чем вызвана проблема, которую вы хотите исправить: движением мышцы или нехваткой объёма.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Ботулинический токсин]] ослабляет работу мышц, а филлеры на основе гиалуроновой кислоты восполняют объём и меняют контуры. Эти препараты решают разные задачи, поэтому выбирать между ними как между вариантами одного ряда нельзя. Вопрос в том, чем вызвана проблема, которую вы хотите исправить: движением мышцы или нехваткой объёма.',
         ],
       },
       {
@@ -636,7 +636,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Для чего подходят филлеры',
         paragraphs: [
-          'Филлеры вводят там, где ткани потеряли объём: в скулах, в области носогубных складок, губах, подбородке, под глазами. Гель заполняет пространство и поддерживает контур. Если складка видна в покое и связана с потерей объёма или провисанием, одним токсином её не убрать.',
+          '[[svc:konturnaya-plastyka-fylleramy-v-belczah|Филлеры]] вводят там, где ткани потеряли объём: в скулах, в области носогубных складок, губах, подбородке, под глазами. Гель заполняет пространство и поддерживает контур. Если складка видна в покое и связана с потерей объёма или провисанием, одним токсином её не убрать.',
         ],
       },
       {
@@ -660,13 +660,13 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Риски и ограничения',
         paragraphs: [
-          'У каждого метода свои нежелательные явления. После токсина возможны синяки, асимметрия, тяжесть в веке. После филлера возможны отёк, уплотнения, асимметрия, а в редких случаях серьёзные осложнения, связанные с сосудами. Поэтому обе процедуры должен выполнять врач с подготовкой и опытом.',
+          'У каждого метода свои нежелательные явления. После токсина возможны синяки, асимметрия, тяжесть в веке. После филлера возможны отёк, уплотнения, асимметрия, а в редких случаях серьёзные [[botoks-oslozhneniya-pobelochnye-effekty|осложнения]], связанные с сосудами. Поэтому обе процедуры должен выполнять врач с подготовкой и опытом.',
         ],
       },
       {
         h2: 'Общие противопоказания',
         paragraphs: [
-          'Обе процедуры откладывают при беременности и кормлении, воспалении и инфекции в зоне введения, аллергии на компоненты препарата и обострении хронических заболеваний. Перед процедурой расскажите врачу обо всех лекарствах и перенесённых болезнях, а также о предыдущих косметологических процедурах. Недавние процедуры тоже нужно учесть.',
+          'Обе процедуры откладывают при беременности и кормлении, воспалении и инфекции в [[botoks-zony-injekcij|зоне введения]], аллергии на компоненты препарата и обострении хронических заболеваний. Перед процедурой расскажите врачу обо всех лекарствах и перенесённых болезнях, а также о предыдущих косметологических процедурах. Недавние процедуры тоже нужно учесть.',
         ],
       },
       {
@@ -686,7 +686,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Care este diferența principală',
         paragraphs: [
-          'Toxina botulinică slăbește lucrul mușchilor, iar fillerele pe bază de acid hialuronic completează volumul și schimbă contururile. Aceste preparate rezolvă sarcini diferite, de aceea nu are sens să alegeți între ele ca între variante de același fel. Întrebarea este ce a provocat problema pe care vreți să o corectați: mișcarea mușchiului sau lipsa volumului.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Toxina botulinică]] slăbește lucrul mușchilor, iar fillerele pe bază de acid hialuronic completează volumul și schimbă contururile. Aceste preparate rezolvă [[botoks-beremennost-grudnoe-vskarmlivanie|sarcini]] diferite, de aceea nu are sens să alegeți între ele ca între variante de același fel. Întrebarea este ce a provocat problema pe care vreți să o corectați: mișcarea mușchiului sau lipsa volumului.',
         ],
       },
       {
@@ -698,7 +698,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Pentru ce se potrivesc fillerele',
         paragraphs: [
-          'Fillerele se introduc acolo unde țesuturile au pierdut volum: în pomeți, în zona pliurilor nazolabiale, în buze, în bărbie, sub ochi. Gelul umple spațiul și susține conturul. Dacă pliul se vede în repaus și ține de pierderea volumului sau de lăsarea țesuturilor, toxina singură nu îl poate elimina.',
+          '[[svc:konturnaya-plastyka-fylleramy-v-belczah|Fillerele]] se introduc acolo unde țesuturile au pierdut volum: în pomeți, în zona pliurilor nazolabiale, în buze, în bărbie, sub ochi. Gelul umple spațiul și susține conturul. Dacă pliul se vede în repaus și ține de pierderea volumului sau de lăsarea țesuturilor, toxina singură nu îl poate elimina.',
         ],
       },
       {
@@ -710,7 +710,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Unde se întâlnesc metodele',
         paragraphs: [
-          'Uneori sarcina se rezolvă cu o singură metodă, dar mai des este nevoie de o combinație. De exemplu, pliul dintre sprâncene poate fi urmarea mușchilor activi și a pierderii de volum în același timp. Atunci medicul poate propune întâi relaxarea mușchilor, iar mai târziu, dacă e nevoie, completarea volumului. Ordinea și pauzele dintre proceduri le stabilește el.',
+          'Uneori sarcina se rezolvă cu o singură metodă, dar mai des este nevoie de o combinație. De exemplu, pliul dintre sprâncene poate fi urmarea mușchilor activi și a pierderii de volum în același timp. Atunci medicul poate propune întâi relaxarea mușchilor, iar mai târziu, dacă e nevoie, completarea volumului.',
         ],
       },
       {
@@ -722,7 +722,7 @@ export const BOTOX_E: ArticleRewrites = {
       {
         h2: 'Riscuri și limite',
         paragraphs: [
-          'Fiecare metodă are reacțiile ei nedorite. După toxină sunt posibile vânătăi, asimetrie, greutate în pleoapă. După filler sunt posibile umflătură, îngroșări, asimetrie, iar în cazuri rare complicații grave legate de vase. De aceea ambele proceduri trebuie făcute de un medic cu pregătire și experiență.',
+          'Fiecare metodă are reacțiile ei nedorite. După toxină sunt posibile vânătăi, asimetrie, greutate în pleoapă. După filler sunt posibile umflătură, îngroșări, asimetrie, iar în cazuri rare [[botoks-oslozhneniya-pobelochnye-effekty|complicații]] grave legate de vase. De aceea ambele proceduri trebuie făcute de un medic cu pregătire și experiență.',
         ],
       },
       {

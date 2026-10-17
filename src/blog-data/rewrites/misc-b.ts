@@ -6,13 +6,13 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Что такое контурная пластика',
         paragraphs: [
-          'Контурная пластика это введение филлера под кожу, чаще всего препарата на основе гиалуроновой кислоты, чтобы восполнить объём, подчеркнуть контур или сгладить складку. Процедура не требует разрезов, проводится на приёме и позволяет менять черты лица постепенно. Результат зависит от препарата, зоны и анатомии, поэтому врач сначала осматривает лицо.',
+          '[[svc:konturnaya-plastyka-fylleramy-v-belczah|Контурная пластика]] это введение филлера под кожу, чаще всего препарата на основе гиалуроновой кислоты, чтобы восполнить объём, подчеркнуть контур или сгладить складку. Процедура не требует разрезов, проводится на приёме и позволяет менять черты лица постепенно. Результат зависит от препарата, зоны и анатомии, поэтому врач сначала осматривает лицо.',
         ],
       },
       {
         h2: 'Когда её рассматривают',
         paragraphs: [
-          'С возрастом ткани лица теряют объём, контуры смещаются, глубже становятся складки. Контурную пластику обсуждают, когда человека беспокоят западения в области щёк и висков, носогубные складки, тени под глазами, нечёткая линия подбородка или асимметрия. Иногда она нужна для гармонизации пропорций без связи с возрастом.',
+          'С возрастом ткани лица теряют объём, контуры смещаются, глубже становятся складки. Контурную пластику обсуждают, когда человека беспокоят западения в области щёк и висков, носогубные складки, тени под глазами, нечёткая линия [[konturnaya-plastika-skul-podborodka|подбородка]] или асимметрия. Иногда она нужна для гармонизации пропорций без связи с возрастом.',
         ],
       },
       {
@@ -36,7 +36,7 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Контурная пластика и ботулотоксин',
         paragraphs: [
-          'Филлеры восполняют объём, ботулотоксин расслабляет мышцы и сглаживает мимические морщины. Это разные задачи. Нередко их сочетают, если есть и потеря объёма, и морщины, но порядок и интервалы определяет врач.',
+          '[[fillery-vidy-sostav-proizvoditeli|Филлеры]] восполняют объём, ботулотоксин расслабляет мышцы и сглаживает мимические морщины. Это разные задачи. Нередко их сочетают, если есть и потеря объёма, и морщины, но порядок и интервалы определяет врач.',
         ],
       },
       {
@@ -87,13 +87,13 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Ce este conturarea facială',
         paragraphs: [
-          'Conturarea este introducerea unui filler sub piele, cel mai des a unui preparat pe bază de acid hialuronic, pentru a restabili volumul, a sublinia un contur sau a netezi un pliu. Procedura nu necesită incizii, se face la consultație și permite schimbarea treptată a trăsăturilor. Rezultatul depinde de preparat, de zonă și de anatomie, de aceea medicul examinează mai întâi fața.',
+          '[[svc:konturnaya-plastyka-fylleramy-v-belczah|Conturarea]] este introducerea unui filler sub piele, cel mai des a unui preparat pe bază de acid hialuronic, pentru a restabili volumul, a sublinia un contur sau a netezi un pliu. Procedura nu necesită incizii, se face la consultație și permite schimbarea treptată a trăsăturilor. Rezultatul depinde de preparat, de zonă și de anatomie, de aceea medicul examinează mai întâi fața.',
         ],
       },
       {
         h2: 'Când se ia în calcul',
         paragraphs: [
-          'Odată cu vârsta țesuturile feței pierd volum, contururile se deplasează, pliurile devin mai adânci. Conturarea se discută atunci când omul este deranjat de adânciturile din zona obrajilor și a tâmplelor, de pliurile nazolabiale, de umbrele de sub ochi, de linia neclară a bărbiei sau de asimetrie. Uneori este necesară pentru armonizarea proporțiilor, fără legătură cu vârsta.',
+          'Odată cu vârsta țesuturile feței pierd volum, contururile se deplasează, pliurile devin mai adânci. Conturarea se discută atunci când omul este deranjat de adânciturile din zona obrajilor și a tâmplelor, de pliurile nazolabiale, de umbrele de sub ochi, de linia neclară a [[konturnaya-plastika-skul-podborodka|bărbiei]] sau de asimetrie. Uneori este necesară pentru armonizarea proporțiilor, fără legătură cu vârsta.',
         ],
       },
       {
@@ -158,13 +158,13 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Какие бывают филлеры',
         paragraphs: [
-          'Филлерами называют препараты, которые вводят под кожу для восполнения объёма. Чаще всего это гиалуроновая кислота, вещество, которое естественным образом присутствует в коже и удерживает воду. Есть также препараты, стимулирующие выработку собственного коллагена, например на основе гидроксиапатита кальция или полимолочной кислоты. У каждого вида свои показания и особенности.',
+          '[[svc:konturnaya-plastyka-fylleramy-v-belczah|Филлерами]] называют препараты, которые вводят под кожу для восполнения объёма. Чаще всего это гиалуроновая кислота, вещество, которое естественным образом присутствует в коже и удерживает воду. Есть также препараты, стимулирующие выработку собственного коллагена, например на основе гидроксиапатита кальция или полимолочной кислоты. У каждого вида свои показания и особенности.',
         ],
       },
       {
         h2: 'Гиалуроновая кислота и её плотность',
         paragraphs: [
-          'Гиалуроновые филлеры различаются плотностью и степенью связывания молекул. Более текучие препараты подходят для тонких зон и поверхностных линий, более плотные для объёма и контура. Правильный выбор зависит от зоны, толщины кожи и цели, поэтому один и тот же препарат нельзя использовать везде.',
+          'Гиалуроновые [[uvelichenie-gub-beltsy-vidy-fillerov|филлеры]] различаются плотностью и степенью связывания молекул. Более текучие препараты подходят для тонких зон и поверхностных линий, более плотные для объёма и контура. Правильный выбор зависит от зоны, толщины кожи и цели, поэтому один и тот же препарат нельзя использовать везде.',
         ],
       },
       {
@@ -212,13 +212,13 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Растворение препарата',
         paragraphs: [
-          'Гиалуроновые филлеры можно растворить специальным ферментом, гиалуронидазой. Такая возможность иногда нужна при неудовлетворительном результате или осложнении. Растворение проводит врач, и заранее предугадать все реакции невозможно, поэтому его назначают по показаниям.',
+          'Гиалуроновые филлеры можно растворить специальным ферментом, гиалуронидазой. Такая возможность иногда нужна при неудовлетворительном результате или [[konturnaya-plastika-oslozhneniya|осложнении]]. Растворение проводит врач, и заранее предугадать все реакции невозможно, поэтому его назначают по показаниям.',
         ],
       },
       {
         h2: 'Какие препараты используют в разных зонах',
         paragraphs: [
-          'Для губ берут мягкие эластичные гели, чтобы они оставались подвижными. Для скул и подбородка нужны плотные препараты, которые держат форму. Для складок и тонких линий подходят препараты средней плотности. Подбор у каждого врача свой, и вы вправе спросить, почему выбран именно этот.',
+          'Для губ берут мягкие эластичные гели, чтобы они оставались подвижными. Для скул и [[konturnaya-plastika-skul-podborodka|подбородка]] нужны плотные препараты, которые держат форму. Для складок и тонких линий подходят препараты средней плотности. Подбор у каждого врача свой, и вы вправе спросить, почему выбран именно этот.',
         ],
       },
       {
@@ -245,13 +245,13 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Ce fillere există',
         paragraphs: [
-          'Fillere se numesc preparatele care se introduc sub piele pentru a restabili volumul. Cel mai des este acidul hialuronic, o substanță care se găsește în mod natural în piele și reține apa. Există și preparate care stimulează producția propriului colagen, de exemplu pe bază de hidroxiapatită de calciu sau acid polilactic. Fiecare tip are indicații și particularități proprii.',
+          '[[svc:konturnaya-plastyka-fylleramy-v-belczah|Fillere]] se numesc preparatele care se introduc sub piele pentru a restabili volumul. Cel mai des este acidul hialuronic, o substanță care se găsește în mod natural în piele și reține apa. Există și preparate care stimulează producția propriului colagen, de exemplu pe bază de hidroxiapatită de calciu sau acid polilactic. Fiecare tip are indicații și particularități proprii.',
         ],
       },
       {
         h2: 'Acidul hialuronic și densitatea lui',
         paragraphs: [
-          'Fillerele cu acid hialuronic diferă prin densitate și prin gradul de legare a moleculelor. Preparatele mai fluide se potrivesc zonelor subțiri și liniilor superficiale, cele mai dense volumului și contururilor. Alegerea corectă depinde de zonă, de grosimea pielii și de scop, de aceea același preparat nu poate fi folosit peste tot.',
+          '[[uvelichenie-gub-beltsy-vidy-fillerov|Fillerele]] cu acid hialuronic diferă prin densitate și prin gradul de legare a moleculelor. Preparatele mai fluide se potrivesc zonelor subțiri și liniilor superficiale, cele mai dense volumului și contururilor. Alegerea corectă depinde de zonă, de grosimea pielii și de scop, de aceea același preparat nu poate fi folosit peste tot.',
         ],
       },
       {
@@ -299,7 +299,7 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Dizolvarea preparatului',
         paragraphs: [
-          'Fillerele cu acid hialuronic pot fi dizolvate cu o enzimă specială, hialuronidaza. Această posibilitate este uneori necesară la un rezultat nesatisfăcător sau la o complicație. Dizolvarea o face medicul, iar toate reacțiile nu pot fi prevăzute dinainte, de aceea se prescrie după indicații.',
+          'Fillerele cu acid hialuronic pot fi dizolvate cu o enzimă specială, hialuronidaza. Această posibilitate este uneori necesară la un rezultat nesatisfăcător sau la o [[konturnaya-plastika-oslozhneniya|complicație]]. Dizolvarea o face medicul, iar toate reacțiile nu pot fi prevăzute dinainte, de aceea se prescrie după indicații.',
         ],
       },
       {
@@ -316,7 +316,7 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Зоны, которые требуют особого внимания',
         paragraphs: [
-          'Носогубные складки, слёзная борозда, виски, нос и уголки рта относятся к областям, где работа с филлерами требует хорошего знания анатомии. Здесь проходят сосуды и работают мышцы, а кожа бывает тонкой. Поэтому коррекцию проводит только опытный врач и после осмотра.',
+          'Носогубные складки, слёзная борозда, виски, нос и уголки рта относятся к областям, где работа с [[svc:konturnaya-plastyka-fylleramy-v-belczah|филлерами]] требует хорошего знания анатомии. Здесь проходят сосуды и работают мышцы, а кожа бывает тонкой. Поэтому коррекцию проводит только опытный врач и после осмотра.',
         ],
       },
       {
@@ -340,7 +340,7 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Нос без операции',
         paragraphs: [
-          'Филлер иногда используют, чтобы визуально скорректировать спинку или кончик носа. Это возможно не во всех случаях и не заменяет хирургического вмешательства. Зона считается одной из сложных из-за кровоснабжения, поэтому к её выбору относятся особенно внимательно. Врач заранее обсудит возможности и риски.',
+          '[[fillery-vidy-sostav-proizvoditeli|Филлер]] иногда используют, чтобы визуально скорректировать спинку или кончик носа. Это возможно не во всех случаях и не заменяет хирургического вмешательства. Зона считается одной из сложных из-за кровоснабжения, поэтому к её выбору относятся особенно внимательно. Врач заранее обсудит возможности и риски.',
         ],
       },
       {
@@ -352,7 +352,7 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Какие риски выше в этих зонах',
         paragraphs: [
-          'Любое введение филлера может сопровождаться отёком, синяком, покраснением. В зонах с густой сетью сосудов выше риск нарушения кровоснабжения тканей. Это редкое, но серьёзное осложнение, при котором важна скорость помощи.',
+          'Любое введение филлера может сопровождаться отёком, синяком, покраснением. В зонах с густой сетью сосудов выше риск нарушения кровоснабжения тканей. Это редкое, но серьёзное [[konturnaya-plastika-oslozhneniya|осложнение]], при котором важна скорость помощи.',
         ],
       },
       {
@@ -409,7 +409,7 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Zonele care cer atenție deosebită',
         paragraphs: [
-          'Pliurile nazolabiale, șanțul lacrimal, tâmplele, nasul și colțurile gurii sunt zone în care lucrul cu fillere cere o bună cunoaștere a anatomiei. Aici trec vase și lucrează mușchi, iar pielea este uneori subțire. De aceea corecția o face doar un medic cu experiență și numai după examinare.',
+          'Pliurile nazolabiale, șanțul lacrimal, tâmplele, nasul și colțurile gurii sunt zone în care lucrul cu [[svc:konturnaya-plastyka-fylleramy-v-belczah|fillere]] cere o bună cunoaștere a anatomiei. Aici trec vase și lucrează mușchi, iar pielea este uneori subțire. De aceea corecția o face doar un medic cu experiență și numai după examinare.',
         ],
       },
       {
@@ -433,7 +433,7 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Nasul fără operație',
         paragraphs: [
-          'Fillerul este folosit uneori pentru a corecta vizual dosul sau vârful nasului. Asta este posibil nu în toate cazurile și nu înlocuiește intervenția chirurgicală. Zona este considerată una dintre cele dificile din cauza irigării, de aceea alegerea ei se face cu atenție deosebită. Medicul discută dinainte posibilitățile și riscurile.',
+          '[[fillery-vidy-sostav-proizvoditeli|Fillerul]] este folosit uneori pentru a corecta vizual dosul sau vârful nasului. Asta este posibil nu în toate cazurile și nu înlocuiește intervenția chirurgicală. Zona este considerată una dintre cele dificile din cauza irigării, de aceea alegerea ei se face cu atenție deosebită. Medicul discută dinainte posibilitățile și riscurile.',
         ],
       },
       {
@@ -445,7 +445,7 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Ce riscuri sunt mai mari în aceste zone',
         paragraphs: [
-          'Orice administrare de filler poate fi însoțită de umflătură, vânătaie, roșeață. În zonele cu o rețea densă de vase este mai mare riscul de tulburare a irigării țesuturilor. Este o complicație rară, dar gravă, în care viteza ajutorului contează.',
+          'Orice administrare de filler poate fi însoțită de umflătură, vânătaie, roșeață. În zonele cu o rețea densă de vase este mai mare riscul de tulburare a irigării țesuturilor. Este o [[konturnaya-plastika-oslozhneniya|complicație]] rară, dar gravă, în care viteza ajutorului contează.',
         ],
       },
       {
@@ -486,13 +486,13 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Что считается обычной реакцией',
         paragraphs: [
-          'После контурной пластики нередко бывают небольшие покраснение и припухлость, чувствительность при прикосновении, мелкие синяки. Они связаны с уколами и обычно проходят самостоятельно. Скорость восстановления у людей разная, и не стоит сравнивать себя с другими.',
+          'После [[svc:konturnaya-plastyka-fylleramy-v-belczah|контурной пластики]] нередко бывают небольшие покраснение и припухлость, чувствительность при прикосновении, мелкие синяки. Они связаны с уколами и обычно проходят самостоятельно. Скорость восстановления у людей разная, и не стоит сравнивать себя с другими.',
         ],
       },
       {
         h2: 'Какие бывают осложнения',
         paragraphs: [
-          'К нежелательным явлениям относятся инфекция, уплотнения и узелки, смещение препарата, неровности, аллергические реакции, реже нарушение кровоснабжения тканей. Большинство возникает редко, но знать о них нужно. Чем раньше замечено осложнение, тем проще с ним справиться.',
+          'К нежелательным явлениям относятся инфекция, уплотнения и узелки, смещение препарата, неровности, аллергические реакции, реже нарушение кровоснабжения тканей. Большинство возникает редко, но знать о них нужно. Чем раньше замечено [[uvelichenie-gub-oslozhneniya-profilaktika|осложнение]], тем проще с ним справиться.',
         ],
       },
       {
@@ -504,7 +504,7 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Когда нужна скорая помощь',
         paragraphs: [
-          'Внезапное ухудшение зрения, сильная головная боль, слабость или онемение лица, затруднённое дыхание, быстро распространяющийся отёк требуют вызова скорой. Не ждите визита в клинику. Сообщите медикам, что вам вводили филлер.',
+          'Внезапное ухудшение зрения, сильная головная боль, слабость или онемение лица, затруднённое дыхание, быстро распространяющийся отёк требуют вызова скорой. Не ждите визита в клинику. Сообщите медикам, что вам вводили [[fillery-vidy-sostav-proizvoditeli|филлер]].',
         ],
       },
       {
@@ -579,13 +579,13 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Ce se consideră reacție obișnuită',
         paragraphs: [
-          'După conturare apar adesea o mică roșeață și umflătură, sensibilitate la atingere, vânătăi mici. Ele sunt legate de injecții și trec de obicei singure. Viteza de refacere diferă de la om la om, și nu merită să vă comparați cu alții.',
+          'După [[svc:konturnaya-plastyka-fylleramy-v-belczah|conturare]] apar adesea o mică roșeață și umflătură, sensibilitate la atingere, vânătăi mici. Ele sunt legate de injecții și trec de obicei singure. Viteza de refacere diferă de la om la om, și nu merită să vă comparați cu alții.',
         ],
       },
       {
         h2: 'Ce complicații pot apărea',
         paragraphs: [
-          'Printre evenimentele nedorite sunt infecția, îngroșările și nodulii, deplasarea preparatului, neregularitățile, reacțiile alergice, mai rar tulburarea irigării țesuturilor. Majoritatea apar rar, dar trebuie să știți de ele. Cu cât complicația este observată mai devreme, cu atât este mai ușor de rezolvat.',
+          'Printre evenimentele nedorite sunt infecția, îngroșările și nodulii, deplasarea preparatului, neregularitățile, reacțiile alergice, mai rar tulburarea irigării țesuturilor. Majoritatea apar rar, dar trebuie să știți de ele. Cu cât [[uvelichenie-gub-oslozhneniya-profilaktika|complicația]] este observată mai devreme, cu atât este mai ușor de rezolvat.',
         ],
       },
       {
@@ -597,7 +597,7 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Când este nevoie de ambulanță',
         paragraphs: [
-          'Scăderea bruscă a vederii, durerea puternică de cap, slăbiciunea sau amorțirea feței, respirația îngreunată, umflătura care se extinde repede cer chemarea ambulanței. Nu așteptați vizita la clinică. Spuneți medicilor că vi s-a introdus un filler.',
+          'Scăderea bruscă a vederii, durerea puternică de cap, slăbiciunea sau amorțirea feței, respirația îngreunată, umflătura care se extinde repede cer chemarea ambulanței. Nu așteptați vizita la clinică. Spuneți medicilor că vi s-a introdus un [[fillery-vidy-sostav-proizvoditeli|filler]].',
         ],
       },
       {
@@ -662,13 +662,13 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Зачем сочетать филлеры с другими методами',
         paragraphs: [
-          'Филлеры решают задачу объёма и контура, но лицо стареет по нескольким причинам: теряется объём, ослабевает каркас, истончается и сохнет кожа, появляются мимические морщины. Один метод закрывает одну задачу, поэтому врач иногда предлагает сочетание. Вместе с тем часто достаточно и одной процедуры.',
+          '[[svc:konturnaya-plastyka-fylleramy-v-belczah|Филлеры]] решают задачу объёма и контура, но лицо стареет по нескольким причинам: теряется объём, ослабевает каркас, истончается и сохнет кожа, появляются мимические морщины. Один метод закрывает одну задачу, поэтому врач иногда предлагает сочетание. Вместе с тем часто достаточно и одной процедуры.',
         ],
       },
       {
         h2: 'Филлеры и мезотерапия',
         paragraphs: [
-          'Мезотерапия работает с качеством кожи: увлажняет её и питает. Филлеры меняют объём. Порядок процедур и промежуток между ними определяет врач, исходя из зоны и состояния кожи.',
+          'Мезотерапия работает с качеством кожи: увлажняет её и питает. [[botoks-vs-fillery-raznica|Филлеры]] меняют объём. Порядок процедур и промежуток между ними определяет врач, исходя из зоны и состояния кожи.',
         ],
       },
       {
@@ -680,13 +680,13 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Филлеры и нити',
         paragraphs: [
-          'Нити применяют для поддержки тканей и подтяжки, а филлеры для объёма. Сочетание обсуждают в сложных случаях, когда нужен и каркас, и объём. Такое решение принимает врач после обследования, потому что возможны ограничения.',
+          'Нити применяют для поддержки тканей и подтяжки, а [[fillery-vidy-sostav-proizvoditeli|филлеры]] для объёма. Сочетание обсуждают в сложных случаях, когда нужен и каркас, и объём. Такое решение принимает врач после обследования, потому что возможны ограничения.',
         ],
       },
       {
         h2: 'Филлеры и ботулотоксин',
         paragraphs: [
-          'Ботулотоксин убирает мимические морщины, расслабляя мышцы, а филлеры восполняют объём. Эти процедуры часто делают в один период, но схему определяет врач. Не нужно требовать всего сразу: порой разумнее двигаться этапами.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Ботулотоксин]] убирает мимические морщины, расслабляя мышцы, а филлеры восполняют объём. Эти процедуры часто делают в один период, но схему определяет врач. Не нужно требовать всего сразу: порой разумнее двигаться этапами.',
         ],
       },
       {
@@ -740,7 +740,7 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Реалистичные ожидания',
         paragraphs: [
-          'Сочетание процедур не отменяет возраст и не омолаживает на определённое число лет. Оно помогает улучшить конкретные параметры: объём, увлажнённость, мимические линии.',
+          '[[biorevitalizaciya-kombinaciya-procedur|Сочетание процедур]] не отменяет возраст и не омолаживает на определённое число лет. Оно помогает улучшить конкретные параметры: объём, увлажнённость, мимические линии.',
         ],
       },
       {
@@ -755,13 +755,13 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'De ce se combină fillerele cu alte metode',
         paragraphs: [
-          'Fillerele rezolvă sarcina volumului și a conturului, dar fața îmbătrânește din mai multe motive: se pierde volumul, slăbește scheletul, pielea se subțiază și se usucă, apar riduri mimice. O metodă acoperă o sarcină, de aceea medicul propune uneori o combinație. Totuși, adesea este suficientă și o singură procedură.',
+          '[[svc:konturnaya-plastyka-fylleramy-v-belczah|Fillerele]] rezolvă sarcina volumului și a conturului, dar fața îmbătrânește din mai multe motive: se pierde volumul, slăbește scheletul, pielea se subțiază și se usucă, apar riduri mimice. O metodă acoperă o sarcină, de aceea medicul propune uneori o [[biorevitalizaciya-kombinaciya-procedur|combinație]]. Totuși, adesea este suficientă și o singură procedură.',
         ],
       },
       {
         h2: 'Fillerele și mezoterapia',
         paragraphs: [
-          'Mezoterapia lucrează cu calitatea pielii: o hidratează și o hrănește. Fillerele schimbă volumul. Ordinea procedurilor și intervalul dintre ele le stabilește medicul, pornind de la zonă și de la starea pielii.',
+          'Mezoterapia lucrează cu calitatea pielii: o hidratează și o hrănește. [[botoks-vs-fillery-raznica|Fillerele]] schimbă volumul. Ordinea procedurilor și intervalul dintre ele le stabilește medicul, pornind de la zonă și de la starea pielii.',
         ],
       },
       {
@@ -773,13 +773,13 @@ export const MISC_B: ArticleRewrites = {
       {
         h2: 'Fillerele și firele',
         paragraphs: [
-          'Firele se folosesc pentru susținerea țesuturilor și lifting, iar fillerele pentru volum. Combinația se discută în cazurile complicate, când e nevoie și de schelet, și de volum. O asemenea decizie o ia medicul după investigații, pentru că sunt posibile restricții.',
+          'Firele se folosesc pentru susținerea țesuturilor și lifting, iar [[fillery-vidy-sostav-proizvoditeli|fillerele]] pentru volum. Combinația se discută în cazurile complicate, când e nevoie și de schelet, și de volum. O asemenea decizie o ia medicul după investigații, pentru că sunt posibile restricții.',
         ],
       },
       {
         h2: 'Fillerele și toxina botulinică',
         paragraphs: [
-          'Toxina botulinică elimină ridurile mimice relaxând mușchii, iar fillerele restabilesc volumul. Aceste proceduri se fac adesea în aceeași perioadă, dar schema o stabilește medicul. Nu cereți totul deodată: uneori este mai rezonabil să mergeți pe etape.',
+          '[[svc:botoks-v-belczah-effektyvnoe-omolozhenye-lycza|Toxina botulinică]] elimină ridurile mimice relaxând mușchii, iar fillerele restabilesc volumul. Aceste proceduri se fac adesea în aceeași perioadă, dar schema o stabilește medicul. Nu cereți totul deodată: uneori este mai rezonabil să mergeți pe etape.',
         ],
       },
       {

@@ -30,7 +30,7 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Кому нужен более внимательный контроль',
         paragraphs: [
-          'Чаще осматривать кожу стоит людям со светлой кожей и светлыми или рыжими волосами, с большим числом родинок, с ожогами в детстве, с частым пребыванием на солнце и посещением солярия. Важна и семейная история меланомы. Врач подскажет, как часто нужно приходить на осмотр.',
+          'Чаще осматривать кожу стоит людям со светлой кожей и светлыми или рыжими волосами, с большим числом родинок, с ожогами в детстве, с частым пребыванием на солнце и посещением солярия. Важна и семейная история [[melanoma-rannyaya-diagnostika|меланомы]]. Врач подскажет, как часто нужно приходить на осмотр.',
         ],
       },
       {
@@ -66,7 +66,7 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Консультация в Бельцах',
         paragraphs: [
-          'В клинике Meddera врач осмотрит родинки, при необходимости проведёт дерматоскопию и подскажет, нужно ли наблюдение или удаление. Записаться можно по телефону или через форму на сайте.',
+          'В клинике Meddera врач осмотрит родинки, при необходимости проведёт [[dermatoskopiya-chto-eto-zachem-nuzhna|дерматоскопию]] и подскажет, нужно ли наблюдение или удаление. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -98,7 +98,7 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Cui îi trebuie un control mai atent',
         paragraphs: [
-          'Pielea se examinează mai des la persoanele cu piele deschisă și păr blond sau roșcat, cu număr mare de alunițe, cu arsuri în copilărie, cu expunere frecventă la soare și vizite la solar. Contează și istoricul familial de melanom. Medicul vă va spune cât de des să veniți la control.',
+          'Pielea se examinează mai des la persoanele cu piele deschisă și păr blond sau roșcat, cu număr mare de alunițe, cu arsuri în copilărie, cu expunere frecventă la soare și vizite la solar. Contează și istoricul familial de [[melanoma-rannyaya-diagnostika|melanom]]. Medicul vă va spune cât de des să veniți la control.',
         ],
       },
       {
@@ -134,7 +134,7 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Consultație la Bălți',
         paragraphs: [
-          'La clinica Meddera medicul examinează alunițele, la nevoie face dermatoscopie și spune dacă este nevoie de urmărire sau de îndepărtare. Vă puteți programa telefonic sau prin formularul de pe site.',
+          'La clinica Meddera medicul examinează alunițele, la nevoie face [[dermatoskopiya-chto-eto-zachem-nuzhna|dermatoscopie]] și spune dacă este nevoie de urmărire sau de îndepărtare. Vă puteți programa telefonic sau prin formularul de pe site.',
         ],
       },
     ],
@@ -198,7 +198,7 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Атопический дерматит у детей',
         paragraphs: [
-          'У малышей высыпания чаще появляются на щеках, лбу и наружной поверхности рук и ног, у школьников и взрослых на сгибах локтей и коленей, шее и кистях. Родителям важно не пугаться сухости кожи ребёнка и начать регулярный уход рано. Средства для ребёнка согласуйте с педиатром или дерматологом. Подробнее о детях мы рассказали в статье о детском атопическом дерматите.',
+          'У малышей высыпания чаще появляются на щеках, лбу и наружной поверхности рук и ног, у школьников и взрослых на сгибах локтей и коленей, шее и кистях. Родителям важно не пугаться сухости кожи ребёнка и начать регулярный уход рано. Средства для ребёнка согласуйте с педиатром или [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматологом]]. Подробнее о детях мы рассказали в статье о детском атопическом дерматите.',
         ],
       },
       {
@@ -266,7 +266,7 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Dermatita atopică la copii',
         paragraphs: [
-          'La cei mici erupțiile apar mai des pe obraji, frunte și pe partea externă a brațelor și picioarelor, la școlari și la adulți în pliurile coatelor și genunchilor, pe gât și pe mâini. Părinții nu trebuie să se sperie de uscăciunea pielii copilului și e important să înceapă devreme îngrijirea regulată. Produsele pentru copil se aleg împreună cu pediatrul sau cu dermatologul. Detalii despre copii găsiți în articolul despre dermatita atopică la copii.',
+          'La cei mici erupțiile apar mai des pe obraji, frunte și pe partea externă a brațelor și picioarelor, la școlari și la adulți în pliurile coatelor și genunchilor, pe gât și pe mâini. Părinții nu trebuie să se sperie de uscăciunea pielii copilului și e important să înceapă devreme îngrijirea regulată. Produsele pentru copil se aleg împreună cu pediatrul sau cu [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologul]]. Detalii despre copii găsiți în articolul despre dermatita atopică la copii.',
         ],
       },
       {
@@ -294,13 +294,13 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Как он выглядит',
         paragraphs: [
-          'На голове он может проявляться как стойкая перхоть, жёлтоватые корки, зуд. На лице появляются красные шелушащиеся пятна вокруг носа, на бровях и за ушами. У некоторых людей воспаление выражено слабо, у других доставляет заметный дискомфорт. Проявления усиливаются при стрессе и в холодное время года.',
+          'На голове он может проявляться как стойкая [[seboreya-kozhi-golovy-lechenie|перхоть]], жёлтоватые корки, зуд. На лице появляются красные шелушащиеся пятна вокруг носа, на бровях и за ушами. У некоторых людей воспаление выражено слабо, у других доставляет заметный дискомфорт. Проявления усиливаются при стрессе и в холодное время года.',
         ],
       },
       {
         h2: 'Чем он отличается от других болезней',
         paragraphs: [
-          'Похожие проявления бывают при псориазе, экземе, розацеа, грибковых поражениях и контактном дерматите. Лечение при этом разное, поэтому ставить диагноз самостоятельно не стоит. Врач осмотрит кожу, расспросит о привычках и, если нужно, назначит дополнительные исследования.',
+          'Похожие проявления бывают при псориазе, экземе, [[rozacea-prichiny-metody-korrekcii|розацеа]], грибковых поражениях и контактном дерматите. Лечение при этом разное, поэтому ставить диагноз самостоятельно не стоит. Врач осмотрит кожу, расспросит о привычках и, если нужно, назначит дополнительные исследования.',
         ],
       },
       {
@@ -330,7 +330,7 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Когда нужно к врачу',
         paragraphs: [
-          'Запишитесь на приём, если перхоть и шелушение не проходят после обычного ухода, если появились болезненные корки, сильное покраснение, распространение на другие участки или выпадение волос. Врач уточнит диагноз и исключит другие заболевания.',
+          'Запишитесь на приём, если перхоть и шелушение не проходят после обычного ухода, если появились болезненные корки, сильное покраснение, распространение на другие участки или [[alopeciya-vypadenie-volos-prichiny|выпадение волос]]. Врач уточнит диагноз и исключит другие заболевания.',
         ],
       },
       {
@@ -362,13 +362,13 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Cum arată',
         paragraphs: [
-          'Pe cap poate apărea ca mătreață persistentă, cruste gălbui, mâncărime. Pe față apar pete roșii cu descuamare în jurul nasului, pe sprâncene și în spatele urechilor. La unii oameni inflamația este slabă, la alții provoacă disconfort vizibil. Manifestările se accentuează la stres și în sezonul rece.',
+          'Pe cap poate apărea ca [[seboreya-kozhi-golovy-lechenie|mătreață]] persistentă, cruste gălbui, mâncărime. Pe față apar pete roșii cu descuamare în jurul nasului, pe sprâncene și în spatele urechilor. La unii oameni inflamația este slabă, la alții provoacă disconfort vizibil. Manifestările se accentuează la stres și în sezonul rece.',
         ],
       },
       {
         h2: 'Prin ce diferă de alte boli',
         paragraphs: [
-          'Manifestări asemănătoare apar în psoriazis, eczemă, rozacee, micoze și dermatita de contact. Tratamentul însă este diferit, de aceea nu este indicat să puneți singur diagnosticul. Medicul examinează pielea, întreabă despre obiceiuri și, la nevoie, prescrie investigații suplimentare.',
+          'Manifestări asemănătoare apar în psoriazis, eczemă, [[rozacea-prichiny-metody-korrekcii|rozacee]], micoze și dermatita de contact. Tratamentul însă este diferit, de aceea nu este indicat să puneți singur diagnosticul. Medicul examinează pielea, întreabă despre obiceiuri și, la nevoie, prescrie investigații suplimentare.',
         ],
       },
       {
@@ -398,7 +398,7 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Când mergeți la medic',
         paragraphs: [
-          'Programați-vă dacă mătreața și descuamarea nu trec după îngrijirea obișnuită, dacă au apărut cruste dureroase, înroșire puternică, extindere pe alte zone sau căderea părului. Medicul precizează diagnosticul și exclude alte boli.',
+          'Programați-vă dacă mătreața și descuamarea nu trec după îngrijirea obișnuită, dacă au apărut cruste dureroase, înroșire puternică, extindere pe alte zone sau [[alopeciya-vypadenie-volos-prichiny|căderea părului]]. Medicul precizează diagnosticul și exclude alte boli.',
         ],
       },
       {
@@ -480,7 +480,7 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Консультация в Бельцах',
         paragraphs: [
-          'В клинике Meddera врач осмотрит кожу, поможет найти причину реакции и назначит лечение. Записаться можно по телефону или через форму на сайте.',
+          '[[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|В клинике Meddera]] врач осмотрит кожу, поможет найти причину реакции и назначит лечение. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -548,7 +548,7 @@ export const DERM_J: ArticleRewrites = {
       {
         h2: 'Consultație la Bălți',
         paragraphs: [
-          'La clinica Meddera medicul examinează pielea, ajută să găsiți cauza reacției și prescrie tratamentul. Vă puteți programa telefonic sau prin formularul de pe site.',
+          'La [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|clinica Meddera]] medicul examinează pielea, ajută să găsiți cauza reacției și prescrie tratamentul. Vă puteți programa telefonic sau prin formularul de pe site.',
         ],
       },
     ],

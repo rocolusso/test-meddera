@@ -30,7 +30,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Как проходит осмотр',
         paragraphs: [
-          'Врач осмотрит образование, при необходимости использует дерматоскоп и расспросит о том, как давно оно появилось и менялось ли. Если внешний вид вызывает сомнения, предлагают удаление с отправкой материала на гистологическое исследование. Это позволяет подтвердить диагноз и исключить другие заболевания.',
+          'Врач осмотрит образование, при необходимости использует [[dermatoskopiya-chto-eto-zachem-nuzhna|дерматоскоп]] и расспросит о том, как давно оно появилось и менялось ли. Если внешний вид вызывает сомнения, предлагают удаление с отправкой материала на гистологическое исследование. Это позволяет подтвердить диагноз и исключить другие заболевания.',
         ],
       },
       {
@@ -66,7 +66,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Консультация в Бельцах',
         paragraphs: [
-          'В клинике Meddera врач осмотрит образования, определит их тип и предложит способ удаления. Записаться можно по телефону или через форму на сайте.',
+          '[[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|В клинике Meddera]] врач осмотрит образования, определит их тип и предложит способ удаления. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -98,7 +98,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Cum decurge examinarea',
         paragraphs: [
-          'Medicul examinează formațiunea, la nevoie folosește dermatoscopul și întreabă de cât timp a apărut și dacă s-a schimbat. Dacă aspectul stârnește îndoieli, se propune îndepărtarea cu trimiterea materialului la examen histologic. Aceasta permite confirmarea diagnosticului și excluderea altor boli.',
+          'Medicul examinează formațiunea, la nevoie folosește [[dermatoskopiya-chto-eto-zachem-nuzhna|dermatoscopul]] și întreabă de cât timp a apărut și dacă s-a schimbat. Dacă aspectul stârnește îndoieli, se propune îndepărtarea cu trimiterea materialului la examen histologic. Aceasta permite confirmarea diagnosticului și excluderea altor boli.',
         ],
       },
       {
@@ -134,7 +134,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Consultație la Bălți',
         paragraphs: [
-          'La clinica Meddera medicul examinează formațiunile, stabilește tipul lor și propune metoda de îndepărtare. Vă puteți programa telefonic sau prin formularul de pe site.',
+          'La [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|clinica Meddera]] medicul examinează formațiunile, stabilește tipul lor și propune metoda de îndepărtare. Vă puteți programa telefonic sau prin formularul de pe site.',
         ],
       },
     ],
@@ -162,7 +162,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Как проходит обследование',
         paragraphs: [
-          'Врач расспросит, когда началось выпадение, что ему предшествовало, как вы питаетесь и какие лекарства принимаете. Затем осмотрит кожу головы и при необходимости проведёт трихоскопию: исследование волос и волосяных фолликулов с увеличением. Это помогает отличить разные виды алопеции.',
+          'Врач расспросит, когда началось выпадение, что ему предшествовало, как вы питаетесь и какие лекарства принимаете. Затем осмотрит [[seboreya-kozhi-golovy-lechenie|кожу головы]] и при необходимости проведёт трихоскопию: исследование волос и волосяных фолликулов с увеличением. Это помогает отличить разные виды алопеции.',
         ],
       },
       {
@@ -204,7 +204,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Консультация в Бельцах',
         paragraphs: [
-          'В клинике Meddera врач выслушает жалобы, осмотрит кожу головы, назначит обследование и объяснит, что можно сделать. Записаться можно по телефону или через форму на сайте.',
+          '[[svc:mezoterapyya-dlya-volos-v-belczah|В клинике Meddera]] врач выслушает жалобы, осмотрит кожу головы, назначит обследование и объяснит, что можно сделать. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -230,7 +230,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Cum decurge examinarea',
         paragraphs: [
-          'Medicul întreabă când a început căderea, ce a precedat-o, cum vă alimentați și ce medicamente luați. Apoi examinează scalpul și, la nevoie, face tricoscopie: studiul firelor de păr și al foliculilor cu mărire. Aceasta ajută la deosebirea tipurilor de alopecie.',
+          'Medicul întreabă când a început căderea, ce a precedat-o, cum vă alimentați și ce medicamente luați. Apoi examinează [[seboreya-kozhi-golovy-lechenie|scalpul]] și, la nevoie, face tricoscopie: studiul firelor de păr și al foliculilor cu mărire. Aceasta ajută la deosebirea tipurilor de alopecie.',
         ],
       },
       {
@@ -272,7 +272,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Consultație la Bălți',
         paragraphs: [
-          'La clinica Meddera medicul ascultă acuzele, examinează scalpul, prescrie investigații și explică ce se poate face. Vă puteți programa telefonic sau prin formularul de pe site.',
+          'La [[svc:mezoterapyya-dlya-volos-v-belczah|clinica Meddera]] medicul ascultă acuzele, examinează scalpul, prescrie investigații și explică ce se poate face. Vă puteți programa telefonic sau prin formularul de pe site.',
         ],
       },
     ],
@@ -282,7 +282,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Что такое фотостарение',
         paragraphs: [
-          'Фотостарением называют преждевременные изменения кожи под действием ультрафиолета. Возрастные процессы идут у всех, но солнце ускоряет их: кожа становится суше и грубее, появляются морщины, пигментные пятна, сосудистые звёздочки. Чаще всего страдают открытые участки: лицо, шея, зона декольте, кисти.',
+          'Фотостарением называют преждевременные изменения кожи под действием ультрафиолета. Возрастные процессы идут у всех, но солнце ускоряет их: кожа становится суше и грубее, появляются морщины, [[svc:terapyya-protyv-pygmentaczyy-v-belczah|пигментные пятна]], сосудистые звёздочки. Чаще всего страдают открытые участки: лицо, шея, зона декольте, кисти.',
         ],
       },
       {
@@ -324,13 +324,13 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Что можно сделать в клинике',
         paragraphs: [
-          'Если следы фотостарения уже заметны, врач может предложить поверхностные пилинги, мезотерапию, биоревитализацию, лазерные и другие процедуры. Выбор зависит от состояния кожи, фототипа и ваших ожиданий. Большинство процедур требуют последующей защиты от солнца, иначе результат быстро теряется.',
+          'Если следы фотостарения уже заметны, врач может предложить поверхностные пилинги, мезотерапию, [[biorevitalizaciya-beltsy-chto-eto|биоревитализацию]], лазерные и другие процедуры. Выбор зависит от состояния кожи, фототипа и ваших ожиданий. Большинство процедур требуют последующей защиты от солнца, иначе результат быстро теряется.',
         ],
       },
       {
         h2: 'Контроль новообразований',
         paragraphs: [
-          'Солнечное излучение связано с появлением новообразований кожи, а также со старением. Раз в несколько месяцев осматривайте кожу сами. Если на ней появились новые родинки, пятна, шероховатые или кровоточащие участки, которые не заживают, покажитесь врачу, не откладывая.',
+          'Солнечное излучение связано с появлением новообразований кожи, а также со старением. Раз в несколько месяцев осматривайте кожу сами. Если на ней появились новые [[rodinki-kogda-obratitsya-k-dermatologu|родинки]], пятна, шероховатые или кровоточащие участки, которые не заживают, покажитесь врачу, не откладывая.',
         ],
       },
       {
@@ -350,7 +350,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Ce este fotoîmbătrânirea',
         paragraphs: [
-          'Fotoîmbătrânirea înseamnă schimbările premature ale pielii sub acțiunea razelor ultraviolete. Procesele legate de vârstă merg la toți, dar soarele le accelerează: pielea devine mai uscată și mai aspră, apar riduri, pete pigmentare, vase mici vizibile. De obicei suferă zonele descoperite: fața, gâtul, decolteul, mâinile.',
+          'Fotoîmbătrânirea înseamnă schimbările premature ale pielii sub acțiunea razelor ultraviolete. Procesele legate de vârstă merg la toți, dar soarele le accelerează: pielea devine mai uscată și mai aspră, apar riduri, [[svc:terapyya-protyv-pygmentaczyy-v-belczah|pete pigmentare]], vase mici vizibile. De obicei suferă zonele descoperite: fața, gâtul, decolteul, mâinile.',
         ],
       },
       {
@@ -392,13 +392,13 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Ce se poate face la clinică',
         paragraphs: [
-          'Dacă urmele fotoîmbătrânirii sunt deja vizibile, medicul poate propune peelinguri superficiale, mezoterapie, biorevitalizare, proceduri cu laser și altele. Alegerea depinde de starea pielii, de fototip și de așteptările dumneavoastră. Majoritatea procedurilor cer ulterior protecție solară, altfel rezultatul se pierde repede.',
+          'Dacă urmele fotoîmbătrânirii sunt deja vizibile, medicul poate propune peelinguri superficiale, mezoterapie, [[biorevitalizaciya-beltsy-chto-eto|biorevitalizare]], proceduri cu laser și altele. Alegerea depinde de starea pielii, de fototip și de așteptările dumneavoastră. Majoritatea procedurilor cer ulterior protecție solară, altfel rezultatul se pierde repede.',
         ],
       },
       {
         h2: 'Controlul formațiunilor noi',
         paragraphs: [
-          'Radiația solară se leagă de apariția formațiunilor pielii, precum și de îmbătrânire. Odată la câteva luni examinați singur pielea. Dacă au apărut alunițe noi, pete, zone aspre sau sângerânde care nu se vindecă, arătați-vă medicului fără să amânați.',
+          'Radiația solară se leagă de apariția formațiunilor pielii, precum și de îmbătrânire. Odată la câteva luni examinați singur pielea. Dacă au apărut [[rodinki-kogda-obratitsya-k-dermatologu|alunițe]] noi, pete, zone aspre sau sângerânde care nu se vindecă, arătați-vă medicului fără să amânați.',
         ],
       },
       {

@@ -27,7 +27,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Как ставят диагноз',
         paragraphs: [
-          'Дерматолог осматривает кожу и расспрашивает, когда началась болезнь и были ли похожие проявления у родственников. Иногда назначают анализы, чтобы исключить сопутствующие заболевания, а при сомнениях берут небольшой образец кожи для исследования. Если ихтиоз впервые появился во взрослом возрасте, обследование шире, потому что нужно понять, с чем он связан.',
+          '[[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|Дерматолог]] осматривает кожу и расспрашивает, когда началась болезнь и были ли похожие проявления у родственников. Иногда назначают анализы, чтобы исключить сопутствующие заболевания, а при сомнениях берут небольшой образец кожи для исследования. Если ихтиоз впервые появился во взрослом возрасте, обследование шире, потому что нужно понять, с чем он связан.',
         ],
       },
       {
@@ -47,7 +47,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
         h2: 'Когда нужно к врачу',
         paragraphs: [
           'Запишитесь на приём, если кожа покраснела, мокнет, появились гнойные корочки или боль: трещины легко инфицируются. Консультация нужна и тогда, когда шелушение возникло впервые во взрослом возрасте или сопровождается слабостью и потерей веса.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -76,7 +76,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Cum se stabilește diagnosticul',
         paragraphs: [
-          'Dermatologul examinează pielea și întreabă când a început boala și dacă rudele au avut manifestări asemănătoare. Uneori se recomandă analize pentru a exclude bolile asociate, iar la îndoială se ia o mică probă de piele pentru examinare. Dacă ihtioza a apărut prima dată la vârsta adultă, investigațiile sunt mai ample, pentru că trebuie înțeles cu ce este legată.',
+          '[[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|Dermatologul]] examinează pielea și întreabă când a început boala și dacă rudele au avut manifestări asemănătoare. Uneori se recomandă analize pentru a exclude bolile asociate, iar la îndoială se ia o mică probă de piele pentru examinare. Dacă ihtioza a apărut prima dată la vârsta adultă, investigațiile sunt mai ample, pentru că trebuie înțeles cu ce este legată.',
         ],
       },
       {
@@ -90,7 +90,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
         h2: 'Când mergeți la medic',
         paragraphs: [
           'Programați-vă la consultație dacă pielea s-a înroșit, secretă lichid, au apărut cruste purulente sau durere: crăpăturile se infectează ușor. Consultația este necesară și atunci când descuamarea a apărut prima dată la vârsta adultă sau este însoțită de slăbiciune și scădere în greutate.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Consultația dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -113,7 +113,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Слизистые, ногти и волосистая часть головы',
         paragraphs: [
-          'Во рту лишай выглядит как беловатое кружево на внутренней стороне щёк, иногда с болезненными эрозиями, которые обостряются от острой и кислой пищи. Бывает поражение половых органов, ногтей (они истончаются, на них появляются продольные борозды) и кожи головы, где возможно выпадение волос.',
+          'Во рту лишай выглядит как беловатое кружево на внутренней стороне щёк, иногда с болезненными эрозиями, которые обостряются от острой и кислой пищи. Бывает поражение половых органов, ногтей (они истончаются, на них появляются продольные борозды) и кожи головы, где возможно [[alopeciya-vypadenie-volos-prichiny|выпадение волос]].',
           'Если высыпания есть на слизистых, нужен осмотр врача. При эрозивной форме во рту слизистую наблюдают регулярно.',
         ],
       },
@@ -126,7 +126,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Как ставят диагноз',
         paragraphs: [
-          'Во многих случаях диагноз понятен при осмотре. Если картина нетипична, врач берёт небольшой образец кожи на гистологическое исследование, чтобы отличить лишай от псориаза, экземы и других заболеваний с похожими высыпаниями.',
+          'Во многих случаях диагноз понятен при осмотре. Если картина нетипична, врач берёт небольшой образец кожи на гистологическое исследование, чтобы отличить лишай от [[psoriaz-sovremennye-podhody-terapii|псориаза]], экземы и других заболеваний с похожими высыпаниями.',
         ],
       },
       {
@@ -150,14 +150,14 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Чем лишай отличается от других сыпей',
         paragraphs: [
-          'Псориаз даёт крупные шелушащиеся бляшки, экзема мокнет и не имеет чётких границ, а лишай образует плоские блестящие узелки с фиолетовым оттенком. Отличить их на глаз сложно, особенно если высыпания расчёсаны, поэтому диагноз лучше уточнить у врача.',
+          'Псориаз даёт крупные шелушащиеся бляшки, [[ekzema-kak-oblegchit-simptomy|экзема]] мокнет и не имеет чётких границ, а лишай образует плоские блестящие узелки с фиолетовым оттенком. Отличить их на глаз сложно, особенно если высыпания расчёсаны, поэтому диагноз лучше уточнить у врача.',
         ],
       },
       {
         h2: 'Когда нужно к врачу',
         paragraphs: [
-          'Обратитесь к дерматологу, если появились зудящие фиолетовые узелки, белёсые пятна или язвочки во рту, изменились ногти. Не откладывайте визит, если ранки на слизистой долго не заживают.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Обратитесь к [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматологу]], если появились зудящие фиолетовые узелки, белёсые пятна или язвочки во рту, изменились ногти. Не откладывайте визит, если ранки на слизистой долго не заживают.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -178,7 +178,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Mucoase, unghii și scalp',
         paragraphs: [
-          'În gură lichenul arată ca o dantelă albicioasă pe fața interioară a obrajilor, uneori cu eroziuni dureroase, care se agravează de la mâncarea picantă și acidă. Pot fi afectate organele genitale, unghiile (se subțiază și apar striuri longitudinale) și pielea capului, unde este posibilă căderea părului.',
+          'În gură lichenul arată ca o dantelă albicioasă pe fața interioară a obrajilor, uneori cu eroziuni dureroase, care se agravează de la mâncarea picantă și acidă. Pot fi afectate organele genitale, unghiile (se subțiază și apar striuri longitudinale) și pielea capului, unde este posibilă [[alopeciya-vypadenie-volos-prichiny|căderea părului]].',
           'Dacă erupțiile apar pe mucoase, este nevoie de examinare la medic. În forma erozivă din cavitatea bucală mucoasa se urmărește regulat.',
         ],
       },
@@ -191,7 +191,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Cum se stabilește diagnosticul',
         paragraphs: [
-          'În multe cazuri diagnosticul este clar la examinare. Dacă tabloul este atipic, medicul ia o mică probă de piele pentru examen histologic, ca să deosebească lichenul de psoriazis, eczemă și alte boli cu erupții asemănătoare.',
+          'În multe cazuri diagnosticul este clar la examinare. Dacă tabloul este atipic, medicul ia o mică probă de piele pentru examen histologic, ca să deosebească lichenul de [[psoriaz-sovremennye-podhody-terapii|psoriazis]], eczemă și alte boli cu erupții asemănătoare.',
         ],
       },
       {
@@ -215,8 +215,8 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Când mergeți la medic',
         paragraphs: [
-          'Adresați-vă dermatologului dacă au apărut noduli violacei care mâncărime, pete albicioase sau răni în gură ori s-au schimbat unghiile. Nu amânați vizita dacă rănile de pe mucoasă nu se vindecă mult timp.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Adresați-vă [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] dacă au apărut noduli violacei care mâncărime, pete albicioase sau răni în gură ori s-au schimbat unghiile. Nu amânați vizita dacă rănile de pe mucoasă nu se vindecă mult timp.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Consultația dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -226,13 +226,13 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Что такое фотодерматозы',
         paragraphs: [
-          'Фотодерматозы это группа кожных реакций, которые вызывает солнечный свет. Кожа реагирует иначе, чем при обычном загаре: появляются зуд, покраснение, мелкие узелки, пузырьки или волдыри на открытых участках. Обычный солнечный ожог развивается у любого человека при долгом пребывании на солнце, а фотодерматоз возникает у предрасположенных людей и нередко после совсем короткой инсоляции.',
+          'Фотодерматозы это группа кожных реакций, которые вызывает солнечный свет. Кожа реагирует иначе, чем при обычном загаре: появляются зуд, покраснение, мелкие узелки, пузырьки или волдыри на открытых участках. Обычный [[solnechnye-ozhogi-pervaya-pomoshch|солнечный ожог]] развивается у любого человека при долгом пребывании на солнце, а фотодерматоз возникает у предрасположенных людей и нередко после совсем короткой инсоляции.',
         ],
       },
       {
         h2: 'Какие бывают фотодерматозы',
         paragraphs: [
-          'Наиболее знакома полиморфная световая сыпь: зудящие пятна и узелки на декольте, руках и шее, которые появляются в первые солнечные дни весной и летом. Солнечная крапивница проявляется волдырями вскоре после выхода на солнце. Фототоксические и фотоаллергические реакции возникают, когда на коже или в организме есть вещество, делающее её чувствительной к свету.',
+          'Наиболее знакома полиморфная световая сыпь: зудящие пятна и узелки на декольте, руках и шее, которые появляются в первые солнечные дни весной и летом. Солнечная [[krapivnica-prichiny-lechenie|крапивница]] проявляется волдырями вскоре после выхода на солнце. Фототоксические и фотоаллергические реакции возникают, когда на коже или в организме есть вещество, делающее её чувствительной к свету.',
           'К таким веществам относятся некоторые лекарства, соки и эфирные масла цитрусовых и растений (например, борщевика и инжира), отдушки в парфюме и косметике. Реакция бывает похожа на ожог и может оставить после себя тёмные пятна.',
         ],
       },
@@ -278,7 +278,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
         h2: 'Когда записаться к дерматологу',
         paragraphs: [
           'Если высыпания повторяются на солнце или появились после нового препарата или косметики, запишитесь на консультацию, не дожидаясь следующего сезона. Чем точнее вы опишете обстоятельства, тем проще найти причину.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          'Консультацию [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -286,13 +286,13 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Ce sunt fotodermatozele',
         paragraphs: [
-          'Fotodermatozele sunt un grup de reacții ale pielii provocate de lumina soarelui. Pielea reacționează altfel decât la o bronzare obișnuită: apar mâncărime, roșeață, noduli mici, vezicule sau bășici pe zonele descoperite. Arsura solară obișnuită apare la oricine după o expunere lungă la soare, în timp ce fotodermatoza apare la persoanele predispuse și adesea după o expunere foarte scurtă.',
+          'Fotodermatozele sunt un grup de reacții ale pielii provocate de lumina soarelui. Pielea reacționează altfel decât la o bronzare obișnuită: apar mâncărime, roșeață, noduli mici, vezicule sau bășici pe zonele descoperite. [[solnechnye-ozhogi-pervaya-pomoshch|Arsura solară]] obișnuită apare la oricine după o expunere lungă la soare, în timp ce fotodermatoza apare la persoanele predispuse și adesea după o expunere foarte scurtă.',
         ],
       },
       {
         h2: 'Ce fotodermatoze există',
         paragraphs: [
-          'Cea mai cunoscută este erupția polimorfă la lumină: pete și noduli care mâncărime pe decolteu, brațe și gât, care apar în primele zile însorite de primăvară și vară. Urticaria solară se manifestă prin bășici la scurt timp după ieșirea la soare. Reacțiile fototoxice și fotoalergice apar atunci când pe piele sau în organism se află o substanță care o face sensibilă la lumină.',
+          'Cea mai cunoscută este erupția polimorfă la lumină: pete și noduli care mâncărime pe decolteu, brațe și gât, care apar în primele zile însorite de primăvară și vară. [[krapivnica-prichiny-lechenie|Urticaria]] solară se manifestă prin bășici la scurt timp după ieșirea la soare. Reacțiile fototoxice și fotoalergice apar atunci când pe piele sau în organism se află o substanță care o face sensibilă la lumină.',
           'Printre astfel de substanțe sunt unele medicamente, sucurile și uleiurile esențiale ale citricelor și ale unor plante (de exemplu, vinarița gigantică și smochinul), parfumurile din produsele cosmetice. Reacția seamănă cu o arsură și poate lăsa în urmă pete închise la culoare.',
         ],
       },
@@ -326,7 +326,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
         h2: 'Când vă programați la dermatolog',
         paragraphs: [
           'Dacă erupțiile revin la soare sau au apărut după un medicament ori un produs cosmetic nou, programați-vă la consultație, fără să așteptați sezonul următor. Cu cât descrieți mai exact împrejurările, cu atât cauza se găsește mai ușor.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          'Consultația [[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
@@ -336,7 +336,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Что такое микоз стоп',
         paragraphs: [
-          'Микоз стоп это грибковое поражение кожи ног. Его вызывают грибки-дерматофиты, которым нравятся тепло и влага. Заражение происходит в бассейнах, банях, саунах, на общих полах в раздевалках, при использовании чужой обуви и полотенец. Влажные ноги, тесная обувь из плохо дышащих материалов и повышенная потливость повышают риск.',
+          '[[gribkovye-infekcii-kozhi-diagnostika-lechenie|Микоз]] стоп это грибковое поражение кожи ног. Его вызывают грибки-дерматофиты, которым нравятся тепло и влага. Заражение происходит в бассейнах, банях, саунах, на общих полах в раздевалках, при использовании чужой обуви и полотенец. Влажные ноги, тесная обувь из плохо дышащих материалов и [[gipergidroz-lechenie-beltsy|повышенная потливость]] повышают риск.',
         ],
       },
       {
@@ -349,13 +349,13 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Почему нельзя лечить наугад',
         paragraphs: [
-          'Шелушение и зуд на стопах бывают при экземе, псориазе и контактном дерматите, и выглядят они так же, как при грибке. Если пользоваться антигрибковым кремом без диагноза, можно потерять время, а при другой болезни ухудшить состояние. Кроме того, неполный курс приводит к возвращению инфекции.',
+          'Шелушение и зуд на стопах бывают при экземе, [[psoriaz-sovremennye-podhody-terapii|псориазе]] и контактном дерматите, и выглядят они так же, как при грибке. Если пользоваться антигрибковым кремом без диагноза, можно потерять время, а при другой болезни ухудшить состояние. Кроме того, неполный курс приводит к возвращению инфекции.',
         ],
       },
       {
         h2: 'Как подтверждают диагноз',
         paragraphs: [
-          'Дерматолог осматривает стопы и ногти и берёт соскоб с поражённого участка. В лаборатории его рассматривают под микроскопом и при необходимости делают посев, чтобы определить вид грибка. Это нужно для выбора препарата и его длительности.',
+          '[[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|Дерматолог]] осматривает стопы и ногти и берёт соскоб с поражённого участка. В лаборатории его рассматривают под микроскопом и при необходимости делают посев, чтобы определить вид грибка. Это нужно для выбора препарата и его длительности.',
         ],
       },
       {
@@ -392,7 +392,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
         h2: 'Когда нужно срочно к врачу',
         paragraphs: [
           'Обратитесь без промедления, если стопа покраснела и опухла, повысилась температура, появился гной или боль. Это признаки бактериальной инфекции в трещинах. Особенно внимательными нужно быть людям с сахарным диабетом и нарушением кровообращения в ногах.',
-          'Консультацию дерматолога в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Консультацию дерматолога]] в Бельцах можно получить в клинике Meddera. Записаться можно по телефону или через форму на сайте.',
         ],
       },
     ],
@@ -400,7 +400,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'Ce este micoza picioarelor',
         paragraphs: [
-          'Micoza picioarelor este o infecție fungică a pielii picioarelor. O provoacă ciupercile dermatofite, cărora le place căldura și umezeala. Infectarea are loc în piscine, băi, saune, pe podelele comune din vestiare, la folosirea încălțămintei sau a prosoapelor altora. Picioarele umede, încălțămintea strâmtă din materiale care nu lasă pielea să respire și transpirația crescută sporesc riscul.',
+          '[[gribkovye-infekcii-kozhi-diagnostika-lechenie|Micoza]] picioarelor este o infecție fungică a pielii picioarelor. O provoacă ciupercile dermatofite, cărora le place căldura și umezeala. Infectarea are loc în piscine, băi, saune, pe podelele comune din vestiare, la folosirea încălțămintei sau a prosoapelor altora. Picioarele umede, încălțămintea strâmtă din materiale care nu lasă pielea să respire și transpirația crescută sporesc riscul.',
         ],
       },
       {
@@ -413,13 +413,13 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
       {
         h2: 'De ce nu se tratează la întâmplare',
         paragraphs: [
-          'Descuamarea și mâncărimea de pe picioare apar și în eczemă, psoriazis, dermatită de contact, iar aspectul este același ca în micoză. Dacă folosiți o cremă antifungică fără diagnostic, puteți pierde timp, iar în altă boală puteți înrăutăți starea. În plus, un curs întrerupt duce la revenirea infecției.',
+          'Descuamarea și mâncărimea de pe picioare apar și în eczemă, [[psoriaz-sovremennye-podhody-terapii|psoriazis]], dermatită de contact, iar aspectul este același ca în micoză. Dacă folosiți o cremă antifungică fără diagnostic, puteți pierde timp, iar în altă boală puteți înrăutăți starea. În plus, un curs întrerupt duce la revenirea infecției.',
         ],
       },
       {
         h2: 'Cum se confirmă diagnosticul',
         paragraphs: [
-          'Dermatologul examinează tălpile și unghiile și ia o răzătură din zona afectată. În laborator ea se privește la microscop și, la nevoie, se face cultură, ca să se stabilească tipul de ciupercă. Acest lucru este necesar pentru alegerea preparatului și a duratei tratamentului.',
+          '[[svc:dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye|Dermatologul]] examinează tălpile și unghiile și ia o răzătură din zona afectată. În laborator ea se privește la microscop și, la nevoie, se face cultură, ca să se stabilească tipul de ciupercă. Acest lucru este necesar pentru alegerea preparatului și a duratei tratamentului.',
         ],
       },
       {
@@ -450,7 +450,7 @@ export const DERMATOLOGIST_F: ArticleRewrites = {
         h2: 'Când mergeți urgent la medic',
         paragraphs: [
           'Adresați-vă fără întârziere dacă piciorul s-a înroșit și s-a umflat, a crescut temperatura, au apărut puroi sau durere. Acestea sunt semne ale unei infecții bacteriene în crăpături. Mai atenți trebuie să fie oamenii cu diabet zaharat și cu circulație afectată în picioare.',
-          'Consultația dermatologului în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
+          '[[dermatolog-beltsy-kogda-nuzhna-konsultaciya|Consultația dermatologului]] în Bălți se poate obține la clinica Meddera. Vă puteți programa la telefon sau prin formularul de pe site.',
         ],
       },
     ],
