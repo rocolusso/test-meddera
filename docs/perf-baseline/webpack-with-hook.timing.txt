@@ -1,0 +1,2 @@
+✓ Compiled successfully in 15.6s
+✓ Generating static pages using 3 workers (267/267) in 3.5s

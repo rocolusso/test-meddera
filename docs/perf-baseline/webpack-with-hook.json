@@ -1,0 +1,160 @@
+{
+ "label": "baseline-webpack-with-hook",
+ "nextVersion": "16.4.2",
+ "jsFiles": 27,
+ "jsRawBytes": 1568772,
+ "jsGzipBytes": 467953,
+ "cssFiles": 3,
+ "cssBytes": 95059,
+ "polyfillFiles": [
+  "static/chunks/polyfills-42372ed130431b0a.js"
+ ],
+ "rootMainFiles": 4,
+ "appRoutes": 62,
+ "sitemapUrls": 256,
+ "markers": {
+  "\"canParse\"in URL": false,
+  "Object.hasOwn||": true,
+  "Array.prototype.flat||": false,
+  "Promise.prototype.finally||": false
+ },
+ "webpackRuntime": true,
+ "chunksDetail": [
+  {
+   "file": "8414.<hash>.js",
+   "raw": 287278,
+   "gzip": 75679
+  },
+  {
+   "file": "3794-<hash>.js",
+   "raw": 241179,
+   "gzip": 66981
+  },
+  {
+   "file": "framework-<hash>.js",
+   "raw": 218917,
+   "gzip": 68867
+  },
+  {
+   "file": "4bd1b696-<hash>.js",
+   "raw": 203722,
+   "gzip": 64058
+  },
+  {
+   "file": "5387-<hash>.js",
+   "raw": 148063,
+   "gzip": 31179
+  },
+  {
+   "file": "main-<hash>.js",
+   "raw": 145272,
+   "gzip": 43256
+  },
+  {
+   "file": "polyfills-<hash>.js",
+   "raw": 112594,
+   "gzip": 39627
+  },
+  {
+   "file": "1992.<hash>.js",
+   "raw": 30138,
+   "gzip": 11392
+  },
+  {
+   "file": "1396-<hash>.js",
+   "raw": 28433,
+   "gzip": 8926
+  },
+  {
+   "file": "613-<hash>.js",
+   "raw": 24810,
+   "gzip": 7860
+  },
+  {
+   "file": "2000-<hash>.js",
+   "raw": 17191,
+   "gzip": 5447
+  },
+  {
+   "file": "5241.<hash>.js",
+   "raw": 14886,
+   "gzip": 5619
+  },
+  {
+   "file": "8437-<hash>.js",
+   "raw": 14394,
+   "gzip": 5522
+  },
+  {
+   "file": "755.<hash>.js",
+   "raw": 13776,
+   "gzip": 5369
+  },
+  {
+   "file": "2105.<hash>.js",
+   "raw": 13751,
+   "gzip": 5363
+  },
+  {
+   "file": "8412.<hash>.js",
+   "raw": 10826,
+   "gzip": 3837
+  },
+  {
+   "file": "4289-<hash>.js",
+   "raw": 8038,
+   "gzip": 3380
+  },
+  {
+   "file": "6119-<hash>.js",
+   "raw": 6894,
+   "gzip": 3108
+  },
+  {
+   "file": "9060.<hash>.js",
+   "raw": 6872,
+   "gzip": 2659
+  },
+  {
+   "file": "9712-<hash>.js",
+   "raw": 6391,
+   "gzip": 2419
+  },
+  {
+   "file": "webpack-<hash>.js",
+   "raw": 4978,
+   "gzip": 2419
+  },
+  {
+   "file": "5190.<hash>.js",
+   "raw": 3466,
+   "gzip": 1582
+  },
+  {
+   "file": "4917.<hash>.js",
+   "raw": 3255,
+   "gzip": 1440
+  },
+  {
+   "file": "53c13509-<hash>.js",
+   "raw": 1994,
+   "gzip": 979
+  },
+  {
+   "file": "795d4814-<hash>.js",
+   "raw": 627,
+   "gzip": 411
+  },
+  {
+   "file": "main-app-<hash>.js",
+   "raw": 528,
+   "gzip": 229
+  },
+  {
+   "file": "8e1d74a4-<hash>.js",
+   "raw": 499,
+   "gzip": 345
+  }
+ ],
+ "routeTableLines": 60
+}
