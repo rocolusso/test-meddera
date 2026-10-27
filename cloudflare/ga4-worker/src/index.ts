@@ -38,6 +38,24 @@ type CollectPayload = {
 const MAX_EVENTS_PER_REQUEST = 10;
 const MAX_BODY_BYTES = 8192;
 const COLLECT_PATH = '/api/ga4-collect';
+const MAX_PARAM_VALUE_LENGTH = 100;
+/** page_location carries the full URL (with utm_*), so it gets a longer limit than other parameters. */
+const LONG_VALUE_PARAMS: Record<string, number> = { page_location: 500, page_referrer: 500 };
+
+const BOT_USER_AGENT =
+  /googlebot|google-inspectiontool|googleother|apis-google|bingbot|bingpreview|yandex(bot|images|metrika)|ahrefsbot|semrushbot|dotbot|mj12bot|bytespider|petalbot|gptbot|claudebot|chatgpt-user|perplexitybot|headlesschrome|lighthouse|pagespeed|curl\/|wget\/|python-requests|python-urllib|node-fetch|axios\/|go-http-client|\bbot\b|crawler|spider/i;
+
+/** True for crawlers and scripted clients: their events must not reach GA4. */
+function isBotUserAgent(userAgent: string): boolean {
+  return BOT_USER_AGENT.test(userAgent);
+}
+
+/** GA4 `device.category` guessed from the User-Agent header (nothing else about the device is sent). */
+function deviceCategory(userAgent: string): 'mobile' | 'tablet' | 'desktop' {
+  if (/ipad|tablet/i.test(userAgent) || (/android/i.test(userAgent) && !/mobile/i.test(userAgent))) return 'tablet';
+  if (/mobi|iphone|ipod|android/i.test(userAgent)) return 'mobile';
+  return 'desktop';
+}
 
 function corsHeaders(allowedOrigin: string): HeadersInit {
   return {
@@ -54,7 +72,8 @@ function sanitizeParams(params: IncomingEvent['params']): Record<string, string 
   for (const [key, value] of Object.entries(params)) {
     if (typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean') {
       const safeKey = key.slice(0, 40);
-      out[safeKey] = typeof value === 'string' ? value.slice(0, 100) : value;
+      const limit = LONG_VALUE_PARAMS[safeKey] ?? MAX_PARAM_VALUE_LENGTH;
+      out[safeKey] = typeof value === 'string' ? value.slice(0, limit) : value;
     }
   }
 
@@ -100,6 +119,15 @@ export default {
       return new Response('Bad request', { status: 400, headers: corsHeaders(allowedOrigin) });
     }
 
+    const userAgent = request.headers.get('User-Agent') || '';
+
+    // Crawlers and scripted clients are acknowledged but never forwarded.
+    // The log line is the only counter (Workers Observability), nothing is stored.
+    if (isBotUserAgent(userAgent)) {
+      console.log('GA4 bot dropped');
+      return new Response(null, { status: 204, headers: corsHeaders(allowedOrigin) });
+    }
+
     const debugMode = env.GA4_DEBUG_MODE === 'true';
 
     const events = payload.events
@@ -119,12 +147,18 @@ export default {
       return new Response('Bad request', { status: 400, headers: corsHeaders(allowedOrigin) });
     }
 
-    const userAgent = request.headers.get('User-Agent') || '';
     const mpUrl =
       `https://www.google-analytics.com/mp/collect` +
       `?measurement_id=${encodeURIComponent(env.GA4_MEASUREMENT_ID)}` +
       `&api_secret=${encodeURIComponent(env.GA4_API_SECRET)}`;
-    const mpBody = JSON.stringify({ client_id: clientId, events });
+    // Country only (from Cloudflare, no IP is passed on) and a coarse device class.
+    const country = typeof request.cf?.country === 'string' ? request.cf.country : '';
+    const mpBody = JSON.stringify({
+      client_id: clientId,
+      ...(/^[A-Z]{2}$/.test(country) ? { user_location: { country_id: country } } : {}),
+      device: { category: deviceCategory(userAgent) },
+      events,
+    });
 
     // Response to the visitor doesn't wait on Google — but the Worker must
     // stay alive until the forward completes, or Cloudflare may cancel it

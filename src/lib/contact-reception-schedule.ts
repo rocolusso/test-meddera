@@ -42,3 +42,41 @@ export const RECEPTION_SCHEDULE_COPY = {
     graphLine: 'Program: Mar, Joi–Sâm 13:00–18:00 (cu programare prealabilă). Luni, miercuri și duminică — închis.',
   },
 } as const;
+
+export type ReceptionIndicator = 'open' | 'closed' | 'off';
+
+const RECEPTION_TIME_ZONE = 'Europe/Chisinau';
+const WEEKDAY_INDEX: Record<string, number> = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+
+/** Day of week (0 = Sun) and hour (0–23) of `now` in the clinic's time zone, regardless of the device's zone. */
+export function getClinicDayAndHour(now: Date): { dow: number; hour: number } {
+  try {
+    const parts = new Intl.DateTimeFormat('en-US', {
+      timeZone: RECEPTION_TIME_ZONE,
+      weekday: 'short',
+      hour: '2-digit',
+      hourCycle: 'h23',
+    }).formatToParts(now);
+    const weekday = parts.find((p) => p.type === 'weekday')?.value ?? '';
+    const hour = Number(parts.find((p) => p.type === 'hour')?.value);
+    if (weekday in WEEKDAY_INDEX && Number.isFinite(hour)) {
+      return { dow: WEEKDAY_INDEX[weekday], hour: hour % 24 };
+    }
+  } catch {
+    // Intl with a time zone is unavailable: fall back to the device clock below.
+  }
+  return { dow: now.getDay(), hour: now.getHours() };
+}
+
+/**
+ * State of the clinic's reception at `now`, always in Europe/Chisinau time:
+ * - 'open'   — reception day, 13:00–18:00;
+ * - 'closed' — reception day, outside those hours;
+ * - 'off'    — Mon, Wed, Sun (no indicator is shown).
+ * No date exceptions (holidays) are modelled.
+ */
+export function getReceptionIndicator(now: Date = new Date()): ReceptionIndicator {
+  const { dow, hour } = getClinicDayAndHour(now);
+  if (!isReceptionWeekday(dow)) return 'off';
+  return isReceptionOpenAt(dow, hour) ? 'open' : 'closed';
+}
