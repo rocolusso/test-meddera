@@ -1,0 +1,170 @@
+{
+ "label": "g2b-turbopack-alias-v2",
+ "nextVersion": "16.4.2",
+ "jsFiles": 29,
+ "jsRawBytes": 1386737,
+ "jsGzipBytes": 421873,
+ "cssFiles": 3,
+ "cssBytes": 99196,
+ "polyfillFiles": [
+  "static/chunks/0cz1d0mv5g_q7.js"
+ ],
+ "rootMainFiles": 5,
+ "appRoutes": 62,
+ "sitemapUrls": 256,
+ "markers": {
+  "\"canParse\"in URL": false,
+  "Object.hasOwn||": true,
+  "Array.prototype.flat||": false,
+  "Promise.prototype.finally||": false
+ },
+ "webpackRuntime": false,
+ "chunksDetail": [
+  {
+   "file": "0rq1vpfxui64h.js",
+   "raw": 314315,
+   "gzip": 82631
+  },
+  {
+   "file": "0y5ioq2vvrlbq.js",
+   "raw": 227275,
+   "gzip": 71195
+  },
+  {
+   "file": "0v2azvilwavbo.js",
+   "raw": 158637,
+   "gzip": 44071
+  },
+  {
+   "file": "154ry9l8dgeh5.js",
+   "raw": 141983,
+   "gzip": 29022
+  },
+  {
+   "file": "0cz1d0mv5g_q7.js",
+   "raw": 112594,
+   "gzip": 39627
+  },
+  {
+   "file": "0__u4qm7hmmnv.js",
+   "raw": 54540,
+   "gzip": 20333
+  },
+  {
+   "file": "3iu48hjin3rl4.js",
+   "raw": 41421,
+   "gzip": 13042
+  },
+  {
+   "file": "1jhvpj2bui2ap.js",
+   "raw": 30549,
+   "gzip": 8317
+  },
+  {
+   "file": "08zl6j9qt0b6w.js",
+   "raw": 30171,
+   "gzip": 11379
+  },
+  {
+   "file": "3jp0v45mgs7z1.js",
+   "raw": 28560,
+   "gzip": 8958
+  },
+  {
+   "file": "3m_uhdvkn3vry.js",
+   "raw": 24540,
+   "gzip": 8947
+  },
+  {
+   "file": "1dxlvch67m0wo.js",
+   "raw": 24094,
+   "gzip": 9419
+  },
+  {
+   "file": "1fdiqyv3d2kl3.js",
+   "raw": 23852,
+   "gzip": 9305
+  },
+  {
+   "file": "3i8ikm21dur69.js",
+   "raw": 23502,
+   "gzip": 8932
+  },
+  {
+   "file": "3q-aawfd7_t_k.js",
+   "raw": 23498,
+   "gzip": 8897
+  },
+  {
+   "file": "15naicpa3mdo5.js",
+   "raw": 21446,
+   "gzip": 8460
+  },
+  {
+   "file": "2rkomf-b781ck.js",
+   "raw": 21418,
+   "gzip": 8442
+  },
+  {
+   "file": "1b-soclyngws6.js",
+   "raw": 19846,
+   "gzip": 7709
+  },
+  {
+   "file": "3eai73yktwfw2.js",
+   "raw": 14438,
+   "gzip": 4043
+  },
+  {
+   "file": "0umf92h1sb77c.js",
+   "raw": 13822,
+   "gzip": 3514
+  },
+  {
+   "file": "44_sl0xbqv-m1.js",
+   "raw": 13074,
+   "gzip": 5370
+  },
+  {
+   "file": "turbopack-2c3mg3r-05n1w.js",
+   "raw": 11255,
+   "gzip": 4390
+  },
+  {
+   "file": "1znypelc85d_5.js",
+   "raw": 3581,
+   "gzip": 1615
+  },
+  {
+   "file": "0m36zixift7ep.js",
+   "raw": 3406,
+   "gzip": 1465
+  },
+  {
+   "file": "1e2e9ze-0ejwn.js",
+   "raw": 2018,
+   "gzip": 998
+  },
+  {
+   "file": "0_vgxmdqgy6qc.js",
+   "raw": 1590,
+   "gzip": 1010
+  },
+  {
+   "file": "1qplv71r0yuon.js",
+   "raw": 517,
+   "gzip": 291
+  },
+  {
+   "file": "0l7rfuvmn3nz4.js",
+   "raw": 514,
+   "gzip": 264
+  },
+  {
+   "file": "3xemevbpxn132.js",
+   "raw": 281,
+   "gzip": 227
+  }
+ ],
+ "routeTableLines": 60
+}

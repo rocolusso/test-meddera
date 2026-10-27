@@ -1,0 +1,25 @@
+РЕШЕНИЕ ПО БАНДЛЕРУ (план PLAN-WEBPACK-OFF-2026-10-27-v2, шаг #STEP-16-S1)
+Дата: 2026-10-27. Next.js 16.4.2. Замеры сняты в Linux-копии проекта.
+
+Итог: вариант B. Production-сборка идёт на Turbopack (дефолт Next 16) без флага --webpack;
+эффект бывшего webpack-хука (вырезание polyfill-module) перенесён в turbopack.resolveAlias.
+
+Шлюзы:
+G1  Turbopack без хука и без alias: маркер polyfill-module (canParse in URL) ЕСТЬ в клиентских чанках.
+G2  Вариант 1 (ключи с абсолютным именем next/dist/...): alias не подействовал, размеры идентичны G1.
+G2  Вариант 2 (добавлены относительные ключи ../build/polyfills/polyfill-module): маркера НЕТ. Выбран он.
+G3, G4 не понадобились.
+
+Метрики (клиентский JS, gzip / raw, байт):
+  webpack с хуком (baseline)      467953 / 1568772   CSS 95059   27 файлов
+  Turbopack без alias (G1)        422314 / 1388113   CSS 99196   29 файлов
+  Turbopack с alias (выбран)      421873 / 1386737   CSS 99196   29 файлов
+Время next build: около 32 с на webpack, около 15 с на Turbopack.
+
+Проверки на итоговой сборке: 62 маршрута, 256 URL sitemap, краул 256/256 страниц;
+verify-redirects, verify-404, verify-sitemap, verify-schema, verify-blog, verify-links, verify-protected: код 0;
+verify-seo-meta: новых нарушений относительно baseline нет (22 прежних остаются);
+SEO-снимок: 0 различий по всем полям на 256 страницах.
+
+Что осталось на следующих шагах: замена @next/bundle-analyzer на next analyze (#STEP-16-S2),
+правка документации (#STEP-16-S3), проверка на Vercel preview.

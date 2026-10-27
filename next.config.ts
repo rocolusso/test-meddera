@@ -28,9 +28,6 @@ const withBundleAnalyzer = bundleAnalyzer({
   openAnalyzer: process.env.CI !== 'true',
 });
 
-/** Replaces Next.js built-in polyfill bundle (modern browsers only). Resolved from this config file so Vercel/cwd cannot break the path. */
-const emptyPolyfillPath = path.join(path.dirname(fileURLToPath(import.meta.url)), 'polyfills', 'empty-polyfill.js');
-
 const getSecurityHeaders = (isDev: boolean) => [
   // Keep HSTS only in production to avoid sticky localhost/browser behavior.
   ...(isDev ? [] : [{ key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' }]),
@@ -67,23 +64,13 @@ const nextConfig: NextConfig = {
     qualities: [100, 40, 60, 75],
   },
 
-  webpack: (config, { isServer, webpack: webpackApi }) => {
-    if (!isServer) {
-      config.resolve = config.resolve ?? {};
-      config.resolve.alias = {
-        ...config.resolve.alias,
-        'next/dist/build/polyfills/polyfill-module': emptyPolyfillPath,
-        'next/dist/build/polyfills/polyfill-module.js': emptyPolyfillPath,
-      };
-      config.plugins = config.plugins ?? [];
-      config.plugins.push(
-        new webpackApi.NormalModuleReplacementPlugin(
-          /next[/\\]dist[/\\]build[/\\]polyfills[/\\]polyfill-module\.js$/,
-          emptyPolyfillPath,
-        ),
-      );
-    }
-    return config;
+  turbopack: {
+    resolveAlias: {
+      'next/dist/build/polyfills/polyfill-module': './polyfills/empty-polyfill.js',
+      'next/dist/build/polyfills/polyfill-module.js': './polyfills/empty-polyfill.js',
+      '../build/polyfills/polyfill-module': './polyfills/empty-polyfill.js',
+      '../build/polyfills/polyfill-module.js': './polyfills/empty-polyfill.js',
+    },
   },
 
   async headers() {

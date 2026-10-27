@@ -22,7 +22,7 @@
   },
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --webpack",
+    "build": "next build",
     "analyze": "ANALYZE=true next build --webpack",
     "start": "next start",
     "lint": "eslint src",

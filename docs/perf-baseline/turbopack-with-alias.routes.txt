@@ -1,0 +1,85 @@
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /ads/cards
+├ ○ /ads/g1
+├ ○ /ads/test
+├ ƒ /api/form-token
+├ ƒ /api/ip
+├ ƒ /api/lead-quiz-form
+├ ƒ /api/lips-form
+├ ƒ /api/main-contact-form
+├ ƒ /api/not-found
+├ ƒ /api/track
+├ ○ /blog
+├   /blog/[slug]
+│ ├ ● /blog/dermatolog-beltsy-hub
+│ ├ ● /blog/dermatolog-beltsy-kogda-nuzhna-konsultaciya
+│ ├ ● /blog/akne-prichiny-stadii-lechenie-beltsy
+│ └ ● [+95 more paths]
+├   /blog/page/[page]
+│ ├ ● /blog/page/2
+│ ├ ● /blog/page/3
+│ ├ ● /blog/page/4
+│ └ ● [+6 more paths]
+├ ○ /contacts
+├ ○ /review
+├ ○ /ro
+├ ○ /ro/about
+├ ○ /ro/blog
+├   /ro/blog/[slug]
+│ ├ ● /ro/blog/dermatolog-balti-hub
+│ ├ ● /ro/blog/dermatolog-balti-cand-este-necesara-consultatie
+│ ├ ● /ro/blog/acnee-cauze-stadii-tratament-balti
+│ └ ● [+95 more paths]
+├   /ro/blog/page/[page]
+│ ├ ● /ro/blog/page/2
+│ ├ ● /ro/blog/page/3
+│ ├ ● /ro/blog/page/4
+│ └ ● [+6 more paths]
+├ ○ /ro/contacts
+├ ○ /ro/services
+├ ○ /ro/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej
+├ ○ /ro/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza
+├ ○ /ro/services/byorevytalyzaczyya-v-belczah
+├ ○ /ro/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy
+├ ○ /ro/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye
+├ ○ /ro/services/karboksyterapyya-v-belczah
+├ ○ /ro/services/konsultaczyya-dermatokosmetologa-v-belczah
+├ ○ /ro/services/konturnaya-plastyka-fylleramy-v-belczah
+├ ○ /ro/services/mezoterapyya-dlya-volos-v-belczah
+├ ○ /ro/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe
+├ ○ /ro/services/professyonalnaya-chystka-lycza-v-belczah
+├ ○ /ro/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy
+├ ○ /ro/services/terapyya-anty-akne-v-belczah
+├ ○ /ro/services/terapyya-protyv-pygmentaczyy-v-belczah
+├ ○ /ro/services/uvelychenye-gub-v-belczah
+├ ○ /ro/services/ynjekczyy-lypolytykov-v-belczah
+├ ○ /robots.txt
+├ ○ /services
+├ ○ /services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej
+├ ○ /services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza
+├ ○ /services/byorevytalyzaczyya-v-belczah
+├ ○ /services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy
+├ ○ /services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye
+├ ○ /services/karboksyterapyya-v-belczah
+├ ○ /services/konsultaczyya-dermatokosmetologa-v-belczah
+├ ○ /services/konturnaya-plastyka-fylleramy-v-belczah
+├ ○ /services/mezoterapyya-dlya-volos-v-belczah
+├ ○ /services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe
+├ ○ /services/professyonalnaya-chystka-lycza-v-belczah
+├ ○ /services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy
+├ ○ /services/terapyya-anty-akne-v-belczah
+├ ○ /services/terapyya-protyv-pygmentaczyy-v-belczah
+├ ○ /services/uvelychenye-gub-v-belczah
+├ ○ /services/ynjekczyy-lypolytykov-v-belczah
+└ ○ /sitemap.xml
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
