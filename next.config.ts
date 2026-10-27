@@ -2,7 +2,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import bundleAnalyzer from '@next/bundle-analyzer';
 import type { NextConfig } from 'next';
 
 /**
@@ -22,11 +21,6 @@ function blogRedirects() {
     { source: `/ro/blog/${r.roSlug}`, destination: r.roTo, permanent: true },
   ]);
 }
-
-const withBundleAnalyzer = bundleAnalyzer({
-  enabled: process.env.ANALYZE === 'true',
-  openAnalyzer: process.env.CI !== 'true',
-});
 
 const getSecurityHeaders = (isDev: boolean) => [
   // Keep HSTS only in production to avoid sticky localhost/browser behavior.
@@ -434,4 +428,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default withBundleAnalyzer(nextConfig);
+export default nextConfig;
