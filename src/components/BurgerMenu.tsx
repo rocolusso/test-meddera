@@ -4,7 +4,10 @@ import React, { useEffect, useRef } from 'react';
 
 import { useRouter } from 'next/navigation';
 
+import { LazySearchPanel, preloadSearchPanel } from '@/components/search/LazySearchPanel';
+import SearchIcon from '@/components/search/SearchIcon';
 import { NAV_LINKS } from '@/lib/nav-links';
+import { SEARCH_STRINGS } from '@/lib/search/strings';
 
 function MenuIcon({ className }: { className?: string }) {
   return (
@@ -45,7 +48,9 @@ const itemClass =
 
 function BurgerMenu({ locale }: { locale: string }) {
   const [open, setOpen] = React.useState(false);
+  const [searchOpen, setSearchOpen] = React.useState(false);
   const wrapRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
 
   const router = useRouter();
   const loc = locale === 'ru' ? 'ru' : 'ro';
@@ -54,6 +59,15 @@ function BurgerMenu({ locale }: { locale: string }) {
     router.push(href);
     setOpen(false);
   };
+
+  const openSearch = () => {
+    setOpen(false);
+    setSearchOpen(true);
+  };
+
+  useEffect(() => {
+    if (open) preloadSearchPanel();
+  }, [open]);
 
   useEffect(() => {
     if (!open) return;
@@ -67,38 +81,50 @@ function BurgerMenu({ locale }: { locale: string }) {
   }, [open]);
 
   return (
-    <div ref={wrapRef} className="relative z-10 sm:hidden">
-      <button
-        type="button"
-        aria-label="burger-btn-trigger"
-        aria-expanded={open}
-        aria-haspopup="true"
-        onClick={() => setOpen((v) => !v)}
-        className="inline-flex size-12 shrink-0 cursor-pointer touch-manipulation items-center justify-center text-pofo-heading transition-colors hover:text-deep-pink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-      >
-        <MenuIcon className="size-7" />
-      </button>
-
-      {open ? (
-        <div
-          role="menu"
-          className="fixed inset-x-0 top-[calc(5.25rem+env(safe-area-inset-top,0px))] z-[200] max-h-[calc(100dvh-5.25rem)] overflow-y-auto bg-[#232323] pb-1 shadow-header animate-fade-in [animation-duration:0.25s]"
+    <>
+      <div ref={wrapRef} className="relative z-10 sm:hidden">
+        <button
+          ref={triggerRef}
+          type="button"
+          aria-label="burger-btn-trigger"
+          aria-expanded={open}
+          aria-haspopup="true"
+          onClick={() => setOpen((v) => !v)}
+          className="inline-flex size-12 shrink-0 cursor-pointer touch-manipulation items-center justify-center text-pofo-heading transition-colors hover:text-deep-pink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
-          {NAV_LINKS.map((item) => (
-            <button
-              key={item.key}
-              type="button"
-              role="menuitem"
-              className={itemClass}
-              onClick={() => go(item.href[loc])}
-            >
-              <span>{item.label[loc]}</span>
-              <ChevronRightIcon className="size-4 shrink-0 opacity-60" />
+          <MenuIcon className="size-7" />
+        </button>
+
+        {open ? (
+          <div
+            role="menu"
+            className="fixed inset-x-0 top-[calc(5.25rem+env(safe-area-inset-top,0px))] z-[200] max-h-[calc(100dvh-5.25rem)] overflow-y-auto bg-[#232323] pb-1 shadow-header animate-fade-in [animation-duration:0.25s]"
+          >
+            <button type="button" role="menuitem" className={itemClass} onClick={openSearch}>
+              <span className="flex items-center gap-3">
+                <SearchIcon className="size-4 shrink-0" />
+                {SEARCH_STRINGS[loc].open}
+              </span>
             </button>
-          ))}
-        </div>
+            {NAV_LINKS.map((item) => (
+              <button
+                key={item.key}
+                type="button"
+                role="menuitem"
+                className={itemClass}
+                onClick={() => go(item.href[loc])}
+              >
+                <span>{item.label[loc]}</span>
+                <ChevronRightIcon className="size-4 shrink-0 opacity-60" />
+              </button>
+            ))}
+          </div>
+        ) : null}
+      </div>
+      {searchOpen ? (
+        <LazySearchPanel locale={loc} onClose={() => setSearchOpen(false)} returnFocusTo={() => triggerRef.current} />
       ) : null}
-    </div>
+    </>
   );
 }
 
