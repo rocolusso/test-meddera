@@ -26,6 +26,7 @@ import {
   contactIconRoundClass,
 } from '@/components/contact-form-ui';
 import { sendGa4Event } from '@/lib/ga4-worker-client';
+import { markLeadSubmitted } from '@/lib/cta/teaser-state';
 
 function ContactsLips({ locale }:{ locale:string }) {
   const callPhone = () => {
@@ -176,6 +177,7 @@ function ContactsLips({ locale }:{ locale:string }) {
     setFieldErrors({});
     setLocked(false);
     setSubmitAlert(true);
+    markLeadSubmitted();
 
     sendGa4Event('form_sended_1', {
       button_name: 'submit_btn',

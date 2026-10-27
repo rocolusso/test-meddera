@@ -245,6 +245,25 @@ test('leads from lip enlargement pages get the lips title, others do not', () =>
 const baseArg = process.argv.find((a) => a.startsWith('--base='));
 const base = baseArg ? baseArg.slice('--base='.length).replace(/\/$/, '') : null;
 
+test('scroll teaser: routes, countries, copy', async () => {
+  const ts = await import(pathToFileURL(path.join(root, 'src/lib/cta/teaser-state.ts')).href);
+  for (const p of ['/blog/some-article', '/ro/blog/some-article', '/blog/x-hub', '/services/uvelychenye-gub-v-belczah', '/ro/services/x', '/blog/some-article/']) {
+    assert.ok(ts.isTeaserRoute(p), `${p} must be a teaser route`);
+  }
+  for (const p of ['/', '/ro', '/contacts', '/ro/contacts', '/search', '/ads', '/ads/x', '/blog', '/ro/blog', '/blog/page/2', '/blog/page', '/ro/blog/page/3', '/services', '/ro/services', '/about', '/blog/a/b']) {
+    assert.ok(!ts.isTeaserRoute(p), `${p} must not be a teaser route`);
+  }
+  assert.equal(ts.TEASER_SCROLL_RATIO, 0.6);
+  assert.equal(ts.TEASER_MIN_VISIBLE_MS, 8000);
+  assert.equal(ts.TEASER_PAUSE_MS, 7 * 24 * 60 * 60 * 1000);
+  for (const c of ['', 'MD', 'RO']) assert.ok(ts.teaserAllowedForCountry(c), `${c || 'unknown'} is allowed`);
+  for (const c of ['US', 'RU', 'DE', 'UA']) assert.ok(!ts.teaserAllowedForCountry(c), `${c} is not allowed`);
+  // every entry has a one-sentence teaser in both languages
+  for (const [key, e] of Object.entries(reg.CTA_ENTRIES)) {
+    for (const l of ['ru', 'ro']) assert.ok(e.teaser[l] && e.teaser[l].length < 90, `${key}.teaser.${l} is short and present`);
+  }
+});
+
 test('cards in the rendered pages (needs --base)', { skip: base ? false : 'run with --base=http://localhost:3111 against a production server' }, async () => {
   const posts = readPosts();
   const articles = posts.filter((p) => p.kind === 'article');

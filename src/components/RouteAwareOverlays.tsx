@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 
 import DeferredFloatingCallButton from '@/components/DeferredFloatingCallButton';
 import DeferredStickyLeadCta from '@/components/DeferredStickyLeadCta';
+import ScrollTeaserHost from '@/components/cta/ScrollTeaserHost';
 import LeadQuizHost from '@/components/lead/LeadQuizHost';
 
 /**
@@ -22,6 +23,7 @@ export default function RouteAwareOverlays() {
       <DeferredFloatingCallButton />
       <DeferredStickyLeadCta />
       <LeadQuizHost />
+      <ScrollTeaserHost />
     </>
   );
 }

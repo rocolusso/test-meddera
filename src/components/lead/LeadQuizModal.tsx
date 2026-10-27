@@ -20,6 +20,7 @@ import type { ContactFieldErrors } from '@/lib/contact-form-schema';
 import { parseContactForm } from '@/lib/contact-form-schema';
 import { executeRecaptcha, prefetchRecaptchaScript } from '@/lib/recaptcha-client';
 import { sendGa4Event } from '@/lib/ga4-worker-client';
+import { markLeadSubmitted } from '@/lib/cta/teaser-state';
 import { CTA_ENTRIES, type CtaKey } from '@/lib/cta/registry';
 
 import {
@@ -188,6 +189,7 @@ export default function LeadQuizModal({
     setFieldErrors({});
     setLocked(false);
     setSubmitAlert(true);
+    markLeadSubmitted();
     if (typeof window !== 'undefined') {
       sendGa4Event('lead_sticky_form_sent', {
         button_name: 'leadform_sent',
