@@ -42,6 +42,13 @@ export function getAlternateLocalePath(pathname: string, locale: 'ru' | 'ro'): s
     return toRu ? '/contacts' : '/ro/contacts';
   }
 
+  if (p === '/search') {
+    return toRo ? '/ro/search' : '/search';
+  }
+  if (p === '/ro/search') {
+    return toRu ? '/search' : '/ro/search';
+  }
+
   if (p === '/blog') {
     return toRo ? '/ro/blog' : '/blog';
   }

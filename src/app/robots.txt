@@ -4,5 +4,7 @@ Disallow: /api/
 Disallow: /cert/
 Disallow: /blocked/
 Disallow: /rating/
+Disallow: /search
+Disallow: /ro/search
 
 Sitemap: https://meddera.md/sitemap.xml

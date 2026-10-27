@@ -11,6 +11,7 @@ const STATIC_PATHS = [
   '/services',
   '/contacts',
   '/blog',
+  '/search',
   '/review',
   '/ads/cards',
   '/ads/g1',
@@ -19,6 +20,7 @@ const STATIC_PATHS = [
   '/ro/services',
   '/ro/contacts',
   '/ro/blog',
+  '/ro/search',
 ];
 
 function buildValidPaths(): Set<string> {
