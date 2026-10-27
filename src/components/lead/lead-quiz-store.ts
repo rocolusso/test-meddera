@@ -43,13 +43,12 @@ export function getLeadQuizState(): LeadQuizState {
 export function openLeadQuiz(options: {
   source: LeadQuizOpenSource;
   procedure?: CtaKey | string | null;
-  formType?: FormType;
 }): void {
   // Already open: a second trigger must not count as another click.
   if (state.open) return;
-  const formType: FormType = options.formType === 'consultation' ? 'consultation' : 'appointment';
+  const formType: FormType = 'appointment';
   const source = options.source === 'unknown' || isLeadQuizSource(options.source) ? options.source : 'unknown';
-  const procedure = formType === 'appointment' && isCtaKey(options.procedure) ? options.procedure : null;
+  const procedure = isCtaKey(options.procedure) ? options.procedure : null;
 
   pushLeadCtaEvent(formType, { source, procedure });
   state = { open: true, formType, source, procedure };

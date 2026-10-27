@@ -4,7 +4,7 @@ import '@fontsource-variable/roboto/wght.css';
 
 import DeferredAhrefs from '@/components/DeferredAhrefs';
 import DeferredClarity from '@/components/DeferredClarity';
-import DeferredCookiesPolicy from '@/components/DeferredCookiesPolicy';
+import DeferredBottomDock from '@/components/DeferredBottomDock';
 import DeferredFacebookPixel from '@/components/DeferredFacebookPixel';
 import DeferredPlerdy from '@/components/DeferredPlerdy';
 import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
@@ -74,7 +74,7 @@ export default function RootShell({
         {enableClarity ? <DeferredClarity /> : null}
         {enableAhrefs ? <DeferredAhrefs /> : null}
         <RouteAwareOverlays />
-        <DeferredCookiesPolicy />
+        <DeferredBottomDock />
         <DeferredTelClickTracker />
         <DeferredFacebookPixel />
         {enablePlerdy ? <DeferredPlerdy /> : null}

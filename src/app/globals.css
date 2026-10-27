@@ -353,3 +353,14 @@ html {
     transform: none !important;
   }
 }
+
+/* BottomDock publishes its height; on phones the page ends above it. */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: var(--bottom-dock-h, 0px);
+  }
+  /* reCAPTCHA badge (appears after the first form interaction) must not cover the call button. */
+  .grecaptcha-badge {
+    bottom: calc(var(--bottom-dock-h, 0px) + 14px) !important;
+  }
+}

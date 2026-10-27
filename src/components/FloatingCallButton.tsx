@@ -1,27 +1,21 @@
 'use client';
 
-import { sendGa4Event } from '@/lib/ga4-worker-client';
+import { CLINIC_TEL_HREF } from '@/lib/cta/keys';
 
-function pushPhoneClickEvent() {
-  sendGa4Event('phone_click_fixed_1', {
-    button_name: 'animate_button',
-    event_label: 'homepage',
-  });
-}
-
+/**
+ * Desktop (≥md) green call button. A real tel: link: the click is counted once by TelClickTracker
+ * from the data-cta-* attributes (event phone_click_fixed_1, source float_call). On phones the
+ * call button is part of BottomDock.
+ */
 export default function FloatingCallButton() {
-  const onClick = () => {
-    pushPhoneClickEvent();
-    window.location.href = 'tel:+37368550030';
-  };
-
   return (
-    <button
+    <a
       aria-label="btn-call-trigger"
-      onClick={onClick}
-      type="button"
+      href={CLINIC_TEL_HREF}
       className="btn-call"
       id="btnCallFixedTrigger"
+      data-cta-event="phone_click_fixed_1"
+      data-cta-source="float_call"
     >
       <div className="btn-call__ico" aria-hidden>
         <svg viewBox="0 0 24 24" className="h-8 w-8 fill-current">
@@ -48,6 +42,11 @@ export default function FloatingCallButton() {
           justify-content: center;
           align-items: center;
           text-decoration: none;
+        }
+        @media (max-width: 767px) {
+          .btn-call {
+            display: none;
+          }
         }
         .btn-call::after {
           content: '';
@@ -138,6 +137,6 @@ export default function FloatingCallButton() {
           }
         }
       `}</style>
-    </button>
+    </a>
   );
 }

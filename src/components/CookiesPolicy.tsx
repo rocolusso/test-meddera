@@ -2,7 +2,7 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 
-const CONSENT_KEY = 'cookies-consent-accepted';
+import { acceptCookies, useCookieConsent } from '@/lib/cookie-consent';
 
 type Locale = 'ru' | 'ro';
 
@@ -29,32 +29,26 @@ const COPY = {
   },
 } as const;
 
+/**
+ * Cookie notice. It no longer positions itself: BottomDock puts it under the
+ * call buttons, so the buttons move down by themselves once it is accepted.
+ */
 const CookiesPolicy = () => {
   const pathname = usePathname();
-  const [isVisible, setIsVisible] = React.useState(false);
+  const consent = useCookieConsent();
   const locale = React.useMemo(() => getLocaleFromPathname(pathname), [pathname]);
 
-  React.useEffect(() => {
-    const accepted = localStorage.getItem(CONSENT_KEY) === 'true';
-    setIsVisible(!accepted);
-  }, []);
-
-  const onAccept = React.useCallback(() => {
-    localStorage.setItem(CONSENT_KEY, 'true');
-    setIsVisible(false);
-  }, []);
-
-  if (!isVisible) {
+  if (consent !== 'pending') {
     return null;
   }
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-white/15 bg-black/90 text-white backdrop-blur-sm">
+    <div className="border-t border-white/15 bg-black/90 text-white backdrop-blur-sm" data-cookie-banner>
       <div className="mx-auto  flex max-w-7xl items-center  gap-3 px-4 py-3 md:px-6">
         <p className="text-sm leading-5">{COPY[locale].message}</p>
         <button
           type="button"
-          onClick={onAccept}
+          onClick={acceptCookies}
           className="shrink-0 rounded-md bg-white px-4 py-2 text-sm font-medium text-black transition hover:bg-neutral-200"
         >
           {COPY[locale].accept}

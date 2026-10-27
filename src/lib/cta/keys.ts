@@ -27,7 +27,6 @@ export function isCtaKey(value: unknown): value is CtaKey {
 /** Places a quiz can be opened from. The server accepts only these values. */
 export const LEAD_QUIZ_SOURCES = [
   'float_book',
-  'float_consult',
   'dock_book',
   'article_card',
   'hub_card',
@@ -39,3 +38,7 @@ export type LeadQuizSource = (typeof LEAD_QUIZ_SOURCES)[number];
 export function isLeadQuizSource(value: unknown): value is LeadQuizSource {
   return typeof value === 'string' && (LEAD_QUIZ_SOURCES as readonly string[]).includes(value);
 }
+
+/** Clinic phone as a link and the label of every call button ("Позвонить"). */
+export const CLINIC_TEL_HREF = 'tel:+37368550030';
+export const CTA_CALL_LABEL = { ru: 'Позвонить', ro: 'Sună' } as const;

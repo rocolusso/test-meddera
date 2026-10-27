@@ -1,7 +1,8 @@
 import { sendGa4Event } from '@/lib/ga4-worker-client';
 
 export type Locale = 'ru' | 'ro';
-export type FormType = 'appointment' | 'consultation';
+/** The only form of the site. The server still accepts 'consultation' from pages cached before it was removed. */
+export type FormType = 'appointment';
 
 export type QuizQuestion = {
   key: string;
@@ -45,54 +46,16 @@ export const QUIZ: Record<FormType, readonly QuizQuestion[]> = {
       },
     },
   ],
-  consultation: [
-    {
-      key: 'request_topic',
-      prompt: {
-        ru: 'По какому вопросу нужна консультация?',
-        ro: 'Pentru ce subiect aveți nevoie de consultație?',
-      },
-      options: {
-        ru: ['Акне / высыпания', 'Пигментация / постакне', 'Омоложение / anti-age', 'Другое'],
-        ro: ['Acnee / erupții', 'Pigmentare / postacnee', 'Întinerire / anti-age', 'Altceva'],
-      },
-    },
-    {
-      key: 'urgency',
-      prompt: {
-        ru: 'Насколько срочно?',
-        ro: 'Cât de urgent este?',
-      },
-      options: {
-        ru: ['Как можно скорее', 'В течение недели', 'Пока просто собираю информацию'],
-        ro: ['Cât mai curând', 'În decurs de o săptămână', 'Momentan doar colectez informații'],
-      },
-    },
-    {
-      key: 'consult_format',
-      prompt: {
-        ru: 'Формат консультации',
-        ro: 'Formatul consultației',
-      },
-      options: {
-        ru: ['Лично в клинике', 'Нужна рекомендация врача', 'Пока не определился(ась)'],
-        ro: ['Personal în clinică', 'Am nevoie de recomandarea medicului', 'Încă nu m-am decis'],
-      },
-    },
-  ],
 };
 
 export const TEXT = {
   ru: {
     ctaAppointment: 'Записаться онлайн',
-    ctaConsultation: 'Получить консультацию',
     modalTitle: {
       appointment: 'Быстрая запись',
-      consultation: 'Получить консультацию',
     },
     modalSubtitle: {
       appointment: 'Оставьте контакты и ответьте на 3 вопроса.',
-      consultation: 'Заполните форму, и мы поможем подобрать решение.',
     },
     modalSubtitlePrefilled: 'Оставьте контакты и ответьте на 2 вопроса.',
     procedureLabel: 'Процедура',
@@ -116,14 +79,11 @@ export const TEXT = {
   },
   ro: {
     ctaAppointment: 'Programare online',
-    ctaConsultation: 'Obține o consultație',
     modalTitle: {
       appointment: 'Programare rapidă',
-      consultation: 'Obține o consultație',
     },
     modalSubtitle: {
       appointment: 'Lăsați datele de contact și răspundeți la 3 întrebări.',
-      consultation: 'Completați formularul, iar noi vă ajutăm cu recomandări.',
     },
     modalSubtitlePrefilled: 'Lăsați datele de contact și răspundeți la 2 întrebări.',
     procedureLabel: 'Procedura',

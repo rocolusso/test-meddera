@@ -9,9 +9,9 @@
  */
 
 import { SERVICE_SLUG, servicesForArticle, servicesForCluster } from '@/blog-data/article-services';
-import { CTA_KEYS, LEAD_QUIZ_SOURCES, isCtaKey, isLeadQuizSource, type CtaKey, type LeadQuizSource } from '@/lib/cta/keys';
+import { CTA_CALL_LABEL, CTA_KEYS, LEAD_QUIZ_SOURCES, isCtaKey, isLeadQuizSource, type CtaKey, type LeadQuizSource } from '@/lib/cta/keys';
 
-export { CTA_KEYS, LEAD_QUIZ_SOURCES, isCtaKey, isLeadQuizSource };
+export { CTA_CALL_LABEL, CTA_KEYS, LEAD_QUIZ_SOURCES, isCtaKey, isLeadQuizSource };
 export type { CtaKey, LeadQuizSource };
 
 type Bilingual = { ru: string; ro: string };
@@ -191,12 +191,9 @@ export const CTA_BUTTON_LABEL: Record<CtaTone, Bilingual> = {
   medical: { ru: 'Записаться на приём', ro: 'Programare la consultație' },
 };
 
-export const CTA_CALL_LABEL: Bilingual = { ru: 'Позвонить', ro: 'Sună' };
-
 /** Names of the sources in the Telegram message. */
 export const LEAD_QUIZ_SOURCE_LABELS: Record<LeadQuizSource, Bilingual> = {
   float_book: { ru: 'Плавающая кнопка «Записаться онлайн»', ro: 'Buton plutitor „Programare online”' },
-  float_consult: { ru: 'Плавающая кнопка «Получить консультацию»', ro: 'Buton plutitor „Obține o consultație”' },
   dock_book: { ru: 'Нижняя панель', ro: 'Panou inferior' },
   article_card: { ru: 'Карточка в статье', ro: 'Card în articol' },
   hub_card: { ru: 'Карточка на странице рубрики', ro: 'Card pe pagina rubricii' },
