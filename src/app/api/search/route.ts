@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 import { getSearchIndex } from '@/lib/search/build-index';
 import { searchIndex } from '@/lib/search/query';
+import { isSearchServerEnabled, warnOnSearchFlagMismatch } from '@/lib/search/server-config';
 import type { SearchLocale } from '@/lib/search/types';
 
 export const runtime = 'nodejs';
@@ -22,6 +23,9 @@ function badRequest(code: string) {
 
 // eslint-disable-next-line import/prefer-default-export
 export function GET(request: NextRequest) {
+  warnOnSearchFlagMismatch();
+  if (!isSearchServerEnabled()) return NextResponse.json({ error: 'disabled' }, { status: 404, headers: ERROR_HEADERS });
+
   const params = request.nextUrl.searchParams;
 
   const lang = params.get('lang');

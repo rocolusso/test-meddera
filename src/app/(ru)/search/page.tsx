@@ -1,9 +1,12 @@
 import React, { Suspense } from 'react';
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 import FooterNew from '@/components/new-ui/FooterNew';
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import SearchResultsView from '@/components/search/SearchResultsView';
+import { SEARCH_UI_ENABLED } from '@/lib/search/config';
+import { isSearchServerEnabled, warnOnSearchFlagMismatch } from '@/lib/search/server-config';
 import { SEARCH_STRINGS } from '@/lib/search/strings';
 
 export const metadata: Metadata = {
@@ -12,6 +15,9 @@ export const metadata: Metadata = {
 };
 
 export default function SearchPage() {
+  warnOnSearchFlagMismatch();
+  if (!SEARCH_UI_ENABLED || !isSearchServerEnabled()) notFound();
+
   const t = SEARCH_STRINGS.ru;
   return (
     <>

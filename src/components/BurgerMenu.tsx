@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import { LazySearchPanel, preloadSearchPanel } from '@/components/search/LazySearchPanel';
 import SearchIcon from '@/components/search/SearchIcon';
 import { NAV_LINKS } from '@/lib/nav-links';
+import { SEARCH_UI_ENABLED } from '@/lib/search/config';
 import { SEARCH_STRINGS } from '@/lib/search/strings';
 
 function MenuIcon({ className }: { className?: string }) {
@@ -66,7 +67,7 @@ function BurgerMenu({ locale }: { locale: string }) {
   };
 
   useEffect(() => {
-    if (open) preloadSearchPanel();
+    if (open && SEARCH_UI_ENABLED) preloadSearchPanel();
   }, [open]);
 
   useEffect(() => {
@@ -100,12 +101,14 @@ function BurgerMenu({ locale }: { locale: string }) {
             role="menu"
             className="fixed inset-x-0 top-[calc(5.25rem+env(safe-area-inset-top,0px))] z-[200] max-h-[calc(100dvh-5.25rem)] overflow-y-auto bg-[#232323] pb-1 shadow-header animate-fade-in [animation-duration:0.25s]"
           >
-            <button type="button" role="menuitem" className={itemClass} onClick={openSearch}>
-              <span className="flex items-center gap-3">
-                <SearchIcon className="size-4 shrink-0" />
-                {SEARCH_STRINGS[loc].open}
-              </span>
-            </button>
+            {SEARCH_UI_ENABLED ? (
+              <button type="button" role="menuitem" className={itemClass} onClick={openSearch}>
+                <span className="flex items-center gap-3">
+                  <SearchIcon className="size-4 shrink-0" />
+                  {SEARCH_STRINGS[loc].open}
+                </span>
+              </button>
+            ) : null}
             {NAV_LINKS.map((item) => (
               <button
                 key={item.key}
@@ -121,7 +124,7 @@ function BurgerMenu({ locale }: { locale: string }) {
           </div>
         ) : null}
       </div>
-      {searchOpen ? (
+      {SEARCH_UI_ENABLED && searchOpen ? (
         <LazySearchPanel locale={loc} onClose={() => setSearchOpen(false)} returnFocusTo={() => triggerRef.current} />
       ) : null}
     </>

@@ -1,3 +1,10 @@
 TELEGRAM_BOT_TOKEN="token....code"
 NEXT_PUBLIC_RECAPTCHA_SITE_KEY="token....code"
 RECAPTCHA_SECRET_KEY="token....code"
+
+# Site search. It is on only when BOTH are "true"; unset or any other value keeps it off everywhere
+# (header button, burger row, /api/search, /search and /ro/search).
+# NEXT_PUBLIC_SEARCH_ENABLED is baked into the bundle at build time, so after changing it redeploy.
+# SEARCH_ENABLED is read by /api/search at runtime and by the /search pages at build time.
+NEXT_PUBLIC_SEARCH_ENABLED="false"
+SEARCH_ENABLED="false"

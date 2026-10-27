@@ -2,6 +2,10 @@
 /**
  * Checks the site search of a running server.
  * Usage: node scripts/verify-search.mjs <baseUrl> [--skip-index]
+ *        node scripts/verify-search.mjs <baseUrl> --expect=off   (server started with search switched off)
+ *
+ * With --expect=off it checks only the switched-off state: /api/search and the result pages answer 404,
+ * no search button in the header HTML, the rest of the header still renders, robots.txt is unchanged.
  *
  * - API contract: parameters, status codes, cache headers, no reflection of the query
  * - golden queries in both languages, diacritics and letter case, a query without matches
@@ -16,6 +20,7 @@ import { fileURLToPath } from 'node:url';
 const args = process.argv.slice(2);
 const base = (args.find((a) => /^https?:/.test(a)) || 'http://localhost:3111').replace(/\/$/, '');
 const skipIndex = args.includes('--skip-index');
+const expectOff = args.includes('--expect=off');
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const redirects = JSON.parse(fs.readFileSync(path.join(root, 'src/blog-data/blog-redirects.json'), 'utf8'));
 const redirectSources = new Set(redirects.flatMap((r) => [`/blog/${r.ruSlug}`, `/ro/blog/${r.roSlug}`]));
@@ -77,6 +82,36 @@ async function golden(lang, q, { min = 1, max = Infinity, mustInclude } = {}) {
   }
   if (mustInclude) check(json.results.some((r) => r.url === mustInclude), `${name}: ${mustInclude} is missing`);
   return json;
+}
+
+// ---------- search switched off (NEXT_PUBLIC_SEARCH_ENABLED / SEARCH_ENABLED not "true")
+if (expectOff) {
+  const off = await api({ q: 'ботокс', lang: 'ru' });
+  check(off.res.status === 404, `/api/search: status ${off.res.status}, expected 404`);
+  check(off.res.headers.get('cache-control') === 'no-store', `/api/search: Cache-Control ${off.res.headers.get('cache-control')}`);
+  check(!off.text.includes('results'), '/api/search: answer still carries results');
+  for (const p of ['/search', '/search?q=test', '/ro/search', '/ro/search?q=test']) {
+    const res = await get(p);
+    check(res.status === 404, `${p}: status ${res.status}, expected 404 (not a redirect, not a page)`);
+  }
+  for (const p of ['/', '/ro', '/about', '/ro/contacts']) {
+    const res = await get(p);
+    const html = await res.text();
+    check(res.status === 200, `${p}: status ${res.status}`);
+    check(!html.includes('aria-haspopup="dialog"'), `${p}: the search button is still rendered`);
+    check(html.includes('locale-btn'), `${p}: the header looks broken (no language switch)`);
+  }
+  const robotsOff = await (await get('/robots.txt')).text();
+  check(/^Disallow: \/search$/m.test(robotsOff) && /^Disallow: \/ro\/search$/m.test(robotsOff), 'robots.txt: search Disallow lines changed');
+  const sitemapOff = await (await get('/sitemap.xml')).text();
+  check(!/\/search/.test(sitemapOff), 'sitemap.xml must not contain search pages');
+  if (errors.length) {
+    console.error(`verify-search --expect=off: ${errors.length} problem(s) in ${checks} checks`);
+    for (const e of errors) console.error(` - ${e}`);
+    process.exit(1);
+  }
+  console.log(`verify-search --expect=off: OK (${checks} checks)`);
+  process.exit(0);
 }
 
 // ---------- API contract
@@ -153,6 +188,10 @@ for (const [p, lang] of [['/search', 'ru'], ['/ro/search', 'ro']]) {
   // The field itself is client-rendered (useSearchParams), so the static HTML carries the heading and shell.
   check(/<h1[^>]*>/.test(html), `${p}: no <h1> in the page`);
   check(new RegExp(`<html[^>]*lang="${lang}`).test(html), `${p}: html lang is not ${lang}`);
+}
+for (const p of ['/', '/ro']) {
+  const html = await (await get(p)).text();
+  check(html.includes('aria-haspopup="dialog"'), `${p}: the search button is missing from the header`);
 }
 const robots = await (await get('/robots.txt')).text();
 check(/^Disallow: \/search$/m.test(robots), 'robots.txt: Disallow: /search is missing');

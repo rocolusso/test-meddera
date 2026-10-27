@@ -2,6 +2,7 @@ import Link from 'next/link';
 import LocaleSwitchLink from '@/components/new-ui/LocaleSwitchLink';
 import SearchTrigger from '@/components/search/SearchTrigger';
 import { NAV_LINKS, toNavLocale } from '@/lib/nav-links';
+import { SEARCH_UI_ENABLED } from '@/lib/search/config';
 
 /** Pofo menu link: Montserrat, 12px, uppercase, 600, pink on hover. */
 const navLinkClass = [
@@ -22,10 +23,12 @@ function NavigationLinks({ locale }: { locale: string }) {
           </Link>
         ))}
       </nav>
-      <SearchTrigger
-        locale={loc}
-        className="inline-flex size-9 shrink-0 cursor-pointer items-center justify-center border border-border text-pofo-heading transition-colors hover:border-deep-pink hover:text-deep-pink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-      />
+      {SEARCH_UI_ENABLED ? (
+        <SearchTrigger
+          locale={loc}
+          className="inline-flex size-9 shrink-0 cursor-pointer items-center justify-center border border-border text-pofo-heading transition-colors hover:border-deep-pink hover:text-deep-pink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        />
+      ) : null}
       <LocaleSwitchLink
         locale={loc}
         className="alt-font inline-flex h-9 min-w-9 shrink-0 items-center justify-center border border-border px-2 text-[11px] font-semibold uppercase tracking-[1px] text-pofo-heading transition-colors hover:border-deep-pink hover:text-deep-pink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
