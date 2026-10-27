@@ -41,6 +41,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+
+/analytics_data
 /ahrefs-data
 cloudflare/**/node_modules
 cloudflare/**/.wrangler
