@@ -364,3 +364,68 @@ html {
     bottom: calc(var(--bottom-dock-h, 0px) + 14px) !important;
   }
 }
+
+/* Scroll cue (src/components/cta/ScrollCue.tsx): three chevrons flash in turn; it fades out on scroll. */
+.scroll-cue {
+  transform: translateX(-50%);
+  opacity: 1;
+  filter: none;
+  transition: opacity 0.45s ease, transform 0.45s ease, filter 0.45s ease;
+}
+.scroll-cue::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 170px;
+  height: 170px;
+  margin: -85px 0 0 -85px;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--background) 92%, transparent) 0%,
+    color-mix(in srgb, var(--background) 82%, transparent) 50%,
+    transparent 100%
+  );
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  /* The gutter between the text column and the photo is narrow: keep the halo inside it. */
+  .scroll-cue::before {
+    width: 120px;
+    height: 120px;
+    margin: -60px 0 0 -60px;
+  }
+}
+.scroll-cue[data-visible='false'] {
+  opacity: 0;
+  transform: translateX(-50%) translateY(18px) scale(0.92);
+  filter: blur(4px);
+}
+.scroll-cue__chevron {
+  display: block;
+  animation: scroll-cue-wave 1.6s ease-in-out infinite;
+}
+@keyframes scroll-cue-wave {
+  0%,
+  100% {
+    opacity: 0.12;
+    transform: translateY(-4px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(4px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue {
+    transition: none;
+  }
+  .scroll-cue[data-visible='false'] {
+    transform: translateX(-50%);
+    filter: none;
+  }
+  .scroll-cue__chevron {
+    animation: none;
+  }
+}
