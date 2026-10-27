@@ -30,6 +30,7 @@
     "generate:blog-part2": "node scripts/generate-blog-part2.mjs",
     "generate:blog-urls": "node scripts/export-blog-article-urls.mjs",
     "verify:blog-content": "node scripts/verify-blog-metadata-content.mjs",
+    "verify:search": "node scripts/verify-search.mjs",
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm run build"
   },
