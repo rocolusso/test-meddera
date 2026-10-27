@@ -35,12 +35,16 @@ function AboutNew({
 }) {
   const loc = locale === 'ro' ? 'ro' : 'ru';
   const c = aboutCopy[loc];
+  // Desktop spacing of the grey plate (min-[...] on both steps keeps their CSS order). /about (h1): the gap above
+  // the plate equals the section's bottom padding; from 1200 px the photo is the taller column and its pink frame
+  // sticks out 24 px, so 24 px is added. Home (h2): "Услуги" follows at once, so the free space above the plate and
+  // below it, up to that heading, is split evenly (the section's bottom padding shrinks, the plate moves down).
   const specHeadingClass =
     'alt-font text-center text-[22px] font-semibold leading-[30px] text-pofo-heading sm:text-[26px] sm:leading-[34px] lg:text-left';
 
   return (
     <section className="hero__about scroll-mt-24 bg-background" id="about">
-      <div className="pofo-container section-y !pt-[25px]">
+      <div className={`pofo-container section-y !pt-[25px]${titleAs === 'h1' ? '' : ' min-[1024px]:!pb-[40px] min-[1200px]:!pb-[28px]'}`}>
         <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-[70px]">
           {/* Photo: stays the LCP element, therefore never animated. */}
           {/* Text comes first on every breakpoint; photo is order-2 (mobile: below text, desktop: right column). */}
@@ -83,7 +87,11 @@ function AboutNew({
           </div>
         </div>
 
-        <SectionReveal className="mt-14 bg-pofo-light-gray px-6 py-10 sm:px-10 md:mt-20 md:py-14 lg:px-14">
+        <SectionReveal
+          className={`mt-14 bg-pofo-light-gray px-6 py-10 sm:px-10 min-[768px]:mt-20 md:py-14 lg:px-14 ${
+            titleAs === 'h1' ? 'min-[1024px]:mt-[90px] min-[1200px]:mt-[154px]' : 'min-[1024px]:mt-[130px] min-[1200px]:mt-[182px]'
+          }`}
+        >
           <div className="space-y-8">
             {titleAs === 'h1' ? (
               <h2 className={specHeadingClass}>{c.specializationTitle}</h2>

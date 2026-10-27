@@ -47,7 +47,7 @@ export function BlogIndexView({ locale, page }: Props) {
         breadcrumbs={[{ href: home, label: isRu ? 'Главная' : 'Acasă' }, { label: title }]}
       />
 
-      <div className="pofo-container section-y">
+      <div className="pofo-container section-y !pt-[25px]">
         {allHubs.length > 0 ? (
           <section className="mb-[70px] md:mb-[100px]">
             <SectionHeading as="h2" title={rubricsTitle} separator className="mb-12 md:mb-[70px]" />
