@@ -111,7 +111,7 @@
 | `src/blog-data/registry.ts` | Посты, `getPostBySlug`, `ORIGIN`, **`blogPathRu` / `blogPathRo`** |
 | `src/blog-data/render-post-body.tsx` | `renderBlogPostBody` |
 | `src/app/(ru)/blog/[slug]/page.tsx`, `(ro)/ro/blog/[slug]/page.tsx` | Страницы; `dynamicParams = false` |
-| `next.config.ts` | `webpack`; сборка через **`next build --webpack`** |
+| `next.config.ts` | `turbopack.resolveAlias` (подмена `polyfill-module`); сборка через **`next build`** (Turbopack) |
 
 ---
 

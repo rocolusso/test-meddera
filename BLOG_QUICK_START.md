@@ -7,7 +7,7 @@
 - **6** рубрик топ-6 с хабами и статьями в `registry`.
 - **306** статей (`kind: 'article'`), **6** хабов → **312** URL со slug для RU/RO блога при сборке.
 - **Part 2 (статьи 26–50)** для всех шести кластеров подключён; у дерматолога и ботокса по **50** статей; у губ / мезотерапии лица / биоревита / филлеров по **49** статей в файлах кластера + **10** отдельных статей по губам в `registry`.
-- Сборка Next.js **16**: в `package.json` уже есть **`next build --webpack`** (Turbopack по умолчанию конфликтует с кастомным webpack).
+- Сборка Next.js **16**: `next build` идёт на Turbopack (дефолт Next 16); хук `webpack()` заменён на `turbopack.resolveAlias` (подмена `polyfill-module`).
 
 **Ссылки в Dev**
 
@@ -84,7 +84,7 @@ src/blog-data/
 | Команда | Назначение |
 |---------|------------|
 | `npm run dev` | Dev (Turbopack в скрипте) |
-| `npm run build` | Production build (**webpack**) |
+| `npm run build` | Production build (**Turbopack**) |
 | `npm run verify:blog-content` | Соответствие id метаданных и ключей контента |
 | `npm run generate:blog-urls` | Обновить `generated/blog-article-final-urls.txt` (**только Part 2**, 150 статей) |
 | `node scripts/check-registry.mjs` | Реестр / проверки из скрипта (если используете в проекте) |
