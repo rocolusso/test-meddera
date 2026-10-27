@@ -5,6 +5,8 @@ import { LIP_CLUSTER_ARTICLE_CONTENT } from '@/blog-data/lip-cluster-article-con
 import { blogPathRu, blogPathRo, getHubForCluster } from '@/blog-data/registry';
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import { blogUi } from '@/blog-data/blog-ui';
+import ArticleCta from '@/components/cta/ArticleCta';
+import { ctaForPost } from '@/lib/cta/registry';
 
 type Props = {
   post: BlogPost;
@@ -83,6 +85,8 @@ export function LipClusterArticleBody({ post, locale }: Props) {
             </Link>
           </section>
         ) : null}
+
+        <ArticleCta entry={ctaForPost(post)} locale={locale} source="article_card" />
       </>
     );
   }
@@ -139,6 +143,8 @@ export function LipClusterArticleBody({ post, locale }: Props) {
           </Link>
         </section>
       ) : null}
+
+      <ArticleCta entry={ctaForPost(post)} locale={locale} source="article_card" />
     </>
   );
 }

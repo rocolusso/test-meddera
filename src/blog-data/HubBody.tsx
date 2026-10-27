@@ -6,6 +6,8 @@ import { blogPathRo, blogPathRu, getClusterArticles, getPostById } from '@/blog-
 import { blogUi } from '@/blog-data/blog-ui';
 import { HUB_CONTENT } from '@/blog-data/hubs';
 import { renderInline } from '@/blog-data/inline-links';
+import ArticleCta from '@/components/cta/ArticleCta';
+import { ctaForCluster } from '@/lib/cta/registry';
 import { servicePath } from '@/lib/service-slugs';
 import type { BlogPost } from '@/blog-data/types';
 
@@ -153,6 +155,8 @@ export function HubBody({ clusterId, locale, dateModified }: Props) {
           </li>
         </ul>
       </section>
+
+      <ArticleCta entry={ctaForCluster(clusterId)} locale={locale} source="hub_card" />
 
       <section className={blogUi.reviewBox} aria-labelledby={`hub-eeat-${key}`}>
         <h2 id={`hub-eeat-${key}`} className={blogUi.boxTitle}>{ui.eeatTitle}</h2>
