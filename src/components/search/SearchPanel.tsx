@@ -4,6 +4,7 @@ import React, { useEffect, useId, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 import { useSiteSearch } from '@/hooks/useSiteSearch';
+import { useOverlayLock } from '@/lib/overlay-lock';
 import { SEARCH_PATH, SEARCH_STRINGS } from '@/lib/search/strings';
 import type { SearchLocale } from '@/lib/search/types';
 
@@ -45,6 +46,7 @@ export default function SearchPanel({ locale, onClose, returnFocusTo }: Props) {
     returnRef.current = returnFocusTo;
   });
   const listboxId = useId();
+  useOverlayLock(true);
 
   const [query, setQuery] = useState('');
   const [active, setActive] = useState(-1);

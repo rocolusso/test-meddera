@@ -1,42 +1,14 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
-import {
-  QUIZ,
-  TEXT,
-  getLocaleFromPath,
-  pushLeadCtaEvent,
-  type FormType,
-} from '@/components/lead/leadFormConstants';
-
-const LeadQuizModal = dynamic(() => import('@/components/lead/LeadQuizModal'), {
-  ssr: false,
-  loading: () => null,
-});
+import { TEXT, getLocaleFromPath } from '@/components/lead/leadFormConstants';
+import { openLeadQuiz } from '@/components/lead/lead-quiz-store';
 
 export default function StickyLeadCta() {
   const pathname = usePathname();
   const locale = getLocaleFromPath(pathname);
   const t = TEXT[locale];
-
-  const [open, setOpen] = useState(false);
-  const [formType, setFormType] = useState<FormType>('appointment');
-
-  useEffect(() => {
-    if (!open) return;
-
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setOpen(false);
-    };
-
-    window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
-  }, [open]);
-
-  const questions = QUIZ[formType];
 
   return (
     <>
@@ -44,11 +16,7 @@ export default function StickyLeadCta() {
 
         {/* PRIMARY CTA */}
         <button
-          onClick={() => {
-            pushLeadCtaEvent('appointment');
-            setFormType('appointment');
-            setOpen(true);
-          }}
+          onClick={() => openLeadQuiz({ source: 'float_book' })}
           id={'primaryCta'}
           type="button"
           className={`
@@ -100,11 +68,7 @@ export default function StickyLeadCta() {
 
         {/* SECONDARY CTA */}
         <button
-          onClick={() => {
-            pushLeadCtaEvent('consultation');
-            setFormType('consultation');
-            setOpen(true);
-          }}
+          onClick={() => openLeadQuiz({ source: 'float_consult', formType: 'consultation' })}
           className={`
             secondary-cta-button
             group relative overflow-hidden
@@ -128,15 +92,6 @@ export default function StickyLeadCta() {
         </button>
       </div>
 
-      {open && (
-        <LeadQuizModal
-          locale={locale}
-          formType={formType}
-          questions={questions}
-          pathname={pathname}
-          onClose={() => setOpen(false)}
-        />
-      )}
       <style jsx global>{`
         @keyframes ctaFloat {
           0% { transform: translateY(0); }

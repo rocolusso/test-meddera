@@ -20,6 +20,7 @@ import type { ContactFieldErrors } from '@/lib/contact-form-schema';
 import { parseContactForm } from '@/lib/contact-form-schema';
 import { executeRecaptcha, prefetchRecaptchaScript } from '@/lib/recaptcha-client';
 import { sendGa4Event } from '@/lib/ga4-worker-client';
+import { CTA_ENTRIES, type CtaKey } from '@/lib/cta/registry';
 
 import {
   TEXT,
@@ -33,6 +34,10 @@ type LeadQuizModalProps = {
   formType: FormType;
   questions: readonly QuizQuestion[];
   pathname: string;
+  /** Where the quiz was opened from (button, card, teaser). Sent to the server and to GA4. */
+  source?: string | null;
+  /** Procedure chosen on the page: the question about it is replaced by a chip. */
+  procedure?: CtaKey | null;
   onClose: () => void;
 };
 
@@ -41,6 +46,8 @@ export default function LeadQuizModal({
   formType,
   questions,
   pathname,
+  source = null,
+  procedure = null,
   onClose,
 }: LeadQuizModalProps) {
   const t = TEXT[locale];
@@ -63,9 +70,16 @@ export default function LeadQuizModal({
     getBehavior,
   } = useContactFormAntiSpam();
 
+  const [prefill, setPrefill] = useState<CtaKey | null>(formType === 'appointment' ? procedure : null);
+  const prefillLabel = prefill ? CTA_ENTRIES[prefill].chip[locale] : null;
+  const visibleQuestions = useMemo(
+    () => (prefill ? questions.filter((question) => question.key !== 'procedure_interest') : questions),
+    [questions, prefill],
+  );
+
   const allQuizAnswered = useMemo(
-    () => questions.every((question) => Boolean(quizAnswers[question.key])),
-    [questions, quizAnswers],
+    () => visibleQuestions.every((question) => Boolean(quizAnswers[question.key])),
+    [visibleQuestions, quizAnswers],
   );
 
   const prefetchRecaptchaOnce = () => {
@@ -134,7 +148,9 @@ export default function LeadQuizModal({
       message: parsed.data,
       locale,
       formType,
-      quizAnswers,
+      quizAnswers: prefillLabel ? { ...quizAnswers, procedure_interest: prefillLabel } : quizAnswers,
+      ...(source && source !== 'unknown' ? { source } : {}),
+      ...(prefill ? { procedure: prefill } : {}),
       formPathname: typeof window !== 'undefined' ? window.location.href : pathname,
     };
     if (!abuseDisabled) {
@@ -176,6 +192,8 @@ export default function LeadQuizModal({
       sendGa4Event('lead_sticky_form_sent', {
         button_name: 'leadform_sent',
         event_label: 'sticky_lead',
+        ...(source ? { cta_source: source } : {}),
+        ...(prefill ? { procedure: prefill } : {}),
       });
       window.setTimeout(() => {
         setSubmitAlert(false);
@@ -199,7 +217,7 @@ export default function LeadQuizModal({
         <div className="mb-3 flex items-start justify-between gap-4">
           <div>
             <h3 className="alt-font text-[20px] font-semibold leading-[28px] text-pofo-heading">{t.modalTitle[formType]}</h3>
-            <p className="mt-1 text-sm text-muted-foreground">{t.modalSubtitle[formType]}</p>
+            <p className="mt-1 text-sm text-muted-foreground">{prefill ? t.modalSubtitlePrefilled : t.modalSubtitle[formType]}</p>
           </div>
           <Button variant="pofoOutline" size="pofoSmall" type="button" onClick={onClose}>
             {t.close}
@@ -265,7 +283,21 @@ export default function LeadQuizModal({
             </div>
 
             <div className="mt-4 space-y-4">
-              {questions.map((question) => (
+              {prefillLabel ? (
+                <div className="flex items-center justify-between gap-3 border border-border p-4" data-quiz-chip={prefill}>
+                  <p className="alt-font text-[13px] font-semibold leading-5 text-pofo-heading">
+                    {t.procedureLabel}: {prefillLabel}
+                  </p>
+                  <button
+                    type="button"
+                    className="shrink-0 text-sm text-deep-pink underline underline-offset-2"
+                    onClick={() => setPrefill(null)}
+                  >
+                    {t.changeProcedure}
+                  </button>
+                </div>
+              ) : null}
+              {visibleQuestions.map((question) => (
                 <div key={question.key} className="border border-border p-4">
                   <p className="alt-font text-[13px] font-semibold leading-5 text-pofo-heading">{question.prompt[locale]}</p>
                   <div className="mt-2 space-y-2">

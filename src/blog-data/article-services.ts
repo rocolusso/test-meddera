@@ -13,6 +13,9 @@ const BOTOX = 'botoks-v-belczah-effektyvnoe-omolozhenye-lycza';
 const BIO = 'byorevytalyzaczyya-v-belczah';
 const FILLERS = 'konturnaya-plastyka-fylleramy-v-belczah';
 
+/** Slugs of the services that have a call-to-action entry (src/lib/cta/registry.ts). */
+export const SERVICE_SLUG = { DERM, CONSULT, ACNE, PIGMENT, PEELING, MESO, MESO_HAIR, LIPS, BOTOX, BIO, FILLERS } as const;
+
 export const SERVICE_LABELS: Record<string, { ru: string; ro: string }> = {
   [DERM]: { ru: 'Услуга «Дерматолог в Бельцах»', ro: 'Serviciul „Dermatolog în Bălți”' },
   [CONSULT]: { ru: 'Консультация дерматокосметолога', ro: 'Consultația dermatocosmetologului' },
@@ -58,6 +61,11 @@ const OVERRIDES: Record<string, string[]> = {
 /** Service slugs shown in the call to action at the end of an article (first one is the main service). */
 export function servicesForArticle(post: { id: string; clusterId: string | null }): string[] {
   return OVERRIDES[post.id] ?? RUBRIC_DEFAULT[post.clusterId ?? ''] ?? [CONSULT];
+}
+
+/** Services of a rubric (hub pages): the rubric default, or the consultation as a fallback. */
+export function servicesForCluster(clusterId: string | null): string[] {
+  return RUBRIC_DEFAULT[clusterId ?? ''] ?? [CONSULT];
 }
 
 export function serviceLabel(slug: string, locale: BlogLocale): string {

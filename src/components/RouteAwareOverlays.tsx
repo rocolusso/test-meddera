@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 
 import DeferredFloatingCallButton from '@/components/DeferredFloatingCallButton';
 import DeferredStickyLeadCta from '@/components/DeferredStickyLeadCta';
+import LeadQuizHost from '@/components/lead/LeadQuizHost';
 
 /**
  * FloatingCallButton + StickyLeadCta were previously gated server-side by
@@ -20,6 +21,7 @@ export default function RouteAwareOverlays() {
     <>
       <DeferredFloatingCallButton />
       <DeferredStickyLeadCta />
+      <LeadQuizHost />
     </>
   );
 }

@@ -94,6 +94,9 @@ export const TEXT = {
       appointment: 'Оставьте контакты и ответьте на 3 вопроса.',
       consultation: 'Заполните форму, и мы поможем подобрать решение.',
     },
+    modalSubtitlePrefilled: 'Оставьте контакты и ответьте на 2 вопроса.',
+    procedureLabel: 'Процедура',
+    changeProcedure: 'изменить',
     placeholders: {
       name: 'Имя',
       phone: 'Ваш номер телефона',
@@ -122,6 +125,9 @@ export const TEXT = {
       appointment: 'Lăsați datele de contact și răspundeți la 3 întrebări.',
       consultation: 'Completați formularul, iar noi vă ajutăm cu recomandări.',
     },
+    modalSubtitlePrefilled: 'Lăsați datele de contact și răspundeți la 2 întrebări.',
+    procedureLabel: 'Procedura',
+    changeProcedure: 'schimbă',
     placeholders: {
       name: 'Nume',
       phone: 'Numărul dumneavoastră de telefon',
@@ -146,10 +152,16 @@ export function getLocaleFromPath(pathname: string | null | undefined): Locale {
   return pathname === '/ro' || pathname.startsWith('/ro/') ? 'ro' : 'ru';
 }
 
-export function pushLeadCtaEvent(label: string) {
+/** Quiz opened: a funnel step, not a conversion. `cta_source` tells which button it was. */
+export function pushLeadCtaEvent(
+  label: string,
+  extra: { source?: string | null; procedure?: string | null } = {},
+) {
   if (typeof window === 'undefined') return;
   sendGa4Event('lead_sticky_cta_click', {
     button_name: label,
     event_label: 'sticky_lead',
+    ...(extra.source ? { cta_source: extra.source } : {}),
+    ...(extra.procedure ? { procedure: extra.procedure } : {}),
   });
 }

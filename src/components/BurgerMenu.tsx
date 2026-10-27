@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import { LazySearchPanel, preloadSearchPanel } from '@/components/search/LazySearchPanel';
 import SearchIcon from '@/components/search/SearchIcon';
 import { NAV_LINKS } from '@/lib/nav-links';
+import { useOverlayLock } from '@/lib/overlay-lock';
 import { SEARCH_UI_ENABLED } from '@/lib/search/config';
 import { SEARCH_STRINGS } from '@/lib/search/strings';
 
@@ -50,6 +51,7 @@ const itemClass =
 function BurgerMenu({ locale }: { locale: string }) {
   const [open, setOpen] = React.useState(false);
   const [searchOpen, setSearchOpen] = React.useState(false);
+  useOverlayLock(open);
   const wrapRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
 

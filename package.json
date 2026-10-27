@@ -32,6 +32,7 @@
     "verify:blog-content": "node scripts/verify-blog-metadata-content.mjs",
     "verify:search": "node scripts/verify-search.mjs",
     "verify:ga4": "node scripts/verify-ga4.mjs",
+    "verify:cta": "node scripts/verify-cta.mjs",
     "verify:search:off": "node scripts/verify-search.mjs --expect=off",
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm run build"
