@@ -23,7 +23,7 @@ export default function SearchPage() {
     <>
       <HeaderNew locale="ru" />
       <main className="border-b border-border/40 bg-gradient-to-b from-muted/20 via-background to-background">
-        <div className="pofo-container py-10 md:py-14">
+        <div className="pofo-container pb-10 pt-[25px] md:pb-14">
           <h1 className="alt-font text-balance text-[24px] font-semibold uppercase leading-[30px] text-pofo-heading md:text-[28px] md:leading-[34px]">
             {t.title}
           </h1>

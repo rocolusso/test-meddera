@@ -192,7 +192,7 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
   const fieldClass = contactFieldClass;
 
   return (
-    <div className="contacts scroll-mt-28 border-t border-border bg-background text-foreground" id="contacts">
+    <div className="contacts scroll-mt-24 border-t border-border bg-background text-foreground" id="contacts">
 
       <div className="pofo-container section-y">
         {hideHeading ? null : (

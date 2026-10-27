@@ -124,7 +124,7 @@ export default async function BlogPostRuPage({ params }: Props) {
       ) : null}
       <HeaderNew locale="ru" />
       <main className="bg-background">
-        <ContentArticleBody>{body}</ContentArticleBody>
+        <ContentArticleBody className="!pt-[25px]">{body}</ContentArticleBody>
       </main>
       <FooterNew locale="ru" />
     </>

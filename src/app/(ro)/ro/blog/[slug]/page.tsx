@@ -124,7 +124,7 @@ export default async function BlogPostRoPage({ params }: Props) {
       ) : null}
       <HeaderNew locale="ro" />
       <main className="bg-background">
-        <ContentArticleBody>{body}</ContentArticleBody>
+        <ContentArticleBody className="!pt-[25px]">{body}</ContentArticleBody>
       </main>
       <FooterNew locale="ro" />
     </>

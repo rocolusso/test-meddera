@@ -192,7 +192,7 @@ function ContactsLips({ locale }:{ locale:string }) {
   const fieldClass = contactFieldClass;
 
   return (
-    <div className="contacts-lips scroll-mt-28 border-t border-border bg-background text-foreground" id="contacts">
+    <div className="contacts-lips scroll-mt-24 border-t border-border bg-background text-foreground" id="contacts">
 
       <div className="pofo-container section-y">
         <div className="text-center">

@@ -73,7 +73,7 @@ export default function ContentPageShell(props: ContentPageShellProps) {
         ) : (
           <div
             className={[
-              'pofo-container section-y',
+              'pofo-container section-y !pt-[25px]',
               /* Pofo typography for hand-written custom pages (e.g. lips landing). */
               '[&_h1]:alt-font [&_h1]:text-pofo-heading [&_h2]:alt-font [&_h2]:text-pofo-heading',
               '[&_.rounded-2xl]:rounded-none [&_.rounded-lg]:rounded-none',

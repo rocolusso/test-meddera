@@ -101,7 +101,7 @@ function BurgerMenu({ locale }: { locale: string }) {
         {open ? (
           <div
             role="menu"
-            className="fixed inset-x-0 top-[calc(5.25rem+env(safe-area-inset-top,0px))] z-[200] max-h-[calc(100dvh-5.25rem)] overflow-y-auto bg-[#232323] pb-1 shadow-header animate-fade-in [animation-duration:0.25s]"
+            className="fixed inset-x-0 top-[calc(4.25rem+env(safe-area-inset-top,0px))] z-[200] max-h-[calc(100dvh-4.25rem)] overflow-y-auto bg-[#232323] pb-1 shadow-header animate-fade-in [animation-duration:0.25s]"
           >
             {SEARCH_UI_ENABLED ? (
               <button type="button" role="menuitem" className={itemClass} onClick={openSearch}>

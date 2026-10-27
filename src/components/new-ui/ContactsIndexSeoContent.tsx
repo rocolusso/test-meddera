@@ -21,7 +21,7 @@ function ClinicPhoneLink() {
 export default function ContactsIndexSeoContent({ locale }: { locale: 'ru' | 'ro' }) {
   if (locale === 'ro') {
     return (
-      <ContentArticleBody className="!max-w-[1200px] !pb-10 !pt-10 md:!pb-14 md:!pt-14">
+      <ContentArticleBody className="!max-w-[1200px] !pb-10 !pt-[25px] md:!pb-14">
         <h1 className="alt-font !text-[26px] !font-semibold !leading-[34px] !text-pofo-heading md:!text-[32px] md:!leading-[40px]">
           Contacte — clinica Meddera, Bălți
         </h1>
@@ -85,7 +85,7 @@ export default function ContactsIndexSeoContent({ locale }: { locale: 'ru' | 'ro
   }
 
   return (
-    <ContentArticleBody className="!max-w-[1200px] !pb-10 !pt-10 md:!pb-14 md:!pt-14">
+    <ContentArticleBody className="!max-w-[1200px] !pb-10 !pt-[25px] md:!pb-14">
       <h1 className="alt-font !text-[26px] !font-semibold !leading-[34px] !text-pofo-heading md:!text-[32px] md:!leading-[40px]">
         Контакты — клиника Meddera, Бельцы
       </h1>

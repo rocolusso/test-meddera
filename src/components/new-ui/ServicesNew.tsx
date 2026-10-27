@@ -65,10 +65,10 @@ function ServicesNew({
 
   return (
     <section
-      className="services__block scroll-mt-28 bg-background"
+      className="services__block scroll-mt-24 bg-background"
       id={titleAs === 'h1' ? 'services-index' : 'services'}
     >
-      <div className="pofo-container section-y">
+      <div className={`pofo-container section-y${titleAs === 'h1' ? ' !pt-[25px]' : ''}`}>
         <SectionHeading
           as={titleAs}
           separator

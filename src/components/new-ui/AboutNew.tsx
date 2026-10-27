@@ -39,12 +39,12 @@ function AboutNew({
     'alt-font text-center text-[22px] font-semibold leading-[30px] text-pofo-heading sm:text-[26px] sm:leading-[34px] lg:text-left';
 
   return (
-    <section className="hero__about scroll-mt-28 bg-background" id="about">
-      <div className="pofo-container section-y">
+    <section className="hero__about scroll-mt-24 bg-background" id="about">
+      <div className="pofo-container section-y !pt-[25px]">
         <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-[70px]">
           {/* Photo: stays the LCP element, therefore never animated. */}
           {/* Text comes first on every breakpoint; photo is order-2 (mobile: below text, desktop: right column). */}
-          <aside className="relative order-2 mx-auto w-full max-w-md lg:sticky lg:top-28 lg:max-w-none">
+          <aside className="relative order-2 mx-auto w-full max-w-md lg:sticky lg:top-24 lg:max-w-none">
             <span
               aria-hidden
               className="pointer-events-none absolute -bottom-4 -right-4 hidden h-full w-full border border-deep-pink sm:block lg:-bottom-6 lg:-right-6"
