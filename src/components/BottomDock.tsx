@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation';
 import BookCtaButton from '@/components/cta/BookCtaButton';
 import DoctorPhoto from '@/components/cta/DoctorPhoto';
 import PhoneIcon from '@/components/cta/PhoneIcon';
+import ReceptionDot, { hasReceptionDot } from '@/components/cta/ReceptionDot';
+import { useReceptionIndicator } from '@/components/cta/useReceptionIndicator';
 import CookiesPolicy from '@/components/CookiesPolicy';
 import { openLeadQuiz } from '@/components/lead/lead-quiz-store';
 import { getLocaleFromPath } from '@/components/lead/leadFormConstants';
@@ -30,6 +32,7 @@ export default function BottomDock() {
   const locale = getLocaleFromPath(pathname);
   const onAds = pathname.startsWith('/ads');
   const consent = useCookieConsent();
+  const reception = useReceptionIndicator();
   const showBanner = consent === 'pending';
   const visible = !onAds || showBanner;
   const ref = useRef<HTMLDivElement>(null);
@@ -83,11 +86,14 @@ export default function BottomDock() {
             href={CLINIC_TEL_HREF}
             id="dockCallCta"
             aria-label={CTA_CALL_LABEL[locale]}
+            aria-describedby={hasReceptionDot(reception) ? 'dockCallHours' : undefined}
+            data-reception={reception ?? undefined}
             data-cta-event="phone_click_fixed_1"
             data-cta-source="dock_call"
-            className="dock-call pointer-events-auto flex size-14 shrink-0 items-center justify-center rounded-full bg-[#00aa2d] text-white shadow-lg shadow-green-600/30 transition active:scale-95"
+            className="dock-call pointer-events-auto relative flex size-14 shrink-0 items-center justify-center rounded-full bg-[#00aa2d] text-white shadow-lg shadow-green-600/30 transition active:scale-95"
           >
             <PhoneIcon className="size-6" />
+            <ReceptionDot state={reception} locale={locale} hoursId="dockCallHours" className="right-px top-px" />
           </a>
         </div>
       ) : null}

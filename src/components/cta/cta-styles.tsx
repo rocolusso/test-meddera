@@ -63,6 +63,21 @@ export function CtaAnimationStyles() {
         30% { transform: rotate(-9deg); }
         40% { transform: rotate(6deg); }
       }
+      @keyframes ctaGlow {
+        0%, 100% { box-shadow: 0 10px 28px rgba(236, 72, 153, 0.55), 0 0 0 0 rgba(236, 72, 153, 0.35); }
+        50% { box-shadow: 0 10px 36px rgba(236, 72, 153, 0.8), 0 0 0 9px rgba(236, 72, 153, 0); }
+      }
+      /* Reception is closed: the book button glows stronger, the call button calms down. */
+      .primary-cta-shine-loop[data-reception='closed'] {
+        animation: ctaGlow 2.4s ease-in-out infinite;
+      }
+      .primary-cta-button.primary-cta-shine-loop[data-reception='closed'] {
+        animation: ctaFloat 4s ease-in-out infinite, ctaGlow 2.4s ease-in-out infinite;
+      }
+      .dock-call[data-reception='closed'],
+      .dock-call[data-reception='closed'] svg {
+        animation: none;
+      }
       .dock-call {
         animation: dockCallPulse 1.4s ease-out infinite;
       }
@@ -74,6 +89,11 @@ export function CtaAnimationStyles() {
         .dock-call,
         .dock-call svg {
           animation: none;
+        }
+        .primary-cta-shine-loop[data-reception='closed'],
+        .primary-cta-button.primary-cta-shine-loop[data-reception='closed'] {
+          animation: none;
+          box-shadow: 0 10px 28px rgba(236, 72, 153, 0.55);
         }
         .primary-cta-button {
           animation: none;

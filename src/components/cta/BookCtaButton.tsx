@@ -6,6 +6,7 @@ import type { LeadQuizSource } from '@/lib/cta/keys';
 
 import { CtaAnimationStyles } from './cta-styles';
 import DoctorPhoto from './DoctorPhoto';
+import { useReceptionIndicator } from './useReceptionIndicator';
 
 type Props = {
   locale: Locale;
@@ -22,12 +23,14 @@ type Props = {
 /** The pink "Записаться онлайн" button: opens the lead quiz. */
 export default function BookCtaButton({ locale, variant, source, id }: Props) {
   const pill = variant === 'pill';
+  const reception = useReceptionIndicator();
 
   return (
     <>
       <button
         type="button"
         id={id}
+        data-reception={reception === 'closed' ? 'closed' : undefined}
         onClick={() => openLeadQuiz({ source })}
         className={`
           primary-cta-shine-loop

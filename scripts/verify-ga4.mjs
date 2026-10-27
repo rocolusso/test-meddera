@@ -121,6 +121,27 @@ test('getReceptionIndicator uses Europe/Chisinau time', () => {
   assert.equal(at('2026-07-06T12:00:00Z'), 'off'); //    Monday
 });
 
+test('getReceptionIndicator around the clock change (25 Oct 2026, 04:00 EEST -> 03:00 EET)', () => {
+  const at = (iso) => schedule.getReceptionIndicator(new Date(iso));
+  assert.equal(at('2026-10-24T14:59:00Z'), 'open'); //   Sat 17:59 EEST (UTC+3)
+  assert.equal(at('2026-10-24T15:00:00Z'), 'closed'); // Sat 18:00 EEST
+  assert.equal(at('2026-10-25T00:30:00Z'), 'off'); //    Sun 03:30 EEST
+  assert.equal(at('2026-10-25T01:30:00Z'), 'off'); //    Sun 03:30 EET, the repeated hour
+  assert.equal(at('2026-10-26T12:00:00Z'), 'off'); //    Mon
+  assert.equal(at('2026-10-27T10:59:00Z'), 'closed'); // Tue 12:59 EET (UTC+2)
+  assert.equal(at('2026-10-27T11:00:00Z'), 'open'); //   Tue 13:00 EET
+  // The same instant gives the same answer whatever the process time zone is.
+  const before = process.env.TZ;
+  for (const tz of ['America/New_York', 'Asia/Tokyo', 'UTC']) {
+    process.env.TZ = tz;
+    assert.equal(at('2026-10-24T14:59:00Z'), 'open', tz);
+    assert.equal(at('2026-10-27T11:00:00Z'), 'open', tz);
+    assert.equal(at('2026-10-25T01:30:00Z'), 'off', tz);
+  }
+  if (before === undefined) delete process.env.TZ;
+  else process.env.TZ = before;
+});
+
 /* ---------- 3. browser client ---------- */
 
 async function loadClient() {
