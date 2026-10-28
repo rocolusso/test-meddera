@@ -103,12 +103,12 @@ function ServicePageMoneyRO() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <ContentPageShell variant="custom" locale="ro" contactsVariant="lips">
-        <h1 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl max-w-3xl">
+        <h1 className="mx-auto max-w-3xl text-balance text-left text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-center">
           Mărire buze în Bălți — sigur, frumos și natural
         </h1>
-        <div className="mx-auto mt-5 h-px w-16 bg-border md:mx-0" aria-hidden />
+        <div className="mr-auto mt-5 h-px w-16 bg-border md:mx-auto" aria-hidden />
 
-        <p className="mt-6 max-w-3xl text-center text-sm text-muted-foreground md:text-left">
+        <p className="mx-auto mt-6 max-w-3xl text-left text-sm text-muted-foreground md:text-center">
           <Link
             href="/ro/blog/marire-buzelor-balti"
             className="font-medium text-brand-gold underline-offset-4 hover:underline"
@@ -117,7 +117,7 @@ function ServicePageMoneyRO() {
           </Link>
         </p>
 
-        <p className="mt-8 max-w-3xl text-lg leading-relaxed text-foreground/90">
+        <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-foreground/90">
           Conturarea buzelor cu fillere certificate pe bază de acid hialuronic este o procedură modernă și sigură pentru
           corectarea formei, volumului și simetriei buzelor. În clinica Meddera, dermatologul cosmetolog experimentat
           ajustează schema procedurii pentru a obține un rezultat natural și armonios. Efectul este vizibil imediat
@@ -125,19 +125,19 @@ function ServicePageMoneyRO() {
         </p>
 
         <div className="mt-10 flex justify-center">
-          <div className="relative aspect-[6/5] w-full max-w-xl overflow-hidden rounded-2xl bg-muted/40 shadow-lg ring-1 ring-border/50">
+          <div className="relative aspect-[16/10] w-full max-w-4xl overflow-hidden rounded-2xl bg-muted/40 shadow-lg ring-1 ring-border/50">
             <Image
               src={uvelichenieGub}
               alt="Mărire buze în Bălți"
               fill
               className="object-cover object-center"
-              sizes="(max-width: 768px) 100vw, 576px"
+              sizes="(max-width: 768px) 100vw, 896px"
               priority
             />
           </div>
         </div>
 
-        <div className="mt-12 flex w-full max-w-3xl flex-col">
+        <div className="mx-auto mt-12 flex w-full max-w-3xl flex-col">
           <h2 className="text-2xl font-semibold text-foreground">Avantajele procedurii la Meddera</h2>
           <ul className="mt-4 list-disc space-y-2 pl-6 text-foreground/90">
             <li>Dermatolog-cosmetolog experimentat cu educație medicală</li>
@@ -223,7 +223,7 @@ function ServicePageMoneyRO() {
           </ul>
         </div>
 
-        <div className="mt-12 rounded-xl border border-border/50 bg-muted/30 p-6 text-center">
+        <div className="mx-auto mt-12 max-w-3xl rounded-xl border border-border/50 bg-muted/30 p-6 text-center">
           <p className="font-semibold text-lg text-foreground">Gata să îți evidențiezi frumusețea?</p>
           <p className="mt-2 text-foreground/90">Contactează-ne telefonic sau programează o consultație online.</p>
         </div>

@@ -106,7 +106,7 @@ function ArticleLayout({
 }) {
   return (
     <>
-      <PageTitleMini title={title} />
+      <PageTitleMini title={title} centerOnDesktop />
 
       <div className="pofo-container section-y !pt-[50px] lg:!pt-[70px]">
         <div className="relative mx-auto aspect-[16/10] max-w-4xl overflow-hidden bg-muted">

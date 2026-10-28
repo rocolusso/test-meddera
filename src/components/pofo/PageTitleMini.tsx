@@ -7,14 +7,31 @@ type Props = {
   title: React.ReactNode;
   breadcrumbs?: Breadcrumb[];
   breadcrumbsLabel?: string;
+  /** Title centered from `md` up (left on phones). Off by default, so other pages keep the left title. */
+  centerOnDesktop?: boolean;
 };
 
 /** Pofo "page title mini version": light strip, uppercase h1 left, breadcrumbs right. */
-export default function PageTitleMini({ title, breadcrumbs, breadcrumbsLabel = 'Breadcrumb' }: Props) {
+export default function PageTitleMini({
+  title,
+  breadcrumbs,
+  breadcrumbsLabel = 'Breadcrumb',
+  centerOnDesktop = false,
+}: Props) {
   return (
     <section className="bg-pofo-light-gray py-[35px]">
-      <div className="pofo-container flex flex-col items-center gap-2.5 md:flex-row md:justify-between md:gap-8">
-        <h1 className="alt-font text-balance text-center text-[20px] font-semibold uppercase leading-[26px] text-pofo-heading md:text-left">
+      <div
+        className={[
+          'pofo-container flex flex-col items-center gap-2.5 md:flex-row md:gap-8',
+          centerOnDesktop ? 'md:justify-center' : 'md:justify-between',
+        ].join(' ')}
+      >
+        <h1
+          className={[
+            'alt-font text-balance text-[20px] font-semibold uppercase leading-[26px] text-pofo-heading',
+            centerOnDesktop ? 'w-full text-left md:text-center' : 'text-center md:text-left',
+          ].join(' ')}
+        >
           {title}
         </h1>
         {breadcrumbs && breadcrumbs.length > 0 ? (

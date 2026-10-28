@@ -103,12 +103,12 @@ function ServicePageMoney() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <ContentPageShell variant="custom" locale="ru" contactsVariant="lips">
-        <h1 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl max-w-3xl">
+        <h1 className="mx-auto max-w-3xl text-balance text-left text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-center">
           Увеличение губ в Бельцах — безопасно, красиво и естественно
         </h1>
-        <div className="mx-auto mt-5 h-px w-16 bg-border md:mx-0" aria-hidden />
+        <div className="mr-auto mt-5 h-px w-16 bg-border md:mx-auto" aria-hidden />
 
-        <p className="mt-6 max-w-3xl text-center text-sm text-muted-foreground md:text-left">
+        <p className="mx-auto mt-6 max-w-3xl text-left text-sm text-muted-foreground md:text-center">
           <Link
             href="/blog/uvelichenie-gub-beltsy"
             className="font-medium text-brand-gold underline-offset-4 hover:underline"
@@ -117,7 +117,7 @@ function ServicePageMoney() {
           </Link>
         </p>
 
-        <p className="mt-8 max-w-3xl text-lg leading-relaxed text-foreground/90">
+        <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-foreground/90">
           Контурная пластика губ с использованием сертифицированных филлеров на основе гиалуроновой кислоты — это
           современная и безопасная процедура для коррекции формы, объема и симметрии губ. В нашей клинике Meddera
           опытный дерматокосметолог подбирает индивидуальную схему процедуры, чтобы результат выглядел максимально
@@ -125,19 +125,19 @@ function ServicePageMoney() {
         </p>
 
         <div className="mt-10 flex justify-center">
-          <div className="relative aspect-[6/5] w-full max-w-xl overflow-hidden rounded-2xl bg-muted/40 shadow-lg ring-1 ring-border/50">
+          <div className="relative aspect-[16/10] w-full max-w-4xl overflow-hidden rounded-2xl bg-muted/40 shadow-lg ring-1 ring-border/50">
             <Image
               src={uvelichenieGub}
               alt="Увеличение губ в Бельцах"
               fill
               className="object-cover object-center"
-              sizes="(max-width: 768px) 100vw, 576px"
+              sizes="(max-width: 768px) 100vw, 896px"
               priority
             />
           </div>
         </div>
 
-        <div className="mt-12 flex w-full max-w-3xl flex-col">
+        <div className="mx-auto mt-12 flex w-full max-w-3xl flex-col">
           <h2 className="text-2xl font-semibold text-foreground">Преимущества увеличения губ в Meddera</h2>
           <ul className="mt-4 list-disc space-y-2 pl-6 text-foreground/90">
             <li>Опытный врач-дерматокосметолог с медицинским образованием</li>
@@ -223,7 +223,7 @@ function ServicePageMoney() {
           </ul>
         </div>
 
-        <div className="mt-12 rounded-xl border border-border/50 bg-muted/30 p-6 text-center">
+        <div className="mx-auto mt-12 max-w-3xl rounded-xl border border-border/50 bg-muted/30 p-6 text-center">
           <p className="font-semibold text-lg text-foreground">Готовы подчеркнуть свою красоту?</p>
           <p className="mt-2 text-foreground/90">Свяжитесь с нами по телефону или запишитесь онлайн.</p>
         </div>
