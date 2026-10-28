@@ -198,6 +198,7 @@ export const LEAD_QUIZ_SOURCE_LABELS: Record<LeadQuizSource, Bilingual> = {
   article_card: { ru: 'Карточка в статье', ro: 'Card în articol' },
   hub_card: { ru: 'Карточка на странице рубрики', ro: 'Card pe pagina rubricii' },
   teaser_scroll60: { ru: 'Тизер при прокрутке', ro: 'Teaser la derulare' },
+  hero_banner: { ru: 'Баннер на главной', ro: 'Banner pe pagina principală' },
 };
 
 const KEY_BY_SERVICE: Record<string, CtaKey> = {

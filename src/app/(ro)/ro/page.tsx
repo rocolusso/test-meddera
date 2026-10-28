@@ -6,6 +6,8 @@ import HeaderNew from '@/components/new-ui/HeaderNew';
 // import HeroNew from '@/components/new-ui/HeroNew';
 import ContactsDynamicWrapperRo from '@/components/ContactsDynamicWrapperRo';
 import AboutNew from '@/components/new-ui/AboutNew';
+import HeroBanner from '@/components/hero-banner/HeroBanner';
+import { isHeroBannerEnabled } from '@/lib/hero-banner/config';
 import ServicesNew from '@/components/new-ui/ServicesNew';
 import HomeSeoContentRo from '@/components/new-ui/HomeSeoContentRo';
 import FooterNew from '@/components/new-ui/FooterNew';
@@ -67,6 +69,7 @@ export default function Home() {
       <HeaderNew locale="ro" />
       {/*<HeroNew />*/}
       <main>
+        {isHeroBannerEnabled() ? <HeroBanner locale="ro" /> : null}
         <AboutNew locale="ro" />
         <ServicesNew locale="ro" />
         <HomeSeoContentRo />

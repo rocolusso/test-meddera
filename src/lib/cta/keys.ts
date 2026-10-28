@@ -31,6 +31,7 @@ export const LEAD_QUIZ_SOURCES = [
   'article_card',
   'hub_card',
   'teaser_scroll60',
+  'hero_banner',
 ] as const;
 
 export type LeadQuizSource = (typeof LEAD_QUIZ_SOURCES)[number];

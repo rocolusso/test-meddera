@@ -8,3 +8,8 @@ RECAPTCHA_SECRET_KEY="token....code"
 # SEARCH_ENABLED is read by /api/search at runtime and by the /search pages at build time.
 NEXT_PUBLIC_SEARCH_ENABLED="false"
 SEARCH_ENABLED="false"
+
+# Animated banner on the home pages (/ and /ro), above the "About" block.
+# It is on only when the value is "true"; unset or any other value keeps the pages as they were.
+# Read at build time, so after changing it redeploy.
+HERO_BANNER_ENABLED="false"

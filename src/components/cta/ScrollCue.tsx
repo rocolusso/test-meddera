@@ -37,10 +37,13 @@ export default function ScrollCue() {
   const [ready, setReady] = useState(false);
   const [atTop, setAtTop] = useState(true);
   const [tall, setTall] = useState(false);
+  // The home banner brings its own animated chevron, so this one steps aside there.
+  const [hasBanner, setHasBanner] = useState(false);
 
   useEffect(() => {
     if (excluded) return undefined;
     setReady(false);
+    setHasBanner(document.querySelector('[data-hero-banner]') !== null);
     // Reloaded or opened by an anchor in the middle of a page: the visitor is already scrolling.
     setAtTop(window.scrollY <= HIDE_AFTER_PX);
 
@@ -75,7 +78,7 @@ export default function ScrollCue() {
     };
   }, [pathname, excluded]);
 
-  if (excluded || !ready) return null;
+  if (excluded || !ready || hasBanner) return null;
 
   const locale = getLocaleFromPath(pathname);
   const visible = atTop && tall && !overlayOpen;

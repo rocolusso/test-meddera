@@ -1,0 +1,606 @@
+/*
+ * Home-page banner. Loaded only where <HeroBanner> is rendered.
+ * Only transform and opacity are animated. Heights are fixed per breakpoint (no layout shift).
+ * One 12 s loop of six 2 s scenes; every animation starts 0.6 s into the loop, so the first scene
+ * is already on screen when the page paints.
+ */
+.hb {
+  --hb-red: #ff214f;
+  --hb-c: 340px;
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+  width: 100%;
+  height: 520px;
+  padding: 40px 0;
+  overflow: hidden;
+  background: #0c0c0f;
+  color: #fff;
+  font-family: var(--font-alt, 'Montserrat Variable', ui-sans-serif, system-ui, sans-serif);
+}
+
+.hb__in {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hb__glow {
+  position: absolute;
+  z-index: 0;
+  top: -160px;
+  right: -120px;
+  width: 760px;
+  height: 760px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 33, 79, 0.5), rgba(255, 33, 79, 0));
+  pointer-events: none;
+  will-change: transform;
+  animation: hb-drift 9s ease-in-out infinite;
+}
+
+.hb__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hb__tag {
+  position: absolute;
+  top: 34px;
+  left: 71px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c9c9cf;
+}
+
+.hb__tag b {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--hb-red);
+}
+
+.hb__tag b::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--hb-red);
+  animation: hb-dot 1.6s ease-out infinite;
+}
+
+/* ---------- scenes ---------- */
+.hb__slot {
+  position: absolute;
+  top: 50px;
+  left: 71px;
+  width: 600px;
+  height: 340px;
+}
+
+.hb__sc {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  animation: hb-sc 12s ease infinite both;
+  animation-delay: calc(var(--k) * 2s - 0.6s);
+}
+
+.hb__sc--1 { --k: 0; }
+.hb__sc--2 { --k: 1; }
+.hb__sc--3 { --k: 2; }
+.hb__sc--4 { --k: 3; }
+.hb__sc--5 { --k: 4; }
+.hb__sc--6 { --k: 5; }
+
+:where(.hb) p {
+  margin: 0;
+}
+
+.hb__h {
+  font-size: 46px;
+  line-height: 54px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.hb__h em,
+.hb__note em {
+  font-style: normal;
+  color: var(--hb-red);
+}
+
+.hb__h--big { font-size: 58px; line-height: 64px; }
+.hb__h--name { font-size: 44px; line-height: 52px; }
+
+.hb__sub {
+  margin-top: 14px;
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 700;
+  color: var(--hb-red);
+}
+
+.hb__note {
+  margin-top: 14px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #c9c9cf;
+}
+
+.hb__note--role {
+  margin: 6px 0 26px;
+}
+
+.hb__bar {
+  display: block;
+  width: 180px;
+  height: 5px;
+  margin-top: 14px;
+  border-radius: 3px;
+  background: var(--hb-red);
+  transform-origin: left;
+  animation: hb-bar 12s ease infinite both;
+  animation-delay: calc(var(--k, 2) * 2s - 0.6s);
+}
+
+.hb__sc--3 .hb__bar { --k: 2; }
+
+.hb__steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.hb__step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 33, 79, 0.6);
+  background: rgba(255, 33, 79, 0.12);
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hb__step i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--hb-red);
+  color: #fff;
+}
+
+.hb__step svg {
+  width: 14px;
+  height: 14px;
+}
+
+.hb__cta {
+  position: relative;
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 60px;
+  padding: 0 32px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--hb-red);
+  color: #fff;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  pointer-events: none;
+  animation: hb-btn 12s linear infinite both;
+  animation-delay: calc(var(--k, 5) * 2s - 0.6s);
+}
+
+.hb__cta::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border: 2px solid var(--hb-red);
+  pointer-events: none;
+  animation: hb-ring 1.8s ease-out infinite;
+}
+
+.hb__cta svg {
+  flex: none;
+}
+
+.hb__cta:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* A keyboard user who tabs to the button gets the button scene, held still. */
+.hb:focus-within .hb__sc:not(.hb__sc--cta) {
+  animation: none;
+  opacity: 0;
+}
+
+.hb__sc--cta:focus-within {
+  animation: none;
+  opacity: 1;
+  transform: none;
+}
+
+.hb__sc--cta:focus-within .hb__cta {
+  animation: none;
+  pointer-events: auto;
+}
+
+/* ---------- photo circle ---------- */
+.hb__circ {
+  position: absolute;
+  top: 50px;
+  right: 65px;
+  width: var(--hb-c);
+  height: var(--hb-c);
+}
+
+.hb__ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 33, 79, 0.5);
+  animation: hb-ring-big 3s ease-out infinite;
+}
+
+.hb__dash {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  animation: hb-spin 16s linear infinite;
+}
+
+.hb__photo {
+  position: absolute;
+  inset: calc(var(--hb-c) * 0.06);
+  width: calc(var(--hb-c) * 0.88);
+  height: calc(var(--hb-c) * 0.88);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 18%;
+  box-shadow: 0 0 60px rgba(255, 33, 79, 0.45);
+}
+
+.hb__plate {
+  position: absolute;
+  opacity: 0;
+  animation: hb-plate 12s ease infinite both;
+  animation-delay: -0.6s;
+}
+
+.hb__plate > span {
+  display: block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 33, 79, 0.65);
+  background: rgba(24, 24, 28, 0.92);
+  box-shadow: 0 10px 30px rgba(255, 33, 79, 0.3);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  white-space: nowrap;
+  animation: hb-bob 3s ease-in-out infinite;
+}
+
+.hb__plate--1 { left: -29%; top: 13%; }
+.hb__plate--2 { left: 65%; top: 6%; }
+.hb__plate--3 { left: -26%; top: 59%; }
+.hb__plate--4 { left: 68%; top: 53%; }
+.hb__plate--2 > span { animation-delay: -1s; }
+.hb__plate--3 > span { animation-delay: -2s; }
+.hb__plate--4 > span { animation-delay: -0.5s; }
+
+/* ---------- progress, scroll cue ---------- */
+.hb__prog {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hb__prog i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--hb-red);
+  transform-origin: left;
+  animation: hb-prog 12s linear infinite;
+  animation-delay: -0.6s;
+}
+
+.hb__chev {
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  margin-left: -40px;
+  color: var(--hb-red);
+  pointer-events: none;
+}
+
+.hb__chev svg {
+  display: block;
+  margin-top: -6px;
+  animation: hb-chev 1.6s ease-in-out infinite;
+}
+
+.hb__chev svg:first-child { margin-top: 0; }
+.hb__chev svg:nth-child(2) { animation-delay: 0.2s; }
+.hb__chev svg:nth-child(3) { animation-delay: 0.4s; }
+
+.hb__chev span {
+  margin-top: 6px;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* ---------- paused off screen ---------- */
+.hb[data-paused='true'] *,
+.hb[data-paused='true'] *::after,
+.hb[data-paused='true'] {
+  animation-play-state: paused !important;
+}
+
+/* ---------- keyframes ---------- */
+@keyframes hb-sc {
+  0% { opacity: 0; transform: translateY(16px); }
+  4% { opacity: 1; transform: translateY(0); }
+  14.5% { opacity: 1; transform: translateY(0); }
+  16.67% { opacity: 0; transform: translateY(-12px); }
+  100% { opacity: 0; transform: translateY(-12px); }
+}
+
+@keyframes hb-btn {
+  0% { pointer-events: none; }
+  4% { pointer-events: auto; }
+  14.5% { pointer-events: auto; }
+  16.67% { pointer-events: none; }
+  100% { pointer-events: none; }
+}
+
+@keyframes hb-plate {
+  0% { opacity: 0; }
+  3% { opacity: 1; }
+  30% { opacity: 1; }
+  33.3% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes hb-bar {
+  0% { transform: scaleX(0); }
+  6% { transform: scaleX(0); }
+  14% { transform: scaleX(1); }
+  100% { transform: scaleX(1); }
+}
+
+@keyframes hb-prog {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
+@keyframes hb-ring {
+  0% { transform: scale(1); opacity: 0.55; }
+  100% { transform: scale(1.12, 1.3); opacity: 0; }
+}
+
+@keyframes hb-ring-big {
+  0% { transform: scale(1); opacity: 0.55; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
+
+@keyframes hb-dot {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(2.8); opacity: 0; }
+}
+
+@keyframes hb-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes hb-drift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(40px, -24px); }
+}
+
+@keyframes hb-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes hb-chev {
+  0%, 100% { opacity: 0.12; transform: translateY(-4px); }
+  50% { opacity: 1; transform: translateY(4px); }
+}
+
+/* ---------- tablet ---------- */
+@media (max-width: 1099px) {
+  .hb {
+    --hb-c: 260px;
+    height: 460px;
+  }
+
+  .hb__tag { top: 12px; left: 40px; }
+
+  .hb__slot {
+    top: 30px;
+    left: 40px;
+    width: calc(100% - 40px - var(--hb-c) - 40px - 24px);
+    height: 320px;
+  }
+
+  .hb__circ { top: 60px; right: 40px; }
+
+  .hb__h { font-size: 34px; line-height: 40px; }
+  .hb__h--big { font-size: 42px; line-height: 48px; }
+  .hb__h--name { font-size: 34px; line-height: 40px; }
+  .hb__sub { margin-top: 12px; font-size: 20px; line-height: 28px; }
+  .hb__note { font-size: 17px; line-height: 26px; }
+  .hb__note--role { margin: 4px 0 20px; }
+  .hb__step { padding: 11px 16px; font-size: 16px; }
+  .hb__cta { height: 54px; padding: 0 26px; font-size: 16px; }
+
+  .hb__plate > span { padding: 9px 16px; font-size: 14px; }
+  .hb__plate--1,
+  .hb__plate--3 { display: none; }
+  .hb__plate--2 { right: -10%; left: auto; top: 4%; }
+  .hb__plate--4 { right: -8%; left: auto; }
+}
+
+/* ---------- mobile ---------- */
+@media (max-width: 767px) {
+  .hb {
+    --hb-c: clamp(190px, 59vw, 240px);
+    height: 580px;
+    padding: 0;
+  }
+
+  .hb__tag { top: 20px; left: 20px; font-size: 10px; gap: 8px; letter-spacing: 0.18em; }
+  .hb__tag b { width: 7px; height: 7px; }
+
+  .hb__slot {
+    top: 48px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    height: 206px;
+  }
+
+  .hb__circ {
+    top: 262px;
+    right: auto;
+    left: 50%;
+    margin-left: calc(var(--hb-c) / -2);
+  }
+
+  .hb__br { display: none; }
+
+  .hb__h { font-size: clamp(22px, 6.9vw, 27px); line-height: 1.22; }
+  .hb__h--big { font-size: clamp(30px, 9.7vw, 38px); line-height: 1.1; }
+  .hb__h--name { font-size: clamp(25px, 7.7vw, 30px); line-height: 1.2; }
+  .hb__h--mid { font-size: clamp(19px, 5.6vw, 22px); line-height: 1.27; }
+  .hb__sub { margin-top: 10px; font-size: clamp(16px, 4.9vw, 19px); line-height: 1.32; }
+  .hb__note { margin-top: 10px; font-size: clamp(13px, 3.85vw, 15px); line-height: 1.47; }
+  .hb__note--role { margin: 4px 0 16px; }
+  .hb__steps { gap: 8px; margin-bottom: 12px; }
+  .hb__step { gap: 8px; padding: 9px 14px; border-radius: 14px; font-size: 14px; }
+  .hb__step i { width: 22px; height: 22px; }
+  .hb__step svg { width: 12px; height: 12px; }
+  .hb__bar { width: 120px; height: 4px; margin-top: 10px; }
+
+  .hb__cta {
+    align-self: stretch;
+    height: 56px;
+    padding: 0 16px;
+    font-size: 17px;
+  }
+
+  .hb__glow { top: -200px; right: -200px; width: 520px; height: 520px; }
+
+  .hb__plate > span { padding: 9px 14px; font-size: 13px; }
+  .hb__plate--1 { left: -30%; top: 21%; }
+  .hb__plate--2 { right: -30%; left: auto; top: 12%; }
+  .hb__plate--3 { display: block; left: -30%; top: 68%; }
+  .hb__plate--4 { right: -30%; left: auto; top: 60%; }
+}
+
+/* ---------- narrow phones ---------- */
+@media (max-width: 374px) {
+  .hb__steps { gap: 6px; }
+  .hb__step { gap: 6px; padding: 7px 10px; font-size: 12.5px; }
+  .hb__step i { width: 18px; height: 18px; }
+  .hb__step svg { width: 10px; height: 10px; }
+}
+
+/* ---------- reduced motion: one still frame, the thesis and the button ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .hb *,
+  .hb *::after,
+  .hb__glow {
+    animation: none !important;
+  }
+
+  .hb__slot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .hb__sc {
+    position: static;
+    display: none;
+    opacity: 1;
+  }
+
+  .hb__sc--thesis,
+  .hb__sc--cta {
+    display: flex;
+  }
+
+  .hb__sc--cta .hb__h,
+  .hb__sc--cta .hb__note {
+    display: none;
+  }
+
+  .hb__cta {
+    pointer-events: auto;
+  }
+
+  .hb__cta::after,
+  .hb__bar,
+  .hb__prog,
+  .hb__plate {
+    display: none;
+  }
+
+  .hb__chev svg {
+    opacity: 0.8;
+  }
+}
