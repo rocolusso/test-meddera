@@ -1,12 +1,19 @@
 /*
  * Home-page banner. Loaded only where <HeroBanner> is rendered.
  * Only transform and opacity are animated. Heights are fixed per breakpoint (no layout shift).
- * One 12 s loop of six 2 s scenes; every animation starts 0.6 s into the loop, so the first scene
- * is already on screen when the page paints.
+ * One loop of six scenes, 3 s each (--hb-scene), 18 s in all (--hb-loop); a scene is fully visible
+ * for about 2.3 s so the text can be read. Every animation starts 0.6 s into the loop, so the first
+ * scene is already on screen when the page paints. The keyframe percentages below are fractions of
+ * the loop (one scene = 16.67 %), they stay valid if --hb-scene changes.
+ * --hb-k scales the ambient motion (pulses, rings, dashed spin, drift, bob, chevron): 1 is the
+ * original tempo, 1.5 is a third slower.
  */
 .hb {
   --hb-red: #ff214f;
   --hb-c: 340px;
+  --hb-scene: 3s;
+  --hb-loop: calc(var(--hb-scene) * 6);
+  --hb-k: 1.5;
   position: relative;
   isolation: isolate;
   box-sizing: border-box;
@@ -38,7 +45,7 @@
   background: radial-gradient(closest-side, rgba(255, 33, 79, 0.5), rgba(255, 33, 79, 0));
   pointer-events: none;
   will-change: transform;
-  animation: hb-drift 9s ease-in-out infinite;
+  animation: hb-drift calc(9s * var(--hb-k)) ease-in-out infinite;
 }
 
 .hb__sr {
@@ -81,7 +88,7 @@
   inset: 0;
   border-radius: 50%;
   background: var(--hb-red);
-  animation: hb-dot 1.6s ease-out infinite;
+  animation: hb-dot calc(1.6s * var(--hb-k)) ease-out infinite;
 }
 
 /* ---------- scenes ---------- */
@@ -101,8 +108,8 @@
   justify-content: center;
   opacity: 0;
   pointer-events: none;
-  animation: hb-sc 12s ease infinite both;
-  animation-delay: calc(var(--k) * 2s - 0.6s);
+  animation: hb-sc var(--hb-loop) ease infinite both;
+  animation-delay: calc(var(--k) * var(--hb-scene) - 0.6s);
 }
 
 .hb__sc--1 { --k: 0; }
@@ -160,8 +167,8 @@
   border-radius: 3px;
   background: var(--hb-red);
   transform-origin: left;
-  animation: hb-bar 12s ease infinite both;
-  animation-delay: calc(var(--k, 2) * 2s - 0.6s);
+  animation: hb-bar var(--hb-loop) ease infinite both;
+  animation-delay: calc(var(--k, 2) * var(--hb-scene) - 0.6s);
 }
 
 .hb__sc--3 .hb__bar { --k: 2; }
@@ -220,8 +227,8 @@
   font-weight: 700;
   cursor: pointer;
   pointer-events: none;
-  animation: hb-btn 12s linear infinite both;
-  animation-delay: calc(var(--k, 5) * 2s - 0.6s);
+  animation: hb-btn var(--hb-loop) linear infinite both;
+  animation-delay: calc(var(--k, 5) * var(--hb-scene) - 0.6s);
 }
 
 .hb__cta::after {
@@ -231,7 +238,7 @@
   border-radius: 999px;
   border: 2px solid var(--hb-red);
   pointer-events: none;
-  animation: hb-ring 1.8s ease-out infinite;
+  animation: hb-ring calc(1.8s * var(--hb-k)) ease-out infinite;
 }
 
 .hb__cta svg {
@@ -274,7 +281,7 @@
   inset: 0;
   border-radius: 50%;
   border: 2px solid rgba(255, 33, 79, 0.5);
-  animation: hb-ring-big 3s ease-out infinite;
+  animation: hb-ring-big calc(3s * var(--hb-k)) ease-out infinite;
 }
 
 .hb__dash {
@@ -282,7 +289,7 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  animation: hb-spin 16s linear infinite;
+  animation: hb-spin calc(16s * var(--hb-k)) linear infinite;
 }
 
 .hb__photo {
@@ -299,7 +306,7 @@
 .hb__plate {
   position: absolute;
   opacity: 0;
-  animation: hb-plate 12s ease infinite both;
+  animation: hb-plate var(--hb-loop) ease infinite both;
   animation-delay: -0.6s;
 }
 
@@ -315,16 +322,16 @@
   line-height: 1.2;
   color: #fff;
   white-space: nowrap;
-  animation: hb-bob 3s ease-in-out infinite;
+  animation: hb-bob calc(3s * var(--hb-k)) ease-in-out infinite;
 }
 
 .hb__plate--1 { left: -29%; top: 13%; }
 .hb__plate--2 { left: 65%; top: 6%; }
 .hb__plate--3 { left: -26%; top: 59%; }
 .hb__plate--4 { left: 68%; top: 53%; }
-.hb__plate--2 > span { animation-delay: -1s; }
-.hb__plate--3 > span { animation-delay: -2s; }
-.hb__plate--4 > span { animation-delay: -0.5s; }
+.hb__plate--2 > span { animation-delay: calc(-1s * var(--hb-k)); }
+.hb__plate--3 > span { animation-delay: calc(-2s * var(--hb-k)); }
+.hb__plate--4 > span { animation-delay: calc(-0.5s * var(--hb-k)); }
 
 /* ---------- progress, scroll cue ---------- */
 .hb__prog {
@@ -343,7 +350,7 @@
   height: 100%;
   background: var(--hb-red);
   transform-origin: left;
-  animation: hb-prog 12s linear infinite;
+  animation: hb-prog var(--hb-loop) linear infinite;
   animation-delay: -0.6s;
 }
 
@@ -364,12 +371,12 @@
 .hb__chev svg {
   display: block;
   margin-top: -6px;
-  animation: hb-chev 1.6s ease-in-out infinite;
+  animation: hb-chev calc(1.6s * var(--hb-k)) ease-in-out infinite;
 }
 
 .hb__chev svg:first-child { margin-top: 0; }
-.hb__chev svg:nth-child(2) { animation-delay: 0.2s; }
-.hb__chev svg:nth-child(3) { animation-delay: 0.4s; }
+.hb__chev svg:nth-child(2) { animation-delay: calc(0.2s * var(--hb-k)); }
+.hb__chev svg:nth-child(3) { animation-delay: calc(0.4s * var(--hb-k)); }
 
 .hb__chev span {
   margin-top: 6px;
@@ -391,32 +398,32 @@
 /* ---------- keyframes ---------- */
 @keyframes hb-sc {
   0% { opacity: 0; transform: translateY(16px); }
-  4% { opacity: 1; transform: translateY(0); }
-  14.5% { opacity: 1; transform: translateY(0); }
+  2.2% { opacity: 1; transform: translateY(0); }
+  15% { opacity: 1; transform: translateY(0); }
   16.67% { opacity: 0; transform: translateY(-12px); }
   100% { opacity: 0; transform: translateY(-12px); }
 }
 
 @keyframes hb-btn {
   0% { pointer-events: none; }
-  4% { pointer-events: auto; }
-  14.5% { pointer-events: auto; }
+  2.2% { pointer-events: auto; }
+  15% { pointer-events: auto; }
   16.67% { pointer-events: none; }
   100% { pointer-events: none; }
 }
 
 @keyframes hb-plate {
   0% { opacity: 0; }
-  3% { opacity: 1; }
-  30% { opacity: 1; }
+  2% { opacity: 1; }
+  31.5% { opacity: 1; }
   33.3% { opacity: 0; }
   100% { opacity: 0; }
 }
 
 @keyframes hb-bar {
   0% { transform: scaleX(0); }
-  6% { transform: scaleX(0); }
-  14% { transform: scaleX(1); }
+  4% { transform: scaleX(0); }
+  9.5% { transform: scaleX(1); }
   100% { transform: scaleX(1); }
 }
 

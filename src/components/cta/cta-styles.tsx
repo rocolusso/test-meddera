@@ -51,10 +51,12 @@ export function CtaAnimationStyles() {
       .group:focus-visible .animate-shine {
         animation: ctaShine 0.8s ease forwards;
       }
+      /* The ring of the call button: a circle behind it that grows 14 px and fades (transform and
+         opacity only, so it does not repaint on every frame like a box-shadow animation would). */
       @keyframes dockCallPulse {
-        0% { box-shadow: 0 0 0 0 rgba(0, 170, 45, 0.55); }
-        70% { box-shadow: 0 0 0 14px rgba(0, 170, 45, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(0, 170, 45, 0); }
+        0% { transform: scale(1); opacity: 0.55; }
+        70% { transform: scale(1.5); opacity: 0; }
+        100% { transform: scale(1.5); opacity: 0; }
       }
       @keyframes dockCallShake {
         0%, 50%, 100% { transform: rotate(0deg); }
@@ -67,18 +69,36 @@ export function CtaAnimationStyles() {
         0%, 100% { box-shadow: 0 10px 28px rgba(236, 72, 153, 0.55), 0 0 0 0 rgba(236, 72, 153, 0.35); }
         50% { box-shadow: 0 10px 36px rgba(236, 72, 153, 0.8), 0 0 0 9px rgba(236, 72, 153, 0); }
       }
-      /* Reception is closed: the book button glows stronger, the call button calms down. */
+      /* Reception is closed or it is a day off: the book button glows stronger, the call button calms down. */
       .primary-cta-shine-loop[data-reception='closed'] {
         animation: ctaGlow 2.4s ease-in-out infinite;
       }
       .primary-cta-button.primary-cta-shine-loop[data-reception='closed'] {
         animation: ctaFloat 4s ease-in-out infinite, ctaGlow 2.4s ease-in-out infinite;
       }
-      .dock-call[data-reception='closed'],
+      .dock-call[data-reception='closed']::after,
       .dock-call[data-reception='closed'] svg {
         animation: none;
       }
       .dock-call {
+        isolation: isolate;
+      }
+      /* The old box-shadow animation replaced the static drop shadow while it ran; keep that look. */
+      @media (prefers-reduced-motion: no-preference) {
+        .dock-call:not([data-reception='closed']) {
+          box-shadow: none;
+        }
+      }
+      .dock-call::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        border-radius: 9999px;
+        background: #00aa2d;
+        opacity: 0;
+        pointer-events: none;
+        will-change: transform, opacity;
         animation: dockCallPulse 1.4s ease-out infinite;
       }
       .dock-call svg {
@@ -86,7 +106,7 @@ export function CtaAnimationStyles() {
         transform-origin: 50% 50%;
       }
       @media (prefers-reduced-motion: reduce) {
-        .dock-call,
+        .dock-call::after,
         .dock-call svg {
           animation: none;
         }

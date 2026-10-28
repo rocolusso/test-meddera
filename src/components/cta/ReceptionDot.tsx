@@ -15,9 +15,10 @@ export function hasReceptionDot(state: ReceptionIndicator | null): boolean {
 }
 
 /**
- * 10 px status dot in the corner of the call button: green during reception hours, red on a
- * reception day outside them, nothing on days off. Colour is not the only signal: the red dot has
- * a white bar, and the schedule is available to screen readers as text.
+ * 10 px status dot in the corner of the call button: green during reception hours, red outside
+ * them and on days off (useReceptionIndicator maps a day off to 'closed'; with the clinic-hours
+ * logic switched off the dot is always green). Colour is not the only signal: the red dot has a
+ * white bar, and the schedule is available to screen readers as text.
  */
 export default function ReceptionDot({ state, locale, hoursId, className }: Props) {
   if (state !== 'open' && state !== 'closed') return null;

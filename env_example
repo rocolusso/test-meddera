@@ -13,3 +13,13 @@ SEARCH_ENABLED="false"
 # It is on only when the value is "true"; unset or any other value keeps the pages as they were.
 # Read at build time, so after changing it redeploy.
 HERO_BANNER_ENABLED="false"
+
+# Indicators on the booking and call buttons (the dot on "Call", the call button's pulse and shake,
+# the glow of the "Book online" button).
+# "true": the dot is green during reception hours (Tue, Thu-Sat 13:00-18:00, Europe/Chisinau) and red
+#   with a white bar at all other times and on days off; outside the hours the call button stops
+#   pulsing and shaking and the "Book online" glow gets stronger.
+# "false" or unset: the dot is always green and the call animation always runs.
+# Baked into the bundle at build time, so after changing it redeploy. Set "true" in Vercel for the
+# live site (Production and Preview), otherwise the indicators always show "open".
+NEXT_PUBLIC_INDICATORS_CTA_LOGIC_ENABLED="false"

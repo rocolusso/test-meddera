@@ -71,7 +71,7 @@ export default function FloatingCallButton() {
           pointer-events: none;
           animation: btnCallPulse 1400ms ease-out infinite;
         }
-        /* Reception is closed: no pulse, no shaking. */
+        /* Reception is closed or it is a day off: no pulse, no shaking. */
         .btn-call[data-reception='closed']::after {
           animation: none;
           opacity: 0;

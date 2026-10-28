@@ -1,6 +1,7 @@
-import { CTA_CALL_LABEL, CLINIC_TEL_HREF } from '@/lib/cta/keys';
+import { CTA_CALL_LABEL } from '@/lib/cta/keys';
 import { ctaButtonLabel, type CtaEntry, type CtaLocale } from '@/lib/cta/registry';
 
+import ArticleCallLink from './ArticleCallLink';
 import DoctorPhoto from './DoctorPhoto';
 import PhoneIcon from './PhoneIcon';
 
@@ -17,7 +18,8 @@ type Props = {
  *
  * A server component with no client code of its own: the quiz opens through the delegated
  * `[data-open-quiz]` handler (LeadQuizHost), the call is counted by TelClickTracker from the
- * data-cta-* attributes. The title is a paragraph, not a heading, so the page outline does not change.
+ * data-cta-* attributes. The only client part is the phone link (ArticleCallLink), which carries the
+ * reception dot. The title is a paragraph, not a heading, so the page outline does not change.
  */
 export default function ArticleCta({ entry, locale, source }: Props) {
   return (
@@ -40,16 +42,15 @@ export default function ArticleCta({ entry, locale, source }: Props) {
           >
             {ctaButtonLabel(entry, locale)}
           </button>
-          <a
-            href={CLINIC_TEL_HREF}
-            data-cta-event="phone_click_simple1"
-            data-cta-source={`${source}_call`}
-            data-cta-procedure={entry.key}
+          <ArticleCallLink
+            locale={locale}
+            ctaSource={`${source}_call`}
+            procedure={entry.key}
             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-border px-6 text-sm font-semibold text-pofo-heading transition hover:border-[#00aa2d] hover:text-[#00aa2d] active:scale-95"
           >
             <PhoneIcon className="size-4" />
             {CTA_CALL_LABEL[locale]}
-          </a>
+          </ArticleCallLink>
         </div>
       </div>
     </div>

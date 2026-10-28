@@ -49,3 +49,4 @@ cloudflare/**/.wrangler
 cloudflare/**/.dev.vars
 
 /pofo/
+/social-video

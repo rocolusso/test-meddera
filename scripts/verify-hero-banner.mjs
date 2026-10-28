@@ -59,6 +59,9 @@ async function open(url, { w = 390, h = 844, reduced = false } = {}) {
 
 const banner = (p) => p.locator('[data-hero-banner]');
 
+const SCENE_MS = 3000; // --hb-scene in hero-banner.css
+const HOLD_MS = 1500; // a point inside the fully visible part of a scene
+
 /** Freezes the banner at the middle of scene k (0-based) and returns nothing. */
 async function freezeAt(page, k) {
   await page.evaluate((t) => {
@@ -68,7 +71,7 @@ async function freezeAt(page, k) {
         a.currentTime = t;
       }
     }
-  }, k * 2000 + 1000);
+  }, k * SCENE_MS + HOLD_MS);
   await page.waitForTimeout(80);
 }
 
@@ -145,12 +148,32 @@ for (const url of ['/', '/ro']) {
     await p.waitForTimeout(500);
     const op1 = await p.locator('.hb__sc--1').evaluate((e) => Number(getComputedStyle(e).opacity));
     ok(op1 > 0.9, `${url} ${w}: first scene visible at once (${op1})`);
-    let op2 = 0;
-    for (let i = 0; i < 20; i += 1) {
-      op2 = Math.max(op2, await p.locator('.hb__sc--2').evaluate((e) => Number(getComputedStyle(e).opacity)));
-      await p.waitForTimeout(200);
-    }
-    ok(op2 > 0.9, `${url} ${w}: scene 2 shows up within 4 s (max opacity ${op2.toFixed(2)})`);
+    // Sample scene 2 on every frame for 7 s: it must show up, and stay fully visible long enough to be read.
+    const seen = await p.evaluate(
+      () =>
+        new Promise((resolve) => {
+          const el = document.querySelector('.hb__sc--2');
+          const t0 = performance.now();
+          let max = 0;
+          let runStart = null;
+          let longest = 0;
+          const tick = (now) => {
+            const o = Number(getComputedStyle(el).opacity);
+            max = Math.max(max, o);
+            if (o >= 0.99) {
+              if (runStart === null) runStart = now;
+              longest = Math.max(longest, now - runStart);
+            } else {
+              runStart = null;
+            }
+            if (now - t0 < 7000) requestAnimationFrame(tick);
+            else resolve({ max, longest });
+          };
+          requestAnimationFrame(tick);
+        }),
+    );
+    ok(seen.max > 0.9, `${url} ${w}: scene 2 shows up within 7 s (max opacity ${seen.max.toFixed(2)})`);
+    ok(seen.longest >= 2000, `${url} ${w}: scene 2 stays fully visible for at least 2 s (${Math.round(seen.longest)} ms)`);
     const cls = await p.evaluate(() => window.__cls);
     ok(cls < 0.01, `${url} ${w}: layout shift ${cls.toFixed(4)}`);
 
