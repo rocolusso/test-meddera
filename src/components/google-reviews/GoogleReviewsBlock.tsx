@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 import {
   getFeaturableWidgetId,
-  googleMapsCardUrl,
   isGoogleReviewsEnabled,
   REVIEWS_PATH,
 } from '@/lib/google-reviews/config';
@@ -25,7 +24,6 @@ const COPY = {
     sub: 'Отзывы из карточки клиники в Google в том виде, в каком их оставили пациенты. Мы ничего не правим.',
     cta: 'Записаться на консультацию',
     all: 'Страница с отзывами',
-    card: 'Все отзывы на Google',
     note: '',
   },
   ro: {
@@ -34,7 +32,6 @@ const COPY = {
     sub: 'Recenziile din cardul clinicii pe Google, exact așa cum le-au lăsat pacienții. Noi nu modificăm nimic.',
     cta: 'Programare la consultație',
     all: 'Pagina cu recenzii',
-    card: 'Toate recenziile pe Google',
     note: 'Recenzii în limba originală (rusă)',
   },
 } as const;
@@ -67,8 +64,6 @@ export default async function GoogleReviewsBlock({ locale, variant }: { locale: 
     );
   }
 
-  const cardUrl = googleMapsCardUrl();
-
   return (
     <section data-google-reviews aria-label={t.label} className={`gr gr--${variant}`}>
       <div className="gr__in">
@@ -97,14 +92,8 @@ export default async function GoogleReviewsBlock({ locale, variant }: { locale: 
             reviews={result.data.reviews}
             totalReviewCount={result.data.totalReviewCount}
             averageRating={result.data.averageRating}
-            cardUrl={cardUrl}
           />
           {t.note ? <p className="gr__note">{t.note}</p> : null}
-          {cardUrl ? (
-            <a className="gr__google" href={cardUrl} target="_blank" rel="noopener noreferrer">
-              {t.card}
-            </a>
-          ) : null}
         </div>
       </div>
     </section>

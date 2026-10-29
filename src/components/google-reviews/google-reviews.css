@@ -132,14 +132,6 @@ html.dark .gr__carousel .slick-dots li.slick-active button:before {
   opacity: 0.8;
 }
 
-.gr__google {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 13px;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
 @media (max-width: 860px) {
   .gr__in {
     gap: 28px;

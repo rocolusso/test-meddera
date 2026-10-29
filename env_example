@@ -36,10 +36,8 @@ LIPS_END_BANNER_ENABLED="false"
 # Google Cloud billing are needed. FEATURABLE_WIDGET_ID is the widget ID (the part after "featurable-" in its embed
 # code); without it, or when the API does not answer, the block shows nothing (the reason goes to the build log).
 # FEATURABLE_API_BASE is for tests only (address of a local stub of the API); do not set it in production.
-# NEXT_PUBLIC_GOOGLE_PLACE_ID is optional: only for the "Все отзывы на Google" link and the badge link to the card.
 GOOGLE_REVIEWS_ENABLED="false"
 FEATURABLE_WIDGET_ID=""
-NEXT_PUBLIC_GOOGLE_PLACE_ID=""
 
 # Indicators on the booking and call buttons (the dot on "Call", the call button's pulse and shake,
 # the glow of the "Book online" button).

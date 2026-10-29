@@ -4,11 +4,11 @@
  * footer links, checked against a running production server. The reviews come from Featurable on the server, so the
  * site is built AND started against the local stub scripts/mock-featurable.mjs (no network, no real data).
  *
- * Usage: node scripts/verify-reviews.mjs [--base=http://localhost:3111] [--expect=on|off|nodata] [--place=TESTPLACE]
+ * Usage: node scripts/verify-reviews.mjs [--base=http://localhost:3111] [--expect=on|off|nodata]
  *
  * --expect=on  (default): stub in mode ok running during build and start; built AND started (proxy.ts reads the switch
  *              at run time) with GOOGLE_REVIEWS_ENABLED=true, FEATURABLE_API_BASE=http://127.0.0.1:4111,
- *              FEATURABLE_WIDGET_ID=test, NEXT_PUBLIC_GOOGLE_PLACE_ID=<--place>, NEXT_PUBLIC_RECAPTCHA_SITE_KEY=<any>.
+ *              FEATURABLE_WIDGET_ID=test, NEXT_PUBLIC_RECAPTCHA_SITE_KEY=<any>.
  * --expect=nodata: same, but the API fails at build (stub mode fail, or a dead port): no block anywhere, pages and
  *              links stay, nothing breaks.
  * --expect=off: built without GOOGLE_REVIEWS_ENABLED: no block, no pages, no sitemap entries, no links.
@@ -24,7 +24,6 @@ const base = arg('base', 'http://localhost:3111');
 const mode = arg('expect', 'on');
 const on = mode !== 'off';
 const nodata = mode === 'nodata';
-const PLACE = arg('place', 'TESTPLACEID');
 const require = createRequire(import.meta.url);
 let chromium;
 try {
@@ -236,8 +235,12 @@ for (const [loc, P] of Object.entries(PAGES)) {
       ok(txt.includes('после процедуры') && !/^\.\.\.$/m.test(txt) && !txt.includes('Читать далее') && !txt.includes('Citește mai mult'), `${label}: a long review is shown in full (the library would cut it down to "...")`);
       const hrefs = await page.locator('[data-google-reviews] a[href]').evaluateAll((as) => as.map((a) => a.getAttribute('href')));
       ok(!hrefs.some((h) => /writereview|WRITEREVIEW|data=!4m3/.test(h)), `${label}: no link to the Google «write a review» form`);
-      const link = await page.locator('a.gr__google').first().getAttribute('href');
-      ok(link.includes(`place_id:${PLACE}`) && (await page.locator('a.gr__google').first().getAttribute('target')) === '_blank', `${label}: link «Все отзывы на Google» to the card`);
+      const external = hrefs.filter((h) => /^(https?:)?\/\//i.test(h ?? ''));
+      ok(external.length === 0, `${label}: no external links in the block, nothing leads to Google (${external.join(', ') || 'none'})`);
+      ok(!hrefs.some((h) => /google\.|goo\.gl|g\.page|g\.co\/|maps\./i.test(h ?? '')), `${label}: no link to Google, Google Maps or a short Google link`);
+      ok((await page.locator('a.gr__google, [data-google-reviews] a[target="_blank"]').count()) === 0, `${label}: no «all reviews on Google» link and nothing opens in a new tab`);
+      const gAnchors = await page.locator('[data-google-reviews] .gr__wrap a').count();
+      ok(gAnchors === 0, `${label}: the rating badge and the cards are not links (${gAnchors} anchors in the carousel part)`);
       ok((await page.locator('.gr__wrap[lang="ru"]').count()) === 1, `${label}: reviews wrapped in lang="ru"`);
       ok((await page.locator('.gr__note').count()) === (T.note ? 1 : 0), `${label}: note about the original language ${T.note ? 'shown (RO)' : 'absent (RU)'}`);
       const slides = await page.locator('.gr__carousel .slick-slide.slick-active').count();

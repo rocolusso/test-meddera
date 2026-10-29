@@ -9,8 +9,6 @@ export type FeaturableReviewsProps = {
   reviews: ReactGoogleReview[];
   totalReviewCount: number;
   averageRating: number;
-  /** Link to the clinic card on Google Maps; '' hides the link of the badge. */
-  cardUrl: string;
 };
 
 const COPY = {
@@ -59,7 +57,7 @@ function relativeDate(date: Date, intl: string): string {
  * Carousel and rating badge of the reviews. Loaded lazily by FeaturableReviewsLazy (never in the first
  * screen bundle). The reviews are in Russian (the originals), also on the Romanian page, hence lang="ru".
  */
-export default function FeaturableReviews({ locale, reviews, totalReviewCount, averageRating, cardUrl }: FeaturableReviewsProps) {
+export default function FeaturableReviews({ locale, reviews, totalReviewCount, averageRating }: FeaturableReviewsProps) {
   const t = COPY[locale];
   const [items, setItems] = useState(() => itemsFor(typeof window === 'undefined' ? 1280 : window.innerWidth));
   useEffect(() => {
@@ -83,7 +81,6 @@ export default function FeaturableReviews({ locale, reviews, totalReviewCount, a
       <ReactGoogleReviews
         {...common}
         layout="badge"
-        profileUrl={cardUrl || undefined}
         badgeLabel={t.badge}
         badgeSubheadingFormatter={t.sub}
       />
