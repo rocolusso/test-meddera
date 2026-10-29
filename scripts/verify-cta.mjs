@@ -290,7 +290,9 @@ test('cards in the rendered pages (needs --base)', { skip: base ? false : 'run w
     assert.equal(cards.length, 1, `${p}: expected exactly one card, found ${cards.length}`);
     const [, kind, key] = cards[0];
     assert.ok(reg.isCtaKey(key), `${p}: data-procedure "${key}" is not in the allowlist`);
-    assert.equal((html.match(/data-open-quiz/g) || []).length, 1, `${p}: one quiz button in the card`);
+    // the animated banner of lip pages (when LIPS_BANNER_ENABLED) has its own quiz button: it is not the card's
+    const withoutBanner = html.replace(/<section data-hero-banner[\s\S]*?<\/section>/, '');
+    assert.equal((withoutBanner.match(/data-open-quiz/g) || []).length, 1, `${p}: one quiz button in the card`);
     assert.equal((html.match(/data-cta-source="(article|hub)_card_call"/g) || []).length, 1, `${p}: one call link in the card`);
     assert.ok(html.includes(`data-cta-source="${kind}"`), `${p}: quiz button carries the card source`);
     assert.ok(html.includes(`data-cta-procedure="${key}"`), `${p}: quiz button carries the procedure`);

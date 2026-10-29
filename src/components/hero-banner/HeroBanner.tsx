@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Image from 'next/image';
 
 import { HERO_BANNER_COPY, type HeroBannerLocale } from '@/lib/hero-banner/copy';
+import { LIPS_BANNER_COPY } from '@/lib/hero-banner/lips-copy';
 
 import doctorPhoto from '../../../public/assets/img/hero-doctor.jpg';
 
@@ -11,6 +12,9 @@ import './hero-banner.css';
 
 /** Source id of the banner button in GA4 (`cta_source`). Must be in LEAD_QUIZ_SOURCES. */
 export const HERO_BANNER_SOURCE = 'hero_banner';
+
+/** Same for the banner of the lip enlargement pages. */
+export const LIPS_BANNER_SOURCE = 'lips_banner';
 
 /** Text with *accent* parts and line breaks. The breaks only apply on wide screens. */
 function Lines({ lines }: { lines: string[] }) {
@@ -53,12 +57,17 @@ function Chevron() {
  * the stylesheet, so nothing moves while it loads. The only script is HeroBannerMotion (pause
  * off screen). The button opens the lead quiz through `data-open-quiz`, like other server-rendered
  * buttons. It has no heading of its own: the page h1 lives in the "About" block.
+ *
+ * variant="lips": the same banner with the texts of the lip enlargement pages, its own source for
+ * GA4 and Telegram and a lower height (class hb--lips), because it stands above a page and not in
+ * place of its first screen. The home variant renders exactly what it always did.
  */
-export default function HeroBanner({ locale }: { locale: HeroBannerLocale }) {
-  const t = HERO_BANNER_COPY[locale];
+export default function HeroBanner({ locale, variant = 'home' }: { locale: HeroBannerLocale; variant?: 'home' | 'lips' }) {
+  const lips = variant === 'lips';
+  const t = (lips ? LIPS_BANNER_COPY : HERO_BANNER_COPY)[locale];
 
   return (
-    <section data-hero-banner aria-label={t.label} className="hb">
+    <section data-hero-banner aria-label={t.label} className={lips ? 'hb hb--lips' : 'hb'}>
       <div className="hb__glow" aria-hidden="true" />
       <div className="hb__in">
         <p className="hb__sr">{t.thesis}</p>
@@ -125,7 +134,7 @@ export default function HeroBanner({ locale }: { locale: HeroBannerLocale }) {
               type="button"
               className="hb__cta"
               data-open-quiz
-              data-cta-source={HERO_BANNER_SOURCE}
+              data-cta-source={lips ? LIPS_BANNER_SOURCE : HERO_BANNER_SOURCE}
             >
               {t.scene6.cta}
               <svg width="22" height="22" viewBox="0 0 20 20" fill="none" aria-hidden="true">

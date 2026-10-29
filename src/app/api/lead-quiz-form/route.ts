@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import { processContactFormPost } from '@/lib/contact-form-processor';
 import { findPostByAnySlug } from '@/blog-data/registry';
-import { LIPS_LEAD_TITLE, isLipsLead } from '@/lib/cta/lead-title';
+import { isLipsLead, lipsLeadTitle } from '@/lib/cta/lead-title';
 import { buildLeadQuizTelegramBlock } from '@/lib/cta/telegram-block';
 import { resolveFormPathname } from '@/lib/form-page-url';
 
@@ -29,9 +29,10 @@ export async function POST(request: NextRequest) {
 
   // 'consultation' is still accepted: pages cached in browsers before the second form was removed may send it.
   const formType = body.formType === 'consultation' ? 'consultation' : 'appointment';
-  // Leads from lip enlargement pages get the same title as the lips form, so they are easy to tell apart.
+  // Leads from lip enlargement pages get the title of the lips form plus the button they came from,
+  // so they are easy to tell apart.
   const title = isLipsLead(body, resolveFormPathname(body, request), findPostByAnySlug)
-    ? LIPS_LEAD_TITLE
+    ? lipsLeadTitle(body.source)
     : getTelegramTitle(formType);
 
   return processContactFormPost(request, {

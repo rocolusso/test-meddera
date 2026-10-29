@@ -199,6 +199,7 @@ export const LEAD_QUIZ_SOURCE_LABELS: Record<LeadQuizSource, Bilingual> = {
   hub_card: { ru: 'Карточка на странице рубрики', ro: 'Card pe pagina rubricii' },
   teaser_scroll60: { ru: 'Тизер при прокрутке', ro: 'Teaser la derulare' },
   hero_banner: { ru: 'Баннер на главной', ro: 'Banner pe pagina principală' },
+  lips_banner: { ru: 'Баннер на страницах про губы', ro: 'Banner pe paginile despre buze' },
 };
 
 const KEY_BY_SERVICE: Record<string, CtaKey> = {

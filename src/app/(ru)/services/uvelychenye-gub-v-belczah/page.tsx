@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import { bilingualAlternates } from '@/lib/hreflang';
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
+import LipsBannerSlot from '@/components/hero-banner/LipsBannerSlot';
 import uvelichenieGub from '@public/assets/img/services/uvelicheniegub.png';
 import uvelichenieGub1 from '@public/assets/img/services/lips/lips1.jpg';
 import uvelichenieGub2 from '@public/assets/img/services/lips/lips2.jpg';
@@ -102,7 +103,7 @@ function ServicePageMoney() {
         /* eslint-disable-next-line react/no-danger */
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <ContentPageShell variant="custom" locale="ru" contactsVariant="lips">
+      <ContentPageShell variant="custom" locale="ru" contactsVariant="lips" banner={<LipsBannerSlot locale="ru" />}>
         <h1 className="mx-auto max-w-3xl text-balance text-left text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-center">
           Увеличение губ в Бельцах — безопасно, красиво и естественно
         </h1>

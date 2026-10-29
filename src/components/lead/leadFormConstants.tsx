@@ -58,6 +58,8 @@ export const TEXT = {
       appointment: 'Оставьте контакты и ответьте на 3 вопроса.',
     },
     modalSubtitlePrefilled: 'Оставьте контакты и ответьте на 2 вопроса.',
+    modalTitleLips: 'Запись на увеличение губ',
+    modalSubtitleLips: 'Оставьте контакты и ответьте на 5 вопросов.',
     procedureLabel: 'Процедура',
     changeProcedure: 'изменить',
     placeholders: {
@@ -86,6 +88,8 @@ export const TEXT = {
       appointment: 'Lăsați datele de contact și răspundeți la 3 întrebări.',
     },
     modalSubtitlePrefilled: 'Lăsați datele de contact și răspundeți la 2 întrebări.',
+    modalTitleLips: 'Programare la mărirea buzelor',
+    modalSubtitleLips: 'Lăsați datele de contact și răspundeți la 5 întrebări.',
     procedureLabel: 'Procedura',
     changeProcedure: 'schimbă',
     placeholders: {

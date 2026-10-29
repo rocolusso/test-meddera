@@ -83,7 +83,7 @@ export default function TeaserCard({ pathname, locale, procedure, onHide }: Prop
       aria-label={ui.region}
       data-scroll-teaser
       data-procedure={entry.key}
-      className={`fixed inset-x-4 bottom-[calc(var(--bottom-dock-h,0px)+84px)] z-[990] flex items-start gap-3 rounded-2xl border border-border bg-white p-4 shadow-xl transition duration-300 motion-reduce:transition-none md:inset-x-auto md:bottom-44 md:left-6 md:w-[360px] ${
+      className={`fixed inset-x-4 bottom-[calc(var(--bottom-dock-h,0px)+84px)] z-[990] flex items-start gap-3 rounded-2xl border border-border bg-white p-4 dark:bg-card shadow-xl transition duration-300 motion-reduce:transition-none md:inset-x-auto md:bottom-44 md:left-6 md:w-[360px] ${
         visible ? 'translate-y-0 opacity-100' : 'translate-y-3 opacity-0'
       }`}
     >

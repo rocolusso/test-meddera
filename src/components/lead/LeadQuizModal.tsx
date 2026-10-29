@@ -22,6 +22,7 @@ import { executeRecaptcha, prefetchRecaptchaScript } from '@/lib/recaptcha-clien
 import { sendGa4Event } from '@/lib/ga4-worker-client';
 import { markLeadSubmitted } from '@/lib/cta/teaser-state';
 import { CTA_ENTRIES, type CtaKey } from '@/lib/cta/registry';
+import { LIPS_QUIZ } from '@/lib/cta/lips-quiz';
 
 import {
   TEXT,
@@ -73,10 +74,12 @@ export default function LeadQuizModal({
 
   const [prefill, setPrefill] = useState<CtaKey | null>(formType === 'appointment' ? procedure : null);
   const prefillLabel = prefill ? CTA_ENTRIES[prefill].chip[locale] : null;
-  const visibleQuestions = useMemo(
-    () => (prefill ? questions.filter((question) => question.key !== 'procedure_interest') : questions),
-    [questions, prefill],
-  );
+  // Lip enlargement pages (and the lips card) have a quiz of their own, with a fixed procedure.
+  const lipsQuiz = formType === 'appointment' && procedure === 'lips';
+  const visibleQuestions = useMemo(() => {
+    if (lipsQuiz) return LIPS_QUIZ;
+    return prefill ? questions.filter((question) => question.key !== 'procedure_interest') : questions;
+  }, [lipsQuiz, questions, prefill]);
 
   const allQuizAnswered = useMemo(
     () => visibleQuestions.every((question) => Boolean(quizAnswers[question.key])),
@@ -149,7 +152,7 @@ export default function LeadQuizModal({
       message: parsed.data,
       locale,
       formType,
-      quizAnswers: prefillLabel ? { ...quizAnswers, procedure_interest: prefillLabel } : quizAnswers,
+      quizAnswers: prefillLabel && !lipsQuiz ? { ...quizAnswers, procedure_interest: prefillLabel } : quizAnswers,
       ...(source && source !== 'unknown' ? { source } : {}),
       ...(prefill ? { procedure: prefill } : {}),
       formPathname: typeof window !== 'undefined' ? window.location.href : pathname,
@@ -218,8 +221,10 @@ export default function LeadQuizModal({
       <div className="relative z-[1] max-h-[92vh] w-full max-w-2xl overflow-y-auto bg-background p-5 shadow-pofo-lg dark:bg-card sm:p-10">
         <div className="mb-3 flex items-start justify-between gap-4">
           <div>
-            <h3 className="alt-font text-[20px] font-semibold leading-[28px] text-pofo-heading">{t.modalTitle[formType]}</h3>
-            <p className="mt-1 text-sm text-muted-foreground">{prefill ? t.modalSubtitlePrefilled : t.modalSubtitle[formType]}</p>
+            <h3 className="alt-font text-[20px] font-semibold leading-[28px] text-pofo-heading">{lipsQuiz ? t.modalTitleLips : t.modalTitle[formType]}</h3>
+            <p className="mt-1 text-sm text-muted-foreground">
+              {lipsQuiz ? t.modalSubtitleLips : prefill ? t.modalSubtitlePrefilled : t.modalSubtitle[formType]}
+            </p>
           </div>
           <Button variant="pofoOutline" size="pofoSmall" type="button" onClick={onClose}>
             {t.close}
@@ -290,13 +295,15 @@ export default function LeadQuizModal({
                   <p className="alt-font text-[13px] font-semibold leading-5 text-pofo-heading">
                     {t.procedureLabel}: {prefillLabel}
                   </p>
-                  <button
-                    type="button"
-                    className="shrink-0 text-sm text-deep-pink underline underline-offset-2"
-                    onClick={() => setPrefill(null)}
-                  >
-                    {t.changeProcedure}
-                  </button>
+                  {lipsQuiz ? null : (
+                    <button
+                      type="button"
+                      className="shrink-0 text-sm text-deep-pink underline underline-offset-2"
+                      onClick={() => setPrefill(null)}
+                    >
+                      {t.changeProcedure}
+                    </button>
+                  )}
                 </div>
               ) : null}
               {visibleQuestions.map((question) => (

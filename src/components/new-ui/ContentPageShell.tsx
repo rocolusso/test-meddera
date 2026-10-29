@@ -18,6 +18,8 @@ type BaseProps = {
   showServices?: boolean;
   /** default / lips — which contact form block to render */
   contactsVariant?: 'default' | 'lips';
+  /** Rendered between the header and `<main>` (outside the page content), e.g. the lips banner. */
+  banner?: React.ReactNode;
 };
 
 type SimpleArticleProps = BaseProps & {
@@ -52,6 +54,7 @@ export default function ContentPageShell(props: ContentPageShellProps) {
     locale,
     showServices = true,
     contactsVariant = 'default',
+    banner = null,
   } = props;
 
   const isArticle = props.variant !== 'custom';
@@ -59,6 +62,7 @@ export default function ContentPageShell(props: ContentPageShellProps) {
   return (
     <>
       <HeaderNew locale={locale} />
+      {banner}
 
       <main className="bg-background">
         {isArticle ? (

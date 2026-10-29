@@ -18,6 +18,16 @@ export type LeadQuizState = {
 
 const CLOSED: LeadQuizState = { open: false, formType: 'appointment', source: null, procedure: null };
 
+/**
+ * Procedure the current page is about (set by a lips page, see LeadQuizPageTopic). A button without a
+ * procedure of its own (the bottom panel, the floating "Записаться онлайн") opens the quiz of this topic.
+ */
+let pageTopic: CtaKey | null = null;
+
+export function setLeadQuizPageTopic(topic: CtaKey | null): void {
+  pageTopic = topic;
+}
+
 let state: LeadQuizState = CLOSED;
 const listeners = new Set<() => void>();
 
@@ -48,7 +58,7 @@ export function openLeadQuiz(options: {
   if (state.open) return;
   const formType: FormType = 'appointment';
   const source = options.source === 'unknown' || isLeadQuizSource(options.source) ? options.source : 'unknown';
-  const procedure = isCtaKey(options.procedure) ? options.procedure : null;
+  const procedure = isCtaKey(options.procedure) ? options.procedure : pageTopic;
 
   pushLeadCtaEvent(formType, { source, procedure });
   state = { open: true, formType, source, procedure };

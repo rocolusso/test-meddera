@@ -3,11 +3,13 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
 import HeaderNew from '@/components/new-ui/HeaderNew';
+import LipsBannerSlot from '@/components/hero-banner/LipsBannerSlot';
 import FooterNew from '@/components/new-ui/FooterNew';
 import { ContentArticleBody } from '@/components/new-ui/ContentPageShell';
 import { blogArticleJsonLd } from '@/lib/jsonld/blog-article';
 import { blogHubJsonLd } from '@/lib/jsonld/blog-hub';
 import { lipAugmentationHubJsonLd } from '@/lib/jsonld/lip-augmentation-hub';
+import { isLipsPost } from '@/lib/cta/lips';
 import { blogSocialMetadata } from '@/lib/site-og';
 import { getAllSlugParams, getClusterArticles, getPostBySlug, ORIGIN } from '@/blog-data/registry';
 import { renderBlogPostBody } from '@/blog-data/render-post-body';
@@ -123,6 +125,7 @@ export default async function BlogPostRoPage({ params }: Props) {
         />
       ) : null}
       <HeaderNew locale="ro" />
+      {isLipsPost(post) ? <LipsBannerSlot locale="ro" /> : null}
       <main className="bg-background">
         <ContentArticleBody className="!pt-[25px]">{body}</ContentArticleBody>
       </main>

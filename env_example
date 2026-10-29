@@ -14,6 +14,12 @@ SEARCH_ENABLED="false"
 # Read at build time, so after changing it redeploy.
 HERO_BANNER_ENABLED="false"
 
+# Banner on the lip enlargement pages (the service page and the blog pages about lips, RU and RO),
+# below the header. It is on only when the value is "true"; unset or any other value keeps it off.
+# It switches only the banner: the buttons of those pages open the lips quiz either way.
+# Read at build time, so after changing it redeploy.
+LIPS_BANNER_ENABLED="false"
+
 # Indicators on the booking and call buttons (the dot on "Call", the call button's pulse and shake,
 # the glow of the "Book online" button).
 # "true": the dot is green during reception hours (Tue, Thu-Sat 13:00-18:00, Europe/Chisinau) and red

@@ -1,8 +1,7 @@
 import { isCtaKey } from '@/lib/cta/keys';
 import { ctaForCluster, ctaForPathname, ctaForPost, type CtaEntry } from '@/lib/cta/registry';
 
-/** Telegram title of a lead that comes from a lip enlargement page (same text as the old lips form). */
-export const LIPS_LEAD_TITLE = 'Форма/ Увеличение Губ / LEAD';
+export { LIPS_LEAD_TITLE, lipsLeadTitle } from '@/lib/cta/lips';
 
 type PostLike = { id: string; kind: string; clusterId: string | null };
 

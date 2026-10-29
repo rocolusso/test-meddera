@@ -1,6 +1,10 @@
+import { formatLipsQuizAnswers, isLipsQuizAnswers } from '@/lib/cta/lips-quiz';
 import { CTA_ENTRIES, LEAD_QUIZ_SOURCE_LABELS, isCtaKey, isLeadQuizSource } from '@/lib/cta/registry';
 
 type Locale = 'ru' | 'ro';
+
+/** The answers come from the browser: no single key or value may grow past this. */
+const MAX_TEXT_LENGTH = 200;
 
 function isRecord(v: unknown): v is Record<string, unknown> {
   return typeof v === 'object' && v !== null;
@@ -23,8 +27,8 @@ export function formatQuizAnswers(raw: unknown, locale: Locale, omitKey?: string
   const lines = Object.entries(raw)
     .filter(([key, value]) => key !== omitKey && typeof value === 'string' && value.trim().length > 0)
     .map(([key, value]) => {
-      const label = QUIZ_LABELS[key]?.[locale] ?? key;
-      return `- ${label}: ${String(value).trim()}`;
+      const label = QUIZ_LABELS[key]?.[locale] ?? key.slice(0, MAX_TEXT_LENGTH);
+      return `- ${label}: ${String(value).trim().slice(0, MAX_TEXT_LENGTH)}`;
     });
 
   if (!lines.length) {
@@ -58,11 +62,11 @@ export function buildLeadQuizTelegramBlock(
     locale === 'ro'
       ? `Tip formular: ${formType === 'appointment' ? 'Programare online' : 'Consultație'}`
       : `Тип формы: ${formType === 'appointment' ? 'Записаться онлайн' : 'Получить консультацию'}`;
+  // Answers of the lips quiz are checked against its questions and written in Russian. Open tabs
+  // from before it existed still send the general quiz: those answers are formatted as before.
   // A procedure chosen on the page is already named in the source block.
-  const quizBlock = formatQuizAnswers(
-    body.quizAnswers,
-    locale,
-    isCtaKey(body.procedure) ? 'procedure_interest' : undefined,
-  );
+  const quizBlock = isLipsQuizAnswers(body.quizAnswers)
+    ? formatLipsQuizAnswers(body.quizAnswers)
+    : formatQuizAnswers(body.quizAnswers, locale, isCtaKey(body.procedure) ? 'procedure_interest' : undefined);
   return [formTypeLine, formatSourceBlock(body, locale), quizBlock].filter(Boolean).join('\n');
 }
