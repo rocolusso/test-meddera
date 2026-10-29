@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 /**
- * Google reviews: the block on the home page, the reviews pages (/otzyvy, /ro/recenzii), sitemap, footer link,
- * checked against a running production server. Google's own script is stubbed here (no real key, no request to
- * Google), so this checks everything of ours around the element, not what Google draws inside it.
+ * Google reviews: the block on the home page, the reviews pages (/otzyvy, /ro/recenzii), sitemap, header, burger and
+ * footer links, checked against a running production server. The reviews come from Featurable on the server, so the
+ * site is built AND started against the local stub scripts/mock-featurable.mjs (no network, no real data).
  *
- * Usage: node scripts/verify-reviews.mjs [--base=http://localhost:3111] [--expect=on|off] [--place=TESTPLACE]
+ * Usage: node scripts/verify-reviews.mjs [--base=http://localhost:3111] [--expect=on|off|nodata] [--place=TESTPLACE]
  *
- * --expect=on  (default): built AND started (proxy.ts reads it at run time) with GOOGLE_REVIEWS_ENABLED=true, NEXT_PUBLIC_GOOGLE_MAPS_KEY=<any>,
- *              NEXT_PUBLIC_GOOGLE_PLACE_ID=<--place>, NEXT_PUBLIC_RECAPTCHA_SITE_KEY=<any>.
- * --expect=off: built without GOOGLE_REVIEWS_ENABLED: no block, no pages, no sitemap entries, no footer link.
+ * --expect=on  (default): stub in mode ok running during build and start; built AND started (proxy.ts reads the switch
+ *              at run time) with GOOGLE_REVIEWS_ENABLED=true, FEATURABLE_API_BASE=http://127.0.0.1:4111,
+ *              FEATURABLE_WIDGET_ID=test, NEXT_PUBLIC_GOOGLE_PLACE_ID=<--place>, NEXT_PUBLIC_RECAPTCHA_SITE_KEY=<any>.
+ * --expect=nodata: same, but the API fails at build (stub mode fail, or a dead port): no block anywhere, pages and
+ *              links stay, nothing breaks.
+ * --expect=off: built without GOOGLE_REVIEWS_ENABLED: no block, no pages, no sitemap entries, no links.
  * Needs Playwright with Chromium.
  */
 import { createRequire } from 'node:module';
@@ -18,7 +21,9 @@ import { fileURLToPath } from 'node:url';
 
 const arg = (name, def) => (process.argv.find((a) => a.startsWith(`--${name}=`)) ?? `--${name}=${def}`).split('=').slice(1).join('=');
 const base = arg('base', 'http://localhost:3111');
-const on = arg('expect', 'on') === 'on';
+const mode = arg('expect', 'on');
+const on = mode !== 'off';
+const nodata = mode === 'nodata';
 const PLACE = arg('place', 'TESTPLACEID');
 const require = createRequire(import.meta.url);
 let chromium;
@@ -84,8 +89,14 @@ for (const [loc, P] of Object.entries(PAGES)) {
   ok(!/"Review"|"AggregateRating"|"reviewRating"|"aggregateRating"/.test(ld), `${loc}: JSON-LD has no Review or AggregateRating`);
 
   const home = await (await fetch(base + P.home)).text();
-  ok(home.includes('data-google-reviews'), `${loc}: reviews block on the home page`);
   const links = [...home.matchAll(new RegExp(`<a[^>]*href="${P.path}"[^>]*>`, 'g'))].length;
+  if (nodata) {
+    ok(!home.includes('data-google-reviews'), `${loc}: no reviews data: no block on the home page`);
+    ok(!html.includes('data-google-reviews'), `${loc}: no reviews data: no block on the reviews page, the text stays`);
+    ok(links === 2, `${loc}: link «${P.footer}» in header and footer stays (${links} anchors to ${P.path})`);
+    continue;
+  }
+  ok(home.includes('data-google-reviews'), `${loc}: reviews block on the home page`);
   ok(links === 3, `${loc}: link «${P.footer}» in header and footer of the home page, plus the block's own link (${links} anchors to ${P.path})`);
   const hm = home.replace(/<script[\s\S]*?<\/script>/g, '');
   const blockHtml = (hm.match(/<section data-google-reviews[\s\S]*?<\/section>/) ?? [''])[0];
@@ -98,7 +109,7 @@ for (const [loc, P] of Object.entries(PAGES)) {
   void seoAt;
 }
 
-if (!on) {
+if (!on || nodata) {
   console.log(failed ? `\n${failed} check(s) failed` : '\nall checks passed');
   process.exit(failed ? 1 : 0);
 }
@@ -136,34 +147,47 @@ if (!on) {
   await browser.close();
 }
 
-// ---------------------------------------------------------------- 3. the element: lazy load, content, failure, theme, quiz, overflow
-const STUB = `
-(function(){
-  window.__mapsLoaded = true;
-  function def(name){ if(customElements.get(name)) return; customElements.define(name, class extends HTMLElement{ connectedCallback(){ if(this.localName==='gmp-place-details'){ this.style.cssText='display:block;min-height:140px'; setTimeout(()=>this.dispatchEvent(new Event('gmp-load')),20);} } }); }
-  window.google = { maps: { importLibrary: async function(n){ ['gmp-place-details','gmp-place-details-place-request','gmp-place-rating','gmp-place-reviews','gmp-place-all-content','gmp-place-address'].forEach(def); window.__lib = n; return {}; } } };
-})();`;
-
-async function open(url, w, { fail = false, dark = false } = {}) {
+// ---------------------------------------------------------------- 3. the block: lazy load, content, theme, quiz, overflow
+async function open(url, w, { dark = false } = {}) {
   const browser = open.browser;
   const ctx = await browser.newContext({ viewport: { width: w, height: w < 768 ? 800 : 900 }, hasTouch: w < 768, colorScheme: dark ? 'dark' : 'light' });
   const page = await ctx.newPage();
-  const g = { reqs: [], post: null };
+  const g = { reqs: [], chunks: [], errors: [], post: null };
   await page.addInitScript(() => {
     Object.defineProperty(navigator, 'webdriver', { get: () => false });
     window.__beacons = [];
+    window.__cls = 0;
+    try {
+      new PerformanceObserver((list) => {
+        for (const e of list.getEntries()) if (!e.hadRecentInput) window.__cls += e.value;
+      }).observe({ type: 'layout-shift', buffered: true });
+    } catch {
+      // layout-shift is not supported: the CLS check below will read 0
+    }
     navigator.sendBeacon = (u, b) => {
       window.__beacons.push(typeof b === 'string' ? Promise.resolve(b) : b.text());
       return true;
     };
   });
   if (dark) await page.addInitScript(() => localStorage.setItem('meddera-theme', 'dark'));
-  await ctx.route(/googleapis\.com|google\.com\/maps|gstatic\.com/, (r) => {
-    g.reqs.push(r.request().url());
-    if (!/maps\.googleapis\.com\/maps\/api\/js/.test(r.request().url())) return r.abort();
-    if (fail) return r.abort();
-    return r.fulfill({ contentType: 'text/javascript', body: STUB });
+  // the browser must never ask Featurable or Google for the reviews: the server does (and caches) that
+  page.on('request', (r) => {
+    if (/featurable|googleapis\.com|google\.com\/maps/.test(r.url())) g.reqs.push(r.url());
   });
+  // the chunk of the carousel library is the one JS file that mentions slidesToShow
+  page.on('response', async (r) => {
+    if (!/\/_next\/static\/.*\.js/.test(r.url())) return;
+    try {
+      if ((await r.text()).includes('slidesToShow')) g.chunks.push(r.url());
+    } catch {
+      // body not available (redirect, aborted)
+    }
+  });
+  // errors of ours only: resources of other sites (fonts, analytics) cannot load in the sandbox and say nothing about the block
+  page.on('console', (m) => {
+    if (m.type() === 'error' && !/^Failed to load resource/.test(m.text())) g.errors.push(m.text());
+  });
+  page.on('pageerror', (e) => g.errors.push(String(e)));
   await ctx.route('**/recaptcha/api.js*', (r) => r.fulfill({ contentType: 'text/javascript', body: 'window.grecaptcha={ready:function(cb){cb()},execute:function(){return Promise.resolve("test-token")}};' }));
   await ctx.route('**/api/form-token', (r) => r.fulfill({ json: { token: '', disabled: true } }));
   await ctx.route('**/api/lead-quiz-form', (r) => {
@@ -175,38 +199,49 @@ async function open(url, w, { fail = false, dark = false } = {}) {
 }
 open.browser = await chromium.launch();
 const events = (page) => page.evaluate(async () => (await Promise.all(window.__beacons)).flatMap((s) => JSON.parse(s).events ?? []));
-const mapsReqs = (g) => g.reqs.filter((u) => /maps\.googleapis\.com\/maps\/api\/js/.test(u));
+const toView = (page) => page.locator('[data-google-reviews]').first().evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+const READY = '.gr__carousel .slick-slide';
+
+const TEXT = {
+  ru: { badge: 'Рейтинг Google', sub: 'На основе 8 отзывов', original: 'проблемной кожи', english: 'I came for a consultation', date: /назад/, month: /месяц/, year: /год/, note: false },
+  ro: { badge: 'Rating Google', sub: 'Pe baza a 8 recenzii', original: 'проблемной кожи', english: 'I came for a consultation', date: /acum/, month: /lun/, year: /an/, note: true },
+};
+const WRITE = /write a review|написать (отзыв|обзор)|scrie o recenzie|scrie recenzie/i;
 
 for (const [loc, P] of Object.entries(PAGES)) {
+  const T = TEXT[loc];
   for (const [kind, url] of [['home', P.home], ['page', P.path]]) {
     const label = `${loc} ${kind}`;
     const { ctx, page, g } = await open(url, 1280);
     try {
       await page.waitForTimeout(800);
       const farAway = await page.evaluate(() => document.querySelector('[data-google-reviews]').getBoundingClientRect().top > window.innerHeight + 400);
-      ok(farAway ? g.reqs.length === 0 : g.reqs.length <= 1, `${label}: ${farAway ? 'block is far below the first screen: no request to Google before scrolling' : 'block starts within 400px of the first screen: at most the one script request'} (${g.reqs.length})`);
-      await page.locator('[data-google-reviews]').first().evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
-      await page.waitForSelector('gmp-place-details', { timeout: 8000 });
-      const r = mapsReqs(g);
-      const u = new URL(r[0]);
-      ok(r.length === 1 && u.searchParams.get('loading') === 'async' && u.searchParams.get('language') === loc && u.searchParams.get('key') !== null, `${label}: one Maps script request: loading=async language=${u.searchParams.get('language')} v=${u.searchParams.get('v')}`);
-      const shape = await page.evaluate(() => {
-        const d = document.querySelector('gmp-place-details');
-        return {
-          children: [...d.children].map((c) => c.localName),
-          place: d.querySelector('gmp-place-details-place-request')?.getAttribute('place'),
-          lib: window.__lib,
-          all: document.querySelectorAll('gmp-place-details').length,
-        };
-      });
-      ok(JSON.stringify(shape.children) === JSON.stringify(['gmp-place-details-place-request', 'gmp-place-rating', 'gmp-place-reviews']), `${label}: only the request, the rating and the reviews inside the element (${shape.children.join(', ')})`);
-      ok(shape.place === PLACE && shape.lib === 'places' && shape.all === 1, `${label}: Place ID from the setting, library "places", one element`);
+      ok(farAway ? g.chunks.length === 0 : g.chunks.length <= 1, `${label}: ${farAway ? 'block is far below the first screen: the carousel library is not requested before scrolling' : 'block starts within 400px of the first screen: the library may load'} (${g.chunks.length} chunk)`);
+      const before = await page.locator('.gr__lazy').first().evaluate((el) => Math.round(el.getBoundingClientRect().height));
+      await toView(page);
+      await page.waitForSelector(READY, { timeout: 10000 });
+      await page.waitForTimeout(600);
+      ok(g.chunks.length === 1, `${label}: the carousel library is one lazy chunk (${g.chunks.length})`);
+      ok(g.reqs.length === 0, `${label}: the browser asks neither Featurable nor Google for the reviews (${g.reqs.length} requests)`);
+      ok(g.errors.length === 0, `${label}: no console errors or hydration warnings${g.errors.length ? ' :: ' + g.errors[0].slice(0, 160) : ''}`);
+      const after = await page.locator('.gr__lazy').first().evaluate((el) => Math.round(el.getBoundingClientRect().height));
+      ok(Math.abs(after - before) <= 80, `${label}: reserved height ${before}px, loaded block ${after}px (shift ${after - before}px, limit 80)`);
+
+      const txt = await page.locator('[data-google-reviews]').first().innerText();
+      ok(txt.includes(T.original) && !txt.includes(T.english), `${label}: reviews show the Russian original, not Google's English translation`);
+      ok(!WRITE.test(txt) && !WRITE.test(await page.locator('[data-google-reviews]').first().evaluate((el) => el.innerHTML)), `${label}: no «write a review» anywhere in the block`);
+      ok(txt.includes(T.badge) && txt.includes(T.sub) && /5[.,]0/.test(txt), `${label}: badge «${T.badge}», «${T.sub}», rating 5.0`);
+      ok(T.date.test(txt) && !/\b1 лет\b/.test(txt), `${label}: relative dates are in the page language and grammatical`);
+      ok(T.month.test(txt) && !/1 (день|дня|дней)/.test(txt) && !/acum 1 zi/.test(txt), `${label}: dates are the days of publication (months and years), not the day of the sync`);
+      ok(txt.includes('после процедуры') && !/^\.\.\.$/m.test(txt) && !txt.includes('Читать далее') && !txt.includes('Citește mai mult'), `${label}: a long review is shown in full (the library would cut it down to "...")`);
+      const hrefs = await page.locator('[data-google-reviews] a[href]').evaluateAll((as) => as.map((a) => a.getAttribute('href')));
+      ok(!hrefs.some((h) => /writereview|WRITEREVIEW|data=!4m3/.test(h)), `${label}: no link to the Google «write a review» form`);
       const link = await page.locator('a.gr__google').first().getAttribute('href');
       ok(link.includes(`place_id:${PLACE}`) && (await page.locator('a.gr__google').first().getAttribute('target')) === '_blank', `${label}: link «Все отзывы на Google» to the card`);
-      const wrapW = await page.locator('.gr__wrap').first().evaluate((el) => el.getBoundingClientRect().width);
-      ok(wrapW <= 400.5 && wrapW >= 250, `${label}: element column ${Math.round(wrapW)}px (250..400)`);
-      const formNone = await page.locator('main :is(form, [data-write-review], a[href*="writereview"])').evaluate((els) => els.length).catch(() => 0);
-      void formNone;
+      ok((await page.locator('.gr__wrap[lang="ru"]').count()) === 1, `${label}: reviews wrapped in lang="ru"`);
+      ok((await page.locator('.gr__note').count()) === (T.note ? 1 : 0), `${label}: note about the original language ${T.note ? 'shown (RO)' : 'absent (RU)'}`);
+      const slides = await page.locator('.gr__carousel .slick-slide.slick-active').count();
+      ok(slides === 3, `${label}: 3 cards at 1280px (${slides})`);
       ok((await page.locator('[data-google-reviews] :is(form, textarea)').count()) === 0, `${label}: no review form of ours in the block`);
     } catch (e) {
       ok(false, `${label}: ${String(e).split('\n')[0]}`);
@@ -215,36 +250,83 @@ for (const [loc, P] of Object.entries(PAGES)) {
   }
 }
 
-// failure: the script is blocked
-for (const [loc, P] of Object.entries(PAGES)) {
-  for (const [kind, url] of [['home', P.home], ['page', P.path]]) {
-    const { ctx, page } = await open(url, 1280, { fail: true });
-    try {
-      await page.locator('[data-google-reviews]').first().evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
-      await page.waitForTimeout(1200);
-      const vis = await page.evaluate(() => [...document.querySelectorAll('[data-google-reviews]')].map((e) => getComputedStyle(e).display));
-      ok(vis.length > 0 && vis.every((d) => d === 'none'), `${loc} ${kind}: block hidden when the Google script fails (${vis.join(',')})`);
-    } catch (e) {
-      ok(false, `${loc} ${kind} failure: ${String(e).split('\n')[0]}`);
-    }
-    await ctx.close();
+// cards per window width (the library decides by the window, so the block takes the full column)
+for (const [w, want] of [[360, 1], [390, 1], [640, 1], [700, 2], [820, 2], [1023, 2], [1024, 3], [1440, 3]]) {
+  const { ctx, page } = await open('/otzyvy', w);
+  try {
+    await toView(page);
+    await page.waitForSelector(READY, { timeout: 10000 });
+    await page.waitForTimeout(500);
+    const n = await page.locator('.gr__carousel .slick-slide.slick-active').count();
+    const cw = await page.locator('.gr__carousel .slick-active').first().evaluate((el) => Math.round(el.getBoundingClientRect().width));
+    ok(n === want && cw >= 240, `window ${w}px: ${n} card(s) of ${cw}px (want ${want}, card at least 240px)`);
+  } catch (e) {
+    ok(false, `window ${w}px: ${String(e).split('\n')[0]}`);
   }
+  await ctx.close();
 }
 
-// theme
+// layout shift on the reviews page, where the block starts near the first screen and the text below it must not jump
+for (const w of [390, 768, 1280]) {
+  const { ctx, page } = await open('/otzyvy', w);
+  try {
+    await page.waitForSelector(READY, { timeout: 10000 });
+    await page.waitForTimeout(1500);
+    const cls = await page.evaluate(() => window.__cls);
+    ok(cls < 0.1, `reviews page at ${w}px: layout shift ${cls.toFixed(3)} until the carousel is shown (limit 0.1)`);
+  } catch (e) {
+    ok(false, `reviews page CLS ${w}px: ${String(e).split('\n')[0]}`);
+  }
+  await ctx.close();
+}
+
+// the number of cards follows the window when it is resized after the load
+{
+  const { ctx, page } = await open('/otzyvy', 1440);
+  try {
+    await toView(page);
+    await page.waitForSelector(READY, { timeout: 10000 });
+    const n = () => page.locator('.gr__carousel .slick-slide.slick-active').count();
+    const steps = [];
+    for (const [w, want] of [[390, 1], [820, 2], [1440, 3]]) {
+      await page.setViewportSize({ width: w, height: 800 });
+      await page.waitForTimeout(700);
+      steps.push(`${w}px: ${await n()} (want ${want})`);
+      if ((await n()) !== want) steps.push('MISMATCH');
+    }
+    ok(!steps.includes('MISMATCH'), `resize 1440 -> 390 -> 820 -> 1440: ${steps.join(', ')}`);
+  } catch (e) {
+    ok(false, `resize: ${String(e).split('\n')[0]}`);
+  }
+  await ctx.close();
+}
+
+// the dark theme keeps the cards light: text must stay readable against them
 {
   const { ctx, page } = await open('/', 1280, { dark: true });
-  await page.locator('[data-google-reviews]').first().evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
-  await page.waitForSelector('gmp-place-details', { timeout: 8000 });
-  const cs = await page.evaluate(() => ({ dark: document.documentElement.classList.contains('dark'), scheme: getComputedStyle(document.querySelector('.gr__host')).colorScheme }));
-  ok(cs.dark && cs.scheme === 'dark', `dark theme: html.dark=${cs.dark}, element color-scheme=${cs.scheme}`);
+  try {
+    await toView(page);
+    await page.waitForSelector(READY, { timeout: 10000 });
+    const c = await page.evaluate(() => {
+      const lum = (rgb) => {
+        const [r, g, b] = rgb.match(/\d+(\.\d+)?/g).slice(0, 3).map(Number).map((v) => {
+          const x = v / 255;
+          return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4;
+        });
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+      };
+      const p = [...document.querySelectorAll('.gr__carousel p')].find((e) => e.textContent.trim().length > 20);
+      let bgEl = p;
+      while (bgEl && /rgba\(0, 0, 0, 0\)|transparent/.test(getComputedStyle(bgEl).backgroundColor)) bgEl = bgEl.parentElement;
+      const fg = lum(getComputedStyle(p).color);
+      const bg = lum(getComputedStyle(bgEl).backgroundColor);
+      return { dark: document.documentElement.classList.contains('dark'), ratio: (Math.max(fg, bg) + 0.05) / (Math.min(fg, bg) + 0.05) };
+    });
+    ok(c.dark && c.ratio >= 4.5, `dark theme: html.dark=${c.dark}, review text contrast ${c.ratio.toFixed(1)}:1 (min 4.5)`);
+  } catch (e) {
+    ok(false, `dark theme: ${String(e).split('\n')[0]}`);
+  }
   await ctx.close();
-  const l = await open('/', 1280);
-  await l.page.locator('[data-google-reviews]').first().evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
-  await l.page.waitForSelector('gmp-place-details', { timeout: 8000 });
-  const ls = await l.page.evaluate(() => getComputedStyle(document.querySelector('.gr__host')).colorScheme);
-  ok(ls === 'light', `light theme: element color-scheme=${ls}`);
-  await l.ctx.close();
 }
 
 // quiz from the home block and from the page
@@ -373,8 +455,8 @@ for (const [label, url] of [['home RU', '/'], ['home RO', '/ro'], ['page RU', '/
   const bad = [];
   for (const w of [320, 360, 390, 414, 600, 768, 820, 1024, 1280, 1920]) {
     const { ctx, page } = await open(url, w);
-    await page.locator('[data-google-reviews]').first().evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
-    await page.waitForSelector('gmp-place-details', { timeout: 8000 });
+    await toView(page);
+    await page.waitForSelector(READY, { timeout: 10000 });
     const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
     if (over > 0) bad.push(`${w}px (+${over})`);
     await ctx.close();
