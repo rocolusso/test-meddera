@@ -1,3 +1,4 @@
+import { isLipsEndBannerEnabled } from '@/lib/hero-banner/config';
 import { CTA_CALL_LABEL } from '@/lib/cta/keys';
 import { ctaButtonLabel, type CtaEntry, type CtaLocale } from '@/lib/cta/registry';
 
@@ -22,6 +23,10 @@ type Props = {
  * reception dot. The title is a paragraph, not a heading, so the page outline does not change.
  */
 export default function ArticleCta({ entry, locale, source }: Props) {
+  // On the lip pages the closing banner (LipsEndBanner) takes this card's place: one switch for both,
+  // so there is never a page without either. Other rubrics keep their cards; switch off = card is back.
+  if (entry.key === 'lips' && isLipsEndBannerEnabled()) return null;
+
   return (
     <div
       data-cta={source}

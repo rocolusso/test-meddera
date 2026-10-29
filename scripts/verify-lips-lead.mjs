@@ -37,6 +37,7 @@ const quiz = await load('src/lib/cta/lips-quiz.ts');
 const tg = await load('src/lib/cta/telegram-block.ts');
 const title = await load('src/lib/cta/lead-title.ts');
 const reg = await load('src/lib/cta/registry.ts');
+const endCopy = await load('src/lib/hero-banner/lips-end-copy.ts');
 
 const BASE = 'Форма/ Увеличение Губ / LEAD';
 
@@ -44,6 +45,7 @@ test('title: always starts with the lips title, suffix by the button', () => {
   assert.equal(lips.LIPS_LEAD_TITLE, BASE);
   const want = {
     lips_banner: 'baner_cta',
+    lips_end_banner: 'end_cta',
     float_book: 'float_cta',
     dock_book: 'dock_cta',
     article_card: 'card_cta',
@@ -62,8 +64,10 @@ test('title: always starts with the lips title, suffix by the button', () => {
     const t = title.lipsLeadTitle(s);
     assert.ok(t === BASE || t.startsWith(`${BASE}/`), s);
   }
-  assert.ok(reg.LEAD_QUIZ_SOURCES.includes('lips_banner'));
-  for (const l of ['ru', 'ro']) assert.ok(reg.LEAD_QUIZ_SOURCE_LABELS.lips_banner[l]);
+  for (const src of ['lips_banner', 'lips_end_banner']) {
+    assert.ok(reg.LEAD_QUIZ_SOURCES.includes(src), src);
+    for (const l of ['ru', 'ro']) assert.ok(reg.LEAD_QUIZ_SOURCE_LABELS[src][l], `${src} label ${l}`);
+  }
 });
 
 test('isLipsLead: procedure or page decides, unchanged', () => {
@@ -199,4 +203,21 @@ test('isLipsPost: hub and articles of the lips rubric, and nothing else', () => 
   assert.equal(lips.isLipsPost({ id: 'x', kind: 'article', clusterId: 'dermatologist' }), false);
   assert.equal(lips.isLipsPost({ id: 'botoks-vs-fillery-raznica', kind: 'article', clusterId: 'botox' }), false);
   assert.equal(lips.isLipsPost({ id: 'x', kind: 'article', clusterId: null }), false);
+});
+
+test('end banner copy: questions follow the quiz, rules of the site', () => {
+  for (const l of ['ru', 'ro']) {
+    const c = endCopy.LIPS_END_BANNER_COPY[l];
+    assert.deepEqual(c.questions.map((q) => q.key), quiz.LIPS_QUIZ.map((q) => q.key), `${l}: same questions in the same order`);
+    for (const q of c.questions) {
+      assert.ok(q.text.endsWith('?') && q.text.length >= 20 && q.text.length <= 60, `${l}.${q.key}: ${q.text}`);
+    }
+    for (const k of ['label', 'title', 'sub', 'cta', 'note', 'of']) assert.ok(c[k].trim().length > 1, `${l}.${k}`);
+    assert.ok(c.cta.length <= 24, `${l}: button text fits one line`);
+  }
+  const all = JSON.stringify(endCopy.LIPS_END_BANNER_COPY);
+  // no dashes, nothing free, no guarantees, no exclamation marks, no prices or days
+  for (const re of [/бесплатн/i, /gratuit/i, /гарант/i, /garant/i, /!/, /[—–]/, /\d+\s*(лей|mdl|eur|€|\$)/i, /понедельник|вторник|среда|четверг|пятниц|суббот|воскресенье/i]) {
+    assert.ok(!re.test(all), String(re));
+  }
 });

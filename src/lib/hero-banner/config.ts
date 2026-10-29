@@ -17,3 +17,15 @@ export function isHeroBannerEnabled(): boolean {
 export function isLipsBannerEnabled(): boolean {
   return process.env.LIPS_BANNER_ENABLED === 'true';
 }
+
+/**
+ * Switch for the banner at the end of the lip enlargement pages (before the contacts block, or before
+ * the footer on blog pages), the one with the survey invitation. Same rules as the other switches:
+ * server-only, read at build time, redeploy after changing it, unset or any value other than "true"
+ * keeps it off. While it is off the service page keeps its closing grey box with the two sentences and
+ * the lip articles and hubs keep their call-to-action card (ArticleCta); when it is on, the banner takes
+ * the place of both.
+ */
+export function isLipsEndBannerEnabled(): boolean {
+  return process.env.LIPS_END_BANNER_ENABLED === 'true';
+}

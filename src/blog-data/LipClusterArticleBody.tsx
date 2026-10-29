@@ -6,6 +6,7 @@ import { blogPathRu, blogPathRo, getHubForCluster } from '@/blog-data/registry';
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import { blogUi } from '@/blog-data/blog-ui';
 import ArticleCta from '@/components/cta/ArticleCta';
+import LipsEndBannerSlot from '@/components/hero-banner/LipsEndBannerSlot';
 import { ctaForPost } from '@/lib/cta/registry';
 
 type Props = {
@@ -86,6 +87,7 @@ export function LipClusterArticleBody({ post, locale }: Props) {
           </section>
         ) : null}
 
+        <LipsEndBannerSlot locale="ru" placement="inline" />
         <ArticleCta entry={ctaForPost(post)} locale={locale} source="article_card" />
       </>
     );
@@ -144,6 +146,7 @@ export function LipClusterArticleBody({ post, locale }: Props) {
         </section>
       ) : null}
 
+      <LipsEndBannerSlot locale="ro" placement="inline" />
       <ArticleCta entry={ctaForPost(post)} locale={locale} source="article_card" />
     </>
   );

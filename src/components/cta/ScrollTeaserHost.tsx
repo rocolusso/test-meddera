@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 import { getLocaleFromPath } from '@/components/lead/leadFormConstants';
+import { getLeadQuizPageTopic } from '@/components/lead/lead-quiz-store';
 import { isCtaKey, type CtaKey } from '@/lib/cta/keys';
 import {
   TEASER_MIN_VISIBLE_MS,
@@ -119,7 +120,12 @@ export default function ScrollTeaserHost() {
       window.clearInterval(timer);
       const card = document.querySelector<HTMLElement>('[data-cta][data-procedure]');
       markTeaserShown();
-      setShown({ path: pathname, procedure: isCtaKey(card?.dataset.procedure) ? card.dataset.procedure : null });
+      // No card on the page (the lip pages show the closing banner instead): fall back to the page topic.
+      const cardProcedure = card?.dataset.procedure;
+      setShown({
+        path: pathname,
+        procedure: isCtaKey(cardProcedure) ? cardProcedure : getLeadQuizPageTopic(),
+      });
     };
 
     const timer = window.setInterval(() => {

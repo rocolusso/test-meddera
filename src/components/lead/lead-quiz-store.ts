@@ -28,6 +28,11 @@ export function setLeadQuizPageTopic(topic: CtaKey | null): void {
   pageTopic = topic;
 }
 
+/** Read-only access to the page topic, for a trigger that has no card with a procedure to read it from (the scroll teaser). */
+export function getLeadQuizPageTopic(): CtaKey | null {
+  return pageTopic;
+}
+
 let state: LeadQuizState = CLOSED;
 const listeners = new Set<() => void>();
 

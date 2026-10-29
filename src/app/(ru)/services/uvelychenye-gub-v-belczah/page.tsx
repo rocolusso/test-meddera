@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { bilingualAlternates } from '@/lib/hreflang';
 import ContentPageShell from '@/components/new-ui/ContentPageShell';
 import LipsBannerSlot from '@/components/hero-banner/LipsBannerSlot';
+import LipsEndBannerSlot from '@/components/hero-banner/LipsEndBannerSlot';
+import { isLipsEndBannerEnabled } from '@/lib/hero-banner/config';
 import uvelichenieGub from '@public/assets/img/services/uvelicheniegub.png';
 import uvelichenieGub1 from '@public/assets/img/services/lips/lips1.jpg';
 import uvelichenieGub2 from '@public/assets/img/services/lips/lips2.jpg';
@@ -103,7 +105,13 @@ function ServicePageMoney() {
         /* eslint-disable-next-line react/no-danger */
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <ContentPageShell variant="custom" locale="ru" contactsVariant="lips" banner={<LipsBannerSlot locale="ru" />}>
+      <ContentPageShell
+        variant="custom"
+        locale="ru"
+        contactsVariant="lips"
+        banner={<LipsBannerSlot locale="ru" />}
+        bottomBanner={<LipsEndBannerSlot locale="ru" />}
+      >
         <h1 className="mx-auto max-w-3xl text-balance text-left text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-center">
           Увеличение губ в Бельцах — безопасно, красиво и естественно
         </h1>
@@ -224,10 +232,13 @@ function ServicePageMoney() {
           </ul>
         </div>
 
-        <div className="mx-auto mt-12 max-w-3xl rounded-xl border border-border/50 bg-muted/30 p-6 text-center">
-          <p className="font-semibold text-lg text-foreground">Готовы подчеркнуть свою красоту?</p>
-          <p className="mt-2 text-foreground/90">Свяжитесь с нами по телефону или запишитесь онлайн.</p>
-        </div>
+        {/* The closing banner (LIPS_END_BANNER_ENABLED) takes the place of this box. */}
+        {isLipsEndBannerEnabled() ? null : (
+          <div className="mx-auto mt-12 max-w-3xl rounded-xl border border-border/50 bg-muted/30 p-6 text-center">
+            <p className="font-semibold text-lg text-foreground">Готовы подчеркнуть свою красоту?</p>
+            <p className="mt-2 text-foreground/90">Свяжитесь с нами по телефону или запишитесь онлайн.</p>
+          </div>
+        )}
       </ContentPageShell>
     </>
   );

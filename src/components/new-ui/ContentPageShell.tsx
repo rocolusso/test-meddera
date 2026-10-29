@@ -20,6 +20,8 @@ type BaseProps = {
   contactsVariant?: 'default' | 'lips';
   /** Rendered between the header and `<main>` (outside the page content), e.g. the lips banner. */
   banner?: React.ReactNode;
+  /** Rendered right after `<main>`, before the contacts block (outside the page content), e.g. the lips closing banner. */
+  bottomBanner?: React.ReactNode;
 };
 
 type SimpleArticleProps = BaseProps & {
@@ -55,6 +57,7 @@ export default function ContentPageShell(props: ContentPageShellProps) {
     showServices = true,
     contactsVariant = 'default',
     banner = null,
+    bottomBanner = null,
   } = props;
 
   const isArticle = props.variant !== 'custom';
@@ -87,6 +90,7 @@ export default function ContentPageShell(props: ContentPageShellProps) {
           </div>
         )}
       </main>
+      {bottomBanner}
 
       <ContactsBlock locale={locale} variant={contactsVariant} />
       {showServices ? <ServicesNew locale={locale} /> : null}

@@ -7,6 +7,7 @@ import { blogUi } from '@/blog-data/blog-ui';
 import { HUB_CONTENT } from '@/blog-data/hubs';
 import { renderInline } from '@/blog-data/inline-links';
 import ArticleCta from '@/components/cta/ArticleCta';
+import LipsEndBannerSlot from '@/components/hero-banner/LipsEndBannerSlot';
 import { ctaForCluster } from '@/lib/cta/registry';
 import { servicePath } from '@/lib/service-slugs';
 import type { BlogPost } from '@/blog-data/types';
@@ -116,6 +117,8 @@ export function HubBody({ clusterId, locale, dateModified }: Props) {
           ))}
         </section>
       ))}
+
+      {clusterId === 'lips' ? <LipsEndBannerSlot locale={locale} placement="inline" /> : null}
 
       <section className="mb-12" aria-labelledby={`hub-list-${key}`}>
         <h2 id={`hub-list-${key}`} className={blogUi.h2}>{t.listTitle}</h2>

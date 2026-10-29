@@ -5,6 +5,7 @@ import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
 import { blogUi } from '@/blog-data/blog-ui';
 import { ArticleServiceLinks } from '@/blog-data/ArticleServiceLinks';
+import LipsEndBannerSlot from '@/components/hero-banner/LipsEndBannerSlot';
 import { articleAnchor, renderInline } from '@/blog-data/inline-links';
 
 type ArticleSection = { h2: string; paragraphs: string[] };
@@ -101,6 +102,9 @@ export function LipArticleBody({ post, locale, dateModified, sections }: Props) 
         </p>
         <ArticleServiceLinks post={post} locale={locale} />
       </section>
+
+      {/* the closing banner of the lip pages (LIPS_END_BANNER_ENABLED) replaces the booking card that used to stand here */}
+      <LipsEndBannerSlot locale={locale} placement="inline" />
 
       <section
         className={blogUi.reviewBox}

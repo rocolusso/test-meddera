@@ -56,6 +56,8 @@ for (const p of paths) {
 }
 const lipsRu = lipsPages.filter((p) => !p.startsWith('/ro'));
 const lipsRo = lipsPages.filter((p) => p.startsWith('/ro'));
+// The closing banner (LIPS_END_BANNER_ENABLED) replaces the lips card of articles and hubs: detected from the hub page.
+const endBannerOn = (htmlOf.get(HUB) ?? '').includes('data-end-banner');
 ok(lipsRu.length === 16 && lipsRo.length === 16, `32 lip enlargement pages found (RU ${lipsRu.length}, RO ${lipsRo.length})`);
 
 for (const p of lipsPages) {
@@ -224,6 +226,39 @@ if (bannerOn) {
 // ---- 2b. quiz of the buttons
 const MODAL = 'div.fixed.inset-0';
 
+/**
+ * Scrolls past 60% of the content in steps (the teaser watches a 1 px marker: a jump over it in one
+ * frame is not noticed) and waits for the scroll teaser (8 s on the page, then it shows).
+ */
+async function waitTeaser(page) {
+  for (let i = 0; i < 120; i += 1) {
+    const done = await page.evaluate(() => {
+      if (window.scrollY >= document.documentElement.scrollHeight * 0.75 - 5) return true;
+      window.scrollBy(0, 200);
+      return false;
+    });
+    if (done) break;
+    await page.waitForTimeout(40);
+  }
+  for (let i = 0; i < 45; i += 1) {
+    if (await page.locator('[data-scroll-teaser]').count()) return;
+    await page.waitForTimeout(1000);
+  }
+}
+
+/** A click before React has attached the quiz handler is lost: click again until the quiz opens. */
+async function clickUntilQuiz(page, locator, timeout = 8000) {
+  for (let i = 0; i < 4; i += 1) {
+    await locator.click({ timeout, force: true });
+    try {
+      await page.waitForSelector(`${MODAL} form input[type="radio"]`, { timeout: 2500 });
+      return;
+    } catch {
+      // not open yet
+    }
+  }
+}
+
 async function readQuiz(page) {
   await page.waitForSelector(`${MODAL} form input[type="radio"]`, { timeout: 8000 });
   return page.evaluate((MODAL) => {
@@ -255,23 +290,18 @@ async function flow({ url, w, how, source, lips = true, ro = false, label }) {
   try {
     if (how === 'banner') {
       await freeze(page, 5);
-      await page.locator('.hb__cta').click({ timeout: 8000, force: true });
+      await clickUntilQuiz(page, page.locator('.hb__cta'));
     } else if (how === 'float') {
-      await page.locator('#primaryCta').click({ timeout: 8000, force: true });
+      await clickUntilQuiz(page, page.locator('#primaryCta'));
     } else if (how === 'dock') {
-      await page.locator('#dockBookCta').click({ timeout: 8000, force: true });
+      await clickUntilQuiz(page, page.locator('#dockBookCta'));
     } else if (how === 'card') {
       const btn = page.locator('[data-cta] button[data-open-quiz]').first();
       await btn.scrollIntoViewIfNeeded();
-      await btn.click({ timeout: 8000, force: true });
+      await clickUntilQuiz(page, btn);
     } else if (how === 'teaser') {
-      await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight * 0.7));
-      for (let i = 0; i < 6; i += 1) {
-        await page.waitForTimeout(1800);
-        // lazy images make the page longer: scroll again so that 60% of the content stays behind us
-        await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight * 0.75));
-      }
-      await page.locator('[data-scroll-teaser] button:not([aria-label])').click({ timeout: 25000, force: true });
+      await waitTeaser(page);
+      await clickUntilQuiz(page, page.locator('[data-scroll-teaser] button:not([aria-label])'), 25000);
     }
     const q = await readQuiz(page);
     const want = lips ? LIPS_KEYS : GENERAL_KEYS;
@@ -326,9 +356,19 @@ await flow({ url: SERVICE_RO, w: 1440, how: 'float', source: 'float_book', ro: t
 await flow({ url: HUB, w: 1440, how: 'float', source: 'float_book', label: 'floating button / hub RU' });
 await flow({ url: SERVICE, w: 390, how: 'dock', source: 'dock_book', label: 'bottom panel / service RU' });
 await flow({ url: lipsRo.find((p) => p.includes('/blog/') && !p.endsWith('marire-buzelor-balti')), w: 390, how: 'dock', source: 'dock_book', ro: true, label: 'bottom panel / article RO' });
-await flow({ url: lipsRu.find((p) => p.includes('pervyj-raz')), w: 1440, how: 'card', source: 'article_card', label: 'article card / article RU' });
-await flow({ url: HUB, w: 1440, how: 'card', source: 'hub_card', label: 'hub card / hub RU' });
+if (endBannerOn) {
+  // the lips card is gone, the closing banner stands in its place (its own flows are in verify-lips-end-banner)
+  for (const [label, url] of [['article', lipsRu.find((p) => p.includes('pervyj-raz'))], ['hub', HUB]]) {
+    const html = htmlOf.get(url) ?? '';
+    ok(!/data-cta="(article|hub)_card"[^>]*data-procedure="lips"/.test(html) && html.includes('data-end-banner'), `${label} RU: no lips card, closing banner instead`);
+  }
+} else {
+  await flow({ url: lipsRu.find((p) => p.includes('pervyj-raz')), w: 1440, how: 'card', source: 'article_card', label: 'article card / article RU' });
+  await flow({ url: HUB, w: 1440, how: 'card', source: 'hub_card', label: 'hub card / hub RU' });
+}
 await flow({ url: SERVICE, w: 1440, how: 'teaser', source: 'teaser_scroll60', label: 'scroll teaser / service RU' });
+// on an article without a card the teaser must still open the lips quiz (the page topic stands in for the card)
+await flow({ url: lipsRu.find((p) => p.includes('pervyj-raz')), w: 1440, how: 'teaser', source: 'teaser_scroll60', label: 'scroll teaser / article RU' });
 
 // pages that are not about lips keep the general quiz
 await flow({ url: '/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza', w: 1440, how: 'float', source: 'float_book', lips: false, label: 'floating button / botox page' });
@@ -340,7 +380,7 @@ await flow({ url: '/', w: 390, how: 'dock', source: 'dock_book', lips: false, la
   try {
     await page.evaluate(() => document.querySelector('a[href="/blog"]').click());
     await page.waitForURL(/\/blog$/, { timeout: 10000 });
-    await page.locator('#primaryCta').click({ timeout: 8000, force: true });
+    await clickUntilQuiz(page, page.locator('#primaryCta'));
     const q = await readQuiz(page);
     ok(JSON.stringify(q.names) === JSON.stringify(GENERAL_KEYS) && q.chip === null, `after leaving a lips page by a link the floating button opens the general quiz (${q.names.join(', ')})`);
   } catch (e) {
@@ -360,13 +400,8 @@ const lum = (c) => {
 for (const dark of [false, true]) {
   const { ctx, page } = await open(SERVICE, 1440, { dark });
   try {
-    await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight * 0.7));
-    for (let i = 0; i < 6; i += 1) {
-      await page.waitForTimeout(1800);
-      // lazy images make the page longer: scroll again so that 60% of the content stays behind us
-        await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight * 0.75));
-    }
-    await page.waitForSelector('[data-scroll-teaser]', { timeout: 25000 });
+    await waitTeaser(page);
+    await page.waitForSelector('[data-scroll-teaser]', { timeout: 5000 });
     await page.waitForTimeout(500);
     const c = await page.evaluate(() => {
       const t = document.querySelector('[data-scroll-teaser]');

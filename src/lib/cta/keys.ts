@@ -33,6 +33,7 @@ export const LEAD_QUIZ_SOURCES = [
   'teaser_scroll60',
   'hero_banner',
   'lips_banner',
+  'lips_end_banner',
 ] as const;
 
 export type LeadQuizSource = (typeof LEAD_QUIZ_SOURCES)[number];

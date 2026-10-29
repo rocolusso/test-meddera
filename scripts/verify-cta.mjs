@@ -277,6 +277,7 @@ test('cards in the rendered pages (needs --base)', { skip: base ? false : 'run w
 
   const found = { ru: {}, ro: {} };
   const kinds = { article_card: 0, hub_card: 0 };
+  const hidden = { ru: 0, ro: 0 };
   for (const p of paths) {
     const res = await fetch(base + p);
     assert.equal(res.status, 200, `${p}: HTTP ${res.status}`);
@@ -287,11 +288,20 @@ test('cards in the rendered pages (needs --base)', { skip: base ? false : 'run w
       assert.equal(cards.length, 0, `${p}: list page must not carry a card`);
       continue;
     }
+    // The closing banner of the lip pages (LIPS_END_BANNER_ENABLED) replaces the lips card: on such a page there is
+    // no lips card and a banner instead; every other page carries exactly one card.
+    const hasEndBanner = /<section data-end-banner/.test(html);
+    if (cards.length === 0) {
+      assert.ok(hasEndBanner, `${p}: no card and no closing banner`);
+      hidden[p.startsWith('/ro/') ? 'ro' : 'ru'] += 1;
+      continue;
+    }
     assert.equal(cards.length, 1, `${p}: expected exactly one card, found ${cards.length}`);
     const [, kind, key] = cards[0];
+    assert.ok(!(hasEndBanner && key === 'lips'), `${p}: a lips card next to the closing banner`);
     assert.ok(reg.isCtaKey(key), `${p}: data-procedure "${key}" is not in the allowlist`);
-    // the animated banner of lip pages (when LIPS_BANNER_ENABLED) has its own quiz button: it is not the card's
-    const withoutBanner = html.replace(/<section data-hero-banner[\s\S]*?<\/section>/, '');
+    // the banners of lip pages (top: LIPS_BANNER_ENABLED, closing: LIPS_END_BANNER_ENABLED) have their own quiz buttons: not the card's
+    const withoutBanner = html.replace(/<section data-(?:hero|end)-banner[\s\S]*?<\/section>/g, '');
     assert.equal((withoutBanner.match(/data-open-quiz/g) || []).length, 1, `${p}: one quiz button in the card`);
     assert.equal((html.match(/data-cta-source="(article|hub)_card_call"/g) || []).length, 1, `${p}: one call link in the card`);
     assert.ok(html.includes(`data-cta-source="${kind}"`), `${p}: quiz button carries the card source`);
@@ -301,14 +311,26 @@ test('cards in the rendered pages (needs --base)', { skip: base ? false : 'run w
     found[loc][key] = (found[loc][key] || 0) + 1;
     kinds[kind] += 1;
   }
-  assert.equal(kinds.article_card, 2 * articles.length, 'article cards');
-  assert.equal(kinds.hub_card, 2 * hubs.length, 'hub cards');
+  const hiddenTotal = hidden.ru + hidden.ro;
+  if (hiddenTotal === 0) {
+    assert.equal(kinds.article_card, 2 * articles.length, 'article cards');
+    assert.equal(kinds.hub_card, 2 * hubs.length, 'hub cards');
+  } else {
+    // lips cards are replaced by the closing banner: every card plus every replaced card makes the full set
+    assert.equal(kinds.article_card + kinds.hub_card + hiddenTotal, 2 * (articles.length + hubs.length), 'cards plus replaced lips cards');
+  }
 
   const expected = {};
   for (const a of articles) expected[reg.ctaForPost(a).key] = (expected[reg.ctaForPost(a).key] || 0) + 1;
   for (const h of hubs) expected[reg.ctaForCluster(h.clusterId).key] = (expected[reg.ctaForCluster(h.clusterId).key] || 0) + 1;
-  for (const loc of LOCALES) assert.deepEqual(found[loc], expected, `${loc}: cards per procedure must match the registry`);
+  for (const loc of LOCALES) {
+    const withHidden = { ...found[loc] };
+    if (hidden[loc]) withHidden.lips = (withHidden.lips || 0) + hidden[loc];
+    assert.deepEqual(withHidden, expected, `${loc}: cards per procedure must match the registry`);
+    if (hidden[loc]) assert.equal(hidden[loc], expected.lips, `${loc}: every lips card is replaced by the banner, no other card is`);
+  }
 
   const fallback = expected.consultation || 0;
+  console.log(`  closing banner instead of a lips card: ${hidden.ru} RU, ${hidden.ro} RO`);
   console.log(`  cards: ${kinds.article_card} in articles, ${kinds.hub_card} on hubs; per procedure (RU): ${JSON.stringify(found.ru)}; consultation fallback: ${fallback}`);
 });

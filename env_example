@@ -20,6 +20,15 @@ HERO_BANNER_ENABLED="false"
 # Read at build time, so after changing it redeploy.
 LIPS_BANNER_ENABLED="false"
 
+# Closing banner with the survey invitation on the lip enlargement pages (the service page, the hub and
+# the articles about lips, RU and RO): before the contacts block, before the footer on blog pages.
+# It is on only when the value is "true"; unset or any other value keeps it off. On the service page it
+# takes the place of the grey closing box, and in the articles and hubs about lips it replaces the
+# "Записаться на увеличение губ" card (cards of other rubrics stay). While the variable is off, the
+# grey box and the cards stay.
+# Read at build time, so after changing it redeploy.
+LIPS_END_BANNER_ENABLED="false"
+
 # Indicators on the booking and call buttons (the dot on "Call", the call button's pulse and shake,
 # the glow of the "Book online" button).
 # "true": the dot is green during reception hours (Tue, Thu-Sat 13:00-18:00, Europe/Chisinau) and red

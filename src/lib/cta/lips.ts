@@ -23,6 +23,7 @@ export const LIPS_LEAD_TITLE = 'Форма/ Увеличение Губ / LEAD';
 /** Ending of the title by the button the quiz was opened from. The home page banner has none. */
 export const LIPS_TITLE_SUFFIX: Partial<Record<LeadQuizSource, string>> = {
   lips_banner: 'baner_cta',
+  lips_end_banner: 'end_cta',
   float_book: 'float_cta',
   dock_book: 'dock_cta',
   article_card: 'card_cta',
