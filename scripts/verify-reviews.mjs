@@ -437,6 +437,32 @@ for (const [loc, P] of Object.entries(PAGES)) {
     await ctx.close();
   }
 }
+// the language switch keeps the reviews page (the paths differ: /otzyvy and /ro/recenzii) and the other pages work as before
+for (const [loc, P] of Object.entries(PAGES)) {
+  const other = loc === 'ru' ? PAGES.ro : PAGES.ru;
+  for (const [w, sel, kind] of [
+    [1280, '[aria-label="locale-btn"]', 'header'],
+    [390, loc === 'ru' ? '[aria-label="Limba română"]' : '[aria-label="Русский язык"]', 'phone header'],
+  ]) {
+    const { ctx, page } = await open(P.path, w);
+    try {
+      const href = await page.locator(sel).first().getAttribute('href');
+      ok(href === other.path, `${loc} reviews page: ${kind} language link leads to ${other.path} (${href})`);
+      await page.locator(sel).first().click();
+      await page.waitForURL('**' + other.path, { timeout: 8000 });
+      ok(true, `${loc} reviews page: ${kind} language switch opens ${other.path}`);
+    } catch (e) {
+      ok(false, `${loc} reviews page ${kind} language switch: ${String(e).split('\n')[0]}`);
+    }
+    await ctx.close();
+  }
+}
+for (const [from, to] of [['/', '/ro'], ['/about', '/ro/about'], ['/ro', '/'], ['/ro/about', '/about']]) {
+  const { ctx, page } = await open(from, 1280);
+  const href = await page.locator('[aria-label="locale-btn"]').first().getAttribute('href');
+  ok(href === to, `language link on ${from} still leads to ${to} (${href})`);
+  await ctx.close();
+}
 // the header does not wrap or overflow at tablet widths
 for (const [loc, P] of Object.entries(PAGES)) {
   const bad = [];

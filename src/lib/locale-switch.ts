@@ -1,4 +1,5 @@
 import { findPostByAnySlug } from '@/blog-data/registry';
+import { REVIEWS_PATH } from '@/lib/google-reviews/config';
 
 function normalizePathname(pathname: string): string {
   if (pathname === '/') return '/';
@@ -40,6 +41,13 @@ export function getAlternateLocalePath(pathname: string, locale: 'ru' | 'ro'): s
   }
   if (p === '/ro/contacts') {
     return toRu ? '/contacts' : '/ro/contacts';
+  }
+
+  if (p === REVIEWS_PATH.ru) {
+    return toRo ? REVIEWS_PATH.ro : REVIEWS_PATH.ru;
+  }
+  if (p === REVIEWS_PATH.ro) {
+    return toRu ? REVIEWS_PATH.ru : REVIEWS_PATH.ro;
   }
 
   if (p === '/search') {
