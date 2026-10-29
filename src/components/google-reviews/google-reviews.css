@@ -1,0 +1,109 @@
+/*
+ * Google reviews block (the Place Details Element of Google). Loaded only where <GoogleReviewsBlock> is
+ * rendered. Google recommends a width of 250 to 400 px for this element.
+ */
+.gr {
+  background: var(--background, #fff);
+}
+
+.gr__in {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 400px);
+  align-items: center;
+  gap: 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px 60px;
+}
+
+.gr--page .gr__in {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 900px;
+  padding: 0;
+  margin: 40px auto;
+}
+
+.gr__title {
+  margin: 0 0 12px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34px;
+  color: var(--pofo-heading, inherit);
+}
+
+.gr__sub {
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.gr__act {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.gr__cta {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 28px;
+  border: 0;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #ec4899, #f43f5e 50%, #db2777);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(236, 72, 153, 0.3);
+}
+
+.gr__all {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.gr__wrap {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.gr__google {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Google draws the element; it follows the site theme instead of the system one */
+.gr__host {
+  width: 100%;
+  max-width: 400px;
+  min-height: 120px;
+  margin: 0 auto;
+  color-scheme: light;
+}
+
+html.dark .gr__host {
+  color-scheme: dark;
+}
+
+.gr__host gmp-place-details {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 860px) {
+  .gr__in {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding: 0 15px 40px;
+  }
+}

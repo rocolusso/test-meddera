@@ -201,6 +201,7 @@ export const LEAD_QUIZ_SOURCE_LABELS: Record<LeadQuizSource, Bilingual> = {
   hero_banner: { ru: 'Баннер на главной', ro: 'Banner pe pagina principală' },
   lips_banner: { ru: 'Баннер на страницах про губы', ro: 'Banner pe paginile despre buze' },
   lips_end_banner: { ru: 'Нижний баннер на страницах про губы', ro: 'Banner jos pe paginile despre buze' },
+  reviews_block: { ru: 'Блок отзывов Google', ro: 'Bloc de recenzii Google' },
 };
 
 const KEY_BY_SERVICE: Record<string, CtaKey> = {

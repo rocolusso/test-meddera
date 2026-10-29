@@ -29,6 +29,16 @@ LIPS_BANNER_ENABLED="false"
 # Read at build time, so after changing it redeploy.
 LIPS_END_BANNER_ENABLED="false"
 
+# Google reviews (the Place Details Element of Places UI Kit): the block on the home page (RU and RO), the pages
+# /otzyvy and /ro/recenzii, their sitemap entries, the "Отзывы" footer link. On only when the value is "true";
+# unset or any other value keeps all of it off and the site as before. Read at build time, so after changing it
+# redeploy. In Google Cloud enable the "Places UI Kit" API (and Maps JavaScript API), restrict the key to the
+# HTTP referrers https://meddera.md/* and https://www.meddera.md/*, add a billing account and a budget alert.
+# Without the key or the Place ID the block shows nothing.
+GOOGLE_REVIEWS_ENABLED="false"
+NEXT_PUBLIC_GOOGLE_MAPS_KEY=""
+NEXT_PUBLIC_GOOGLE_PLACE_ID=""
+
 # Indicators on the booking and call buttons (the dot on "Call", the call button's pulse and shake,
 # the glow of the "Book online" button).
 # "true": the dot is green during reception hours (Tue, Thu-Sat 13:00-18:00, Europe/Chisinau) and red

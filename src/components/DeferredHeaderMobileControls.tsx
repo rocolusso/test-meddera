@@ -6,12 +6,12 @@ import BurgerMenu from '@/components/BurgerMenu';
 import LocaleSwitchLink from '@/components/new-ui/LocaleSwitchLink';
 import ThemeToggle from '@/components/new-ui/ThemeToggle';
 
-type Props = { locale: string };
+type Props = { locale: string; /** Show the "Отзывы" item (GOOGLE_REVIEWS_ENABLED, read on the server). */ withReviews?: boolean };
 
 /**
  * Defers mounting burger + theme toggle until browser idle to reduce early main-thread work.
  */
-export default function DeferredHeaderMobileControls({ locale }: Props) {
+export default function DeferredHeaderMobileControls({ locale, withReviews = false }: Props) {
   const [ready, setReady] = useState(false);
   const loc = locale === 'ro' ? 'ro' : 'ru';
 
@@ -62,7 +62,7 @@ export default function DeferredHeaderMobileControls({ locale }: Props) {
         ariaLabel={loc === 'ru' ? 'Limba română' : 'Русский язык'}
       />
       <ThemeToggle locale={loc} />
-      <BurgerMenu locale={locale} />
+      <BurgerMenu locale={locale} withReviews={withReviews} />
     </div>
   );
 }

@@ -6,7 +6,8 @@ import { ArrowUpRight, FileText } from 'lucide-react';
 import { FOOTER_RECENT_ARTICLE_COUNT, getLatestArticles } from '@/blog-data/registry';
 import { servicesLinksRo, servicesLinksRu } from '@/lib/db-content';
 import { getBlogClusterImage } from '@/lib/blog-cluster-image';
-import { NAV_LINKS, toNavLocale } from '@/lib/nav-links';
+import { isGoogleReviewsEnabled } from '@/lib/google-reviews/config';
+import { getNavLinks, toNavLocale } from '@/lib/nav-links';
 import { FaMapLocationDot, FaPhoneVolume } from 'react-icons/fa6';
 
 import { cn } from '@/lib/utils';
@@ -84,7 +85,7 @@ function FooterNew({ locale }: { locale: string }) {
             <WidgetTitle eyebrow={isRu ? 'Разделы' : 'Secțiuni'} title={isRu ? 'Главная' : 'Acasă'} />
             <nav aria-label={isRu ? 'Основная навигация' : 'Navigare principală'}>
               <ul className="flex flex-col gap-2">
-                {NAV_LINKS.map((item) => (
+                {getNavLinks(isGoogleReviewsEnabled()).map((item) => (
                   <li key={item.key}>
                     <Link href={item.href[loc]} className={footerLinkClass}>
                       {item.label[loc]}

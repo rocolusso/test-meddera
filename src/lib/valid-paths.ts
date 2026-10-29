@@ -1,4 +1,5 @@
 import { getAllSlugParams, getMaxIndexPage } from '@/blog-data/registry';
+import { isGoogleReviewsEnabled, REVIEWS_PATH } from '@/lib/google-reviews/config';
 import { SERVICE_SLUGS } from '@/lib/service-slugs';
 
 /**
@@ -25,6 +26,10 @@ const STATIC_PATHS = [
 
 function buildValidPaths(): Set<string> {
   const set = new Set<string>(STATIC_PATHS);
+  if (isGoogleReviewsEnabled()) {
+    set.add(REVIEWS_PATH.ru);
+    set.add(REVIEWS_PATH.ro);
+  }
   for (const slug of SERVICE_SLUGS) {
     set.add(`/services/${slug}`);
     set.add(`/ro/services/${slug}`);

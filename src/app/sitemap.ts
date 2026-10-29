@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getMaxIndexPage, getPostsForIndexPage, getPostsForSitemap } from '@/blog-data/registry';
+import { isGoogleReviewsEnabled, REVIEWS_PATH } from '@/lib/google-reviews/config';
 import { SERVICE_SLUGS } from '@/lib/service-slugs';
 
 /**
@@ -79,6 +80,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: 'https://meddera.md/ro/services', changeFrequency: 'weekly', priority: 0.88 },
     { url: 'https://meddera.md/ro/contacts', changeFrequency: 'monthly', priority: 0.84 },
   ];
+
+  // Страницы отзывов Google: только при включённом флаге GOOGLE_REVIEWS_ENABLED
+  if (isGoogleReviewsEnabled()) {
+    mainPages.push(
+      { url: `https://meddera.md${REVIEWS_PATH.ru}`, changeFrequency: 'monthly', priority: 0.7 },
+      { url: `https://meddera.md${REVIEWS_PATH.ro}`, changeFrequency: 'monthly', priority: 0.7 }
+    );
+  }
 
   // Страницы услуг
 

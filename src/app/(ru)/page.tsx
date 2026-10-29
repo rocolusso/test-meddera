@@ -8,6 +8,7 @@ import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
 import AboutNew from '@/components/new-ui/AboutNew';
 import HeroBanner from '@/components/hero-banner/HeroBanner';
 import { isHeroBannerEnabled } from '@/lib/hero-banner/config';
+import GoogleReviewsBlock from '@/components/google-reviews/GoogleReviewsBlock';
 import ServicesNew from '@/components/new-ui/ServicesNew';
 import HomeSeoContentRu from '@/components/new-ui/HomeSeoContentRu';
 import FooterNew from '@/components/new-ui/FooterNew';
@@ -71,6 +72,7 @@ export default function Home() {
         {isHeroBannerEnabled() ? <HeroBanner locale="ru" /> : null}
         <AboutNew locale="ru" />
         <ServicesNew locale="ru" />
+        <GoogleReviewsBlock locale="ru" variant="home" />
         <HomeSeoContentRu />
       </main>
 
