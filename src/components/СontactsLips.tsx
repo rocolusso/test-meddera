@@ -5,6 +5,7 @@ import { FaMapLocationDot, FaPhoneVolume } from 'react-icons/fa6';
 import Image from 'next/image';
 import PhoneInputWithCountrySelect from 'react-phone-number-input';
 import './lead/phone-input.css';
+import ContactChannels from '@/components/ContactChannels';
 import LazyMap from '@/components/LazyMap';
 import imgAddress from '../../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';
@@ -396,6 +397,8 @@ function ContactsLips({ locale }:{ locale:string }) {
                           <FaPhoneVolume size="24px" className="" />
                           +37368550030
                         </Button>
+
+                        <ContactChannels locale={locale === 'ro' ? 'ro' : 'ru'} variant="form" />
 
                       </div>
                     </div>

@@ -8,7 +8,17 @@ export default function TelClickTracker() {
   useEffect(() => {
     const handler = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      const anchor = target.closest("a[href^='tel:']") as HTMLAnchorElement | null;
+      const anchor = target.closest("a[href^='tel:'], a[data-cta-event]") as HTMLAnchorElement | null;
+
+      if (anchor && !anchor.getAttribute('href')?.startsWith('tel:')) {
+        // Messenger and social links (data-cta-*): counted as the event they name, with their own cta_source.
+        sendGa4Event(anchor.dataset.ctaEvent || 'channel_click', {
+          button_name: 'channel_click',
+          event_label: `click_${anchor.dataset.ctaLabel || 'link'}`,
+          cta_source: anchor.dataset.ctaSource || 'inline_link',
+        });
+        return;
+      }
 
       if (anchor) {
         const phone = anchor.getAttribute('href')?.replace('tel:', '');

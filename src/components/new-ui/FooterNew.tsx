@@ -10,6 +10,8 @@ import { isGoogleReviewsEnabled } from '@/lib/google-reviews/config';
 import { getNavLinks, toNavLocale } from '@/lib/nav-links';
 import { FaMapLocationDot, FaPhoneVolume } from 'react-icons/fa6';
 
+import ContactChannels from '@/components/ContactChannels';
+
 import { cn } from '@/lib/utils';
 
 /** Logo variant with white lettering (dark footer). */
@@ -134,6 +136,11 @@ function FooterNew({ locale }: { locale: string }) {
               </li>
             </ul>
           </div>
+        </div>
+
+        {/* Мессенджеры и соцсети */}
+        <div className="mt-[50px] border-t border-pofo-line pt-[40px]">
+          <ContactChannels locale={isRu ? 'ru' : 'ro'} variant="footer" />
         </div>
 
         {/* Блог — latest-post widget */}
