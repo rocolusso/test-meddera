@@ -46,6 +46,8 @@ test('getPageContext classifies pages', () => {
     ['/ro/contacts', 'contacts', '', 'ro'],
     ['/search?q=x', 'search', '', 'ru'],
     ['/ads/g1', 'ads', 'g1', 'ru'],
+    ['/developer', 'developer', '', 'ru'],
+    ['/developer?lang=en', 'developer', '', 'ru'],
     ['/about', 'other', '', 'ru'],
     ['/robots', 'other', '', 'ru'],
   ];

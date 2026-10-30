@@ -9,6 +9,7 @@ import {
 import { getClientIp } from '@/lib/client-ip';
 import { verifyFormToken } from '@/lib/form-token';
 import { parseContactForm } from '@/lib/contact-form-schema';
+import { normalizeDeveloperLocale, parseDeveloperForm } from '@/lib/developer-form-schema';
 import { verifyRecaptchaForScoring, verifyRecaptchaToken } from '@/lib/recaptcha-verify';
 import { isFormAbuseProtectionDisabled } from '@/lib/form-abuse-flags';
 import { appendTelegramUrlBlock, resolveFormPathname } from '@/lib/form-page-url';
@@ -21,6 +22,66 @@ const TELEGRAM_USER_IDS = [
   '6576456966',
   '7378233926',
 ] as const;
+
+export type ContactFormPostOptions = {
+  telegramFormTitle: string;
+  buildExtraTelegramBlock?: (body: Record<string, unknown>, locale: 'ru' | 'ro') => string;
+  /**
+   * Telegram user ids that receive the message. Omitted: the shared list of the clinic forms.
+   * Passed: only these ids (never mixed with the shared list). An empty or malformed list stops the request.
+   */
+  recipients?: readonly string[];
+  /**
+   * 'phone' (default): the clinic form, strict phone validation, label "Телефон".
+   * 'contact': the /developer form, the field may be a phone, an @username or a messenger link, label "Контакт".
+   */
+  contactMode?: 'phone' | 'contact';
+  /** When true and no recipient accepted the message, answer 502 instead of a silent success. */
+  strictDelivery?: boolean;
+};
+
+/** Returns the ids to send to, or null when `recipients` was passed but is empty or not made of numeric ids. */
+export function resolveTelegramRecipients(recipients: readonly string[] | undefined): readonly string[] | null {
+  if (recipients === undefined) {
+    return TELEGRAM_USER_IDS;
+  }
+  if (recipients.length === 0 || !recipients.every((id) => /^\d{5,15}$/.test(id))) {
+    return null;
+  }
+  return recipients;
+}
+
+/** Sends the text to every id; resolves with how many sends were accepted. Failures are logged, never thrown. */
+async function sendTelegramMessage(
+  userIds: readonly string[],
+  text: string,
+): Promise<{ delivered: number; failed: number }> {
+  const botToken = process.env.TELEGRAM_BOT_TOKEN;
+  const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+  const results = await Promise.allSettled(userIds.map((userId) => fetch(telegramApiUrl, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ chat_id: userId, text }),
+  }).then(async (res) => {
+    if (!res.ok) {
+      const errorData = await res.text();
+      throw new Error(errorData);
+    }
+    return res.json();
+  })));
+  let delivered = 0;
+  let failed = 0;
+  for (const r of results) {
+    if (r.status === 'fulfilled') {
+      delivered += 1;
+    } else {
+      failed += 1;
+      const err = r.reason as { message?: string };
+      console.error('Error sending messages:', err?.message);
+    }
+  }
+  return { delivered, failed };
+}
 
 function jsonNoStore(body: unknown, init?: ResponseInit): NextResponse {
   const headers = new Headers(init?.headers);
@@ -35,9 +96,11 @@ function defaultBehavior(): BehaviorMetrics {
 /** Legacy path: only reCAPTCHA + Telegram (original behavior). */
 async function legacyContactFormPost(
   request: NextRequest,
-  telegramFormTitle: string,
-  buildExtraTelegramBlock?: (body: Record<string, unknown>, locale: 'ru' | 'ro') => string,
+  options: ContactFormPostOptions,
+  userIds: readonly string[],
 ): Promise<NextResponse> {
+  const { telegramFormTitle, buildExtraTelegramBlock } = options;
+  const contactLabel = options.contactMode === 'contact' ? 'Контакт' : 'Телефон';
   let body: Record<string, unknown>;
   try {
     body = await request.json() as Record<string, unknown>;
@@ -71,35 +134,19 @@ async function legacyContactFormPost(
 ${telegramFormTitle}
 
 Имя: ${name}
-Телефон: ${phone}
+${contactLabel}: ${phone}
 Сообщение: ${userMessage}
 ${extraTelegramBlock ? `\n${extraTelegramBlock}` : ''}
 `;
   const message = appendTelegramUrlBlock(messageBase.trimEnd(), formPathname);
 
-  const botToken = process.env.TELEGRAM_BOT_TOKEN;
-  const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
-
   if (!message) {
     return jsonNoStore({ error: 'Bad request' }, { status: 500 });
   }
 
-  try {
-    const promises = TELEGRAM_USER_IDS.map((userId) => fetch(telegramApiUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ chat_id: userId, text: message }),
-    }).then(async (res) => {
-      if (!res.ok) {
-        const errorData = await res.text();
-        throw new Error(errorData);
-      }
-      return res.json();
-    }));
-    await Promise.all(promises);
-  } catch (error: unknown) {
-    const err = error as { message?: string };
-    console.error('Error sending messages:', err.message);
+  const sent = await sendTelegramMessage(userIds, message);
+  if (options.strictDelivery && sent.delivered === 0) {
+    return jsonNoStore({ error: 'Delivery failed' }, { status: 502 });
   }
 
   return jsonNoStore({ formSended: body });
@@ -107,13 +154,16 @@ ${extraTelegramBlock ? `\n${extraTelegramBlock}` : ''}
 
 export async function processContactFormPost(
   request: NextRequest,
-  options: {
-    telegramFormTitle: string;
-    buildExtraTelegramBlock?: (body: Record<string, unknown>, locale: 'ru' | 'ro') => string;
-  },
+  options: ContactFormPostOptions,
 ): Promise<NextResponse> {
+  const userIds = resolveTelegramRecipients(options.recipients);
+  if (!userIds) {
+    console.error('Contact form: recipients option is empty or malformed, nothing was sent');
+    return jsonNoStore({ error: 'Service unavailable' }, { status: 503 });
+  }
+
   if (isFormAbuseProtectionDisabled()) {
-    return legacyContactFormPost(request, options.telegramFormTitle, options.buildExtraTelegramBlock);
+    return legacyContactFormPost(request, options, userIds);
   }
 
   if (!process.env.RECAPTCHA_SECRET_KEY) {
@@ -185,7 +235,10 @@ export async function processContactFormPost(
   const userMessage = typeof msg?.message === 'string' ? msg.message : '';
 
   const locale = body.locale === 'ro' ? 'ro' : 'ru';
-  const parsed = parseContactForm(locale, { username, userphone, message: userMessage });
+  const contactMode = options.contactMode ?? 'phone';
+  const parsed = contactMode === 'contact'
+    ? parseDeveloperForm(normalizeDeveloperLocale(body.locale), { username, userphone, message: userMessage })
+    : parseContactForm(locale, { username, userphone, message: userMessage });
   if (!parsed.ok) {
     return jsonNoStore({ error: 'Bad request', fieldErrors: parsed.fieldErrors }, { status: 400 });
   }
@@ -232,7 +285,7 @@ export async function processContactFormPost(
 ${options.telegramFormTitle}
 
 Имя: ${name}
-Телефон: ${phone}
+${contactMode === 'contact' ? 'Контакт' : 'Телефон'}: ${phone}
 Сообщение: ${messageText}
 ${extraTelegramBlock ? `\n${extraTelegramBlock}` : ''}
 `;
@@ -242,25 +295,9 @@ ${extraTelegramBlock ? `\n${extraTelegramBlock}` : ''}
     return jsonNoStore({ success: true, shadow: true });
   }
 
-  const botToken = process.env.TELEGRAM_BOT_TOKEN;
-  const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
-
-  try {
-    const promises = TELEGRAM_USER_IDS.map((userId) => fetch(telegramApiUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ chat_id: userId, text: telegramBlock }),
-    }).then(async (res) => {
-      if (!res.ok) {
-        const errorData = await res.text();
-        throw new Error(errorData);
-      }
-      return res.json();
-    }));
-    await Promise.all(promises);
-  } catch (error: unknown) {
-    const err = error as { message?: string };
-    console.error('Error sending messages:', err.message);
+  const sent = await sendTelegramMessage(userIds, telegramBlock);
+  if (options.strictDelivery && sent.delivered === 0) {
+    return jsonNoStore({ error: 'Delivery failed' }, { status: 502 });
   }
 
   return jsonNoStore({

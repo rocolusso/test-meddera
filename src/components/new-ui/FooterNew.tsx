@@ -197,6 +197,19 @@ function FooterNew({ locale }: { locale: string }) {
           >
             {`© Meddera | Ecaterina Pintea | 2018 - ${currentYear}`}
           </Link>
+          <p className="mt-1 text-[12px] leading-5 text-[#939393]">
+            {isRu ? 'Сайт разработан: ' : 'Site dezvoltat de: '}
+            <Link
+              href={isRu ? '/developer' : '/developer?lang=en'}
+              prefetch={false}
+              data-cta-event="developer_link_click"
+              data-cta-source="footer_developer"
+              data-cta-label="developer"
+              className="underline decoration-[#555] underline-offset-2 transition-colors hover:text-white"
+            >
+              Alexander Shchedrov
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

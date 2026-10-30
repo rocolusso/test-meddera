@@ -14,6 +14,7 @@ export type PageType =
   | 'contacts'
   | 'search'
   | 'ads'
+  | 'developer'
   | 'other';
 
 export type PageContext = {
@@ -85,6 +86,8 @@ export function getPageContext(pathname: string): PageContext {
   } else if (first === 'ads') {
     page_type = 'ads';
     content_slug = second ?? '';
+  } else if (first === 'developer') {
+    page_type = 'developer';
   }
 
   return { page_path: clean, page_type, content_slug: content_slug.slice(0, 100), lang };

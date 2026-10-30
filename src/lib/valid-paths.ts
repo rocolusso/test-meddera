@@ -14,6 +14,7 @@ const STATIC_PATHS = [
   '/blog',
   '/search',
   '/review',
+  '/developer',
   '/ads/cards',
   '/ads/g1',
   '/ro',

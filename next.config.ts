@@ -75,6 +75,11 @@ const nextConfig: NextConfig = {
         source: '/:path*',
         headers: getSecurityHeaders(isDev),
       },
+      // /developer is closed from search engines also by header (the page carries a robots meta tag too).
+      {
+        source: '/developer',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+      },
     ];
   },
 

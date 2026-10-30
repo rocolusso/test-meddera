@@ -86,6 +86,11 @@ export function proxy(request: NextRequest) {
 
   const response = NextResponse.next();
 
+  // /developer has its own layout without the clinic header: the logo hint would be a wasted request there.
+  if (request.nextUrl.pathname === '/developer') {
+    return response;
+  }
+
   const links = [LOGO_LINK];
   if (HOME_PATHS.has(request.nextUrl.pathname)) {
     links.push(ABOUT_IMAGE_LINK);

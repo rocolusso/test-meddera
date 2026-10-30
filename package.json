@@ -39,6 +39,8 @@
     "verify:lips-banner:off": "node scripts/verify-lips-banner.mjs --expect=off",
     "verify:lips-end": "node scripts/verify-lips-end-banner.mjs",
     "verify:lips-end:off": "node scripts/verify-lips-end-banner.mjs --expect=off",
+    "verify:developer": "node scripts/verify-developer.mjs",
+    "verify:developer-form": "node --test scripts/verify-developer-form.mjs",
     "verify:reviews": "node scripts/verify-reviews.mjs",
     "verify:reviews:off": "node scripts/verify-reviews.mjs --expect=off",
     "metrics:reviews": "node scripts/reviews-text-metrics.mjs",
