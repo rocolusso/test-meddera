@@ -123,7 +123,7 @@ const beacons = async (page) => {
   ok(!/pintea_logo/.test(res.headers.get('link') || ''), '/developer does not preload the clinic logo');
   ok(/pintea_logo/.test(clinic.headers.get('link') || ''), 'the clinic pages still preload their logo');
   const unknown = await fetch(base + '/developer-nope', { redirect: 'manual' });
-  ok(unknown.status === 301 || unknown.status === 308, 'unknown paths still redirect home');
+  ok(unknown.status === 404, 'unknown paths answer 404 (PLAN 404L-01)');
 }
 
 // ---------------------------------------------------------------- shell, languages, photo, projects

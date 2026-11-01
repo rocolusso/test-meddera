@@ -1,0 +1,43 @@
+/** Texts of the 404 page (PLAN 404L-01). House rules: no dashes, no exclamation marks. */
+export type NotFoundLocale = 'ru' | 'ro';
+
+export const NOT_FOUND_COPY = {
+  ru: {
+    metaTitle: 'Страница не найдена | Meddera',
+    code: '404',
+    heading: 'Страница не найдена',
+    text: 'Такой страницы на сайте нет. Возможно, ссылка устарела или в адресе опечатка.',
+    searchPlaceholder: 'Найти на сайте',
+    searchLabel: 'Поиск по сайту',
+    searchButton: 'Искать',
+    home: 'На главную',
+    book: 'Записаться онлайн',
+    mapEyebrow: 'Навигация',
+    mapTitle: 'Карта сайта',
+    mapText: 'Отсюда можно перейти в любой раздел.',
+    sections: 'Разделы',
+    services: 'Услуги',
+    blog: 'Блог',
+    allArticles: 'Все статьи',
+    imageAlt: 'Кабинет клиники Meddera в Бельцах',
+  },
+  ro: {
+    metaTitle: 'Pagina nu a fost găsită | Meddera',
+    code: '404',
+    heading: 'Pagina nu a fost găsită',
+    text: 'Această pagină nu există pe site. Poate linkul este vechi sau adresa are o greșeală.',
+    searchPlaceholder: 'Caută pe site',
+    searchLabel: 'Căutare pe site',
+    searchButton: 'Caută',
+    home: 'Pagina principală',
+    book: 'Programare online',
+    mapEyebrow: 'Navigare',
+    mapTitle: 'Harta site-ului',
+    mapText: 'De aici puteți merge în orice secțiune.',
+    sections: 'Secțiuni',
+    services: 'Servicii',
+    blog: 'Blog',
+    allArticles: 'Toate articolele',
+    imageAlt: 'Cabinetul clinicii Meddera din Bălți',
+  },
+} as const;

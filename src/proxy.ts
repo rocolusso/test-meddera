@@ -4,7 +4,8 @@ import { getImageProps } from 'next/image';
 
 import aboutImg from '../public/assets/img/about_2k.jpg';
 
-import { notFoundRedirect, shouldRedirectUnknown } from '@/lib/not-found-redirect';
+import { logNotFound, NOT_FOUND_PAGE } from '@/lib/not-found-log';
+import { isRoPath, isUnknownPagePath } from '@/lib/valid-paths';
 
 /**
  * Early Hints (HTTP 103) support — PLAN-PERF-03.
@@ -79,9 +80,20 @@ const LOGO_LINK = '</assets/img/pintea_logo.svg>; rel=preload; as=image; type="i
 const HOME_PATHS = new Set(['/', '/ro']);
 
 export function proxy(request: NextRequest) {
-  // Unknown page-like URLs get a 301 to the home page of their language (blog list pages out of range go to the blog).
-  if (shouldRedirectUnknown(request.nextUrl.pathname)) {
-    return notFoundRedirect({ url: request.nextUrl, headers: request.headers }, request.nextUrl.pathname);
+  const { pathname } = request.nextUrl;
+
+  // Unknown page-like URLs get the 404 page of their language with a real 404 status (PLAN 404L-01). Before, they
+  // got a 301 to the home page, which search engines count as a soft 404. The page itself lives at an internal path
+  // and is rendered statically; the rewrite keeps the requested URL in the address bar.
+  if (isUnknownPagePath(pathname)) {
+    logNotFound(pathname, request.headers.get('referer'), request.headers.get('user-agent'));
+    const target = new URL(isRoPath(pathname) ? NOT_FOUND_PAGE.ro : NOT_FOUND_PAGE.ru, request.url);
+    target.search = '';
+    const notFound = NextResponse.rewrite(target, { status: 404 });
+    // Not cached: a missing URL may become a real page later (a new article), and should not stay a cached 404.
+    notFound.headers.set('Cache-Control', 'no-store');
+    notFound.headers.set('X-Robots-Tag', 'noindex');
+    return notFound;
   }
 
   const response = NextResponse.next();

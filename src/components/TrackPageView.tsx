@@ -30,10 +30,13 @@ export function TrackPageView() {
       }),
     }).catch(() => {});
 
+    // A 404 page marks itself (NotFoundView), so its page_view is not classified by the URL as a real page.
+    const notFound = document.querySelector('[data-page-not-found]') !== null;
     sendGa4Event('page_view', {
       page_location: window.location.href,
       page_referrer: document.referrer,
       page_title: document.title,
+      ...(notFound ? { page_type: 'not_found', content_slug: '' } : {}),
     });
   }, [pathname]);
 

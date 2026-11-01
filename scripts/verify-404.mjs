@@ -2,8 +2,8 @@
 /**
  * Checks the 404 handling of a running server.
  * Usage: node scripts/verify-404.mjs <baseUrl> [--skip-sitemap]
- * Unknown page-like URLs must answer 301 to the home page of their language; technical paths keep a real 404;
- * every URL of the sitemap must answer 200 without a redirect.
+ * Unknown page-like URLs must answer 404 with the 404 page of their language (PLAN 404L-01, no more 301 to the home
+ * page); moved pages keep their 301; technical paths keep a plain 404; every sitemap URL answers 200 without a redirect.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -28,38 +28,55 @@ async function hit(p, method = 'GET') {
       if (attempt >= 2) throw e;
     }
   }
-  return { status: res.status, location: res.headers.get('location'), cache: res.headers.get('cache-control'), reason: res.headers.get('x-redirect-reason') };
+  const body = method === 'GET' && res.status === 404 ? await res.text() : '';
+  return {
+    status: res.status,
+    location: res.headers.get('location'),
+    cache: res.headers.get('cache-control'),
+    robots: res.headers.get('x-robots-tag'),
+    lang: (body.match(/<html[^>]*\blang="([a-z]+)"/) || [])[1] || null,
+    notFoundPage: body.includes('data-page-not-found'),
+  };
 }
 const loc = (r) => (r.location ? r.location.replace(base, '') : null);
 
-function expect301(name, r, to) {
-  if (r.status !== 301) return fail(`${name}: status ${r.status}, expected 301`);
-  if (loc(r) !== to) return fail(`${name}: Location ${loc(r)}, expected ${to}`);
+function expect404Page(name, r, lang) {
+  if (r.status !== 404) return fail(`${name}: status ${r.status}${r.location ? ' -> ' + r.location : ''}, expected 404`);
   if (r.cache !== 'no-store') fail(`${name}: Cache-Control ${r.cache}, expected no-store`);
-  if (r.reason !== 'not-found') fail(`${name}: x-redirect-reason ${r.reason}`);
+  if (!/noindex/.test(r.robots || '')) fail(`${name}: X-Robots-Tag ${r.robots}`);
+  if (r.lang !== null || r.notFoundPage) {
+    if (r.lang !== lang) fail(`${name}: lang ${r.lang}, expected ${lang}`);
+    if (!r.notFoundPage) fail(`${name}: not the 404 page`);
+  }
 }
 
 if (!onlySitemap) {
 const unknown = [
-  ['/nonexistent', '/'],
-  ['/nonexistent/deep/path', '/'],
-  ['/Blog', '/'],
-  ['/ro/nonexistent', '/ro'],
-  ['/ro/nonexistent/deep', '/ro'],
-  ['/blog/nonexistent-slug', '/'],
-  ['/ro/blog/nonexistent-slug', '/ro'],
-  ['/services/nonexistent', '/'],
-  ['/ro/services/nonexistent', '/ro'],
-  ['/blog/page/11', '/blog'],
-  ['/blog/page/31', '/blog'],
-  ['/blog/page/abc', '/blog'],
-  ['/ro/blog/page/11', '/ro/blog'],
-  ['/ro/blog/page/31', '/ro/blog'],
-  ['/wp-admin', '/'],
-  ['/ads/zzz', '/'],
+  ['/nonexistent', 'ru'],
+  ['/nonexistent/deep/path', 'ru'],
+  ['/Blog', 'ru'],
+  ['/ro/nonexistent', 'ro'],
+  ['/ro/nonexistent/deep', 'ro'],
+  ['/blog/nonexistent-slug', 'ru'],
+  ['/ro/blog/nonexistent-slug', 'ro'],
+  ['/services/nonexistent', 'ru'],
+  ['/ro/services/nonexistent', 'ro'],
+  ['/blog/page/11', 'ru'],
+  ['/blog/page/31', 'ru'],
+  ['/blog/page/abc', 'ru'],
+  ['/ro/blog/page/11', 'ro'],
+  ['/ro/blog/page/31', 'ro'],
+  ['/wp-admin', 'ru'],
+  ['/ads/zzz', 'ru'],
+  ['/developer/zzz', 'ru'],
+  ['/404-page', 'ru'],
+  ['/ro/404-page', 'ro'],
 ];
-for (const [p, to] of unknown) expect301(p, await hit(p), to);
-expect301('HEAD /nonexistent', await hit('/nonexistent', 'HEAD'), '/');
+for (const [p, lang] of unknown) expect404Page(p, await hit(p), lang);
+{
+  const r = await hit('/nonexistent', 'HEAD');
+  if (r.status !== 404) fail(`HEAD /nonexistent: status ${r.status}, expected 404`);
+}
 
 // removed articles keep their successor, never the home page by accident
 for (const r of redirects.slice(0, 40)) {
@@ -83,8 +100,8 @@ for (const p of ['/robots.txt', '/sitemap.xml']) {
   if (r.status !== 200) fail(`${p}: status ${r.status}, expected 200`);
 }
 
-// redirect targets are alive
-for (const t of ['/', '/ro', '/blog', '/ro/blog']) {
+// main pages are alive
+for (const t of ['/', '/ro', '/blog', '/ro/blog', '/developer']) {
   const r = await hit(t);
   if (r.status !== 200) fail(`target ${t}: status ${r.status}`);
 }

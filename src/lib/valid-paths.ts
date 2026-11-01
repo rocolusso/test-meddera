@@ -3,7 +3,7 @@ import { isGoogleReviewsEnabled, REVIEWS_PATH } from '@/lib/google-reviews/confi
 import { SERVICE_SLUGS } from '@/lib/service-slugs';
 
 /**
- * Paths that exist on the site. Used by proxy.ts: any other page-like path is answered with a 301 to the home page.
+ * Paths that exist on the site. Used by proxy.ts: any other page-like path gets the 404 page with status 404.
  * Built once per server instance from the same sources as the sitemap.
  */
 const STATIC_PATHS = [
@@ -71,4 +71,14 @@ export function isTechnicalPath(pathname: string): boolean {
   if (pathname.startsWith('/_next/') || pathname === '/_next') return true;
   const last = pathname.split('/').pop() ?? '';
   return last.includes('.');
+}
+
+/**
+ * True for a page-like path the site does not have: it gets the 404 page (PLAN 404L-01).
+ * Technical paths (assets, API, files) are left to Next.js, which answers them with its own 404.
+ * The internal 404 pages are not in the list either, so opening them directly also answers 404.
+ */
+export function isUnknownPagePath(pathname: string): boolean {
+  if (isTechnicalPath(pathname)) return false;
+  return !isValidPath(pathname);
 }

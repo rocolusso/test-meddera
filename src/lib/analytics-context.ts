@@ -15,6 +15,7 @@ export type PageType =
   | 'search'
   | 'ads'
   | 'developer'
+  | 'not_found'
   | 'other';
 
 export type PageContext = {

@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { permanentRedirect } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 
 import HeaderNew from '@/components/new-ui/HeaderNew';
 import FooterNew from '@/components/new-ui/FooterNew';
@@ -55,13 +55,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function RoBlogIndexPaginatedPage({ params }: Props) {
   const { page: pageParam } = await params;
-  const page = parseInt(pageParam, 10);
-  if (Number.isNaN(page) || page < 2) {
+  // Only "/page/1" is a real alias of the blog list; any other number or text out of range is a 404 (PLAN 404L-01).
+  if (pageParam === '1') {
     permanentRedirect('/ro/blog');
   }
+  const page = /^[0-9]+$/.test(pageParam) ? parseInt(pageParam, 10) : NaN;
   const max = getMaxIndexPage();
-  if (page > max) {
-    permanentRedirect('/ro/blog');
+  if (Number.isNaN(page) || page < 2 || page > max) {
+    notFound();
   }
 
   const canonical = `${ORIGIN}/ro/blog/page/${page}`;

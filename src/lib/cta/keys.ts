@@ -35,6 +35,7 @@ export const LEAD_QUIZ_SOURCES = [
   'lips_banner',
   'lips_end_banner',
   'reviews_block',
+  'not_found',
 ] as const;
 
 export type LeadQuizSource = (typeof LEAD_QUIZ_SOURCES)[number];
