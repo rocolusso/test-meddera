@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
  * The /developer page and its link in the clinic footer, checked against a running production server:
- * closed from search engines (header, meta tag, not in sitemap, not in robots.txt, no redirect to home), none of the
+ * closed from search engines (header, meta tag, not in sitemap, robots.txt closes it for every bot except the search
+ * engines that must see its noindex, nofollow on the footer link, unknown paths answer 404), none of the
  * clinic shell or marketing scripts, three languages (switcher, ?lang=, html lang, title, memory), the photo, the CSS
  * banner (plays on screen, scenes in order, static frame with reduced motion), the orbit labels stay upright, projects,
  * the form (validation, payload, success and error states, honeypot), GA4 events with cta_source and page_type,
@@ -114,8 +115,31 @@ const beacons = async (page) => {
   ok(!/pixel|clarity|plerdy/i.test(html.replace(/clarity\s*=/g, '')), 'no marketing scripts in the HTML');
   const sm = await (await fetch(base + '/sitemap.xml')).text();
   ok(!/developer/.test(sm), 'not in sitemap.xml');
+  // robots.txt (PLAN 404L-01): closed for every bot, open only for the search engines that must read the noindex.
   const rb = await (await fetch(base + '/robots.txt')).text();
-  ok(!/developer/i.test(rb), 'not in robots.txt (a disallow would hide the noindex)');
+  const groups = [];
+  let current = null;
+  for (const raw of rb.split('\n')) {
+    const line = raw.replace(/#.*/, '').trim();
+    const m = line.match(/^([A-Za-z-]+):\s*(.*)$/);
+    if (!m) continue;
+    const [, key, value] = [m[0], m[1].toLowerCase(), m[2].trim()];
+    if (key === 'user-agent') {
+      if (!current || current.rules.length) groups.push((current = { agents: [], rules: [] }));
+      current.agents.push(value.toLowerCase());
+    } else if (key === 'disallow' && current) current.rules.push(value);
+  }
+  const rulesFor = (bot) => (groups.find((g) => g.agents.includes(bot.toLowerCase())) || groups.find((g) => g.agents.includes('*'))).rules;
+  const blocks = (bot, path) => rulesFor(bot).some((r) => r && path.startsWith(r));
+  for (const bot of ['Googlebot', 'Bingbot', 'YandexBot']) {
+    ok(!blocks(bot, '/developer'), `robots.txt: ${bot} may read /developer (to see its noindex)`);
+    ok(blocks(bot, '/api/x') && blocks(bot, '/ads/x') && blocks(bot, '/search'), `robots.txt: ${bot} keeps the usual disallows`);
+  }
+  for (const bot of ['*', 'GPTBot', 'ClaudeBot', 'PerplexityBot', 'CCBot', 'Google-Extended']) {
+    ok(blocks(bot, '/developer'), `robots.txt: ${bot} is kept out of /developer`);
+  }
+  ok(!blocks('*', '/') && !blocks('*', '/blog') && !blocks('GPTBot', '/services/x'), 'robots.txt: the clinic pages stay open to every bot');
+  ok(/^Sitemap: https:\/\/meddera\.md\/sitemap\.xml$/m.test(rb), 'robots.txt: sitemap line');
   const res2 = await fetch(base + '/developer?lang=en', { redirect: 'manual' });
   ok(res2.status === 200, '/developer?lang=en answers 200');
   const clinic = await fetch(base + '/', { redirect: 'manual' });
@@ -471,6 +495,7 @@ for (const c of [
   const a = row.locator('a');
   ok(await a.getAttribute('href') === c.href, `${c.url}: name links to ${c.href}`);
   ok(await a.getAttribute('data-cta-source') === 'footer_developer' && await a.getAttribute('data-cta-event') === 'developer_link_click', `${c.url}: cta_source footer_developer`);
+  ok(await a.getAttribute('rel') === 'nofollow', `${c.url}: footer link has rel=nofollow`);
   ok(!(await a.getAttribute('target')), `${c.url}: same tab`);
   ok(await page.locator('footer a', { hasText: '© Meddera' }).count() === 1, `${c.url}: the copyright link is still there`);
   // like a visitor: accept the cookie bar (it covers the end of the page on a first visit), scroll to the line, click it

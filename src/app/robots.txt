@@ -1,3 +1,17 @@
+# Search engines that honour noindex: they may crawl /developer, see its noindex and leave it out of the index.
+# A Disallow for them would hide the noindex, and the URL could still show up as a bare link (PLAN 404L-01).
+User-Agent: Googlebot
+User-Agent: Bingbot
+User-Agent: YandexBot
+Disallow: /ads/
+Disallow: /api/
+Disallow: /cert/
+Disallow: /blocked/
+Disallow: /rating/
+Disallow: /search
+Disallow: /ro/search
+
+# Every other bot, AI crawlers included: /developer is closed as well.
 User-Agent: *
 Disallow: /ads/
 Disallow: /api/
@@ -6,5 +20,6 @@ Disallow: /blocked/
 Disallow: /rating/
 Disallow: /search
 Disallow: /ro/search
+Disallow: /developer
 
 Sitemap: https://meddera.md/sitemap.xml

@@ -7,7 +7,8 @@ const copy = DEVELOPER_COPY.ru;
 
 /**
  * The page is closed from search engines twice: this robots tag and an X-Robots-Tag header (next.config.ts).
- * It is not listed in sitemap.xml and not disallowed in robots.txt (a disallow would hide the noindex from crawlers).
+ * It is not listed in sitemap.xml. robots.txt closes it for every bot except Googlebot, Bingbot and YandexBot, which
+ * must be able to read the noindex (a disallow would hide it from them); the footer link has rel="nofollow".
  */
 export const metadata: Metadata = {
   title: copy.metaTitle,

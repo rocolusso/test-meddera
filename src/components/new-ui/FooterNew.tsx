@@ -202,6 +202,7 @@ function FooterNew({ locale }: { locale: string }) {
             <Link
               href={isRu ? '/developer' : '/developer?lang=en'}
               prefetch={false}
+              rel="nofollow"
               data-cta-event="developer_link_click"
               data-cta-source="footer_developer"
               data-cta-label="developer"
