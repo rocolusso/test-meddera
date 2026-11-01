@@ -1,15 +1,18 @@
 /**
- * Client for sending GA4 events to our own Cloudflare Worker, which relays
- * them to GA4 Measurement Protocol server-side. Replaces the previous
- * window.dataLayer / GTM event-tag approach for the events listed in
- * PLAN-GA4W-01, so the browser no longer has to load gtag.js to record them.
+ * Client for sending GA4 events. One entry point (sendGa4Event), two transports (see ga4-transport.ts):
  *
- * Event names/params are kept identical to what GTM previously sent, so GA4
- * reports stay comparable across the cutover.
+ * - `worker` (default): our Cloudflare Worker relays the event to GA4 Measurement Protocol server-side
+ *   (PLAN-GA4W-01), so the browser does not have to load gtag.js.
+ * - `gtm`: the event goes through Google Tag Manager as a gtag command (PLAN GA4G-01). The Google tag of the container
+ *   adds sessions, traffic source and engagement time, which the Measurement Protocol cannot provide.
+ *
+ * Event names/params are the same in both modes, so GA4 reports stay comparable. Own-device opt-out (?no_track) and
+ * the webdriver check apply to both.
  */
 
 import { getPageContext, parseFirstTouch, type FirstTouch } from '@/lib/analytics-context';
 import { getReceptionIndicator } from '@/lib/contact-reception-schedule';
+import { getGa4Transport, pushGtmEvent } from '@/lib/ga4-transport';
 
 const ENDPOINT = '/api/ga4-collect';
 const OPT_OUT_KEY = 'ga4_off';
@@ -133,6 +136,11 @@ export function sendGa4Event(name: string, params: Ga4Params = {}): void {
   try {
     syncOptOutFromUrl();
     if (isTrackingSuppressed()) return;
+
+    if (getGa4Transport() === 'gtm') {
+      pushGtmEvent(name, { ...buildContext(), ...params });
+      return;
+    }
 
     const payload = {
       client_id: getOrCreateClientId(),

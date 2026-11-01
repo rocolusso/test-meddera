@@ -48,3 +48,14 @@ FEATURABLE_WIDGET_ID=""
 # Baked into the bundle at build time, so after changing it redeploy. Set "true" in Vercel for the
 # live site (Production and Preview), otherwise the indicators always show "open".
 NEXT_PUBLIC_INDICATORS_CTA_LOGIC_ENABLED="false"
+
+# GA4 transport (PLAN GA4G-01). Where the browser sends GA4 events:
+# "worker" (or unset): through the Cloudflare Worker and the Measurement Protocol (cloudflare/ga4-worker). No gtag.js,
+#   but GA4 gets no sessions, traffic source or engagement time from it.
+# "gtm": through Google Tag Manager (the Google tag of the container measures sessions, source and engagement).
+# Baked into the bundle at build time, so after changing it redeploy. Exactly one path is active, never both.
+NEXT_PUBLIC_GA4_TRANSPORT="worker"
+# GTM container id, used only with NEXT_PUBLIC_GA4_TRANSPORT="gtm". A malformed value keeps GTM off.
+NEXT_PUBLIC_GTM_ID=""
+# "1": also load GTM on Vercel Preview deployments (for the PageSpeed comparison). Production loads it anyway.
+NEXT_PUBLIC_GTM_ON_PREVIEW=""

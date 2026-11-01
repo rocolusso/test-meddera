@@ -6,6 +6,7 @@ import DeferredAhrefs from '@/components/DeferredAhrefs';
 import DeferredClarity from '@/components/DeferredClarity';
 import DeferredBottomDock from '@/components/DeferredBottomDock';
 import DeferredFacebookPixel from '@/components/DeferredFacebookPixel';
+import DeferredGoogleTagManager from '@/components/DeferredGoogleTagManager';
 import DeferredPlerdy from '@/components/DeferredPlerdy';
 import DeferredTelClickTracker from '@/components/DeferredTelClickTracker';
 import DeferredVercelInsights from '@/components/DeferredVercelInsights';
@@ -13,6 +14,7 @@ import { FacebookPixelNoScript } from '@/components/FacebookPixel';
 import FacebookPixelPageViewTracker from '@/components/FacebookPixelPageViewTracker';
 import RouteAwareOverlays from '@/components/RouteAwareOverlays';
 import { isEnabled } from '@/lib/env-flags';
+import { isGtmEnabled } from '@/lib/ga4-transport';
 import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
 import { TrackPageView } from '@/components/TrackPageView';
 
@@ -38,6 +40,7 @@ export default function RootShell({
     isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_CLARITY);
   const enableAhrefs =
     isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_AHREFS);
+  const enableGtm = isGtmEnabled();
   const showVercelInsights = isVercel && process.env.VERCEL_ENV === 'production';
 
   return (
@@ -57,6 +60,7 @@ export default function RootShell({
         {enablePlerdy ? <link rel="dns-prefetch" href="https://a.plerdy.com" /> : null}
         {enableClarity ? <link rel="dns-prefetch" href="https://www.clarity.ms" /> : null}
         <link rel="dns-prefetch" href="https://www.google.com" />
+        {enableGtm ? <link rel="dns-prefetch" href="https://www.googletagmanager.com" /> : null}
         {enableAhrefs ? <link rel="dns-prefetch" href="https://analytics.ahrefs.com" /> : null}
         {enablePlerdy ? <link rel="preconnect" href="https://a.plerdy.com" crossOrigin="" /> : null}
         {enableClarity ? <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="" /> : null}
@@ -78,6 +82,7 @@ export default function RootShell({
         <DeferredTelClickTracker />
         <DeferredFacebookPixel />
         {enablePlerdy ? <DeferredPlerdy /> : null}
+        {enableGtm ? <DeferredGoogleTagManager /> : null}
       </body>
     </html>
   );

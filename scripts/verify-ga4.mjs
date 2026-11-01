@@ -150,7 +150,8 @@ async function loadClient() {
   const src = fs
     .readFileSync(path.join(root, 'src/lib/ga4-worker-client.ts'), 'utf8')
     .replaceAll("'@/lib/analytics-context'", `'${url('src/lib/analytics-context.ts')}'`)
-    .replaceAll("'@/lib/contact-reception-schedule'", `'${url('src/lib/contact-reception-schedule.ts')}'`);
+    .replaceAll("'@/lib/contact-reception-schedule'", `'${url('src/lib/contact-reception-schedule.ts')}'`)
+    .replaceAll("'@/lib/ga4-transport'", `'${url('src/lib/ga4-transport.ts')}'`);
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'verify-ga4-'));
   const file = path.join(dir, `client-${Math.random().toString(36).slice(2)}.mts`);
   fs.writeFileSync(file, src);
@@ -243,6 +244,109 @@ test('client survives blocked storage', async () => {
   assert.equal(sent.length, 1);
 });
 
+/* ---------- 3b. GTM transport (PLAN GA4G-01) ---------- */
+
+async function withTransport(value, fn) {
+  const before = process.env.NEXT_PUBLIC_GA4_TRANSPORT;
+  if (value === undefined) delete process.env.NEXT_PUBLIC_GA4_TRANSPORT;
+  else process.env.NEXT_PUBLIC_GA4_TRANSPORT = value;
+  try {
+    return await fn();
+  } finally {
+    if (before === undefined) delete process.env.NEXT_PUBLIC_GA4_TRANSPORT;
+    else process.env.NEXT_PUBLIC_GA4_TRANSPORT = before;
+  }
+}
+
+test('transport gtm: event goes to dataLayer as a gtag command, not to the worker', async () => {
+  await withTransport('gtm', async () => {
+    const client = await loadClient();
+    const sent = fakeBrowser({ href: 'https://meddera.md/blog/skolko-derzhitsya-botoks?utm_source=instagram&utm_medium=bio_website', referrer: 'https://l.instagram.com/' });
+    client.sendGa4Event('messenger_click', { cta_source: 'footer', page_type: 'forced' });
+    assert.equal(sent.length, 0, 'no sendBeacon in gtm mode');
+    const layer = globalThis.window.dataLayer;
+    assert.equal(layer.length, 1);
+    // GTM treats only an Arguments object as a gtag command; a plain array would be a data layer message.
+    assert.equal(Object.prototype.toString.call(layer[0]), '[object Arguments]');
+    assert.equal(layer[0][0], 'event');
+    assert.equal(layer[0][1], 'messenger_click');
+    const p = layer[0][2];
+    assert.equal(p.cta_source, 'footer');
+    assert.equal(p.page_type, 'forced', 'caller params override context');
+    assert.equal(p.content_slug, 'skolko-derzhitsya-botoks');
+    assert.equal(p.first_src, 'instagram');
+    assert.equal(p.first_med, 'bio_website');
+    assert.equal(typeof globalThis.window.gtag, 'function');
+    client.sendGa4Event('page_view', { page_title: 't' });
+    assert.equal(globalThis.window.dataLayer.length, 2, 'second event reuses the same queue');
+  });
+});
+
+test('transport gtm: opt-out and webdriver still suppress events', async () => {
+  await withTransport('gtm', async () => {
+    const client = await loadClient();
+    fakeBrowser({ href: 'https://meddera.md/?no_track=1' });
+    client.sendGa4Event('page_view');
+    assert.equal(globalThis.window.dataLayer, undefined, 'suppressed event must not even create the queue');
+    globalThis.window.location = { href: 'https://meddera.md/?no_track=0', pathname: '/', search: '?no_track=0', hostname: 'meddera.md' };
+    client.sendGa4Event('page_view');
+    assert.equal(globalThis.window.dataLayer.length, 1);
+    fakeBrowser({ href: 'https://meddera.md/', webdriver: true });
+    client.sendGa4Event('page_view');
+    assert.equal(globalThis.window.dataLayer, undefined);
+  });
+});
+
+test('transport: unknown or missing value means worker; gtm keeps an existing dataLayer', async () => {
+  for (const value of [undefined, '', 'worker', 'GTM', 'x']) {
+    await withTransport(value, async () => {
+      const client = await loadClient();
+      const sent = fakeBrowser({ href: 'https://meddera.md/' });
+      client.sendGa4Event('page_view');
+      assert.equal(sent.length, 1, `value ${JSON.stringify(value)} must use the worker`);
+      assert.equal(globalThis.window.dataLayer, undefined);
+    });
+  }
+  await withTransport('gtm', async () => {
+    const client = await loadClient();
+    fakeBrowser({ href: 'https://meddera.md/' });
+    const existing = [{ event: 'gtm.js' }];
+    globalThis.window.dataLayer = existing;
+    client.sendGa4Event('page_view');
+    assert.equal(globalThis.window.dataLayer, existing, 'must not replace a dataLayer created by GTM');
+    assert.equal(existing.length, 2);
+  });
+});
+
+test('ga4-transport: GTM id validation and isGtmEnabled', async () => {
+  const t = await import(pathToFileURL(path.join(root, 'src/lib/ga4-transport.ts')).href);
+  const keys = ['NEXT_PUBLIC_GA4_TRANSPORT', 'NEXT_PUBLIC_GTM_ID', 'NEXT_PUBLIC_GTM_ON_PREVIEW', 'VERCEL', 'VERCEL_ENV', 'NODE_ENV'];
+  const saved = Object.fromEntries(keys.map((k) => [k, process.env[k]]));
+  const set = (o) => { for (const k of keys) delete process.env[k]; Object.assign(process.env, o); };
+  try {
+    set({ NODE_ENV: 'production', NEXT_PUBLIC_GA4_TRANSPORT: 'gtm', NEXT_PUBLIC_GTM_ID: 'GTM-KFCP3D5F' });
+    assert.equal(t.isGtmEnabled(), true);
+    assert.equal(t.getGtmId(), 'GTM-KFCP3D5F');
+    set({ NODE_ENV: 'production', NEXT_PUBLIC_GA4_TRANSPORT: 'worker', NEXT_PUBLIC_GTM_ID: 'GTM-KFCP3D5F' });
+    assert.equal(t.isGtmEnabled(), false, 'worker transport keeps GTM off');
+    for (const bad of ['', 'KFCP3D5F', 'GTM-', 'GTM-kfcp3d5f', 'G-V98H1SG9KW', 'GTM-KFCP3D5F"><script>']) {
+      set({ NODE_ENV: 'production', NEXT_PUBLIC_GA4_TRANSPORT: 'gtm', NEXT_PUBLIC_GTM_ID: bad });
+      assert.equal(t.isGtmEnabled(), false, `bad id ${JSON.stringify(bad)}`);
+      assert.equal(t.getGtmId(), '');
+    }
+    set({ NODE_ENV: 'development', NEXT_PUBLIC_GA4_TRANSPORT: 'gtm', NEXT_PUBLIC_GTM_ID: 'GTM-KFCP3D5F' });
+    assert.equal(t.isGtmEnabled(), false, 'dev is off');
+    set({ NODE_ENV: 'production', VERCEL: '1', VERCEL_ENV: 'preview', NEXT_PUBLIC_GA4_TRANSPORT: 'gtm', NEXT_PUBLIC_GTM_ID: 'GTM-KFCP3D5F' });
+    assert.equal(t.isGtmEnabled(), false, 'preview is off by default');
+    process.env.NEXT_PUBLIC_GTM_ON_PREVIEW = '1';
+    assert.equal(t.isGtmEnabled(), true, 'preview opt-in');
+    set({ NODE_ENV: 'production', VERCEL: '1', VERCEL_ENV: 'production', NEXT_PUBLIC_GA4_TRANSPORT: 'gtm', NEXT_PUBLIC_GTM_ID: 'GTM-KFCP3D5F' });
+    assert.equal(t.isGtmEnabled(), true, 'Vercel production is on');
+  } finally {
+    for (const k of keys) { if (saved[k] === undefined) delete process.env[k]; else process.env[k] = saved[k]; }
+  }
+});
+
 /* ---------- 4. Worker ---------- */
 
 const ENV = { GA4_API_SECRET: 'secret', GA4_MEASUREMENT_ID: 'G-TEST', ALLOWED_ORIGIN: 'https://meddera.md', GA4_DEBUG_MODE: 'false' };
@@ -252,7 +356,7 @@ const UA_DESKTOP = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 async function callWorker({ method = 'POST', body, headers = {}, cf, env = ENV, rawBody } = {}) {
   const calls = [];
   const realFetch = globalThis.fetch;
-  globalThis.fetch = async (u, init) => { calls.push({ url: String(u), init }); return new Response('{}', { status: 204 }); };
+  globalThis.fetch = async (u, init) => { calls.push({ url: String(u), init }); return new Response(null, { status: 204 }); };
   const pending = [];
   try {
     const req = new Request('https://meddera.md/api/ga4-collect', {
