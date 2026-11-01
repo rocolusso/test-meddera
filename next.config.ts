@@ -86,6 +86,18 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       ...blogRedirects(),
+      // A service URL without the /services/ segment is linked from outside the site (Ahrefs reported it as a 404,
+      // PLAN RD-01). An explicit 301: `permanent: true` would answer 308.
+      {
+        source: '/mezoterapyya-dlya-volos-v-belczah',
+        destination: '/services/mezoterapyya-dlya-volos-v-belczah',
+        statusCode: 301,
+      },
+      {
+        source: '/ro/mezoterapyya-dlya-volos-v-belczah',
+        destination: '/ro/services/mezoterapyya-dlya-volos-v-belczah',
+        statusCode: 301,
+      },
       // Blog: page 1 canonical on /blog and /ro/blog; bare /blog/page → /blog (reserved segment; do not use slug "page")
       {
         source: '/blog/page/1',

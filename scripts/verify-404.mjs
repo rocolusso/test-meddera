@@ -78,6 +78,19 @@ for (const [p, lang] of unknown) expect404Page(p, await hit(p), lang);
   if (r.status !== 404) fail(`HEAD /nonexistent: status ${r.status}, expected 404`);
 }
 
+// a service URL without /services/ (linked from outside, PLAN RD-01): exactly 301 to the service, which answers 200
+for (const [from, to] of [
+  ['/mezoterapyya-dlya-volos-v-belczah', '/services/mezoterapyya-dlya-volos-v-belczah'],
+  ['/ro/mezoterapyya-dlya-volos-v-belczah', '/ro/services/mezoterapyya-dlya-volos-v-belczah'],
+]) {
+  const r = await hit(from);
+  if (r.status !== 301 || loc(r) !== to) fail(`${from}: ${r.status} ${loc(r)}, expected 301 ${to}`);
+  const target = await hit(to);
+  if (target.status !== 200) fail(`${to}: status ${target.status}, expected 200`);
+  const slash = await fetch(base + from + '/', { redirect: 'follow' });
+  if (slash.status !== 200 || new URL(slash.url).pathname !== to) fail(`${from}/: ends at ${new URL(slash.url).pathname} ${slash.status}, expected ${to} 200`);
+}
+
 // removed articles keep their successor, never the home page by accident
 for (const r of redirects.slice(0, 40)) {
   const a = await hit(`/blog/${r.ruSlug}`);
