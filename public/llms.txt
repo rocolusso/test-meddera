@@ -1,0 +1,111 @@
+# Meddera Beauty Clinic
+
+> Клиника дерматологии и косметологии в Бельцах, Молдова. Принимает врач дерматолог и косметолог Екатерина Пынтя. Сайт на русском и румынском языках.
+>
+> Clinică de dermatologie și cosmetologie în Bălți, Moldova. Consultă medicul dermatolog și cosmetolog Ecaterina Pîntea. Site în limba română și rusă.
+
+Полные описания всех услуг на двух языках лежат в [llms-full.txt](https://meddera.md/llms-full.txt).
+
+## Русский
+
+### О клинике
+
+Meddera Beauty Clinic лечит болезни кожи и делает косметологические процедуры для лица, волос и тела. Принимает врач Екатерина Пынтя. Она дерматовенеролог первой категории и косметолог, окончила медицинский университет имени Николае Тестемицану в Кишинёве и в 2024 году открыла свою клинику в Бельцах.
+
+- [Обо мне](https://meddera.md/about): кто такая Екатерина Пынтя, где училась и что лечит.
+- [Все услуги](https://meddera.md/services): список процедур клиники с фото.
+
+### Контакты
+
+- Адрес: Strada Ștefan cel Mare 13, Bălți, MD-3100, Молдова
+- Телефон: +37368550030 (этот же номер есть в Telegram и Viber)
+- [Как нас найти на карте](https://maps.app.goo.gl/HMQKEyKybzzWBd1w7)
+- [Instagram клиники](https://www.instagram.com/meddera.md/)
+- [Instagram врача](https://www.instagram.com/ecaterina_dermatolog.balti/)
+- [Facebook клиники](https://www.facebook.com/p/Meddera-Beauty-Balti-61572519807548/)
+- [Страница контактов](https://meddera.md/contacts): адрес, карта и форма записи.
+
+### Как записаться
+
+Позвоните по телефону или напишите в Telegram или Viber на тот же номер. Ещё можно оставить заявку на сайте кнопкой «Записаться онлайн», и клиника перезвонит.
+
+### Услуги
+
+- [Консультация у врача-дерматокосметолога](https://meddera.md/services/konsultaczyya-dermatokosmetologa-v-belczah): врач смотрит кожу и говорит, какой уход и какие процедуры подойдут именно вам.
+- [Дерматологическая консультация](https://meddera.md/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye): врач ищет причину болезни кожи, например акне, экземы или псориаза, и назначает лечение.
+- [Чистка лица](https://meddera.md/services/professyonalnaya-chystka-lycza-v-belczah): кожу глубоко очищают от грязи и чёрных точек.
+- [Карбокситерапия](https://meddera.md/services/karboksyterapyya-v-belczah): под кожу вводят углекислый газ, кровь бежит быстрее, и кожа выглядит свежее.
+- [Пилинг](https://meddera.md/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy): особый состав снимает старые клетки сверху, и кожа становится ровнее.
+- [Альгинатная маска](https://meddera.md/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej): маска из водорослей застывает на лице, увлажняет кожу и немного подтягивает её.
+- [Терапия анти-акне](https://meddera.md/services/terapyya-anty-akne-v-belczah): лечение прыщей по плану, который врач составляет под вашу кожу.
+- [Терапия против пигментации](https://meddera.md/services/terapyya-protyv-pygmentaczyy-v-belczah): лечение тёмных пятен, чтобы цвет лица стал ровным.
+- [Дермапен](https://meddera.md/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy): прибор с очень тонкими иглами помогает коже обновиться, когда есть морщины, следы от прыщей или пятна.
+- [Мезотерапия лица](https://meddera.md/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe): маленькими уколами в кожу вводят полезные вещества, чтобы она была увлажнённой и свежей.
+- [Мезотерапия для волос](https://meddera.md/services/mezoterapyya-dlya-volos-v-belczah): полезные вещества вводят в кожу головы, чтобы волосы меньше выпадали и росли крепче.
+- [Увеличение губ](https://meddera.md/services/uvelychenye-gub-v-belczah): губам добавляют объём и красивую форму филлером с гиалуроновой кислотой.
+- [Ботокс](https://meddera.md/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza): уколы расслабляют мышцы лица, и морщины от мимики разглаживаются. Ещё ботокс помогает, когда человек сильно потеет.
+- [Биоревитализация](https://meddera.md/services/byorevytalyzaczyya-v-belczah): уколы гиалуроновой кислоты глубоко увлажняют кожу, и она лучше выглядит.
+- [Контурная пластика филлерами](https://meddera.md/services/konturnaya-plastyka-fylleramy-v-belczah): филлер с гиалуроновой кислотой возвращает лицу объём и поправляет его черты.
+- [Инъекции липолитиков](https://meddera.md/services/ynjekczyy-lypolytykov-v-belczah): уколы помогают убрать небольшие жировые складки без операции.
+
+### Полезно почитать
+
+- [Контурная пластика в Бельцах](https://meddera.md/blog/konturnaya-plastika-beltsy-hub): гид по процедуре и статьи о ней.
+- [Биоревитализация в Бельцах](https://meddera.md/blog/biorevitalizaciya-beltsy-hub): гид по процедуре и статьи о ней.
+- [Мезотерапия лица в Бельцах](https://meddera.md/blog/mezoterapiya-lica-beltsy-hub): гид по процедуре и статьи о ней.
+- [Ботокс в Бельцах](https://meddera.md/blog/botoks-beltsy-hub): гид по уколам ботокса и статьи о них.
+- [Дерматолог в Бельцах](https://meddera.md/blog/dermatolog-beltsy-hub): гид по консультации и лечению кожи.
+- [Увеличение губ в Бельцах](https://meddera.md/blog/uvelichenie-gub-beltsy): гид по процедуре и статьи о ней.
+- [Все статьи блога](https://meddera.md/blog)
+
+## Română
+
+### Despre clinică
+
+Meddera Beauty Clinic tratează bolile pielii și face proceduri de cosmetologie pentru față, păr și corp. Consultă medicul Ecaterina Pîntea. Este medic dermatovenerolog de categoria întâi și cosmetolog, a absolvit Universitatea de Medicină „Nicolae Testemițanu” din Chișinău și în 2024 și-a deschis clinica în Bălți.
+
+- [Despre mine](https://meddera.md/ro/about): cine este Ecaterina Pîntea, unde a studiat și ce tratează.
+- [Toate serviciile](https://meddera.md/ro/services): lista procedurilor clinicii, cu fotografii.
+
+### Contacte
+
+- Adresa: Strada Ștefan cel Mare 13, Bălți, MD-3100, Moldova
+- Telefon: +37368550030 (același număr este în Telegram și Viber)
+- [Cum ne găsiți pe hartă](https://maps.app.goo.gl/HMQKEyKybzzWBd1w7)
+- [Instagram clinică](https://www.instagram.com/meddera.md/)
+- [Instagram medic](https://www.instagram.com/ecaterina_dermatolog.balti/)
+- [Facebook clinică](https://www.facebook.com/p/Meddera-Beauty-Balti-61572519807548/)
+- [Pagina de contacte](https://meddera.md/ro/contacts): adresa, harta și formularul de programare.
+
+### Cum vă programați
+
+Sunați la telefon sau scrieți în Telegram ori Viber la același număr. Puteți lăsa și o cerere pe site cu butonul „Programare online”, iar clinica vă sună înapoi.
+
+### Servicii
+
+- [Consultația la medicul dermatocosmetolog](https://meddera.md/ro/services/konsultaczyya-dermatokosmetologa-v-belczah): medicul vă examinează pielea și vă spune ce îngrijire și ce proceduri vi se potrivesc.
+- [Consultația dermatologică](https://meddera.md/ro/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye): medicul caută cauza bolii de piele, de exemplu acneea, eczema sau psoriazisul, și indică tratamentul.
+- [Curățirea feței](https://meddera.md/ro/services/professyonalnaya-chystka-lycza-v-belczah): pielea este curățată în profunzime de impurități și puncte negre.
+- [Carboxiterapie](https://meddera.md/ro/services/karboksyterapyya-v-belczah): sub piele se introduce dioxid de carbon, sângele circulă mai bine și pielea arată mai proaspăt.
+- [Peeling](https://meddera.md/ro/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy): o soluție specială îndepărtează celulele vechi de la suprafață și pielea devine mai uniformă.
+- [Masca alginată](https://meddera.md/ro/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej): o mască din alge se întărește pe față, hidratează pielea și o strânge puțin.
+- [Terapia anti-acnee](https://meddera.md/ro/services/terapyya-anty-akne-v-belczah): tratamentul coșurilor după un plan pe care medicul îl face pentru pielea dumneavoastră.
+- [Terapie antipigmentară](https://meddera.md/ro/services/terapyya-protyv-pygmentaczyy-v-belczah): tratamentul petelor închise la culoare, ca tenul să devină uniform.
+- [Dermapen](https://meddera.md/ro/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy): un aparat cu ace foarte fine ajută pielea să se reînnoiască atunci când are riduri, urme de acnee sau pete.
+- [Mezoterapia facială](https://meddera.md/ro/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe): prin înțepături mici se introduc în piele substanțe utile, ca ea să fie hidratată și proaspătă.
+- [Mezoterapia pentru păr](https://meddera.md/ro/services/mezoterapyya-dlya-volos-v-belczah): substanțe utile se introduc în scalp, ca părul să cadă mai puțin și să crească mai puternic.
+- [Mărirea buzelor](https://meddera.md/ro/services/uvelychenye-gub-v-belczah): buzele primesc volum și o formă frumoasă cu un filler cu acid hialuronic.
+- [Terapie antirid Botox](https://meddera.md/ro/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza): injecțiile relaxează mușchii feței și ridurile de expresie se netezesc. Botoxul ajută și când omul transpiră foarte mult.
+- [Biorevitalizarea](https://meddera.md/ro/services/byorevytalyzaczyya-v-belczah): injecțiile cu acid hialuronic hidratează pielea în profunzime și ea arată mai bine.
+- [Plastica de contur cu fillere](https://meddera.md/ro/services/konturnaya-plastyka-fylleramy-v-belczah): fillerul cu acid hialuronic redă volumul feței și corectează trăsăturile.
+- [Injecții lipolitice](https://meddera.md/ro/services/ynjekczyy-lypolytykov-v-belczah): injecțiile ajută la eliminarea depozitelor mici de grăsime, fără operație.
+
+### De citit
+
+- [Conturarea facială în Bălți](https://meddera.md/ro/blog/conturare-faciala-balti-hub): ghid despre procedură și articole despre ea.
+- [Biorevitalizarea în Bălți](https://meddera.md/ro/blog/biorevitalizare-balti-hub): ghid despre procedură și articole despre ea.
+- [Mezoterapia feței în Bălți](https://meddera.md/ro/blog/mezoterapie-fata-balti-hub): ghid despre procedură și articole despre ea.
+- [Botox în Bălți](https://meddera.md/ro/blog/botox-balti-hub): ghid despre injecțiile cu botox și articole despre ele.
+- [Dermatolog în Bălți](https://meddera.md/ro/blog/dermatolog-balti-hub): ghid despre consultație și tratamentul pielii.
+- [Mărirea buzelor în Bălți](https://meddera.md/ro/blog/marire-buzelor-balti): ghid despre procedură și articole despre ea.
+- [Toate articolele din blog](https://meddera.md/ro/blog)
