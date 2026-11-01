@@ -49,6 +49,48 @@ if (mode === 'gtm') {
     await ctx.close();
   });
 
+  const gtmLoads = (log) => log.gtm.filter((u) => u.includes('/gtm.js')).length;
+
+  await check('home: without any user action GTM is not requested for 8 s (PageSpeed window)', async () => {
+    const { ctx, page, log } = await open('/');
+    await page.waitForTimeout(8000);
+    assert.equal(gtmLoads(log), 0, `requested without action: ${log.gtm}`);
+    await ctx.close();
+  });
+
+  await check('home: without any user action GTM loads once by the 15 s safety timer', async () => {
+    const { ctx, page, log } = await open('/');
+    await page.waitForTimeout(17000);
+    assert.equal(gtmLoads(log), 1);
+    await ctx.close();
+  });
+
+  for (const [name, act] of [
+    ['touchstart', (page) => page.evaluate(() => window.dispatchEvent(new Event('touchstart')))],
+    ['keydown', (page) => page.keyboard.press('Tab')],
+    ['wheel', (page) => page.mouse.wheel(0, 120)],
+    ['scroll 200 px', (page) => page.evaluate(() => window.scrollTo(0, 200))],
+  ]) {
+    await check(`home: ${name} loads GTM once`, async () => {
+      const { ctx, page, log } = await open('/');
+      assert.equal(gtmLoads(log), 0);
+      await act(page);
+      await page.waitForTimeout(1500);
+      await act(page);
+      await page.waitForTimeout(800);
+      assert.equal(gtmLoads(log), 1);
+      await ctx.close();
+    });
+  }
+
+  await check('home: a scroll under 40 px does not load GTM', async () => {
+    const { ctx, page, log } = await open('/');
+    await page.evaluate(() => window.scrollTo(0, 20));
+    await page.waitForTimeout(2000);
+    assert.equal(gtmLoads(log), 0);
+    await ctx.close();
+  });
+
   await check('home: after interaction gtm.js for the right container loads once, dataLayer has gtm.start', async () => {
     const { ctx, page, log } = await open('/');
     await page.mouse.click(10, 300);

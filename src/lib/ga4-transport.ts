@@ -5,7 +5,7 @@
  * - `gtm`: events go through Google Tag Manager, the Google tag of the container measures the page itself
  *   (sessions, traffic source, engagement time).
  *
- * The switch is NEXT_PUBLIC_GA4_TRANSPORT. It is baked into the bundle at build time, so changing it needs a redeploy.
+ * The switch is NEXT_PUBLIC_GA4_TRANSPORT (and it needs a valid NEXT_PUBLIC_GTM_ID, otherwise the worker is used). It is baked into the bundle at build time, so changing it needs a redeploy.
  * Exactly one path is active, so an event is never counted twice.
  */
 
@@ -13,8 +13,12 @@ export type Ga4Transport = 'worker' | 'gtm';
 
 export type Ga4EventParams = Record<string, string | number | boolean>;
 
+/**
+ * `gtm` only when it is asked for AND the container id is valid. With a missing or malformed id GTM would never load
+ * and events pushed to dataLayer would be lost silently, so the worker keeps carrying them instead.
+ */
 export function getGa4Transport(): Ga4Transport {
-  return process.env.NEXT_PUBLIC_GA4_TRANSPORT === 'gtm' ? 'gtm' : 'worker';
+  return process.env.NEXT_PUBLIC_GA4_TRANSPORT === 'gtm' && getGtmId() ? 'gtm' : 'worker';
 }
 
 /** The container id from NEXT_PUBLIC_GTM_ID; an empty string when it is missing or malformed (GTM then stays off). */

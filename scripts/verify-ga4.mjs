@@ -246,17 +246,30 @@ test('client survives blocked storage', async () => {
 
 /* ---------- 3b. GTM transport (PLAN GA4G-01) ---------- */
 
-async function withTransport(value, fn) {
-  const before = process.env.NEXT_PUBLIC_GA4_TRANSPORT;
-  if (value === undefined) delete process.env.NEXT_PUBLIC_GA4_TRANSPORT;
-  else process.env.NEXT_PUBLIC_GA4_TRANSPORT = value;
+async function withTransport(value, fn, gtmId = 'GTM-KFCP3D5F') {
+  const keys = ['NEXT_PUBLIC_GA4_TRANSPORT', 'NEXT_PUBLIC_GTM_ID'];
+  const saved = Object.fromEntries(keys.map((k) => [k, process.env[k]]));
+  const put = (k, v) => { if (v == null) delete process.env[k]; else process.env[k] = v; };
+  put('NEXT_PUBLIC_GA4_TRANSPORT', value);
+  put('NEXT_PUBLIC_GTM_ID', gtmId);
   try {
     return await fn();
   } finally {
-    if (before === undefined) delete process.env.NEXT_PUBLIC_GA4_TRANSPORT;
-    else process.env.NEXT_PUBLIC_GA4_TRANSPORT = before;
+    for (const k of keys) put(k, saved[k]);
   }
 }
+
+test('transport gtm without a valid GTM id falls back to the worker (events are not lost)', async () => {
+  for (const id of [null, '', 'KFCP3D5F', 'GTM-kfcp', 'G-V98H1SG9KW']) {
+    await withTransport('gtm', async () => {
+      const client = await loadClient();
+      const sent = fakeBrowser({ href: 'https://meddera.md/' });
+      client.sendGa4Event('messenger_click', { cta_source: 'footer' });
+      assert.equal(sent.length, 1, `id ${JSON.stringify(id)} must use the worker`);
+      assert.equal(globalThis.window.dataLayer, undefined);
+    }, id);
+  }
+});
 
 test('transport gtm: event goes to dataLayer as a gtag command, not to the worker', async () => {
   await withTransport('gtm', async () => {

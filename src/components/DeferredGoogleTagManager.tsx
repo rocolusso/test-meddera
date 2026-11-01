@@ -5,8 +5,15 @@ import { useEffect, useState } from 'react';
 
 import { ensureGtagShim, getGtmId } from '@/lib/ga4-transport';
 
+/** If the visitor does nothing at all, GTM still loads after this long. */
+const GTM_FALLBACK_MS = 15000;
+/** A scroll counts as a user action only when the page moved at least this far from where it opened. */
+const SCROLL_THRESHOLD_PX = 40;
+
 /**
- * GTM after window load (lazyOnload) and after requestIdleCallback, to keep it off the critical path (PageSpeed).
+ * GTM loads on the first user action (touch, click, key, wheel, scroll), or after GTM_FALLBACK_MS as a safety net.
+ * It does NOT load on browser idle: PageSpeed never touches the page, and idle fires inside its measurement window,
+ * which cost about 14 points of mobile Performance (97 to 83, gtag.js 199 KiB + gtm.js 126 KiB).
  * The container id comes from NEXT_PUBLIC_GTM_ID. The layout renders this component only when isGtmEnabled().
  * window.gtag exists from the first render, so events fired before gtm.js arrives wait in dataLayer and are not lost.
  */
@@ -16,42 +23,41 @@ export default function DeferredGoogleTagManager() {
 
   useEffect(() => {
     ensureGtagShim();
-    let idleId: number | undefined;
-    let fallbackId: number | undefined;
-    let interactionHandler: (() => void) | undefined;
-
-    const cleanupInteraction = () => {
-      if (!interactionHandler) return;
-      window.removeEventListener('pointerdown', interactionHandler, true);
-      window.removeEventListener('keydown', interactionHandler, true);
-      window.removeEventListener('touchstart', interactionHandler, true);
-      interactionHandler = undefined;
-    };
+    const startY = window.scrollY;
+    let timerId: number | undefined;
+    let removeListeners: (() => void) | undefined;
 
     const run = () => {
-      cleanupInteraction();
+      removeListeners?.();
+      removeListeners = undefined;
+      if (timerId != null) window.clearTimeout(timerId);
+      timerId = undefined;
       setReady(true);
     };
 
-    interactionHandler = () => run();
-    window.addEventListener('pointerdown', interactionHandler, true);
-    window.addEventListener('keydown', interactionHandler, true);
-    window.addEventListener('touchstart', interactionHandler, true);
+    const onScroll = () => {
+      if (Math.abs(window.scrollY - startY) >= SCROLL_THRESHOLD_PX) run();
+    };
 
-    if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 3400 });
-    } else {
-      fallbackId = window.setTimeout(run, 3400);
-    }
+    const options = { capture: true, passive: true } as const;
+    window.addEventListener('pointerdown', run, options);
+    window.addEventListener('keydown', run, options);
+    window.addEventListener('touchstart', run, options);
+    window.addEventListener('wheel', run, options);
+    window.addEventListener('scroll', onScroll, options);
+    removeListeners = () => {
+      window.removeEventListener('pointerdown', run, options);
+      window.removeEventListener('keydown', run, options);
+      window.removeEventListener('touchstart', run, options);
+      window.removeEventListener('wheel', run, options);
+      window.removeEventListener('scroll', onScroll, options);
+    };
+
+    timerId = window.setTimeout(run, GTM_FALLBACK_MS);
 
     return () => {
-      cleanupInteraction();
-      if (idleId != null && typeof window.cancelIdleCallback === 'function') {
-        window.cancelIdleCallback(idleId);
-      }
-      if (fallbackId != null) {
-        window.clearTimeout(fallbackId);
-      }
+      removeListeners?.();
+      if (timerId != null) window.clearTimeout(timerId);
     };
   }, []);
 
