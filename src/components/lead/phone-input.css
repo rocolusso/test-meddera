@@ -12,6 +12,15 @@
   min-width: 0;
 }
 
+/* The field classes (placeholder:text-muted-foreground) land on the .PhoneInput wrapper, not on this input, so the
+   placeholder used the base `color-mix(currentcolor 50%, transparent)`. Chrome does not recompute that colour when the
+   theme is switched without a reload: the placeholder stayed dark on the dark theme and white on the light one.
+   A theme variable updates with the theme, and matches the "Имя" and "Сообщение" fields. */
+.PhoneInputInput::placeholder {
+  color: var(--muted-foreground);
+  opacity: 1;
+}
+
 .PhoneInputCountryIcon {
   width: calc(var(--PhoneInputCountryFlag-height) * var(--PhoneInputCountryFlag-aspectRatio));
   height: var(--PhoneInputCountryFlag-height);
