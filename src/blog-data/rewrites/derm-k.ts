@@ -36,7 +36,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Методы удаления',
         paragraphs: [
-          'Используют криодеструкцию, электрокоагуляцию, лазерное или радиоволновое удаление, а также хирургическое иссечение. Метод подбирают по типу образования, его размеру и расположению, а также по состоянию кожи. Некоторые способы подходят для лица, другие для стоп. Решение принимает врач на основании осмотра.',
+          'Способов удаления несколько, и метод подбирают по типу образования, его размеру и месту. В клинике Meddera папилломы и бородавки удаляют методом Jett Plasma. Подходит ли он вам, врач решает после осмотра.',
         ],
       },
       {
@@ -104,7 +104,7 @@ export const DERM_K: ArticleRewrites = {
       {
         h2: 'Metodele de îndepărtare',
         paragraphs: [
-          'Se folosesc crioterapia, electrocoagularea, îndepărtarea cu laser sau cu unde radio, precum și excizia chirurgicală. Metoda se alege după tipul formațiunii, mărimea și locul ei, după starea pielii. Unele metode se potrivesc pentru față, altele pentru tălpi.',
+          'Există mai multe metode de îndepărtare, iar metoda se alege după tipul formațiunii, mărimea și locul ei. În clinica Meddera papiloamele și negii se îndepărtează cu Jett Plasma. Dacă metoda vi se potrivește, decide medicul după examinare.',
         ],
       },
       {

@@ -24,7 +24,7 @@ export const dermatolog: ServiceSeo = {
           },
           {
             h3: 'Родинки и образования',
-            text: 'Родинки и другие образования осматривают с помощью дерматоскопии: увеличение помогает увидеть признаки, из-за которых образование стоит проверить подробнее. Доброкачественные образования удаляют радиоволновым методом, электрокоагуляцией или Jett Plasma. Подходящий способ выбирает врач после осмотра.',
+            text: 'Родинки и другие образования осматривают с помощью дерматоскопии: увеличение помогает увидеть признаки, из-за которых образование стоит проверить подробнее. Доброкачественные образования удаляют методом Jett Plasma. Перед удалением врач осматривает образование.',
           },
           {
             h3: 'Эстетическая дерматология',
@@ -79,7 +79,7 @@ export const dermatolog: ServiceSeo = {
           },
           {
             h3: 'Alunițe și formațiuni',
-            text: 'Alunițele și alte formațiuni se examinează prin dermatoscopie: mărirea ajută la observarea semnelor pentru care formațiunea merită verificată mai atent. Formațiunile benigne se îndepărtează cu radiocauter, prin electrocoagulare sau cu Jett Plasma. Metoda potrivită o alege medicul după examinare.',
+            text: 'Alunițele și alte formațiuni se examinează prin dermatoscopie: mărirea ajută la observarea semnelor pentru care formațiunea merită verificată mai atent. Formațiunile benigne se îndepărtează cu Jett Plasma. Înainte de îndepărtare medicul examinează formațiunea.',
           },
           {
             h3: 'Dermatologie estetică',

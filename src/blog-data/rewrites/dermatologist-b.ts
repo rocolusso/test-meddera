@@ -33,7 +33,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Способы удаления',
         paragraphs: [
-          'Образования удаляют разными методами: замораживанием, электрокоагуляцией, лазером или хирургически. Метод зависит от вида, размера, глубины и расположения. Врач объясняет, какие варианты подходят вам, и обсуждает возможные следы и временное покраснение.',
+          'Способов удаления несколько, выбор зависит от вида кератомы, её размера, глубины и места. В клинике Meddera кератомы удаляют методом Jett Plasma. Врач объясняет, подходит ли он вам, и рассказывает о возможных следах и временном покраснении.',
           'После процедуры на месте удаления образуется корочка. Её нельзя сдирать: она сама отпадёт, когда кожа заживёт. До этого момента защищайте участок от солнца и трения.',
         ],
       },
@@ -94,7 +94,7 @@ export const DERMATOLOGIST_B: ArticleRewrites = {
       {
         h2: 'Metode de îndepărtare',
         paragraphs: [
-          'Formațiunile se îndepărtează prin metode diferite: congelare, electrocoagulare, laser sau chirurgical. Alegerea depinde de tip, dimensiune, adâncime și localizare. Medicul explică ce variante vi se potrivesc și discută despre urmele posibile și roșeața temporară.',
+          'Există mai multe metode de îndepărtare, iar alegerea depinde de tipul keratomului, dimensiune, adâncime și localizare. În clinica Meddera keratoamele se îndepărtează cu Jett Plasma. Medicul explică dacă metoda vi se potrivește și discută despre urmele posibile și roșeața temporară.',
           'După procedură pe locul îndepărtării se formează o crustă. Nu o dezlipiți: ea cade singură când pielea se vindecă. Până atunci protejați zona de soare și de frecare.',
         ],
       },
