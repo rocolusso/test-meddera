@@ -117,9 +117,5 @@ export const SERVICE_ANCHORS = {
   'terapyya-anty-akne-v-belczah': ['акне|прыщ[а-я]+', 'acnee[a-z]*'],
   'terapyya-protyv-pygmentaczyy-v-belczah': ['пигментаци[а-я]+|пигментн[а-я]+ пятн[а-я]+', 'pigmentar[a-z]*|pete pigmentare'],
   'pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy': ['пилинг[а-я]*', 'peeling[a-z]*'],
-  'professyonalnaya-chystka-lycza-v-belczah': ['чистк[а-я]+ лица', 'curatare[a-z]* (?:fetei|faciala)'],
-  'karboksyterapyya-v-belczah': ['карбокситерапи[а-я]+', 'carboxiterapi[a-z]*'],
-  'dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy': ['дермапен[а-я]*', 'dermapen[a-z]*'],
-  'algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej': ['альгинатн[а-я]+ маск[а-я]+', 'masc[a-z]* alginat[a-z]*'],
   'ynjekczyy-lypolytykov-v-belczah': ['липолитик[а-я]+', 'lipolitic[a-z]*'],
 };

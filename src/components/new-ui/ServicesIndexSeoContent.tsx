@@ -33,8 +33,7 @@ export default function ServicesIndexSeoContent({ locale }: { locale: 'ru' | 'ro
 
         <h2>Proceduri de suprafață și îngrijire</h2>
         <ul>
-          <li>Curățare facială profesională, peeling chimic, terapie anti-acnee și antipigmentară</li>
-          <li>Carboxiterapie, mască alginată, tratamente cu dermapen pentru reînnoirea pielii</li>
+          <li>Peeling chimic, terapie anti-acnee și antipigmentară</li>
         </ul>
 
         <h2>De ce Meddera</h2>
@@ -80,8 +79,7 @@ export default function ServicesIndexSeoContent({ locale }: { locale: 'ru' | 'ro
 
       <h2>Поверхностные процедуры и уход</h2>
       <ul>
-        <li>Профессиональная чистка лица, пилинг, терапия анти-акне и против пигментации</li>
-        <li>Карбокситерапия, альгинатная маска, процедуры с дермапеном для обновления кожи</li>
+        <li>Пилинг, терапия анти-акне и против пигментации</li>
       </ul>
 
       <h2>Почему Meddera</h2>

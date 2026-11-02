@@ -101,7 +101,7 @@ for (const c of CASES) {
         assert(await page.getByText('404', { exact: true }).first().isVisible(), '404 visible');
         const nav = page.locator('main nav');
         const links = await nav.locator('a').count();
-        assert(links >= 5 + 16 + 6 + 1, `map links: ${links}`);
+        assert(links >= 5 + 12 + 6 + 1, `map links: ${links}`);
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
         assert(overflow <= 0, `horizontal scroll ${overflow}px`);
         const ratios = await contrast(page, 'main nav a, main nav h3, main section:nth-of-type(2) p');

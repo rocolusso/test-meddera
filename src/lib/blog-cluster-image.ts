@@ -16,13 +16,13 @@ const CLUSTER_SERVICE_URL: Record<BlogClusterId, string> = {
   'mesotherapy-hair': '/services/mezoterapyya-dlya-volos-v-belczah',
   biorevitalization: '/services/byorevytalyzaczyya-v-belczah',
   fillers: '/services/konturnaya-plastyka-fylleramy-v-belczah',
-  'facial-cleaning': '/services/professyonalnaya-chystka-lycza-v-belczah',
+  'facial-cleaning': '/services/terapyya-anty-akne-v-belczah',
   peeling: '/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
-  dermapen: '/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
+  dermapen: '/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
   'anti-acne': '/services/terapyya-anty-akne-v-belczah',
   'anti-pigmentation': '/services/terapyya-protyv-pygmentaczyy-v-belczah',
-  carboxytherapy: '/services/karboksyterapyya-v-belczah',
-  'alginate-mask': '/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
+  carboxytherapy: '/services/mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
+  'alginate-mask': '/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
   lipolytics: '/services/ynjekczyy-lypolytykov-v-belczah',
 };
 

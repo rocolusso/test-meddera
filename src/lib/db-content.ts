@@ -1,14 +1,10 @@
 import { StaticImageData } from 'next/image';
 import consultcosm from '../../public/assets/img/services/consult-cosm.png';
 import consultderm from '../../public/assets/img/services/consult-derm.png';
-import chistkaLica from '../../public/assets/img/services/chistka_lica.png';
 // import massageLica from '../../public/assets/img/services/massage_lica.png';
-import karboksiterapiya from '../../public/assets/img/services/karbiksiterapiya.png';
 import pilling from '../../public/assets/img/services/pilling.png';
-import maskaLica from '../../public/assets/img/services/maska_lica.png';
 import antiAkne from '../../public/assets/img/services/anti-akne.png';
 import terapiyaProtivPigment from '../../public/assets/img/services/terapiya-protiv-pigm.png';
-import dermapen from '../../public/assets/img/services/dermapen.png';
 import mezolica from '../../public/assets/img/services/mezolica.png';
 import mezovolos from '../../public/assets/img/services/mezovolos.png';
 import uvelichenieGub from '../../public/assets/img/services/uvelicheniegub.png';
@@ -37,12 +33,6 @@ export const servicesLinksRu:ServiceLink[] = [
     url: '/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
     imageUrl: consultderm,
   },
-  {
-    id: 3,
-    title: 'Чистка лица',
-    url: '/services/professyonalnaya-chystka-lycza-v-belczah',
-    imageUrl: chistkaLica,
-  },
   // {
   //   id: 4,
   //   title: 'Массаж лица',
@@ -50,22 +40,10 @@ export const servicesLinksRu:ServiceLink[] = [
   //   imageUrl: massageLica,
   // },
   {
-    id: 5,
-    title: 'Карбокситерапия',
-    url: '/services/karboksyterapyya-v-belczah',
-    imageUrl: karboksiterapiya,
-  },
-  {
     id: 6,
     title: 'Пилинг',
     url: '/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
     imageUrl: pilling,
-  },
-  {
-    id: 7,
-    title: 'Альгинатная маска',
-    url: '/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
-    imageUrl: maskaLica,
   },
   {
     id: 8,
@@ -78,12 +56,6 @@ export const servicesLinksRu:ServiceLink[] = [
     title: 'Терапия против пигментации',
     url: '/services/terapyya-protyv-pygmentaczyy-v-belczah',
     imageUrl: terapiyaProtivPigment,
-  },
-  {
-    id: 10,
-    title: 'Дермапен',
-    url: '/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
-    imageUrl: dermapen,
   },
   {
     id: 11,
@@ -143,12 +115,6 @@ export const servicesLinksRo:ServiceLink[] = [
     url: '/ro/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
     imageUrl: consultderm,
   },
-  {
-    id: 3,
-    title: 'Curățirea feței',
-    url: '/ro/services/professyonalnaya-chystka-lycza-v-belczah',
-    imageUrl: chistkaLica,
-  },
   // {
   //   id: 4,
   //   title: 'Masaj facial',
@@ -156,22 +122,10 @@ export const servicesLinksRo:ServiceLink[] = [
   //   imageUrl: massageLica,
   // },
   {
-    id: 5,
-    title: 'Carboxiterapie',
-    url: '/ro/services/karboksyterapyya-v-belczah',
-    imageUrl: karboksiterapiya,
-  },
-  {
     id: 6,
     title: 'Peeling',
     url: '/ro/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
     imageUrl: pilling,
-  },
-  {
-    id: 7,
-    title: 'Masca alginată',
-    url: '/ro/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
-    imageUrl: maskaLica,
   },
   {
     id: 8,
@@ -184,12 +138,6 @@ export const servicesLinksRo:ServiceLink[] = [
     title: 'Terapie antipigmentară',
     url: '/ro/services/terapyya-protyv-pygmentaczyy-v-belczah',
     imageUrl: terapiyaProtivPigment,
-  },
-  {
-    id: 10,
-    title: 'Dermapen',
-    url: '/ro/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
-    imageUrl: dermapen,
   },
   {
     id: 11,

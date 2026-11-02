@@ -86,6 +86,47 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       ...blogRedirects(),
+      // Services the clinic no longer offers (SVC-01): their pages go to the service list of the same language.
+      {
+        source: '/services/professyonalnaya-chystka-lycza-v-belczah',
+        destination: '/services',
+        statusCode: 301,
+      },
+      {
+        source: '/ro/services/professyonalnaya-chystka-lycza-v-belczah',
+        destination: '/ro/services',
+        statusCode: 301,
+      },
+      {
+        source: '/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
+        destination: '/services',
+        statusCode: 301,
+      },
+      {
+        source: '/ro/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
+        destination: '/ro/services',
+        statusCode: 301,
+      },
+      {
+        source: '/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
+        destination: '/services',
+        statusCode: 301,
+      },
+      {
+        source: '/ro/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
+        destination: '/ro/services',
+        statusCode: 301,
+      },
+      {
+        source: '/services/karboksyterapyya-v-belczah',
+        destination: '/services',
+        statusCode: 301,
+      },
+      {
+        source: '/ro/services/karboksyterapyya-v-belczah',
+        destination: '/ro/services',
+        statusCode: 301,
+      },
       // A service URL without the /services/ segment is linked from outside the site (Ahrefs reported it as a 404,
       // PLAN RD-01). An explicit 301: `permanent: true` would answer 308.
       {
@@ -143,8 +184,8 @@ const nextConfig: NextConfig = {
       // 301 from old suffix URLs preserves SEO weight.
       {
         source: '/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej/ro',
-        destination: '/ro/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
-        permanent: true,
+        destination: '/ro/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/botoks-v-belczah-effektyvnoe-omolozhenye-lycza/ro',
@@ -158,8 +199,8 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy/ro',
-        destination: '/ro/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
-        permanent: true,
+        destination: '/ro/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye/ro',
@@ -168,8 +209,8 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/karboksyterapyya-v-belczah/ro',
-        destination: '/ro/services/karboksyterapyya-v-belczah',
-        permanent: true,
+        destination: '/ro/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/konsultaczyya-dermatokosmetologa-v-belczah/ro',
@@ -193,8 +234,8 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/professyonalnaya-chystka-lycza-v-belczah/ro',
-        destination: '/ro/services/professyonalnaya-chystka-lycza-v-belczah',
-        permanent: true,
+        destination: '/ro/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy/ro',
@@ -244,13 +285,13 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/3',
-        destination: '/services/professyonalnaya-chystka-lycza-v-belczah',
-        permanent: true, // 301 redirect
+        destination: '/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/3/ro',
-        destination: '/ro/services/professyonalnaya-chystka-lycza-v-belczah',
-        permanent: true, // 301 redirect
+        destination: '/ro/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/4',
@@ -264,13 +305,13 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/5',
-        destination: '/services/karboksyterapyya-v-belczah',
-        permanent: true, // 301 redirect
+        destination: '/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/5/ro',
-        destination: '/ro/services/karboksyterapyya-v-belczah',
-        permanent: true, // 301 redirect
+        destination: '/ro/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/6',
@@ -284,13 +325,13 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/7',
-        destination: '/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
-        permanent: true, // 301 redirect
+        destination: '/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/7/ro',
-        destination: '/ro/services/algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
-        permanent: true, // 301 redirect
+        destination: '/ro/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/8',
@@ -314,13 +355,13 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/services/10',
-        destination: '/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
-        permanent: true, // 301 redirect
+        destination: '/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/10/ro',
-        destination: '/ro/services/dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
-        permanent: true, // 301 redirect
+        destination: '/ro/services',
+        statusCode: 301, // removed service (SVC-01)
       },
       {
         source: '/services/11',

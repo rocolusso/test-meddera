@@ -24,14 +24,6 @@ export const SERVICE_BLOG: Record<string, { cluster: BlogClusterId; articles: st
       'akne-prichiny-stadii-lechenie',
     ],
   },
-  'professyonalnaya-chystka-lycza-v-belczah': {
-    cluster: 'dermatologist',
-    articles: ['akne-prichiny-stadii-lechenie', 'rozacea-prichiny-metody-korrekcii', 'follikulit-vospalenie-volosyanyh-follikulov'],
-  },
-  'karboksyterapyya-v-belczah': {
-    cluster: 'mesotherapy-face',
-    articles: ['mezoterapiya-lica-kurs-procedur', 'biorevitalizaciya-kombinaciya-procedur', 'fotostareenie-kozhi-profilaktika'],
-  },
   'pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy': {
     cluster: 'dermatologist',
     articles: [
@@ -40,10 +32,6 @@ export const SERVICE_BLOG: Record<string, { cluster: BlogClusterId; articles: st
       'akne-prichiny-stadii-lechenie',
       'solnechnye-ozhogi-pervaya-pomoshch',
     ],
-  },
-  'algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej': {
-    cluster: 'biorevitalization',
-    articles: ['biorevitalizaciya-uhod-posle', 'mezoterapiya-lica-otek-sinyaki', 'fotostareenie-kozhi-profilaktika'],
   },
   'terapyya-anty-akne-v-belczah': {
     cluster: 'dermatologist',
@@ -63,15 +51,6 @@ export const SERVICE_BLOG: Record<string, { cluster: BlogClusterId; articles: st
       'vitiligo-chto-eto-mozhno-li-lechit',
       'solnechnye-ozhogi-pervaya-pomoshch',
       'fotodermatozy-solnce',
-    ],
-  },
-  'dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy': {
-    cluster: 'mesotherapy-face',
-    articles: [
-      'mezoterapiya-lica-akne-postakne',
-      'mezoterapiya-lica-kurs-procedur',
-      'biorevitalizaciya-kombinaciya-procedur',
-      'fotostareenie-kozhi-profilaktika',
     ],
   },
   'mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe': {
@@ -136,20 +115,15 @@ export const SERVICE_RELATED: Record<string, string[]> = {
     'terapyya-anty-akne-v-belczah',
     'terapyya-protyv-pygmentaczyy-v-belczah',
   ],
-  'professyonalnaya-chystka-lycza-v-belczah': [
-    'pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
-    'terapyya-anty-akne-v-belczah',
-    'algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej',
-  ],
   'pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy': [
     'terapyya-protyv-pygmentaczyy-v-belczah',
-    'professyonalnaya-chystka-lycza-v-belczah',
     'terapyya-anty-akne-v-belczah',
+    'mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
   ],
   'terapyya-anty-akne-v-belczah': [
-    'professyonalnaya-chystka-lycza-v-belczah',
     'pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
     'dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
+    'terapyya-protyv-pygmentaczyy-v-belczah',
   ],
   'terapyya-protyv-pygmentaczyy-v-belczah': [
     'pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
@@ -163,26 +137,12 @@ export const SERVICE_RELATED: Record<string, string[]> = {
   ],
   'mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe': [
     'byorevytalyzaczyya-v-belczah',
-    'dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
-    'karboksyterapyya-v-belczah',
+    'pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
+    'botoks-v-belczah-effektyvnoe-omolozhenye-lycza',
   ],
   'mezoterapyya-dlya-volos-v-belczah': [
     'konsultaczyya-dermatokosmetologa-v-belczah',
     'dermatolog-v-belczah-professyonalnaya-konsultaczyya-i-effektyvnoe-lechenye',
-  ],
-  'dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy': [
-    'mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
-    'pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
-    'terapyya-anty-akne-v-belczah',
-  ],
-  'karboksyterapyya-v-belczah': [
-    'mezoterapyya-lycza-v-belczah-put-k-molodoj-y-syyayushhej-kozhe',
-    'dermapen-v-belczah-ynnovaczyonnoe-omolozhenye-kozhy',
-    'byorevytalyzaczyya-v-belczah',
-  ],
-  'algynatnaya-maska-v-belczah-professyonalnyj-uhod-za-vashej-kozhej': [
-    'professyonalnaya-chystka-lycza-v-belczah',
-    'pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
   ],
   'botoks-v-belczah-effektyvnoe-omolozhenye-lycza': [
     'konturnaya-plastyka-fylleramy-v-belczah',

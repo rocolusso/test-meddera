@@ -32,7 +32,7 @@ const street = constants.match(/streetAddress: '([^']+)'/)[1];
 const postal = constants.match(/postalCode: '([^']+)'/)[1];
 const maps = constants.match(/export const MAPS_URL = '([^']+)'/)[1];
 
-ok(slugs.length === 16, `16 service slugs found in service-slugs.ts (got ${slugs.length})`);
+ok(slugs.length === 12, `12 service slugs found in service-slugs.ts (got ${slugs.length})`);
 
 for (const file of ['public/llms.txt', 'public/llms-full.txt']) {
   const text = read(file);
