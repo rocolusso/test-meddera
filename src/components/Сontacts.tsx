@@ -29,7 +29,16 @@ import {
 import { sendGa4Event } from '@/lib/ga4-worker-client';
 import { markLeadSubmitted } from '@/lib/cta/teaser-state';
 
-function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading?: boolean }) {
+function Contacts({
+  locale,
+  hideHeading = false,
+  hideMap = false,
+}: {
+  locale: string;
+  hideHeading?: boolean;
+  /** The contacts page shows the map in its own text (after "Адрес и проезд"), not under the form. */
+  hideMap?: boolean;
+}) {
   const callPhone = () => {
     sendGa4Event('phone_button_contacts1', {
       button_name: 'phone_btn_contact',
@@ -417,7 +426,7 @@ function Contacts({ locale, hideHeading = false }: { locale: string; hideHeading
 
       </div>
 
-      <LazyMap locale={locale === 'ro' ? 'ro' : 'ru'} />
+      {hideMap ? null : <LazyMap locale={locale === 'ro' ? 'ro' : 'ru'} />}
       <style jsx>{`
         .grecaptcha-badge {
           visibility: hidden;

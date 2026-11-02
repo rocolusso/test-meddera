@@ -78,7 +78,7 @@ export default function ContactsPage() {
         <ContactsIndexSeoContent locale="ru" />
       </main>
 
-      <ContactsDynamicWrapperRu hideHeading />
+      <ContactsDynamicWrapperRu hideHeading hideMap />
 
       <FooterNew locale="ru" />
     </>

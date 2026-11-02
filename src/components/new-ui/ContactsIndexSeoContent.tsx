@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import { ContentArticleBody } from '@/components/new-ui/ContentPageShell';
 import SectionHeading from '@/components/pofo/SectionHeading';
+import LazyMap from '@/components/LazyMap';
 import { RECEPTION_SCHEDULE_COPY } from '@/lib/contact-reception-schedule';
 
 const phoneClassName =
@@ -52,7 +53,7 @@ export default function ContactsIndexSeoContent({ locale }: { locale: 'ru' | 'ro
             Lucrăm cu programare prealabilă; în formular puteți lăsa un mesaj sau cere apel înapoi. Puteți suna la
             {' '}
             <ClinicPhoneLink />
-            . Harta interactivă este la sfârșitul paginii — secțiunea cu hartă.
+            . Harta cu adresa este în secțiunea „Adresă și acces”.
           </p>
 
           <h2>Consultație și informații generale</h2>
@@ -70,9 +71,15 @@ export default function ContactsIndexSeoContent({ locale }: { locale: 'ru' | 'ro
 
           <h2>Adresă și acces</h2>
           <p>
-            Clinica este în centrul Bălțiului, pe str. Ștefan cel Mare, 13. Pentru orientare pe hartă folosiți blocul cu
-            hartă de la finalul paginii sau linkul către hartă din zona de contact de mai jos.
+            Clinica este în centrul Bălțiului, pe str. Ștefan cel Mare, 13. Harta este mai jos, iar dacă aveți nevoie de
+            detalii despre drum, sunați la
+            {' '}
+            <ClinicPhoneLink />
+            .
           </p>
+        </ContentArticleBody>
+        <LazyMap locale="ro" />
+        <ContentArticleBody className="!max-w-[1200px] !pb-10 !pt-10 md:!pb-14 md:!pt-12">
 
           <h2>Întrebări înainte de vizită</h2>
           <p>
@@ -119,7 +126,7 @@ export default function ContactsIndexSeoContent({ locale }: { locale: 'ru' | 'ro
           позвонить по
           {' '}
           <ClinicPhoneLink />
-          . Интерактивная карта — внизу страницы, в блоке с картой.
+          . Карта с адресом в разделе «Адрес и проезд».
         </p>
 
         <h2>Консультация и информация на сайте</h2>
@@ -136,12 +143,15 @@ export default function ContactsIndexSeoContent({ locale }: { locale: 'ru' | 'ro
 
         <h2>Адрес и проезд</h2>
         <p>
-          Клиника расположена в центре Бельц, ул. Штефан чел Маре, 13. Ориентир на карте — в конце страницы; при
-          необходимости уточните детали по телефону
+          Клиника расположена в центре Бельц, ул. Штефан чел Маре, 13. Карта ниже, а если нужно уточнить, как пройти,
+          позвоните по телефону
           {' '}
           <ClinicPhoneLink />
           .
         </p>
+      </ContentArticleBody>
+      <LazyMap locale="ru" />
+      <ContentArticleBody className="!max-w-[1200px] !pb-10 !pt-10 md:!pb-14 md:!pt-12">
 
         <h2>Вопросы перед визитом</h2>
         <p>

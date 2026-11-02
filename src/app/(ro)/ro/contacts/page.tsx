@@ -78,7 +78,7 @@ export default function ContactsPageRo() {
         <ContactsIndexSeoContent locale="ro" />
       </main>
 
-      <ContactsDynamicWrapperRo hideHeading />
+      <ContactsDynamicWrapperRo hideHeading hideMap />
 
       <FooterNew locale="ro" />
     </>

@@ -12,7 +12,10 @@ const DynamicContacts = dynamic(() => import('@/components/Сontacts'), {
   loading: () => <ContactsFormLoadingSkeleton message={LOADING_MSG} />,
 });
 
-export default function ContactsDynamicWrapperRo({ hideHeading = false }: { hideHeading?: boolean } = {}) {
+export default function ContactsDynamicWrapperRo({
+  hideHeading = false,
+  hideMap = false,
+}: { hideHeading?: boolean; hideMap?: boolean } = {}) {
   const [shouldLoad, setShouldLoad] = useState(false);
   const sentinelRef = useRef<HTMLDivElement | null>(null);
 
@@ -47,5 +50,5 @@ export default function ContactsDynamicWrapperRo({ hideHeading = false }: { hide
     );
   }
 
-  return <DynamicContacts locale="ro" hideHeading={hideHeading} />;
+  return <DynamicContacts locale="ro" hideHeading={hideHeading} hideMap={hideMap} />;
 }
