@@ -40,6 +40,12 @@ export const servicesLinksRu:ServiceLink[] = [
   //   imageUrl: massageLica,
   // },
   {
+    id: 13,
+    title: 'Увеличение губ',
+    url: '/services/uvelychenye-gub-v-belczah',
+    imageUrl: uvelichenieGub,
+  },
+  {
     id: 6,
     title: 'Пилинг',
     url: '/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
@@ -68,12 +74,6 @@ export const servicesLinksRu:ServiceLink[] = [
     title: 'Мезотерапия для волос',
     url: '/services/mezoterapyya-dlya-volos-v-belczah',
     imageUrl: mezovolos,
-  },
-  {
-    id: 13,
-    title: 'Увеличение губ',
-    url: '/services/uvelychenye-gub-v-belczah',
-    imageUrl: uvelichenieGub,
   },
   {
     id: 14,
@@ -122,6 +122,12 @@ export const servicesLinksRo:ServiceLink[] = [
   //   imageUrl: massageLica,
   // },
   {
+    id: 13,
+    title: 'Mărirea buzelor',
+    url: '/ro/services/uvelychenye-gub-v-belczah',
+    imageUrl: uvelichenieGub,
+  },
+  {
     id: 6,
     title: 'Peeling',
     url: '/ro/services/pylyng-v-belczah-obnovlenye-y-syyanye-vashej-kozhy',
@@ -150,12 +156,6 @@ export const servicesLinksRo:ServiceLink[] = [
     title: 'Mezoterapia pentru păr',
     url: '/ro/services/mezoterapyya-dlya-volos-v-belczah',
     imageUrl: mezovolos,
-  },
-  {
-    id: 13,
-    title: 'Mărirea buzelor',
-    url: '/ro/services/uvelychenye-gub-v-belczah',
-    imageUrl: uvelichenieGub,
   },
   {
     id: 14,
