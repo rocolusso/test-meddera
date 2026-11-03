@@ -1,0 +1,799 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-11-03 20:50:00",
+  "containerVersion": {
+    "path": "accounts/0000000000/containers/00000000/versions/0",
+    "accountId": "0000000000",
+    "containerId": "00000000",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/0000000000/containers/00000000",
+      "accountId": "0000000000",
+      "containerId": "00000000",
+      "name": "Next Meddera container",
+      "publicId": "GTM-KFCP3D5F",
+      "usageContext": [
+        "WEB"
+      ],
+      "fingerprint": "0"
+    },
+    "tag": [
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "tagId": "301",
+        "name": "GA4 event, site events (GA4G-03)",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "{{Event}}"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "button_name"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.button_name}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "event_label"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.event_label}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "cta_source"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.cta_source}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "procedure"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.procedure}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "scroll_pct"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.scroll_pct}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "needs_count"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.needs_count}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "missing_path"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.missing_path}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "page_referrer"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.page_referrer}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "page_type"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.page_type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "page_path"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.page_path}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "content_slug"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.content_slug}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "lang"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.lang}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "reception_state"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.reception_state}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "first_src"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.first_src}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "first_med"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.first_med}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "first_cmp"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.first_cmp}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "first_ref"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{DLV eventModel.first_ref}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "measurementIdOverride",
+            "value": "G-V98H1SG9KW"
+          }
+        ],
+        "firingTriggerId": [
+          "201"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "triggerId": "201",
+        "name": "CE site events (GA4G-03)",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "^(phone_|lead_|cta_|developer_|form_sended_1$|messenger_click$|social_click$|channel_click$|page_not_found$)"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "variable": [
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "101",
+        "name": "DLV eventModel.button_name",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.button_name"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "102",
+        "name": "DLV eventModel.event_label",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.event_label"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "103",
+        "name": "DLV eventModel.cta_source",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.cta_source"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "104",
+        "name": "DLV eventModel.procedure",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.procedure"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "105",
+        "name": "DLV eventModel.scroll_pct",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.scroll_pct"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "106",
+        "name": "DLV eventModel.needs_count",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.needs_count"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "107",
+        "name": "DLV eventModel.missing_path",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.missing_path"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "108",
+        "name": "DLV eventModel.page_referrer",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.page_referrer"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "109",
+        "name": "DLV eventModel.page_type",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.page_type"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "110",
+        "name": "DLV eventModel.page_path",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.page_path"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "111",
+        "name": "DLV eventModel.content_slug",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.content_slug"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "112",
+        "name": "DLV eventModel.lang",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.lang"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "113",
+        "name": "DLV eventModel.reception_state",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.reception_state"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "114",
+        "name": "DLV eventModel.first_src",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.first_src"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "115",
+        "name": "DLV eventModel.first_med",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.first_med"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "116",
+        "name": "DLV eventModel.first_cmp",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.first_cmp"
+          }
+        ],
+        "formatValue": {}
+      },
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "fingerprint": "0",
+        "variableId": "117",
+        "name": "DLV eventModel.first_ref",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "eventModel.first_ref"
+          }
+        ],
+        "formatValue": {}
+      }
+    ],
+    "builtInVariable": [
+      {
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "type": "EVENT",
+        "name": "Event"
+      }
+    ],
+    "fingerprint": "0"
+  }
+}

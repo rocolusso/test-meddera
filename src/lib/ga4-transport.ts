@@ -4,6 +4,8 @@
  * - `worker` (default): our Cloudflare Worker relays them to the Measurement Protocol (ga4-worker-client.ts).
  * - `gtm`: events go through Google Tag Manager, the Google tag of the container measures the page itself
  *   (sessions, traffic source, engagement time).
+ *   The Google tag alone sends only the automatic events; the site's own events reach GA4 through the GA4 Event tag
+ *   of the container (docs/GA4-GTM-SETUP.md, PLAN GA4G-03).
  *
  * The switch is NEXT_PUBLIC_GA4_TRANSPORT (and it needs a valid NEXT_PUBLIC_GTM_ID, otherwise the worker is used). It
  * is baked into the bundle at build time, so changing it needs a redeploy.

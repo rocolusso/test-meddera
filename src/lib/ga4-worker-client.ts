@@ -5,6 +5,7 @@
  *   (PLAN-GA4W-01), so the browser does not have to load gtag.js.
  * - `gtm`: the event goes through Google Tag Manager as a gtag command (PLAN GA4G-01). The Google tag of the container
  *   adds sessions, traffic source and engagement time, which the Measurement Protocol cannot provide.
+ *   The site's own events are sent to GA4 by the GA4 Event tag of the container (docs/GA4-GTM-SETUP.md, PLAN GA4G-03).
  *
  * Event names/params are the same in both modes, so GA4 reports stay comparable. Own-device opt-out (?no_track) and
  * the webdriver check apply to both.
