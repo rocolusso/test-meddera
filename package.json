@@ -2,9 +2,6 @@
   "name": "meddera-new-design",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=22"
-  },
   "browserslist": {
     "production": [
       "chrome >= 109",

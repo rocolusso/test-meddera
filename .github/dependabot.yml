@@ -35,6 +35,6 @@ updates:
         update-types: ['version-update:semver-major']
       - dependency-name: typescript
         update-types: ['version-update:semver-major']
-      # Node 22 runtime types stay in step with engines.
+      # Node type definitions: major upgrades are done by hand (the Node version is set in Vercel project settings).
       - dependency-name: '@types/node'
         update-types: ['version-update:semver-major']
