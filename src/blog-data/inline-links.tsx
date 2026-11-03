@@ -34,9 +34,11 @@ export function renderInline(text: string, locale: BlogLocale, linkClassName: st
     const idx = m.index ?? 0;
     if (idx > last) out.push(text.slice(last, idx));
     const href = resolveLinkTarget(m[1], locale);
+    const linkKey = `l${n}`;
+    if (href) n += 1;
     out.push(
       href ? (
-        <Link key={`l${n++}`} href={href} className={linkClassName}>
+        <Link key={linkKey} href={href} className={linkClassName}>
           {m[2]}
         </Link>
       ) : (

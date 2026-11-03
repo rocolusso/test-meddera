@@ -48,8 +48,9 @@ export default function LeadQuizHost() {
 
   useEffect(() => {
     if (!open) return undefined;
-    if (!openerRef.current && document.activeElement instanceof HTMLElement && document.activeElement !== document.body) {
-      openerRef.current = document.activeElement;
+    const active = document.activeElement;
+    if (!openerRef.current && active instanceof HTMLElement && active !== document.body) {
+      openerRef.current = active;
     }
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') closeLeadQuiz();

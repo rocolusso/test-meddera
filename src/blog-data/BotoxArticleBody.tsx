@@ -22,7 +22,6 @@ export function BotoxArticleBody({
   post, locale, dateModified, sections,
 }: Props) {
   const isRu = locale === 'ru';
-  const slug = isRu ? post.slugRu : post.slugRo;
   const title = isRu ? post.titleRu : post.titleRo;
   const h1Text = (isRu ? post.h1Ru : post.h1Ro) ?? title.replace(/\s*\|\s*Meddera.*$/i, '');
   const ruUrl = blogPathRu(post.slugRu);
@@ -83,13 +82,13 @@ export function BotoxArticleBody({
         </p>
       </div>
 
-      {sections.map((section, idx) => (
-        <section key={idx} className="mb-10">
+      {sections.map((section) => (
+        <section key={section.h2} className="mb-10">
           <h2 className={blogUi.h2}>
             {section.h2}
           </h2>
-          {section.paragraphs.map((para, pIdx) => (
-            <p key={pIdx} className={blogUi.pMb4}>{renderInline(para, locale, blogUi.link)}</p>
+          {section.paragraphs.map((para) => (
+            <p key={para} className={blogUi.pMb4}>{renderInline(para, locale, blogUi.link)}</p>
           ))}
         </section>
       ))}

@@ -7,7 +7,8 @@ import type { DeveloperCopy } from './copy';
 interface Props { copy: DeveloperCopy['banner'] }
 
 /**
- * Banner A: the words Site / Search / Ads / Analytics / Leads, then the chain site, traffic, analytics and a "new lead" card.
+ * Banner A: the words Site / Search / Ads / Analytics / Leads, then the chain site, traffic, analytics and a "new lead"
+ * card.
  * CSS only (see developer.css). The loop plays while the block is on screen and pauses when it is not.
  */
 export default function KineticBanner({ copy }: Props) {

@@ -31,7 +31,8 @@ function GoogleWhitePage() {
     //   target: 'from meddera.md/ads/cards vizitki  meddera.md',
     // });
 
-    window.location.href = '/';
+    // A full page load on purpose (not router.push): the ad landing hands the visitor over to the site.
+    window.location.href = new URL('/', window.location.origin).href;
   };
 
   return (
@@ -127,7 +128,7 @@ function GoogleWhitePage() {
           <div className="mx-auto mt-10">
             <div className="mapouter">
               <div className="gmap_canvas">
-                <LazyGoogleMapIframe width={2000} height={450} />
+                <LazyGoogleMapIframe height={450} />
               </div>
             </div>
           </div>

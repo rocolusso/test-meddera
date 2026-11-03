@@ -130,8 +130,8 @@ export default function LeadQuizModal({
       return;
     }
 
-    let tokenJson: { token?: string; disabled?: boolean } | null = null;
-    let tokenHttpStatus = 0;
+    let tokenJson: { token?: string; disabled?: boolean } | null;
+    let tokenHttpStatus: number;
     try {
       const tokenRes = await fetch('/api/form-token');
       tokenHttpStatus = tokenRes.status;
@@ -225,7 +225,7 @@ export default function LeadQuizModal({
           <div>
             <h3 className="alt-font text-[20px] font-semibold leading-[28px] text-pofo-heading">{lipsQuiz ? t.modalTitleLips : t.modalTitle[formType]}</h3>
             <p className="mt-1 text-sm text-muted-foreground">
-              {lipsQuiz ? t.modalSubtitleLips : prefill ? t.modalSubtitlePrefilled : t.modalSubtitle[formType]}
+              {lipsQuiz ? t.modalSubtitleLips : (prefill && t.modalSubtitlePrefilled) || t.modalSubtitle[formType]}
             </p>
           </div>
           <Button variant="pofoOutline" size="pofoSmall" type="button" onClick={onClose}>

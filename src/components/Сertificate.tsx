@@ -9,7 +9,7 @@ import medderaCert from '../../public/assets/img/cert/meddera-logo.svg';
 import priceBack from '../../public/assets/img/cert/price_back.svg';
 import cert from '../../public/assets/img/cert/back1.svg';
 
-function Ertificate({
+function Certificate({
   certificatNumber, userName, serviceName, price, currency,
 }: {
   certificatNumber: string; userName: string; serviceName: string; price: string; currency: string;
@@ -187,4 +187,4 @@ function Ertificate({
   );
 }
 
-export default Ertificate;
+export default Certificate;

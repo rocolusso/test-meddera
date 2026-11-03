@@ -64,8 +64,8 @@ export function HomeSeoPanel({ title, children, className }: HomeSeoPanelProps) 
 export function HomeSeoBulletList({ items }: { items: string[] }) {
   return (
     <ul className="pofo-list-dash space-y-2.5">
-      {items.map((text, i) => (
-        <li key={i} className="text-[14px] leading-[24px] text-muted-foreground sm:text-[15px] sm:leading-[26px]">
+      {items.map((text) => (
+        <li key={text} className="text-[14px] leading-[24px] text-muted-foreground sm:text-[15px] sm:leading-[26px]">
           {text}
         </li>
       ))}

@@ -20,7 +20,8 @@ export default function ServicesIndexSeoContent({ locale }: { locale: 'ru' | 'ro
         <h2>Dermatologie și consultații în Bălți</h2>
         <p>
           Oferim consultații dermatologice și dermatocosmetologice, evaluare și plan de tratament personalizat,
-          dermatoscopie, abordarea acneei, pigmentării și altor probleme ale pielii, precum și îndepărtarea formațiunilor
+          dermatoscopie, abordarea acneei, pigmentării și altor probleme ale pielii, precum și îndepărtarea
+          formațiunilor
           benigne cu metode moderne, acolo unde este indicat clinic.
         </p>
 

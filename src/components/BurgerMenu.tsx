@@ -72,7 +72,7 @@ function BurgerMenu({ locale, withReviews = false }: { locale: string; withRevie
   }, [open]);
 
   useEffect(() => {
-    if (!open) return;
+    if (!open) return undefined;
     const close = (e: PointerEvent) => {
       const el = wrapRef.current;
       const target = e.target as Node | null;

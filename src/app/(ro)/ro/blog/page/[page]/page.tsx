@@ -9,6 +9,7 @@ import BlogIndexSeoContent from '@/components/new-ui/BlogIndexSeoContent';
 import { blogSocialMetadata } from '@/lib/site-og';
 import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { getMaxIndexPage, ORIGIN } from '@/blog-data/registry';
+import { JsonLd } from '@/components/JsonLd';
 
 interface Props { params: Promise<{ page: string }> }
 
@@ -84,11 +85,7 @@ export default async function RoBlogIndexPaginatedPage({ params }: Props) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(paginatedJsonLd) }}
-      />
+      <JsonLd data={paginatedJsonLd} />
       <HeaderNew locale="ro" />
       <main className="min-h-[50vh] bg-background">
         <div className="bg-background">

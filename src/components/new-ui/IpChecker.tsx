@@ -6,9 +6,12 @@ function IpChecker() {
   const [ip, setIp] = useState('');
 
   useEffect(() => {
-    fetch('/api/ip')
+    const controller = new AbortController();
+    fetch('/api/ip', { signal: controller.signal })
       .then((res) => res.json())
-      .then((dataRes) => setIp(dataRes.ip));
+      .then((dataRes) => setIp(dataRes.ip))
+      .catch(() => {});
+    return () => controller.abort();
   }, []);
 
   useEffect(() => {

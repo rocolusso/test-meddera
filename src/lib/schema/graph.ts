@@ -55,7 +55,12 @@ export function breadcrumbNode(url: string, crumbs: Crumb[]): GraphNode {
   };
 }
 
-export function itemListNode(url: string, suffix: string, name: string, items: { name: string; url: string }[]): GraphNode {
+export function itemListNode(
+  url: string,
+  suffix: string,
+  name: string,
+  items: { name: string; url: string }[],
+): GraphNode {
   return {
     '@type': 'ItemList',
     '@id': `${url}#${suffix}`,

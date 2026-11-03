@@ -11,7 +11,6 @@ let warned = false;
 export function warnOnSearchFlagMismatch(): void {
   if (warned || SEARCH_UI_ENABLED === isSearchServerEnabled()) return;
   warned = true;
-  // eslint-disable-next-line no-console
   console.warn(
     `[search] NEXT_PUBLIC_SEARCH_ENABLED=${String(SEARCH_UI_ENABLED)} but SEARCH_ENABLED=${String(isSearchServerEnabled())}: `
       + 'search is only on when both are "true". NEXT_PUBLIC_SEARCH_ENABLED is baked in at build time, redeploy after changing it.',

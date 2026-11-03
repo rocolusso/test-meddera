@@ -15,6 +15,7 @@ import {
   getAllSlugParams, getClusterArticles, getPostBySlug, ORIGIN,
 } from '@/blog-data/registry';
 import { renderBlogPostBody } from '@/blog-data/render-post-body';
+import { JsonLd } from '@/components/JsonLd';
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -120,11 +121,7 @@ export default async function BlogPostRoPage({ params }: Props) {
   return (
     <>
       {jsonLd ? (
-        <script
-          type="application/ld+json"
-          /* eslint-disable-next-line react/no-danger */
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd data={jsonLd} />
       ) : null}
       <HeaderNew locale="ro" />
       {isLipsPost(post) ? <LipsBannerSlot locale="ro" /> : null}

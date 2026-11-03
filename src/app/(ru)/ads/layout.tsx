@@ -5,6 +5,7 @@ import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { blogSocialMetadata } from '@/lib/site-og';
 
 import './ads.css';
+import { JsonLd } from '@/components/JsonLd';
 
 const ADS_URL = 'https://meddera.md/ads';
 const ADS_TITLE = 'Meddera — рекламные страницы';
@@ -33,11 +34,7 @@ export const metadata: Metadata = {
 export default function AdsLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script
-        type="application/ld+json"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(adsJsonLd) }}
-      />
+      <JsonLd data={adsJsonLd} />
       {children}
     </>
   );

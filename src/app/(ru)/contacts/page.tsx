@@ -6,6 +6,7 @@ import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
 import ContactsIndexSeoContent from '@/components/new-ui/ContactsIndexSeoContent';
 import { contactsPageJsonLd } from '@/lib/jsonld/contacts-page';
 import { OG_SITE_NAME } from '@/lib/site-og';
+import { JsonLd } from '@/components/JsonLd';
 
 const canonical = 'https://meddera.md/contacts';
 const roUrl = 'https://meddera.md/ro/contacts';
@@ -67,11 +68,7 @@ export const metadata = {
 export default function ContactsPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <HeaderNew locale="ru" />
       <main className="border-b border-border/40 bg-gradient-to-b from-muted/20 via-background to-background">
         <ContactsIndexSeoContent locale="ru" />

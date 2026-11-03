@@ -37,7 +37,14 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
       const content = BLOG_REWRITES[post.id] ?? DERMATOLOGIST_ARTICLE_CONTENT[post.id];
       if (!content) return null;
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
-      return <DermatologistArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
+      return (
+        <DermatologistArticleBody
+          post={post}
+          locale={locale}
+          dateModified={post.dateModified}
+          sections={sections}
+        />
+      );
     }
 
     case 'botox-hub':
@@ -55,7 +62,14 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
       const content = BLOG_REWRITES[post.id] ?? MESOTHERAPY_FACE_ARTICLE_CONTENT[post.id];
       if (!content) return null;
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
-      return <MesotherapyFaceArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
+      return (
+        <MesotherapyFaceArticleBody
+          post={post}
+          locale={locale}
+          dateModified={post.dateModified}
+          sections={sections}
+        />
+      );
     }
 
     case 'biorevitalization-hub':
@@ -64,7 +78,14 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
       const content = BLOG_REWRITES[post.id] ?? BIOREVITALIZATION_ARTICLE_CONTENT[post.id];
       if (!content) return null;
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
-      return <BiorevitalizationArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
+      return (
+        <BiorevitalizationArticleBody
+          post={post}
+          locale={locale}
+          dateModified={post.dateModified}
+          sections={sections}
+        />
+      );
     }
 
     case 'fillers-hub':

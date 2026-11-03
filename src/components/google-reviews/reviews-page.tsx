@@ -10,6 +10,7 @@ import { isGoogleReviewsEnabled, REVIEWS_PATH } from '@/lib/google-reviews/confi
 import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { blogSocialMetadata } from '@/lib/site-og';
 
+import { JsonLd } from '@/components/JsonLd';
 import ReviewsPageContent, { REVIEWS_COPY } from './ReviewsPageContent';
 
 const ORIGIN = 'https://meddera.md';
@@ -65,11 +66,7 @@ export default function ReviewsPage({ locale }: { locale: 'ru' | 'ro' }) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <HeaderNew locale={locale} />
       <main className="bg-background">
         <ReviewsPageContent locale={locale} />

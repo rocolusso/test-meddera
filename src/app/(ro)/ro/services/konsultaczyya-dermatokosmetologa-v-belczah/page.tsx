@@ -50,7 +50,13 @@ function ServicePage1Ro() {
       heroImageAlt="Consultație dermatocosmetolog — clinica Meddera, Bălți"
     >
       <p>
-        Consultația la medicul dermatocosmetolog este primul și importantul pas către o piele sănătoasă și frumoasă. În timpul consultației, medicul efectuează o examinare atentă a pielii, evaluează starea acesteia și stabilește nevoile individuale ale pacientului. Pe baza diagnosticului, specialistul recomandă proceduri, luând în considerare vârsta, tipul de piele și rezultatul dorit. Consultația include, de asemenea, recomandări pentru alegerea produselor cosmetice și pentru un stil de viață care ajută la menținerea sănătății pielii pe termen lung. Abordarea profesională a dermatocosmetologului permite prevenirea sau tratarea problemelor precum acneea, pigmentarea, modificările legate de vârstă și altele.
+        Consultația la medicul dermatocosmetolog este primul și importantul pas către o piele sănătoasă și frumoasă. În
+        timpul consultației, medicul efectuează o examinare atentă a pielii, evaluează starea acesteia și stabilește
+        nevoile individuale ale pacientului. Pe baza diagnosticului, specialistul recomandă proceduri, luând în
+        considerare vârsta, tipul de piele și rezultatul dorit. Consultația include, de asemenea, recomandări pentru
+        alegerea produselor cosmetice și pentru un stil de viață care ajută la menținerea sănătății pielii pe termen
+        lung. Abordarea profesională a dermatocosmetologului permite prevenirea sau tratarea problemelor precum acneea,
+        pigmentarea, modificările legate de vârstă și altele.
       </p>
 
       <ServiceSeoContent

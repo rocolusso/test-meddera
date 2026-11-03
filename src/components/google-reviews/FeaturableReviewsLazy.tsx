@@ -5,7 +5,9 @@ import dynamic from 'next/dynamic';
 
 import type { FeaturableReviewsProps } from './FeaturableReviews';
 
-/** The carousel library (react-slick, emotion) is a separate chunk, requested only when the block is near the screen. */
+/**
+ * The carousel library (react-slick, emotion) is a separate chunk, requested only when the block is near the screen.
+ */
 const FeaturableReviews = dynamic(() => import('./FeaturableReviews'), {
   ssr: false,
   // the placeholder stays while the chunk loads, so the height of the block never collapses to zero in between
@@ -22,10 +24,10 @@ export default function FeaturableReviewsLazy(props: FeaturableReviewsProps) {
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el) return undefined;
     if (typeof IntersectionObserver === 'undefined') {
       setNear(true);
-      return;
+      return undefined;
     }
     const io = new IntersectionObserver(
       (entries) => {

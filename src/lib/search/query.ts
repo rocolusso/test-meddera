@@ -123,8 +123,7 @@ function buildSnippet(entry: SearchEntry, stems: string[]): string {
   let best = '';
   let bestFolded = '';
   let bestScore = -1;
-  for (const text of candidates) {
-    if (!text) continue;
+  for (const text of candidates.filter(Boolean)) {
     const folded = foldKeepLength(text);
     const score = distinctMatched(folded, stems);
     if (score > bestScore) {

@@ -51,7 +51,7 @@ function blogSitemapEntries(buildAt: string): MetadataRoute.Sitemap {
 
   // Пагинация
   const maxPage = getMaxIndexPage();
-  for (let p = 2; p <= maxPage; p++) {
+  for (let p = 2; p <= maxPage; p += 1) {
     // Дата страницы списка = последняя правка среди статей на этой странице
     const pageDate = getPostsForIndexPage('ru', p)
       .map((a) => a.dateModified)

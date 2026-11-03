@@ -25,7 +25,8 @@ function shortHubTitle(title: string): string {
 }
 
 function siteMap(locale: NotFoundLocale) {
-  const sections: MapLink[] = getNavLinks(isGoogleReviewsEnabled()).map((l) => ({ href: l.href[locale], label: l.label[locale] }));
+  const sections: MapLink[] = getNavLinks(isGoogleReviewsEnabled())
+    .map((l) => ({ href: l.href[locale], label: l.label[locale] }));
 
   const known = new Set<string>(SERVICE_SLUGS);
   const services: MapLink[] = (locale === 'ru' ? servicesLinksRu : servicesLinksRo)

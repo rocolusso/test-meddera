@@ -4,7 +4,9 @@
  * Every storage call is wrapped, because storage can be blocked or throw (private windows).
  */
 
-/** Article and service pages only. Not the blog list (`/blog/page/2`), not hubs of services, not home, contacts, search. */
+/**
+ * Article and service pages only. Not the blog list (`/blog/page/2`), not hubs of services, not home, contacts, search.
+ */
 const TEASER_ROUTE = /^\/(?:ro\/)?(?:blog|services)\/([^/]+)\/?$/;
 
 export const TEASER_MIN_VISIBLE_MS = 8000;

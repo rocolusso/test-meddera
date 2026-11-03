@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useSyncExternalStore } from 'react';
+import { useEffect, useEffectEvent, useSyncExternalStore } from 'react';
 
 import { sendGa4Event } from '@/lib/ga4-worker-client';
 
@@ -25,15 +25,18 @@ export default function DeveloperPage() {
     document.title = copy.metaTitle;
   }, [copy]);
 
-  useEffect(() => {
+  const sendPageView = useEffectEvent(() => {
     sendGa4Event('page_view', {
       page_location: window.location.href,
       page_referrer: document.referrer,
       page_title: document.title,
       lang,
     });
+  });
+
+  useEffect(() => {
     // once per visit: a language switch is not a new page view
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    sendPageView();
   }, []);
 
   const orbitChips = ['Next.js', 'Google Ads', 'GA4', 'SEO', copy.banner.words[4]];

@@ -12,9 +12,9 @@ export default function AboutIndexSeoContent({ locale }: { locale: 'ru' | 'ro' }
       <ContentArticleBody className="!max-w-[1200px] border-t border-border !pb-12 !pt-10 md:!pb-16 md:!pt-14">
         <p className="alt-font !text-[18px] !font-medium !leading-[30px] !text-pofo-heading">
           Ecaterina Pîntea este medic dermatovenerolog de categorie I și cosmetolog cu peste 11 ani de experiență în
-          dermatologie și peste 8 ani în cosmetologie. Din aprilie 2024 este fondatoarea și coordonatoarea clinicii Meddera
-          din Bălți, str. Ștefan cel Mare, 13 — un centru care unește dermatologia medicală și estetica facială într-un
-          singur loc, cu accent pe siguranță și rezultate naturale.
+          dermatologie și peste 8 ani în cosmetologie. Din aprilie 2024 este fondatoarea și coordonatoarea clinicii
+          Meddera din Bălți, str. Ștefan cel Mare, 13 — un centru care unește dermatologia medicală și estetica facială
+          într-un singur loc, cu accent pe siguranță și rezultate naturale.
         </p>
 
         <h2>Studii și parcurs profesional</h2>
@@ -52,24 +52,25 @@ export default function AboutIndexSeoContent({ locale }: { locale: 'ru' | 'ro' }
   return (
     <ContentArticleBody className="!max-w-[1200px] border-t border-border !pb-12 !pt-10 md:!pb-16 md:!pt-14">
       <p className="alt-font !text-[18px] !font-medium !leading-[30px] !text-pofo-heading">
-        Екатерина Пынтя — врач-дерматовенеролог первой категории и косметолог с более чем 11 годами опыта в дерматологии и
-        более чем 8 годами в косметологии. С апреля 2024 года — основатель и ведущий специалист клиники Meddera в Бельцах, ул.
-        Штефан чел Маре, 13: здесь сочетаются медицинская дерматология и эстетическая косметология с упором на безопасность
-        и естественный результат.
+        Екатерина Пынтя — врач-дерматовенеролог первой категории и косметолог с более чем 11 годами опыта в дерматологии
+        и более чем 8 годами в косметологии. С апреля 2024 года — основатель и ведущий специалист клиники Meddera в
+        Бельцах, ул. Штефан чел Маре, 13: здесь сочетаются медицинская дерматология и эстетическая косметология с упором
+        на безопасность и естественный результат.
       </p>
 
       <h2>Образование и путь в медицине</h2>
       <p>
         Выпускница USMF «Nicolae Testemițanu», прошла резидентуру по дерматовенерологии, работала в консультативных и
-        косметологических центрах Бельц и Рышкан до открытия собственной практики. На приёме — полноценный осмотр, понятное
-        объяснение плана лечения и соблюдение клинических протоколов.
+        косметологических центрах Бельц и Рышкан до открытия собственной практики. На приёме — полноценный осмотр,
+        понятное объяснение плана лечения и соблюдение клинических протоколов.
       </p>
 
       <h2>Специализация и методы</h2>
       <p>
         Практика включает дерматологию и онкодерматологию в рамках показаний (в том числе дерматоскопию), терапию акне и
         пигментации, удаление доброкачественных образований при наличии показаний, а также инъекционную косметологию:
-        филлеры, ботокс, мезотерапия, биоревитализацию, уход за волосами и другое — по назначению после очной консультации.
+        филлеры, ботокс, мезотерапия, биоревитализацию, уход за волосами и другое — по назначению после очной
+        консультации.
       </p>
 
       <h2>Клиника Meddera</h2>

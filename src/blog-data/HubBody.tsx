@@ -73,11 +73,8 @@ export function HubBody({ clusterId, locale, dateModified }: Props) {
   const key = locale;
 
   const otherHub = getPostById(hub.hubId);
-  const otherHref = otherHub
-    ? locale === 'ru'
-      ? blogPathRo(otherHub.slugRo)
-      : blogPathRu(otherHub.slugRu)
-    : ui.homeHref;
+  const otherHubHref = locale === 'ru' ? otherHub && blogPathRo(otherHub.slugRo) : otherHub && blogPathRu(otherHub.slugRu);
+  const otherHref = otherHubHref || ui.homeHref;
 
   // Articles missing from every group still get a link so nothing is orphaned.
   const all = getClusterArticles(clusterId);
@@ -105,16 +102,16 @@ export function HubBody({ clusterId, locale, dateModified }: Props) {
       <h1 className={blogUi.h1}>{t.h1}</h1>
 
       {t.intro.map((p, i) => (
-        <p key={i} className={i === t.intro.length - 1 ? blogUi.pMb10 : blogUi.pMb4}>
+        <p key={p} className={i === t.intro.length - 1 ? blogUi.pMb10 : blogUi.pMb4}>
           {renderInline(p, locale, blogUi.link)}
         </p>
       ))}
 
       {t.sections.map((s, i) => (
-        <section key={i} className="mb-12" aria-labelledby={`hub-s${i}-${key}`}>
+        <section key={s.h2} className="mb-12" aria-labelledby={`hub-s${i}-${key}`}>
           <h2 id={`hub-s${i}-${key}`} className={blogUi.h2}>{s.h2}</h2>
           {s.paragraphs.map((p, j) => (
-            <p key={j} className={j === s.paragraphs.length - 1 ? blogUi.p : blogUi.pMb4}>
+            <p key={p} className={j === s.paragraphs.length - 1 ? blogUi.p : blogUi.pMb4}>
               {renderInline(p, locale, blogUi.link)}
             </p>
           ))}
@@ -132,8 +129,8 @@ export function HubBody({ clusterId, locale, dateModified }: Props) {
             posts: g.ids.map((id) => getPostById(id)).filter((p): p is BlogPost => Boolean(p)),
           })),
           ...(leftovers.length ? [{ h3: ui.more, intro: undefined, posts: leftovers }] : []),
-        ].map((g, gi) => (
-          <div key={gi} className="mb-6">
+        ].map((g) => (
+          <div key={g.h3} className="mb-6">
             <h3 className={blogUi.h2Small}>{g.h3}</h3>
             {g.intro ? <p className={blogUi.pMb4}>{renderInline(g.intro, locale, blogUi.link)}</p> : null}
             <ul className={blogUi.ul}>

@@ -54,10 +54,12 @@ export function FillersArticleBody({
       <div className={blogUi.disclaimerBox}>
         <p className={blogUi.small}>{isRu ? 'Материал носит информационный характер.' : 'Materialul are caracter informativ.'}</p>
       </div>
-      {sections.map((section, idx) => (
-        <section key={idx} className="mb-10">
+      {sections.map((section) => (
+        <section key={section.h2} className="mb-10">
           <h2 className={blogUi.h2}>{section.h2}</h2>
-          {section.paragraphs.map((para, pIdx) => (<p key={pIdx} className={blogUi.pMb4}>{renderInline(para, locale, blogUi.link)}</p>))}
+          {section.paragraphs.map((para) => (
+            <p key={para} className={blogUi.pMb4}>{renderInline(para, locale, blogUi.link)}</p>
+          ))}
         </section>
       ))}
       <section className="mb-10">

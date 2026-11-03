@@ -38,7 +38,7 @@ export default function PageTitleMini({
           <nav aria-label={breadcrumbsLabel} className="alt-font shrink-0 text-[12px] uppercase leading-5 text-pofo-text">
             <ol className="flex flex-wrap items-center justify-center gap-x-2 md:justify-end">
               {breadcrumbs.map((b, i) => (
-                <li key={`${b.label}-${i}`} className="flex items-center gap-x-2">
+                <li key={b.href ?? b.label} className="flex items-center gap-x-2">
                   {i > 0 ? <span aria-hidden>/</span> : null}
                   {b.href ? (
                     <Link href={b.href} className="transition-colors hover:text-accent-text">

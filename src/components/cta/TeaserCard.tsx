@@ -1,6 +1,8 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import {
+  useEffect, useEffectEvent, useRef, useState,
+} from 'react';
 
 import { openLeadQuiz } from '@/components/lead/lead-quiz-store';
 import { sendGa4Event } from '@/lib/ga4-worker-client';
@@ -57,21 +59,24 @@ export default function TeaserCard({
     onHide();
   };
 
+  // Effect events: the listeners below are set once, but always call the latest onHide and dismiss.
+  const onOverlayTick = useEffectEvent(() => {
+    if (isAnyOverlayOpen()) onHide();
+  });
+  const onEscape = useEffectEvent(() => dismiss());
+
   useEffect(() => {
     // the menu, search or quiz opened on top: the teaser steps aside (no pause, it counts as shown)
-    const watcher = window.setInterval(() => {
-      if (isAnyOverlayOpen()) onHide();
-    }, 250);
+    const watcher = window.setInterval(onOverlayTick, 250);
     const onKeyDown = (event: KeyboardEvent) => {
       // Esc closes only the top layer: while something else is open it is not ours
-      if (event.key === 'Escape' && !isAnyOverlayOpen()) dismiss();
+      if (event.key === 'Escape' && !isAnyOverlayOpen()) onEscape();
     };
     window.addEventListener('keydown', onKeyDown);
     return () => {
       window.clearInterval(watcher);
       window.removeEventListener('keydown', onKeyDown);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const open = () => {

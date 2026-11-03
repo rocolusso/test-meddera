@@ -1,4 +1,4 @@
-import type { BlogClusterId, BlogLocale, BlogPost } from '@/blog-data/types';
+import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import { RELATED_ARTICLES } from '@/blog-data/related-articles';
 import { dermatologistArticlesPart1 } from '@/blog-data/dermatologist-cluster-articles-part1';
 import { dermatologistArticlesPart2 } from '@/blog-data/dermatologist-cluster-articles-part2';
@@ -17,7 +17,8 @@ export const POSTS_PER_PAGE = 10;
 
 /**
  * Сколько последних статей показывать в футере.
- * Берутся из всех записей с `kind === 'article'`, сортировка: дата публикации (сначала новые), при равной дате — `dateModified`, затем `id`.
+ * Берутся из всех записей с `kind === 'article'`, сортировка: дата публикации (сначала новые), при равной дате —
+ * `dateModified`, затем `id`.
  */
 export const FOOTER_RECENT_ARTICLE_COUNT = 6;
 

@@ -8,6 +8,7 @@ import BlogIndexSeoContent from '@/components/new-ui/BlogIndexSeoContent';
 import { blogSocialMetadata } from '@/lib/site-og';
 import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { ORIGIN } from '@/blog-data/registry';
+import { JsonLd } from '@/components/JsonLd';
 
 const blogIndexTitle = 'Блог клиники Meddera в Бельцах';
 const blogIndexDescription = 'Статьи и гиды клиники Meddera в Бельцах: косметология, дерматология и эстетические процедуры. Полезные материалы для пациентов перед консультацией.';
@@ -51,11 +52,7 @@ export const metadata: Metadata = {
 export default function BlogIndexPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogIndexJsonLd) }}
-      />
+      <JsonLd data={blogIndexJsonLd} />
       <HeaderNew locale="ru" />
       <main className="min-h-[50vh] bg-background">
         <div className="bg-background">

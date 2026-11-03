@@ -50,9 +50,9 @@ export default function BlogIndexSeoContent({ locale, page = 1 }: Props) {
 
           <h2>Ce găsiți aici</h2>
           <p>
-            Publicăm articole explicative și ghiduri tematice (de exemplu, despre proceduri estetice și întrebări frecvente
-            înainte de vizită). Lista de mai sus se actualizează odată cu noile materiale. Pentru serviciile disponibile
-            în clinică, consultați
+            Publicăm articole explicative și ghiduri tematice (de exemplu, despre proceduri estetice și întrebări
+            frecvente înainte de vizită). Lista de mai sus se actualizează odată cu noile materiale. Pentru serviciile
+            disponibile în clinică, consultați
             {' '}
             <Link href="/ro/services">pagina Servicii</Link>
             ; pentru programare și adresă —
@@ -107,15 +107,15 @@ export default function BlogIndexSeoContent({ locale, page = 1 }: Props) {
       <ContentArticleBody className="!max-w-[1200px] !pb-12 !pt-10 md:!pb-16 md:!pt-14">
         <p className="alt-font !text-[18px] !font-medium !leading-[30px] !text-pofo-heading">
           Блог клиники Meddera в Бельцах — материалы о дерматологии, эстетической косметологии и уходе за кожей: для
-          тех, кто готовится к консультации или хочет понять общие принципы процедур. Тексты носят информационный характер
-          и не заменяют очный осмотр и индивидуальный план лечения врача.
+          тех, кто готовится к консультации или хочет понять общие принципы процедур. Тексты носят информационный
+          характер и не заменяют очный осмотр и индивидуальный план лечения врача.
         </p>
 
         <h2>О чём материалы</h2>
         <p>
           Мы публикуем статьи и гиды по темам, которые чаще всего обсуждают с врачом на приёме (в том числе по отдельным
-          направлениям косметологии). Список статей выше пополняется по мере выхода новых публикаций. Актуальный перечень
-          процедур в клинике — в разделе
+          направлениям косметологии). Список статей выше пополняется по мере выхода новых публикаций. Актуальный
+          перечень процедур в клинике — в разделе
           {' '}
           <Link href="/services">«Услуги»</Link>
           , адрес, телефон и форма записи — на странице
@@ -126,8 +126,8 @@ export default function BlogIndexSeoContent({ locale, page = 1 }: Props) {
 
         <h2>Клиника Meddera в Бельцах</h2>
         <p>
-          Кабинеты расположены по адресу ул. Штефан чел Маре, 13. Познакомиться с врачом и специализацией клиники можно в
-          разделе
+          Кабинеты расположены по адресу ул. Штефан чел Маре, 13. Познакомиться с врачом и специализацией клиники можно
+          в разделе
           {' '}
           <Link href="/about">«Обо мне»</Link>
           . Статьи в блоге помогают сориентироваться до визита; решение о процедурах принимается после консультации.

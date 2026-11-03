@@ -8,8 +8,8 @@ import aboutImg from '../../../public/assets/img/about_2k.jpg';
 function TextList({ items }: { items: string[] }) {
   return (
     <ul className="pofo-list-dash space-y-3.5">
-      {items.map((text, i) => (
-        <li key={i}>
+      {items.map((text) => (
+        <li key={text}>
           <p
             className={`text-[14px] leading-[24px] text-muted-foreground sm:text-[15px] sm:leading-[26px] ${text.includes('\n') ? 'whitespace-pre-line' : ''}`}
           >

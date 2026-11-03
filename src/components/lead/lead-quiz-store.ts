@@ -8,7 +8,9 @@ import {
 
 import { pushLeadCtaEvent, type FormType } from './leadFormConstants';
 
-/** `unknown` is for a trigger whose data-cta-source is missing or not in the allowlist (it shows up in GA4 as a defect). */
+/**
+ * `unknown` is for a trigger whose data-cta-source is missing or not in the allowlist (it shows up in GA4 as a defect).
+ */
 export type LeadQuizOpenSource = LeadQuizSource | 'unknown';
 
 export interface LeadQuizState {
@@ -32,7 +34,10 @@ export function setLeadQuizPageTopic(topic: CtaKey | null): void {
   pageTopic = topic;
 }
 
-/** Read-only access to the page topic, for a trigger that has no card with a procedure to read it from (the scroll teaser). */
+/**
+ * Read-only access to the page topic, for a trigger that has no card with a procedure to read it from (the scroll
+ * teaser).
+ */
 export function getLeadQuizPageTopic(): CtaKey | null {
   return pageTopic;
 }

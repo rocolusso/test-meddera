@@ -5,6 +5,25 @@ import { usePathname } from 'next/navigation';
 
 import { sendGa4Event } from '@/lib/ga4-worker-client';
 
+/**
+ * Server-side page view log. A beacon: it must reach the server even when the visitor moves on at once, so it is not
+ * tied to the effect and is never aborted.
+ */
+function sendServerPageView(route: string) {
+  fetch('/api/track', {
+    method: 'POST',
+
+    headers: {
+      'Content-Type': 'application/json',
+    },
+
+    body: JSON.stringify({
+      event: 'page_view',
+      route,
+    }),
+  }).catch(() => {});
+}
+
 export function TrackPageView() {
   const pathname = usePathname();
 
@@ -17,18 +36,7 @@ export function TrackPageView() {
 
     lastTracked.current = pathname;
 
-    fetch('/api/track', {
-      method: 'POST',
-
-      headers: {
-        'Content-Type': 'application/json',
-      },
-
-      body: JSON.stringify({
-        event: 'page_view',
-        route: pathname,
-      }),
-    }).catch(() => {});
+    sendServerPageView(pathname);
 
     // A 404 page marks itself (NotFoundView), so its page_view is not classified by the URL as a real page.
     const notFound = document.querySelector('[data-page-not-found]') !== null;

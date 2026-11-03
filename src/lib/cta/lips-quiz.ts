@@ -110,12 +110,12 @@ export function formatLipsQuizAnswers(raw: unknown): string {
   const lines: string[] = [];
   for (const q of LIPS_QUIZ) {
     const value = Object.hasOwn(raw, q.key) ? raw[q.key] : undefined;
-    if (typeof value !== 'string') continue;
-    const trimmed = value.trim().slice(0, MAX_ANSWER_LENGTH);
-    let index = q.options.ru.indexOf(trimmed);
-    if (index < 0) index = q.options.ro.indexOf(trimmed);
-    if (index < 0) continue;
-    lines.push(`- ${q.risk.includes(index) ? '⚠ ' : ''}${q.label}: ${q.options.ru[index]}`);
+    if (typeof value === 'string') {
+      const trimmed = value.trim().slice(0, MAX_ANSWER_LENGTH);
+      let index = q.options.ru.indexOf(trimmed);
+      if (index < 0) index = q.options.ro.indexOf(trimmed);
+      if (index >= 0) lines.push(`- ${q.risk.includes(index) ? '⚠ ' : ''}${q.label}: ${q.options.ru[index]}`);
+    }
   }
   return lines.length ? `Ответы квиза (увеличение губ):\n${lines.join('\n')}` : '';
 }

@@ -8,7 +8,7 @@ export default function TelClickTracker() {
   useEffect(() => {
     const handler = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      const anchor = target.closest("a[href^='tel:'], a[data-cta-event]") as HTMLAnchorElement | null;
+      const anchor = target.closest<HTMLAnchorElement>("a[href^='tel:'], a[data-cta-event]");
 
       if (anchor && !anchor.getAttribute('href')?.startsWith('tel:')) {
         // Messenger and social links (data-cta-*): counted as the event they name, with their own cta_source.

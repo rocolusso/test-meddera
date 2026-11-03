@@ -38,7 +38,7 @@ function buildValidPaths(): Set<string> {
   for (const { slug } of getAllSlugParams('ru')) set.add(`/blog/${slug}`);
   for (const { slug } of getAllSlugParams('ro')) set.add(`/ro/blog/${slug}`);
   const max = getMaxIndexPage();
-  for (let p = 2; p <= max; p++) {
+  for (let p = 2; p <= max; p += 1) {
     set.add(`/blog/page/${p}`);
     set.add(`/ro/blog/page/${p}`);
   }

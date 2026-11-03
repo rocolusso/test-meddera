@@ -8,6 +8,7 @@ import BlogIndexSeoContent from '@/components/new-ui/BlogIndexSeoContent';
 import { blogSocialMetadata } from '@/lib/site-og';
 import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { ORIGIN } from '@/blog-data/registry';
+import { JsonLd } from '@/components/JsonLd';
 
 const roBlogIndexTitle = 'Blog — articole și ghiduri Meddera Bălți';
 const roBlogIndexDescription = 'Articole și ghiduri de la clinica Meddera din Bălți: dermatologie, cosmetologie și proceduri estetice. Informații utile pentru pacienți înainte de consultație.';
@@ -51,11 +52,7 @@ export const metadata: Metadata = {
 export default function RoBlogIndexPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(roBlogIndexJsonLd) }}
-      />
+      <JsonLd data={roBlogIndexJsonLd} />
       <HeaderNew locale="ro" />
       <main className="min-h-[50vh] bg-background">
         <div className="bg-background">

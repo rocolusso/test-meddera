@@ -12,8 +12,6 @@ const LOADING_LABEL: Record<'ru' | 'ro', string> = {
 
 interface LazyGoogleMapIframeProps {
   title?: string;
-  /** @deprecated Ignored — map is always fluid width. Kept for ad pages compatibility. */
-  width?: number | string;
   /** Approximate height on large screens; map uses responsive clamp. */
   height?: number;
   className?: string;

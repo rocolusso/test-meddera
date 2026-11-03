@@ -56,11 +56,11 @@ export function LipClusterArticleBody({ post, locale }: Props) {
 
         <h1 className={blogUi.h1Loose}>{h1}</h1>
 
-        {sections.map((sec, si) => (
-          <section key={`${post.id}-ru-${si}`} className="mb-10">
+        {sections.map((sec) => (
+          <section key={`${post.id}-ru-${sec.h2}`} className="mb-10">
             <h2 className={blogUi.h2Tight}>{sec.h2}</h2>
-            {sec.paragraphs.map((p, pi) => (
-              <p key={`${post.id}-ru-${si}-${pi}`} className={blogUi.pMb4Last}>
+            {sec.paragraphs.map((p) => (
+              <p key={p} className={blogUi.pMb4Last}>
                 {p}
               </p>
             ))}
@@ -115,11 +115,11 @@ export function LipClusterArticleBody({ post, locale }: Props) {
 
       <h1 className={blogUi.h1Loose}>{h1}</h1>
 
-      {sections.map((sec, si) => (
-        <section key={`${post.id}-ro-${si}`} className="mb-10">
+      {sections.map((sec) => (
+        <section key={`${post.id}-ro-${sec.h2}`} className="mb-10">
           <h2 className={blogUi.h2Tight}>{sec.h2}</h2>
-          {sec.paragraphs.map((p, pi) => (
-            <p key={`${post.id}-ro-${si}-${pi}`} className={blogUi.pMb4Last}>
+          {sec.paragraphs.map((p) => (
+            <p key={p} className={blogUi.pMb4Last}>
               {p}
             </p>
           ))}

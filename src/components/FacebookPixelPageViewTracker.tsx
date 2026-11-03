@@ -18,7 +18,7 @@ export default function FacebookPixelPageViewTracker() {
     // Initial PageView is sent by bootstrap code.
     if (isFirstRender.current) {
       isFirstRender.current = false;
-      return;
+      return undefined;
     }
 
     let cancelled = false;

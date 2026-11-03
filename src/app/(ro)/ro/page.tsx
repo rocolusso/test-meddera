@@ -16,6 +16,7 @@ import { HOME_FAQ_RO } from '@/lib/home-faq';
 import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { faqNode } from '@/lib/schema/graph';
 import { blogSocialMetadata } from '@/lib/site-og';
+import { JsonLd } from '@/components/JsonLd';
 
 const canonical = 'https://meddera.md/ro';
 const RO_HOME_TITLE = 'Dermatolog Bălți - Consultații Dermatologice Profesionale';
@@ -61,11 +62,7 @@ export default function Home() {
   return (
     <>
       {/* <HeroImagePreload /> */}
-      <script
-        type="application/ld+json"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <HeaderNew locale="ro" />
       {/* <HeroNew /> */}
       <main>

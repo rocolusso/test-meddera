@@ -7,6 +7,7 @@ import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
 import ServicesIndexSeoContent from '@/components/new-ui/ServicesIndexSeoContent';
 import { servicesIndexJsonLd } from '@/lib/jsonld/services-index';
 import { OG_SITE_NAME } from '@/lib/site-og';
+import { JsonLd } from '@/components/JsonLd';
 
 const canonical = 'https://meddera.md/services';
 const roUrl = 'https://meddera.md/ro/services';
@@ -68,11 +69,7 @@ export const metadata = {
 export default function ServicesIndexPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <HeaderNew locale="ru" />
       <main className="border-b border-border/40 bg-gradient-to-b from-muted/20 via-background to-background">
         <ServicesNew locale="ru" titleAs="h1" />

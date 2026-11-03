@@ -12,8 +12,11 @@ const MAX_QUERY = 64;
 const DEFAULT_LIMIT = 8;
 const MAX_LIMIT = 30;
 
-// eslint-disable-next-line no-control-regex
-const CONTROL_CHARS = /[\u0000-\u001f\u007f]/;
+/** U+0000..U+001F and U+007F: a search query never contains them. */
+const hasControlChars = (s: string) => [...s].some((ch) => {
+  const code = ch.codePointAt(0) ?? 0;
+  return code <= 0x1f || code === 0x7f;
+});
 
 const ERROR_HEADERS = { 'Cache-Control': 'no-store' };
 
@@ -21,7 +24,6 @@ function badRequest(code: string) {
   return NextResponse.json({ error: code }, { status: 400, headers: ERROR_HEADERS });
 }
 
-// eslint-disable-next-line import/prefer-default-export
 export function GET(request: NextRequest) {
   warnOnSearchFlagMismatch();
   if (!isSearchServerEnabled()) return NextResponse.json({ error: 'disabled' }, { status: 404, headers: ERROR_HEADERS });
@@ -33,7 +35,7 @@ export function GET(request: NextRequest) {
   const locale: SearchLocale = lang;
 
   const q = (params.get('q') ?? '').trim();
-  if (q.length < MIN_QUERY || q.length > MAX_QUERY || CONTROL_CHARS.test(q)) return badRequest('q');
+  if (q.length < MIN_QUERY || q.length > MAX_QUERY || hasControlChars(q)) return badRequest('q');
 
   const parsedLimit = Number.parseInt(params.get('limit') ?? '', 10);
   const limit = Number.isFinite(parsedLimit) ? Math.min(Math.max(parsedLimit, 1), MAX_LIMIT) : DEFAULT_LIMIT;

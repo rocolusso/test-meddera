@@ -6,7 +6,11 @@ import BurgerMenu from '@/components/BurgerMenu';
 import LocaleSwitchLink from '@/components/new-ui/LocaleSwitchLink';
 import ThemeToggle from '@/components/new-ui/ThemeToggle';
 
-interface Props { locale: string; /** Show the "Отзывы" item (GOOGLE_REVIEWS_ENABLED, read on the server). */ withReviews?: boolean }
+interface Props {
+  locale: string;
+  /** Show the "Отзывы" item (GOOGLE_REVIEWS_ENABLED, read on the server). */
+  withReviews?: boolean;
+}
 
 /**
  * Defers mounting burger + theme toggle until browser idle to reduce early main-thread work.

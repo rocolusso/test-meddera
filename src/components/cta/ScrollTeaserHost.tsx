@@ -105,6 +105,9 @@ export default function ScrollTeaserHost() {
 
     const canShowNow = () => document.visibilityState === 'visible' && !isAnyOverlayOpen() && teaserAllowedByStorage();
 
+    // Set right below; tryShow runs only from the interval callback, after the assignment.
+    let timer = 0;
+
     const tryShow = async () => {
       checking = true;
       if (country === null) country = await fetchCountry();
@@ -127,7 +130,7 @@ export default function ScrollTeaserHost() {
       });
     };
 
-    const timer = window.setInterval(() => {
+    timer = window.setInterval(() => {
       const now = Date.now();
       if (document.visibilityState === 'visible') visibleMs += Math.min(now - last, MAX_TICK_MS);
       last = now;

@@ -19,11 +19,6 @@ export interface RecaptchaScoringResult {
   score?: number;
 }
 
-export async function verifyRecaptchaToken(token: string): Promise<RecaptchaVerifyResult> {
-  const detailed = await verifyRecaptchaForScoring(token);
-  return { ok: detailed.status === 'ok', score: detailed.score };
-}
-
 /** Full detail for anti-spam scoring and fallback when Google is down. */
 export async function verifyRecaptchaForScoring(token: string): Promise<RecaptchaScoringResult> {
   const secret = process.env.RECAPTCHA_SECRET_KEY;
@@ -76,4 +71,9 @@ export async function verifyRecaptchaForScoring(token: string): Promise<Recaptch
   }
 
   return { status: 'ok', score };
+}
+
+export async function verifyRecaptchaToken(token: string): Promise<RecaptchaVerifyResult> {
+  const detailed = await verifyRecaptchaForScoring(token);
+  return { ok: detailed.status === 'ok', score: detailed.score };
 }

@@ -39,14 +39,14 @@ function SectionReveal({
 
   useEffect(() => {
     const el = ref.current;
-    if (!el || immediate) return;
+    if (!el || immediate) return undefined;
 
     if (
       window.matchMedia('(prefers-reduced-motion: reduce)').matches
       || !('IntersectionObserver' in window)
     ) {
       setVisible(true);
-      return;
+      return undefined;
     }
 
     const obs = new IntersectionObserver(
@@ -68,7 +68,7 @@ function SectionReveal({
       ref={ref as React.Ref<never>}
       className={cn(
         'motion-safe-reveal',
-        immediate ? null : visible ? ANIMATION_CLASS[animation] : 'opacity-0',
+        !immediate && (visible ? ANIMATION_CLASS[animation] : 'opacity-0'),
         className,
       )}
       style={visible && delay && !immediate ? { animationDelay: `${delay}ms` } : undefined}

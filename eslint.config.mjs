@@ -88,8 +88,9 @@ const config = [
       'import-x/no-unresolved': 'off',
 
       // Airbnb options adjusted to this project.
-      // The original Airbnb options: long strings (article texts, URLs) are not split.
-      '@stylistic/max-len': ['error', 100, 2, {
+      // 120 instead of Airbnb's 100: the width this codebase is written in. The other options are Airbnb's:
+      // long strings (article texts, URLs) are not split.
+      '@stylistic/max-len': ['error', 120, 2, {
         ignoreUrls: true,
         ignoreComments: false,
         ignoreRegExpLiterals: true,
@@ -111,6 +112,32 @@ const config = [
         ignoreComments: false,
       }],
 
+      // Airbnb bans for...of because of regenerator-runtime; the browserslist targets (Chrome 109+, Safari 16.4+)
+      // run it natively. for...in, labels and with stay banned, as in Airbnb.
+      'no-restricted-syntax': ['error',
+        {
+          selector: 'ForInStatement',
+          message: 'for..in walks the prototype chain. Use Object.keys/values/entries.',
+        },
+        {
+          selector: 'LabeledStatement',
+          message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain.',
+        },
+        {
+          selector: 'WithStatement',
+          message: '`with` is disallowed in strict mode because it makes code impossible to predict.',
+        },
+      ],
+      // `void promise;` marks a promise that is not awaited on purpose; void inside expressions stays banned.
+      'no-void': ['error', { allowAsStatement: true }],
+      // Server logs go to Vercel through console.warn/error (one JSON line for 404s); console.log stays banned.
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
+      // styled-jsx: <style jsx> and <style jsx global> are props of that library, not unknown DOM attributes.
+      '@eslint-react/dom-no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
+
+      // A label that wraps its input is enough (valid HTML and announced correctly); Airbnb also demands htmlFor.
+      'jsx-a11y-x/label-has-associated-control': ['error', { assert: 'either', depth: 25 }],
+
       // Earlier project decisions, kept.
       // Fonts come from @fontsource, not from a <link> in a custom document.
       '@next/next/no-page-custom-font': 'off',
@@ -124,8 +151,43 @@ const config = [
     },
   },
   {
-    // The single place where JSON-LD is written into the page: JSON.stringify output, no user HTML.
-    files: ['src/components/JsonLd.tsx'],
+    // Plain <img> on purpose: the SVG logos gain nothing from the image optimizer and stay out of its JS, and the
+    // Meta Pixel <noscript> beacon is a 1x1 tracking request, not a picture.
+    files: [
+      'src/components/new-ui/HeaderNew.tsx',
+      'src/components/new-ui/FooterNew.tsx',
+      'src/components/FacebookPixel.tsx',
+    ],
+    rules: {
+      '@next/next/no-img-element': 'off',
+    },
+  },
+  {
+    // A click on the <dialog> backdrop closes the search; the keyboard closes it with Esc natively.
+    files: ['src/components/search/SearchPanel.tsx'],
+    rules: {
+      'jsx-a11y-x/no-noninteractive-element-interactions': 'off',
+    },
+  },
+  {
+    // The gtag shim must push the Arguments object: GTM reads a plain array as a data layer message, not a command.
+    files: ['src/lib/ga4-transport.ts'],
+    rules: {
+      'prefer-rest-params': 'off',
+    },
+  },
+  {
+    // Inline scripts that must be raw HTML: JSON-LD (JSON.stringify output with < escaped, no user HTML), the theme
+    // script that runs before the first paint, and the official bootstrap snippets of GTM, Clarity, Plerdy and the
+    // Meta Pixel. All strings are constants from the code.
+    files: [
+      'src/components/JsonLd.tsx',
+      'src/components/RootShell.tsx',
+      'src/components/DeferredGoogleTagManager.tsx',
+      'src/components/DeferredClarity.tsx',
+      'src/components/DeferredPlerdy.tsx',
+      'src/components/FacebookPixel.tsx',
+    ],
     rules: {
       '@eslint-react/dom-no-dangerously-set-innerhtml': 'off',
     },

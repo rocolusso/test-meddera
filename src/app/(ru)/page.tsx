@@ -14,6 +14,7 @@ import HomeSeoContentRu from '@/components/new-ui/HomeSeoContentRu';
 import FooterNew from '@/components/new-ui/FooterNew';
 import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { blogSocialMetadata } from '@/lib/site-og';
+import { JsonLd } from '@/components/JsonLd';
 
 const canonical = 'https://meddera.md/';
 const HOME_TITLE = 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах';
@@ -59,11 +60,7 @@ export default function Home() {
   return (
     <>
       {/* <HeroImagePreload -/> */}
-      <script
-        type="application/ld+json"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <HeaderNew locale="ru" />
       {/* <HeroNew /> */}
 

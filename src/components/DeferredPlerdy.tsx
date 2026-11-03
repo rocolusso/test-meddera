@@ -76,7 +76,6 @@ export default function DeferredPlerdy() {
     <Script
       id="plerdy-init"
       strategy="lazyOnload"
-      /* eslint-disable-next-line react/no-danger */
       dangerouslySetInnerHTML={{ __html: PLERDY_BOOTSTRAP }}
     />
   );

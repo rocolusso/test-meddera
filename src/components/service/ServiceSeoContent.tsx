@@ -47,8 +47,9 @@ function RelatedBlock({ locale, slug }: { locale: Locale; slug: string }) {
   const services = ru ? servicesLinksRu : servicesLinksRo;
   const blog = SERVICE_BLOG[slug];
   const hub = blog ? getHubForCluster(blog.cluster) : undefined;
+  type BlogPostOrMissing = ReturnType<typeof getPostById>;
   const articles = blog
-    ? blog.articles.map((id) => getPostById(id)).filter((a): a is NonNullable<ReturnType<typeof getPostById>> => Boolean(a))
+    ? blog.articles.map((id) => getPostById(id)).filter((a): a is NonNullable<BlogPostOrMissing> => Boolean(a))
     : [];
   const relatedServices = (SERVICE_RELATED[slug] ?? [])
     .map((s) => services.find((x) => x.url.endsWith(`/services/${s}`)))

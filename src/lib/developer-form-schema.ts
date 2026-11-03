@@ -7,7 +7,9 @@ import type { DeveloperLocale } from '@/lib/developer-locale';
 
 export { DEVELOPER_LOCALES, normalizeDeveloperLocale, type DeveloperLocale } from '@/lib/developer-locale';
 
-/** What the visitor wants. Whitelist: ids come from the page, labels are written in Russian for the Telegram message. */
+/**
+ * What the visitor wants. Whitelist: ids come from the page, labels are written in Russian for the Telegram message.
+ */
 export const DEVELOPER_NEEDS = {
   new_site: 'Новый сайт',
   promotion: 'Продвижение',

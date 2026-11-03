@@ -20,7 +20,9 @@ interface BaseProps {
   contactsVariant?: 'default' | 'lips';
   /** Rendered between the header and `<main>` (outside the page content), e.g. the lips banner. */
   banner?: React.ReactNode;
-  /** Rendered right after `<main>`, before the contacts block (outside the page content), e.g. the lips closing banner. */
+  /**
+   * Rendered right after `<main>`, before the contacts block (outside the page content), e.g. the lips closing banner.
+   */
   bottomBanner?: React.ReactNode;
 }
 
@@ -45,6 +47,51 @@ function ContactsBlock({ locale, variant }: { locale: Locale; variant: 'default'
     return locale === 'ru' ? <ContactsLipsDynamicRu /> : <ContactsLipsDynamicRo />;
   }
   return locale === 'ru' ? <ContactsDynamicWrapperRu /> : <ContactsDynamicWrapperRo />;
+}
+
+function ArticleLayout({
+  title,
+  heroImage,
+  heroImageAlt,
+  imagePriority = true,
+  children,
+}: {
+  title: React.ReactNode;
+  heroImage: StaticImageData;
+  heroImageAlt: string;
+  imagePriority?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <>
+      <PageTitleMini title={title} centerOnDesktop />
+
+      <div className="pofo-container section-y !pt-[50px] lg:!pt-[70px]">
+        <div className="relative mx-auto aspect-[16/10] max-w-4xl overflow-hidden bg-muted">
+          <Image
+            src={heroImage}
+            alt={heroImageAlt}
+            fill
+            className="object-cover object-center"
+            sizes="(max-width: 768px) 100vw, 896px"
+            priority={imagePriority}
+            fetchPriority={imagePriority ? 'high' : undefined}
+          />
+        </div>
+
+        <div
+          className={[
+            'mx-auto mt-10 max-w-3xl space-y-6 text-[15px] leading-[26px] sm:text-[16px] sm:leading-[28px] md:mt-[50px]',
+            '[&_p]:text-muted-foreground',
+            '[&_strong]:font-semibold [&_strong]:text-pofo-heading',
+            '[&_a]:font-medium [&_a]:text-accent-text [&_a]:underline-offset-4 hover:[&_a]:underline',
+          ].join(' ')}
+        >
+          {children}
+        </div>
+      </div>
+    </>
+  );
 }
 
 /**
@@ -95,51 +142,6 @@ export default function ContentPageShell(props: ContentPageShellProps) {
       <ContactsBlock locale={locale} variant={contactsVariant} />
       {showServices ? <ServicesNew locale={locale} /> : null}
       <FooterNew locale={locale} />
-    </>
-  );
-}
-
-function ArticleLayout({
-  title,
-  heroImage,
-  heroImageAlt,
-  imagePriority = true,
-  children,
-}: {
-  title: React.ReactNode;
-  heroImage: StaticImageData;
-  heroImageAlt: string;
-  imagePriority?: boolean;
-  children: React.ReactNode;
-}) {
-  return (
-    <>
-      <PageTitleMini title={title} centerOnDesktop />
-
-      <div className="pofo-container section-y !pt-[50px] lg:!pt-[70px]">
-        <div className="relative mx-auto aspect-[16/10] max-w-4xl overflow-hidden bg-muted">
-          <Image
-            src={heroImage}
-            alt={heroImageAlt}
-            fill
-            className="object-cover object-center"
-            sizes="(max-width: 768px) 100vw, 896px"
-            priority={imagePriority}
-            fetchPriority={imagePriority ? 'high' : undefined}
-          />
-        </div>
-
-        <div
-          className={[
-            'mx-auto mt-10 max-w-3xl space-y-6 text-[15px] leading-[26px] sm:text-[16px] sm:leading-[28px] md:mt-[50px]',
-            '[&_p]:text-muted-foreground',
-            '[&_strong]:font-semibold [&_strong]:text-pofo-heading',
-            '[&_a]:font-medium [&_a]:text-accent-text [&_a]:underline-offset-4 hover:[&_a]:underline',
-          ].join(' ')}
-        >
-          {children}
-        </div>
-      </div>
     </>
   );
 }

@@ -60,38 +60,38 @@ export function getPageContext(pathname: string): PageContext {
   const segments = rest.split('/').filter(Boolean).map(decodeSegment);
   const [first, second] = segments;
 
-  let page_type: PageType = 'other';
-  let content_slug = '';
+  let pageType: PageType = 'other';
+  let contentSlug = '';
 
   if (segments.length === 0) {
-    page_type = 'home';
+    pageType = 'home';
   } else if (first === 'services') {
     if (second) {
-      page_type = 'service';
-      content_slug = second;
+      pageType = 'service';
+      contentSlug = second;
     } else {
-      page_type = 'services_list';
+      pageType = 'services_list';
     }
   } else if (first === 'blog') {
     if (second && second !== 'page') {
-      page_type = BLOG_HUB_SLUGS.includes(second) ? 'hub' : 'article';
-      content_slug = second;
+      pageType = BLOG_HUB_SLUGS.includes(second) ? 'hub' : 'article';
+      contentSlug = second;
     } else {
-      page_type = 'blog_list';
+      pageType = 'blog_list';
     }
   } else if (first === 'contacts') {
-    page_type = 'contacts';
+    pageType = 'contacts';
   } else if (first === 'search') {
-    page_type = 'search';
+    pageType = 'search';
   } else if (first === 'ads') {
-    page_type = 'ads';
-    content_slug = second ?? '';
+    pageType = 'ads';
+    contentSlug = second ?? '';
   } else if (first === 'developer') {
-    page_type = 'developer';
+    pageType = 'developer';
   }
 
   return {
-    page_path: clean, page_type, content_slug: content_slug.slice(0, 100), lang,
+    page_path: clean, page_type: pageType, content_slug: contentSlug.slice(0, 100), lang,
   };
 }
 
@@ -110,7 +110,7 @@ function stripWww(host: string): string {
  */
 export function parseFirstTouch(search: string, referrer: string, ownHost: string): FirstTouch {
   const params = new URLSearchParams(search || '');
-  let refHost = '';
+  let refHost: string;
   try {
     refHost = referrer ? stripWww(new URL(referrer).hostname) : '';
   } catch {

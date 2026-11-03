@@ -48,7 +48,6 @@ function FooterNew({ locale }: { locale: string }) {
       <div className="bg-pofo-darker py-[30px] md:py-[50px]">
         <div className="pofo-container flex justify-center">
           <Link href={homeHref} className="block w-[200px] transition-opacity hover:opacity-80 md:w-[240px]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={LOGO_LIGHT_SRC}
               alt={isRu ? 'Meddera — логотип клиники' : 'Meddera — logo clinica'}

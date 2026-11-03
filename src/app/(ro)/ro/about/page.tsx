@@ -7,6 +7,7 @@ import FooterNew from '@/components/new-ui/FooterNew';
 import ContactsDynamicWrapperRo from '@/components/ContactsDynamicWrapperRo';
 import { aboutPageJsonLd } from '@/lib/jsonld/about-page';
 import { OG_SITE_NAME } from '@/lib/site-og';
+import { JsonLd } from '@/components/JsonLd';
 
 const canonical = 'https://meddera.md/ro/about';
 const ruUrl = 'https://meddera.md/about';
@@ -69,11 +70,7 @@ export const metadata = {
 export default function AboutPageRo() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
-      />
+      <JsonLd data={aboutJsonLd} />
       <HeaderNew locale="ro" />
       <main className="border-b border-border/40 bg-gradient-to-b from-muted/20 via-background to-background">
         <AboutNew locale="ro" titleAs="h1" />

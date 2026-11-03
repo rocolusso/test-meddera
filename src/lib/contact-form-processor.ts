@@ -7,6 +7,7 @@ import {
   type BehaviorMetrics,
 } from '@/lib/form-score';
 import { getClientIp } from '@/lib/client-ip';
+import { logger } from '@/lib/logger';
 import { verifyFormToken } from '@/lib/form-token';
 import { parseContactForm } from '@/lib/contact-form-schema';
 import { normalizeDeveloperLocale, parseDeveloperForm } from '@/lib/developer-form-schema';
@@ -271,7 +272,7 @@ export async function processContactFormPost(
   });
 
   if (process.env.NODE_ENV === 'development') {
-    console.log('[form-score]', { score, reasons });
+    logger.debug({ score, reasons }, '[form-score]');
   }
 
   if (score < 20) {

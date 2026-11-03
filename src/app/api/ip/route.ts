@@ -3,7 +3,6 @@ import { NextRequest, NextResponse } from 'next/server';
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-// eslint-disable-next-line import/prefer-default-export
 export async function GET(request: NextRequest) {
   const forwarded = request.headers.get('x-forwarded-for');
   const ip = forwarded

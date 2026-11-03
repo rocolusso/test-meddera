@@ -25,9 +25,7 @@ export default function HeroImagePreload() {
     <link
       rel="preload"
       as="image"
-      // eslint-disable-next-line react/no-unknown-property
       imageSrcSet={props.srcSet}
-      // eslint-disable-next-line react/no-unknown-property
       imageSizes={props.sizes}
       fetchPriority="high"
     />

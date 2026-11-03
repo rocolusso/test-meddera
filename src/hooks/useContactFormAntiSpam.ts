@@ -32,7 +32,7 @@ export function useContactFormAntiSpam() {
 
   useEffect(() => {
     if (!formEl) {
-      return;
+      return undefined;
     }
     const onMove = () => {
       markFirst();

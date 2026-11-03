@@ -28,7 +28,6 @@ function HeaderNew({ locale }: { locale: string }) {
               <div className="flex min-h-[20px] items-center">
                 {/* Native <img> for SVG: bypasses next/image optimizer (no benefit for vector assets), */}
                 {/* dropping a small chunk of JS from the critical path. */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={LOGO_SRC}
                   alt={logoAlt}
@@ -38,7 +37,6 @@ function HeaderNew({ locale }: { locale: string }) {
                   fetchPriority="high"
                   className="block h-auto w-full dark:hidden"
                 />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={LOGO_LIGHT_SRC}
                   alt={logoAlt}

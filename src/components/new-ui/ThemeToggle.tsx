@@ -68,13 +68,10 @@ function ThemeToggle({ locale }: { locale: Locale }) {
     setIsDark(nextDark);
   };
 
-  const ariaLabel = locale === 'ru'
-    ? isDark
-      ? 'Включить светлую тему'
-      : 'Включить тёмную тему'
-    : isDark
-      ? 'Activează tema deschisă'
-      : 'Activează tema întunecată';
+  const ariaLabels = locale === 'ru'
+    ? { dark: 'Включить светлую тему', light: 'Включить тёмную тему' }
+    : { dark: 'Activează tema deschisă', light: 'Activează tema întunecată' };
+  const ariaLabel = isDark ? ariaLabels.dark : ariaLabels.light;
 
   return (
     <button
@@ -88,13 +85,9 @@ function ThemeToggle({ locale }: { locale: Locale }) {
         'pointer-events-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background',
       )}
     >
-      {!mounted ? (
-        <span className="size-6 sm:size-5" aria-hidden />
-      ) : isDark ? (
-        <SunIcon className="size-6 sm:size-5" />
-      ) : (
-        <MoonIcon className="size-6 sm:size-5" />
-      )}
+      {!mounted && <span className="size-6 sm:size-5" aria-hidden />}
+      {mounted && isDark && <SunIcon className="size-6 sm:size-5" />}
+      {mounted && !isDark && <MoonIcon className="size-6 sm:size-5" />}
     </button>
   );
 }

@@ -110,8 +110,8 @@ function Contacts({
       return;
     }
 
-    let tokenJson: { token?: string; disabled?: boolean } | null = null;
-    let tokenHttpStatus = 0;
+    let tokenJson: { token?: string; disabled?: boolean } | null;
+    let tokenHttpStatus: number;
     try {
       const tokenRes = await fetch('/api/form-token');
       tokenHttpStatus = tokenRes.status;
@@ -255,7 +255,10 @@ function Contacts({
                           ) : null}
                         </div>
                         <div className="flex flex-col mt-4">
-                          {/* Default flagUrl (CDN img) — avoid react-phone-number-input/flags (~300KB+ parsed JS from country-flag-icons). */}
+                          {/*
+                            Default flagUrl (CDN img) — avoid react-phone-number-input/flags (~300KB+ parsed JS from
+                            country-flag-icons).
+                          */}
                           <PhoneInputWithCountrySelect
                             id="contact-phone"
                             name="phone"
@@ -358,11 +361,8 @@ function Contacts({
                           type="submit"
                           disabled={locked}
                         >
-                          {locked
-                            ? (locale === 'ru' ? 'Отправка…' : 'Se trimite…')
-                            : (locale === 'ru'
-                              ? 'Отправить сообщение'
-                              : 'Trimite mesaj')}
+                          {locked && (locale === 'ru' ? 'Отправка…' : 'Se trimite…')}
+                          {!locked && (locale === 'ru' ? 'Отправить сообщение' : 'Trimite mesaj')}
                         </Button>
 
                       </fieldset>

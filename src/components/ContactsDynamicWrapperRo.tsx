@@ -21,11 +21,11 @@ export default function ContactsDynamicWrapperRo({
 
   useEffect(() => {
     const target = sentinelRef.current;
-    if (!target) return;
+    if (!target) return undefined;
 
     if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
       setShouldLoad(true);
-      return;
+      return undefined;
     }
 
     const observer = new IntersectionObserver(

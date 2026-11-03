@@ -7,5 +7,4 @@
  *   the call button stops pulsing and shaking while the clinic is closed;
  * - unset or any other value: the dot is always green and the animation always runs.
  */
-// eslint-disable-next-line import/prefer-default-export
 export const INDICATORS_CTA_LOGIC_ENABLED = process.env.NEXT_PUBLIC_INDICATORS_CTA_LOGIC_ENABLED === 'true';

@@ -59,7 +59,7 @@ export default function DeveloperForm({ copy, lang }: Props) {
       return;
     }
 
-    let formToken = '';
+    let formToken: string;
     let abuseDisabled = false;
     try {
       const tokenRes = await fetch('/api/form-token');

@@ -18,6 +18,20 @@ import uvelichenieGub7 from '@public/assets/img/services/lips/lips7.jpg';
 import uvelichenieGub8 from '@public/assets/img/services/lips/lips8.jpg';
 import uvelichenieGub9 from '@public/assets/img/services/lips/lips9.jpg';
 import uvelichenieGub10 from '@public/assets/img/services/lips/lips10.jpg';
+import { JsonLd } from '@/components/JsonLd';
+
+const LIPS_RESULT_PHOTOS = [
+  uvelichenieGub1,
+  uvelichenieGub2,
+  uvelichenieGub3,
+  uvelichenieGub4,
+  uvelichenieGub5,
+  uvelichenieGub6,
+  uvelichenieGub7,
+  uvelichenieGub8,
+  uvelichenieGub9,
+  uvelichenieGub10,
+];
 
 export const metadata = {
   icons: { icon: '/favicon.ico' },
@@ -100,11 +114,7 @@ const faqJsonLd = {
 function ServicePageMoneyRO() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
+      <JsonLd data={faqJsonLd} />
       <ContentPageShell
         variant="custom"
         locale="ro"
@@ -167,10 +177,10 @@ function ServicePageMoneyRO() {
 
           <h2 className="mt-10 text-2xl font-semibold text-foreground">Rezultatele procedurii — foto înainte și după</h2>
           <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {[uvelichenieGub1, uvelichenieGub2, uvelichenieGub3, uvelichenieGub4, uvelichenieGub5, uvelichenieGub6, uvelichenieGub7, uvelichenieGub8, uvelichenieGub9, uvelichenieGub10].map(
+            {LIPS_RESULT_PHOTOS.map(
               (src, i) => (
                 <Image
-                  key={i}
+                  key={src.src}
                   src={src}
                   alt={`Foto înainte și după buze ${i + 1}`}
                   width={600}

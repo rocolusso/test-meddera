@@ -12,6 +12,7 @@
  *   no-arrow-function-lifecycle, require-render-return, no-is-mounted, no-this-in-sfc, no-redundant-should-component-update:
  *   class components; the site has none, and no-class-component below keeps it that way.
  * - jsx-indent, jsx-props-no-multi-spaces: covered by @stylistic/indent and no-multi-spaces (see eslint.config.mjs).
+ * - Not taken from @eslint-react: the iframe sandbox rules (not in Airbnb; a sandbox would break the Google Maps embed).
  * - jsx-boolean-value, jsx-fragments, jsx-no-bind, jsx-props-no-spread-multi, no-invalid-html-attribute: no counterpart.
  */
 export const airbnbReact = {
@@ -67,8 +68,6 @@ export const airbnbReact = {
   '@eslint-react/dom-no-void-elements-with-children': 'error',
   '@eslint-react/dom-no-dangerously-set-innerhtml': 'error',
   '@eslint-react/dom-no-dangerously-set-innerhtml-with-children': 'error',
-  '@eslint-react/dom-no-missing-iframe-sandbox': 'error',
-  '@eslint-react/dom-no-unsafe-iframe-sandbox': 'error',
 
   // browser APIs left running after unmount
   '@eslint-react/web-api-no-leaked-event-listener': 'error',
