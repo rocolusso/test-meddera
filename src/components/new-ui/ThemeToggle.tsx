@@ -68,14 +68,13 @@ function ThemeToggle({ locale }: { locale: Locale }) {
     setIsDark(nextDark);
   };
 
-  const ariaLabel =
-    locale === 'ru'
-      ? isDark
-        ? 'Включить светлую тему'
-        : 'Включить тёмную тему'
-      : isDark
-        ? 'Activează tema deschisă'
-        : 'Activează tema întunecată';
+  const ariaLabel = locale === 'ru'
+    ? isDark
+      ? 'Включить светлую тему'
+      : 'Включить тёмную тему'
+    : isDark
+      ? 'Activează tema deschisă'
+      : 'Activează tema întunecată';
 
   return (
     <button

@@ -9,8 +9,7 @@ import {
 } from '@/components/new-ui/HomeSeoPrimitives';
 import { HOME_FAQ_RO } from '@/lib/home-faq';
 
-const faqItemClass =
-  'border-l-2 border-deep-pink bg-pofo-light-gray py-2.5 pl-4 pr-2 text-[14px] leading-[24px] sm:text-[15px] sm:leading-[26px]';
+const faqItemClass = 'border-l-2 border-deep-pink bg-pofo-light-gray py-2.5 pl-4 pr-2 text-[14px] leading-[24px] sm:text-[15px] sm:leading-[26px]';
 
 /**
  * SEO-текст на главной (RO), видимый пользователям и поисковым системам.
@@ -65,7 +64,10 @@ export default function HomeSeoContentRo() {
           {HOME_FAQ_RO.map((item) => (
             <li key={item.question} className={faqItemClass}>
               <strong className="text-pofo-heading">{item.question}</strong>
-              <span className="text-muted-foreground"> {item.answer}</span>
+              <span className="text-muted-foreground">
+                {' '}
+                {item.answer}
+              </span>
             </li>
           ))}
         </ul>

@@ -10,35 +10,35 @@ import ContactsDynamicWrapperRu from '@/components/ContactsDynamicWrapperRu';
 
 const PageRating = () => {
   const [rating, setRating] = React.useState<number | null>(null);
-  const onChange = (e:number) => {
+  const onChange = (e: number) => {
     setRating(e);
   };
   return (
-    <div className={'container mx-auto'}>
-      <HeaderNew locale={'ru'}/>
-      <div className={'rating__block flex flex-col m-20 justify-center items-center '}>
+    <div className="container mx-auto">
+      <HeaderNew locale="ru" />
+      <div className="rating__block flex flex-col m-20 justify-center items-center ">
         {!rating && (
           <>
-            <div className={' text-center text-xl  py-5 px-2'}>
+            <div className=" text-center text-xl  py-5 px-2">
               <p>Оцените ваш визит в Meddera Beauty Clinic</p>
             </div>
-            <div className={' flex flex-row  '}>
-              {[1,2,3,4,5].map(n => (
-                <button className={'p-2'} key={n} onClick={() => onChange(n)}>
-                  <FaStar  size={40} color={'orange'} />
+            <div className=" flex flex-row  ">
+              {[1, 2, 3, 4, 5].map((n) => (
+                <button className="p-2" key={n} onClick={() => onChange(n)}>
+                  <FaStar size={40} color="orange" />
                 </button>
               ))}
             </div>
           </>
         )}
-        {rating && ( rating === 4 || rating === 5) && (
-          <div className={'flex flex-col gap-5'}>
+        {rating && (rating === 4 || rating === 5) && (
+          <div className="flex flex-col gap-5">
             <p>
               Спасибо за вашу оценку 🙏
-              <br/>
+              <br />
               Если у вас есть 30 секунд — вы можете оставить отзыв в Google:
             </p>
-            <Button onClick={()=>(
+            <Button onClick={() => (
               window.location.href = GOOGLE_REVIEW_EMBED_URL
             )}
             >
@@ -46,14 +46,14 @@ const PageRating = () => {
             </Button>
           </div>
         )}
-        {rating &&  (rating === 3) && (
-          <div className={'flex flex-col gap-5'}>
+        {rating && (rating === 3) && (
+          <div className="flex flex-col gap-5">
             <p>
               Спасибо за оценку.
-              <br/>
+              <br />
               Мы хотели бы улучшить сервис — если есть пожелания, напишите нам.
             </p>
-            <Button onClick={()=>(
+            <Button onClick={() => (
               window.location.href = 'mailto:admin@meddera.md'
             )}
             >
@@ -63,8 +63,8 @@ const PageRating = () => {
         )}
 
       </div>
-      {rating && ( rating === 1 || rating === 2) && (
-        <div className={'p-5 flex flex-col'}>
+      {rating && (rating === 1 || rating === 2) && (
+        <div className="p-5 flex flex-col">
           <p>
             Нам важно разобраться в вашем случае.
             Мы свяжемся с вами в ближайшее время.
@@ -72,7 +72,7 @@ const PageRating = () => {
           <ContactsDynamicWrapperRu hideHeading />
         </div>
       )}
-      <FooterNew locale={'ru'} />
+      <FooterNew locale="ru" />
 
     </div>
   );

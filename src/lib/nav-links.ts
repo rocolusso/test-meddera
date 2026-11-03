@@ -1,11 +1,11 @@
 /** Single source of truth for the main navigation (header, burger menu, footer). */
 export type NavLocale = 'ru' | 'ro';
 
-export type NavLink = {
+export interface NavLink {
   key: 'home' | 'about' | 'services' | 'blog' | 'reviews' | 'contacts';
   href: Record<NavLocale, string>;
   label: Record<NavLocale, string>;
-};
+}
 
 export const NAV_LINKS: readonly NavLink[] = [
   { key: 'home', href: { ru: '/', ro: '/ro' }, label: { ru: 'Главная', ro: 'Acasă' } },

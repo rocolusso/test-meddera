@@ -1,15 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
-import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
+import {
+  blogPathRu, blogPathRo, getRelatedArticles, getHubSlug,
+} from '@/blog-data/registry';
 import { blogUi } from '@/blog-data/blog-ui';
 import { ArticleServiceLinks } from '@/blog-data/ArticleServiceLinks';
 import { articleAnchor, renderInline } from '@/blog-data/inline-links';
 
-type ArticleSection = { h2: string; paragraphs: string[] };
-type Props = { post: BlogPost; locale: BlogLocale; dateModified: string; sections: ArticleSection[] };
+interface ArticleSection { h2: string; paragraphs: string[] }
+interface Props { post: BlogPost; locale: BlogLocale; dateModified: string; sections: ArticleSection[] }
 
-export function BiorevitalizationArticleBody({ post, locale, dateModified, sections }: Props) {
+export function BiorevitalizationArticleBody({
+  post, locale, dateModified, sections,
+}: Props) {
   const isRu = locale === 'ru';
   const title = isRu ? post.titleRu : post.titleRo;
   const h1Text = (isRu ? post.h1Ru : post.h1Ro) ?? title.replace(/\s*\|\s*Meddera.*$/i, '');
@@ -32,8 +36,20 @@ export function BiorevitalizationArticleBody({ post, locale, dateModified, secti
         <span className="mx-2">/</span>
         <span className={blogUi.crumbCurrent}>{title}</span>
       </nav>
-      <p className={blogUi.meta}>{isRu ? 'Автор:' : 'Autor:'} {authorByline}</p>
-      <p className={blogUi.meta}>{isRu ? 'Обновлено:' : 'Actualizat:'} {dateModified} · <Link href={isRu ? roUrl : ruUrl} className={blogUi.crumbLink} hrefLang={isRu ? 'ro' : 'ru'}>{isRu ? 'Română' : 'Русский'}</Link></p>
+      <p className={blogUi.meta}>
+        {isRu ? 'Автор:' : 'Autor:'}
+        {' '}
+        {authorByline}
+      </p>
+      <p className={blogUi.meta}>
+        {isRu ? 'Обновлено:' : 'Actualizat:'}
+        {' '}
+        {dateModified}
+        {' '}
+        ·
+        {' '}
+        <Link href={isRu ? roUrl : ruUrl} className={blogUi.crumbLink} hrefLang={isRu ? 'ro' : 'ru'}>{isRu ? 'Română' : 'Русский'}</Link>
+      </p>
       <h1 className={blogUi.h1}>{h1Text}</h1>
       <div className={blogUi.disclaimerBox}>
         <p className={blogUi.small}>{isRu ? 'Материал носит информационный характер.' : 'Materialul are caracter informativ.'}</p>

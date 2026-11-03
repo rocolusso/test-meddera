@@ -63,14 +63,14 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'Service unavailable' }, { status: 503 });
     }
 
-      return NextResponse.json(
-        {
-          token: signed.token,
-          expiresAt: signed.expiresAt,
-          disabled: false,
-        },
-        { headers: { 'Cache-Control': 'no-store, max-age=0' } },
-      );
+    return NextResponse.json(
+      {
+        token: signed.token,
+        expiresAt: signed.expiresAt,
+        disabled: false,
+      },
+      { headers: { 'Cache-Control': 'no-store, max-age=0' } },
+    );
   } catch {
     if (process.env.NODE_ENV !== 'production') {
       return NextResponse.json({

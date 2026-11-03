@@ -11,10 +11,12 @@ import { blogHubJsonLd } from '@/lib/jsonld/blog-hub';
 import { lipAugmentationHubJsonLd } from '@/lib/jsonld/lip-augmentation-hub';
 import { isLipsPost } from '@/lib/cta/lips';
 import { blogSocialMetadata } from '@/lib/site-og';
-import { getAllSlugParams, getClusterArticles, getPostBySlug, ORIGIN } from '@/blog-data/registry';
+import {
+  getAllSlugParams, getClusterArticles, getPostBySlug, ORIGIN,
+} from '@/blog-data/registry';
 import { renderBlogPostBody } from '@/blog-data/render-post-body';
 
-type Props = { params: Promise<{ slug: string }> };
+interface Props { params: Promise<{ slug: string }> }
 
 export const dynamicParams = false; // Generate only pages from generateStaticParams
 export const revalidate = false; // Disable ISR, use only static generation

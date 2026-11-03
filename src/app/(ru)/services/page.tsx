@@ -12,8 +12,7 @@ const canonical = 'https://meddera.md/services';
 const roUrl = 'https://meddera.md/ro/services';
 
 const PAGE_TITLE = 'Услуги Meddera в Бельцах — дерматология и косметология';
-const PAGE_DESC =
-  'Услуги Meddera в Бельцах: дерматолог, дерматокосметолог, пилинг, мезотерапия, ботокс, филлеры, увеличение губ. Запись на консультацию.';
+const PAGE_DESC = 'Услуги Meddera в Бельцах: дерматолог, дерматокосметолог, пилинг, мезотерапия, ботокс, филлеры, увеличение губ. Запись на консультацию.';
 const OG_IMAGE = 'https://meddera.md/assets/img/baner5.jpg';
 
 const jsonLd = servicesIndexJsonLd({

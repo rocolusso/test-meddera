@@ -1,6 +1,6 @@
 import type { SearchEntryType, SearchLocale } from './types';
 
-type SearchStrings = {
+interface SearchStrings {
   open: string;
   title: string;
   placeholder: string;
@@ -16,7 +16,7 @@ type SearchStrings = {
   pageIntro: string;
   shown: (shown: number, total: number) => string;
   types: Record<SearchEntryType, string>;
-};
+}
 
 export const SEARCH_STRINGS: Record<SearchLocale, SearchStrings> = {
   ru: {

@@ -46,7 +46,9 @@ export const RECEPTION_SCHEDULE_COPY = {
 export type ReceptionIndicator = 'open' | 'closed' | 'off';
 
 const RECEPTION_TIME_ZONE = 'Europe/Chisinau';
-const WEEKDAY_INDEX: Record<string, number> = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+const WEEKDAY_INDEX: Record<string, number> = {
+  Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6,
+};
 
 /** Day of week (0 = Sun) and hour (0–23) of `now` in the clinic's time zone, regardless of the device's zone. */
 export function getClinicDayAndHour(now: Date): { dow: number; hour: number } {

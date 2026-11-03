@@ -15,15 +15,11 @@ export function contactFieldClass(hasError: boolean): string {
 
 export const contactFieldErrorClass = 'mt-1.5 text-sm text-red-600 dark:text-red-400';
 
-export const contactAlertErrorClass =
-  'mb-5 border-l-2 border-red-600 bg-red-50 p-4 text-sm text-red-800 dark:bg-red-950/50 dark:text-red-100';
+export const contactAlertErrorClass = 'mb-5 border-l-2 border-red-600 bg-red-50 p-4 text-sm text-red-800 dark:bg-red-950/50 dark:text-red-100';
 
-export const contactAlertSuccessClass =
-  'mb-5 border-l-2 border-green-600 bg-green-50 p-4 text-sm text-green-800 dark:bg-green-950/40 dark:text-green-100';
+export const contactAlertSuccessClass = 'mb-5 border-l-2 border-green-600 bg-green-50 p-4 text-sm text-green-800 dark:bg-green-950/40 dark:text-green-100';
 
 /** Pofo icon-round: pink circle with white glyph. */
-export const contactIconRoundClass =
-  'mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-full bg-deep-pink text-white sm:mt-0';
+export const contactIconRoundClass = 'mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-full bg-deep-pink text-white sm:mt-0';
 
-export const contactCardTitleClass =
-  'alt-font text-center text-[20px] font-semibold leading-[28px] text-pofo-heading';
+export const contactCardTitleClass = 'alt-font text-center text-[20px] font-semibold leading-[28px] text-pofo-heading';

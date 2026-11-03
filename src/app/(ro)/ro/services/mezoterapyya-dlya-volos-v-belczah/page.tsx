@@ -45,9 +45,9 @@ function ServicePage12Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Mezoterapie păr Bălți – Stop căderii și regenerare'}
+      title="Mezoterapie păr Bălți – Stop căderii și regenerare"
       heroImage={mezovolos}
-      heroImageAlt={'Mezoterapia pentru păr — clinica Meddera, Bălți'}
+      heroImageAlt="Mezoterapia pentru păr — clinica Meddera, Bălți"
     >
       <p>
         Mezoterapia pentru păr este o procedură destinată îmbunătățirii stării

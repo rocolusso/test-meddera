@@ -2,23 +2,22 @@
  * Server-side reCAPTCHA v3 verification (Google siteverify).
  */
 
-export type RecaptchaVerifyResult = {
+export interface RecaptchaVerifyResult {
   ok: boolean;
   score?: number;
-};
+}
 
-export type RecaptchaScoreStatus =
-  | 'ok'
+export type RecaptchaScoreStatus = | 'ok'
   | 'low_score'
   | 'invalid'
   | 'network_error'
   | 'missing_secret'
   | 'empty_token';
 
-export type RecaptchaScoringResult = {
+export interface RecaptchaScoringResult {
   status: RecaptchaScoreStatus;
   score?: number;
-};
+}
 
 export async function verifyRecaptchaToken(token: string): Promise<RecaptchaVerifyResult> {
   const detailed = await verifyRecaptchaForScoring(token);

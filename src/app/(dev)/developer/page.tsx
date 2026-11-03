@@ -19,7 +19,9 @@ export const metadata: Metadata = {
     description: copy.metaDescription,
     url: 'https://meddera.md/developer',
     type: 'profile',
-    images: [{ url: '/assets/img/developer.jpeg', width: 960, height: 960, alt: 'Alexander Shchedrov' }],
+    images: [{
+      url: '/assets/img/developer.jpeg', width: 960, height: 960, alt: 'Alexander Shchedrov',
+    }],
   },
   twitter: {
     card: 'summary',

@@ -1,11 +1,11 @@
 import { BOTOX_ARTICLE_CONTENT_PART2 } from '@/blog-data/botox-article-content-part2';
 
-export type ArticleSection = { h2: string; paragraphs: string[] };
+export interface ArticleSection { h2: string; paragraphs: string[] }
 
-export type BotoxArticleCopy = {
+export interface BotoxArticleCopy {
   sectionsRu: ArticleSection[];
   sectionsRo: ArticleSection[];
-};
+}
 
 const BOTOX_ARTICLE_CONTENT_PART1: Record<string, BotoxArticleCopy> = {
   'botoks-beltsy-chto-nuzhno-znat': {

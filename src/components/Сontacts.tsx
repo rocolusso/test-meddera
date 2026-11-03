@@ -7,7 +7,6 @@ import PhoneInputWithCountrySelect from 'react-phone-number-input';
 import './lead/phone-input.css';
 import ContactChannels from '@/components/ContactChannels';
 import LazyMap from '@/components/LazyMap';
-import imgAddress from '../../public/assets/img/img_contacts.jpg';
 import { Button } from '@/components/ui/button';
 import { executeRecaptcha, prefetchRecaptchaScript } from '@/lib/recaptcha-client';
 import RecaptchaDisclaimer from '@/components/RecaptchaDisclaimer';
@@ -28,6 +27,7 @@ import {
 } from '@/components/contact-form-ui';
 import { sendGa4Event } from '@/lib/ga4-worker-client';
 import { markLeadSubmitted } from '@/lib/cta/teaser-state';
+import imgAddress from '../../public/assets/img/img_contacts.jpg';
 
 function Contacts({
   locale,
@@ -72,7 +72,7 @@ function Contacts({
     prefetchRecaptchaScript();
   };
 
-  const submitHandler = async (e:React.BaseSyntheticEvent) => {
+  const submitHandler = async (e: React.BaseSyntheticEvent) => {
     e.preventDefault();
     e.stopPropagation();
 
@@ -427,11 +427,13 @@ function Contacts({
       </div>
 
       {hideMap ? null : <LazyMap locale={locale === 'ro' ? 'ro' : 'ru'} />}
-      <style jsx>{`
+      <style jsx>
+        {`
         .grecaptcha-badge {
           visibility: hidden;
         }
-      `}</style>
+      `}
+      </style>
 
     </div>
   );

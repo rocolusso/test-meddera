@@ -2,8 +2,7 @@ export type BlogLocale = 'ru' | 'ro';
 
 export type BlogPostKind = 'hub' | 'article';
 
-export type BlogClusterId =
-  | 'lips'
+export type BlogClusterId = | 'lips'
   | 'botox'
   | 'dermatologist'
   | 'consultation'
@@ -21,8 +20,7 @@ export type BlogClusterId =
   | 'lipolytics';
 
 /** Reserved URL segment; never use slugRu/slugRo === "page". */
-export type BlogBodyKey =
-  | 'lip-augmentation-hub'
+export type BlogBodyKey = | 'lip-augmentation-hub'
   | 'lip-cluster-article'
   | 'botox-hub'
   | 'botox-article'
@@ -55,7 +53,7 @@ export type BlogBodyKey =
   | 'lipolytics-hub'
   | 'lipolytics-article';
 
-export type BlogPost = {
+export interface BlogPost {
   id: string;
   kind: BlogPostKind;
   clusterId: BlogClusterId | null;
@@ -82,4 +80,4 @@ export type BlogPost = {
     ro: string;
   };
   relatedArticles?: string[];
-};
+}

@@ -3,13 +3,15 @@
 import { useContactReceptionSchedule } from '@/hooks/useContactReceptionSchedule';
 import { RECEPTION_SCHEDULE_COPY } from '@/lib/contact-reception-schedule';
 
-type Props = {
+interface Props {
   locale: 'ru' | 'ro';
   compact?: boolean;
-};
+}
 
 export default function ClinicConsultationInfo({ locale, compact = false }: Props) {
-  const { isOpenNow, isSunday, isMonday, isWednesday, currentTime, weekdayLong } = useContactReceptionSchedule(locale);
+  const {
+    isOpenNow, isSunday, isMonday, isWednesday, currentTime, weekdayLong,
+  } = useContactReceptionSchedule(locale);
   const copy = RECEPTION_SCHEDULE_COPY[locale];
   const textClass = compact ? 'text-xs sm:text-sm' : 'text-sm sm:text-base';
 

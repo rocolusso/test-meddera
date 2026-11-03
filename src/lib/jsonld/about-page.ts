@@ -1,7 +1,7 @@
 import { ID, type Locale } from '@/lib/schema/constants';
 import { pageGraph } from '@/lib/schema/graph';
 
-export type AboutPageJsonLdInput = {
+export interface AboutPageJsonLdInput {
   pageUrl: string;
   locale: Locale;
   /** Page title (visible / meta) */
@@ -9,7 +9,7 @@ export type AboutPageJsonLdInput = {
   description: string;
   imageUrl: string;
   breadcrumbItems: { name: string; item: string }[];
-};
+}
 
 /**
  * «Обо мне»: ProfilePage about the physician. This is the only page where the physician

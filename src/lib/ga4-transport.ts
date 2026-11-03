@@ -35,8 +35,7 @@ export function getGtmId(): string {
 export function isGtmEnabled(): boolean {
   if (getGa4Transport() !== 'gtm' || !getGtmId()) return false;
   const isVercel = process.env.VERCEL === '1';
-  const isProductionDeployment =
-    process.env.NODE_ENV === 'production' && (isVercel ? process.env.VERCEL_ENV === 'production' : true);
+  const isProductionDeployment = process.env.NODE_ENV === 'production' && (isVercel ? process.env.VERCEL_ENV === 'production' : true);
   return isProductionDeployment || process.env.NEXT_PUBLIC_GTM_ON_PREVIEW === '1';
 }
 

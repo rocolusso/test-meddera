@@ -2,7 +2,7 @@ import type { DeveloperLocale } from '@/lib/developer-locale';
 
 export type DeveloperLang = DeveloperLocale;
 
-export type ProjectCopy = {
+export interface ProjectCopy {
   id: 'meddera' | 'domovenok' | 'vezu';
   host: string;
   href: string;
@@ -10,9 +10,9 @@ export type ProjectCopy = {
   internal?: boolean;
   text: string;
   tags: string[];
-};
+}
 
-export type DeveloperCopy = {
+export interface DeveloperCopy {
   htmlLang: string;
   metaTitle: string;
   metaDescription: string;
@@ -53,7 +53,7 @@ export type DeveloperCopy = {
     errors: { generic: string; rate: string; verify: string };
   };
   footer: { languages: string };
-};
+}
 
 const STACK_ITEMS = {
   frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'SCSS', 'Material UI', 'Redux Toolkit', 'Zustand', 'Astro'],

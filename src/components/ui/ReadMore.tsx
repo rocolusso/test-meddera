@@ -3,7 +3,7 @@
 import { useId, useState } from 'react';
 import type { ReactNode } from 'react';
 
-type ReadMoreProps = {
+interface ReadMoreProps {
   /** Full content: always in the server-rendered HTML, so crawlers see it whether it is collapsed or not. */
   children: ReactNode;
   /** Collapsed height in pixels. */
@@ -13,7 +13,7 @@ type ReadMoreProps = {
   expandLabel: string;
   collapseLabel: string;
   className?: string;
-};
+}
 
 /**
  * "Read more" collapse: only clips visually (max-height + overflow), never display:none or unmounting, so the

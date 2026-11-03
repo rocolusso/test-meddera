@@ -7,7 +7,7 @@ export const DEFAULT_OG_IMAGE_URL = `${ORIGIN}/assets/img/about_2k.jpg`;
 
 export const OG_SITE_NAME = 'Meddera Beauty Clinic';
 
-type BlogOgArgs = {
+interface BlogOgArgs {
   title: string;
   description: string;
   url: string;
@@ -18,7 +18,7 @@ type BlogOgArgs = {
   imageAlt?: string;
   imageWidth?: number;
   imageHeight?: number;
-};
+}
 
 /** Open Graph + Twitter Card blocks for Ahrefs-complete social previews. */
 export function blogSocialMetadata(args: BlogOgArgs): Pick<Metadata, 'openGraph' | 'twitter'> {

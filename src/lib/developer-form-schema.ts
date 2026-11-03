@@ -22,7 +22,7 @@ export function sanitizeDeveloperNeeds(raw: unknown): DeveloperNeedId[] {
   if (!Array.isArray(raw)) return [];
   const out: DeveloperNeedId[] = [];
   for (const item of raw) {
-    if (typeof item === 'string' && Object.prototype.hasOwnProperty.call(DEVELOPER_NEEDS, item)) {
+    if (typeof item === 'string' && Object.hasOwn(DEVELOPER_NEEDS, item)) {
       const id = item as DeveloperNeedId;
       if (!out.includes(id)) out.push(id);
     }
@@ -115,7 +115,7 @@ function messages(locale: DeveloperLocale) {
   };
 }
 
-export type DeveloperFormInput = { username: string; userphone: string; message: string };
+export interface DeveloperFormInput { username: string; userphone: string; message: string }
 
 /**
  * Validation of the /developer form. The contact field keeps the key `userphone` so it fits the shared form processor,

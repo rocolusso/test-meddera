@@ -22,8 +22,12 @@ function blogSitemapEntries(buildAt: string): MetadataRoute.Sitemap {
 
   // Главная страница блога
   entries.push(
-    { url: 'https://meddera.md/blog', lastModified: latestBlogDate, changeFrequency: 'weekly', priority: 0.75 },
-    { url: 'https://meddera.md/ro/blog', lastModified: latestBlogDate, changeFrequency: 'weekly', priority: 0.75 }
+    {
+      url: 'https://meddera.md/blog', lastModified: latestBlogDate, changeFrequency: 'weekly', priority: 0.75,
+    },
+    {
+      url: 'https://meddera.md/ro/blog', lastModified: latestBlogDate, changeFrequency: 'weekly', priority: 0.75,
+    },
   );
 
   // Посты блога (все из registry: хабы + статьи, в т.ч. Part 2 и inline lip)
@@ -41,7 +45,7 @@ function blogSitemapEntries(buildAt: string): MetadataRoute.Sitemap {
         lastModified: lastMod,
         changeFrequency: 'monthly',
         priority: post.kind === 'hub' ? 0.72 : 0.65,
-      }
+      },
     );
   }
 
@@ -49,14 +53,17 @@ function blogSitemapEntries(buildAt: string): MetadataRoute.Sitemap {
   const maxPage = getMaxIndexPage();
   for (let p = 2; p <= maxPage; p++) {
     // Дата страницы списка = последняя правка среди статей на этой странице
-    const pageDate =
-      getPostsForIndexPage('ru', p)
-        .map((a) => a.dateModified)
-        .sort()
-        .pop() ?? latestBlogDate;
+    const pageDate = getPostsForIndexPage('ru', p)
+      .map((a) => a.dateModified)
+      .sort()
+      .pop() ?? latestBlogDate;
     entries.push(
-      { url: `https://meddera.md/blog/page/${p}`, lastModified: pageDate, changeFrequency: 'weekly', priority: 0.6 },
-      { url: `https://meddera.md/ro/blog/page/${p}`, lastModified: pageDate, changeFrequency: 'weekly', priority: 0.6 }
+      {
+        url: `https://meddera.md/blog/page/${p}`, lastModified: pageDate, changeFrequency: 'weekly', priority: 0.6,
+      },
+      {
+        url: `https://meddera.md/ro/blog/page/${p}`, lastModified: pageDate, changeFrequency: 'weekly', priority: 0.6,
+      },
     );
   }
 
@@ -85,7 +92,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   if (isGoogleReviewsEnabled()) {
     mainPages.push(
       { url: `https://meddera.md${REVIEWS_PATH.ru}`, changeFrequency: 'monthly', priority: 0.7 },
-      { url: `https://meddera.md${REVIEWS_PATH.ro}`, changeFrequency: 'monthly', priority: 0.7 }
+      { url: `https://meddera.md${REVIEWS_PATH.ro}`, changeFrequency: 'monthly', priority: 0.7 },
     );
   }
 
@@ -94,7 +101,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const slug of SERVICE_SLUGS) {
     mainPages.push(
       { url: `https://meddera.md/services/${slug}`, changeFrequency: 'weekly', priority: 0.8 },
-      { url: `https://meddera.md/ro/services/${slug}`, changeFrequency: 'weekly', priority: 0.8 }
+      { url: `https://meddera.md/ro/services/${slug}`, changeFrequency: 'weekly', priority: 0.8 },
     );
   }
 
@@ -102,5 +109,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const sitemapUrls = [...blogSitemapEntries(buildAt), ...mainPages];
 
   // Фильтруем на всякий случай (только объекты с url)
-  return sitemapUrls.filter(entry => !!entry.url);
+  return sitemapUrls.filter((entry) => !!entry.url);
 }

@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import { usePathname } from 'next/navigation';
 
@@ -11,10 +12,9 @@ function getLocaleFromPathname(pathname: string | null): Locale {
     return 'ru';
   }
   const normalizedPath = pathname !== '/' ? pathname.replace(/\/+$/, '') : '/';
-  const isRoLocale =
-    normalizedPath === '/ro' ||
-    normalizedPath.startsWith('/ro/') ||
-    (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
+  const isRoLocale = normalizedPath === '/ro'
+    || normalizedPath.startsWith('/ro/')
+    || (normalizedPath.length > 1 && normalizedPath.endsWith('/ro'));
   return isRoLocale ? 'ro' : 'ru';
 }
 

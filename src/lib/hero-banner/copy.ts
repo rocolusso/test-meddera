@@ -5,7 +5,7 @@
  */
 export type HeroBannerLocale = 'ru' | 'ro';
 
-export type HeroBannerCopy = {
+export interface HeroBannerCopy {
   /** Accessible name of the section. */
   label: string;
   /** Read once by screen readers, in place of the animated scenes. */
@@ -21,7 +21,7 @@ export type HeroBannerCopy = {
   /** Floating tags next to the photo: acne, pigmentation, moles, wrinkles. */
   plates: [string, string, string, string];
   photoAlt: string;
-};
+}
 
 const NBSP = ' ';
 

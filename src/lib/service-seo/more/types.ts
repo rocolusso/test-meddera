@@ -1,3 +1,3 @@
 import type { ServiceSeoSection } from '@/lib/service-seo/types';
 
-export type ServiceSeoMore = { ru: ServiceSeoSection[]; ro: ServiceSeoSection[] };
+export interface ServiceSeoMore { ru: ServiceSeoSection[]; ro: ServiceSeoSection[] }

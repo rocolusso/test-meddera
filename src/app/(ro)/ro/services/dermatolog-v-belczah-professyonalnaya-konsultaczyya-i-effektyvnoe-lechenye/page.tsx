@@ -43,9 +43,9 @@ function ServicePage2Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Consultație Dermatologică în Bălți | Clinica Meddera'}
+      title="Consultație Dermatologică în Bălți | Clinica Meddera"
       heroImage={consultderm}
-      heroImageAlt={'Consultația dermatologică — clinica Meddera, Bălți'}
+      heroImageAlt="Consultația dermatologică — clinica Meddera, Bălți"
     >
       <p>
         Consultația dermatologică este o vizită specializată la medicul dermatolog,

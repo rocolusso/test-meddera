@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 
 type HeadingTag = 'h1' | 'h2' | 'h3' | 'p';
 
-type Props = {
+interface Props {
   title: React.ReactNode;
   eyebrow?: React.ReactNode;
   as?: HeadingTag;
@@ -13,7 +13,7 @@ type Props = {
   className?: string;
   titleClassName?: string;
   id?: string;
-};
+}
 
 /**
  * Pofo section heading: small pink uppercase caption → Montserrat 600 title → optional pink rule.

@@ -17,12 +17,12 @@ import { useEffect, useState } from 'react';
 
 const Analytics = dynamic(
   () => import('@vercel/analytics/react').then((mod) => mod.Analytics),
-  { ssr: false }
+  { ssr: false },
 );
 
 const SpeedInsights = dynamic(
   () => import('@vercel/speed-insights/next').then((mod) => mod.SpeedInsights),
-  { ssr: false }
+  { ssr: false },
 );
 
 export default function DeferredVercelInsights() {

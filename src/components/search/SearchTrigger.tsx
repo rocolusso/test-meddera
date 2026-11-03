@@ -8,7 +8,7 @@ import type { SearchLocale } from '@/lib/search/types';
 import { LazySearchPanel, preloadSearchPanel } from './LazySearchPanel';
 import SearchIcon from './SearchIcon';
 
-type Props = { locale: SearchLocale; className: string };
+interface Props { locale: SearchLocale; className: string }
 
 export default function SearchTrigger({ locale, className }: Props) {
   const [open, setOpen] = useState(false);

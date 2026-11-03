@@ -17,8 +17,7 @@ import { blogSocialMetadata } from '@/lib/site-og';
 
 const canonical = 'https://meddera.md/';
 const HOME_TITLE = 'Екатерина Пынтя – Дерматолог-косметолог в Бельцах';
-const HOME_DESCRIPTION =
-  'Екатерина Пынтя — дерматолог-косметолог в Бельцах, клиника Meddera: дерматология, косметология, удаление образований, ботокс, филлеры, мезотерапия.';
+const HOME_DESCRIPTION = 'Екатерина Пынтя — дерматолог-косметолог в Бельцах, клиника Meddera: дерматология, косметология, удаление образований, ботокс, филлеры, мезотерапия.';
 
 const jsonLd = webPageJsonLd({
   pageUrl: canonical,
@@ -59,14 +58,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      {/*<HeroImagePreload -/>*/}
+      {/* <HeroImagePreload -/> */}
       <script
         type="application/ld+json"
         /* eslint-disable-next-line react/no-danger */
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HeaderNew locale="ru" />
-      {/*<HeroNew />*/}
+      {/* <HeroNew /> */}
 
       <main>
         {isHeroBannerEnabled() ? <HeroBanner locale="ru" /> : null}

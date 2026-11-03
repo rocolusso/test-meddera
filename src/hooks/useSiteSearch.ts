@@ -20,7 +20,7 @@ function remember(key: string, value: SearchResponse) {
   responseCache.set(key, value);
 }
 
-type Settled = { key: string; data: SearchResponse | null; failed: boolean };
+interface Settled { key: string; data: SearchResponse | null; failed: boolean }
 
 export function useSiteSearch(rawQuery: string, locale: SearchLocale, limit: number) {
   const query = rawQuery.trim();

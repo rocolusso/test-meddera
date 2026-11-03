@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react';
 import Image from 'next/image';
 
-type Props = { alt: string; chips: string[] };
+interface Props { alt: string; chips: string[] }
 
 /** Photo in the middle, labels travel round it (CSS only). The labels stay upright while the ring turns. */
 export default function HeroOrbit({ alt, chips }: Props) {

@@ -2,13 +2,13 @@ import { servicesLinksRo, servicesLinksRu } from '@/lib/db-content';
 import { SITE_ORIGIN, type Locale } from '@/lib/schema/constants';
 import { itemListNode, pageGraph } from '@/lib/schema/graph';
 
-export type ServicesIndexJsonLdInput = {
+export interface ServicesIndexJsonLdInput {
   pageUrl: string;
   locale: Locale;
   pageName: string;
   description: string;
   breadcrumbItems: { name: string; item: string }[];
-};
+}
 
 /** CollectionPage with an ItemList of every service page. */
 export function servicesIndexJsonLd(o: ServicesIndexJsonLdInput) {

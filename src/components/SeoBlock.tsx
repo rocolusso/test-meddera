@@ -1,7 +1,7 @@
 import React from 'react';
 
-function SeoBlock({ children, locale }:Readonly<{
-  children: React.ReactNode,
+function SeoBlock({ children, locale }: Readonly<{
+  children: React.ReactNode;
   locale: string;
 }>) {
   return (

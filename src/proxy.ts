@@ -2,10 +2,9 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { getImageProps } from 'next/image';
 
-import aboutImg from '../public/assets/img/about_2k.jpg';
-
 import { logNotFound, NOT_FOUND_PAGE } from '@/lib/not-found-log';
 import { isRoPath, isUnknownPagePath } from '@/lib/valid-paths';
+import aboutImg from '../public/assets/img/about_2k.jpg';
 
 /**
  * Early Hints (HTTP 103) support — PLAN-PERF-03.

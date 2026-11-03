@@ -45,9 +45,9 @@ function ServicePage8Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Terapie anti-acnee în Bălți – tratament acnee și cicatrici'}
+      title="Terapie anti-acnee în Bălți – tratament acnee și cicatrici"
       heroImage={maskaLica}
-      heroImageAlt={'Terapia anti-acnee — clinica Meddera, Bălți'}
+      heroImageAlt="Terapia anti-acnee — clinica Meddera, Bălți"
     >
       <p>
         Terapia anti-acnee este o procedură destinată tratării inflamațiilor

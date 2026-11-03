@@ -3,9 +3,9 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import BurgerMenu from '@/components/BurgerMenu';
-import pintea from '../../../../public/assets/img/cert/pintea.svg';
 import Certificate from '@/components/Сertificate';
 import Contacts from '@/components/Сontacts';
+import pintea from '../../../../public/assets/img/cert/pintea.svg';
 
 function Page() {
   const certificatNumber = '63343633';

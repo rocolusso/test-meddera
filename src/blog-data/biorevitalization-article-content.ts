@@ -1,12 +1,12 @@
 import { BIOREVITALIZATION_ARTICLE_CONTENT_PART2 } from './biorevitalization-article-content-part2';
 import { BIOREVITALIZATION_ARTICLE_CONTENT_PART3 } from './biorevitalization-article-content-part3';
 
-export type ArticleSection = { h2: string; paragraphs: string[] };
+export interface ArticleSection { h2: string; paragraphs: string[] }
 
-export type BiorevitalizationArticleCopy = {
+export interface BiorevitalizationArticleCopy {
   sectionsRu: ArticleSection[];
   sectionsRo: ArticleSection[];
-};
+}
 
 const BIOREVITALIZATION_ARTICLE_CONTENT_PART1: Record<string, BiorevitalizationArticleCopy> = {
   'biorevitalizaciya-beltsy-chto-eto': {

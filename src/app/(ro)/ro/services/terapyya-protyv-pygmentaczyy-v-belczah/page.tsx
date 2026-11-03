@@ -45,9 +45,9 @@ function ServicePage9Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Terapie antipigmentară în Bălți – eliminare pete pigmentare'}
+      title="Terapie antipigmentară în Bălți – eliminare pete pigmentare"
       heroImage={terapiyaProtivPigment}
-      heroImageAlt={'Terapie antipigmentară — clinica Meddera, Bălți'}
+      heroImageAlt="Terapie antipigmentară — clinica Meddera, Bălți"
     >
       <p>
         Terapie antipigmentară este o procedură cosmetologică destinată iluminării

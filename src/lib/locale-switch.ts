@@ -114,4 +114,3 @@ export function getAlternateLocalePath(pathname: string, locale: 'ru' | 'ro'): s
 
   return toRo ? '/ro' : '/';
 }
-

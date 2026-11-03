@@ -19,8 +19,7 @@ import { blogSocialMetadata } from '@/lib/site-og';
 
 const canonical = 'https://meddera.md/ro';
 const RO_HOME_TITLE = 'Dermatolog Bălți - Consultații Dermatologice Profesionale';
-const RO_HOME_DESCRIPTION =
-  'Dermatolog în Bălți — Meddera: consultații pentru acnee, eczeme, psoriazis, alunițe și alte afecțiuni ale pielii. Programări online.';
+const RO_HOME_DESCRIPTION = 'Dermatolog în Bălți — Meddera: consultații pentru acnee, eczeme, psoriazis, alunițe și alte afecțiuni ale pielii. Programări online.';
 
 const jsonLd = webPageJsonLd({
   pageUrl: canonical,
@@ -61,14 +60,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      {/*<HeroImagePreload />*/}
+      {/* <HeroImagePreload /> */}
       <script
         type="application/ld+json"
         /* eslint-disable-next-line react/no-danger */
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HeaderNew locale="ro" />
-      {/*<HeroNew />*/}
+      {/* <HeroNew /> */}
       <main>
         {isHeroBannerEnabled() ? <HeroBanner locale="ro" /> : null}
         <AboutNew locale="ro" />

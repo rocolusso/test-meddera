@@ -1,13 +1,15 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import {
+  useCallback, useEffect, useRef, useState,
+} from 'react';
 
-export type BehaviorPayload = {
+export interface BehaviorPayload {
   mousemove: number;
   keydown: number;
   touchstart: number;
   pointerdown: number;
-};
+}
 
 export function useContactFormAntiSpam() {
   const [website, setWebsite] = useState('');

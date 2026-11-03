@@ -45,9 +45,9 @@ function ServicePage6() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Пилинг в Бельцах – Косметологические услуги в Молдове'}
+      title="Пилинг в Бельцах – Косметологические услуги в Молдове"
       heroImage={pilling}
-      heroImageAlt={'Пилинг — клиника Meddera, Бельцы'}
+      heroImageAlt="Пилинг — клиника Meddera, Бельцы"
     >
       <p>
         Пилинг — косметологическая процедура, направленная на обновление и улучшение

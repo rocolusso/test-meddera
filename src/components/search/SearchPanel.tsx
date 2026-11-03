@@ -1,6 +1,8 @@
 'use client';
 
-import React, { useEffect, useId, useRef, useState } from 'react';
+import React, {
+  useEffect, useId, useRef, useState,
+} from 'react';
 import { useRouter } from 'next/navigation';
 
 import { useSiteSearch } from '@/hooks/useSiteSearch';
@@ -13,12 +15,12 @@ import SearchResultsList from './SearchResultsList';
 
 const PANEL_LIMIT = 8;
 
-type Props = {
+interface Props {
   locale: SearchLocale;
   onClose: () => void;
   /** Element that gets focus back when the panel closes. Defaults to the one focused on open. */
   returnFocusTo?: () => HTMLElement | null;
-};
+}
 
 function CloseIcon({ className }: { className?: string }) {
   return (

@@ -45,9 +45,9 @@ function ServicePage6Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Peeling facial profesional în Bălți – piele reînnoită'}
+      title="Peeling facial profesional în Bălți – piele reînnoită"
       heroImage={pilling}
-      heroImageAlt={'Peelingul — clinica Meddera, Bălți'}
+      heroImageAlt="Peelingul — clinica Meddera, Bălți"
     >
       <p>
         Peelingul este o procedură cosmetică menită să reînnoiască și să îmbunătățească

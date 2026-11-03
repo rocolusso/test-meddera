@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 
 import type { DeveloperCopy } from './copy';
 
-type Props = { copy: DeveloperCopy['banner'] };
+interface Props { copy: DeveloperCopy['banner'] }
 
 /**
  * Banner A: the words Site / Search / Ads / Analytics / Leads, then the chain site, traffic, analytics and a "new lead" card.

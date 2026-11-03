@@ -4,7 +4,9 @@ import { blogPathRo, blogPathRu, getPostsForSitemap } from '@/blog-data/registry
 import { normalizeText } from './normalize';
 import { getSearchPages } from './pages';
 import { getPostBlocks } from './post-text';
-import type { SearchBlock, SearchEntry, SearchEntryType, SearchIndex, SearchLocale } from './types';
+import type {
+  SearchBlock, SearchEntry, SearchEntryType, SearchIndex, SearchLocale,
+} from './types';
 
 function makeEntry(
   type: SearchEntryType,

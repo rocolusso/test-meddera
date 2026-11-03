@@ -87,11 +87,13 @@ export default function PopUpWithTimer() {
             </button>
           </form>
         </div>
-        <style jsx>{`
+        <style jsx>
+          {`
           .grecaptcha-badge {
             visibility: hidden;
           }
-        `}</style>
+        `}
+        </style>
       </div>
     </div>
   );

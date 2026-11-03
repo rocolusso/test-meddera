@@ -10,8 +10,7 @@ import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { ORIGIN } from '@/blog-data/registry';
 
 const roBlogIndexTitle = 'Blog — articole și ghiduri Meddera Bălți';
-const roBlogIndexDescription =
-  'Articole și ghiduri de la clinica Meddera din Bălți: dermatologie, cosmetologie și proceduri estetice. Informații utile pentru pacienți înainte de consultație.';
+const roBlogIndexDescription = 'Articole și ghiduri de la clinica Meddera din Bălți: dermatologie, cosmetologie și proceduri estetice. Informații utile pentru pacienți înainte de consultație.';
 
 const roBlogIndexUrl = `${ORIGIN}/ro/blog`;
 const roBlogIndexMetaTitle = roBlogIndexTitle;

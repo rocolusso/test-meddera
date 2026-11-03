@@ -14,17 +14,16 @@ import PageTitleMini from '@/components/pofo/PageTitleMini';
 import SectionHeading from '@/components/pofo/SectionHeading';
 import SectionReveal from '@/components/new-ui/SectionReveal';
 
-type Props = {
+interface Props {
   locale: BlogLocale;
   page: number;
-};
+}
 
 const REVEAL_DELAYS = [0, 200, 400] as const;
 const CARD_IMAGE_SIZES = '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw';
 
 /** Pofo pagination cell. */
-const pageCellClass =
-  'alt-font inline-flex items-center gap-1.5 border-l border-border px-[18px] text-[12px] font-medium uppercase leading-[40px] text-pofo-heading transition-colors first:border-l-0 hover:bg-[#232323] hover:text-white';
+const pageCellClass = 'alt-font inline-flex items-center gap-1.5 border-l border-border px-[18px] text-[12px] font-medium uppercase leading-[40px] text-pofo-heading transition-colors first:border-l-0 hover:bg-[#232323] hover:text-white';
 
 export function BlogIndexView({ locale, page }: Props) {
   const isRu = locale === 'ru';

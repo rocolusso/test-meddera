@@ -19,9 +19,8 @@ import { getThemeBootstrapScript } from '@/lib/theme-inline-script';
 import { TrackPageView } from '@/components/TrackPageView';
 
 const isVercel = process.env.VERCEL === '1';
-const isProductionDeployment =
-  process.env.NODE_ENV === 'production' &&
-  (isVercel ? process.env.VERCEL_ENV === 'production' : true);
+const isProductionDeployment = process.env.NODE_ENV === 'production'
+  && (isVercel ? process.env.VERCEL_ENV === 'production' : true);
 
 /**
  * Shared <html><body> shell used by both RU and RO root layouts. Must NOT call
@@ -36,10 +35,8 @@ export default function RootShell({
   children: React.ReactNode;
 }) {
   const enablePlerdy = isProductionDeployment;
-  const enableClarity =
-    isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_CLARITY);
-  const enableAhrefs =
-    isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_AHREFS);
+  const enableClarity = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_CLARITY);
+  const enableAhrefs = isProductionDeployment && isEnabled(process.env.NEXT_PUBLIC_ENABLE_AHREFS);
   const enableGtm = isGtmEnabled();
   const showVercelInsights = isVercel && process.env.VERCEL_ENV === 'production';
 
@@ -49,7 +46,7 @@ export default function RootShell({
       style={{ overflowX: 'hidden' }}
       suppressHydrationWarning
     >
-      {/* eslint-disable-next-line @next/next/no-head-element */}
+      { }
       <head suppressHydrationWarning>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

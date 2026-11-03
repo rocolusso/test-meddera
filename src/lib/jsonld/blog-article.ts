@@ -2,7 +2,7 @@ import { ID, type Locale } from '@/lib/schema/constants';
 import { blogId } from '@/lib/schema/entities';
 import { pageGraph, pageId } from '@/lib/schema/graph';
 
-export type BlogArticleJsonLdInput = {
+export interface BlogArticleJsonLdInput {
   pageUrl: string;
   headline: string;
   description: string;
@@ -10,7 +10,7 @@ export type BlogArticleJsonLdInput = {
   dateModified: string;
   inLanguage: 'ru-MD' | 'ro-MD';
   breadcrumbItems: { name: string; item: string }[];
-};
+}
 
 export function blogArticleJsonLd(o: BlogArticleJsonLdInput) {
   const locale: Locale = o.inLanguage === 'ro-MD' ? 'ro' : 'ru';

@@ -45,9 +45,9 @@ function ServicePage16Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Plastia de contur în Bălți – Corectare facială cu acid hialuronic'}
+      title="Plastia de contur în Bălți – Corectare facială cu acid hialuronic"
       heroImage={konturnayaPlastika}
-      heroImageAlt={'Plastica de contur cu fillere — clinica Meddera, Bălți'}
+      heroImageAlt="Plastica de contur cu fillere — clinica Meddera, Bălți"
     >
       <p>
         Plastia de contur este o procedură cosmetologică în care, cu ajutorul

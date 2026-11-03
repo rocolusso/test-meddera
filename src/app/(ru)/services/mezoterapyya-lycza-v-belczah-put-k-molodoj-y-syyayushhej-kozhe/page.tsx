@@ -45,9 +45,9 @@ function ServicePage11() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Мезотерапия лица в Бельцах – омоложение и сияние кожи'}
+      title="Мезотерапия лица в Бельцах – омоложение и сияние кожи"
       heroImage={mezolica}
-      heroImageAlt={'Мезотерапия лица — клиника Meddera, Бельцы'}
+      heroImageAlt="Мезотерапия лица — клиника Meddera, Бельцы"
     >
       <p>
         Мезотерапия лица —косметологическая процедура, при которой в глубокие

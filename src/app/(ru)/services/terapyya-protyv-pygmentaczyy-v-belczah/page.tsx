@@ -45,9 +45,9 @@ function ServicePage9() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Лечение пигментных пятен в Бельцах'}
+      title="Лечение пигментных пятен в Бельцах"
       heroImage={terapiyaProtivPigment}
-      heroImageAlt={'Терапия против пигментации — клиника Meddera, Бельцы'}
+      heroImageAlt="Терапия против пигментации — клиника Meddera, Бельцы"
     >
       <p>
         Терапия против пигментации — это косметологическая процедура, направленная

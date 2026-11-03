@@ -3,9 +3,9 @@ export type SearchLocale = 'ru' | 'ro';
 export type SearchEntryType = 'page' | 'hub' | 'article';
 
 /** One piece of readable text of a document, in reading order. */
-export type SearchBlock = { kind: 'h2' | 'p'; text: string };
+export interface SearchBlock { kind: 'h2' | 'p'; text: string }
 
-export type SearchEntry = {
+export interface SearchEntry {
   type: SearchEntryType;
   url: string;
   title: string;
@@ -19,14 +19,14 @@ export type SearchEntry = {
   nDescription: string;
   nHeadings: string;
   nBody: string;
-};
+}
 
-export type SearchIndex = {
+export interface SearchIndex {
   locale: SearchLocale;
   entries: SearchEntry[];
-};
+}
 
-export type SearchResult = {
+export interface SearchResult {
   type: SearchEntryType;
   title: string;
   url: string;
@@ -35,9 +35,9 @@ export type SearchResult = {
   titleHl: number[];
   /** Flat list of [start, end, start, end, ...] offsets into `snippet`. */
   snippetHl: number[];
-};
+}
 
-export type SearchResponse = {
+export interface SearchResponse {
   results: SearchResult[];
   total: number;
-};
+}

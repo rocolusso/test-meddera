@@ -1,5 +1,7 @@
 import { formatLipsQuizAnswers, isLipsQuizAnswers } from '@/lib/cta/lips-quiz';
-import { CTA_ENTRIES, LEAD_QUIZ_SOURCE_LABELS, isCtaKey, isLeadQuizSource } from '@/lib/cta/registry';
+import {
+  CTA_ENTRIES, LEAD_QUIZ_SOURCE_LABELS, isCtaKey, isLeadQuizSource,
+} from '@/lib/cta/registry';
 
 type Locale = 'ru' | 'ro';
 
@@ -58,10 +60,9 @@ export function buildLeadQuizTelegramBlock(
   locale: Locale,
   formType: 'appointment' | 'consultation',
 ): string {
-  const formTypeLine =
-    locale === 'ro'
-      ? `Tip formular: ${formType === 'appointment' ? 'Programare online' : 'Consultație'}`
-      : `Тип формы: ${formType === 'appointment' ? 'Записаться онлайн' : 'Получить консультацию'}`;
+  const formTypeLine = locale === 'ro'
+    ? `Tip formular: ${formType === 'appointment' ? 'Programare online' : 'Consultație'}`
+    : `Тип формы: ${formType === 'appointment' ? 'Записаться онлайн' : 'Получить консультацию'}`;
   // Answers of the lips quiz are checked against its questions and written in Russian. Open tabs
   // from before it existed still send the general quiz: those answers are formatted as before.
   // A procedure chosen on the page is already named in the source block.

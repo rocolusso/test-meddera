@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 import { ContentArticleBody } from '@/components/new-ui/ContentPageShell';
 
-type Props = {
+interface Props {
   locale: 'ru' | 'ro';
   /** Номер страницы списка статей; на страницах 2+ — короткий блок без дублирования длинного вводного текста. */
   page?: number;
-};
+}
 
 /**
  * Дополнительный SEO-текст под списком статей на /blog, /ro/blog и пагинации.

@@ -4,7 +4,9 @@ import { useEffect, useRef, useState } from 'react';
 
 import { openLeadQuiz } from '@/components/lead/lead-quiz-store';
 import { sendGa4Event } from '@/lib/ga4-worker-client';
-import { CTA_ENTRIES, ctaButtonLabel, ctaForPathname, type CtaKey, type CtaLocale } from '@/lib/cta/registry';
+import {
+  CTA_ENTRIES, ctaButtonLabel, ctaForPathname, type CtaKey, type CtaLocale,
+} from '@/lib/cta/registry';
 import { pauseTeaser } from '@/lib/cta/teaser-state';
 import { isAnyOverlayOpen } from '@/lib/overlay-lock';
 
@@ -17,20 +19,22 @@ const UI = {
   ro: { region: 'Ofertă de programare', close: 'Închide' },
 } as const;
 
-type Props = {
+interface Props {
   pathname: string;
   locale: CtaLocale;
   /** Key of the card at the end of the article or hub, when the page has one. */
   procedure: CtaKey | null;
   onHide: () => void;
-};
+}
 
 /**
  * The scroll teaser: the doctor's photo, one sentence for the procedure of the page and a button
  * that opens the lead quiz. Phones: above the bottom dock. Desktop: above the left "Записаться онлайн" pill.
  * Closing or clicking pauses the teaser for 7 days; an overlay opening on top hides it without a pause.
  */
-export default function TeaserCard({ pathname, locale, procedure, onHide }: Props) {
+export default function TeaserCard({
+  pathname, locale, procedure, onHide,
+}: Props) {
   const entry = ctaForPathname(pathname) ?? (procedure ? CTA_ENTRIES[procedure] : CTA_ENTRIES.consultation);
   const ui = UI[locale];
   const [visible, setVisible] = useState(false);

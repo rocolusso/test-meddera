@@ -7,16 +7,18 @@ import { cn } from '@/lib/utils';
 
 import Highlighted from './Highlighted';
 
-type Props = {
+interface Props {
   results: SearchResult[];
   locale: SearchLocale;
   /** Panel mode: the list is a combobox listbox and `activeIndex` marks the keyboard selection. */
   listboxId?: string;
   activeIndex?: number;
   onNavigate?: () => void;
-};
+}
 
-export default function SearchResultsList({ results, locale, listboxId, activeIndex = -1, onNavigate }: Props) {
+export default function SearchResultsList({
+  results, locale, listboxId, activeIndex = -1, onNavigate,
+}: Props) {
   const t = SEARCH_STRINGS[locale];
   const interactive = Boolean(listboxId);
 

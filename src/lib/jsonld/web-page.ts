@@ -2,7 +2,7 @@ import { ID, SITE_ORIGIN, type Locale } from '@/lib/schema/constants';
 import { pageGraph, type Crumb } from '@/lib/schema/graph';
 import type { GraphNode } from '@/lib/schema/entities';
 
-export type WebPageJsonLdInput = {
+export interface WebPageJsonLdInput {
   pageUrl: string;
   name: string;
   description: string;
@@ -16,7 +16,7 @@ export type WebPageJsonLdInput = {
   includeBlog?: boolean;
   mainEntityId?: string;
   extra?: GraphNode[];
-};
+}
 
 export function localeOfInLanguage(l: 'ru-MD' | 'ro-MD'): Locale {
   return l === 'ro-MD' ? 'ro' : 'ru';

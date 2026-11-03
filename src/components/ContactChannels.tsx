@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTelegram, FaViber } from 'react-icons/fa6';
+import {
+  FaFacebookF, FaInstagram, FaTelegram, FaViber,
+} from 'react-icons/fa6';
 
 import {
   CONTACT_CHANNELS,
@@ -20,11 +22,11 @@ const ICONS: Record<ContactChannelKey, React.ComponentType<{ className?: string 
 
 const GROUPS: readonly ContactChannelGroup[] = ['messenger', 'social'];
 
-type Props = {
+interface Props {
   locale: 'ru' | 'ro';
   /** 'footer': one strip under the columns of the footer. 'form': tiles under the phone button of a contact form. */
   variant: 'footer' | 'form';
-};
+}
 
 function LinkAttrs(channel: ContactChannel, variant: Props['variant']) {
   return {

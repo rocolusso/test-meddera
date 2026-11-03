@@ -50,10 +50,10 @@ function Button({
   size,
   asChild = false,
   ...props
-}: React.ComponentProps<'button'> &
-  VariantProps<typeof buttonVariants> & {
+}: React.ComponentProps<'button'>
+  & VariantProps<typeof buttonVariants> & {
   // eslint-disable-next-line react/require-default-props
-    asChild?: boolean
+    asChild?: boolean;
   }) {
   const Comp = asChild ? Slot : 'button';
 

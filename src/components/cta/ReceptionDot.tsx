@@ -1,13 +1,13 @@
 import { RECEPTION_SCHEDULE_COPY, type ReceptionIndicator } from '@/lib/contact-reception-schedule';
 
-type Props = {
+interface Props {
   state: ReceptionIndicator | null;
   locale: 'ru' | 'ro';
   /** id of the screen-reader text; the call link points at it with aria-describedby. */
   hoursId: string;
   /** Position inside the (relative) call button, e.g. "right-px top-px". */
   className: string;
-};
+}
 
 /** True when the dot is rendered, i.e. the link should reference the hours text. */
 export function hasReceptionDot(state: ReceptionIndicator | null): boolean {
@@ -20,7 +20,9 @@ export function hasReceptionDot(state: ReceptionIndicator | null): boolean {
  * logic switched off the dot is always green). Colour is not the only signal: the red dot has a
  * white bar, and the schedule is available to screen readers as text.
  */
-export default function ReceptionDot({ state, locale, hoursId, className }: Props) {
+export default function ReceptionDot({
+  state, locale, hoursId, className,
+}: Props) {
   if (state !== 'open' && state !== 'closed') return null;
   const open = state === 'open';
 

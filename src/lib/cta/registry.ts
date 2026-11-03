@@ -9,17 +9,21 @@
  */
 
 import { SERVICE_SLUG, servicesForArticle, servicesForCluster } from '@/blog-data/article-services';
-import { CTA_CALL_LABEL, CTA_KEYS, LEAD_QUIZ_SOURCES, isCtaKey, isLeadQuizSource, type CtaKey, type LeadQuizSource } from '@/lib/cta/keys';
+import {
+  CTA_CALL_LABEL, CTA_KEYS, LEAD_QUIZ_SOURCES, isCtaKey, isLeadQuizSource, type CtaKey, type LeadQuizSource,
+} from '@/lib/cta/keys';
 
-export { CTA_CALL_LABEL, CTA_KEYS, LEAD_QUIZ_SOURCES, isCtaKey, isLeadQuizSource };
+export {
+  CTA_CALL_LABEL, CTA_KEYS, LEAD_QUIZ_SOURCES, isCtaKey, isLeadQuizSource,
+};
 export type { CtaKey, LeadQuizSource };
 
-type Bilingual = { ru: string; ro: string };
+interface Bilingual { ru: string; ro: string }
 export type CtaLocale = 'ru' | 'ro';
 
 export type CtaTone = 'procedure' | 'medical';
 
-export type CtaEntry = {
+export interface CtaEntry {
   key: CtaKey;
   tone: CtaTone;
   /** Text after "Процедура: " in the quiz chip. Also stored as the quiz answer. */
@@ -27,7 +31,7 @@ export type CtaEntry = {
   cardTitle: Bilingual;
   cardText: Bilingual;
   teaser: Bilingual;
-};
+}
 
 export const CTA_ENTRIES: Record<CtaKey, CtaEntry> = {
   botox: {

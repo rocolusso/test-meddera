@@ -29,10 +29,10 @@ export function isScannerProbePathname(pathname: string): boolean {
   if (lower === '/.env' || lower.endsWith('/.env')) {
     return true;
   }
-  if (lower.includes('/.env') ) {
+  if (lower.includes('/.env')) {
     return true;
   }
-  if (lower.includes('/.git') ) {
+  if (lower.includes('/.git')) {
     return true;
   }
   if (lower.includes('phpinfo')) {

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import type { DeveloperCopy, DeveloperLang } from './copy';
 import { trackDeveloperClick } from './analytics';
 
-type Props = { copy: DeveloperCopy['projects']; lang: DeveloperLang };
+interface Props { copy: DeveloperCopy['projects']; lang: DeveloperLang }
 
 export default function ProjectsSection({ copy, lang }: Props) {
   return (

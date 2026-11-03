@@ -4,11 +4,11 @@ export type Locale = 'ru' | 'ro';
 /** The only form of the site. The server still accepts 'consultation' from pages cached before it was removed. */
 export type FormType = 'appointment';
 
-export type QuizQuestion = {
+export interface QuizQuestion {
   key: string;
   prompt: Record<Locale, string>;
   options: Record<Locale, readonly string[]>;
-};
+}
 
 export const QUIZ: Record<FormType, readonly QuizQuestion[]> = {
   appointment: [

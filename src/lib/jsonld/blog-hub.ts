@@ -2,7 +2,7 @@ import { SITE_ORIGIN, type Locale } from '@/lib/schema/constants';
 import { blogId } from '@/lib/schema/entities';
 import { itemListNode, pageGraph } from '@/lib/schema/graph';
 
-export type BlogHubJsonLdInput = {
+export interface BlogHubJsonLdInput {
   pageUrl: string;
   locale: Locale;
   title: string;
@@ -11,7 +11,7 @@ export type BlogHubJsonLdInput = {
   breadcrumbItems: { name: string; item: string }[];
   /** Articles of the cluster, in display order. */
   articles: { name: string; path: string }[];
-};
+}
 
 /**
  * Cluster hub (rubric page): a MedicalWebPage that lists every article of the rubric.

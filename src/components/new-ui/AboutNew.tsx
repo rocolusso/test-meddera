@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-import aboutImg from '../../../public/assets/img/about_2k.jpg';
 import { aboutCopy } from '@/lib/about-content';
 import SectionReveal from '@/components/new-ui/SectionReveal';
+import aboutImg from '../../../public/assets/img/about_2k.jpg';
 
 function TextList({ items }: { items: string[] }) {
   return (
@@ -22,8 +22,7 @@ function TextList({ items }: { items: string[] }) {
 }
 
 /** Pofo h5-style section title (Montserrat 600). */
-const sectionTitleClass =
-  'alt-font text-[26px] font-semibold leading-[32px] text-pofo-heading md:text-[32px] md:leading-[40px] lg:text-[36px] lg:leading-[44px]';
+const sectionTitleClass = 'alt-font text-[26px] font-semibold leading-[32px] text-pofo-heading md:text-[32px] md:leading-[40px] lg:text-[36px] lg:leading-[44px]';
 
 function AboutNew({
   locale,
@@ -39,8 +38,7 @@ function AboutNew({
   // the plate equals the section's bottom padding; from 1200 px the photo is the taller column and its pink frame
   // sticks out 24 px, so 24 px is added. Home (h2): "Услуги" follows at once, so the free space above the plate and
   // below it, up to that heading, is split evenly (the section's bottom padding shrinks, the plate moves down).
-  const specHeadingClass =
-    'alt-font text-center text-[22px] font-semibold leading-[30px] text-pofo-heading sm:text-[26px] sm:leading-[34px] lg:text-left';
+  const specHeadingClass = 'alt-font text-center text-[22px] font-semibold leading-[30px] text-pofo-heading sm:text-[26px] sm:leading-[34px] lg:text-left';
 
   return (
     <section className="hero__about scroll-mt-24 bg-background" id="about">

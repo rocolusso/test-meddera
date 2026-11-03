@@ -40,7 +40,7 @@ async function fetchCountry(): Promise<string> {
   }
 }
 
-type Shown = { path: string; procedure: CtaKey | null };
+interface Shown { path: string; procedure: CtaKey | null }
 
 /**
  * Decides when the scroll teaser appears on an article or a service page. It shows once the visitor
@@ -103,8 +103,7 @@ export default function ScrollTeaserHost() {
     resizeObserver?.observe(main);
     window.addEventListener('resize', placeMarker);
 
-    const canShowNow = () =>
-      document.visibilityState === 'visible' && !isAnyOverlayOpen() && teaserAllowedByStorage();
+    const canShowNow = () => document.visibilityState === 'visible' && !isAnyOverlayOpen() && teaserAllowedByStorage();
 
     const tryShow = async () => {
       checking = true;

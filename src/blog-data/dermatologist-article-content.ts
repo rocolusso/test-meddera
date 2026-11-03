@@ -2,12 +2,12 @@
 
 import { DERMATOLOGIST_ARTICLE_CONTENT_PART2 } from '@/blog-data/dermatologist-article-content-part2';
 
-export type ArticleSection = { h2: string; paragraphs: string[] };
+export interface ArticleSection { h2: string; paragraphs: string[] }
 
-export type DermatologistArticleCopy = {
+export interface DermatologistArticleCopy {
   sectionsRu: ArticleSection[];
   sectionsRo: ArticleSection[];
-};
+}
 
 const DERMATOLOGIST_ARTICLE_CONTENT_PART1: Record<string, DermatologistArticleCopy> = {
   'dermatolog-beltsy-kogda-nuzhna-konsultaciya': {

@@ -1,11 +1,11 @@
 import { MESOTHERAPY_FACE_ARTICLE_CONTENT_PART2 } from '@/blog-data/mesotherapy-face-article-content-part2';
 
-export type ArticleSection = { h2: string; paragraphs: string[] };
+export interface ArticleSection { h2: string; paragraphs: string[] }
 
-export type MesotherapyFaceArticleCopy = {
+export interface MesotherapyFaceArticleCopy {
   sectionsRu: ArticleSection[];
   sectionsRo: ArticleSection[];
-};
+}
 
 const MESOTHERAPY_FACE_ARTICLE_CONTENT_PART1: Record<string, MesotherapyFaceArticleCopy> = {
   'mezoterapiya-lica-beltsy-chto-eto': {

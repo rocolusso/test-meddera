@@ -1,12 +1,12 @@
 import { FILLERS_ARTICLE_CONTENT_PART2 } from './fillers-article-content-part2';
 import { FILLERS_ARTICLE_CONTENT_PART3 } from './fillers-article-content-part3';
 
-export type ArticleSection = { h2: string; paragraphs: string[] };
+export interface ArticleSection { h2: string; paragraphs: string[] }
 
-export type FillersArticleCopy = {
+export interface FillersArticleCopy {
   sectionsRu: ArticleSection[];
   sectionsRo: ArticleSection[];
-};
+}
 
 const FILLERS_ARTICLE_CONTENT_PART1: Record<string, FillersArticleCopy> = {
   'konturnaya-plastika-beltsy-chto-eto': {

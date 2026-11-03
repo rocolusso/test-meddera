@@ -3,15 +3,17 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import SectionReveal from '@/components/new-ui/SectionReveal';
 
-type HomeSeoShellProps = {
+interface HomeSeoShellProps {
   ariaLabel: string;
   eyebrow: string;
   title: string;
   intro: React.ReactNode;
   children: React.ReactNode;
-};
+}
 
-export function HomeSeoShell({ ariaLabel, eyebrow, title, intro, children }: HomeSeoShellProps) {
+export function HomeSeoShell({
+  ariaLabel, eyebrow, title, intro, children,
+}: HomeSeoShellProps) {
   return (
     <section aria-label={ariaLabel} className="relative bg-pofo-light-gray">
       <div className="pofo-container section-y">
@@ -32,11 +34,11 @@ export function HomeSeoShell({ ariaLabel, eyebrow, title, intro, children }: Hom
   );
 }
 
-type HomeSeoPanelProps = {
+interface HomeSeoPanelProps {
   title: string;
   children: React.ReactNode;
   className?: string;
-};
+}
 
 export function HomeSeoPanel({ title, children, className }: HomeSeoPanelProps) {
   return (
@@ -71,9 +73,9 @@ export function HomeSeoBulletList({ items }: { items: string[] }) {
   );
 }
 
-type HomeSeoFeatureGridProps = {
+interface HomeSeoFeatureGridProps {
   children: React.ReactNode;
-};
+}
 
 /** Сетка из 4 мини-карточек (например «De ce Meddera»). */
 export function HomeSeoFeatureGrid({ children }: HomeSeoFeatureGridProps) {
@@ -82,10 +84,10 @@ export function HomeSeoFeatureGrid({ children }: HomeSeoFeatureGridProps) {
   );
 }
 
-type HomeSeoFeatureCardProps = {
+interface HomeSeoFeatureCardProps {
   title: string;
   children: React.ReactNode;
-};
+}
 
 /** Pofo feature-box motif: thin frame, pink top bar grows on hover. */
 export function HomeSeoFeatureCard({ title, children }: HomeSeoFeatureCardProps) {

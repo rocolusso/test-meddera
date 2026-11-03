@@ -9,14 +9,16 @@ import { executeRecaptcha, prefetchRecaptchaScript } from '@/lib/recaptcha-clien
 import type { DeveloperCopy, DeveloperLang } from './copy';
 import { trackDeveloper } from './analytics';
 
-type Props = { copy: DeveloperCopy['form']; lang: DeveloperLang };
+interface Props { copy: DeveloperCopy['form']; lang: DeveloperLang }
 
-type Errors = { username?: string; userphone?: string; message?: string };
+interface Errors { username?: string; userphone?: string; message?: string }
 type Status = 'idle' | 'sending' | 'sent';
 
 export default function DeveloperForm({ copy, lang }: Props) {
   const uid = useId();
-  const { formRef, website, setWebsite, getSubmitTimeMs, getBehavior } = useContactFormAntiSpam();
+  const {
+    formRef, website, setWebsite, getSubmitTimeMs, getBehavior,
+  } = useContactFormAntiSpam();
   const [name, setName] = useState('');
   const [contact, setContact] = useState('');
   const [message, setMessage] = useState('');

@@ -3,11 +3,11 @@ import { createHmac, randomUUID, timingSafeEqual } from 'node:crypto';
 const AUD = 'contact-form' as const;
 const TTL_SEC = 120;
 
-export type FormTokenPayload = {
+export interface FormTokenPayload {
   jti: string;
   exp: number;
   aud: typeof AUD;
-};
+}
 
 function getSecret(): string | null {
   const s = process.env.FORM_TOKEN_SECRET;
@@ -35,8 +35,7 @@ export function signFormToken(): { token: string; expiresAt: string; exp: number
   return { token, expiresAt, exp };
 }
 
-export type VerifyFormTokenResult =
-  | { ok: true; jti: string; exp: number }
+export type VerifyFormTokenResult = | { ok: true; jti: string; exp: number }
   | { ok: false; reason: string };
 
 export function verifyFormToken(token: string): VerifyFormTokenResult {

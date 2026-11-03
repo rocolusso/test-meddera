@@ -10,7 +10,7 @@ import { blogSocialMetadata } from '@/lib/site-og';
 import { webPageJsonLd } from '@/lib/jsonld/web-page';
 import { getMaxIndexPage, ORIGIN } from '@/blog-data/registry';
 
-type Props = { params: Promise<{ page: string }> };
+interface Props { params: Promise<{ page: string }> }
 
 export async function generateStaticParams() {
   const max = getMaxIndexPage();

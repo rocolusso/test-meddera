@@ -4,12 +4,12 @@ import React, { useEffect, useState } from 'react';
 import { ReactGoogleReviews, type ReactGoogleReview } from 'react-google-reviews';
 import 'react-google-reviews/dist/index.css';
 
-export type FeaturableReviewsProps = {
+export interface FeaturableReviewsProps {
   locale: 'ru' | 'ro';
   reviews: ReactGoogleReview[];
   totalReviewCount: number;
   averageRating: number;
-};
+}
 
 const COPY = {
   ru: {
@@ -57,7 +57,9 @@ function relativeDate(date: Date, intl: string): string {
  * Carousel and rating badge of the reviews. Loaded lazily by FeaturableReviewsLazy (never in the first
  * screen bundle). The reviews are in Russian (the originals), also on the Romanian page, hence lang="ru".
  */
-export default function FeaturableReviews({ locale, reviews, totalReviewCount, averageRating }: FeaturableReviewsProps) {
+export default function FeaturableReviews({
+  locale, reviews, totalReviewCount, averageRating,
+}: FeaturableReviewsProps) {
   const t = COPY[locale];
   const [items, setItems] = useState(() => itemsFor(typeof window === 'undefined' ? 1280 : window.innerWidth));
   useEffect(() => {

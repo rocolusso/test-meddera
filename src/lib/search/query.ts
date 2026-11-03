@@ -1,5 +1,7 @@
 import { foldKeepLength, normalizeText } from './normalize';
-import type { SearchEntry, SearchEntryType, SearchIndex, SearchResponse, SearchResult } from './types';
+import type {
+  SearchEntry, SearchEntryType, SearchIndex, SearchResponse, SearchResult,
+} from './types';
 
 const MAX_TOKENS = 8;
 const SNIPPET_LENGTH = 160;
@@ -147,10 +149,9 @@ export function searchIndex(index: SearchIndex, rawQuery: string, limit: number)
     if (score > 0) scored.push({ entry, score });
   }
   scored.sort(
-    (a, b) =>
-      b.score - a.score ||
-      TYPE_RANK[a.entry.type] - TYPE_RANK[b.entry.type] ||
-      a.entry.title.localeCompare(b.entry.title, index.locale),
+    (a, b) => b.score - a.score
+      || TYPE_RANK[a.entry.type] - TYPE_RANK[b.entry.type]
+      || a.entry.title.localeCompare(b.entry.title, index.locale),
   );
 
   const results: SearchResult[] = scored.slice(0, limit).map(({ entry }) => {

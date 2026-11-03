@@ -2,30 +2,34 @@ import React from 'react';
 import Link from 'next/link';
 
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
-import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
+import {
+  blogPathRu, blogPathRo, getRelatedArticles, getHubSlug,
+} from '@/blog-data/registry';
 import { blogUi } from '@/blog-data/blog-ui';
 import { ArticleServiceLinks } from '@/blog-data/ArticleServiceLinks';
 import { articleAnchor, renderInline } from '@/blog-data/inline-links';
 
-type ArticleSection = { h2: string; paragraphs: string[] };
+interface ArticleSection { h2: string; paragraphs: string[] }
 
-type Props = {
+interface Props {
   post: BlogPost;
   locale: BlogLocale;
   dateModified: string;
   sections: ArticleSection[];
-};
+}
 
-export function MesotherapyFaceArticleBody({ post, locale, dateModified, sections }: Props) {
+export function MesotherapyFaceArticleBody({
+  post, locale, dateModified, sections,
+}: Props) {
   const isRu = locale === 'ru';
   const title = isRu ? post.titleRu : post.titleRo;
   const h1Text = (isRu ? post.h1Ru : post.h1Ro) ?? title.replace(/\s*\|\s*Meddera.*$/i, '');
   const ruUrl = blogPathRu(post.slugRu);
   const roUrl = blogPathRo(post.slugRo);
-  
+
   const relatedPosts = getRelatedArticles(post, 5);
   const hubSlug = getHubSlug(post.clusterId, locale);
-  
+
   const authorByline = post.authorByline?.[locale] || 'Meddera Beauty Clinic';
   const medicalReview = post.medicalReview?.[locale] || (isRu
     ? 'Материал подготовлен специалистами клиники Meddera, Бельцы. Информация носит ознакомительный характер и не заменяет очную консультацию с врачом-дерматокосметологом.'
@@ -42,10 +46,20 @@ export function MesotherapyFaceArticleBody({ post, locale, dateModified, section
         <span className={blogUi.crumbCurrent}>{title}</span>
       </nav>
 
-      <p className={blogUi.meta}>{isRu ? 'Автор:' : 'Autor:'} {authorByline}</p>
+      <p className={blogUi.meta}>
+        {isRu ? 'Автор:' : 'Autor:'}
+        {' '}
+        {authorByline}
+      </p>
 
       <p className={blogUi.meta}>
-        {isRu ? 'Обновлено:' : 'Actualizat:'} {dateModified} · <Link href={isRu ? roUrl : ruUrl} className={blogUi.crumbLink} hrefLang={isRu ? 'ro' : 'ru'}>{isRu ? 'Română' : 'Русский'}</Link>
+        {isRu ? 'Обновлено:' : 'Actualizat:'}
+        {' '}
+        {dateModified}
+        {' '}
+        ·
+        {' '}
+        <Link href={isRu ? roUrl : ruUrl} className={blogUi.crumbLink} hrefLang={isRu ? 'ro' : 'ru'}>{isRu ? 'Română' : 'Русский'}</Link>
       </p>
 
       <h1 className={blogUi.h1}>{h1Text}</h1>
@@ -70,8 +84,7 @@ export function MesotherapyFaceArticleBody({ post, locale, dateModified, section
         <p className={blogUi.pMb4}>
           {isRu
             ? 'Если вы рассматриваете мезотерапию лица в Бельцах, запишитесь на консультацию в клинике Meddera.'
-            : 'Dacă analizați mezoterapia feței în Bălți, programați-vă la consultație la clinica Meddera.'
-          }
+            : 'Dacă analizați mezoterapia feței în Bălți, programați-vă la consultație la clinica Meddera.'}
         </p>
         <ArticleServiceLinks post={post} locale={locale} />
       </section>

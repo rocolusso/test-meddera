@@ -14,24 +14,20 @@ export default function GoogleWhitePage() {
   const currentYear = date.getFullYear();
 
   const callPhone = () => {
-    // eslint-disable-next-line no-undef
     (window as any).gtag('event', 'Нажатие на кнопку позвонить White /ads/g1', {
       action: 'click',
       target: 'tel:+37368422024',
     });
 
-    // eslint-disable-next-line no-undef
     window.location.href = 'tel:+37368422024';
   };
 
   const redirectToBlack = () => {
-    // eslint-disable-next-line no-undef
     (window as any).gtag('event', 'redirect from white /ads/g1', {
       action: 'click',
       target: 'from meddera.md/ads/g1  meddera.md',
     });
 
-    // eslint-disable-next-line no-undef
     window.location.href = '/';
   };
 

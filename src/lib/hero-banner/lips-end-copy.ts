@@ -10,7 +10,7 @@
  */
 import type { HeroBannerLocale } from '@/lib/hero-banner/copy';
 
-export type LipsEndBannerCopy = {
+export interface LipsEndBannerCopy {
   /** aria-label of the section */
   label: string;
   title: string;
@@ -21,7 +21,7 @@ export type LipsEndBannerCopy = {
   /** "of" in "1 of 5" */
   of: string;
   questions: readonly { key: string; text: string }[];
-};
+}
 
 export const LIPS_END_BANNER_COPY: Record<HeroBannerLocale, LipsEndBannerCopy> = {
   ru: {

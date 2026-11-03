@@ -12,7 +12,7 @@ import ContactsLipsDynamicRo from '@/components/ContactsLipsDynamicRo';
 
 type Locale = 'ru' | 'ro';
 
-type BaseProps = {
+interface BaseProps {
   locale: Locale;
   /** default: show services grid before footer */
   showServices?: boolean;
@@ -22,7 +22,7 @@ type BaseProps = {
   banner?: React.ReactNode;
   /** Rendered right after `<main>`, before the contacts block (outside the page content), e.g. the lips closing banner. */
   bottomBanner?: React.ReactNode;
-};
+}
 
 type SimpleArticleProps = BaseProps & {
   variant?: 'article';

@@ -17,7 +17,7 @@ import clinicPhoto from '../../../public/assets/img/img_contacts.jpg';
 import { NOT_FOUND_COPY, type NotFoundLocale } from './copy';
 import NotFoundTracker from './NotFoundTracker';
 
-type MapLink = { href: string; label: string };
+interface MapLink { href: string; label: string }
 
 /** Hub title without the brand suffix and the part after the colon: "Ботокс в Бельцах". */
 function shortHubTitle(title: string): string {
@@ -32,11 +32,9 @@ function siteMap(locale: NotFoundLocale) {
     .filter((s) => known.has(s.url.split('/').pop() ?? ''))
     .map((s) => ({ href: s.url, label: s.title }));
 
-  const hubs: MapLink[] = getAllHubs().map((h) =>
-    locale === 'ru'
-      ? { href: blogPathRu(h.slugRu), label: shortHubTitle(h.titleRu) }
-      : { href: blogPathRo(h.slugRo), label: shortHubTitle(h.titleRo) },
-  );
+  const hubs: MapLink[] = getAllHubs().map((h) => (locale === 'ru'
+    ? { href: blogPathRu(h.slugRu), label: shortHubTitle(h.titleRu) }
+    : { href: blogPathRo(h.slugRo), label: shortHubTitle(h.titleRo) }));
 
   return { sections, services, hubs };
 }

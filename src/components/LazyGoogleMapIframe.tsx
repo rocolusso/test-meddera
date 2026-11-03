@@ -10,7 +10,7 @@ const LOADING_LABEL: Record<'ru' | 'ro', string> = {
   ro: 'Se încarcă…',
 };
 
-type LazyGoogleMapIframeProps = {
+interface LazyGoogleMapIframeProps {
   title?: string;
   /** @deprecated Ignored — map is always fluid width. Kept for ad pages compatibility. */
   width?: number | string;
@@ -21,7 +21,7 @@ type LazyGoogleMapIframeProps = {
   frameClassName?: string;
   /** RU / RO copy for loading state */
   locale?: 'ru' | 'ro';
-};
+}
 
 function LoadingOverlay({
   label,
@@ -51,8 +51,7 @@ function LoadingOverlay({
   );
 }
 
-const MAP_FRAME_CLASS =
-  'relative w-full overflow-hidden rounded-none bg-muted/40 shadow-inner ring-1 ring-border/30 sm:rounded-2xl min-h-[240px]';
+const MAP_FRAME_CLASS = 'relative w-full overflow-hidden rounded-none bg-muted/40 shadow-inner ring-1 ring-border/30 sm:rounded-2xl min-h-[240px]';
 
 export default function LazyGoogleMapIframe({
   title = 'contact map',

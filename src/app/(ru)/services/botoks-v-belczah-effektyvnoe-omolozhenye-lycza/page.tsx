@@ -45,9 +45,9 @@ function ServicePage14() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Ботокс в Бельцах – Инъекции для омоложения лица'}
+      title="Ботокс в Бельцах – Инъекции для омоложения лица"
       heroImage={botoks}
-      heroImageAlt={'Ботокс — клиника Meddera, Бельцы'}
+      heroImageAlt="Ботокс — клиника Meddera, Бельцы"
     >
       <p>
         Ботокс — это косметологическая процедура, при которой с помощью инъекций

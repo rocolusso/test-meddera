@@ -7,8 +7,8 @@ import SeoSection from './SeoSection';
 import roCopy from './copy/ro.json';
 import ruCopy from './copy/ru.json';
 
-type Section = { h2: string; p: string[]; list?: string[] };
-export type ReviewsCopy = {
+interface Section { h2: string; p: string[]; list?: string[] }
+export interface ReviewsCopy {
   meta: { title: string; description: string };
   h1: string;
   intro: string[];
@@ -16,7 +16,7 @@ export type ReviewsCopy = {
   faq: { h2: string; items: { q: string; a: string }[] };
   cta: { h2: string; p: string; button: string };
   readMore: { expand: string; collapse: string };
-};
+}
 
 export const REVIEWS_COPY: Record<'ru' | 'ro', ReviewsCopy> = { ru: ruCopy, ro: roCopy };
 

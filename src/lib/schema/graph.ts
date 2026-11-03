@@ -12,11 +12,11 @@ import {
   type PhysicianTier,
 } from '@/lib/schema/entities';
 
-export type Crumb = { name: string; url: string };
+export interface Crumb { name: string; url: string }
 
-export type FaqItem = { question: string; answer: string };
+export interface FaqItem { question: string; answer: string }
 
-export type PageSpec = {
+export interface PageSpec {
   locale: Locale;
   /** Absolute canonical URL of the page. */
   url: string;
@@ -37,7 +37,7 @@ export type PageSpec = {
   includeBlog?: boolean;
   /** Extra nodes: Service, FAQPage, ItemList, Article ... */
   extra?: GraphNode[];
-};
+}
 
 export const pageId = (url: string) => `${url}#webpage`;
 export const breadcrumbId = (url: string) => `${url}#breadcrumb`;

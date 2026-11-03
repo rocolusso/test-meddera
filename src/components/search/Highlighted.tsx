@@ -1,6 +1,6 @@
 import React from 'react';
 
-type Props = { text: string; ranges: number[] };
+interface Props { text: string; ranges: number[] }
 
 /** Wraps the [start, end] ranges of `text` in <mark>. Plain React nodes, no raw HTML. */
 export default function Highlighted({ text, ranges }: Props) {

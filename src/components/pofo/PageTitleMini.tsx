@@ -1,15 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 
-export type Breadcrumb = { href?: string; label: string };
+export interface Breadcrumb { href?: string; label: string }
 
-type Props = {
+interface Props {
   title: React.ReactNode;
   breadcrumbs?: Breadcrumb[];
   breadcrumbsLabel?: string;
   /** Title centered from `md` up (left on phones). Off by default, so other pages keep the left title. */
   centerOnDesktop?: boolean;
-};
+}
 
 /** Pofo "page title mini version": light strip, uppercase h1 left, breadcrumbs right. */
 export default function PageTitleMini({

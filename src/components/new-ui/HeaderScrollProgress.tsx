@@ -2,14 +2,13 @@
 
 import { useScrollProgress } from '@/hooks/useScrollProgress';
 
-type Props = {
+interface Props {
   locale: string;
-};
+}
 
 export default function HeaderScrollProgress({ locale }: Props) {
   const progress = useScrollProgress();
-  const ariaLabel =
-    locale === 'ro' ? 'Progresul derulării paginii' : 'Прогресс прокрутки страницы';
+  const ariaLabel = locale === 'ro' ? 'Progresul derulării paginii' : 'Прогресс прокрутки страницы';
 
   return (
     <div

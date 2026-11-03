@@ -2,21 +2,25 @@
 
 import { useSyncExternalStore } from 'react';
 
-import { isCtaKey, isLeadQuizSource, type CtaKey, type LeadQuizSource } from '@/lib/cta/keys';
+import {
+  isCtaKey, isLeadQuizSource, type CtaKey, type LeadQuizSource,
+} from '@/lib/cta/keys';
 
 import { pushLeadCtaEvent, type FormType } from './leadFormConstants';
 
 /** `unknown` is for a trigger whose data-cta-source is missing or not in the allowlist (it shows up in GA4 as a defect). */
 export type LeadQuizOpenSource = LeadQuizSource | 'unknown';
 
-export type LeadQuizState = {
+export interface LeadQuizState {
   open: boolean;
   formType: FormType;
   source: LeadQuizOpenSource | null;
   procedure: CtaKey | null;
-};
+}
 
-const CLOSED: LeadQuizState = { open: false, formType: 'appointment', source: null, procedure: null };
+const CLOSED: LeadQuizState = {
+  open: false, formType: 'appointment', source: null, procedure: null,
+};
 
 /**
  * Procedure the current page is about (set by a lips page, see LeadQuizPageTopic). A button without a
@@ -66,7 +70,9 @@ export function openLeadQuiz(options: {
   const procedure = isCtaKey(options.procedure) ? options.procedure : pageTopic;
 
   pushLeadCtaEvent(formType, { source, procedure });
-  state = { open: true, formType, source, procedure };
+  state = {
+    open: true, formType, source, procedure,
+  };
   emit();
 }
 

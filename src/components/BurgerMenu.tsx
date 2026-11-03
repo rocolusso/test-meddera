@@ -45,8 +45,7 @@ function ChevronRightIcon({ className }: { className?: string }) {
   );
 }
 
-const itemClass =
-  'flex w-full cursor-pointer items-center justify-between gap-3 border-b border-pofo-line px-5 py-3.5 text-left alt-font text-[12px] font-semibold uppercase tracking-[0.5px] text-white transition-colors hover:text-deep-pink focus:text-deep-pink focus:outline-none';
+const itemClass = 'flex w-full cursor-pointer items-center justify-between gap-3 border-b border-pofo-line px-5 py-3.5 text-left alt-font text-[12px] font-semibold uppercase tracking-[0.5px] text-white transition-colors hover:text-deep-pink focus:text-deep-pink focus:outline-none';
 
 function BurgerMenu({ locale, withReviews = false }: { locale: string; withReviews?: boolean }) {
   const [open, setOpen] = React.useState(false);

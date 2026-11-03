@@ -45,9 +45,9 @@ function ServicePage17Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Lipoliză Injectabilă în Bălți – Redefinirea Siluetei'}
+      title="Lipoliză Injectabilă în Bălți – Redefinirea Siluetei"
       heroImage={lipolitiki}
-      heroImageAlt={'Injecții lipolitice — clinica Meddera, Bălți'}
+      heroImageAlt="Injecții lipolitice — clinica Meddera, Bălți"
     >
       <p>
         Lipolitice sunt o procedură destinată reducerii depozitelor

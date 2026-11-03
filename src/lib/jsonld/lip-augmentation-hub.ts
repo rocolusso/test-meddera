@@ -6,14 +6,14 @@ const SITE = 'https://meddera.md';
 const PHYSICIAN_ID = `${SITE}/#physician`;
 const CLINIC_ID = `${SITE}/#clinic`;
 
-export type LipHubJsonLdOptions = {
+export interface LipHubJsonLdOptions {
   pageUrl: string;
   locale: 'ru' | 'ro';
   title: string;
   description: string;
   dateModified: string;
   breadcrumbItems: { name: string; item: string }[];
-};
+}
 
 export function lipAugmentationHubJsonLd(o: LipHubJsonLdOptions) {
   const aboutName = o.locale === 'ro'

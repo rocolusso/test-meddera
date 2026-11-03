@@ -1,8 +1,8 @@
 import { RECEPTION_SCHEDULE_COPY } from '@/lib/contact-reception-schedule';
 
-export type HomeFaqItem = { question: string; answer: string };
+export interface HomeFaqItem { question: string; answer: string }
 
-const ro = RECEPTION_SCHEDULE_COPY.ro;
+const { ro } = RECEPTION_SCHEDULE_COPY;
 
 /** FAQ on the RO home page. The same list feeds the visible block and the FAQPage markup. */
 export const HOME_FAQ_RO: HomeFaqItem[] = [

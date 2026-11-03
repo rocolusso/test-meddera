@@ -1,22 +1,22 @@
 import type { RecaptchaScoreStatus } from '@/lib/recaptcha-verify';
 import { isLikelyHumanBrowserUserAgent } from '@/lib/suspicious-user-agents';
 
-export type BehaviorMetrics = {
+export interface BehaviorMetrics {
   mousemove: number;
   keydown: number;
   touchstart: number;
   pointerdown: number;
-};
+}
 
 const CAP = 50_000;
 
-export type ComputeScoreInput = {
+export interface ComputeScoreInput {
   recaptchaStatus: RecaptchaScoreStatus;
   honeypotNonEmpty: boolean;
   submitTimeMs: number;
   behavior: BehaviorMetrics;
   userAgent: string | null;
-};
+}
 
 export function clampBehavior(n: number): number {
   if (!Number.isFinite(n) || n < 0) {
@@ -60,11 +60,10 @@ export function computeContactFormScore(input: ComputeScoreInput): { score: numb
   }
 
   const b = input.behavior;
-  const interactionSum =
-    clampBehavior(b.mousemove) +
-    clampBehavior(b.keydown) +
-    clampBehavior(b.touchstart) +
-    clampBehavior(b.pointerdown);
+  const interactionSum = clampBehavior(b.mousemove)
+    + clampBehavior(b.keydown)
+    + clampBehavior(b.touchstart)
+    + clampBehavior(b.pointerdown);
   if (interactionSum > 5) {
     score += 20;
     reasons.push('behavior');

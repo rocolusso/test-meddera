@@ -30,7 +30,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
       // Fallback для старых статей без контента
       return <LipClusterArticleBody post={post} locale={locale} />;
     }
-    
+
     case 'dermatologist-hub':
       return <HubBody clusterId="dermatologist" locale={locale} dateModified={post.dateModified} />;
     case 'dermatologist-article': {
@@ -39,7 +39,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
       return <DermatologistArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
     }
-    
+
     case 'botox-hub':
       return <HubBody clusterId="botox" locale={locale} dateModified={post.dateModified} />;
     case 'botox-article': {
@@ -48,7 +48,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
       return <BotoxArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
     }
-    
+
     case 'mesotherapy-face-hub':
       return <HubBody clusterId="mesotherapy-face" locale={locale} dateModified={post.dateModified} />;
     case 'mesotherapy-face-article': {
@@ -57,7 +57,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
       return <MesotherapyFaceArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
     }
-    
+
     case 'biorevitalization-hub':
       return <HubBody clusterId="biorevitalization" locale={locale} dateModified={post.dateModified} />;
     case 'biorevitalization-article': {
@@ -66,7 +66,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
       return <BiorevitalizationArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
     }
-    
+
     case 'fillers-hub':
       return <HubBody clusterId="fillers" locale={locale} dateModified={post.dateModified} />;
     case 'fillers-article': {
@@ -75,7 +75,7 @@ export function renderBlogPostBody(post: BlogPost, locale: BlogLocale): React.Re
       const sections = locale === 'ru' ? content.sectionsRu : content.sectionsRo;
       return <FillersArticleBody post={post} locale={locale} dateModified={post.dateModified} sections={sections} />;
     }
-    
+
     default:
       return null;
   }

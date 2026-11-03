@@ -10,7 +10,9 @@ import KineticBanner from './KineticBanner';
 import ProjectsSection from './ProjectsSection';
 import { trackDeveloperClick } from './analytics';
 import { DEVELOPER_COPY, DEVELOPER_LANG_LABEL, type DeveloperLang } from './copy';
-import { getLangServerSnapshot, getLangSnapshot, setLang, subscribeLang } from './lang-store';
+import {
+  getLangServerSnapshot, getLangSnapshot, setLang, subscribeLang,
+} from './lang-store';
 
 const LANGS: DeveloperLang[] = ['ru', 'uk', 'en'];
 

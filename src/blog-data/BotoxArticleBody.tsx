@@ -2,31 +2,35 @@ import React from 'react';
 import Link from 'next/link';
 
 import type { BlogLocale, BlogPost } from '@/blog-data/types';
-import { blogPathRu, blogPathRo, getRelatedArticles, getHubSlug } from '@/blog-data/registry';
+import {
+  blogPathRu, blogPathRo, getRelatedArticles, getHubSlug,
+} from '@/blog-data/registry';
 import { blogUi } from '@/blog-data/blog-ui';
 import { ArticleServiceLinks } from '@/blog-data/ArticleServiceLinks';
 import { articleAnchor, renderInline } from '@/blog-data/inline-links';
 
-type ArticleSection = { h2: string; paragraphs: string[] };
+interface ArticleSection { h2: string; paragraphs: string[] }
 
-type Props = {
+interface Props {
   post: BlogPost;
   locale: BlogLocale;
   dateModified: string;
   sections: ArticleSection[];
-};
+}
 
-export function BotoxArticleBody({ post, locale, dateModified, sections }: Props) {
+export function BotoxArticleBody({
+  post, locale, dateModified, sections,
+}: Props) {
   const isRu = locale === 'ru';
   const slug = isRu ? post.slugRu : post.slugRo;
   const title = isRu ? post.titleRu : post.titleRo;
   const h1Text = (isRu ? post.h1Ru : post.h1Ro) ?? title.replace(/\s*\|\s*Meddera.*$/i, '');
   const ruUrl = blogPathRu(post.slugRu);
   const roUrl = blogPathRo(post.slugRo);
-  
+
   const relatedPosts = getRelatedArticles(post, 5);
   const hubSlug = getHubSlug(post.clusterId, locale);
-  
+
   const authorByline = post.authorByline?.[locale] || 'Meddera Beauty Clinic';
   const medicalReview = post.medicalReview?.[locale] || (isRu
     ? 'Материал подготовлен специалистами клиники Meddera, Бельцы. Информация носит ознакомительный характер и не заменяет очную консультацию с врачом-дерматокосметологом.'
@@ -48,7 +52,9 @@ export function BotoxArticleBody({ post, locale, dateModified, sections }: Props
       </nav>
 
       <p className={blogUi.meta}>
-        {isRu ? 'Автор:' : 'Autor:'} {authorByline}
+        {isRu ? 'Автор:' : 'Autor:'}
+        {' '}
+        {authorByline}
       </p>
 
       <p className={blogUi.meta}>
@@ -56,9 +62,9 @@ export function BotoxArticleBody({ post, locale, dateModified, sections }: Props
         {' '}
         {dateModified}
         {' · '}
-        <Link 
-          href={isRu ? roUrl : ruUrl} 
-          className={blogUi.crumbLink} 
+        <Link
+          href={isRu ? roUrl : ruUrl}
+          className={blogUi.crumbLink}
           hrefLang={isRu ? 'ro' : 'ru'}
         >
           {isRu ? 'Română' : 'Русский'}
@@ -71,10 +77,9 @@ export function BotoxArticleBody({ post, locale, dateModified, sections }: Props
 
       <div className={blogUi.disclaimerBox}>
         <p className={blogUi.small}>
-          {isRu 
+          {isRu
             ? 'Материал носит информационный характер и не заменяет очную консультацию с врачом-дерматокосметологом. При острых симптомах обратитесь к специалисту.'
-            : 'Materialul are caracter informativ și nu înlocuiește consultația cu medicul dermatocosmetolog. În caz de simptome acute, adresați-vă specialistului.'
-          }
+            : 'Materialul are caracter informativ și nu înlocuiește consultația cu medicul dermatocosmetolog. În caz de simptome acute, adresați-vă specialistului.'}
         </p>
       </div>
 
@@ -96,8 +101,7 @@ export function BotoxArticleBody({ post, locale, dateModified, sections }: Props
         <p className={blogUi.pMb4}>
           {isRu
             ? 'Если вы рассматриваете инъекции ботокса в Бельцах, запишитесь на консультацию в клинике Meddera. Врач оценит показания, выберет зоны для коррекции и составит индивидуальный план.'
-            : 'Dacă analizați injecțiile cu botox în Bălți, programați-vă la consultație la clinica Meddera. Medicul va evalua indicațiile, va alege zonele pentru corecție și va întocmi un plan individual.'
-          }
+            : 'Dacă analizați injecțiile cu botox în Bălți, programați-vă la consultație la clinica Meddera. Medicul va evalua indicațiile, va alege zonele pentru corecție și va întocmi un plan individual.'}
         </p>
         <ArticleServiceLinks post={post} locale={locale} />
       </section>
@@ -122,7 +126,7 @@ export function BotoxArticleBody({ post, locale, dateModified, sections }: Props
           <ul className="space-y-2">
             {relatedPosts.map((related) => (
               <li key={related.id}>
-                <Link 
+                <Link
                   href={isRu ? `/blog/${related.slugRu}` : `/ro/blog/${related.slugRo}`}
                   className={blogUi.link}
                 >
@@ -136,7 +140,7 @@ export function BotoxArticleBody({ post, locale, dateModified, sections }: Props
 
       {hubSlug && (
         <div className="mb-12">
-          <Link 
+          <Link
             href={isRu ? `/blog/${hubSlug}` : `/ro/blog/${hubSlug}`}
             className={blogUi.backButton}
           >
@@ -148,8 +152,7 @@ export function BotoxArticleBody({ post, locale, dateModified, sections }: Props
       <p className={blogUi.footerDisclaimer}>
         {isRu
           ? 'Медицинский дисклеймер: информация на странице не является диагнозом и не заменяет очный приём. При острых симптомах, аллергических реакциях или сомнениях по показаниям обратитесь к врачу.'
-          : 'Exonerare medicală: conținutul nu constituie diagnostic și nu înlocuiește examenul medical. În caz de simptome acute, reacții alergice sau îndoieli privind indicațiile, adresați-vă medicului.'
-        }
+          : 'Exonerare medicală: conținutul nu constituie diagnostic și nu înlocuiește examenul medical. În caz de simptome acute, reacții alergice sau îndoieli privind indicațiile, adresați-vă medicului.'}
       </p>
     </>
   );

@@ -23,7 +23,7 @@ const TELEGRAM_USER_IDS = [
   '7378233926',
 ] as const;
 
-export type ContactFormPostOptions = {
+export interface ContactFormPostOptions {
   telegramFormTitle: string;
   buildExtraTelegramBlock?: (body: Record<string, unknown>, locale: 'ru' | 'ro') => string;
   /**
@@ -38,7 +38,7 @@ export type ContactFormPostOptions = {
   contactMode?: 'phone' | 'contact';
   /** When true and no recipient accepted the message, answer 502 instead of a silent success. */
   strictDelivery?: boolean;
-};
+}
 
 /** Returns the ids to send to, or null when `recipients` was passed but is empty or not made of numeric ids. */
 export function resolveTelegramRecipients(recipients: readonly string[] | undefined): readonly string[] | null {
@@ -90,7 +90,9 @@ function jsonNoStore(body: unknown, init?: ResponseInit): NextResponse {
 }
 
 function defaultBehavior(): BehaviorMetrics {
-  return { mousemove: 0, keydown: 0, touchstart: 0, pointerdown: 0 };
+  return {
+    mousemove: 0, keydown: 0, touchstart: 0, pointerdown: 0,
+  };
 }
 
 /** Legacy path: only reCAPTCHA + Telegram (original behavior). */
@@ -250,15 +252,14 @@ export async function processContactFormPost(
 
   const submitTimeMs = typeof body.submitTimeMs === 'number' ? body.submitTimeMs : 0;
   const b = body.behavior as Record<string, unknown> | undefined;
-  const behavior: BehaviorMetrics =
-    b && typeof b === 'object'
-      ? {
-        mousemove: clampBehavior(Number(b.mousemove)),
-        keydown: clampBehavior(Number(b.keydown)),
-        touchstart: clampBehavior(Number(b.touchstart)),
-        pointerdown: clampBehavior(Number(b.pointerdown)),
-      }
-      : defaultBehavior();
+  const behavior: BehaviorMetrics = b && typeof b === 'object'
+    ? {
+      mousemove: clampBehavior(Number(b.mousemove)),
+      keydown: clampBehavior(Number(b.keydown)),
+      touchstart: clampBehavior(Number(b.touchstart)),
+      pointerdown: clampBehavior(Number(b.pointerdown)),
+    }
+    : defaultBehavior();
 
   const ua = request.headers.get('user-agent');
   const { score, reasons } = computeContactFormScore({

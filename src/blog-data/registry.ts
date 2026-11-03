@@ -218,9 +218,7 @@ export function getHubForCluster(clusterId: string): BlogPost | undefined {
  * Получить все хабы для отображения на главной странице блога.
  */
 export function getAllHubs(): BlogPost[] {
-  return BLOG_POSTS.filter((p) => p.kind === 'hub').sort((a, b) => {
-    return b.publishedAt.localeCompare(a.publishedAt);
-  });
+  return BLOG_POSTS.filter((p) => p.kind === 'hub').sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 }
 
 export function getAllSlugParams(locale: BlogLocale): { slug: string }[] {
@@ -244,11 +242,9 @@ export function getRelatedArticles(post: BlogPost, limit = 5): BlogPost[] {
   if (!post.clusterId) return [];
 
   return BLOG_POSTS
-    .filter((p) =>
-      p.clusterId === post.clusterId &&
-      p.id !== post.id &&
-      p.kind === 'article'
-    )
+    .filter((p) => p.clusterId === post.clusterId
+      && p.id !== post.id
+      && p.kind === 'article')
     .sort((a, b) => {
       const byModified = b.dateModified.localeCompare(a.dateModified);
       if (byModified !== 0) return byModified;

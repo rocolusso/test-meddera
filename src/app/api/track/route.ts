@@ -35,7 +35,7 @@ export async function POST(req: Request) {
 
     return Response.json(
       { ok: false },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

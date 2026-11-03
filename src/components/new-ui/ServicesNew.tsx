@@ -19,10 +19,9 @@ function ServiceCard({
   /** First row on /services (LCP candidate): load eagerly instead of lazy. */
   eager?: boolean;
 }) {
-  const alt =
-    locale === 'ro'
-      ? `${service.title} — Meddera, Bălți`
-      : `${service.title} в Бельцах. Дерматолог Бельцы`;
+  const alt = locale === 'ro'
+    ? `${service.title} — Meddera, Bălți`
+    : `${service.title} в Бельцах. Дерматолог Бельцы`;
 
   return (
     <article className="group flex h-full flex-col text-center sm:text-left">

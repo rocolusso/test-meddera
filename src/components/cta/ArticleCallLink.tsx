@@ -7,7 +7,7 @@ import { CLINIC_TEL_HREF } from '@/lib/cta/keys';
 import ReceptionDot, { hasReceptionDot } from './ReceptionDot';
 import { useReceptionIndicator } from './useReceptionIndicator';
 
-type Props = {
+interface Props {
   locale: 'ru' | 'ro';
   /** Value of data-cta-source, e.g. `article_card_call`. */
   ctaSource: string;
@@ -15,7 +15,7 @@ type Props = {
   procedure: string;
   className: string;
   children: ReactNode;
-};
+}
 
 /**
  * Phone link of the call-to-action card (ArticleCta) with the reception dot in its corner. A client
@@ -24,7 +24,9 @@ type Props = {
  * does not move anything (it is positioned absolutely), and it appears right after hydration when the
  * clinic-hours logic is on, or is already in the HTML (always green) when it is off.
  */
-export default function ArticleCallLink({ locale, ctaSource, procedure, className, children }: Props) {
+export default function ArticleCallLink({
+  locale, ctaSource, procedure, className, children,
+}: Props) {
   const reception = useReceptionIndicator();
   const hoursId = useId();
 

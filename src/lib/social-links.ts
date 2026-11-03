@@ -17,7 +17,7 @@ export type ContactChannelEvent = 'messenger_click' | 'social_click';
 /** Where the link is shown: the cta_source of the GA4 event is `<place>_<key>`. */
 export type ContactChannelPlace = 'footer' | 'form';
 
-export type ContactChannel = {
+export interface ContactChannel {
   key: ContactChannelKey;
   group: ContactChannelGroup;
   href: string;
@@ -25,7 +25,7 @@ export type ContactChannel = {
   newTab: boolean;
   event: ContactChannelEvent;
   label: { ru: string; ro: string };
-};
+}
 
 export const CONTACT_CHANNELS: readonly ContactChannel[] = [
   {

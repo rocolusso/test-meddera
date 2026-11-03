@@ -33,7 +33,8 @@ export default function FloatingCallButton() {
         </svg>
       </div>
       <ReceptionDot state={reception} locale={locale} hoursId="floatCallHours" className="right-[3px] top-[3px]" />
-      <style jsx>{`
+      <style jsx>
+        {`
         .btn-call {
           background: #00aa2d;
           border: 2px solid #00aa2d;
@@ -156,7 +157,8 @@ export default function FloatingCallButton() {
             transform: rotateZ(0deg);
           }
         }
-      `}</style>
+      `}
+      </style>
     </a>
   );
 }

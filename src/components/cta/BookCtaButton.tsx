@@ -8,7 +8,7 @@ import { CtaAnimationStyles } from './cta-styles';
 import DoctorPhoto from './DoctorPhoto';
 import { useReceptionIndicator } from './useReceptionIndicator';
 
-type Props = {
+interface Props {
   locale: Locale;
   /**
    * 'pill': desktop, with the doctor's round photo, floats up and down.
@@ -18,10 +18,12 @@ type Props = {
   variant: 'pill' | 'dock';
   source: LeadQuizSource;
   id?: string;
-};
+}
 
 /** The pink "Записаться онлайн" button: opens the lead quiz. */
-export default function BookCtaButton({ locale, variant, source, id }: Props) {
+export default function BookCtaButton({
+  locale, variant, source, id,
+}: Props) {
   const pill = variant === 'pill';
   const reception = useReceptionIndicator();
 

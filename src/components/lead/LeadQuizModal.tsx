@@ -1,6 +1,8 @@
 'use client';
 
-import { useMemo, useRef, useState, type FormEvent } from 'react';
+import {
+  useMemo, useRef, useState, type FormEvent,
+} from 'react';
 import Link from 'next/link';
 import PhoneInputWithCountrySelect from 'react-phone-number-input';
 import './phone-input.css';
@@ -31,7 +33,7 @@ import {
   type QuizQuestion,
 } from './leadFormConstants';
 
-type LeadQuizModalProps = {
+interface LeadQuizModalProps {
   locale: Locale;
   formType: FormType;
   questions: readonly QuizQuestion[];
@@ -41,7 +43,7 @@ type LeadQuizModalProps = {
   /** Procedure chosen on the page: the question about it is replaced by a chip. */
   procedure?: CtaKey | null;
   onClose: () => void;
-};
+}
 
 export default function LeadQuizModal({
   locale,
@@ -231,7 +233,7 @@ export default function LeadQuizModal({
           </Button>
         </div>
 
-        <div className={'py-5'}>
+        <div className="py-5">
           <ClinicConsultationInfo locale={locale} compact />
         </div>
 
@@ -293,7 +295,9 @@ export default function LeadQuizModal({
               {prefillLabel ? (
                 <div className="flex items-center justify-between gap-3 border border-border p-4" data-quiz-chip={prefill}>
                   <p className="alt-font text-[13px] font-semibold leading-5 text-pofo-heading">
-                    {t.procedureLabel}: {prefillLabel}
+                    {t.procedureLabel}
+                    :
+                    {prefillLabel}
                   </p>
                   {lipsQuiz ? null : (
                     <button
@@ -369,11 +373,13 @@ export default function LeadQuizModal({
             </div>
           </fieldset>
         </form>
-        <style jsx>{`
+        <style jsx>
+          {`
           .grecaptcha-badge {
             visibility: hidden;
           }
-        `}</style>
+        `}
+        </style>
       </div>
     </div>
   );

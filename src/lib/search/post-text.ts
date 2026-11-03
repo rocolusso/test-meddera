@@ -13,7 +13,7 @@ import type { BlogLocale, BlogPost } from '@/blog-data/types';
 import type { SearchBlock } from './types';
 
 type Sections = { h2: string; paragraphs: string[] }[];
-type Copy = { sectionsRu: Sections; sectionsRo: Sections };
+interface Copy { sectionsRu: Sections; sectionsRo: Sections }
 
 /**
  * Same source and same priority as `renderBlogPostBody`:

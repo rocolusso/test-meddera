@@ -1,8 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-import type { BlogLocale } from '@/blog-data/types';
-import { blogPathRo, blogPathRu, getClusterArticles, getPostById } from '@/blog-data/registry';
+import type { BlogLocale, BlogPost } from '@/blog-data/types';
+import {
+  blogPathRo, blogPathRu, getClusterArticles, getPostById,
+} from '@/blog-data/registry';
 import { blogUi } from '@/blog-data/blog-ui';
 import { HUB_CONTENT } from '@/blog-data/hubs';
 import { renderInline } from '@/blog-data/inline-links';
@@ -10,13 +12,12 @@ import ArticleCta from '@/components/cta/ArticleCta';
 import LipsEndBannerSlot from '@/components/hero-banner/LipsEndBannerSlot';
 import { ctaForCluster } from '@/lib/cta/registry';
 import { servicePath } from '@/lib/service-slugs';
-import type { BlogPost } from '@/blog-data/types';
 
-type Props = {
+interface Props {
   clusterId: string;
   locale: BlogLocale;
   dateModified: string;
-};
+}
 
 const UI = {
   ru: {
@@ -94,7 +95,9 @@ export function HubBody({ clusterId, locale, dateModified }: Props) {
       </nav>
 
       <p className={blogUi.meta}>
-        {ui.updated} {dateModified}
+        {ui.updated}
+        {' '}
+        {dateModified}
         {' · '}
         <Link href={otherHref} className={blogUi.crumbLink} hrefLang={ui.otherLang}>{ui.other}</Link>
       </p>

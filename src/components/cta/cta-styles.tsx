@@ -6,7 +6,8 @@
  */
 export function CtaAnimationStyles() {
   return (
-    <style jsx global>{`
+    <style jsx global>
+      {`
       @keyframes ctaFloat {
         0% { transform: translateY(0); }
         50% { transform: translateY(-6px); }
@@ -123,6 +124,7 @@ export function CtaAnimationStyles() {
           animation: none;
         }
       }
-    `}</style>
+    `}
+    </style>
   );
 }

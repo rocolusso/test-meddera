@@ -45,9 +45,9 @@ function ServicePage14Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Terapie antirid cu Botox în Bălți'}
+      title="Terapie antirid cu Botox în Bălți"
       heroImage={botoks}
-      heroImageAlt={'Terapie antirid Botox — clinica Meddera, Bălți'}
+      heroImageAlt="Terapie antirid Botox — clinica Meddera, Bălți"
     >
       <p>
         Terapie antirid Botox este o procedură cosmetologică prin care, cu

@@ -6,12 +6,12 @@ import ArticleCallLink from './ArticleCallLink';
 import DoctorPhoto from './DoctorPhoto';
 import PhoneIcon from './PhoneIcon';
 
-type Props = {
+interface Props {
   entry: CtaEntry;
   locale: CtaLocale;
   /** Where the card stands: the end of an article or the end of a hub page. */
   source: 'article_card' | 'hub_card';
-};
+}
 
 /**
  * Call-to-action card at the end of an article or hub: the doctor's photo, a short text for the

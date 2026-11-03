@@ -15,26 +15,22 @@ function GoogleWhitePage() {
   const currentYear = date.getFullYear();
 
   const callPhone = () => {
-    // eslint-disable-next-line no-undef
     // (window as any).gtag('event', 'Нажатие на кнопку позвонить White /ads/cards vizitki', {
     //   action: 'click',
     //   target: 'tel:+37368422024',
     // });
 
-    // eslint-disable-next-line no-undef
     // window.location.href = 'tel:+37368422024';
-    //ls
+    // ls
     window.location.href = 'tel:+37368550030';
   };
 
   const redirectToBlack = () => {
-    // eslint-disable-next-line no-undef
     // (window as any).gtag('event', 'redirect from white /ads/cards vizitki', {
     //   action: 'click',
     //   target: 'from meddera.md/ads/cards vizitki  meddera.md',
     // });
 
-    // eslint-disable-next-line no-undef
     window.location.href = '/';
   };
 

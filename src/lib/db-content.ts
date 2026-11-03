@@ -13,14 +13,14 @@ import biorevit from '../../public/assets/img/services/biorevit.png';
 import konturnayaPlastika from '../../public/assets/img/services/konturnayaplastika.png';
 import lipolitiki from '../../public/assets/img/services/lipolitiki.png';
 
-export type ServiceLink = {
-  id: number,
-  title: string,
-  url: string,
-  imageUrl: StaticImageData,
-};
+export interface ServiceLink {
+  id: number;
+  title: string;
+  url: string;
+  imageUrl: StaticImageData;
+}
 
-export const servicesLinksRu:ServiceLink[] = [
+export const servicesLinksRu: ServiceLink[] = [
   {
     id: 1,
     title: 'Консультация у врача-дерматокосметолога',
@@ -102,7 +102,7 @@ export const servicesLinksRu:ServiceLink[] = [
 
 ];
 
-export const servicesLinksRo:ServiceLink[] = [
+export const servicesLinksRo: ServiceLink[] = [
   {
     id: 1,
     title: 'Consultația la medicul dermatocosmetolog',

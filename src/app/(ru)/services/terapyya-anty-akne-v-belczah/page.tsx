@@ -45,9 +45,9 @@ function ServicePage8() {
   return (
     <ContentPageShell
       locale="ru"
-      title={'Терапия анти-акне в Бельцах – Лечение акне и постакне'}
+      title="Терапия анти-акне в Бельцах – Лечение акне и постакне"
       heroImage={maskaLica}
-      heroImageAlt={'Терапия анти-акне — клиника Meddera, Бельцы'}
+      heroImageAlt="Терапия анти-акне — клиника Meddera, Бельцы"
     >
       <p>
         Терапия анти-акне – это процедура направленная на лечение воспалений

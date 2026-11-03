@@ -14,7 +14,9 @@ const BIO = 'byorevytalyzaczyya-v-belczah';
 const FILLERS = 'konturnaya-plastyka-fylleramy-v-belczah';
 
 /** Slugs of the services that have a call-to-action entry (src/lib/cta/registry.ts). */
-export const SERVICE_SLUG = { DERM, CONSULT, ACNE, PIGMENT, PEELING, MESO, MESO_HAIR, LIPS, BOTOX, BIO, FILLERS } as const;
+export const SERVICE_SLUG = {
+  DERM, CONSULT, ACNE, PIGMENT, PEELING, MESO, MESO_HAIR, LIPS, BOTOX, BIO, FILLERS,
+} as const;
 
 export const SERVICE_LABELS: Record<string, { ru: string; ro: string }> = {
   [DERM]: { ru: 'Услуга «Дерматолог в Бельцах»', ro: 'Serviciul „Dermatolog în Bălți”' },

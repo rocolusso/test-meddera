@@ -8,9 +8,9 @@
  * warning sign in Telegram. The visitor is told nothing about it.
  */
 
-type Bilingual = { ru: string; ro: string };
+interface Bilingual { ru: string; ro: string }
 
-export type LipsQuizQuestion = {
+export interface LipsQuizQuestion {
   key: string;
   prompt: Bilingual;
   options: { ru: readonly string[]; ro: readonly string[] };
@@ -18,7 +18,7 @@ export type LipsQuizQuestion = {
   risk: readonly number[];
   /** Short Russian name of the question for the Telegram message. */
   label: string;
-};
+}
 
 export const LIPS_QUIZ: readonly LipsQuizQuestion[] = [
   {
@@ -98,7 +98,7 @@ function isRecord(v: unknown): v is Record<string, unknown> {
 
 /** Did the answers come from this quiz (and not from the general one of older open tabs)? */
 export function isLipsQuizAnswers(raw: unknown): boolean {
-  return isRecord(raw) && LIPS_QUIZ.some((q) => Object.prototype.hasOwnProperty.call(raw, q.key));
+  return isRecord(raw) && LIPS_QUIZ.some((q) => Object.hasOwn(raw, q.key));
 }
 
 /**
@@ -109,7 +109,7 @@ export function formatLipsQuizAnswers(raw: unknown): string {
   if (!isRecord(raw)) return '';
   const lines: string[] = [];
   for (const q of LIPS_QUIZ) {
-    const value = Object.prototype.hasOwnProperty.call(raw, q.key) ? raw[q.key] : undefined;
+    const value = Object.hasOwn(raw, q.key) ? raw[q.key] : undefined;
     if (typeof value !== 'string') continue;
     const trimmed = value.trim().slice(0, MAX_ANSWER_LENGTH);
     let index = q.options.ru.indexOf(trimmed);

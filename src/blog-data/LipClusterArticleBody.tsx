@@ -9,10 +9,10 @@ import ArticleCta from '@/components/cta/ArticleCta';
 import LipsEndBannerSlot from '@/components/hero-banner/LipsEndBannerSlot';
 import { ctaForPost } from '@/lib/cta/registry';
 
-type Props = {
+interface Props {
   post: BlogPost;
   locale: BlogLocale;
-};
+}
 
 function stripTitleSuffix(title: string) {
   return title.replace(' | Meddera', '');

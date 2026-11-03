@@ -4,8 +4,7 @@
  * file directly in Node.
  */
 
-export type PageType =
-  | 'home'
+export type PageType = | 'home'
   | 'service'
   | 'services_list'
   | 'article'
@@ -18,12 +17,12 @@ export type PageType =
   | 'not_found'
   | 'other';
 
-export type PageContext = {
+export interface PageContext {
   page_path: string;
   page_type: PageType;
   content_slug: string;
   lang: 'ru' | 'ro';
-};
+}
 
 /**
  * Slugs of the blog hubs (RU and RO). Kept as an explicit list because one hub
@@ -91,10 +90,12 @@ export function getPageContext(pathname: string): PageContext {
     page_type = 'developer';
   }
 
-  return { page_path: clean, page_type, content_slug: content_slug.slice(0, 100), lang };
+  return {
+    page_path: clean, page_type, content_slug: content_slug.slice(0, 100), lang,
+  };
 }
 
-export type FirstTouch = { first_src: string; first_med: string; first_cmp: string; first_ref: string };
+export interface FirstTouch { first_src: string; first_med: string; first_cmp: string; first_ref: string }
 
 const SEARCH_ENGINE_HOST = /(^|\.)(google|bing|yandex|duckduckgo|yahoo|ecosia|baidu|ya)\.[a-z.]+$/i;
 

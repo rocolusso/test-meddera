@@ -55,8 +55,14 @@ export default async function GoogleReviewsBlock({ locale, variant }: { locale: 
     // In development the block stays on the page with the reason, so a missing block is never a mystery.
     return (
       <section data-google-reviews aria-label={t.label} className={`gr gr--${variant}`}>
-        <div className="gr__in" role="note" style={{ border: '1px dashed #d33', padding: 12, fontSize: 13, color: '#d33' }}>
-          Google reviews (dev only): 
+        <div
+          className="gr__in"
+          role="note"
+          style={{
+            border: '1px dashed #d33', padding: 12, fontSize: 13, color: '#d33',
+          }}
+        >
+          Google reviews (dev only):
           {' '}
           {result.reason}
         </div>

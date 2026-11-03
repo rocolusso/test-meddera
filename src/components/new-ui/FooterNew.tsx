@@ -29,8 +29,7 @@ function WidgetTitle({ eyebrow, title, className }: { eyebrow: string; title: st
   );
 }
 
-const footerLinkClass =
-  'text-[13px] leading-[22px] text-[#939393] transition-colors hover:text-white';
+const footerLinkClass = 'text-[13px] leading-[22px] text-[#939393] transition-colors hover:text-white';
 
 function FooterNew({ locale }: { locale: string }) {
   const date = new Date();

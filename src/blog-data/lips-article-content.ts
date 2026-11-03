@@ -1,11 +1,11 @@
 import { LIPS_ARTICLE_CONTENT_PART2 } from '@/blog-data/lips-article-content-part2';
 
-export type ArticleSection = { h2: string; paragraphs: string[] };
+export interface ArticleSection { h2: string; paragraphs: string[] }
 
-export type LipsArticleCopy = {
+export interface LipsArticleCopy {
   sectionsRu: ArticleSection[];
   sectionsRo: ArticleSection[];
-};
+}
 
 const LIPS_ARTICLE_CONTENT_PART1: Record<string, LipsArticleCopy> = {
   'uvelichenie-gub-beltsy-vidy-fillerov': {

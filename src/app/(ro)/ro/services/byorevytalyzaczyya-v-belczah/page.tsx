@@ -45,9 +45,9 @@ function ServicePage15Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Biorevitalizare în Bălți – rejuvenare facială profesională'}
+      title="Biorevitalizare în Bălți – rejuvenare facială profesională"
       heroImage={biorevit}
-      heroImageAlt={'Biorevitalizarea — clinica Meddera, Bălți'}
+      heroImageAlt="Biorevitalizarea — clinica Meddera, Bălți"
     >
       <p>
         Biorevitalizarea este o procedură cosmetologică destinată hidratării

@@ -23,7 +23,9 @@ const LeadQuizModal = dynamic(() => import('@/components/lead/LeadQuizModal'), {
 export default function LeadQuizHost() {
   const pathname = usePathname() ?? '/';
   const locale = getLocaleFromPath(pathname);
-  const { open, formType, source, procedure } = useLeadQuizState();
+  const {
+    open, formType, source, procedure,
+  } = useLeadQuizState();
   const openerRef = useRef<HTMLElement | null>(null);
 
   useOverlayLock(open);

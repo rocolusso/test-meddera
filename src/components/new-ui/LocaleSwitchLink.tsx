@@ -6,11 +6,11 @@ import { usePathname, useRouter } from 'next/navigation';
 
 import { getAlternateLocalePath } from '@/lib/locale-switch';
 
-type Props = {
+interface Props {
   locale: 'ru' | 'ro';
   className: string;
   ariaLabel: string;
-};
+}
 
 const SEARCH_PATHS = new Set(['/search', '/ro/search']);
 

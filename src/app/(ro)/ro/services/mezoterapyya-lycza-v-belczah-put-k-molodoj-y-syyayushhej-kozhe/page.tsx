@@ -45,9 +45,9 @@ function ServicePage11Ro() {
   return (
     <ContentPageShell
       locale="ro"
-      title={'Mezoterapie facială în Bălți – rejuvenare și hidratare ten'}
+      title="Mezoterapie facială în Bălți – rejuvenare și hidratare ten"
       heroImage={mezolica}
-      heroImageAlt={'Mezoterapia facială — clinica Meddera, Bălți'}
+      heroImageAlt="Mezoterapia facială — clinica Meddera, Bălți"
     >
       <p>
         Mezoterapia facială este o procedură cosmetică prin care se introduc

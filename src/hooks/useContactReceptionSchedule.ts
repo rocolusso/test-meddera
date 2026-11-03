@@ -8,7 +8,7 @@ import {
   isReceptionWednesday,
 } from '@/lib/contact-reception-schedule';
 
-export type ContactReceptionSchedule = {
+export interface ContactReceptionSchedule {
   /** Tue, Thu–Sat, 13:00–18:00 local time */
   isOpenNow: boolean;
   isSunday: boolean;
@@ -20,7 +20,7 @@ export type ContactReceptionSchedule = {
   isReceptionDay: boolean;
   currentTime: string;
   weekdayLong: string;
-};
+}
 
 function compute(now: Date, locale: string): ContactReceptionSchedule {
   const dow = now.getDay();
@@ -53,9 +53,7 @@ function compute(now: Date, locale: string): ContactReceptionSchedule {
  * Refreshes every minute so day/time stay accurate without heavy polling.
  */
 export function useContactReceptionSchedule(locale: string): ContactReceptionSchedule {
-  const [state, setState] = useState<ContactReceptionSchedule>(() =>
-    compute(new Date(), locale),
-  );
+  const [state, setState] = useState<ContactReceptionSchedule>(() => compute(new Date(), locale));
 
   useEffect(() => {
     const tick = () => setState(compute(new Date(), locale));

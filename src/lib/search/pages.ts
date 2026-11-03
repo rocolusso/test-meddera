@@ -3,7 +3,7 @@ import { getNavLinks, type NavLink } from '@/lib/nav-links';
 
 import type { SearchLocale } from './types';
 
-type PageText = { title: string; description: string };
+interface PageText { title: string; description: string }
 
 /** Short descriptions of the five main pages, shown under the title in the results. */
 const DESCRIPTIONS: Record<NavLink['key'], Record<SearchLocale, string>> = {

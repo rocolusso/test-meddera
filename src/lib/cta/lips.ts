@@ -6,7 +6,7 @@
 import type { LeadQuizSource } from '@/lib/cta/keys';
 import { ctaForCluster, ctaForPost } from '@/lib/cta/registry';
 
-type PostLike = { id: string; kind: string; clusterId: string | null };
+interface PostLike { id: string; kind: string; clusterId: string | null }
 
 /**
  * A blog post is about lips when its call to action is the lips one: the hub and the articles of the
@@ -33,7 +33,7 @@ export const LIPS_TITLE_SUFFIX: Partial<Record<LeadQuizSource, string>> = {
 
 /** `source` comes from the browser: an unknown or missing value gives the plain title. */
 export function lipsLeadTitle(source: unknown): string {
-  if (typeof source === 'string' && Object.prototype.hasOwnProperty.call(LIPS_TITLE_SUFFIX, source)) {
+  if (typeof source === 'string' && Object.hasOwn(LIPS_TITLE_SUFFIX, source)) {
     return `${LIPS_LEAD_TITLE}/${LIPS_TITLE_SUFFIX[source as LeadQuizSource]}`;
   }
   return LIPS_LEAD_TITLE;

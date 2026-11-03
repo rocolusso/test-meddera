@@ -16,14 +16,14 @@ const apiBase = (): string => (process.env.FEATURABLE_API_BASE || 'https://api.f
 const REVALIDATE_SECONDS = 86400;
 const TIMEOUT_MS = 8000;
 
-export type FeaturableReviews = {
+export interface FeaturableReviews {
   reviews: ReactGoogleReview[];
   /** Total on Google (can be more than `reviews`: ratings without text are not returned). */
   totalReviewCount: number;
   averageRating: number;
-};
+}
 
-type RawReview = {
+interface RawReview {
   id?: unknown;
   author?: { name?: unknown; avatarUrl?: unknown; photoUrl?: unknown } | null;
   text?: unknown;
@@ -32,7 +32,7 @@ type RawReview = {
   publishedAt?: unknown;
   createdAt?: unknown;
   updatedAt?: unknown;
-};
+}
 
 const str = (v: unknown): string => (typeof v === 'string' ? v.trim() : '');
 

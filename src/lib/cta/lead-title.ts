@@ -1,9 +1,11 @@
 import { isCtaKey } from '@/lib/cta/keys';
-import { ctaForCluster, ctaForPathname, ctaForPost, type CtaEntry } from '@/lib/cta/registry';
+import {
+  ctaForCluster, ctaForPathname, ctaForPost, type CtaEntry,
+} from '@/lib/cta/registry';
 
 export { LIPS_LEAD_TITLE, lipsLeadTitle } from '@/lib/cta/lips';
 
-type PostLike = { id: string; kind: string; clusterId: string | null };
+interface PostLike { id: string; kind: string; clusterId: string | null }
 
 /** Finds a blog post by the slug of its URL (RU or RO). Passed in, so this file stays free of the blog data. */
 export type PostLookup = (slug: string) => PostLike | undefined;

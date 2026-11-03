@@ -1,13 +1,13 @@
 import { ID, type Locale } from '@/lib/schema/constants';
 import { pageGraph } from '@/lib/schema/graph';
 
-export type ContactsPageJsonLdInput = {
+export interface ContactsPageJsonLdInput {
   pageUrl: string;
   locale: Locale;
   pageName: string;
   description: string;
   breadcrumbItems: { name: string; item: string }[];
-};
+}
 
 /** ContactPage whose main entity is the clinic (address, phone, hours, map). */
 export function contactsPageJsonLd(o: ContactsPageJsonLdInput) {

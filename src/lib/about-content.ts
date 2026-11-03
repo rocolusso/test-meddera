@@ -2,7 +2,7 @@
  * Copy for the About block — keep in sync across locales; only language differs.
  */
 
-export type AboutCopy = {
+export interface AboutCopy {
   sectionTitle: string;
   badge: string;
   name: string;
@@ -10,7 +10,7 @@ export type AboutCopy = {
   specializationTitle: string;
   specColumns: [string[], string[]];
   imageAlt: string;
-};
+}
 
 export const aboutCopy: Record<'ru' | 'ro', AboutCopy> = {
   ru: {

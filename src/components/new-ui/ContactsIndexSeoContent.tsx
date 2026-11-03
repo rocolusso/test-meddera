@@ -6,8 +6,7 @@ import SectionHeading from '@/components/pofo/SectionHeading';
 import LazyMap from '@/components/LazyMap';
 import { RECEPTION_SCHEDULE_COPY } from '@/lib/contact-reception-schedule';
 
-const phoneClassName =
-  'font-semibold text-pofo-heading underline decoration-border underline-offset-4 transition-colors hover:text-deep-pink';
+const phoneClassName = 'font-semibold text-pofo-heading underline decoration-border underline-offset-4 transition-colors hover:text-deep-pink';
 
 function ClinicPhoneLink() {
   return (

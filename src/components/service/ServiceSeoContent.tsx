@@ -10,19 +10,17 @@ import { SERVICE_SEO } from '@/lib/service-seo';
 import { PHONE, SITE_ORIGIN, type Locale } from '@/lib/schema/constants';
 import { faqNode, pageGraph, serviceNode } from '@/lib/schema/graph';
 
-const h2Class =
-  'alt-font mb-4 mt-10 text-[22px] font-semibold leading-[30px] text-pofo-heading md:text-[24px] md:leading-[32px]';
+const h2Class = 'alt-font mb-4 mt-10 text-[22px] font-semibold leading-[30px] text-pofo-heading md:text-[24px] md:leading-[32px]';
 const h3Class = 'alt-font mb-2 mt-6 text-[18px] font-semibold leading-[26px] text-pofo-heading';
-const ulClass =
-  'list-none space-y-2.5 pl-0 [&>li]:relative [&>li]:pl-[22px] [&>li]:before:absolute [&>li]:before:left-0 [&>li]:before:top-[0.85em] [&>li]:before:h-px [&>li]:before:w-2.5 [&>li]:before:bg-deep-pink [&>li]:before:content-[\'\']';
+const ulClass = 'list-none space-y-2.5 pl-0 [&>li]:relative [&>li]:pl-[22px] [&>li]:before:absolute [&>li]:before:left-0 [&>li]:before:top-[0.85em] [&>li]:before:h-px [&>li]:before:w-2.5 [&>li]:before:bg-deep-pink [&>li]:before:content-[\'\']';
 
-type Props = {
+interface Props {
   locale: Locale;
   slug: string;
   /** Page title and description from the page's own metadata. */
   title: string;
   description: string;
-};
+}
 
 function BookingBlock({ locale }: { locale: Locale }) {
   const ru = locale === 'ru';
@@ -36,7 +34,8 @@ function BookingBlock({ locale }: { locale: Locale }) {
         {ru
           ? ' или через форму записи на этой странице. Клиника Meddera находится в Бельцах, на улице Штефан чел Маре, 13. '
           : ' sau prin formularul de programare de pe această pagină. Clinica Meddera se află în Bălți, pe strada Ștefan cel Mare, 13. '}
-        {copy.daysSummary}{' '}
+        {copy.daysSummary}
+        {' '}
         {ru ? `Приём по предварительной записи, ${copy.hoursRange}.` : `Consultații cu programare prealabilă, ${copy.hoursRange}.`}
       </p>
     </section>
@@ -97,7 +96,9 @@ function RelatedBlock({ locale, slug }: { locale: Locale; slug: string }) {
  * Visible long text of a service page (was hidden): sections, FAQ, booking, related links,
  * plus the page's JSON-LD (WebPage + Service + FAQPage when the page has visible questions).
  */
-export default function ServiceSeoContent({ locale, slug, title, description }: Props) {
+export default function ServiceSeoContent({
+  locale, slug, title, description,
+}: Props) {
   const data = SERVICE_SEO[slug];
   if (!data) throw new Error(`No service SEO content for ${slug}`);
   const ru = locale === 'ru';
@@ -119,7 +120,9 @@ export default function ServiceSeoContent({ locale, slug, title, description }: 
     ],
     mainEntityId: `${url}#service`,
     extra: [
-      serviceNode({ url, name: t.serviceName, description, serviceType: t.serviceType }),
+      serviceNode({
+        url, name: t.serviceName, description, serviceType: t.serviceType,
+      }),
       ...(t.faq?.length ? [faqNode(url, t.faq.map((f) => ({ question: f.question, answer: f.answer })))] : []),
     ],
   });
