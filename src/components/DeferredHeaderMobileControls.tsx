@@ -5,17 +5,20 @@ import { useEffect, useState } from 'react';
 import BurgerMenu from '@/components/BurgerMenu';
 import LocaleSwitchLink from '@/components/new-ui/LocaleSwitchLink';
 import ThemeToggle from '@/components/new-ui/ThemeToggle';
+import type { BlogSlugPairs } from '@/lib/locale-switch';
 
 interface Props {
   locale: string;
   /** Show the "Отзывы" item (GOOGLE_REVIEWS_ENABLED, read on the server). */
   withReviews?: boolean;
+  /** RU/RO slug pairs of blog posts for the language switch (built on the server). */
+  blogSlugPairs: BlogSlugPairs;
 }
 
 /**
  * Defers mounting burger + theme toggle until browser idle to reduce early main-thread work.
  */
-export default function DeferredHeaderMobileControls({ locale, withReviews = false }: Props) {
+export default function DeferredHeaderMobileControls({ locale, withReviews = false, blogSlugPairs }: Props) {
   const [ready, setReady] = useState(false);
   const loc = locale === 'ro' ? 'ro' : 'ru';
 
@@ -64,6 +67,7 @@ export default function DeferredHeaderMobileControls({ locale, withReviews = fal
         locale={loc}
         className="alt-font inline-flex size-10 shrink-0 touch-manipulation items-center justify-center border border-border text-[12px] font-semibold uppercase tracking-[1px] text-pofo-heading transition-colors hover:border-deep-pink hover:text-deep-pink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:hidden"
         ariaLabel={loc === 'ru' ? 'Limba română' : 'Русский язык'}
+        blogSlugPairs={blogSlugPairs}
       />
       <ThemeToggle locale={loc} />
       <BurgerMenu locale={locale} withReviews={withReviews} />

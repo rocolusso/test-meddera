@@ -4,6 +4,7 @@ import Link from 'next/link';
 import DeferredHeaderMobileControls from '@/components/DeferredHeaderMobileControls';
 import HeaderScrollProgress from '@/components/new-ui/HeaderScrollProgress';
 import NavigationLinks from '@/components/new-ui/NavigationLinks';
+import { getBlogSlugPairs } from '@/lib/blog-slug-pairs';
 import { isGoogleReviewsEnabled } from '@/lib/google-reviews/config';
 
 const LOGO_SRC = '/assets/img/pintea_logo.svg';
@@ -11,6 +12,7 @@ const LOGO_SRC = '/assets/img/pintea_logo.svg';
 const LOGO_LIGHT_SRC = '/assets/img/pintea_logo_light.svg';
 
 function HeaderNew({ locale }: { locale: string }) {
+  const blogSlugPairs = getBlogSlugPairs();
   // The sixth link ("Отзывы") needs room: a narrower logo and tighter gaps between sm and lg.
   const withReviews = isGoogleReviewsEnabled();
   const logoAlt = locale === 'ro' ? 'Meddera — logo clinica' : 'Meddera — логотип клиники';
@@ -49,8 +51,12 @@ function HeaderNew({ locale }: { locale: string }) {
             </Link>
 
             <div className={`flex min-w-0 items-center max-sm:flex-initial max-sm:justify-end gap-1.5 sm:flex-1 sm:justify-end ${withReviews ? 'sm:gap-2 lg:gap-3' : 'sm:gap-3'}`}>
-              <NavigationLinks locale={locale} />
-              <DeferredHeaderMobileControls locale={locale} withReviews={isGoogleReviewsEnabled()} />
+              <NavigationLinks locale={locale} blogSlugPairs={blogSlugPairs} />
+              <DeferredHeaderMobileControls
+                locale={locale}
+                withReviews={isGoogleReviewsEnabled()}
+                blogSlugPairs={blogSlugPairs}
+              />
             </div>
           </div>
         </div>

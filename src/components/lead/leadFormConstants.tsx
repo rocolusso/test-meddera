@@ -10,106 +10,14 @@ export interface QuizQuestion {
   options: Record<Locale, readonly string[]>;
 }
 
-export const QUIZ: Record<FormType, readonly QuizQuestion[]> = {
-  appointment: [
-    {
-      key: 'visit_type',
-      prompt: {
-        ru: 'Тип визита',
-        ro: 'Tipul vizitei',
-      },
-      options: {
-        ru: ['Первичная консультация', 'Повторный визит', 'Не уверен(а), нужна рекомендация'],
-        ro: ['Consultație inițială', 'Vizită repetată', 'Nu sunt sigur(ă), am nevoie de recomandare'],
-      },
-    },
-    {
-      key: 'preferred_day',
-      prompt: {
-        ru: 'Когда вам удобнее?',
-        ro: 'Când vă este mai comod?',
-      },
-      options: {
-        ru: ['Сегодня-завтра', 'На этой неделе', 'На следующей неделе'],
-        ro: ['Astăzi-mâine', 'Săptămâna aceasta', 'Săptămâna viitoare'],
-      },
-    },
-    {
-      key: 'procedure_interest',
-      prompt: {
-        ru: 'Что вас интересует?',
-        ro: 'Ce vă interesează?',
-      },
-      options: {
-        ru: ['Уход за лицом', 'Инъекционные процедуры', 'Консультация дерматолога'],
-        ro: ['Îngrijirea feței', 'Proceduri injectabile', 'Consultație dermatolog'],
-      },
-    },
-  ],
-};
-
-export const TEXT = {
-  ru: {
-    ctaAppointment: 'Записаться онлайн',
-    modalTitle: {
-      appointment: 'Быстрая запись',
-    },
-    modalSubtitle: {
-      appointment: 'Оставьте контакты и ответьте на 3 вопроса.',
-    },
-    modalSubtitlePrefilled: 'Оставьте контакты и ответьте на 2 вопроса.',
-    modalTitleLips: 'Запись на увеличение губ',
-    modalSubtitleLips: 'Оставьте контакты и ответьте на 5 вопросов.',
-    procedureLabel: 'Процедура',
-    changeProcedure: 'изменить',
-    placeholders: {
-      name: 'Имя',
-      phone: 'Ваш номер телефона',
-      message: 'Сообщение (по желанию)',
-    },
-    close: 'Закрыть',
-    submit: 'Отправить',
-    sending: 'Отправка…',
-    clinicAddress: 'Адрес клиники: Balti, Stefan Cel Mare, 13',
-    showRoute: 'Показать маршрут',
-    success: 'Спасибо! Заявка отправлена.',
-    quizRequired: 'Пожалуйста, ответьте на все вопросы квиза.',
-    formError: 'Не удалось отправить заявку. Попробуйте позже.',
-    declined: 'Отправка отклонена. Обновите страницу и попробуйте снова.',
-    tooMany: 'Слишком много попыток. Подождите и попробуйте снова.',
-    verifyError: 'Не удалось проверить отправку. Обновите страницу и попробуйте снова.',
-  },
-  ro: {
-    ctaAppointment: 'Programare online',
-    modalTitle: {
-      appointment: 'Programare rapidă',
-    },
-    modalSubtitle: {
-      appointment: 'Lăsați datele de contact și răspundeți la 3 întrebări.',
-    },
-    modalSubtitlePrefilled: 'Lăsați datele de contact și răspundeți la 2 întrebări.',
-    modalTitleLips: 'Programare la mărirea buzelor',
-    modalSubtitleLips: 'Lăsați datele de contact și răspundeți la 5 întrebări.',
-    procedureLabel: 'Procedura',
-    changeProcedure: 'schimbă',
-    placeholders: {
-      name: 'Nume',
-      phone: 'Numărul dumneavoastră de telefon',
-      message: 'Mesaj (opțional)',
-    },
-    close: 'Închide',
-    submit: 'Trimite',
-    sending: 'Se trimite…',
-    clinicAddress: 'Adresa clinicii: Balti, Stefan Cel Mare, 13',
-    showRoute: 'Arată traseul',
-    success: 'Mulțumim! Cererea a fost trimisă.',
-    quizRequired: 'Vă rugăm să răspundeți la toate întrebările.',
-    formError: 'Nu s-a putut trimite cererea. Încercați mai târziu.',
-    declined: 'Trimiterea a fost respinsă. Reîmprospătați pagina și încercați din nou.',
-    tooMany: 'Prea multe încercări. Așteptați și încercați din nou.',
-    verifyError: 'Nu s-a putut verifica trimiterea. Reîmprospătați pagina și încercați din nou.',
-  },
-} as const;
+/**
+ * Label of the "book online" button. Lives here (not in leadFormCopy) because the button is on every page;
+ * the quiz questions and modal texts stay in leadFormCopy.ts and load only with the modal.
+ */
+export const CTA_APPOINTMENT_LABEL = {
+  ru: 'Записаться онлайн',
+  ro: 'Programare online',
+} as const satisfies Record<Locale, string>;
 
 export function getLocaleFromPath(pathname: string | null | undefined): Locale {
   if (!pathname) return 'ru';
