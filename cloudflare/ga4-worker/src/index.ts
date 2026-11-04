@@ -80,7 +80,7 @@ function sanitizeParams(params: IncomingEvent['params']): Record<string, string 
   return out;
 }
 
-export default {
+const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
     const allowedOrigin = env.ALLOWED_ORIGIN;
@@ -170,6 +170,8 @@ export default {
     return new Response(null, { status: 204, headers: corsHeaders(allowedOrigin) });
   },
 };
+
+export default worker;
 
 async function forwardToGa4(mpUrl: string, userAgent: string, body: string): Promise<void> {
   try {

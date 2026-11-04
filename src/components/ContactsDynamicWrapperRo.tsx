@@ -23,11 +23,6 @@ export default function ContactsDynamicWrapperRo({
     const target = sentinelRef.current;
     if (!target) return undefined;
 
-    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
-      setShouldLoad(true);
-      return undefined;
-    }
-
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries.some((entry) => entry.isIntersecting)) {

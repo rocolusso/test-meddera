@@ -40,14 +40,29 @@ export default function ScrollCue() {
   // The home banner brings its own animated chevron, so this one steps aside there.
   const [hasBanner, setHasBanner] = useState(false);
 
+  // Another page: the cue hides again until the delay below has passed.
+  const [readyFor, setReadyFor] = useState(pathname);
+  if (readyFor !== pathname) {
+    setReadyFor(pathname);
+    setReady(false);
+  }
+
   useEffect(() => {
     if (excluded) return undefined;
-    setReady(false);
-    setHasBanner(document.querySelector('[data-hero-banner]') !== null);
-    // Reloaded or opened by an anchor in the middle of a page: the visitor is already scrolling.
-    setAtTop(window.scrollY <= HIDE_AFTER_PX);
 
-    const timer = window.setTimeout(() => setReady(true), SHOW_DELAY_MS);
+    const measure = () => {
+      const doc = document.documentElement;
+      setTall(doc.scrollHeight - window.innerHeight >= MIN_EXTRA_HEIGHT_PX);
+    };
+
+    // Nothing is shown before the delay, so the page is read once, right before the cue may appear.
+    const timer = window.setTimeout(() => {
+      setHasBanner(document.querySelector('[data-hero-banner]') !== null);
+      // Reloaded or opened by an anchor in the middle of a page: the visitor is already scrolling.
+      setAtTop(window.scrollY <= HIDE_AFTER_PX);
+      measure();
+      setReady(true);
+    }, SHOW_DELAY_MS);
 
     let frame = 0;
     const onScroll = () => {
@@ -60,11 +75,6 @@ export default function ScrollCue() {
     };
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    const measure = () => {
-      const doc = document.documentElement;
-      setTall(doc.scrollHeight - window.innerHeight >= MIN_EXTRA_HEIGHT_PX);
-    };
-    measure();
     const observer = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(measure);
     observer?.observe(document.body);
     window.addEventListener('resize', measure);

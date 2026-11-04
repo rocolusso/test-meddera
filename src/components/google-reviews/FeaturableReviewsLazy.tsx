@@ -25,10 +25,6 @@ export default function FeaturableReviewsLazy(props: FeaturableReviewsProps) {
   useEffect(() => {
     const el = ref.current;
     if (!el) return undefined;
-    if (typeof IntersectionObserver === 'undefined') {
-      setNear(true);
-      return undefined;
-    }
     const io = new IntersectionObserver(
       (entries) => {
         if (entries.some((e) => e.isIntersecting)) {

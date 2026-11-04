@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 
+type GtagWindow = Window & { gtag?: (...args: unknown[]) => void };
+
 function IpChecker() {
   const [ip, setIp] = useState('');
 
@@ -15,11 +17,9 @@ function IpChecker() {
   }, []);
 
   useEffect(() => {
-    if ((window as any)?.gtag) {
-      (window as any).gtag('event', `ClientIP: ${ip}`, {
-        action: 'firstVisit',
-      });
-    }
+    (window as GtagWindow).gtag?.('event', `ClientIP: ${ip}`, {
+      action: 'firstVisit',
+    });
   }, [ip]);
   return (
     <div />

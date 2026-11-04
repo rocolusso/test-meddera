@@ -1,6 +1,8 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, {
+  useEffect, useRef, useState, useSyncExternalStore,
+} from 'react';
 
 import { cn } from '@/lib/utils';
 
@@ -13,6 +15,22 @@ const ANIMATION_CLASS: Record<Animation, string> = {
   'fade-left': 'animate-fade-in-left',
   'fade-right': 'animate-fade-in-right',
 };
+
+const REDUCED_MOTION = '(prefers-reduced-motion: reduce)';
+
+function subscribeReducedMotion(onChange: () => void) {
+  const mq = window.matchMedia(REDUCED_MOTION);
+  mq.addEventListener('change', onChange);
+  return () => mq.removeEventListener('change', onChange);
+}
+
+function usePrefersReducedMotion(): boolean {
+  return useSyncExternalStore(
+    subscribeReducedMotion,
+    () => window.matchMedia(REDUCED_MOTION).matches,
+    () => false,
+  );
+}
 
 /**
  * Pofo-like scroll reveal (replacement for WOW.js + animate.css) without dependencies.
@@ -35,24 +53,18 @@ function SectionReveal({
   immediate?: boolean;
 }) {
   const ref = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(immediate);
+  const reducedMotion = usePrefersReducedMotion();
+  const [revealed, setRevealed] = useState(false);
+  const visible = immediate || reducedMotion || revealed;
 
   useEffect(() => {
     const el = ref.current;
-    if (!el || immediate) return undefined;
-
-    if (
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      || !('IntersectionObserver' in window)
-    ) {
-      setVisible(true);
-      return undefined;
-    }
+    if (!el || immediate || reducedMotion) return undefined;
 
     const obs = new IntersectionObserver(
       ([entry]) => {
         if (entry?.isIntersecting) {
-          setVisible(true);
+          setRevealed(true);
           obs.disconnect();
         }
       },
@@ -60,7 +72,7 @@ function SectionReveal({
     );
     obs.observe(el);
     return () => obs.disconnect();
-  }, [immediate]);
+  }, [immediate, reducedMotion]);
 
   const Tag = as;
   return (

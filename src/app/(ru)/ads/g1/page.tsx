@@ -9,12 +9,14 @@ import imgAddress from '@public/assets/img/img_contacts.jpg';
 import ava from '@public/assets/img/ads/ads_photo.png';
 import LazyGoogleMapIframe from '@/components/LazyGoogleMapIframe';
 
+type GtagWindow = Window & { gtag?: (...args: unknown[]) => void };
+
 export default function GoogleWhitePage() {
   const date = new Date();
   const currentYear = date.getFullYear();
 
   const callPhone = () => {
-    (window as any).gtag('event', 'Нажатие на кнопку позвонить White /ads/g1', {
+    (window as GtagWindow).gtag?.('event', 'Нажатие на кнопку позвонить White /ads/g1', {
       action: 'click',
       target: 'tel:+37368422024',
     });
@@ -23,7 +25,7 @@ export default function GoogleWhitePage() {
   };
 
   const redirectToBlack = () => {
-    (window as any).gtag('event', 'redirect from white /ads/g1', {
+    (window as GtagWindow).gtag?.('event', 'redirect from white /ads/g1', {
       action: 'click',
       target: 'from meddera.md/ads/g1  meddera.md',
     });

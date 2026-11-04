@@ -2,7 +2,7 @@
  * Ensures every article id from cluster metadata has a matching content key (prevents render → notFound / 404).
  * Run: node scripts/verify-blog-metadata-content.mjs
  */
-import { readFileSync, readdirSync } from 'fs';
+import { readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 

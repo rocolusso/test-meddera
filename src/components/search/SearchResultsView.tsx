@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 import { useSiteSearch } from '@/hooks/useSiteSearch';
@@ -20,9 +20,12 @@ export default function SearchResultsView({ locale }: { locale: SearchLocale }) 
   const urlQuery = (useSearchParams().get('q') ?? '').slice(0, MAX_QUERY);
 
   const [query, setQuery] = useState(urlQuery);
-  useEffect(() => {
+  // Back/forward or a new ?q= replaces what is typed in the field.
+  const [syncedUrlQuery, setSyncedUrlQuery] = useState(urlQuery);
+  if (syncedUrlQuery !== urlQuery) {
+    setSyncedUrlQuery(urlQuery);
     setQuery(urlQuery);
-  }, [urlQuery]);
+  }
 
   const { status, data, retry } = useSiteSearch(query, locale, PAGE_LIMIT);
   const results = data?.results ?? [];

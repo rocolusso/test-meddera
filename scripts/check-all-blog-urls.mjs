@@ -195,7 +195,7 @@ if (totalIssues > 0) {
   
   Object.keys(groupedByFile).forEach(file => {
     console.log(`\n📄 ${file}:`);
-    groupedByFile[file].forEach(({ line, type, value, problem }) => {
+    groupedByFile[file].forEach(({ line, type, problem }) => {
       console.log(`  ❌ Line ${line} [${type}]: ${problem}`);
     });
   });

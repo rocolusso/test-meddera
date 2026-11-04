@@ -31,15 +31,13 @@ export function useSiteSearch(rawQuery: string, locale: SearchLocale, limit: num
 
   const key = `${locale}|${limit}|${debounced}`;
 
-  useEffect(() => {
-    if (debounced.length < SEARCH_MIN_CHARS) return undefined;
+  // A cached answer is used right in render; only a missing one goes to the network.
+  const cached = debounced.length >= SEARCH_MIN_CHARS ? responseCache.get(key) : undefined;
+  const current: Settled | null = cached ? { key, data: cached, failed: false } : settled;
+  if (cached && lastGood !== cached) setLastGood(cached);
 
-    const cached = responseCache.get(key);
-    if (cached) {
-      setSettled({ key, data: cached, failed: false });
-      setLastGood(cached);
-      return undefined;
-    }
+  useEffect(() => {
+    if (debounced.length < SEARCH_MIN_CHARS || responseCache.has(key)) return undefined;
 
     const controller = new AbortController();
     const params = new URLSearchParams({ q: debounced, lang: locale, limit: String(limit) });
@@ -72,14 +70,14 @@ export function useSiteSearch(rawQuery: string, locale: SearchLocale, limit: num
 
   if (query.length < SEARCH_MIN_CHARS) {
     status = 'idle';
-  } else if (debounced !== query || settled?.key !== key) {
+  } else if (debounced !== query || current?.key !== key) {
     // Typing or waiting for the answer: keep the previous list on screen instead of flashing.
     status = 'loading';
     data = lastGood;
-  } else if (settled.failed) {
+  } else if (current.failed) {
     status = 'error';
   } else {
-    data = settled.data;
+    data = current.data;
     status = data && data.total > 0 ? 'results' : 'empty';
   }
 

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useSyncExternalStore } from 'react';
 
 import { THEME_STORAGE_KEY } from '@/lib/theme-inline-script';
 import { cn } from '@/lib/utils';
@@ -42,15 +42,24 @@ function MoonIcon({ className }: { className?: string }) {
 
 type Locale = 'ru' | 'ro';
 
-function ThemeToggle({ locale }: { locale: Locale }) {
-  const [mounted, setMounted] = useState(false);
-  const [isDark, setIsDark] = useState(false);
-  const lastToggleAt = useRef(0);
+/** The theme is the `dark` class on <html>: the inline theme script sets it before the first paint. */
+function subscribeTheme(onChange: () => void) {
+  const observer = new MutationObserver(onChange);
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+  return () => observer.disconnect();
+}
 
-  useEffect(() => {
-    setMounted(true);
-    setIsDark(document.documentElement.classList.contains('dark'));
-  }, []);
+const noopSubscribe = () => () => {};
+
+function ThemeToggle({ locale }: { locale: Locale }) {
+  // false on the server and during hydration, true afterwards: the icon is not known before the client renders.
+  const mounted = useSyncExternalStore(noopSubscribe, () => true, () => false);
+  const isDark = useSyncExternalStore(
+    subscribeTheme,
+    () => document.documentElement.classList.contains('dark'),
+    () => false,
+  );
+  const lastToggleAt = useRef(0);
 
   const toggle = () => {
     const now = Date.now();
@@ -65,7 +74,6 @@ function ThemeToggle({ locale }: { locale: Locale }) {
       document.documentElement.classList.remove('dark');
       localStorage.setItem(THEME_STORAGE_KEY, 'light');
     }
-    setIsDark(nextDark);
   };
 
   const ariaLabels = locale === 'ru'

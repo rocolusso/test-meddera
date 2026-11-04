@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import { join } from 'path';
 
 const blogDataPath = './src/blog-data';
@@ -135,7 +135,7 @@ try {
   const manifest = JSON.parse(buildManifest);
   const pages = Object.keys(manifest.pages || {});
   console.log(`  📄 Страниц в манифесте: ${pages.length}`);
-} catch (e) {
+} catch {
   console.log('  ❌ Build manifest не найден (запустите npm run build)');
 }
 

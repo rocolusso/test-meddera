@@ -74,9 +74,12 @@ export default function SearchPanel({ locale, onClose, returnFocusTo }: Props) {
     };
   }, []);
 
-  useEffect(() => {
+  // New results reset the highlighted option (adjusted while rendering, not in an effect).
+  const [activeFor, setActiveFor] = useState(data);
+  if (activeFor !== data) {
+    setActiveFor(data);
     setActive(-1);
-  }, [data]);
+  }
 
   useEffect(() => {
     if (active < 0) return;

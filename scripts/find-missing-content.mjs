@@ -70,7 +70,7 @@ for (const cluster of clusters) {
       while ((contentMatch = contentRegex.exec(contentFileContent)) !== null) {
         contentIds.add(contentMatch[1]);
       }
-    } catch (e) {
+    } catch {
       // Файл может не существовать
     }
   }
@@ -108,7 +108,7 @@ if (totalMissing > 0) {
   console.log('❌ КРИТИЧЕСКАЯ ПРОБЛЕМА!\n');
   console.log('Статьи без контента по рубрикам:\n');
   
-  missingByCluster.forEach(({ cluster, missing, ids }) => {
+  missingByCluster.forEach(({ cluster, missing }) => {
     console.log(`${cluster}: ${missing} статей`);
   });
   

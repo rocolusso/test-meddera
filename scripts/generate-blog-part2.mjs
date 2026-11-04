@@ -2,7 +2,7 @@
  * Generates Part 2 blog metadata + bilingual article bodies (RU/RO).
  * Usage: node scripts/generate-blog-part2.mjs
  */
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
