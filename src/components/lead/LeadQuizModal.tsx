@@ -26,12 +26,17 @@ import { markLeadSubmitted } from '@/lib/cta/teaser-state';
 import { CTA_ENTRIES, type CtaKey } from '@/lib/cta/registry';
 import { LIPS_QUIZ } from '@/lib/cta/lips-quiz';
 
-import { type FormType, type Locale } from './leadFormConstants';
-import { QUIZ, TEXT } from './leadFormCopy';
+import {
+  TEXT,
+  type FormType,
+  type Locale,
+  type QuizQuestion,
+} from './leadFormConstants';
 
 interface LeadQuizModalProps {
   locale: Locale;
   formType: FormType;
+  questions: readonly QuizQuestion[];
   pathname: string;
   /** Where the quiz was opened from (button, card, teaser). Sent to the server and to GA4. */
   source?: string | null;
@@ -43,13 +48,13 @@ interface LeadQuizModalProps {
 export default function LeadQuizModal({
   locale,
   formType,
+  questions,
   pathname,
   source = null,
   procedure = null,
   onClose,
 }: LeadQuizModalProps) {
   const t = TEXT[locale];
-  const questions = QUIZ[formType];
   const contactsRoute = locale === 'ro' ? '/ro/contacts' : '/contacts';
   const recaptchaPrefetchDone = useRef(false);
   const [phone, setPhone] = useState('');

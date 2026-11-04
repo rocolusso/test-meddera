@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import { isCtaKey, isLeadQuizSource } from '@/lib/cta/keys';
 import { useOverlayLock } from '@/lib/overlay-lock';
 
-import { getLocaleFromPath } from './leadFormConstants';
+import { QUIZ, getLocaleFromPath } from './leadFormConstants';
 import { closeLeadQuiz, openLeadQuiz, useLeadQuizState } from './lead-quiz-store';
 
 const LeadQuizModal = dynamic(() => import('@/components/lead/LeadQuizModal'), {
@@ -75,6 +75,7 @@ export default function LeadQuizHost() {
     <LeadQuizModal
       locale={locale}
       formType={formType}
+      questions={QUIZ[formType]}
       pathname={pathname}
       source={source}
       procedure={procedure}

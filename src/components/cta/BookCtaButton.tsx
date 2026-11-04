@@ -1,7 +1,7 @@
 'use client';
 
 import { openLeadQuiz } from '@/components/lead/lead-quiz-store';
-import { CTA_APPOINTMENT_LABEL, type Locale } from '@/components/lead/leadFormConstants';
+import { TEXT, type Locale } from '@/components/lead/leadFormConstants';
 import type { LeadQuizSource } from '@/lib/cta/keys';
 
 import { CtaAnimationStyles } from './cta-styles';
@@ -59,7 +59,7 @@ export default function BookCtaButton({
           ) : (
             <span aria-hidden>💉</span>
           )}
-          <span>{CTA_APPOINTMENT_LABEL[locale]}</span>
+          <span>{TEXT[locale].ctaAppointment}</span>
         </span>
       </button>
       <CtaAnimationStyles />

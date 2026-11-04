@@ -1,13 +1,4 @@
-/**
- * [slugRu, slugRo] for every blog post. Passed in from the server (see lib/blog-slug-pairs.ts):
- * importing the blog registry here would put all post metadata into the client bundle.
- */
-export type BlogSlugPairs = readonly (readonly [string, string])[];
-
-function findSlugPair(pairs: BlogSlugPairs, slug: string): readonly [string, string] | undefined {
-  return pairs.find(([ru, ro]) => ru === slug || ro === slug);
-}
-
+import { findPostByAnySlug } from '@/blog-data/registry';
 import { REVIEWS_PATH } from '@/lib/google-reviews/config';
 
 function normalizePathname(pathname: string): string {
@@ -19,11 +10,7 @@ function normalizePathname(pathname: string): string {
  * Target path for the other site language, preserving route kind (home, blog, post, pagination, services).
  * Query string should be appended by the caller (e.g. ?section=contacts on home).
  */
-export function getAlternateLocalePath(
-  pathname: string,
-  locale: 'ru' | 'ro',
-  blogSlugPairs: BlogSlugPairs = [],
-): string {
+export function getAlternateLocalePath(pathname: string, locale: 'ru' | 'ro'): string {
   const p = normalizePathname(pathname);
   const toRo = locale === 'ru';
   const toRu = locale === 'ro';
@@ -94,9 +81,9 @@ export function getAlternateLocalePath(
     if (slug === 'page') {
       return toRo ? '/ro/blog' : '/blog';
     }
-    const pair = findSlugPair(blogSlugPairs, slug);
-    if (pair) {
-      return toRo ? `/ro/blog/${pair[1]}` : `/blog/${pair[0]}`;
+    const post = findPostByAnySlug(slug);
+    if (post) {
+      return toRo ? `/ro/blog/${post.slugRo}` : `/blog/${post.slugRu}`;
     }
     return toRo ? '/ro/blog' : '/blog';
   }
@@ -107,9 +94,9 @@ export function getAlternateLocalePath(
     if (slug === 'page') {
       return toRu ? '/blog' : '/ro/blog';
     }
-    const pair = findSlugPair(blogSlugPairs, slug);
-    if (pair) {
-      return toRu ? `/blog/${pair[0]}` : `/ro/blog/${pair[1]}`;
+    const post = findPostByAnySlug(slug);
+    if (post) {
+      return toRu ? `/blog/${post.slugRu}` : `/ro/blog/${post.slugRo}`;
     }
     return toRu ? '/blog' : '/ro/blog';
   }
